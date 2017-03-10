@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "IopCommon": "1.0.0-*",
+    "IopCrypto": "1.0.0-*",
+    "IopProtocol": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
+    "NETStandard.Library": "1.6.1",
+    "NuGet.CommandLine": "3.5.0",
+    "System.Net.Security": "4.3.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

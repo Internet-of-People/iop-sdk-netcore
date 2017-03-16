@@ -4191,7 +4191,7 @@ namespace Iop.Profileserver {
     public const int ClockFieldNumber = 2;
     private long clock_;
     /// <summary>
-    ///  64-bit signed Unix UTC time on the requestee's machine.
+    ///  TimestampType. Clock on the requestee's machine.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Clock {
@@ -5583,7 +5583,6 @@ namespace Iop.Profileserver {
   ///  After StartConversationResponse is sent, the conversation context includes version and keys of both peers.
   ///
   ///  Specific Error Responses:
-  ///    * ERROR_UNSUPPORTED - If the requestee does not support any of the requestor's versions, it replies with this error code.
   ///    * ERROR_INVALID_VALUE
   ///      * Response.details == "publicKey" - 'StartConversationRequest.publicKey' is not a valid public key value. 
   ///      * Response.details == "clientChallenge" - 'StartConversationRequest.clientChallenge' is not 32 byte long. 

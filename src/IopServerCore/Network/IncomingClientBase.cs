@@ -12,6 +12,7 @@ using IopProtocol;
 using IopCommon;
 using System.Net.Security;
 using IopServerCore.Kernel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace IopServerCore.Network
 {
@@ -111,7 +112,7 @@ namespace IopServerCore.Network
         {
           SslStream sslStream = (SslStream)Stream;
           ConfigBase config = (ConfigBase)Base.ComponentDictionary[ConfigBase.ComponentName];
-          await sslStream.AuthenticateAsServerAsync(config.TcpServerTlsCertificate, false, SslProtocols.Tls12, false);
+          await sslStream.AuthenticateAsServerAsync((X509Certificate)config.Settings["TcpServerTlsCertificate"], false, SslProtocols.Tls12, false);
         }
 
         RawMessageReader messageReader = new RawMessageReader(Stream);

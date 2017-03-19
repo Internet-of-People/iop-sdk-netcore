@@ -65,17 +65,19 @@ namespace Iop.Proximityserver {
             "bnNlEg8KB3ZlcnNpb24YASABKAwSEQoJcHVibGljS2V5GAIgASgMEhEKCWNo",
             "YWxsZW5nZRgDIAEoDBIXCg9jbGllbnRDaGFsbGVuZ2UYBCABKAwiKgoVVmVy",
             "aWZ5SWRlbnRpdHlSZXF1ZXN0EhEKCWNoYWxsZW5nZRgBIAEoDCIYChZWZXJp",
-            "ZnlJZGVudGl0eVJlc3BvbnNlKpYDCgZTdGF0dXMSDQoJU1RBVFVTX09LEAAS",
-            "HAoYRVJST1JfUFJPVE9DT0xfVklPTEFUSU9OEAESFQoRRVJST1JfVU5TVVBQ",
-            "T1JURUQQAhIQCgxFUlJPUl9CQU5ORUQQAxIOCgpFUlJPUl9CVVNZEAQSFgoS",
-            "RVJST1JfVU5BVVRIT1JJWkVEEAUSEgoORVJST1JfQkFEX1JPTEUQBhIhCh1F",
-            "UlJPUl9CQURfQ09OVkVSU0FUSU9OX1NUQVRVUxAHEhIKDkVSUk9SX0lOVEVS",
-            "TkFMEAgSGAoURVJST1JfUVVPVEFfRVhDRUVERUQQMxIbChdFUlJPUl9JTlZB",
-            "TElEX1NJR05BVFVSRRA0EhMKD0VSUk9SX05PVF9GT1VORBA1EhcKE0VSUk9S",
-            "X0lOVkFMSURfVkFMVUUQNhIYChRFUlJPUl9BTFJFQURZX0VYSVNUUxA3EhcK",
-            "E0VSUk9SX05PVF9BVkFJTEFCTEUQOBISCg5FUlJPUl9SRUpFQ1RFRBA5EhcK",
-            "E0VSUk9SX1VOSU5JVElBTElaRUQQOio3Cg5TZXJ2ZXJSb2xlVHlwZRILCgdQ",
-            "UklNQVJZEAASDAoITkVJR0hCT1IQARIKCgZDTElFTlQQAmIGcHJvdG8z"));
+            "ZnlJZGVudGl0eVJlc3BvbnNlIlYKGUNhblByb3hpbWl0eVNlcnZlckNvbnRh",
+            "Y3QSEQoJcHVibGljS2V5GAEgASgMEhEKCWlwQWRkcmVzcxgCIAEoDBITCgtw",
+            "cmltYXJ5UG9ydBgDIAEoDSqWAwoGU3RhdHVzEg0KCVNUQVRVU19PSxAAEhwK",
+            "GEVSUk9SX1BST1RPQ09MX1ZJT0xBVElPThABEhUKEUVSUk9SX1VOU1VQUE9S",
+            "VEVEEAISEAoMRVJST1JfQkFOTkVEEAMSDgoKRVJST1JfQlVTWRAEEhYKEkVS",
+            "Uk9SX1VOQVVUSE9SSVpFRBAFEhIKDkVSUk9SX0JBRF9ST0xFEAYSIQodRVJS",
+            "T1JfQkFEX0NPTlZFUlNBVElPTl9TVEFUVVMQBxISCg5FUlJPUl9JTlRFUk5B",
+            "TBAIEhgKFEVSUk9SX1FVT1RBX0VYQ0VFREVEEDMSGwoXRVJST1JfSU5WQUxJ",
+            "RF9TSUdOQVRVUkUQNBITCg9FUlJPUl9OT1RfRk9VTkQQNRIXChNFUlJPUl9J",
+            "TlZBTElEX1ZBTFVFEDYSGAoURVJST1JfQUxSRUFEWV9FWElTVFMQNxIXChNF",
+            "UlJPUl9OT1RfQVZBSUxBQkxFEDgSEgoORVJST1JfUkVKRUNURUQQORIXChNF",
+            "UlJPUl9VTklOSVRJQUxJWkVEEDoqNwoOU2VydmVyUm9sZVR5cGUSCwoHUFJJ",
+            "TUFSWRAAEgwKCE5FSUdIQk9SEAESCgoGQ0xJRU5UEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Iop.Proximityserver.Status), typeof(global::Iop.Proximityserver.ServerRoleType), }, new pbr::GeneratedClrTypeInfo[] {
@@ -95,7 +97,8 @@ namespace Iop.Proximityserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StartConversationRequest), global::Iop.Proximityserver.StartConversationRequest.Parser, new[]{ "SupportedVersions", "PublicKey", "ClientChallenge" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StartConversationResponse), global::Iop.Proximityserver.StartConversationResponse.Parser, new[]{ "Version", "PublicKey", "Challenge", "ClientChallenge" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.VerifyIdentityRequest), global::Iop.Proximityserver.VerifyIdentityRequest.Parser, new[]{ "Challenge" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.VerifyIdentityResponse), global::Iop.Proximityserver.VerifyIdentityResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.VerifyIdentityResponse), global::Iop.Proximityserver.VerifyIdentityResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.CanProximityServerContact), global::Iop.Proximityserver.CanProximityServerContact.Parser, new[]{ "PublicKey", "IpAddress", "PrimaryPort" }, null, null, null)
           }));
     }
     #endregion
@@ -3307,6 +3310,192 @@ namespace Iop.Proximityserver {
           default:
             input.SkipLastField();
             break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///
+  ///  Proximity server contact information.
+  /// </summary>
+  public sealed partial class CanProximityServerContact : pb::IMessage<CanProximityServerContact> {
+    private static readonly pb::MessageParser<CanProximityServerContact> _parser = new pb::MessageParser<CanProximityServerContact>(() => new CanProximityServerContact());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CanProximityServerContact> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CanProximityServerContact() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CanProximityServerContact(CanProximityServerContact other) : this() {
+      publicKey_ = other.publicKey_;
+      ipAddress_ = other.ipAddress_;
+      primaryPort_ = other.primaryPort_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CanProximityServerContact Clone() {
+      return new CanProximityServerContact(this);
+    }
+
+    /// <summary>Field number for the "publicKey" field.</summary>
+    public const int PublicKeyFieldNumber = 1;
+    private pb::ByteString publicKey_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  Proximity server's public key.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString PublicKey {
+      get { return publicKey_; }
+      set {
+        publicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ipAddress" field.</summary>
+    public const int IpAddressFieldNumber = 2;
+    private pb::ByteString ipAddress_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  IPv4 or IPv6 public address of the network interface on which proximity server operates.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString IpAddress {
+      get { return ipAddress_; }
+      set {
+        ipAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "primaryPort" field.</summary>
+    public const int PrimaryPortFieldNumber = 3;
+    private uint primaryPort_;
+    /// <summary>
+    ///  TCP port of proximity server's primary interface.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint PrimaryPort {
+      get { return primaryPort_; }
+      set {
+        primaryPort_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CanProximityServerContact);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CanProximityServerContact other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PublicKey != other.PublicKey) return false;
+      if (IpAddress != other.IpAddress) return false;
+      if (PrimaryPort != other.PrimaryPort) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PublicKey.Length != 0) hash ^= PublicKey.GetHashCode();
+      if (IpAddress.Length != 0) hash ^= IpAddress.GetHashCode();
+      if (PrimaryPort != 0) hash ^= PrimaryPort.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (PublicKey.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteBytes(PublicKey);
+      }
+      if (IpAddress.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(IpAddress);
+      }
+      if (PrimaryPort != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(PrimaryPort);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (PublicKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(PublicKey);
+      }
+      if (IpAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(IpAddress);
+      }
+      if (PrimaryPort != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PrimaryPort);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CanProximityServerContact other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PublicKey.Length != 0) {
+        PublicKey = other.PublicKey;
+      }
+      if (other.IpAddress.Length != 0) {
+        IpAddress = other.IpAddress;
+      }
+      if (other.PrimaryPort != 0) {
+        PrimaryPort = other.PrimaryPort;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            PublicKey = input.ReadBytes();
+            break;
+          }
+          case 18: {
+            IpAddress = input.ReadBytes();
+            break;
+          }
+          case 24: {
+            PrimaryPort = input.ReadUInt32();
+            break;
+          }
         }
       }
     }

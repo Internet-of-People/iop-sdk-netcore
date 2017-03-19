@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using IopCrypto;
 using System.Collections;
 using IopCommon;
+using Iop.Can;
 
 namespace IopProtocol
 {

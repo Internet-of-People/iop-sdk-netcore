@@ -14,12 +14,12 @@ namespace IopServerCore.Network
     /// <param name="Client">TCP client who send the message.</param>
     /// <param name="IncomingMessage">Full ProtoBuf message to be processed.</param>
     /// <returns>true if the conversation with the client should continue, false if a protocol violation error occurred and the client should be disconnected.</returns>
-    Task<bool> ProcessMessageAsync(IncomingClientBase Client, IProtocolMessage IncomingMessage);
+    Task<bool> ProcessMessageAsync(ClientBase Client, IProtocolMessage IncomingMessage);
 
     /// <summary>
     /// Sends protocol violation error to client.
     /// </summary>
     /// <param name="Client">Client to send the error to.</param>
-    Task SendProtocolViolation(IncomingClientBase Client);
+    Task SendProtocolViolation(ClientBase Client);
   }
 }

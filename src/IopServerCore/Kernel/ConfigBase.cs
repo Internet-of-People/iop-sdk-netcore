@@ -75,25 +75,9 @@ namespace IopServerCore.Kernel
     /// <returns>true if the function succeeds, false otherwise.</returns>
     public abstract bool LoadConfigurationFromStringArray(string[] Lines);
 
-
-    /// <summary>Certificate to be used for TCP TLS server. </summary>
-    /// <remarks>This has to initialized by the derived class.</remarks>
-    public X509Certificate TcpServerTlsCertificate;
-
-
-    /// <summary>Description of role servers.</summary>
-    /// <remarks>This has to initialized by the derived class.</remarks>
-    public ConfigServerRoles ServerRoles;
-
-
-    /// <summary>Cryptographic keys of the server that can be used for signing messages and verifying signatures.</summary>
-    /// <remarks>This has to initialized by the derived class.</remarks>
-    public KeysEd25519 Keys;
-
-
-    /// <summary>Specification of a machine's network interface, on which the profile server will listen.</summary>
-    /// <remarks>This has to initialized by the derived class.</remarks>
-    public IPAddress BindToInterface;
+    /// <summary>Configuration settings mapped by their name.</summary>
+    /// <remarks>The derived class is responsible for filling this with actual configuration values.</remarks>
+    public Dictionary<string, object> Settings = new Dictionary<string, object>(StringComparer.Ordinal);
 
 
 
@@ -124,19 +108,7 @@ namespace IopServerCore.Kernel
           string[] lines = File.ReadAllLines(FileName);
           if (LoadConfigurationFromStringArray(lines))
           {
-            bool haveTcpServerTlsCertificate = TcpServerTlsCertificate != null;
-            bool haveServerRoles = ServerRoles != null;
-            bool haveBindToInterface = BindToInterface != null;
-            if (haveTcpServerTlsCertificate && haveServerRoles && haveBindToInterface)
-            {
-              res = true;
-            }
-            else
-            {
-              if (!haveTcpServerTlsCertificate) log.Error("TcpServerTlsCertificate has not been initialized.");
-              if (!haveServerRoles) log.Error("ServerRoles have not been initialized.");
-              if (!haveBindToInterface) log.Error("BindToInterface has not been initialized.");
-            }
+            res = true;
           }
         }
         else log.Error("Unable to find configuration file '{0}'.", FileName);

@@ -54,14 +54,14 @@ namespace IopServerCore.Network
       try
       {
         ConfigBase config = (ConfigBase)Base.ComponentDictionary[ConfigBase.ComponentName];
-        serverId = Crypto.Sha256(config.Keys.PublicKey);
+        serverId = Crypto.Sha256(((KeysEd25519)config.Settings["Keys"]).PublicKey);
         clientList = new IncomingClientList();
 
-        foreach (RoleServerConfiguration roleServer in config.ServerRoles.RoleServers.Values)
+        foreach (RoleServerConfiguration roleServer in ((ConfigServerRoles)config.Settings["ServerRoles"]).RoleServers.Values)
         {
           if (roleServer.IsTcpServer)
           {
-            IPEndPoint endPoint = new IPEndPoint(config.BindToInterface, roleServer.Port);
+            IPEndPoint endPoint = new IPEndPoint((IPAddress)config.Settings["BindToInterface"], roleServer.Port);
             TcpRoleServer<TIncomingClient> server = new TcpRoleServer<TIncomingClient>(endPoint, roleServer.Encrypted, roleServer.Roles, roleServer.ClientKeepAliveTimeoutMs);
             tcpServers.Add(server.EndPoint.Port, server);
           }

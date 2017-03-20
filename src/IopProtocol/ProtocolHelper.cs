@@ -17,6 +17,9 @@ namespace IopProtocol
     /// <summary>Maximal size of the message.</summary>
     public const int MaxMessageSize = 1 * 1024 * 1024;
 
+    /// <summary>Length in bytes of network identifiers.</summary>
+    public const int NetworkIdentifierLength = 32;
+
 
     /// <summary>
     /// Obtains 64-bit Unix timestamp with milliseconds precision.

@@ -20,6 +20,12 @@ namespace IopProtocol
     /// <summary>Length in bytes of network identifiers.</summary>
     public const int NetworkIdentifierLength = 32;
 
+    /// <summary>Length of IPv6 address in binary format.</summary>
+    public const int IpAddressMaxLengthBytes = 16;
+
+    /// <summary>Maximum number of bytes that public key can occupy.</summary>
+    public const int MaxPublicKeyLengthBytes = 128;
+
 
     /// <summary>
     /// Obtains 64-bit Unix timestamp with milliseconds precision.

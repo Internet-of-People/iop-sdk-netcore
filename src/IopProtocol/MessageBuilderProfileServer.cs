@@ -10,6 +10,7 @@ using IopCrypto;
 using System.Collections;
 using IopCommon;
 using Iop.Can;
+using System.Net;
 
 namespace IopProtocol
 {
@@ -1420,12 +1421,14 @@ namespace IopProtocol
     /// </summary>
     /// <param name="PrimaryPort">Primary interface port of the requesting profile server.</param>
     /// <param name="SrNeighborPort">Neighbors interface port of the requesting profile server.</param>
+    /// <param name="IpAddress">External IP address of the requesting profile server.</param>
     /// <returns>StartNeighborhoodInitializationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateStartNeighborhoodInitializationRequest(uint PrimaryPort, uint SrNeighborPort)
+    public PsProtocolMessage CreateStartNeighborhoodInitializationRequest(uint PrimaryPort, uint SrNeighborPort, IPAddress IpAddress)
     {
       StartNeighborhoodInitializationRequest startNeighborhoodInitializationRequest = new StartNeighborhoodInitializationRequest();
       startNeighborhoodInitializationRequest.PrimaryPort = PrimaryPort;
       startNeighborhoodInitializationRequest.SrNeighborPort = SrNeighborPort;
+      startNeighborhoodInitializationRequest.IpAddress = ProtocolHelper.ByteArrayToByteString(IpAddress.GetAddressBytes());
 
       PsProtocolMessage res = CreateConversationRequest();
       res.Request.ConversationRequest.StartNeighborhoodInitialization = startNeighborhoodInitializationRequest;

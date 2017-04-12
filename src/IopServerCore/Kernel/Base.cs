@@ -1,6 +1,7 @@
 ﻿using IopCommon;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -29,6 +30,12 @@ namespace IopServerCore.Kernel
     public static bool Init(List<Component> ComponentList)
     {
       log.Info("()");
+
+      // Make sure the current directory is set to the directory of the main executable.
+      string path = System.Reflection.Assembly.GetEntryAssembly().Location;
+      path = Path.GetDirectoryName(path);
+      Directory.SetCurrentDirectory(path);
+
 
       ComponentDictionary = new Dictionary<string, Component>(StringComparer.Ordinal);
 

@@ -123,7 +123,7 @@ namespace IopServerCore.Network
           bool protocolViolation = rawMessage.ProtocolViolation;
           if (rawMessage.Data != null)
           {
-            PsProtocolMessage message = (PsProtocolMessage)CreateMessageFromRawData(rawMessage.Data);
+            IProtocolMessage message = CreateMessageFromRawData(rawMessage.Data);
             if (message != null) disconnect = !await messageProcessor.ProcessMessageAsync(this, message);
             else protocolViolation = true;
           }

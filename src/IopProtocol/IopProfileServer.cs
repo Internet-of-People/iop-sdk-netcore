@@ -4997,7 +4997,7 @@ namespace Iop.Profileserver {
     public const int PlanIdFieldNumber = 1;
     private pb::ByteString planId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identifier of the plan is an SHA256 hash of the HostingPlan structure in Google Protobuf v3 encoding 
+    ///  Identifier of the plan is a SHA256 hash of the HostingPlan structure in Google Protobuf v3 encoding 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PlanId {
@@ -10217,7 +10217,7 @@ namespace Iop.Profileserver {
   ///
   ///  The profile server will not save more than 'maxTotalRecordCount' search requests. 
   ///  The profile server has to allow the client to get additional results at least 1 minute from receiving 
-  ///  ProfileSearchRequest, but it can maintain the result cache for longer than that.
+  ///  ProfileSearchRequest, but it can maintain the results cache for longer than that.
   ///
   ///  Once the client sends another ProfileSearchRequest, or if it disconnects, the old search results are discarded.
   ///
@@ -10313,7 +10313,7 @@ namespace Iop.Profileserver {
     private uint maxTotalRecordCount_;
     /// <summary>
     ///  is true, this has to be an integer between 1 and 100. If 'includeThumbnailImages' is false,
-    ///  this has to be an integer between 1 and 1000. The value must not be greater than 'maxTotalRecordCount'.
+    ///  this has to be an integer between 1 and 1,000. The value must not be greater than 'maxTotalRecordCount'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxTotalRecordCount {
@@ -10371,7 +10371,7 @@ namespace Iop.Profileserver {
     public const int LongitudeFieldNumber = 8;
     private int longitude_;
     /// <summary>
-    ///  it is, in combination with 'longitude' and 'radius' a specification of target area, 
+    ///  it is, in combination with 'longitude' and 'radius', a specification of target area, 
     ///  where the identity has to be located (according to its profile information) in order to be 
     ///  included in the search results. If NO_LOCATION, 'longitude' and 'radius' are ignored 
     ///  and all locations are allowed.
@@ -10402,7 +10402,7 @@ namespace Iop.Profileserver {
     public const int ExtraDataFieldNumber = 10;
     private string extraData_ = "";
     /// <summary>
-    ///  RegexType or empty string. If not empty, specifies the regular expression that identity
+    ///  RegexType or empty string. If not empty, it specifies the regular expression that identity
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ExtraData {
@@ -10642,9 +10642,10 @@ namespace Iop.Profileserver {
   ///  'coveredServers' contains a list of profile servers forming the neighborhood of the profile server 
   ///  being queried. Neighborhood servers share their profile databases and a query to one server will 
   ///  thus cover profile servers in its neighborhood. Note that this information is not much relevant 
-  ///  in case the number of result is large and is limited by the protocol. In this case, it is possible 
-  ///  that the profile server returns results from profile databases only from a small subset of its 
-  ///  neighborhood provided in the 'coveredServers' value, or even only from its own database.
+  ///  in case the number of result is large and the number of results is limited by the protocol. 
+  ///  In this case, it is possible that the profile server returns results from profile databases only 
+  ///  from a small subset of its neighborhood provided in the 'coveredServers' value, or even only from 
+  ///  its own database.
   ///
   ///  Specific Error Responses:
   ///    * ERROR_INVALID_VALUE
@@ -10726,7 +10727,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForBytes(26);
     private readonly pbc::RepeatedField<pb::ByteString> coveredServers_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  List of network identifiers of profile servers whose profile databases were be used to produce the results, 
+    ///  List of network identifiers of profile servers whose profile databases were used to produce the results, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> CoveredServers {
@@ -11459,8 +11460,8 @@ namespace Iop.Profileserver {
   ///    * ERROR_NOT_AVAILABLE - No cached search results are available. Either the client did not send ProfileSearchRequest previously
   ///                            in this session, or its results have expired already.
   ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "recordIndex" - 'ProfileSearchRequest.recordIndex' is not a valid index of the result.
-  ///      * Response.details == "recordCount" - 'ProfileSearchRequest.recordCount' is not a valid number of results to obtain in combination with 'ProfileSearchRequest.recordIndex'.
+  ///      * Response.details == "recordIndex" - 'ProfileSearchPartRequest.recordIndex' is not a valid index of the result.
+  ///      * Response.details == "recordCount" - 'ProfileSearchPartRequest.recordCount' is not a valid number of results to obtain in combination with 'ProfileSearchPartRequest.recordIndex'.
   /// </summary>
   public sealed partial class ProfileSearchPartResponse : pb::IMessage<ProfileSearchPartResponse> {
     private static readonly pb::MessageParser<ProfileSearchPartResponse> _parser = new pb::MessageParser<ProfileSearchPartResponse>(() => new ProfileSearchPartResponse());
@@ -12517,7 +12518,7 @@ namespace Iop.Profileserver {
     public const int CardIdFieldNumber = 1;
     private pb::ByteString cardId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identifier of a relationship card is an SHA256 hash of the RelationshipCard structure in Google Protobuf v3 encoding 
+    ///  Identifier of a relationship card is a SHA256 hash of the RelationshipCard structure in Google Protobuf v3 encoding 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CardId {
@@ -13588,14 +13589,14 @@ namespace Iop.Profileserver {
   ///  A response to StartNeighborhoodInitializationRequest.
   ///
   ///  General Error Responses:
-  ///    * ERROR_REJECTED - Profile server already has reached its limit of a number of servers that it shares its profile database with and is not willing to have more.
+  ///    * ERROR_REJECTED - Profile server has already reached its limit of a number of servers that it shares its profile database with and is not willing to have more.
   ///    * ERROR_ALREADY_EXISTS - Neighborhood initialization process has already been done, or the initialization process with the peer is currently in the progress.
   ///    * ERROR_BUSY - Profile server can use this error code during the start of the neighborhood initialization process to express that it is currently busy 
   ///                   with the neighborhood initialization process with one or more other profile servers.
   ///    * ERROR_INVALID_VALUE
   ///      * Response.details == "primaryPort" - 'StartNeighborhoodInitializationRequest.primaryPort' must be an integer between 1 and 65535.
   ///      * Response.details == "srNeighborPort" - 'StartNeighborhoodInitializationRequest.srNeighborPort' must be an integer between 1 and 65535.
-  ///      * Response.details == "ipaddress" - 'StartNeighborhoodInitializationRequest.ipAddress' is not a valid IPv4 or IPv6 address or it is a local network IP address.
+  ///      * Response.details == "ipAddress" - 'StartNeighborhoodInitializationRequest.ipAddress' is not a valid IPv4 or IPv6 address or it is a local network IP address.
   /// </summary>
   public sealed partial class StartNeighborhoodInitializationResponse : pb::IMessage<StartNeighborhoodInitializationResponse> {
     private static readonly pb::MessageParser<StartNeighborhoodInitializationResponse> _parser = new pb::MessageParser<StartNeighborhoodInitializationResponse>(() => new StartNeighborhoodInitializationResponse());

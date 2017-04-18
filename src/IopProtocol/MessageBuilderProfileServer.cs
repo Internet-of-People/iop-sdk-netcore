@@ -583,10 +583,10 @@ namespace IopProtocol
     /// <param name="Payload">Payload to include in the response.</param>
     /// <param name="Clock">Timestamp to include in the response.</param>
     /// <returns>PingResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreatePingResponse(PsProtocolMessage Request, byte[] Payload, long Clock)
+    public PsProtocolMessage CreatePingResponse(PsProtocolMessage Request, byte[] Payload, DateTime Clock)
     {
       PingResponse pingResponse = new PingResponse();
-      pingResponse.Clock = Clock;
+      pingResponse.Clock = ProtocolHelper.DateTimeToUnixTimestampMs(Clock);
       pingResponse.Payload = ProtocolHelper.ByteArrayToByteString(Payload);
 
       PsProtocolMessage res = CreateSingleResponse(Request);
@@ -787,7 +787,7 @@ namespace IopProtocol
     /// <param name="Image">Profile image data or null if profile image is not to be changed, to erase image, use empty byte array.</param>
     /// <param name="Location">Profile location information or null if location is not to be changed.</param>
     /// <param name="ExtraData">Profile's extra data information or null if profile's extra data is not to be changed.</param>
-    /// <returns>CreateUpdateProfileRequest message that is ready to be sent.</returns>
+    /// <returns>UpdateProfileRequest message that is ready to be sent.</returns>
     public PsProtocolMessage CreateUpdateProfileRequest(SemVer? Version, string Name, byte[] Image, GpsLocation Location, string ExtraData)
     {
       UpdateProfileRequest updateProfileRequest = new UpdateProfileRequest();
@@ -1204,8 +1204,8 @@ namespace IopProtocol
     /// <param name="ExtraData">Regular expression string filter for profile's extra data information. If filtering by extra data information is not required this is set to null.</param>
     /// <param name="Location">GPS location, near which the target identities has to be located. If no location filtering is required this is set to null.</param>
     /// <param name="Radius">If <paramref name="Location"/> is not 0, this is radius in metres that together with <paramref name="Location"/> defines the target area.</param>
-    /// <param name="MaxResponseRecordCount">Maximal number of results to be included in the response. This is an integer between 1 and 100 if <paramref name="IncludeThumnailImages"/> is true, otherwise this is integer between 1 and 1000.</param>
-    /// <param name="MaxTotalRecordCount">Maximal number of total results that the profile server will look for and save. This is an integer between 1 and 1000 if <paramref name="IncludeThumnailImages"/> is true, otherwise this is integer between 1 and 10000.</param>
+    /// <param name="MaxResponseRecordCount">Maximal number of results to be included in the response. This is an integer between 1 and 100 if <paramref name="IncludeThumnailImages"/> is true, otherwise this is integer between 1 and 1,000.</param>
+    /// <param name="MaxTotalRecordCount">Maximal number of total results that the profile server will look for and save. This is an integer between 1 and 1000 if <paramref name="IncludeThumnailImages"/> is true, otherwise this is integer between 1 and 10,000.</param>
     /// <param name="IncludeHostedOnly">If set to true, the profile server only returns profiles of its own hosted identities. Otherwise, identities from the profile server's neighborhood can be included.</param>
     /// <param name="IncludeThumbnailImages">If set to true, the response will include a thumbnail image of each profile.</param>
     /// <returns>ProfileSearchRequest message that is ready to be sent.</returns>
@@ -1263,7 +1263,7 @@ namespace IopProtocol
     /// Creates a new ProfileSearchPartRequest message.
     /// </summary>
     /// <param name="RecordIndex">Zero-based index of the first result to retrieve.</param>
-    /// <param name="RecordCount">Number of results to retrieve. If 'ProfileSearchResponse.IncludeThumbnailImages' was set, this has to be an integer between 1 and 100, otherwise it has to be an integer between 1 and 1000.</param>
+    /// <param name="RecordCount">Number of results to retrieve. If 'ProfileSearchResponse.IncludeThumbnailImages' was set, this has to be an integer between 1 and 100, otherwise it has to be an integer between 1 and 1,000.</param>
     /// <returns>ProfileSearchRequest message that is ready to be sent.</returns>
     public PsProtocolMessage CreateProfileSearchPartRequest(uint RecordIndex, uint RecordCount)
     {

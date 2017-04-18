@@ -40,10 +40,19 @@ namespace IopProtocol
     /// Converts 64-bit Unix timestamp with milliseconds precision to DateTime.
     /// </summary>
     /// <param name="UnixTimeStampMs">Unix timestamp to convert.</param>
-    /// <returns>Corresponding DateTime.</returns>
-    public static DateTime UnixTimestampMsToDateTime(long UnixTimeStampMs)
+    /// <returns>Corresponding DateTime or null if the given timestamp is not valid.</returns>
+    public static DateTime? UnixTimestampMsToDateTime(long UnixTimeStampMs)
     {
-      return new DateTime(1970, 1, 1).AddMilliseconds(UnixTimeStampMs);
+      DateTime? res = null;
+      try
+      {
+        res = new DateTime(1970, 1, 1).AddMilliseconds(UnixTimeStampMs);
+      }
+      catch
+      {
+
+      }
+      return res;
     }
 
 

@@ -11,6 +11,7 @@ using System.Collections;
 using IopCommon;
 using Iop.Can;
 using System.Net;
+using Iop.Shared;
 
 namespace IopProtocol
 {

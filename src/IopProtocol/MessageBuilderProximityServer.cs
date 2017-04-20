@@ -10,6 +10,7 @@ using IopCrypto;
 using System.Collections;
 using IopCommon;
 using System.Net;
+using Iop.Shared;
 
 namespace IopProtocol
 {

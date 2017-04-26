@@ -125,7 +125,7 @@ namespace IopProtocol
             break;
 
           case "US":
-            {
+            {              
               CultureInfo enUs = new CultureInfo("en-US");
               res = string.Format("{0}, {1}", Latitude.ToString("0.######", enUs), Longitude.ToString("0.######", enUs));
               break;

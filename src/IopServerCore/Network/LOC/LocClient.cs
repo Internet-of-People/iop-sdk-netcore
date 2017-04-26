@@ -189,10 +189,11 @@ namespace IopServerCore.Network.LOC
     /// Announces profile server's primary server role interface to the LOC server.
     /// </summary>
     /// <param name="PrimaryPort">Primary port of the server.</param>
+    /// <param name="Location">Optionally, an empty GpsLocation instance that will be filled with location information received from the LOC server if the function succeeds.</param>
     /// <returns>true if the function succeeds, false otherwise.</returns>
-    public async Task<bool> RegisterPrimaryServerRoleAsync(int PrimaryPort)
+    public async Task<bool> RegisterPrimaryServerRoleAsync(int PrimaryPort, IopProtocol.GpsLocation Location = null)
     {
-      log.Info("()");
+      log.Info("(PrimaryPort:{0})", PrimaryPort);
 
       bool res = false;
 
@@ -215,7 +216,23 @@ namespace IopServerCore.Network.LOC
             && (response.Response.ResponseTypeCase == Response.ResponseTypeOneofCase.LocalService)
             && (response.Response.LocalService.LocalServiceResponseTypeCase == LocalServiceResponse.LocalServiceResponseTypeOneofCase.RegisterService);
 
-          if (res) log.Debug("Primary interface has been registered successfully on LOC server.");
+          if (res)
+          {
+            if (Location != null)
+            {
+              IopProtocol.GpsLocation location = new IopProtocol.GpsLocation(response.Response.LocalService.RegisterService.Location.Latitude, response.Response.LocalService.RegisterService.Location.Longitude);
+              Location.Latitude = location.Latitude;
+              Location.Longitude = location.Longitude;
+              if (Location.IsValid())
+              {
+                res = true;
+              }
+              else log.Error("Registration failed, LOC server provided invalid location information [{0:US}].", location);
+            }
+            else res = true;
+
+            if (res) log.Debug("Primary interface has been registered successfully on LOC server{0}.", Location != null ? string.Format(", server location set is [{0:US}]", Location) : "");
+          }
           else log.Error("Registration failed, response status is {0}.", response.Response != null ? response.Response.Status.ToString() : "n/a");
         }
         else log.Error("Invalid message received from LOC server.");

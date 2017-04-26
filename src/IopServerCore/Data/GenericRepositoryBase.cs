@@ -13,10 +13,10 @@ namespace IopServerCore.Data
   /// It implements basic and ordinary methods to prevent repeating same code over and over again.
   /// </summary>
   /// <typeparam name="TEntity">Entity type.</typeparam>
-  public class GenericRepository<TDbContext, TEntity> where TDbContext : DbContext where TEntity : class 
+  public class GenericRepositoryBase<TDbContext, TEntity> where TDbContext : DbContext, new() where TEntity : class
   {
     /// <summary>Class logger.</summary>
-    private static Logger log = new Logger("IopServerCore.Data.GenericRepository");
+    private static Logger log = new Logger("IopServerCore.Data.GenericRepositoryBase");
 
     /// <summary>Database context.</summary>
     protected TDbContext context;
@@ -24,14 +24,19 @@ namespace IopServerCore.Data
     /// <summary>Access to entities in the database.</summary>
     protected DbSet<TEntity> dbSet;
 
+    /// <summary>Unit of work instance that owns the repository.</summary>
+    protected UnitOfWorkBase<TDbContext> unitOfWork;
+
     /// <summary>
     /// Sets up a database context of the repository and initializes DbSet for access to entities.
     /// </summary>
-    /// <param name="context">Database context.</param>
-    public GenericRepository(TDbContext context)
+    /// <param name="Context">Database context.</param>
+    /// <param name="UnitOfWork">Instance of unit of work that owns the repository.</param>
+    public GenericRepositoryBase(TDbContext Context, UnitOfWorkBase<TDbContext> UnitOfWork)
     {
-      this.context = context;
-      dbSet = context.Set<TEntity>();
+      context = Context;
+      unitOfWork = UnitOfWork;
+      dbSet = Context.Set<TEntity>();
     }
 
     /// <summary>

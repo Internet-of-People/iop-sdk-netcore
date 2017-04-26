@@ -113,7 +113,7 @@ namespace IopProtocol
     {
       if (string.IsNullOrEmpty(Format)) Format = "G";
       Format = Format.Trim().ToUpperInvariant();
-      if (Provider == null) Provider = CultureInfo.CurrentCulture;
+      if (Provider == null) Provider = CultureInfo.InvariantCulture;
 
       string res = "N/A";
       if (IsValid())

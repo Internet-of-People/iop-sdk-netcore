@@ -227,11 +227,11 @@ namespace IopServerCore.Network.LOC
               {
                 res = true;
               }
-              else log.Error("Registration failed, LOC server provided invalid location information [{0:US}].", location);
+              else log.Error("Registration failed, LOC server provided invalid location information [{0}].", location);
             }
             else res = true;
 
-            if (res) log.Debug("Primary interface has been registered successfully on LOC server{0}.", Location != null ? string.Format(", server location set is [{0:US}]", Location) : "");
+            if (res) log.Debug("Primary interface has been registered successfully on LOC server{0}.", Location != null ? string.Format(", server location set is [{0}]", Location) : "");
           }
           else log.Error("Registration failed, response status is {0}.", response.Response != null ? response.Response.Status.ToString() : "n/a");
         }

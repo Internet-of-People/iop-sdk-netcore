@@ -291,9 +291,14 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">RegisterServiceRequest message for which the response is created.</param>
     /// <returns>RegisterServiceResponse message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateRegisterServiceResponse(LocProtocolMessage Request)
+    public LocProtocolMessage CreateRegisterServiceResponse(LocProtocolMessage Request, GpsLocation Location)
     {
       RegisterServiceResponse registerServiceResponse = new RegisterServiceResponse();
+      registerServiceResponse.Location = new Iop.Locnet.GpsLocation()
+      {
+        Latitude = Location.GetLocationTypeLatitude(),
+        Longitude = Location.GetLocationTypeLongitude()
+      };
 
       LocProtocolMessage res = CreateLocalServiceOkResponse(Request);
       res.Response.LocalService.RegisterService = registerServiceResponse;

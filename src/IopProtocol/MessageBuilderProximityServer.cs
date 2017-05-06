@@ -65,6 +65,17 @@ namespace IopProtocol
     /// <summary>Size in bytes of an authentication challenge data.</summary>
     public const int ChallengeDataSize = 32;
 
+    /// <summary>Threshold within the proximity server accepts the update of an activity even if it is not the closest proximity server to its new location.
+    /// Let D be the distance of the proximity server to the activity's new location and let K be distance of the closest neighbor server to that location.
+    /// Then the threshold value T means that the proximity server will accept the activity update if D is less than or equal to K * (1 + T).</summary>
+    public const double ActivityMigrationDistanceTolerance = 0.10;
+
+    /// <summary>Maximum number of bytes that type field in ActivitySearchRequest can occupy.</summary>
+    public const int MaxActivitySearchTypeLengthBytes = 64;
+
+    /// <summary>Maximum number of bytes that extraData field in ActivitySearchRequest can occupy.</summary>
+    public const int MaxActivitySearchExtraDataLengthBytes = 256;
+
 
     /// <summary>Original identifier base.</summary>
     private int idBase;

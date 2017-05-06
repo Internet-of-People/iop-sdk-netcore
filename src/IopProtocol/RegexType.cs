@@ -17,8 +17,8 @@ namespace IopProtocol
     private static Logger log = new Logger("IopProtocol.RegexTypeValidator");
 
 
-    /// <summary>List of characters that are allowed to be escaped in profile search regex or has special allowed meaning with backslash.</summary>
-    private static HashSet<char> profileSearchRegexAllowedBackslashedCharacters = new HashSet<char>()
+    /// <summary>List of characters that are allowed to be escaped in regex or has special allowed meaning with backslash.</summary>
+    private static HashSet<char> allowedBackslashedCharacters = new HashSet<char>()
     {
       // Escaped chars
       'x', 'u', '.', '*', '.', '*', '-', '+', '[', ']', '\\', '?', '^', '|', '(', ')', '{', '}',
@@ -27,8 +27,8 @@ namespace IopProtocol
       'w', 'W', 's', 'S', 'd', 'D'
     };
 
-    /// <summary>Regular expression to find forbidden substrings in profile search regular expression.</summary>
-    private static Regex profileSearchRegexForbiddenSequenceRegex = new Regex(
+    /// <summary>Regular expression to find forbidden substrings in regular expression.</summary>
+    private static Regex forbiddenSequenceRegex = new Regex(
        "(" + @"\{[^0-9]*\}" + ")" +     // Do not allow "{name}"
       "|(" + @"[\(\*\+\?\}]\?" + ")",   // Do not allow "(?", "*?", "+?", "??", "}?"
       RegexOptions.Singleline);
@@ -48,7 +48,7 @@ namespace IopProtocol
     ///
     /// <para>See https://docs.microsoft.com/en-us/dotnet/articles/standard/base-types/quick-ref for .NET regular expression reference.</para>
     /// </remarks>
-    public static bool ValidateProfileSearchRegex(string RegexString)
+    public static bool ValidateRegex(string RegexString)
     {
       log.Trace("(RegexString:'{0}')", RegexString.SubstrMax());
 
@@ -69,7 +69,7 @@ namespace IopProtocol
           }
 
           char cn = RegexString[i + 1];
-          if (profileSearchRegexAllowedBackslashedCharacters.Contains(cn))
+          if (allowedBackslashedCharacters.Contains(cn))
           {
             switch (cn)
             {
@@ -149,7 +149,7 @@ namespace IopProtocol
       if (validContent)
       {
         // Now we have the string without any escaped characters, so we can run regular expression to find unallowed substrings.
-        Match match = profileSearchRegexForbiddenSequenceRegex.Match(regexStr);
+        Match match = forbiddenSequenceRegex.Match(regexStr);
         if (match.Success)
         {
           log.Trace("Forbidden sequence '{0}' found in the regular expression.", match.Groups[1].Length > 0 ? match.Groups[1] : match.Groups[2]);

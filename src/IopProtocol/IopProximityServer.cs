@@ -4155,7 +4155,7 @@ namespace Iop.Proximityserver {
     public const int PrecisionFieldNumber = 7;
     private uint precision_;
     /// <summary>
-    ///  Precision information in metres is an integer between 0 and 20,000.
+    ///  Precision information in metres is an integer between 0 and 1,000.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Precision {
@@ -4656,7 +4656,7 @@ namespace Iop.Proximityserver {
   ///      * Response.details == "type" - 'CreateActivityRequest.type' is not a valid activity type.
   ///      * Response.details == "latitude" - 'CreateActivityRequest.latitude' is not a valid latitude information.
   ///      * Response.details == "longitude" - 'CreateActivityRequest.longitude' is not a valid longitude information.
-  ///      * Response.details == "precision" - 'CreateActivityRequest.precision' must be an integer between 0 and 20,000.
+  ///      * Response.details == "precision" - 'CreateActivityRequest.precision' must be an integer between 0 and 1,000.
   ///      * Response.details == "startTime" - 'CreateActivityRequest.startTime' does not contain a valid start time information.
   ///      * Response.details == "expirationTime" - 'CreateActivityRequest.expirationTime' does not contain a valid expiration time information.
   ///      * Response.details == "extraData" - 'CreateActivityRequest.extraData' does not contain a valid extra data information.
@@ -4762,6 +4762,11 @@ namespace Iop.Proximityserver {
   ///  of the other proximity server (that is closer to the new activity location) and removes the activity from 
   ///  its database and propagates this information to its neighborhood. The proximity server will not refuse 
   ///  the update if the suggested new primary proximity server is on the list of proximity servers to ignore.
+  ///
+  ///  If a client needs to update something that this request does not allow to update, it means that such 
+  ///  a change is considered as a fundamental change, in which case the activity should be deleted and recreated.
+  ///  This includes, for example, a change in client's profile server contact information, activity structure 
+  ///  version information, or its type.
   ///
   ///  Roles: client
   ///
@@ -4942,7 +4947,7 @@ namespace Iop.Proximityserver {
     public const int PrecisionFieldNumber = 10;
     private uint precision_;
     /// <summary>
-    ///  Precision information in metres is an integer between 0 and 20,000.
+    ///  Precision information in metres is an integer between 0 and 1,000.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Precision {
@@ -5292,9 +5297,10 @@ namespace Iop.Proximityserver {
   ///      * Response.details - Set to hexadecimally encoded network identifier of the proximity server that is closer to the activity location than the target server.
   ///    * ERROR_INVALID_VALUE
   ///      * Response.details == "set*" - Nothing was set to be updated.
+  ///      * Response.details == "id" - 'UpdateActivityRequest.id' is not a valid client's activity identifier.
   ///      * Response.details == "latitude" - 'UpdateActivityRequest.latitude' is not a valid latitude information.
   ///      * Response.details == "longitude" - 'UpdateActivityRequest.longitude' is not a valid longitude information.
-  ///      * Response.details == "precision" - 'UpdateActivityRequest.precision' must be an integer between 0 and 20,000.
+  ///      * Response.details == "precision" - 'UpdateActivityRequest.precision' must be an integer between 0 and 1,000.
   ///      * Response.details == "extraData" - 'UpdateActivityRequest.extraData' does not contain a valid extra data information.
   ///      * Response.details == "startTime" - 'UpdateActivityRequest.startTime' does not contain a valid start time information.
   ///      * Response.details == "expirationTime" - 'UpdateActivityRequest.expirationTime' does not contain a valid expiration time information. 
@@ -6127,7 +6133,7 @@ namespace Iop.Proximityserver {
   ///    * ERROR_INVALID_VALUE
   ///      * Response.details == "maxResponseRecordCount" - 'ActivitySearchRequest.maxResponseRecordCount' is not within the required range.
   ///      * Response.details == "maxTotalRecordCount" - 'ActivitySearchRequest.maxTotalRecordCount' is not within the required range.
-  ///      * Response.details == "ownerNetworkId" - 'ActivitySearchRequest.ownerNetworkId' is not a valid identity network identifier.
+  ///      * Response.details == "ownerNetworkId" - 'ActivitySearchRequest.ownerNetworkId' is not a valid identity network identifier, or this is an empty byte array but 'ActivitySearchRequest.id' is not zero.
   ///      * Response.details == "type" - 'ActivitySearchRequest.type' is too long.
   ///      * Response.details == "startNotAfter" - 'ActivitySearchRequest.startNotAfter' does not represent a valid timestamp value.
   ///      * Response.details == "expirationNotBefore" - 'ActivitySearchRequest.expirationNotBefore' is non-zero and smaller than 'ActivitySearchRequest.startNotAfter' or it does not represent a valid timestamp value.
@@ -7877,7 +7883,7 @@ namespace Iop.Proximityserver {
   ///        * $field == "add.type" - `items[$index].add.type` is not a valid activity type.
   ///        * $field == "add.latitude" - `items[$index].add.latitude` is not a valid latitude value.
   ///        * $field == "add.longitude" - `items[$index].add.longitude` is not a valid longitude value.
-  ///        * $field == "add.precision" - `items[$index].add.precision` must be an integer between 0 and 20,000.
+  ///        * $field == "add.precision" - `items[$index].add.precision` must be an integer between 0 and 1,000.
   ///        * $field == "add.startTime" - `items[$index].add.startTime` does not contain a valid start time information.
   ///        * $field == "add.expirationTime" - `items[$index].add.expirationTime` does not contain a valid expiration time information.
   ///        * $field == "add.extraData" - `items[$index].add.extraData` is not a valid extra data value.
@@ -7886,7 +7892,7 @@ namespace Iop.Proximityserver {
   ///        * $field == "change.ownerNetworkId" - `items[$index].change.ownerNetworkId` is not a valid network identifier.
   ///        * $field == "change.latitude" - `items[$index].change.latitude` is not a valid latitude value.
   ///        * $field == "change.longitude" - `items[$index].change.longitude` is not a valid longitude value.
-  ///        * $field == "change.precision" - `items[$index].change.precision` must be an integer between 0 and 20,000.
+  ///        * $field == "change.precision" - `items[$index].change.precision` must be an integer between 0 and 1,000.
   ///        * $field == "change.startTime" - `items[$index].change.startTime` does not contain a valid start time information.
   ///        * $field == "change.expirationTime" - `items[$index].change.expirationTime` does not contain a valid expiration time information.
   ///        * $field == "change.extraData" - `items[$index].change.extraData` is not a valid extraData value.
@@ -8366,7 +8372,7 @@ namespace Iop.Proximityserver {
     public const int PrecisionFieldNumber = 8;
     private uint precision_;
     /// <summary>
-    ///  Precision information in metres is an integer between 0 and 20,000.
+    ///  Precision information in metres is an integer between 0 and 1,000.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Precision {
@@ -8836,7 +8842,7 @@ namespace Iop.Proximityserver {
     public const int PrecisionFieldNumber = 10;
     private uint precision_;
     /// <summary>
-    ///  Precision information in metres is an integer between 0 and 20,000.
+    ///  Precision information in metres is an integer between 0 and 1,000.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Precision {

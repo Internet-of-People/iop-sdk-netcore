@@ -721,20 +721,41 @@ namespace IopProtocol
     /// <returns>CreateActivityRequest message that is ready to be sent.</returns>
     public ProxProtocolMessage CreateCreateActivityRequest(SemVer Version, uint ActivityId, byte[] PsNetworkId, IPAddress PsIpAddress, uint PsPrimaryPort, string ActivityType, GpsLocation Location, uint Precision, DateTime StartTime, DateTime ExpirationTime, string ExtraData, List<byte[]> IgnoreServerIds)
     {
+      ActivityInformation activity = new ActivityInformation()
+      {
+        Version = Version.ToByteString(),
+        Id = ActivityId,
+        OwnerPublicKey = ProtocolHelper.ByteArrayToByteString(keys.PublicKey),
+        ProfileServerContact = new ServerContactInfo()
+        {
+          NetworkId = ProtocolHelper.ByteArrayToByteString(PsNetworkId),
+          IpAddress = ProtocolHelper.ByteArrayToByteString(PsIpAddress.GetAddressBytes()),
+          PrimaryPort = PsPrimaryPort,
+        },
+        Type = ActivityType != null ? ActivityType : "",
+        Latitude = Location.GetLocationTypeLatitude(),
+        Longitude = Location.GetLocationTypeLongitude(),
+        Precision = Precision,
+        StartTime = ProtocolHelper.DateTimeToUnixTimestampMs(StartTime),
+        ExpirationTime = ProtocolHelper.DateTimeToUnixTimestampMs(ExpirationTime),
+        ExtraData = ExtraData != null ? ExtraData : ""
+      };
+
+      return CreateCreateActivityRequest(activity, IgnoreServerIds);
+    }
+
+    /// <summary>
+    /// Creates a new CreateActivityRequest message.
+    /// </summary>
+    /// <param name="Activity">Description of the activity.</param>
+    /// <param name="NoPropagation">If set to true, the proximity server will not propagate the update to the neighborhood.</param>
+    /// <param name="IgnoreServerIds">List of network identifiers of proximity servers to ignore.</param>
+    /// <returns>CreateActivityRequest message that is ready to be sent.</returns>
+    public ProxProtocolMessage CreateCreateActivityRequest(ActivityInformation Activity, List<byte[]> IgnoreServerIds = null)
+    {
       CreateActivityRequest createActivityRequest = new CreateActivityRequest();
-      createActivityRequest.Version = Version.ToByteString();
-      createActivityRequest.Id = ActivityId;
-      createActivityRequest.ProfileServerContact = new ServerContactInfo();
-      createActivityRequest.ProfileServerContact.NetworkId = ProtocolHelper.ByteArrayToByteString(PsNetworkId);
-      createActivityRequest.ProfileServerContact.IpAddress = ProtocolHelper.ByteArrayToByteString(PsIpAddress.GetAddressBytes());
-      createActivityRequest.ProfileServerContact.PrimaryPort = PsPrimaryPort;
-      createActivityRequest.Type = ActivityType != null ? ActivityType : "";
-      createActivityRequest.Latitude = Location.GetLocationTypeLatitude();
-      createActivityRequest.Longitude = Location.GetLocationTypeLongitude();
-      createActivityRequest.Precision = Precision;
-      createActivityRequest.StartTime = ProtocolHelper.DateTimeToUnixTimestampMs(StartTime);
-      createActivityRequest.ExpirationTime = ProtocolHelper.DateTimeToUnixTimestampMs(ExpirationTime);
-      createActivityRequest.ExtraData = ExtraData != null ? ExtraData : "";
+      createActivityRequest.Activity = Activity;
+
       foreach (byte[] ignoredServerId in IgnoreServerIds)
         createActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
 
@@ -743,6 +764,7 @@ namespace IopProtocol
 
       return res;
     }
+
 
     /// <summary>
     /// Creates a response message to a CreateActivityRequest message.
@@ -763,42 +785,61 @@ namespace IopProtocol
     /// <summary>
     /// Creates a new UpdateActivityRequest message.
     /// </summary>
-    /// <param name="ActivityId">Identifier of the client’s activity to update.</param>
-    /// <param name="Location">GPS location of the activity or null if the location is not to be changed.</param>
-    /// <param name="Precision">Location precision information in metres or null if the precision is not to be changed.</param>
-    /// <param name="StartTime">Time when the activity starts or null if the start time is not to be changed.</param>
-    /// <param name="ExpirationTime">Time when the activity expires or null if the expiration time is not to be changed.</param>
-    /// <param name="ExtraData">Extra data about the activity or null if extra data is not to be changed.</param>
+    /// <param name="Version">Version of the activity structure.</param>
+    /// <param name="ActivityId">Unique identifier of the client’s activity.</param>
+    /// <param name="PsNetworkId">Network identifier of the profile server that hosts the profile of the owner identity of the activity.</param>
+    /// <param name="PsIpAddress">IP address of the profile server that hosts the profile of the owner identity of the activity.</param>
+    /// <param name="PsPrimaryPort">Primary port of the profile server that hosts the profile of the owner identity of the activity.</param>
+    /// <param name="ActivityType">Type of activity in human readable form.</param>
+    /// <param name="Location">Initial GPS location of the activity.</param>
+    /// <param name="Precision">Location precision information in metres.</param>
+    /// <param name="StartTime">Time when the activity starts.</param>
+    /// <param name="ExpirationTime">Time when the activity expires.</param>
+    /// <param name="ExtraData">Extra data about the activity.</param>
     /// <param name="NoPropagation">If set to true, the proximity server will not propagate the update to the neighborhood.</param>
+    /// <param name="IgnoreServerIds">List of network identifiers of proximity servers to ignore.</param>
     /// <returns>UpdateActivityRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateUpdateActivityRequest(uint ActivityId, GpsLocation Location, uint? Precision, DateTime? StartTime, DateTime? ExpirationTime, string ExtraData, bool NoPropagation = false)
+    public ProxProtocolMessage CreateUpdateActivityRequest(SemVer Version, uint ActivityId, byte[] PsNetworkId, IPAddress PsIpAddress, uint PsPrimaryPort, string ActivityType, GpsLocation Location, uint Precision, DateTime StartTime, DateTime ExpirationTime, string ExtraData, bool NoPropagation = false, List<byte[]> IgnoreServerIds = null)
+    {
+      ActivityInformation activity = new ActivityInformation()
+      {
+        Version = Version.ToByteString(),
+        Id = ActivityId,
+        OwnerPublicKey = ProtocolHelper.ByteArrayToByteString(keys.PublicKey),
+        ProfileServerContact = new ServerContactInfo()
+        {
+          NetworkId = ProtocolHelper.ByteArrayToByteString(PsNetworkId),
+          IpAddress = ProtocolHelper.ByteArrayToByteString(PsIpAddress.GetAddressBytes()),
+          PrimaryPort = PsPrimaryPort,
+        },
+        Type = ActivityType != null ? ActivityType : "",
+        Latitude = Location.GetLocationTypeLatitude(),
+        Longitude = Location.GetLocationTypeLongitude(),
+        Precision = Precision,
+        StartTime = ProtocolHelper.DateTimeToUnixTimestampMs(StartTime),
+        ExpirationTime = ProtocolHelper.DateTimeToUnixTimestampMs(ExpirationTime),
+        ExtraData = ExtraData != null ? ExtraData : ""
+      };
+
+      return CreateUpdateActivityRequest(activity, NoPropagation, IgnoreServerIds);
+    }
+
+
+    /// <summary>
+    /// Creates a new UpdateActivityRequest message.
+    /// </summary>
+    /// <param name="Activity">Description of the activity.</param>
+    /// <param name="NoPropagation">If set to true, the proximity server will not propagate the update to the neighborhood.</param>
+    /// <param name="IgnoreServerIds">List of network identifiers of proximity servers to ignore.</param>
+    /// <returns>UpdateActivityRequest message that is ready to be sent.</returns>
+    public ProxProtocolMessage CreateUpdateActivityRequest(ActivityInformation Activity, bool NoPropagation = false, List<byte[]> IgnoreServerIds = null)
     {
       UpdateActivityRequest updateActivityRequest = new UpdateActivityRequest();
-      updateActivityRequest.Id = ActivityId;
+      updateActivityRequest.Activity = Activity;
       updateActivityRequest.NoPropagation = NoPropagation;
-      updateActivityRequest.SetLocation = Location != null;
-      updateActivityRequest.SetPrecision = Precision != null;
-      updateActivityRequest.SetStartTime = StartTime != null;
-      updateActivityRequest.SetExpirationTime = ExpirationTime != null;
-      updateActivityRequest.SetExtraData = ExtraData != null;
 
-      if (updateActivityRequest.SetLocation)
-      {
-        updateActivityRequest.Latitude = Location.GetLocationTypeLatitude();
-        updateActivityRequest.Longitude = Location.GetLocationTypeLongitude();
-      }
-
-      if (updateActivityRequest.SetPrecision)
-        updateActivityRequest.Precision = Precision.Value;
-
-      if (updateActivityRequest.SetStartTime)
-        updateActivityRequest.StartTime = ProtocolHelper.DateTimeToUnixTimestampMs(StartTime.Value);
-
-      if (updateActivityRequest.SetExpirationTime)
-        updateActivityRequest.ExpirationTime = ProtocolHelper.DateTimeToUnixTimestampMs(ExpirationTime.Value);
-
-      if (updateActivityRequest.SetExtraData)
-        updateActivityRequest.ExtraData = ExtraData;
+      foreach (byte[] ignoredServerId in IgnoreServerIds)
+        updateActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
 
       ProxProtocolMessage res = CreateConversationRequest();
       res.Request.ConversationRequest.UpdateActivity = updateActivityRequest;

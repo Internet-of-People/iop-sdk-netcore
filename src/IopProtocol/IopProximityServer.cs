@@ -99,81 +99,61 @@ namespace Iop.Proximityserver {
             "c2F0aW9uUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDBIRCglwdWJsaWNLZXkY",
             "AiABKAwSEQoJY2hhbGxlbmdlGAMgASgMEhcKD2NsaWVudENoYWxsZW5nZRgE",
             "IAEoDCIqChVWZXJpZnlJZGVudGl0eVJlcXVlc3QSEQoJY2hhbGxlbmdlGAEg",
-            "ASgMIhgKFlZlcmlmeUlkZW50aXR5UmVzcG9uc2UilwIKFUNyZWF0ZUFjdGl2",
-            "aXR5UmVxdWVzdBIPCgd2ZXJzaW9uGAEgASgMEgoKAmlkGAIgASgNEkQKFHBy",
-            "b2ZpbGVTZXJ2ZXJDb250YWN0GAMgASgLMiYuaW9wLnByb3hpbWl0eXNlcnZl",
-            "ci5TZXJ2ZXJDb250YWN0SW5mbxIMCgR0eXBlGAQgASgJEhAKCGxhdGl0dWRl",
-            "GAUgASgPEhEKCWxvbmdpdHVkZRgGIAEoDxIRCglwcmVjaXNpb24YByABKA0S",
-            "EQoJc3RhcnRUaW1lGAggASgSEhYKDmV4cGlyYXRpb25UaW1lGAkgASgSEhEK",
-            "CWV4dHJhRGF0YRgKIAEoCRIXCg9pZ25vcmVTZXJ2ZXJJZHMYCyADKAwiTgoR",
-            "U2VydmVyQ29udGFjdEluZm8SEQoJbmV0d29ya0lkGAEgASgMEhEKCWlwQWRk",
-            "cmVzcxgCIAEoDBITCgtwcmltYXJ5UG9ydBgDIAEoDSIYChZDcmVhdGVBY3Rp",
-            "dml0eVJlc3BvbnNlIrsCChVVcGRhdGVBY3Rpdml0eVJlcXVlc3QSCgoCaWQY",
-            "ASABKA0SFQoNbm9Qcm9wYWdhdGlvbhgCIAEoCBITCgtzZXRMb2NhdGlvbhgD",
-            "IAEoCBIUCgxzZXRQcmVjaXNpb24YBCABKAgSFAoMc2V0U3RhcnRUaW1lGAUg",
-            "ASgIEhkKEXNldEV4cGlyYXRpb25UaW1lGAYgASgIEhQKDHNldEV4dHJhRGF0",
-            "YRgHIAEoCBIQCghsYXRpdHVkZRgIIAEoDxIRCglsb25naXR1ZGUYCSABKA8S",
-            "EQoJcHJlY2lzaW9uGAogASgNEhEKCXN0YXJ0VGltZRgLIAEoEhIWCg5leHBp",
-            "cmF0aW9uVGltZRgMIAEoEhIRCglleHRyYURhdGEYDSABKAkSFwoPaWdub3Jl",
-            "U2VydmVySWRzGA4gAygMIhgKFlVwZGF0ZUFjdGl2aXR5UmVzcG9uc2UiIwoV",
-            "RGVsZXRlQWN0aXZpdHlSZXF1ZXN0EgoKAmlkGAEgASgNIhgKFkRlbGV0ZUFj",
-            "dGl2aXR5UmVzcG9uc2UingIKFUFjdGl2aXR5U2VhcmNoUmVxdWVzdBIaChJp",
-            "bmNsdWRlUHJpbWFyeU9ubHkYASABKAgSHgoWbWF4UmVzcG9uc2VSZWNvcmRD",
-            "b3VudBgCIAEoDRIbChNtYXhUb3RhbFJlY29yZENvdW50GAMgASgNEgoKAmlk",
-            "GAQgASgNEhYKDm93bmVyTmV0d29ya0lkGAUgASgMEgwKBHR5cGUYBiABKAkS",
-            "FQoNc3RhcnROb3RBZnRlchgHIAEoEhIbChNleHBpcmF0aW9uTm90QmVmb3Jl",
-            "GAggASgSEhAKCGxhdGl0dWRlGAkgASgPEhEKCWxvbmdpdHVkZRgKIAEoDxIO",
-            "CgZyYWRpdXMYCyABKA0SEQoJZXh0cmFEYXRhGAwgASgJIq8BChZBY3Rpdml0",
-            "eVNlYXJjaFJlc3BvbnNlEhgKEHRvdGFsUmVjb3JkQ291bnQYASABKA0SHgoW",
-            "bWF4UmVzcG9uc2VSZWNvcmRDb3VudBgCIAEoDRIWCg5jb3ZlcmVkU2VydmVy",
-            "cxgDIAMoDBJDCgphY3Rpdml0aWVzGAQgAygLMi8uaW9wLnByb3hpbWl0eXNl",
-            "cnZlci5BY3Rpdml0eU5ldHdvcmtJbmZvcm1hdGlvbiLtAgoaQWN0aXZpdHlO",
-            "ZXR3b3JrSW5mb3JtYXRpb24SEQoJaXNQcmltYXJ5GAEgASgIEj0KDXByaW1h",
-            "cnlTZXJ2ZXIYAiABKAsyJi5pb3AucHJveGltaXR5c2VydmVyLlNlcnZlckNv",
-            "bnRhY3RJbmZvEg8KB3ZlcnNpb24YAyABKAwSCgoCaWQYBCABKA0SFgoOb3du",
-            "ZXJQdWJsaWNLZXkYBSABKAwSRAoUcHJvZmlsZVNlcnZlckNvbnRhY3QYBiAB",
-            "KAsyJi5pb3AucHJveGltaXR5c2VydmVyLlNlcnZlckNvbnRhY3RJbmZvEgwK",
-            "BHR5cGUYByABKAkSEAoIbGF0aXR1ZGUYCCABKA8SEQoJbG9uZ2l0dWRlGAkg",
-            "ASgPEhEKCXByZWNpc2lvbhgKIAEoDRIRCglzdGFydFRpbWUYCyABKBISFgoO",
-            "ZXhwaXJhdGlvblRpbWUYDCABKBISEQoJZXh0cmFEYXRhGA0gASgJIkUKGUFj",
-            "dGl2aXR5U2VhcmNoUGFydFJlcXVlc3QSEwoLcmVjb3JkSW5kZXgYASABKA0S",
-            "EwoLcmVjb3JkQ291bnQYAiABKA0iiwEKGkFjdGl2aXR5U2VhcmNoUGFydFJl",
-            "c3BvbnNlEhMKC3JlY29yZEluZGV4GAEgASgNEhMKC3JlY29yZENvdW50GAIg",
-            "ASgNEkMKCmFjdGl2aXRpZXMYAyADKAsyLy5pb3AucHJveGltaXR5c2VydmVy",
-            "LkFjdGl2aXR5TmV0d29ya0luZm9ybWF0aW9uImYKJlN0YXJ0TmVpZ2hib3Jo",
-            "b29kSW5pdGlhbGl6YXRpb25SZXF1ZXN0EhMKC3ByaW1hcnlQb3J0GAEgASgN",
-            "EhQKDG5laWdoYm9yUG9ydBgCIAEoDRIRCglpcEFkZHJlc3MYAyABKAwiKQon",
-            "U3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlc3BvbnNlIikKJ0Zp",
-            "bmlzaE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVxdWVzdCIqCihGaW5p",
-            "c2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlc3BvbnNlImcKJ05laWdo",
-            "Ym9yaG9vZFNoYXJlZEFjdGl2aXR5VXBkYXRlUmVxdWVzdBI8CgVpdGVtcxgB",
-            "IAMoCzItLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU2hhcmVkQWN0aXZpdHlVcGRh",
-            "dGVJdGVtIioKKE5laWdoYm9yaG9vZFNoYXJlZEFjdGl2aXR5VXBkYXRlUmVz",
-            "cG9uc2Ui5QEKGFNoYXJlZEFjdGl2aXR5VXBkYXRlSXRlbRI5CgNhZGQYASAB",
-            "KAsyKi5pb3AucHJveGltaXR5c2VydmVyLlNoYXJlZEFjdGl2aXR5QWRkSXRl",
-            "bUgAEj8KBmNoYW5nZRgCIAEoCzItLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU2hh",
-            "cmVkQWN0aXZpdHlDaGFuZ2VJdGVtSAASPwoGZGVsZXRlGAMgASgLMi0uaW9w",
-            "LnByb3hpbWl0eXNlcnZlci5TaGFyZWRBY3Rpdml0eURlbGV0ZUl0ZW1IAEIM",
-            "CgpBY3Rpb25UeXBlIpYCChVTaGFyZWRBY3Rpdml0eUFkZEl0ZW0SDwoHdmVy",
-            "c2lvbhgBIAEoDBIKCgJpZBgCIAEoDRIWCg5vd25lclB1YmxpY0tleRgDIAEo",
-            "DBJEChRwcm9maWxlU2VydmVyQ29udGFjdBgEIAEoCzImLmlvcC5wcm94aW1p",
-            "dHlzZXJ2ZXIuU2VydmVyQ29udGFjdEluZm8SDAoEdHlwZRgFIAEoCRIQCghs",
-            "YXRpdHVkZRgGIAEoDxIRCglsb25naXR1ZGUYByABKA8SEQoJcHJlY2lzaW9u",
-            "GAggASgNEhEKCXN0YXJ0VGltZRgJIAEoEhIWCg5leHBpcmF0aW9uVGltZRgK",
-            "IAEoEhIRCglleHRyYURhdGEYCyABKAkipgIKGFNoYXJlZEFjdGl2aXR5Q2hh",
-            "bmdlSXRlbRIKCgJpZBgBIAEoDRIWCg5vd25lck5ldHdvcmtJZBgCIAEoDBIT",
-            "CgtzZXRMb2NhdGlvbhgDIAEoCBIUCgxzZXRQcmVjaXNpb24YBCABKAgSFAoM",
-            "c2V0U3RhcnRUaW1lGAUgASgIEhkKEXNldEV4cGlyYXRpb25UaW1lGAYgASgI",
-            "EhQKDHNldEV4dHJhRGF0YRgHIAEoCBIQCghsYXRpdHVkZRgIIAEoDxIRCgls",
-            "b25naXR1ZGUYCSABKA8SEQoJcHJlY2lzaW9uGAogASgNEhEKCXN0YXJ0VGlt",
-            "ZRgLIAEoEhIWCg5leHBpcmF0aW9uVGltZRgMIAEoEhIRCglleHRyYURhdGEY",
-            "DSABKAkiPgoYU2hhcmVkQWN0aXZpdHlEZWxldGVJdGVtEgoKAmlkGAEgASgN",
-            "EhYKDm93bmVyTmV0d29ya0lkGAIgASgMIiAKHlN0b3BOZWlnaGJvcmhvb2RV",
-            "cGRhdGVzUmVxdWVzdCIhCh9TdG9wTmVpZ2hib3Job29kVXBkYXRlc1Jlc3Bv",
-            "bnNlIlYKGUNhblByb3hpbWl0eVNlcnZlckNvbnRhY3QSEQoJcHVibGljS2V5",
-            "GAEgASgMEhEKCWlwQWRkcmVzcxgCIAEoDBITCgtwcmltYXJ5UG9ydBgDIAEo",
-            "DSo3Cg5TZXJ2ZXJSb2xlVHlwZRILCgdQUklNQVJZEAASDAoITkVJR0hCT1IQ",
-            "ARIKCgZDTElFTlQQAmIGcHJvdG8z"));
+            "ASgMIhgKFlZlcmlmeUlkZW50aXR5UmVzcG9uc2UibAoVQ3JlYXRlQWN0aXZp",
+            "dHlSZXF1ZXN0EjoKCGFjdGl2aXR5GAEgASgLMiguaW9wLnByb3hpbWl0eXNl",
+            "cnZlci5BY3Rpdml0eUluZm9ybWF0aW9uEhcKD2lnbm9yZVNlcnZlcklkcxgC",
+            "IAMoDCKUAgoTQWN0aXZpdHlJbmZvcm1hdGlvbhIPCgd2ZXJzaW9uGAEgASgM",
+            "EgoKAmlkGAIgASgNEhYKDm93bmVyUHVibGljS2V5GAMgASgMEkQKFHByb2Zp",
+            "bGVTZXJ2ZXJDb250YWN0GAQgASgLMiYuaW9wLnByb3hpbWl0eXNlcnZlci5T",
+            "ZXJ2ZXJDb250YWN0SW5mbxIMCgR0eXBlGAUgASgJEhAKCGxhdGl0dWRlGAYg",
+            "ASgPEhEKCWxvbmdpdHVkZRgHIAEoDxIRCglwcmVjaXNpb24YCCABKA0SEQoJ",
+            "c3RhcnRUaW1lGAkgASgSEhYKDmV4cGlyYXRpb25UaW1lGAogASgSEhEKCWV4",
+            "dHJhRGF0YRgLIAEoCSJOChFTZXJ2ZXJDb250YWN0SW5mbxIRCgluZXR3b3Jr",
+            "SWQYASABKAwSEQoJaXBBZGRyZXNzGAIgASgMEhMKC3ByaW1hcnlQb3J0GAMg",
+            "ASgNIhgKFkNyZWF0ZUFjdGl2aXR5UmVzcG9uc2UigwEKFVVwZGF0ZUFjdGl2",
+            "aXR5UmVxdWVzdBI6CghhY3Rpdml0eRgBIAEoCzIoLmlvcC5wcm94aW1pdHlz",
+            "ZXJ2ZXIuQWN0aXZpdHlJbmZvcm1hdGlvbhIVCg1ub1Byb3BhZ2F0aW9uGAIg",
+            "ASgIEhcKD2lnbm9yZVNlcnZlcklkcxgDIAMoDCIYChZVcGRhdGVBY3Rpdml0",
+            "eVJlc3BvbnNlIiMKFURlbGV0ZUFjdGl2aXR5UmVxdWVzdBIKCgJpZBgBIAEo",
+            "DSIYChZEZWxldGVBY3Rpdml0eVJlc3BvbnNlIp4CChVBY3Rpdml0eVNlYXJj",
+            "aFJlcXVlc3QSGgoSaW5jbHVkZVByaW1hcnlPbmx5GAEgASgIEh4KFm1heFJl",
+            "c3BvbnNlUmVjb3JkQ291bnQYAiABKA0SGwoTbWF4VG90YWxSZWNvcmRDb3Vu",
+            "dBgDIAEoDRIKCgJpZBgEIAEoDRIWCg5vd25lck5ldHdvcmtJZBgFIAEoDBIM",
+            "CgR0eXBlGAYgASgJEhUKDXN0YXJ0Tm90QWZ0ZXIYByABKBISGwoTZXhwaXJh",
+            "dGlvbk5vdEJlZm9yZRgIIAEoEhIQCghsYXRpdHVkZRgJIAEoDxIRCglsb25n",
+            "aXR1ZGUYCiABKA8SDgoGcmFkaXVzGAsgASgNEhEKCWV4dHJhRGF0YRgMIAEo",
+            "CSKvAQoWQWN0aXZpdHlTZWFyY2hSZXNwb25zZRIYChB0b3RhbFJlY29yZENv",
+            "dW50GAEgASgNEh4KFm1heFJlc3BvbnNlUmVjb3JkQ291bnQYAiABKA0SFgoO",
+            "Y292ZXJlZFNlcnZlcnMYAyADKAwSQwoKYWN0aXZpdGllcxgEIAMoCzIvLmlv",
+            "cC5wcm94aW1pdHlzZXJ2ZXIuQWN0aXZpdHlOZXR3b3JrSW5mb3JtYXRpb24i",
+            "qgEKGkFjdGl2aXR5TmV0d29ya0luZm9ybWF0aW9uEhEKCWlzUHJpbWFyeRgB",
+            "IAEoCBI9Cg1wcmltYXJ5U2VydmVyGAIgASgLMiYuaW9wLnByb3hpbWl0eXNl",
+            "cnZlci5TZXJ2ZXJDb250YWN0SW5mbxI6CghhY3Rpdml0eRgDIAEoCzIoLmlv",
+            "cC5wcm94aW1pdHlzZXJ2ZXIuQWN0aXZpdHlJbmZvcm1hdGlvbiJFChlBY3Rp",
+            "dml0eVNlYXJjaFBhcnRSZXF1ZXN0EhMKC3JlY29yZEluZGV4GAEgASgNEhMK",
+            "C3JlY29yZENvdW50GAIgASgNIosBChpBY3Rpdml0eVNlYXJjaFBhcnRSZXNw",
+            "b25zZRITCgtyZWNvcmRJbmRleBgBIAEoDRITCgtyZWNvcmRDb3VudBgCIAEo",
+            "DRJDCgphY3Rpdml0aWVzGAMgAygLMi8uaW9wLnByb3hpbWl0eXNlcnZlci5B",
+            "Y3Rpdml0eU5ldHdvcmtJbmZvcm1hdGlvbiJmCiZTdGFydE5laWdoYm9yaG9v",
+            "ZEluaXRpYWxpemF0aW9uUmVxdWVzdBITCgtwcmltYXJ5UG9ydBgBIAEoDRIU",
+            "CgxuZWlnaGJvclBvcnQYAiABKA0SEQoJaXBBZGRyZXNzGAMgASgMIikKJ1N0",
+            "YXJ0TmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25SZXNwb25zZSIpCidGaW5p",
+            "c2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlcXVlc3QiKgooRmluaXNo",
+            "TmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25SZXNwb25zZSJnCidOZWlnaGJv",
+            "cmhvb2RTaGFyZWRBY3Rpdml0eVVwZGF0ZVJlcXVlc3QSPAoFaXRlbXMYASAD",
+            "KAsyLS5pb3AucHJveGltaXR5c2VydmVyLlNoYXJlZEFjdGl2aXR5VXBkYXRl",
+            "SXRlbSIqCihOZWlnaGJvcmhvb2RTaGFyZWRBY3Rpdml0eVVwZGF0ZVJlc3Bv",
+            "bnNlItQBChhTaGFyZWRBY3Rpdml0eVVwZGF0ZUl0ZW0SNwoDYWRkGAEgASgL",
+            "MiguaW9wLnByb3hpbWl0eXNlcnZlci5BY3Rpdml0eUluZm9ybWF0aW9uSAAS",
+            "OgoGY2hhbmdlGAIgASgLMiguaW9wLnByb3hpbWl0eXNlcnZlci5BY3Rpdml0",
+            "eUluZm9ybWF0aW9uSAASNQoGZGVsZXRlGAMgASgLMiMuaW9wLnByb3hpbWl0",
+            "eXNlcnZlci5BY3Rpdml0eUZ1bGxJZEgAQgwKCkFjdGlvblR5cGUiNAoOQWN0",
+            "aXZpdHlGdWxsSWQSCgoCaWQYASABKA0SFgoOb3duZXJOZXR3b3JrSWQYAiAB",
+            "KAwiIAoeU3RvcE5laWdoYm9yaG9vZFVwZGF0ZXNSZXF1ZXN0IiEKH1N0b3BO",
+            "ZWlnaGJvcmhvb2RVcGRhdGVzUmVzcG9uc2UiVgoZQ2FuUHJveGltaXR5U2Vy",
+            "dmVyQ29udGFjdBIRCglwdWJsaWNLZXkYASABKAwSEQoJaXBBZGRyZXNzGAIg",
+            "ASgMEhMKC3ByaW1hcnlQb3J0GAMgASgNKjcKDlNlcnZlclJvbGVUeXBlEgsK",
+            "B1BSSU1BUlkQABIMCghORUlHSEJPUhABEgoKBkNMSUVOVBACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Iop.Shared.IopSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Iop.Proximityserver.ServerRoleType), }, new pbr::GeneratedClrTypeInfo[] {
@@ -194,16 +174,17 @@ namespace Iop.Proximityserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StartConversationResponse), global::Iop.Proximityserver.StartConversationResponse.Parser, new[]{ "Version", "PublicKey", "Challenge", "ClientChallenge" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.VerifyIdentityRequest), global::Iop.Proximityserver.VerifyIdentityRequest.Parser, new[]{ "Challenge" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.VerifyIdentityResponse), global::Iop.Proximityserver.VerifyIdentityResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.CreateActivityRequest), global::Iop.Proximityserver.CreateActivityRequest.Parser, new[]{ "Version", "Id", "ProfileServerContact", "Type", "Latitude", "Longitude", "Precision", "StartTime", "ExpirationTime", "ExtraData", "IgnoreServerIds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.CreateActivityRequest), global::Iop.Proximityserver.CreateActivityRequest.Parser, new[]{ "Activity", "IgnoreServerIds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivityInformation), global::Iop.Proximityserver.ActivityInformation.Parser, new[]{ "Version", "Id", "OwnerPublicKey", "ProfileServerContact", "Type", "Latitude", "Longitude", "Precision", "StartTime", "ExpirationTime", "ExtraData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ServerContactInfo), global::Iop.Proximityserver.ServerContactInfo.Parser, new[]{ "NetworkId", "IpAddress", "PrimaryPort" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.CreateActivityResponse), global::Iop.Proximityserver.CreateActivityResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.UpdateActivityRequest), global::Iop.Proximityserver.UpdateActivityRequest.Parser, new[]{ "Id", "NoPropagation", "SetLocation", "SetPrecision", "SetStartTime", "SetExpirationTime", "SetExtraData", "Latitude", "Longitude", "Precision", "StartTime", "ExpirationTime", "ExtraData", "IgnoreServerIds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.UpdateActivityRequest), global::Iop.Proximityserver.UpdateActivityRequest.Parser, new[]{ "Activity", "NoPropagation", "IgnoreServerIds" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.UpdateActivityResponse), global::Iop.Proximityserver.UpdateActivityResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.DeleteActivityRequest), global::Iop.Proximityserver.DeleteActivityRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.DeleteActivityResponse), global::Iop.Proximityserver.DeleteActivityResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchRequest), global::Iop.Proximityserver.ActivitySearchRequest.Parser, new[]{ "IncludePrimaryOnly", "MaxResponseRecordCount", "MaxTotalRecordCount", "Id", "OwnerNetworkId", "Type", "StartNotAfter", "ExpirationNotBefore", "Latitude", "Longitude", "Radius", "ExtraData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchResponse), global::Iop.Proximityserver.ActivitySearchResponse.Parser, new[]{ "TotalRecordCount", "MaxResponseRecordCount", "CoveredServers", "Activities" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivityNetworkInformation), global::Iop.Proximityserver.ActivityNetworkInformation.Parser, new[]{ "IsPrimary", "PrimaryServer", "Version", "Id", "OwnerPublicKey", "ProfileServerContact", "Type", "Latitude", "Longitude", "Precision", "StartTime", "ExpirationTime", "ExtraData" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivityNetworkInformation), global::Iop.Proximityserver.ActivityNetworkInformation.Parser, new[]{ "IsPrimary", "PrimaryServer", "Activity" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchPartRequest), global::Iop.Proximityserver.ActivitySearchPartRequest.Parser, new[]{ "RecordIndex", "RecordCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchPartResponse), global::Iop.Proximityserver.ActivitySearchPartResponse.Parser, new[]{ "RecordIndex", "RecordCount", "Activities" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StartNeighborhoodInitializationRequest), global::Iop.Proximityserver.StartNeighborhoodInitializationRequest.Parser, new[]{ "PrimaryPort", "NeighborPort", "IpAddress" }, null, null, null),
@@ -213,9 +194,7 @@ namespace Iop.Proximityserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest), global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest.Parser, new[]{ "Items" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse), global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityUpdateItem), global::Iop.Proximityserver.SharedActivityUpdateItem.Parser, new[]{ "Add", "Change", "Delete" }, new[]{ "ActionType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityAddItem), global::Iop.Proximityserver.SharedActivityAddItem.Parser, new[]{ "Version", "Id", "OwnerPublicKey", "ProfileServerContact", "Type", "Latitude", "Longitude", "Precision", "StartTime", "ExpirationTime", "ExtraData" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityChangeItem), global::Iop.Proximityserver.SharedActivityChangeItem.Parser, new[]{ "Id", "OwnerNetworkId", "SetLocation", "SetPrecision", "SetStartTime", "SetExpirationTime", "SetExtraData", "Latitude", "Longitude", "Precision", "StartTime", "ExpirationTime", "ExtraData" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityDeleteItem), global::Iop.Proximityserver.SharedActivityDeleteItem.Parser, new[]{ "Id", "OwnerNetworkId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivityFullId), global::Iop.Proximityserver.ActivityFullId.Parser, new[]{ "Id", "OwnerNetworkId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest), global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse), global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.CanProximityServerContact), global::Iop.Proximityserver.CanProximityServerContact.Parser, new[]{ "PublicKey", "IpAddress", "PrimaryPort" }, null, null, null)
@@ -4049,8 +4028,162 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateActivityRequest(CreateActivityRequest other) : this() {
+      Activity = other.activity_ != null ? other.Activity.Clone() : null;
+      ignoreServerIds_ = other.ignoreServerIds_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateActivityRequest Clone() {
+      return new CreateActivityRequest(this);
+    }
+
+    /// <summary>Field number for the "activity" field.</summary>
+    public const int ActivityFieldNumber = 1;
+    private global::Iop.Proximityserver.ActivityInformation activity_;
+    /// <summary>
+    ///  Description of the activity.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivityInformation Activity {
+      get { return activity_; }
+      set {
+        activity_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ignoreServerIds" field.</summary>
+    public const int IgnoreServerIdsFieldNumber = 2;
+    private static readonly pb::FieldCodec<pb::ByteString> _repeated_ignoreServerIds_codec
+        = pb::FieldCodec.ForBytes(18);
+    private readonly pbc::RepeatedField<pb::ByteString> ignoreServerIds_ = new pbc::RepeatedField<pb::ByteString>();
+    /// <summary>
+    ///  List of network identifiers of proximity servers to ignore. The list can be empty.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<pb::ByteString> IgnoreServerIds {
+      get { return ignoreServerIds_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CreateActivityRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CreateActivityRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Activity, other.Activity)) return false;
+      if(!ignoreServerIds_.Equals(other.ignoreServerIds_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (activity_ != null) hash ^= Activity.GetHashCode();
+      hash ^= ignoreServerIds_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (activity_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Activity);
+      }
+      ignoreServerIds_.WriteTo(output, _repeated_ignoreServerIds_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (activity_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Activity);
+      }
+      size += ignoreServerIds_.CalculateSize(_repeated_ignoreServerIds_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CreateActivityRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.activity_ != null) {
+        if (activity_ == null) {
+          activity_ = new global::Iop.Proximityserver.ActivityInformation();
+        }
+        Activity.MergeFrom(other.Activity);
+      }
+      ignoreServerIds_.Add(other.ignoreServerIds_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (activity_ == null) {
+              activity_ = new global::Iop.Proximityserver.ActivityInformation();
+            }
+            input.ReadMessage(activity_);
+            break;
+          }
+          case 18: {
+            ignoreServerIds_.AddEntriesFrom(input, _repeated_ignoreServerIds_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///
+  ///  Decription of an activity.
+  /// </summary>
+  public sealed partial class ActivityInformation : pb::IMessage<ActivityInformation> {
+    private static readonly pb::MessageParser<ActivityInformation> _parser = new pb::MessageParser<ActivityInformation>(() => new ActivityInformation());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ActivityInformation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ActivityInformation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ActivityInformation(ActivityInformation other) : this() {
       version_ = other.version_;
       id_ = other.id_;
+      ownerPublicKey_ = other.ownerPublicKey_;
       ProfileServerContact = other.profileServerContact_ != null ? other.ProfileServerContact.Clone() : null;
       type_ = other.type_;
       latitude_ = other.latitude_;
@@ -4059,12 +4192,11 @@ namespace Iop.Proximityserver {
       startTime_ = other.startTime_;
       expirationTime_ = other.expirationTime_;
       extraData_ = other.extraData_;
-      ignoreServerIds_ = other.ignoreServerIds_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateActivityRequest Clone() {
-      return new CreateActivityRequest(this);
+    public ActivityInformation Clone() {
+      return new ActivityInformation(this);
     }
 
     /// <summary>Field number for the "version" field.</summary>
@@ -4095,11 +4227,27 @@ namespace Iop.Proximityserver {
       }
     }
 
+    /// <summary>Field number for the "ownerPublicKey" field.</summary>
+    public const int OwnerPublicKeyFieldNumber = 3;
+    private pb::ByteString ownerPublicKey_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  is this activity ID combined with the user’s network identifier. It is client’s responsibility 
+    ///  not to present two activities with the same activity ID to the proximity network.
+    ///  0 is not a valid activity identifier.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString OwnerPublicKey {
+      get { return ownerPublicKey_; }
+      set {
+        ownerPublicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "profileServerContact" field.</summary>
-    public const int ProfileServerContactFieldNumber = 3;
+    public const int ProfileServerContactFieldNumber = 4;
     private global::Iop.Proximityserver.ServerContactInfo profileServerContact_;
     /// <summary>
-    ///  Contact information to the client’s profile server.
+    ///  Contact information to the owner's profile server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ServerContactInfo ProfileServerContact {
@@ -4110,7 +4258,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 4;
+    public const int TypeFieldNumber = 5;
     private string type_ = "";
     /// <summary>
     ///  Type of activity in human readable form, non-empty string, max 64 bytes long.
@@ -4124,10 +4272,10 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 5;
+    public const int LatitudeFieldNumber = 6;
     private int latitude_;
     /// <summary>
-    ///  LocationType. GPS location latitude information.
+    ///  LocationType. GPS location latitude information. Together with 'longitude' and 'precision' this provides information 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Latitude {
@@ -4138,10 +4286,12 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 6;
+    public const int LongitudeFieldNumber = 7;
     private int longitude_;
     /// <summary>
-    ///  LocationType. GPS location longitude information.
+    ///  the activity location. On non-primary proximity servers, this is not the latest reported location of the activity, 
+    ///  but rather the last known location to the server being queried, which will often be the original location of the activity.
+    ///  On primary proximity servers, the location information is current.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Longitude {
@@ -4152,7 +4302,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "precision" field.</summary>
-    public const int PrecisionFieldNumber = 7;
+    public const int PrecisionFieldNumber = 8;
     private uint precision_;
     /// <summary>
     ///  Precision information in metres is an integer between 0 and 1,000.
@@ -4166,7 +4316,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "startTime" field.</summary>
-    public const int StartTimeFieldNumber = 8;
+    public const int StartTimeFieldNumber = 9;
     private long startTime_;
     /// <summary>
     ///  TimestampType. Time when the activity starts. This can be in the past for already running 
@@ -4180,7 +4330,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "expirationTime" field.</summary>
-    public const int ExpirationTimeFieldNumber = 9;
+    public const int ExpirationTimeFieldNumber = 10;
     private long expirationTime_;
     /// <summary>
     ///  or past activities as well as in the future for future activities.
@@ -4194,7 +4344,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 10;
+    public const int ExtraDataFieldNumber = 11;
     private string extraData_ = "";
     /// <summary>
     ///  Semicolon separated 'key=value' list or empty string, max 2048 bytes long.
@@ -4207,26 +4357,13 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "ignoreServerIds" field.</summary>
-    public const int IgnoreServerIdsFieldNumber = 11;
-    private static readonly pb::FieldCodec<pb::ByteString> _repeated_ignoreServerIds_codec
-        = pb::FieldCodec.ForBytes(90);
-    private readonly pbc::RepeatedField<pb::ByteString> ignoreServerIds_ = new pbc::RepeatedField<pb::ByteString>();
-    /// <summary>
-    ///  List of network identifiers of proximity servers to ignore. The list can be empty.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<pb::ByteString> IgnoreServerIds {
-      get { return ignoreServerIds_; }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CreateActivityRequest);
+      return Equals(other as ActivityInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CreateActivityRequest other) {
+    public bool Equals(ActivityInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -4235,6 +4372,7 @@ namespace Iop.Proximityserver {
       }
       if (Version != other.Version) return false;
       if (Id != other.Id) return false;
+      if (OwnerPublicKey != other.OwnerPublicKey) return false;
       if (!object.Equals(ProfileServerContact, other.ProfileServerContact)) return false;
       if (Type != other.Type) return false;
       if (Latitude != other.Latitude) return false;
@@ -4243,7 +4381,6 @@ namespace Iop.Proximityserver {
       if (StartTime != other.StartTime) return false;
       if (ExpirationTime != other.ExpirationTime) return false;
       if (ExtraData != other.ExtraData) return false;
-      if(!ignoreServerIds_.Equals(other.ignoreServerIds_)) return false;
       return true;
     }
 
@@ -4252,6 +4389,7 @@ namespace Iop.Proximityserver {
       int hash = 1;
       if (Version.Length != 0) hash ^= Version.GetHashCode();
       if (Id != 0) hash ^= Id.GetHashCode();
+      if (OwnerPublicKey.Length != 0) hash ^= OwnerPublicKey.GetHashCode();
       if (profileServerContact_ != null) hash ^= ProfileServerContact.GetHashCode();
       if (Type.Length != 0) hash ^= Type.GetHashCode();
       if (Latitude != 0) hash ^= Latitude.GetHashCode();
@@ -4260,7 +4398,6 @@ namespace Iop.Proximityserver {
       if (StartTime != 0L) hash ^= StartTime.GetHashCode();
       if (ExpirationTime != 0L) hash ^= ExpirationTime.GetHashCode();
       if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
-      hash ^= ignoreServerIds_.GetHashCode();
       return hash;
     }
 
@@ -4279,39 +4416,42 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(16);
         output.WriteUInt32(Id);
       }
-      if (profileServerContact_ != null) {
+      if (OwnerPublicKey.Length != 0) {
         output.WriteRawTag(26);
+        output.WriteBytes(OwnerPublicKey);
+      }
+      if (profileServerContact_ != null) {
+        output.WriteRawTag(34);
         output.WriteMessage(ProfileServerContact);
       }
       if (Type.Length != 0) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteString(Type);
       }
       if (Latitude != 0) {
-        output.WriteRawTag(45);
+        output.WriteRawTag(53);
         output.WriteSFixed32(Latitude);
       }
       if (Longitude != 0) {
-        output.WriteRawTag(53);
+        output.WriteRawTag(61);
         output.WriteSFixed32(Longitude);
       }
       if (Precision != 0) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(64);
         output.WriteUInt32(Precision);
       }
       if (StartTime != 0L) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(72);
         output.WriteSInt64(StartTime);
       }
       if (ExpirationTime != 0L) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(80);
         output.WriteSInt64(ExpirationTime);
       }
       if (ExtraData.Length != 0) {
-        output.WriteRawTag(82);
+        output.WriteRawTag(90);
         output.WriteString(ExtraData);
       }
-      ignoreServerIds_.WriteTo(output, _repeated_ignoreServerIds_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4322,6 +4462,9 @@ namespace Iop.Proximityserver {
       }
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      }
+      if (OwnerPublicKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(OwnerPublicKey);
       }
       if (profileServerContact_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileServerContact);
@@ -4347,12 +4490,11 @@ namespace Iop.Proximityserver {
       if (ExtraData.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
       }
-      size += ignoreServerIds_.CalculateSize(_repeated_ignoreServerIds_codec);
       return size;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CreateActivityRequest other) {
+    public void MergeFrom(ActivityInformation other) {
       if (other == null) {
         return;
       }
@@ -4361,6 +4503,9 @@ namespace Iop.Proximityserver {
       }
       if (other.Id != 0) {
         Id = other.Id;
+      }
+      if (other.OwnerPublicKey.Length != 0) {
+        OwnerPublicKey = other.OwnerPublicKey;
       }
       if (other.profileServerContact_ != null) {
         if (profileServerContact_ == null) {
@@ -4389,7 +4534,6 @@ namespace Iop.Proximityserver {
       if (other.ExtraData.Length != 0) {
         ExtraData = other.ExtraData;
       }
-      ignoreServerIds_.Add(other.ignoreServerIds_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4409,42 +4553,42 @@ namespace Iop.Proximityserver {
             break;
           }
           case 26: {
+            OwnerPublicKey = input.ReadBytes();
+            break;
+          }
+          case 34: {
             if (profileServerContact_ == null) {
               profileServerContact_ = new global::Iop.Proximityserver.ServerContactInfo();
             }
             input.ReadMessage(profileServerContact_);
             break;
           }
-          case 34: {
+          case 42: {
             Type = input.ReadString();
             break;
           }
-          case 45: {
+          case 53: {
             Latitude = input.ReadSFixed32();
             break;
           }
-          case 53: {
+          case 61: {
             Longitude = input.ReadSFixed32();
             break;
           }
-          case 56: {
+          case 64: {
             Precision = input.ReadUInt32();
             break;
           }
-          case 64: {
+          case 72: {
             StartTime = input.ReadSInt64();
             break;
           }
-          case 72: {
+          case 80: {
             ExpirationTime = input.ReadSInt64();
             break;
           }
-          case 82: {
-            ExtraData = input.ReadString();
-            break;
-          }
           case 90: {
-            ignoreServerIds_.AddEntriesFrom(input, _repeated_ignoreServerIds_codec);
+            ExtraData = input.ReadString();
             break;
           }
         }
@@ -4464,7 +4608,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4648,18 +4792,19 @@ namespace Iop.Proximityserver {
   ///    * ERROR_REJECTED - The server knows a proximity server that is closer to the location of the activity and its ID is not on the list of ignored servers.
   ///      * Response.details - Set to hexadecimally encoded network identifier of the proximity server that is closer to the activity location than the target server.
   ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "version" - 'CreateActivityRequest.version' does not contain a valid version information.
-  ///      * Response.details == "id" - 'CreateActivityRequest.id' is not a valid activity identifier.
-  ///      * Response.details == "profileServerContact.networkId" - 'CreateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
-  ///      * Response.details == "profileServerContact.ipAddress" - 'CreateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
-  ///      * Response.details == "profileServerContact.primaryPort" - 'CreateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65535.
-  ///      * Response.details == "type" - 'CreateActivityRequest.type' is not a valid activity type.
-  ///      * Response.details == "latitude" - 'CreateActivityRequest.latitude' is not a valid latitude information.
-  ///      * Response.details == "longitude" - 'CreateActivityRequest.longitude' is not a valid longitude information.
-  ///      * Response.details == "precision" - 'CreateActivityRequest.precision' must be an integer between 0 and 1,000.
-  ///      * Response.details == "startTime" - 'CreateActivityRequest.startTime' does not contain a valid start time information.
-  ///      * Response.details == "expirationTime" - 'CreateActivityRequest.expirationTime' does not contain a valid expiration time information.
-  ///      * Response.details == "extraData" - 'CreateActivityRequest.extraData' does not contain a valid extra data information.
+  ///      * Response.details == "activity.version" - 'CreateActivityRequest.activity.version' does not contain a valid version information.
+  ///      * Response.details == "activity.id" - 'CreateActivityRequest.activity.id' is not a valid activity identifier.
+  ///      * Response.details == "activity.ownerPublicKey" - 'CreateActivityRequest.ownerPublicKey.id' is not the public key of the client who sent the request.
+  ///      * Response.details == "activity.profileServerContact.networkId" - 'CreateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
+  ///      * Response.details == "activity.profileServerContact.ipAddress" - 'CreateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
+  ///      * Response.details == "activity.profileServerContact.primaryPort" - 'CreateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65,535.
+  ///      * Response.details == "activity.type" - 'CreateActivityRequest.activity.type' is not a valid activity type.
+  ///      * Response.details == "activity.latitude" - 'CreateActivityRequest.activity.latitude' is not a valid latitude information.
+  ///      * Response.details == "activity.longitude" - 'CreateActivityRequest.activity.longitude' is not a valid longitude information.
+  ///      * Response.details == "activity.precision" - 'CreateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
+  ///      * Response.details == "activity.startTime" - 'CreateActivityRequest.activity.startTime' does not contain a valid start time information.
+  ///      * Response.details == "activity.expirationTime" - 'CreateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'.
+  ///      * Response.details == "activity.extraData" - 'CreateActivityRequest.activity.extraData' does not contain a valid extra data information.
   ///      * Response.details == "ignoreServerIds" - 'CreateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
   /// </summary>
   public sealed partial class CreateActivityResponse : pb::IMessage<CreateActivityResponse> {
@@ -4669,7 +4814,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4763,11 +4908,6 @@ namespace Iop.Proximityserver {
   ///  its database and propagates this information to its neighborhood. The proximity server will not refuse 
   ///  the update if the suggested new primary proximity server is on the list of proximity servers to ignore.
   ///
-  ///  If a client needs to update something that this request does not allow to update, it means that such 
-  ///  a change is considered as a fundamental change, in which case the activity should be deleted and recreated.
-  ///  This includes, for example, a change in client's profile server contact information, activity structure 
-  ///  version information, or its type.
-  ///
   ///  Roles: client
   ///
   ///  Conversation status: Verified
@@ -4779,7 +4919,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4796,19 +4936,8 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateActivityRequest(UpdateActivityRequest other) : this() {
-      id_ = other.id_;
+      Activity = other.activity_ != null ? other.Activity.Clone() : null;
       noPropagation_ = other.noPropagation_;
-      setLocation_ = other.setLocation_;
-      setPrecision_ = other.setPrecision_;
-      setStartTime_ = other.setStartTime_;
-      setExpirationTime_ = other.setExpirationTime_;
-      setExtraData_ = other.setExtraData_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      precision_ = other.precision_;
-      startTime_ = other.startTime_;
-      expirationTime_ = other.expirationTime_;
-      extraData_ = other.extraData_;
       ignoreServerIds_ = other.ignoreServerIds_.Clone();
     }
 
@@ -4817,17 +4946,17 @@ namespace Iop.Proximityserver {
       return new UpdateActivityRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
+    /// <summary>Field number for the "activity" field.</summary>
+    public const int ActivityFieldNumber = 1;
+    private global::Iop.Proximityserver.ActivityInformation activity_;
     /// <summary>
-    ///  Unique identifier of the client’s activity. 
+    ///  Description of the activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
+    public global::Iop.Proximityserver.ActivityInformation Activity {
+      get { return activity_; }
       set {
-        id_ = value;
+        activity_ = value;
       }
     }
 
@@ -4845,164 +4974,10 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "setLocation" field.</summary>
-    public const int SetLocationFieldNumber = 3;
-    private bool setLocation_;
-    /// <summary>
-    ///  Activity location should be updated. 'latitude' and 'longitude' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetLocation {
-      get { return setLocation_; }
-      set {
-        setLocation_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setPrecision" field.</summary>
-    public const int SetPrecisionFieldNumber = 4;
-    private bool setPrecision_;
-    /// <summary>
-    ///  Activity location's precision should be updated. 'precision' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetPrecision {
-      get { return setPrecision_; }
-      set {
-        setPrecision_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setStartTime" field.</summary>
-    public const int SetStartTimeFieldNumber = 5;
-    private bool setStartTime_;
-    /// <summary>
-    ///  Activity start time should be updated. 'startTime' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetStartTime {
-      get { return setStartTime_; }
-      set {
-        setStartTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setExpirationTime" field.</summary>
-    public const int SetExpirationTimeFieldNumber = 6;
-    private bool setExpirationTime_;
-    /// <summary>
-    ///  Activity expiration time should be updated. 'expirationTime' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetExpirationTime {
-      get { return setExpirationTime_; }
-      set {
-        setExpirationTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setExtraData" field.</summary>
-    public const int SetExtraDataFieldNumber = 7;
-    private bool setExtraData_;
-    /// <summary>
-    ///  Activity extra data should be updated. 'extraData' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetExtraData {
-      get { return setExtraData_; }
-      set {
-        setExtraData_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 8;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. GPS location latitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 9;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "precision" field.</summary>
-    public const int PrecisionFieldNumber = 10;
-    private uint precision_;
-    /// <summary>
-    ///  Precision information in metres is an integer between 0 and 1,000.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Precision {
-      get { return precision_; }
-      set {
-        precision_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "startTime" field.</summary>
-    public const int StartTimeFieldNumber = 11;
-    private long startTime_;
-    /// <summary>
-    ///  TimestampType. Time when the activity starts. This can be in the past for already running 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long StartTime {
-      get { return startTime_; }
-      set {
-        startTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "expirationTime" field.</summary>
-    public const int ExpirationTimeFieldNumber = 12;
-    private long expirationTime_;
-    /// <summary>
-    ///  or past activities as well as in the future for future activities.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ExpirationTime {
-      get { return expirationTime_; }
-      set {
-        expirationTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 13;
-    private string extraData_ = "";
-    /// <summary>
-    ///  Semicolon separated 'key=value' list or empty string, max 2048 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "ignoreServerIds" field.</summary>
-    public const int IgnoreServerIdsFieldNumber = 14;
+    public const int IgnoreServerIdsFieldNumber = 3;
     private static readonly pb::FieldCodec<pb::ByteString> _repeated_ignoreServerIds_codec
-        = pb::FieldCodec.ForBytes(114);
+        = pb::FieldCodec.ForBytes(26);
     private readonly pbc::RepeatedField<pb::ByteString> ignoreServerIds_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
     ///  List of network identifiers of proximity servers to ignore. The list can be empty.
@@ -5025,19 +5000,8 @@ namespace Iop.Proximityserver {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (!object.Equals(Activity, other.Activity)) return false;
       if (NoPropagation != other.NoPropagation) return false;
-      if (SetLocation != other.SetLocation) return false;
-      if (SetPrecision != other.SetPrecision) return false;
-      if (SetStartTime != other.SetStartTime) return false;
-      if (SetExpirationTime != other.SetExpirationTime) return false;
-      if (SetExtraData != other.SetExtraData) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (Precision != other.Precision) return false;
-      if (StartTime != other.StartTime) return false;
-      if (ExpirationTime != other.ExpirationTime) return false;
-      if (ExtraData != other.ExtraData) return false;
       if(!ignoreServerIds_.Equals(other.ignoreServerIds_)) return false;
       return true;
     }
@@ -5045,19 +5009,8 @@ namespace Iop.Proximityserver {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (activity_ != null) hash ^= Activity.GetHashCode();
       if (NoPropagation != false) hash ^= NoPropagation.GetHashCode();
-      if (SetLocation != false) hash ^= SetLocation.GetHashCode();
-      if (SetPrecision != false) hash ^= SetPrecision.GetHashCode();
-      if (SetStartTime != false) hash ^= SetStartTime.GetHashCode();
-      if (SetExpirationTime != false) hash ^= SetExpirationTime.GetHashCode();
-      if (SetExtraData != false) hash ^= SetExtraData.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (Precision != 0) hash ^= Precision.GetHashCode();
-      if (StartTime != 0L) hash ^= StartTime.GetHashCode();
-      if (ExpirationTime != 0L) hash ^= ExpirationTime.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
       hash ^= ignoreServerIds_.GetHashCode();
       return hash;
     }
@@ -5069,57 +5022,13 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Id);
+      if (activity_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Activity);
       }
       if (NoPropagation != false) {
         output.WriteRawTag(16);
         output.WriteBool(NoPropagation);
-      }
-      if (SetLocation != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(SetLocation);
-      }
-      if (SetPrecision != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(SetPrecision);
-      }
-      if (SetStartTime != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(SetStartTime);
-      }
-      if (SetExpirationTime != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(SetExpirationTime);
-      }
-      if (SetExtraData != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(SetExtraData);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(69);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(77);
-        output.WriteSFixed32(Longitude);
-      }
-      if (Precision != 0) {
-        output.WriteRawTag(80);
-        output.WriteUInt32(Precision);
-      }
-      if (StartTime != 0L) {
-        output.WriteRawTag(88);
-        output.WriteSInt64(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        output.WriteRawTag(96);
-        output.WriteSInt64(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(106);
-        output.WriteString(ExtraData);
       }
       ignoreServerIds_.WriteTo(output, _repeated_ignoreServerIds_codec);
     }
@@ -5127,44 +5036,11 @@ namespace Iop.Proximityserver {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      if (activity_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Activity);
       }
       if (NoPropagation != false) {
         size += 1 + 1;
-      }
-      if (SetLocation != false) {
-        size += 1 + 1;
-      }
-      if (SetPrecision != false) {
-        size += 1 + 1;
-      }
-      if (SetStartTime != false) {
-        size += 1 + 1;
-      }
-      if (SetExpirationTime != false) {
-        size += 1 + 1;
-      }
-      if (SetExtraData != false) {
-        size += 1 + 1;
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (Precision != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Precision);
-      }
-      if (StartTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
       }
       size += ignoreServerIds_.CalculateSize(_repeated_ignoreServerIds_codec);
       return size;
@@ -5175,44 +5051,14 @@ namespace Iop.Proximityserver {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.activity_ != null) {
+        if (activity_ == null) {
+          activity_ = new global::Iop.Proximityserver.ActivityInformation();
+        }
+        Activity.MergeFrom(other.Activity);
       }
       if (other.NoPropagation != false) {
         NoPropagation = other.NoPropagation;
-      }
-      if (other.SetLocation != false) {
-        SetLocation = other.SetLocation;
-      }
-      if (other.SetPrecision != false) {
-        SetPrecision = other.SetPrecision;
-      }
-      if (other.SetStartTime != false) {
-        SetStartTime = other.SetStartTime;
-      }
-      if (other.SetExpirationTime != false) {
-        SetExpirationTime = other.SetExpirationTime;
-      }
-      if (other.SetExtraData != false) {
-        SetExtraData = other.SetExtraData;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.Precision != 0) {
-        Precision = other.Precision;
-      }
-      if (other.StartTime != 0L) {
-        StartTime = other.StartTime;
-      }
-      if (other.ExpirationTime != 0L) {
-        ExpirationTime = other.ExpirationTime;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
       }
       ignoreServerIds_.Add(other.ignoreServerIds_);
     }
@@ -5225,59 +5071,18 @@ namespace Iop.Proximityserver {
           default:
             input.SkipLastField();
             break;
-          case 8: {
-            Id = input.ReadUInt32();
+          case 10: {
+            if (activity_ == null) {
+              activity_ = new global::Iop.Proximityserver.ActivityInformation();
+            }
+            input.ReadMessage(activity_);
             break;
           }
           case 16: {
             NoPropagation = input.ReadBool();
             break;
           }
-          case 24: {
-            SetLocation = input.ReadBool();
-            break;
-          }
-          case 32: {
-            SetPrecision = input.ReadBool();
-            break;
-          }
-          case 40: {
-            SetStartTime = input.ReadBool();
-            break;
-          }
-          case 48: {
-            SetExpirationTime = input.ReadBool();
-            break;
-          }
-          case 56: {
-            SetExtraData = input.ReadBool();
-            break;
-          }
-          case 69: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 77: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 80: {
-            Precision = input.ReadUInt32();
-            break;
-          }
-          case 88: {
-            StartTime = input.ReadSInt64();
-            break;
-          }
-          case 96: {
-            ExpirationTime = input.ReadSInt64();
-            break;
-          }
-          case 106: {
-            ExtraData = input.ReadString();
-            break;
-          }
-          case 114: {
+          case 26: {
             ignoreServerIds_.AddEntriesFrom(input, _repeated_ignoreServerIds_codec);
             break;
           }
@@ -5296,14 +5101,19 @@ namespace Iop.Proximityserver {
   ///    * ERROR_REJECTED - The server knows a proximity server that is closer to the location of the activity and its ID is not on the list of ignored servers.
   ///      * Response.details - Set to hexadecimally encoded network identifier of the proximity server that is closer to the activity location than the target server.
   ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "set*" - Nothing was set to be updated.
-  ///      * Response.details == "id" - 'UpdateActivityRequest.id' is not a valid client's activity identifier.
-  ///      * Response.details == "latitude" - 'UpdateActivityRequest.latitude' is not a valid latitude information.
-  ///      * Response.details == "longitude" - 'UpdateActivityRequest.longitude' is not a valid longitude information.
-  ///      * Response.details == "precision" - 'UpdateActivityRequest.precision' must be an integer between 0 and 1,000.
-  ///      * Response.details == "extraData" - 'UpdateActivityRequest.extraData' does not contain a valid extra data information.
-  ///      * Response.details == "startTime" - 'UpdateActivityRequest.startTime' does not contain a valid start time information.
-  ///      * Response.details == "expirationTime" - 'UpdateActivityRequest.expirationTime' does not contain a valid expiration time information. 
+  ///      * Response.details == "activity.version" - 'UpdateActivityRequest.activity.version' does not contain a valid version information.
+  ///      * Response.details == "activity.id" - 'UpdateActivityRequest.activity.id' is not a valid activity identifier.
+  ///      * Response.details == "activity.ownerPublicKey" - 'UpdateActivityRequest.ownerPublicKey.id' is not the public key of the client who sent the request.
+  ///      * Response.details == "activity.profileServerContact.networkId" - 'UpdateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
+  ///      * Response.details == "activity.profileServerContact.ipAddress" - 'UpdateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
+  ///      * Response.details == "activity.profileServerContact.primaryPort" - 'UpdateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65,535.
+  ///      * Response.details == "activity.type" - 'UpdateActivityRequest.activity.type' is not a valid activity type.
+  ///      * Response.details == "activity.latitude" - 'UpdateActivityRequest.activity.latitude' is not a valid latitude information.
+  ///      * Response.details == "activity.longitude" - 'UpdateActivityRequest.activity.longitude' is not a valid longitude information.
+  ///      * Response.details == "activity.precision" - 'UpdateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
+  ///      * Response.details == "activity.startTime" - 'UpdateActivityRequest.activity.startTime' does not contain a valid start time information.
+  ///      * Response.details == "activity.expirationTime" - 'UpdateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'.
+  ///      * Response.details == "activity.extraData" - 'UpdateActivityRequest.activity.extraData' does not contain a valid extra data information.
   ///      * Response.details == "ignoreServerIds" - 'UpdateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
   /// </summary>
   public sealed partial class UpdateActivityResponse : pb::IMessage<UpdateActivityResponse> {
@@ -5313,7 +5123,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5412,7 +5222,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5539,7 +5349,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5647,7 +5457,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6149,7 +5959,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6350,7 +6160,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6369,17 +6179,7 @@ namespace Iop.Proximityserver {
     public ActivityNetworkInformation(ActivityNetworkInformation other) : this() {
       isPrimary_ = other.isPrimary_;
       PrimaryServer = other.primaryServer_ != null ? other.PrimaryServer.Clone() : null;
-      version_ = other.version_;
-      id_ = other.id_;
-      ownerPublicKey_ = other.ownerPublicKey_;
-      ProfileServerContact = other.profileServerContact_ != null ? other.ProfileServerContact.Clone() : null;
-      type_ = other.type_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      precision_ = other.precision_;
-      startTime_ = other.startTime_;
-      expirationTime_ = other.expirationTime_;
-      extraData_ = other.extraData_;
+      Activity = other.activity_ != null ? other.Activity.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6415,159 +6215,17 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 3;
-    private pb::ByteString version_ = pb::ByteString.Empty;
+    /// <summary>Field number for the "activity" field.</summary>
+    public const int ActivityFieldNumber = 3;
+    private global::Iop.Proximityserver.ActivityInformation activity_;
     /// <summary>
-    ///  VersionType. Version of the activity structure.
+    ///  Description of the activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Version {
-      get { return version_; }
+    public global::Iop.Proximityserver.ActivityInformation Activity {
+      get { return activity_; }
       set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 4;
-    private uint id_;
-    /// <summary>
-    ///  Unique identifier of the activity among all activities of the same owner.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "ownerPublicKey" field.</summary>
-    public const int OwnerPublicKeyFieldNumber = 5;
-    private pb::ByteString ownerPublicKey_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  Public key of the identity that created the activity. Max 128 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString OwnerPublicKey {
-      get { return ownerPublicKey_; }
-      set {
-        ownerPublicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "profileServerContact" field.</summary>
-    public const int ProfileServerContactFieldNumber = 6;
-    private global::Iop.Proximityserver.ServerContactInfo profileServerContact_;
-    /// <summary>
-    ///  Contact information to the owner's profile server.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ServerContactInfo ProfileServerContact {
-      get { return profileServerContact_; }
-      set {
-        profileServerContact_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 7;
-    private string type_ = "";
-    /// <summary>
-    ///  Type of the activity.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Type {
-      get { return type_; }
-      set {
-        type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 8;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. GPS location latitude information. Together with 'longitude' and 'precision' this provides information 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 9;
-    private int longitude_;
-    /// <summary>
-    ///  the activity location. However, if 'isPrimary' is false, this is not the latest reported location of the activity, 
-    ///  but rather the last known location to the server being queried, which will often be the original location of the activity.
-    ///  Only if 'isPrimary' is true, the location information is current.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "precision" field.</summary>
-    public const int PrecisionFieldNumber = 10;
-    private uint precision_;
-    /// <summary>
-    ///  Precision information in metres.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Precision {
-      get { return precision_; }
-      set {
-        precision_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "startTime" field.</summary>
-    public const int StartTimeFieldNumber = 11;
-    private long startTime_;
-    /// <summary>
-    ///  TimestampType. Time when the activity starts.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long StartTime {
-      get { return startTime_; }
-      set {
-        startTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "expirationTime" field.</summary>
-    public const int ExpirationTimeFieldNumber = 12;
-    private long expirationTime_;
-    /// <summary>
-    ///  TimestampType. Time when the activity expires. If 'isPrimary' is false, this may not be the accurate expiration
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ExpirationTime {
-      get { return expirationTime_; }
-      set {
-        expirationTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 13;
-    private string extraData_ = "";
-    /// <summary>
-    ///  Semicolon separated 'key=value' list or empty string, max 2048 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        activity_ = value;
       }
     }
 
@@ -6586,17 +6244,7 @@ namespace Iop.Proximityserver {
       }
       if (IsPrimary != other.IsPrimary) return false;
       if (!object.Equals(PrimaryServer, other.PrimaryServer)) return false;
-      if (Version != other.Version) return false;
-      if (Id != other.Id) return false;
-      if (OwnerPublicKey != other.OwnerPublicKey) return false;
-      if (!object.Equals(ProfileServerContact, other.ProfileServerContact)) return false;
-      if (Type != other.Type) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (Precision != other.Precision) return false;
-      if (StartTime != other.StartTime) return false;
-      if (ExpirationTime != other.ExpirationTime) return false;
-      if (ExtraData != other.ExtraData) return false;
+      if (!object.Equals(Activity, other.Activity)) return false;
       return true;
     }
 
@@ -6605,17 +6253,7 @@ namespace Iop.Proximityserver {
       int hash = 1;
       if (IsPrimary != false) hash ^= IsPrimary.GetHashCode();
       if (primaryServer_ != null) hash ^= PrimaryServer.GetHashCode();
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (OwnerPublicKey.Length != 0) hash ^= OwnerPublicKey.GetHashCode();
-      if (profileServerContact_ != null) hash ^= ProfileServerContact.GetHashCode();
-      if (Type.Length != 0) hash ^= Type.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (Precision != 0) hash ^= Precision.GetHashCode();
-      if (StartTime != 0L) hash ^= StartTime.GetHashCode();
-      if (ExpirationTime != 0L) hash ^= ExpirationTime.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
+      if (activity_ != null) hash ^= Activity.GetHashCode();
       return hash;
     }
 
@@ -6634,49 +6272,9 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(18);
         output.WriteMessage(PrimaryServer);
       }
-      if (Version.Length != 0) {
+      if (activity_ != null) {
         output.WriteRawTag(26);
-        output.WriteBytes(Version);
-      }
-      if (Id != 0) {
-        output.WriteRawTag(32);
-        output.WriteUInt32(Id);
-      }
-      if (OwnerPublicKey.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteBytes(OwnerPublicKey);
-      }
-      if (profileServerContact_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(ProfileServerContact);
-      }
-      if (Type.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Type);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(69);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(77);
-        output.WriteSFixed32(Longitude);
-      }
-      if (Precision != 0) {
-        output.WriteRawTag(80);
-        output.WriteUInt32(Precision);
-      }
-      if (StartTime != 0L) {
-        output.WriteRawTag(88);
-        output.WriteSInt64(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        output.WriteRawTag(96);
-        output.WriteSInt64(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(106);
-        output.WriteString(ExtraData);
+        output.WriteMessage(Activity);
       }
     }
 
@@ -6689,38 +6287,8 @@ namespace Iop.Proximityserver {
       if (primaryServer_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PrimaryServer);
       }
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
-      }
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
-      }
-      if (OwnerPublicKey.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(OwnerPublicKey);
-      }
-      if (profileServerContact_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileServerContact);
-      }
-      if (Type.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (Precision != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Precision);
-      }
-      if (StartTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
+      if (activity_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Activity);
       }
       return size;
     }
@@ -6739,41 +6307,11 @@ namespace Iop.Proximityserver {
         }
         PrimaryServer.MergeFrom(other.PrimaryServer);
       }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.OwnerPublicKey.Length != 0) {
-        OwnerPublicKey = other.OwnerPublicKey;
-      }
-      if (other.profileServerContact_ != null) {
-        if (profileServerContact_ == null) {
-          profileServerContact_ = new global::Iop.Proximityserver.ServerContactInfo();
+      if (other.activity_ != null) {
+        if (activity_ == null) {
+          activity_ = new global::Iop.Proximityserver.ActivityInformation();
         }
-        ProfileServerContact.MergeFrom(other.ProfileServerContact);
-      }
-      if (other.Type.Length != 0) {
-        Type = other.Type;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.Precision != 0) {
-        Precision = other.Precision;
-      }
-      if (other.StartTime != 0L) {
-        StartTime = other.StartTime;
-      }
-      if (other.ExpirationTime != 0L) {
-        ExpirationTime = other.ExpirationTime;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
+        Activity.MergeFrom(other.Activity);
       }
     }
 
@@ -6797,50 +6335,10 @@ namespace Iop.Proximityserver {
             break;
           }
           case 26: {
-            Version = input.ReadBytes();
-            break;
-          }
-          case 32: {
-            Id = input.ReadUInt32();
-            break;
-          }
-          case 42: {
-            OwnerPublicKey = input.ReadBytes();
-            break;
-          }
-          case 50: {
-            if (profileServerContact_ == null) {
-              profileServerContact_ = new global::Iop.Proximityserver.ServerContactInfo();
+            if (activity_ == null) {
+              activity_ = new global::Iop.Proximityserver.ActivityInformation();
             }
-            input.ReadMessage(profileServerContact_);
-            break;
-          }
-          case 58: {
-            Type = input.ReadString();
-            break;
-          }
-          case 69: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 77: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 80: {
-            Precision = input.ReadUInt32();
-            break;
-          }
-          case 88: {
-            StartTime = input.ReadSInt64();
-            break;
-          }
-          case 96: {
-            ExpirationTime = input.ReadSInt64();
-            break;
-          }
-          case 106: {
-            ExtraData = input.ReadString();
+            input.ReadMessage(activity_);
             break;
           }
         }
@@ -6868,7 +6366,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7030,7 +6528,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7256,7 +6754,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7441,8 +6939,8 @@ namespace Iop.Proximityserver {
   ///    * ERROR_BUSY - Proximity server can use this error code during the start of the neighborhood initialization process to express that it is currently busy 
   ///                   with the neighborhood initialization process with one or more other proximity servers.
   ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "primaryPort" - 'StartNeighborhoodInitializationRequest.primaryPort' must be an integer between 1 and 65535.
-  ///      * Response.details == "neighborPort" - 'StartNeighborhoodInitializationRequest.neighborPort' must be an integer between 1 and 65535.
+  ///      * Response.details == "primaryPort" - 'StartNeighborhoodInitializationRequest.primaryPort' must be an integer between 1 and 65,535.
+  ///      * Response.details == "neighborPort" - 'StartNeighborhoodInitializationRequest.neighborPort' must be an integer between 1 and 65,535.
   ///      * Response.details == "ipAddress" - 'StartNeighborhoodInitializationRequest.ipAddress' is not a valid IPv4 or IPv6 address or it is a local network IP address.
   /// </summary>
   public sealed partial class StartNeighborhoodInitializationResponse : pb::IMessage<StartNeighborhoodInitializationResponse> {
@@ -7452,7 +6950,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7551,7 +7049,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7650,7 +7148,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7753,7 +7251,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[33]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7879,23 +7377,28 @@ namespace Iop.Proximityserver {
   ///        * $field == "add.ownerPublicKey" - `items[$index].add.ownerPublicKey` is not a valid public key value.
   ///        * $field == "add.profileServerContact.networkId" - `items[$index].add.profileServerContact.networkId` is not a valid network identifier.
   ///        * $field == "add.profileServerContact.ipAddress" - `items[$index].add.profileServerContact.ipAddress` is not a valid IP address or it is a local network address.
-  ///        * $field == "add.profileServerContact.primaryPort" - `items[$index].add.profileServerContact.primaryPort` must be an integer between 1 and 65535.
+  ///        * $field == "add.profileServerContact.primaryPort" - `items[$index].add.profileServerContact.primaryPort` must be an integer between 1 and 65,535.
   ///        * $field == "add.type" - `items[$index].add.type` is not a valid activity type.
   ///        * $field == "add.latitude" - `items[$index].add.latitude` is not a valid latitude value.
   ///        * $field == "add.longitude" - `items[$index].add.longitude` is not a valid longitude value.
   ///        * $field == "add.precision" - `items[$index].add.precision` must be an integer between 0 and 1,000.
   ///        * $field == "add.startTime" - `items[$index].add.startTime` does not contain a valid start time information.
-  ///        * $field == "add.expirationTime" - `items[$index].add.expirationTime` does not contain a valid expiration time information.
+  ///        * $field == "add.expirationTime" - `items[$index].add.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].add.startTime'.
   ///        * $field == "add.extraData" - `items[$index].add.extraData` is not a valid extra data value.
-  ///        * $field == "change.set*" - `items[$index].change.set*` are all false.
-  ///        * $field == "change.id" - `items[$index].change.id` does not represent an existing activity, or another update item in the same request referred to this activity.
-  ///        * $field == "change.ownerNetworkId" - `items[$index].change.ownerNetworkId` is not a valid network identifier.
+  ///        * $field == "change.version" - `items[$index].change.version` is not a valid activity version.
+  ///        * $field == "change.id" - `items[$index].change.id` is not a valid activity identifier or the same activity already exists or another update item in the same 
+  ///                                  request referred to this activity.
+  ///        * $field == "change.ownerPublicKey" - `items[$index].change.ownerPublicKey` is not a valid public key value.
+  ///        * $field == "change.profileServerContact.networkId" - `items[$index].change.profileServerContact.networkId` is not a valid network identifier.
+  ///        * $field == "change.profileServerContact.ipAddress" - `items[$index].change.profileServerContact.ipAddress` is not a valid IP address or it is a local network address.
+  ///        * $field == "change.profileServerContact.primaryPort" - `items[$index].change.profileServerContact.primaryPort` must be an integer between 1 and 65,535.
+  ///        * $field == "change.type" - `items[$index].change.type` is not a valid activity type.
   ///        * $field == "change.latitude" - `items[$index].change.latitude` is not a valid latitude value.
   ///        * $field == "change.longitude" - `items[$index].change.longitude` is not a valid longitude value.
   ///        * $field == "change.precision" - `items[$index].change.precision` must be an integer between 0 and 1,000.
   ///        * $field == "change.startTime" - `items[$index].change.startTime` does not contain a valid start time information.
-  ///        * $field == "change.expirationTime" - `items[$index].change.expirationTime` does not contain a valid expiration time information.
-  ///        * $field == "change.extraData" - `items[$index].change.extraData` is not a valid extraData value.
+  ///        * $field == "change.expirationTime" - `items[$index].change.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].change.startTime'.
+  ///        * $field == "change.extraData" - `items[$index].change.extraData` is not a valid extra data value.
   ///        * $field == "delete.id" - `items[$index].delete.id` does not represent an existing activity, or another update item in the same request referred to this activity.
   ///        * $field == "delete.ownerNetworkId" - `items[$index].delete.identityNetworkId` is not a valid network identifier.
   ///        * $field == "actionType" - During the neighborhood initialization process, only `add` is a valid update message type.
@@ -7907,7 +7410,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[34]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8000,7 +7503,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[35]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[36]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8042,8 +7545,8 @@ namespace Iop.Proximityserver {
     ///   * adding a new activity to the database,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.SharedActivityAddItem Add {
-      get { return actionTypeCase_ == ActionTypeOneofCase.Add ? (global::Iop.Proximityserver.SharedActivityAddItem) actionType_ : null; }
+    public global::Iop.Proximityserver.ActivityInformation Add {
+      get { return actionTypeCase_ == ActionTypeOneofCase.Add ? (global::Iop.Proximityserver.ActivityInformation) actionType_ : null; }
       set {
         actionType_ = value;
         actionTypeCase_ = value == null ? ActionTypeOneofCase.None : ActionTypeOneofCase.Add;
@@ -8056,8 +7559,8 @@ namespace Iop.Proximityserver {
     ///   * changing an existing activity,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.SharedActivityChangeItem Change {
-      get { return actionTypeCase_ == ActionTypeOneofCase.Change ? (global::Iop.Proximityserver.SharedActivityChangeItem) actionType_ : null; }
+    public global::Iop.Proximityserver.ActivityInformation Change {
+      get { return actionTypeCase_ == ActionTypeOneofCase.Change ? (global::Iop.Proximityserver.ActivityInformation) actionType_ : null; }
       set {
         actionType_ = value;
         actionTypeCase_ = value == null ? ActionTypeOneofCase.None : ActionTypeOneofCase.Change;
@@ -8070,8 +7573,8 @@ namespace Iop.Proximityserver {
     ///   * deleting an existing activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.SharedActivityDeleteItem Delete {
-      get { return actionTypeCase_ == ActionTypeOneofCase.Delete ? (global::Iop.Proximityserver.SharedActivityDeleteItem) actionType_ : null; }
+    public global::Iop.Proximityserver.ActivityFullId Delete {
+      get { return actionTypeCase_ == ActionTypeOneofCase.Delete ? (global::Iop.Proximityserver.ActivityFullId) actionType_ : null; }
       set {
         actionType_ = value;
         actionTypeCase_ = value == null ? ActionTypeOneofCase.None : ActionTypeOneofCase.Delete;
@@ -8192,7 +7695,7 @@ namespace Iop.Proximityserver {
             input.SkipLastField();
             break;
           case 10: {
-            global::Iop.Proximityserver.SharedActivityAddItem subBuilder = new global::Iop.Proximityserver.SharedActivityAddItem();
+            global::Iop.Proximityserver.ActivityInformation subBuilder = new global::Iop.Proximityserver.ActivityInformation();
             if (actionTypeCase_ == ActionTypeOneofCase.Add) {
               subBuilder.MergeFrom(Add);
             }
@@ -8201,7 +7704,7 @@ namespace Iop.Proximityserver {
             break;
           }
           case 18: {
-            global::Iop.Proximityserver.SharedActivityChangeItem subBuilder = new global::Iop.Proximityserver.SharedActivityChangeItem();
+            global::Iop.Proximityserver.ActivityInformation subBuilder = new global::Iop.Proximityserver.ActivityInformation();
             if (actionTypeCase_ == ActionTypeOneofCase.Change) {
               subBuilder.MergeFrom(Change);
             }
@@ -8210,7 +7713,7 @@ namespace Iop.Proximityserver {
             break;
           }
           case 26: {
-            global::Iop.Proximityserver.SharedActivityDeleteItem subBuilder = new global::Iop.Proximityserver.SharedActivityDeleteItem();
+            global::Iop.Proximityserver.ActivityFullId subBuilder = new global::Iop.Proximityserver.ActivityFullId();
             if (actionTypeCase_ == ActionTypeOneofCase.Delete) {
               subBuilder.MergeFrom(Delete);
             }
@@ -8226,452 +7729,12 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Information about newly created activity that is to be shared with a neighbor.
+  ///  Full identifier of the activity.
   /// </summary>
-  public sealed partial class SharedActivityAddItem : pb::IMessage<SharedActivityAddItem> {
-    private static readonly pb::MessageParser<SharedActivityAddItem> _parser = new pb::MessageParser<SharedActivityAddItem>(() => new SharedActivityAddItem());
+  public sealed partial class ActivityFullId : pb::IMessage<ActivityFullId> {
+    private static readonly pb::MessageParser<ActivityFullId> _parser = new pb::MessageParser<ActivityFullId>(() => new ActivityFullId());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SharedActivityAddItem> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[36]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityAddItem() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityAddItem(SharedActivityAddItem other) : this() {
-      version_ = other.version_;
-      id_ = other.id_;
-      ownerPublicKey_ = other.ownerPublicKey_;
-      ProfileServerContact = other.profileServerContact_ != null ? other.ProfileServerContact.Clone() : null;
-      type_ = other.type_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      precision_ = other.precision_;
-      startTime_ = other.startTime_;
-      expirationTime_ = other.expirationTime_;
-      extraData_ = other.extraData_;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityAddItem Clone() {
-      return new SharedActivityAddItem(this);
-    }
-
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 1;
-    private pb::ByteString version_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  VersionType. Version of the activity structure.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Version {
-      get { return version_; }
-      set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 2;
-    private uint id_;
-    /// <summary>
-    ///  Unique identifier of the activity among all activities of the same owner.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "ownerPublicKey" field.</summary>
-    public const int OwnerPublicKeyFieldNumber = 3;
-    private pb::ByteString ownerPublicKey_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  Public key of the identity that created the activity. Max 128 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString OwnerPublicKey {
-      get { return ownerPublicKey_; }
-      set {
-        ownerPublicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "profileServerContact" field.</summary>
-    public const int ProfileServerContactFieldNumber = 4;
-    private global::Iop.Proximityserver.ServerContactInfo profileServerContact_;
-    /// <summary>
-    ///  Contact information to the owner's profile server.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ServerContactInfo ProfileServerContact {
-      get { return profileServerContact_; }
-      set {
-        profileServerContact_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 5;
-    private string type_ = "";
-    /// <summary>
-    ///  Type of the activity, non-empty string. Max 64 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Type {
-      get { return type_; }
-      set {
-        type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 6;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. GPS location latitude information. 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 7;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "precision" field.</summary>
-    public const int PrecisionFieldNumber = 8;
-    private uint precision_;
-    /// <summary>
-    ///  Precision information in metres is an integer between 0 and 1,000.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Precision {
-      get { return precision_; }
-      set {
-        precision_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "startTime" field.</summary>
-    public const int StartTimeFieldNumber = 9;
-    private long startTime_;
-    /// <summary>
-    ///  TimestampType. Time when the activity starts.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long StartTime {
-      get { return startTime_; }
-      set {
-        startTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "expirationTime" field.</summary>
-    public const int ExpirationTimeFieldNumber = 10;
-    private long expirationTime_;
-    /// <summary>
-    ///  TimestampType. Time when the activity expires. 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ExpirationTime {
-      get { return expirationTime_; }
-      set {
-        expirationTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 11;
-    private string extraData_ = "";
-    /// <summary>
-    ///  Semicolon separated 'key=value' list or empty string, max 2048 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as SharedActivityAddItem);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SharedActivityAddItem other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Version != other.Version) return false;
-      if (Id != other.Id) return false;
-      if (OwnerPublicKey != other.OwnerPublicKey) return false;
-      if (!object.Equals(ProfileServerContact, other.ProfileServerContact)) return false;
-      if (Type != other.Type) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (Precision != other.Precision) return false;
-      if (StartTime != other.StartTime) return false;
-      if (ExpirationTime != other.ExpirationTime) return false;
-      if (ExtraData != other.ExtraData) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (OwnerPublicKey.Length != 0) hash ^= OwnerPublicKey.GetHashCode();
-      if (profileServerContact_ != null) hash ^= ProfileServerContact.GetHashCode();
-      if (Type.Length != 0) hash ^= Type.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (Precision != 0) hash ^= Precision.GetHashCode();
-      if (StartTime != 0L) hash ^= StartTime.GetHashCode();
-      if (ExpirationTime != 0L) hash ^= ExpirationTime.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Version.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(Version);
-      }
-      if (Id != 0) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Id);
-      }
-      if (OwnerPublicKey.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteBytes(OwnerPublicKey);
-      }
-      if (profileServerContact_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(ProfileServerContact);
-      }
-      if (Type.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Type);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(53);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(61);
-        output.WriteSFixed32(Longitude);
-      }
-      if (Precision != 0) {
-        output.WriteRawTag(64);
-        output.WriteUInt32(Precision);
-      }
-      if (StartTime != 0L) {
-        output.WriteRawTag(72);
-        output.WriteSInt64(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        output.WriteRawTag(80);
-        output.WriteSInt64(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(90);
-        output.WriteString(ExtraData);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
-      }
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
-      }
-      if (OwnerPublicKey.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(OwnerPublicKey);
-      }
-      if (profileServerContact_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileServerContact);
-      }
-      if (Type.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (Precision != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Precision);
-      }
-      if (StartTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SharedActivityAddItem other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.OwnerPublicKey.Length != 0) {
-        OwnerPublicKey = other.OwnerPublicKey;
-      }
-      if (other.profileServerContact_ != null) {
-        if (profileServerContact_ == null) {
-          profileServerContact_ = new global::Iop.Proximityserver.ServerContactInfo();
-        }
-        ProfileServerContact.MergeFrom(other.ProfileServerContact);
-      }
-      if (other.Type.Length != 0) {
-        Type = other.Type;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.Precision != 0) {
-        Precision = other.Precision;
-      }
-      if (other.StartTime != 0L) {
-        StartTime = other.StartTime;
-      }
-      if (other.ExpirationTime != 0L) {
-        ExpirationTime = other.ExpirationTime;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            Version = input.ReadBytes();
-            break;
-          }
-          case 16: {
-            Id = input.ReadUInt32();
-            break;
-          }
-          case 26: {
-            OwnerPublicKey = input.ReadBytes();
-            break;
-          }
-          case 34: {
-            if (profileServerContact_ == null) {
-              profileServerContact_ = new global::Iop.Proximityserver.ServerContactInfo();
-            }
-            input.ReadMessage(profileServerContact_);
-            break;
-          }
-          case 42: {
-            Type = input.ReadString();
-            break;
-          }
-          case 53: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 61: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 64: {
-            Precision = input.ReadUInt32();
-            break;
-          }
-          case 72: {
-            StartTime = input.ReadSInt64();
-            break;
-          }
-          case 80: {
-            ExpirationTime = input.ReadSInt64();
-            break;
-          }
-          case 90: {
-            ExtraData = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  /// <summary>
-  ///
-  ///  Information about changes in an existing activity data that are to be shared with a neighbor.
-  /// </summary>
-  public sealed partial class SharedActivityChangeItem : pb::IMessage<SharedActivityChangeItem> {
-    private static readonly pb::MessageParser<SharedActivityChangeItem> _parser = new pb::MessageParser<SharedActivityChangeItem>(() => new SharedActivityChangeItem());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SharedActivityChangeItem> Parser { get { return _parser; } }
+    public static pb::MessageParser<ActivityFullId> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -8684,517 +7747,21 @@ namespace Iop.Proximityserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityChangeItem() {
+    public ActivityFullId() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityChangeItem(SharedActivityChangeItem other) : this() {
-      id_ = other.id_;
-      ownerNetworkId_ = other.ownerNetworkId_;
-      setLocation_ = other.setLocation_;
-      setPrecision_ = other.setPrecision_;
-      setStartTime_ = other.setStartTime_;
-      setExpirationTime_ = other.setExpirationTime_;
-      setExtraData_ = other.setExtraData_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      precision_ = other.precision_;
-      startTime_ = other.startTime_;
-      expirationTime_ = other.expirationTime_;
-      extraData_ = other.extraData_;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityChangeItem Clone() {
-      return new SharedActivityChangeItem(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
-    /// <summary>
-    ///  Unique identifier of the activity among all activities of the same owner.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "ownerNetworkId" field.</summary>
-    public const int OwnerNetworkIdFieldNumber = 2;
-    private pb::ByteString ownerNetworkId_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  Network identifier of the identity that created the activity. 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString OwnerNetworkId {
-      get { return ownerNetworkId_; }
-      set {
-        ownerNetworkId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "setLocation" field.</summary>
-    public const int SetLocationFieldNumber = 3;
-    private bool setLocation_;
-    /// <summary>
-    ///  Activity location should be updated. 'latitude' and 'longitude' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetLocation {
-      get { return setLocation_; }
-      set {
-        setLocation_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setPrecision" field.</summary>
-    public const int SetPrecisionFieldNumber = 4;
-    private bool setPrecision_;
-    /// <summary>
-    ///  Activity location's precision should be updated. 'precision' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetPrecision {
-      get { return setPrecision_; }
-      set {
-        setPrecision_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setStartTime" field.</summary>
-    public const int SetStartTimeFieldNumber = 5;
-    private bool setStartTime_;
-    /// <summary>
-    ///  Activity start time should be updated. 'startTime' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetStartTime {
-      get { return setStartTime_; }
-      set {
-        setStartTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setExpirationTime" field.</summary>
-    public const int SetExpirationTimeFieldNumber = 6;
-    private bool setExpirationTime_;
-    /// <summary>
-    ///  Activity expiration time should be updated. 'expirationTime' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetExpirationTime {
-      get { return setExpirationTime_; }
-      set {
-        setExpirationTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setExtraData" field.</summary>
-    public const int SetExtraDataFieldNumber = 7;
-    private bool setExtraData_;
-    /// <summary>
-    ///  Activity extra data should be updated. 'extraData' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetExtraData {
-      get { return setExtraData_; }
-      set {
-        setExtraData_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 8;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. GPS location latitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 9;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "precision" field.</summary>
-    public const int PrecisionFieldNumber = 10;
-    private uint precision_;
-    /// <summary>
-    ///  Precision information in metres is an integer between 0 and 1,000.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Precision {
-      get { return precision_; }
-      set {
-        precision_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "startTime" field.</summary>
-    public const int StartTimeFieldNumber = 11;
-    private long startTime_;
-    /// <summary>
-    ///  TimestampType. Time when the activity starts. This can be in the past for already running 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long StartTime {
-      get { return startTime_; }
-      set {
-        startTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "expirationTime" field.</summary>
-    public const int ExpirationTimeFieldNumber = 12;
-    private long expirationTime_;
-    /// <summary>
-    ///  or past activities as well as in the future for future activities.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ExpirationTime {
-      get { return expirationTime_; }
-      set {
-        expirationTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 13;
-    private string extraData_ = "";
-    /// <summary>
-    ///  Semicolon separated 'key=value' list or empty string, max 2048 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as SharedActivityChangeItem);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SharedActivityChangeItem other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (OwnerNetworkId != other.OwnerNetworkId) return false;
-      if (SetLocation != other.SetLocation) return false;
-      if (SetPrecision != other.SetPrecision) return false;
-      if (SetStartTime != other.SetStartTime) return false;
-      if (SetExpirationTime != other.SetExpirationTime) return false;
-      if (SetExtraData != other.SetExtraData) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (Precision != other.Precision) return false;
-      if (StartTime != other.StartTime) return false;
-      if (ExpirationTime != other.ExpirationTime) return false;
-      if (ExtraData != other.ExtraData) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (OwnerNetworkId.Length != 0) hash ^= OwnerNetworkId.GetHashCode();
-      if (SetLocation != false) hash ^= SetLocation.GetHashCode();
-      if (SetPrecision != false) hash ^= SetPrecision.GetHashCode();
-      if (SetStartTime != false) hash ^= SetStartTime.GetHashCode();
-      if (SetExpirationTime != false) hash ^= SetExpirationTime.GetHashCode();
-      if (SetExtraData != false) hash ^= SetExtraData.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (Precision != 0) hash ^= Precision.GetHashCode();
-      if (StartTime != 0L) hash ^= StartTime.GetHashCode();
-      if (ExpirationTime != 0L) hash ^= ExpirationTime.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Id);
-      }
-      if (OwnerNetworkId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteBytes(OwnerNetworkId);
-      }
-      if (SetLocation != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(SetLocation);
-      }
-      if (SetPrecision != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(SetPrecision);
-      }
-      if (SetStartTime != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(SetStartTime);
-      }
-      if (SetExpirationTime != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(SetExpirationTime);
-      }
-      if (SetExtraData != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(SetExtraData);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(69);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(77);
-        output.WriteSFixed32(Longitude);
-      }
-      if (Precision != 0) {
-        output.WriteRawTag(80);
-        output.WriteUInt32(Precision);
-      }
-      if (StartTime != 0L) {
-        output.WriteRawTag(88);
-        output.WriteSInt64(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        output.WriteRawTag(96);
-        output.WriteSInt64(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(106);
-        output.WriteString(ExtraData);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
-      }
-      if (OwnerNetworkId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(OwnerNetworkId);
-      }
-      if (SetLocation != false) {
-        size += 1 + 1;
-      }
-      if (SetPrecision != false) {
-        size += 1 + 1;
-      }
-      if (SetStartTime != false) {
-        size += 1 + 1;
-      }
-      if (SetExpirationTime != false) {
-        size += 1 + 1;
-      }
-      if (SetExtraData != false) {
-        size += 1 + 1;
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (Precision != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Precision);
-      }
-      if (StartTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(StartTime);
-      }
-      if (ExpirationTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(ExpirationTime);
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SharedActivityChangeItem other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.OwnerNetworkId.Length != 0) {
-        OwnerNetworkId = other.OwnerNetworkId;
-      }
-      if (other.SetLocation != false) {
-        SetLocation = other.SetLocation;
-      }
-      if (other.SetPrecision != false) {
-        SetPrecision = other.SetPrecision;
-      }
-      if (other.SetStartTime != false) {
-        SetStartTime = other.SetStartTime;
-      }
-      if (other.SetExpirationTime != false) {
-        SetExpirationTime = other.SetExpirationTime;
-      }
-      if (other.SetExtraData != false) {
-        SetExtraData = other.SetExtraData;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.Precision != 0) {
-        Precision = other.Precision;
-      }
-      if (other.StartTime != 0L) {
-        StartTime = other.StartTime;
-      }
-      if (other.ExpirationTime != 0L) {
-        ExpirationTime = other.ExpirationTime;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 8: {
-            Id = input.ReadUInt32();
-            break;
-          }
-          case 18: {
-            OwnerNetworkId = input.ReadBytes();
-            break;
-          }
-          case 24: {
-            SetLocation = input.ReadBool();
-            break;
-          }
-          case 32: {
-            SetPrecision = input.ReadBool();
-            break;
-          }
-          case 40: {
-            SetStartTime = input.ReadBool();
-            break;
-          }
-          case 48: {
-            SetExpirationTime = input.ReadBool();
-            break;
-          }
-          case 56: {
-            SetExtraData = input.ReadBool();
-            break;
-          }
-          case 69: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 77: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 80: {
-            Precision = input.ReadUInt32();
-            break;
-          }
-          case 88: {
-            StartTime = input.ReadSInt64();
-            break;
-          }
-          case 96: {
-            ExpirationTime = input.ReadSInt64();
-            break;
-          }
-          case 106: {
-            ExtraData = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  /// <summary>
-  ///
-  ///  Information about the removal of an existing activity that is to be shared with a neighbor.
-  /// </summary>
-  public sealed partial class SharedActivityDeleteItem : pb::IMessage<SharedActivityDeleteItem> {
-    private static readonly pb::MessageParser<SharedActivityDeleteItem> _parser = new pb::MessageParser<SharedActivityDeleteItem>(() => new SharedActivityDeleteItem());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SharedActivityDeleteItem> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[38]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityDeleteItem() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityDeleteItem(SharedActivityDeleteItem other) : this() {
+    public ActivityFullId(ActivityFullId other) : this() {
       id_ = other.id_;
       ownerNetworkId_ = other.ownerNetworkId_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedActivityDeleteItem Clone() {
-      return new SharedActivityDeleteItem(this);
+    public ActivityFullId Clone() {
+      return new ActivityFullId(this);
     }
 
     /// <summary>Field number for the "id" field.</summary>
@@ -9227,11 +7794,11 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as SharedActivityDeleteItem);
+      return Equals(other as ActivityFullId);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SharedActivityDeleteItem other) {
+    public bool Equals(ActivityFullId other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -9281,7 +7848,7 @@ namespace Iop.Proximityserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SharedActivityDeleteItem other) {
+    public void MergeFrom(ActivityFullId other) {
       if (other == null) {
         return;
       }
@@ -9330,7 +7897,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[39]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9426,7 +7993,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[40]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9519,7 +8086,7 @@ namespace Iop.Proximityserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[41]; }
+      get { return global::Iop.Proximityserver.IopProximityServerReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

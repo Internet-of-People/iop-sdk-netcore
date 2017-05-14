@@ -49,6 +49,10 @@ namespace IopCommon
     }
   }
 
+
+  /// <summary>
+  /// Binary comparer for byte arrays.
+  /// </summary>
   public static class ByteArrayComparer
   {
     /// <summary>
@@ -80,6 +84,18 @@ namespace IopCommon
       }
 
       return res;
+    }
+
+
+    /// <summary>
+    /// Checks whether contents of two byte arrays are binary equal.
+    /// </summary>
+    /// <param name="X">First array to compare.</param>
+    /// <param name="Y">Second array to compare.</param>
+    /// <returns>true if the arrays are equal, false otherwise.</returns>
+    public static bool Equals(byte[] X, byte[] Y)
+    {
+      return Compare(X, Y) == 0;
     }
   }
 }

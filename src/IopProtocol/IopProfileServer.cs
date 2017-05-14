@@ -37,267 +37,264 @@ namespace Iop.Profileserver {
             "aW5nbGVSZXNwb25zZRgIIAEoCzIhLmlvcC5wcm9maWxlc2VydmVyLlNpbmds",
             "ZVJlc3BvbnNlSAASRwoUY29udmVyc2F0aW9uUmVzcG9uc2UYCSABKAsyJy5p",
             "b3AucHJvZmlsZXNlcnZlci5Db252ZXJzYXRpb25SZXNwb25zZUgAQhIKEENv",
-            "bnZlcnNhdGlvblR5cGUixQUKDVNpbmdsZVJlcXVlc3QSDwoHdmVyc2lvbhgB",
+            "bnZlcnNhdGlvblR5cGUiwwUKDVNpbmdsZVJlcXVlc3QSDwoHdmVyc2lvbhgB",
             "IAEoDBIuCgRwaW5nGAIgASgLMh4uaW9wLnByb2ZpbGVzZXJ2ZXIuUGluZ1Jl",
             "cXVlc3RIABI4CglsaXN0Um9sZXMYAyABKAsyIy5pb3AucHJvZmlsZXNlcnZl",
             "ci5MaXN0Um9sZXNSZXF1ZXN0SAASRgoQbGlzdEhvc3RpbmdQbGFucxgEIAEo",
             "CzIqLmlvcC5wcm9maWxlc2VydmVyLkxpc3RIb3N0aW5nUGxhbnNSZXF1ZXN0",
-            "SAASUgoWZ2V0SWRlbnRpdHlJbmZvcm1hdGlvbhgFIAEoCzIwLmlvcC5wcm9m",
-            "aWxlc2VydmVyLkdldElkZW50aXR5SW5mb3JtYXRpb25SZXF1ZXN0SAASYAod",
-            "YXBwbGljYXRpb25TZXJ2aWNlU2VuZE1lc3NhZ2UYBiABKAsyNy5pb3AucHJv",
-            "ZmlsZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZVJlcXVl",
-            "c3RIABJ+CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlm",
-            "aWNhdGlvbhgHIAEoCzJGLmlvcC5wcm9maWxlc2VydmVyLkFwcGxpY2F0aW9u",
-            "U2VydmljZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVxdWVzdEgAEj4K",
-            "DHByb2ZpbGVTdGF0cxgIIAEoCzImLmlvcC5wcm9maWxlc2VydmVyLlByb2Zp",
-            "bGVTdGF0c1JlcXVlc3RIABJsCiNnZXRJZGVudGl0eVJlbGF0aW9uc2hpcHNJ",
-            "bmZvcm1hdGlvbhgJIAEoCzI9LmlvcC5wcm9maWxlc2VydmVyLkdldElkZW50",
-            "aXR5UmVsYXRpb25zaGlwc0luZm9ybWF0aW9uUmVxdWVzdEgAQg0KC1JlcXVl",
-            "c3RUeXBlIs8FCg5TaW5nbGVSZXNwb25zZRIPCgd2ZXJzaW9uGAEgASgMEi8K",
-            "BHBpbmcYAiABKAsyHy5pb3AucHJvZmlsZXNlcnZlci5QaW5nUmVzcG9uc2VI",
-            "ABI5CglsaXN0Um9sZXMYAyABKAsyJC5pb3AucHJvZmlsZXNlcnZlci5MaXN0",
-            "Um9sZXNSZXNwb25zZUgAEkcKEGxpc3RIb3N0aW5nUGxhbnMYBCABKAsyKy5p",
-            "b3AucHJvZmlsZXNlcnZlci5MaXN0SG9zdGluZ1BsYW5zUmVzcG9uc2VIABJT",
-            "ChZnZXRJZGVudGl0eUluZm9ybWF0aW9uGAUgASgLMjEuaW9wLnByb2ZpbGVz",
-            "ZXJ2ZXIuR2V0SWRlbnRpdHlJbmZvcm1hdGlvblJlc3BvbnNlSAASYQodYXBw",
-            "bGljYXRpb25TZXJ2aWNlU2VuZE1lc3NhZ2UYBiABKAsyOC5pb3AucHJvZmls",
-            "ZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZVJlc3BvbnNl",
-            "SAASfwosYXBwbGljYXRpb25TZXJ2aWNlUmVjZWl2ZU1lc3NhZ2VOb3RpZmlj",
-            "YXRpb24YByABKAsyRy5pb3AucHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNl",
-            "cnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlmaWNhdGlvblJlc3BvbnNlSAASPwoM",
-            "cHJvZmlsZVN0YXRzGAggASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuUHJvZmls",
-            "ZVN0YXRzUmVzcG9uc2VIABJtCiNnZXRJZGVudGl0eVJlbGF0aW9uc2hpcHNJ",
-            "bmZvcm1hdGlvbhgJIAEoCzI+LmlvcC5wcm9maWxlc2VydmVyLkdldElkZW50",
-            "aXR5UmVsYXRpb25zaGlwc0luZm9ybWF0aW9uUmVzcG9uc2VIAEIOCgxSZXNw",
-            "b25zZVR5cGUi9QwKE0NvbnZlcnNhdGlvblJlcXVlc3QSEQoJc2lnbmF0dXJl",
-            "GAEgASgMEjwKBXN0YXJ0GAIgASgLMisuaW9wLnByb2ZpbGVzZXJ2ZXIuU3Rh",
-            "cnRDb252ZXJzYXRpb25SZXF1ZXN0SAASRAoPcmVnaXN0ZXJIb3N0aW5nGAMg",
-            "ASgLMikuaW9wLnByb2ZpbGVzZXJ2ZXIuUmVnaXN0ZXJIb3N0aW5nUmVxdWVz",
-            "dEgAEjQKB2NoZWNrSW4YBCABKAsyIS5pb3AucHJvZmlsZXNlcnZlci5DaGVj",
-            "a0luUmVxdWVzdEgAEkIKDnZlcmlmeUlkZW50aXR5GAUgASgLMiguaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuVmVyaWZ5SWRlbnRpdHlSZXF1ZXN0SAASQAoNdXBkYXRl",
-            "UHJvZmlsZRgGIAEoCzInLmlvcC5wcm9maWxlc2VydmVyLlVwZGF0ZVByb2Zp",
-            "bGVSZXF1ZXN0SAASUgoWY2FuY2VsSG9zdGluZ0FncmVlbWVudBgHIAEoCzIw",
-            "LmlvcC5wcm9maWxlc2VydmVyLkNhbmNlbEhvc3RpbmdBZ3JlZW1lbnRSZXF1",
-            "ZXN0SAASUAoVYXBwbGljYXRpb25TZXJ2aWNlQWRkGAggASgLMi8uaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlQWRkUmVxdWVzdEgAElYK",
-            "GGFwcGxpY2F0aW9uU2VydmljZVJlbW92ZRgJIAEoCzIyLmlvcC5wcm9maWxl",
-            "c2VydmVyLkFwcGxpY2F0aW9uU2VydmljZVJlbW92ZVJlcXVlc3RIABJiCh5j",
-            "YWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2UYCiABKAsyOC5pb3AucHJv",
-            "ZmlsZXNlcnZlci5DYWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2VSZXF1",
-            "ZXN0SAASVgoYaW5jb21pbmdDYWxsTm90aWZpY2F0aW9uGAsgASgLMjIuaW9w",
-            "LnByb2ZpbGVzZXJ2ZXIuSW5jb21pbmdDYWxsTm90aWZpY2F0aW9uUmVxdWVz",
-            "dEgAEkAKDXByb2ZpbGVTZWFyY2gYDCABKAsyJy5pb3AucHJvZmlsZXNlcnZl",
-            "ci5Qcm9maWxlU2VhcmNoUmVxdWVzdEgAEkgKEXByb2ZpbGVTZWFyY2hQYXJ0",
-            "GA0gASgLMisuaW9wLnByb2ZpbGVzZXJ2ZXIuUHJvZmlsZVNlYXJjaFBhcnRS",
-            "ZXF1ZXN0SAASSgoSYWRkUmVsYXRlZElkZW50aXR5GA4gASgLMiwuaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuQWRkUmVsYXRlZElkZW50aXR5UmVxdWVzdEgAElAKFXJl",
-            "bW92ZVJlbGF0ZWRJZGVudGl0eRgPIAEoCzIvLmlvcC5wcm9maWxlc2VydmVy",
-            "LlJlbW92ZVJlbGF0ZWRJZGVudGl0eVJlcXVlc3RIABJkCh9zdGFydE5laWdo",
-            "Ym9yaG9vZEluaXRpYWxpemF0aW9uGBAgASgLMjkuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlcXVlc3RIABJm",
-            "CiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgRIAEoCzI6Lmlv",
-            "cC5wcm9maWxlc2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxpemF0",
-            "aW9uUmVxdWVzdEgAEmQKH25laWdoYm9yaG9vZFNoYXJlZFByb2ZpbGVVcGRh",
-            "dGUYEiABKAsyOS5pb3AucHJvZmlsZXNlcnZlci5OZWlnaGJvcmhvb2RTaGFy",
-            "ZWRQcm9maWxlVXBkYXRlUmVxdWVzdEgAElQKF3N0b3BOZWlnaGJvcmhvb2RV",
-            "cGRhdGVzGBMgASgLMjEuaW9wLnByb2ZpbGVzZXJ2ZXIuU3RvcE5laWdoYm9y",
-            "aG9vZFVwZGF0ZXNSZXF1ZXN0SAASPgoMY2FuU3RvcmVEYXRhGBQgASgLMiYu",
-            "aW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuU3RvcmVEYXRhUmVxdWVzdEgAEk4KFGNh",
-            "blB1Ymxpc2hJcG5zUmVjb3JkGBUgASgLMi4uaW9wLnByb2ZpbGVzZXJ2ZXIu",
-            "Q2FuUHVibGlzaElwbnNSZWNvcmRSZXF1ZXN0SABCDQoLUmVxdWVzdFR5cGUi",
-            "iw0KFENvbnZlcnNhdGlvblJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEoDBI9",
-            "CgVzdGFydBgCIAEoCzIsLmlvcC5wcm9maWxlc2VydmVyLlN0YXJ0Q29udmVy",
-            "c2F0aW9uUmVzcG9uc2VIABJFCg9yZWdpc3Rlckhvc3RpbmcYAyABKAsyKi5p",
-            "b3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3RpbmdSZXNwb25zZUgAEjUK",
-            "B2NoZWNrSW4YBCABKAsyIi5pb3AucHJvZmlsZXNlcnZlci5DaGVja0luUmVz",
-            "cG9uc2VIABJDCg52ZXJpZnlJZGVudGl0eRgFIAEoCzIpLmlvcC5wcm9maWxl",
-            "c2VydmVyLlZlcmlmeUlkZW50aXR5UmVzcG9uc2VIABJBCg11cGRhdGVQcm9m",
-            "aWxlGAYgASgLMiguaW9wLnByb2ZpbGVzZXJ2ZXIuVXBkYXRlUHJvZmlsZVJl",
-            "c3BvbnNlSAASUwoWY2FuY2VsSG9zdGluZ0FncmVlbWVudBgHIAEoCzIxLmlv",
-            "cC5wcm9maWxlc2VydmVyLkNhbmNlbEhvc3RpbmdBZ3JlZW1lbnRSZXNwb25z",
-            "ZUgAElEKFWFwcGxpY2F0aW9uU2VydmljZUFkZBgIIAEoCzIwLmlvcC5wcm9m",
-            "aWxlc2VydmVyLkFwcGxpY2F0aW9uU2VydmljZUFkZFJlc3BvbnNlSAASVwoY",
-            "YXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjMuaW9wLnByb2ZpbGVz",
-            "ZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVzcG9uc2VIABJjCh5j",
-            "YWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2UYCiABKAsyOS5pb3AucHJv",
-            "ZmlsZXNlcnZlci5DYWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2VSZXNw",
-            "b25zZUgAElcKGGluY29taW5nQ2FsbE5vdGlmaWNhdGlvbhgLIAEoCzIzLmlv",
-            "cC5wcm9maWxlc2VydmVyLkluY29taW5nQ2FsbE5vdGlmaWNhdGlvblJlc3Bv",
-            "bnNlSAASQQoNcHJvZmlsZVNlYXJjaBgMIAEoCzIoLmlvcC5wcm9maWxlc2Vy",
-            "dmVyLlByb2ZpbGVTZWFyY2hSZXNwb25zZUgAEkkKEXByb2ZpbGVTZWFyY2hQ",
-            "YXJ0GA0gASgLMiwuaW9wLnByb2ZpbGVzZXJ2ZXIuUHJvZmlsZVNlYXJjaFBh",
-            "cnRSZXNwb25zZUgAEksKEmFkZFJlbGF0ZWRJZGVudGl0eRgOIAEoCzItLmlv",
-            "cC5wcm9maWxlc2VydmVyLkFkZFJlbGF0ZWRJZGVudGl0eVJlc3BvbnNlSAAS",
-            "UQoVcmVtb3ZlUmVsYXRlZElkZW50aXR5GA8gASgLMjAuaW9wLnByb2ZpbGVz",
-            "ZXJ2ZXIuUmVtb3ZlUmVsYXRlZElkZW50aXR5UmVzcG9uc2VIABJlCh9zdGFy",
-            "dE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uGBAgASgLMjouaW9wLnByb2Zp",
-            "bGVzZXJ2ZXIuU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlc3Bv",
-            "bnNlSAASZwogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YESAB",
-            "KAsyOy5pb3AucHJvZmlsZXNlcnZlci5GaW5pc2hOZWlnaGJvcmhvb2RJbml0",
-            "aWFsaXphdGlvblJlc3BvbnNlSAASZQofbmVpZ2hib3Job29kU2hhcmVkUHJv",
-            "ZmlsZVVwZGF0ZRgSIAEoCzI6LmlvcC5wcm9maWxlc2VydmVyLk5laWdoYm9y",
-            "aG9vZFNoYXJlZFByb2ZpbGVVcGRhdGVSZXNwb25zZUgAElUKF3N0b3BOZWln",
-            "aGJvcmhvb2RVcGRhdGVzGBMgASgLMjIuaW9wLnByb2ZpbGVzZXJ2ZXIuU3Rv",
-            "cE5laWdoYm9yaG9vZFVwZGF0ZXNSZXNwb25zZUgAEj8KDGNhblN0b3JlRGF0",
-            "YRgUIAEoCzInLmlvcC5wcm9maWxlc2VydmVyLkNhblN0b3JlRGF0YVJlc3Bv",
-            "bnNlSAASTwoUY2FuUHVibGlzaElwbnNSZWNvcmQYFSABKAsyLy5pb3AucHJv",
-            "ZmlsZXNlcnZlci5DYW5QdWJsaXNoSXBuc1JlY29yZFJlc3BvbnNlSABCDgoM",
-            "UmVzcG9uc2VUeXBlIh4KC1BpbmdSZXF1ZXN0Eg8KB3BheWxvYWQYASABKAwi",
-            "LgoMUGluZ1Jlc3BvbnNlEg8KB3BheWxvYWQYASABKAwSDQoFY2xvY2sYAiAB",
-            "KBIiEgoQTGlzdFJvbGVzUmVxdWVzdCJBChFMaXN0Um9sZXNSZXNwb25zZRIs",
-            "CgVyb2xlcxgBIAMoCzIdLmlvcC5wcm9maWxlc2VydmVyLlNlcnZlclJvbGUi",
-            "aQoKU2VydmVyUm9sZRIvCgRyb2xlGAEgASgOMiEuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuU2VydmVyUm9sZVR5cGUSDAoEcG9ydBgCIAEoDRINCgVpc1RjcBgDIAEo",
-            "CBINCgVpc1RscxgEIAEoCCIvChdMaXN0SG9zdGluZ1BsYW5zUmVxdWVzdBIU",
-            "CgxpZGVudGl0eVR5cGUYASABKAkiSQoYTGlzdEhvc3RpbmdQbGFuc1Jlc3Bv",
-            "bnNlEi0KBXBsYW5zGAEgAygLMh4uaW9wLnByb2ZpbGVzZXJ2ZXIuSG9zdGlu",
-            "Z1BsYW4itwEKC0hvc3RpbmdQbGFuEg4KBnBsYW5JZBgBIAEoDBIXCg9zZXJ2",
-            "ZXJOZXR3b3JrSWQYAiABKAwSFAoMaWRlbnRpdHlUeXBlGAMgASgJEgsKA2Zl",
-            "ZRgEIAEoBBIcChRiaWxsaW5nUGVyaW9kU2Vjb25kcxgFIAEoDRI+Cg5wbGFu",
-            "UGFyYW1ldGVycxgJIAMoCzImLmlvcC5wcm9maWxlc2VydmVyLk5hbWVTdHJp",
-            "bmdWYWx1ZVBhaXIiMgoTTmFtZVN0cmluZ1ZhbHVlUGFpchIMCgRuYW1lGAEg",
-            "ASgJEg0KBXZhbHVlGAIgASgJImEKGFN0YXJ0Q29udmVyc2F0aW9uUmVxdWVz",
-            "dBIZChFzdXBwb3J0ZWRWZXJzaW9ucxgBIAMoDBIRCglwdWJsaWNLZXkYAiAB",
-            "KAwSFwoPY2xpZW50Q2hhbGxlbmdlGAMgASgMImsKGVN0YXJ0Q29udmVyc2F0",
-            "aW9uUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDBIRCglwdWJsaWNLZXkYAiAB",
-            "KAwSEQoJY2hhbGxlbmdlGAMgASgMEhcKD2NsaWVudENoYWxsZW5nZRgEIAEo",
-            "DCJSChZSZWdpc3Rlckhvc3RpbmdSZXF1ZXN0EjgKCGNvbnRyYWN0GAEgASgL",
-            "MiYuaW9wLnByb2ZpbGVzZXJ2ZXIuSG9zdGluZ1BsYW5Db250cmFjdCJTChdS",
-            "ZWdpc3Rlckhvc3RpbmdSZXNwb25zZRI4Cghjb250cmFjdBgBIAEoCzImLmlv",
-            "cC5wcm9maWxlc2VydmVyLkhvc3RpbmdQbGFuQ29udHJhY3QiaQoTSG9zdGlu",
-            "Z1BsYW5Db250cmFjdBIOCgZwbGFuSWQYASABKAwSGQoRaWRlbnRpdHlQdWJs",
-            "aWNLZXkYAiABKAwSEQoJc3RhcnRUaW1lGAMgASgSEhQKDGlkZW50aXR5VHlw",
-            "ZRgEIAEoCSIjCg5DaGVja0luUmVxdWVzdBIRCgljaGFsbGVuZ2UYASABKAwi",
-            "EQoPQ2hlY2tJblJlc3BvbnNlIioKFVZlcmlmeUlkZW50aXR5UmVxdWVzdBIR",
-            "CgljaGFsbGVuZ2UYASABKAwiGAoWVmVyaWZ5SWRlbnRpdHlSZXNwb25zZSLe",
-            "AQoUVXBkYXRlUHJvZmlsZVJlcXVlc3QSEgoKc2V0VmVyc2lvbhgBIAEoCBIP",
-            "CgdzZXROYW1lGAIgASgIEhAKCHNldEltYWdlGAMgASgIEhMKC3NldExvY2F0",
-            "aW9uGAQgASgIEhQKDHNldEV4dHJhRGF0YRgFIAEoCBIPCgd2ZXJzaW9uGAgg",
-            "ASgMEgwKBG5hbWUYCSABKAkSDQoFaW1hZ2UYCiABKAwSEAoIbGF0aXR1ZGUY",
-            "CyABKA8SEQoJbG9uZ2l0dWRlGAwgASgPEhEKCWV4dHJhRGF0YRgNIAEoCSIX",
-            "ChVVcGRhdGVQcm9maWxlUmVzcG9uc2UiZgodQ2FuY2VsSG9zdGluZ0FncmVl",
-            "bWVudFJlcXVlc3QSIgoacmVkaXJlY3RUb05ld1Byb2ZpbGVTZXJ2ZXIYASAB",
-            "KAgSIQoZbmV3UHJvZmlsZVNlcnZlck5ldHdvcmtJZBgCIAEoDCIgCh5DYW5j",
-            "ZWxIb3N0aW5nQWdyZWVtZW50UmVzcG9uc2UiNAocQXBwbGljYXRpb25TZXJ2",
-            "aWNlQWRkUmVxdWVzdBIUCgxzZXJ2aWNlTmFtZXMYASADKAkiHwodQXBwbGlj",
-            "YXRpb25TZXJ2aWNlQWRkUmVzcG9uc2UiNgofQXBwbGljYXRpb25TZXJ2aWNl",
-            "UmVtb3ZlUmVxdWVzdBITCgtzZXJ2aWNlTmFtZRgBIAEoCSIiCiBBcHBsaWNh",
-            "dGlvblNlcnZpY2VSZW1vdmVSZXNwb25zZSKaAQodR2V0SWRlbnRpdHlJbmZv",
-            "cm1hdGlvblJlcXVlc3QSGQoRaWRlbnRpdHlOZXR3b3JrSWQYASABKAwSGwoT",
-            "aW5jbHVkZVByb2ZpbGVJbWFnZRgCIAEoCBIdChVpbmNsdWRlVGh1bWJuYWls",
-            "SW1hZ2UYAyABKAgSIgoaaW5jbHVkZUFwcGxpY2F0aW9uU2VydmljZXMYBCAB",
-            "KAgi2QIKHkdldElkZW50aXR5SW5mb3JtYXRpb25SZXNwb25zZRIQCghpc0hv",
-            "c3RlZBgBIAEoCBIiChppc1RhcmdldFByb2ZpbGVTZXJ2ZXJLbm93bhgCIAEo",
-            "CBIkChx0YXJnZXRQcm9maWxlU2VydmVyTmV0d29ya0lkGAMgASgMEhAKCGlz",
-            "T25saW5lGAQgASgIEg8KB3ZlcnNpb24YBSABKAwSGQoRaWRlbnRpdHlQdWJs",
-            "aWNLZXkYBiABKAwSDAoEdHlwZRgHIAEoCRIMCgRuYW1lGAggASgJEhAKCGxh",
-            "dGl0dWRlGAkgASgPEhEKCWxvbmdpdHVkZRgKIAEoDxIRCglleHRyYURhdGEY",
-            "CyABKAkSFAoMcHJvZmlsZUltYWdlGAwgASgMEhYKDnRodW1ibmFpbEltYWdl",
-            "GA0gASgMEhsKE2FwcGxpY2F0aW9uU2VydmljZXMYDiADKAkiVwolQ2FsbElk",
-            "ZW50aXR5QXBwbGljYXRpb25TZXJ2aWNlUmVxdWVzdBIZChFpZGVudGl0eU5l",
-            "dHdvcmtJZBgBIAEoDBITCgtzZXJ2aWNlTmFtZRgCIAEoCSI9CiZDYWxsSWRl",
-            "bnRpdHlBcHBsaWNhdGlvblNlcnZpY2VSZXNwb25zZRITCgtjYWxsZXJUb2tl",
-            "bhgBIAEoDCJkCh9JbmNvbWluZ0NhbGxOb3RpZmljYXRpb25SZXF1ZXN0EhcK",
-            "D2NhbGxlclB1YmxpY0tleRgBIAEoDBITCgtzZXJ2aWNlTmFtZRgCIAEoCRIT",
-            "CgtjYWxsZWVUb2tlbhgDIAEoDCIiCiBJbmNvbWluZ0NhbGxOb3RpZmljYXRp",
-            "b25SZXNwb25zZSJGCiRBcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZVJl",
-            "cXVlc3QSDQoFdG9rZW4YASABKAwSDwoHbWVzc2FnZRgCIAEoDCInCiVBcHBs",
-            "aWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZVJlc3BvbnNlIkYKM0FwcGxpY2F0",
-            "aW9uU2VydmljZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVxdWVzdBIP",
-            "CgdtZXNzYWdlGAEgASgMIjYKNEFwcGxpY2F0aW9uU2VydmljZVJlY2VpdmVN",
-            "ZXNzYWdlTm90aWZpY2F0aW9uUmVzcG9uc2UiFQoTUHJvZmlsZVN0YXRzUmVx",
-            "dWVzdCJKChRQcm9maWxlU3RhdHNSZXNwb25zZRIyCgVzdGF0cxgBIAMoCzIj",
-            "LmlvcC5wcm9maWxlc2VydmVyLlByb2ZpbGVTdGF0c0l0ZW0iNwoQUHJvZmls",
-            "ZVN0YXRzSXRlbRIUCgxpZGVudGl0eVR5cGUYASABKAkSDQoFY291bnQYAiAB",
-            "KA0i8gEKFFByb2ZpbGVTZWFyY2hSZXF1ZXN0EhkKEWluY2x1ZGVIb3N0ZWRP",
-            "bmx5GAEgASgIEh4KFmluY2x1ZGVUaHVtYm5haWxJbWFnZXMYAiABKAgSHgoW",
-            "bWF4UmVzcG9uc2VSZWNvcmRDb3VudBgDIAEoDRIbChNtYXhUb3RhbFJlY29y",
-            "ZENvdW50GAQgASgNEgwKBHR5cGUYBSABKAkSDAoEbmFtZRgGIAEoCRIQCghs",
-            "YXRpdHVkZRgHIAEoDxIRCglsb25naXR1ZGUYCCABKA8SDgoGcmFkaXVzGAkg",
-            "ASgNEhEKCWV4dHJhRGF0YRgKIAEoCSKxAQoVUHJvZmlsZVNlYXJjaFJlc3Bv",
-            "bnNlEhgKEHRvdGFsUmVjb3JkQ291bnQYASABKA0SHgoWbWF4UmVzcG9uc2VS",
-            "ZWNvcmRDb3VudBgCIAEoDRIWCg5jb3ZlcmVkU2VydmVycxgDIAMoDBJGCghw",
-            "cm9maWxlcxgEIAMoCzI0LmlvcC5wcm9maWxlc2VydmVyLklkZW50aXR5TmV0",
-            "d29ya1Byb2ZpbGVJbmZvcm1hdGlvbiL/AQohSWRlbnRpdHlOZXR3b3JrUHJv",
-            "ZmlsZUluZm9ybWF0aW9uEhAKCGlzSG9zdGVkGAEgASgIEh4KFmhvc3RpbmdT",
-            "ZXJ2ZXJOZXR3b3JrSWQYAiABKAwSEAoIaXNPbmxpbmUYAyABKAgSDwoHdmVy",
-            "c2lvbhgEIAEoDBIZChFpZGVudGl0eVB1YmxpY0tleRgFIAEoDBIMCgR0eXBl",
-            "GAYgASgJEgwKBG5hbWUYByABKAkSEAoIbGF0aXR1ZGUYCCABKA8SEQoJbG9u",
-            "Z2l0dWRlGAkgASgPEhEKCWV4dHJhRGF0YRgKIAEoCRIWCg50aHVtYm5haWxJ",
-            "bWFnZRgLIAEoDCJEChhQcm9maWxlU2VhcmNoUGFydFJlcXVlc3QSEwoLcmVj",
-            "b3JkSW5kZXgYASABKA0SEwoLcmVjb3JkQ291bnQYAiABKA0ijQEKGVByb2Zp",
-            "bGVTZWFyY2hQYXJ0UmVzcG9uc2USEwoLcmVjb3JkSW5kZXgYASABKA0SEwoL",
-            "cmVjb3JkQ291bnQYAiABKA0SRgoIcHJvZmlsZXMYAyADKAsyNC5pb3AucHJv",
-            "ZmlsZXNlcnZlci5JZGVudGl0eU5ldHdvcmtQcm9maWxlSW5mb3JtYXRpb24i",
-            "ogEKGUFkZFJlbGF0ZWRJZGVudGl0eVJlcXVlc3QSRgoPY2FyZEFwcGxpY2F0",
-            "aW9uGAEgASgLMi0uaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FyZEFwcGxpY2F0aW9u",
-            "SW5mb3JtYXRpb24SPQoKc2lnbmVkQ2FyZBgCIAEoCzIpLmlvcC5wcm9maWxl",
-            "c2VydmVyLlNpZ25lZFJlbGF0aW9uc2hpcENhcmQiHAoaQWRkUmVsYXRlZElk",
-            "ZW50aXR5UmVzcG9uc2UiNQocUmVtb3ZlUmVsYXRlZElkZW50aXR5UmVxdWVz",
-            "dBIVCg1hcHBsaWNhdGlvbklkGAEgASgMIh8KHVJlbW92ZVJlbGF0ZWRJZGVu",
-            "dGl0eVJlc3BvbnNlIkMKGkNhcmRBcHBsaWNhdGlvbkluZm9ybWF0aW9uEg4K",
-            "BmNhcmRJZBgBIAEoDBIVCg1hcHBsaWNhdGlvbklkGAIgASgMImQKFlNpZ25l",
-            "ZFJlbGF0aW9uc2hpcENhcmQSMQoEY2FyZBgBIAEoCzIjLmlvcC5wcm9maWxl",
-            "c2VydmVyLlJlbGF0aW9uc2hpcENhcmQSFwoPaXNzdWVyU2lnbmF0dXJlGAIg",
-            "ASgMIpoBChBSZWxhdGlvbnNoaXBDYXJkEg4KBmNhcmRJZBgBIAEoDBIPCgd2",
-            "ZXJzaW9uGAIgASgMEgwKBHR5cGUYAyABKAkSEQoJdmFsaWRGcm9tGAQgASgS",
-            "Eg8KB3ZhbGlkVG8YBSABKBISFwoPaXNzdWVyUHVibGljS2V5GAYgASgMEhoK",
-            "EnJlY2lwaWVudFB1YmxpY0tleRgHIAEoDCKeAQoqR2V0SWRlbnRpdHlSZWxh",
-            "dGlvbnNoaXBzSW5mb3JtYXRpb25SZXF1ZXN0EhkKEWlkZW50aXR5TmV0d29y",
-            "a0lkGAEgASgMEhYKDmluY2x1ZGVJbnZhbGlkGAIgASgIEgwKBHR5cGUYAyAB",
-            "KAkSFgoOc3BlY2lmaWNJc3N1ZXIYBCABKAgSFwoPaXNzdWVyTmV0d29ya0lk",
-            "GAUgASgMIm0KK0dldElkZW50aXR5UmVsYXRpb25zaGlwc0luZm9ybWF0aW9u",
-            "UmVzcG9uc2USPgoNcmVsYXRpb25zaGlwcxgBIAMoCzInLmlvcC5wcm9maWxl",
-            "c2VydmVyLklkZW50aXR5UmVsYXRpb25zaGlwIrkBChRJZGVudGl0eVJlbGF0",
-            "aW9uc2hpcBJGCg9jYXJkQXBwbGljYXRpb24YASABKAsyLS5pb3AucHJvZmls",
-            "ZXNlcnZlci5DYXJkQXBwbGljYXRpb25JbmZvcm1hdGlvbhIgChhjYXJkQXBw",
-            "bGljYXRpb25TaWduYXR1cmUYAiABKAwSNwoEY2FyZBgDIAEoCzIpLmlvcC5w",
-            "cm9maWxlc2VydmVyLlNpZ25lZFJlbGF0aW9uc2hpcENhcmQiaAomU3RhcnRO",
-            "ZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlcXVlc3QSEwoLcHJpbWFyeVBv",
-            "cnQYASABKA0SFgoOc3JOZWlnaGJvclBvcnQYAiABKA0SEQoJaXBBZGRyZXNz",
-            "GAMgASgMIikKJ1N0YXJ0TmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25SZXNw",
-            "b25zZSIpCidGaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlcXVl",
-            "c3QiKgooRmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25SZXNwb25z",
-            "ZSJjCiZOZWlnaGJvcmhvb2RTaGFyZWRQcm9maWxlVXBkYXRlUmVxdWVzdBI5",
-            "CgVpdGVtcxgBIAMoCzIqLmlvcC5wcm9maWxlc2VydmVyLlNoYXJlZFByb2Zp",
-            "bGVVcGRhdGVJdGVtIikKJ05laWdoYm9yaG9vZFNoYXJlZFByb2ZpbGVVcGRh",
-            "dGVSZXNwb25zZSKeAgoXU2hhcmVkUHJvZmlsZVVwZGF0ZUl0ZW0SNgoDYWRk",
-            "GAEgASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuU2hhcmVkUHJvZmlsZUFkZEl0",
-            "ZW1IABI8CgZjaGFuZ2UYAiABKAsyKi5pb3AucHJvZmlsZXNlcnZlci5TaGFy",
-            "ZWRQcm9maWxlQ2hhbmdlSXRlbUgAEjwKBmRlbGV0ZRgDIAEoCzIqLmlvcC5w",
-            "cm9maWxlc2VydmVyLlNoYXJlZFByb2ZpbGVEZWxldGVJdGVtSAASQQoHcmVm",
-            "cmVzaBgEIAEoCzIuLmlvcC5wcm9maWxlc2VydmVyLlNoYXJlZFByb2ZpbGVS",
-            "ZWZyZXNoQWxsSXRlbUgAQgwKCkFjdGlvblR5cGUiyQEKFFNoYXJlZFByb2Zp",
-            "bGVBZGRJdGVtEg8KB3ZlcnNpb24YASABKAwSGQoRaWRlbnRpdHlQdWJsaWNL",
-            "ZXkYAiABKAwSDAoEbmFtZRgDIAEoCRIMCgR0eXBlGAQgASgJEhkKEXNldFRo",
-            "dW1ibmFpbEltYWdlGAUgASgIEhYKDnRodW1ibmFpbEltYWdlGAYgASgMEhAK",
-            "CGxhdGl0dWRlGAcgASgPEhEKCWxvbmdpdHVkZRgIIAEoDxIRCglleHRyYURh",
-            "dGEYCSABKAkijgIKF1NoYXJlZFByb2ZpbGVDaGFuZ2VJdGVtEhkKEWlkZW50",
-            "aXR5TmV0d29ya0lkGAEgASgMEhIKCnNldFZlcnNpb24YAiABKAgSDwoHc2V0",
-            "TmFtZRgDIAEoCBIZChFzZXRUaHVtYm5haWxJbWFnZRgEIAEoCBITCgtzZXRM",
-            "b2NhdGlvbhgFIAEoCBIUCgxzZXRFeHRyYURhdGEYBiABKAgSDwoHdmVyc2lv",
-            "bhgHIAEoDBIMCgRuYW1lGAggASgJEhYKDnRodW1ibmFpbEltYWdlGAkgASgM",
-            "EhAKCGxhdGl0dWRlGAogASgPEhEKCWxvbmdpdHVkZRgLIAEoDxIRCglleHRy",
-            "YURhdGEYDCABKAkiNAoXU2hhcmVkUHJvZmlsZURlbGV0ZUl0ZW0SGQoRaWRl",
-            "bnRpdHlOZXR3b3JrSWQYASABKAwiHQobU2hhcmVkUHJvZmlsZVJlZnJlc2hB",
-            "bGxJdGVtIiAKHlN0b3BOZWlnaGJvcmhvb2RVcGRhdGVzUmVxdWVzdCIhCh9T",
-            "dG9wTmVpZ2hib3Job29kVXBkYXRlc1Jlc3BvbnNlIlQKF0NhblByb2ZpbGVT",
-            "ZXJ2ZXJDb250YWN0EhEKCXB1YmxpY0tleRgBIAEoDBIRCglpcEFkZHJlc3MY",
-            "AiABKAwSEwoLcHJpbWFyeVBvcnQYAyABKA0iYAoPQ2FuSWRlbnRpdHlEYXRh",
-            "EhcKD2hvc3RpbmdTZXJ2ZXJJZBgBIAEoDBI0CgxrZXlWYWx1ZUxpc3QYAiAD",
-            "KAsyHi5pb3AucHJvZmlsZXNlcnZlci5DYW5LZXlWYWx1ZSKvAQoLQ2FuS2V5",
-            "VmFsdWUSCwoDa2V5GAEgASgJEhUKC2JpbmFyeVZhbHVlGAIgASgMSAASFQoL",
-            "dWludDMyVmFsdWUYAyABKAVIABIVCgt1aW50NjRWYWx1ZRgEIAEoA0gAEhUK",
-            "C2RvdWJsZVZhbHVlGAUgASgBSAASEwoJYm9vbFZhbHVlGAYgASgISAASFQoL",
-            "c3RyaW5nVmFsdWUYByABKAlIAEILCglWYWx1ZVR5cGUiRwoTQ2FuU3RvcmVE",
-            "YXRhUmVxdWVzdBIwCgRkYXRhGAEgASgLMiIuaW9wLnByb2ZpbGVzZXJ2ZXIu",
-            "Q2FuSWRlbnRpdHlEYXRhIiQKFENhblN0b3JlRGF0YVJlc3BvbnNlEgwKBGhh",
-            "c2gYASABKAwiRAobQ2FuUHVibGlzaElwbnNSZWNvcmRSZXF1ZXN0EiUKBnJl",
-            "Y29yZBgBIAEoCzIVLmlvcC5jYW4uQ2FuSXBuc0VudHJ5Ih4KHENhblB1Ymxp",
-            "c2hJcG5zUmVjb3JkUmVzcG9uc2UqaAoOU2VydmVyUm9sZVR5cGUSCwoHUFJJ",
-            "TUFSWRAAEg8KC1NSX05FSUdIQk9SEAISEwoPQ0xfTk9OX0NVU1RPTUVSEAYS",
-            "DwoLQ0xfQ1VTVE9NRVIQBxISCg5DTF9BUFBfU0VSVklDRRAJYgZwcm90bzM="));
+            "SAASUAoVZ2V0UHJvZmlsZUluZm9ybWF0aW9uGAUgASgLMi8uaW9wLnByb2Zp",
+            "bGVzZXJ2ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVxdWVzdEgAEmAKHWFw",
+            "cGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdlGAYgASgLMjcuaW9wLnByb2Zp",
+            "bGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlU2VuZE1lc3NhZ2VSZXF1ZXN0",
+            "SAASfgosYXBwbGljYXRpb25TZXJ2aWNlUmVjZWl2ZU1lc3NhZ2VOb3RpZmlj",
+            "YXRpb24YByABKAsyRi5pb3AucHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNl",
+            "cnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlmaWNhdGlvblJlcXVlc3RIABI+Cgxw",
+            "cm9maWxlU3RhdHMYCCABKAsyJi5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxl",
+            "U3RhdHNSZXF1ZXN0SAASbAojZ2V0SWRlbnRpdHlSZWxhdGlvbnNoaXBzSW5m",
+            "b3JtYXRpb24YCSABKAsyPS5pb3AucHJvZmlsZXNlcnZlci5HZXRJZGVudGl0",
+            "eVJlbGF0aW9uc2hpcHNJbmZvcm1hdGlvblJlcXVlc3RIAEINCgtSZXF1ZXN0",
+            "VHlwZSLNBQoOU2luZ2xlUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDBIvCgRw",
+            "aW5nGAIgASgLMh8uaW9wLnByb2ZpbGVzZXJ2ZXIuUGluZ1Jlc3BvbnNlSAAS",
+            "OQoJbGlzdFJvbGVzGAMgASgLMiQuaW9wLnByb2ZpbGVzZXJ2ZXIuTGlzdFJv",
+            "bGVzUmVzcG9uc2VIABJHChBsaXN0SG9zdGluZ1BsYW5zGAQgASgLMisuaW9w",
+            "LnByb2ZpbGVzZXJ2ZXIuTGlzdEhvc3RpbmdQbGFuc1Jlc3BvbnNlSAASUQoV",
+            "Z2V0UHJvZmlsZUluZm9ybWF0aW9uGAUgASgLMjAuaW9wLnByb2ZpbGVzZXJ2",
+            "ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVzcG9uc2VIABJhCh1hcHBsaWNh",
+            "dGlvblNlcnZpY2VTZW5kTWVzc2FnZRgGIAEoCzI4LmlvcC5wcm9maWxlc2Vy",
+            "dmVyLkFwcGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdlUmVzcG9uc2VIABJ/",
+            "CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlmaWNhdGlv",
+            "bhgHIAEoCzJHLmlvcC5wcm9maWxlc2VydmVyLkFwcGxpY2F0aW9uU2Vydmlj",
+            "ZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVzcG9uc2VIABI/Cgxwcm9m",
+            "aWxlU3RhdHMYCCABKAsyJy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU3Rh",
+            "dHNSZXNwb25zZUgAEm0KI2dldElkZW50aXR5UmVsYXRpb25zaGlwc0luZm9y",
+            "bWF0aW9uGAkgASgLMj4uaW9wLnByb2ZpbGVzZXJ2ZXIuR2V0SWRlbnRpdHlS",
+            "ZWxhdGlvbnNoaXBzSW5mb3JtYXRpb25SZXNwb25zZUgAQg4KDFJlc3BvbnNl",
+            "VHlwZSL1DAoTQ29udmVyc2F0aW9uUmVxdWVzdBIRCglzaWduYXR1cmUYASAB",
+            "KAwSPAoFc3RhcnQYAiABKAsyKy5pb3AucHJvZmlsZXNlcnZlci5TdGFydENv",
+            "bnZlcnNhdGlvblJlcXVlc3RIABJECg9yZWdpc3Rlckhvc3RpbmcYAyABKAsy",
+            "KS5pb3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3RpbmdSZXF1ZXN0SAAS",
+            "NAoHY2hlY2tJbhgEIAEoCzIhLmlvcC5wcm9maWxlc2VydmVyLkNoZWNrSW5S",
+            "ZXF1ZXN0SAASQgoOdmVyaWZ5SWRlbnRpdHkYBSABKAsyKC5pb3AucHJvZmls",
+            "ZXNlcnZlci5WZXJpZnlJZGVudGl0eVJlcXVlc3RIABJACg11cGRhdGVQcm9m",
+            "aWxlGAYgASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuVXBkYXRlUHJvZmlsZVJl",
+            "cXVlc3RIABJSChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50GAcgASgLMjAuaW9w",
+            "LnByb2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVlbWVudFJlcXVlc3RI",
+            "ABJQChVhcHBsaWNhdGlvblNlcnZpY2VBZGQYCCABKAsyLy5pb3AucHJvZmls",
+            "ZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VBZGRSZXF1ZXN0SAASVgoYYXBw",
+            "bGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjIuaW9wLnByb2ZpbGVzZXJ2",
+            "ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVxdWVzdEgAEmIKHmNhbGxJ",
+            "ZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI4LmlvcC5wcm9maWxl",
+            "c2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZVJlcXVlc3RI",
+            "ABJWChhpbmNvbWluZ0NhbGxOb3RpZmljYXRpb24YCyABKAsyMi5pb3AucHJv",
+            "ZmlsZXNlcnZlci5JbmNvbWluZ0NhbGxOb3RpZmljYXRpb25SZXF1ZXN0SAAS",
+            "QAoNcHJvZmlsZVNlYXJjaBgMIAEoCzInLmlvcC5wcm9maWxlc2VydmVyLlBy",
+            "b2ZpbGVTZWFyY2hSZXF1ZXN0SAASSAoRcHJvZmlsZVNlYXJjaFBhcnQYDSAB",
+            "KAsyKy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU2VhcmNoUGFydFJlcXVl",
+            "c3RIABJKChJhZGRSZWxhdGVkSWRlbnRpdHkYDiABKAsyLC5pb3AucHJvZmls",
+            "ZXNlcnZlci5BZGRSZWxhdGVkSWRlbnRpdHlSZXF1ZXN0SAASUAoVcmVtb3Zl",
+            "UmVsYXRlZElkZW50aXR5GA8gASgLMi8uaW9wLnByb2ZpbGVzZXJ2ZXIuUmVt",
+            "b3ZlUmVsYXRlZElkZW50aXR5UmVxdWVzdEgAEmQKH3N0YXJ0TmVpZ2hib3Jo",
+            "b29kSW5pdGlhbGl6YXRpb24YECABKAsyOS5pb3AucHJvZmlsZXNlcnZlci5T",
+            "dGFydE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVxdWVzdEgAEmYKIGZp",
+            "bmlzaE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uGBEgASgLMjouaW9wLnBy",
+            "b2ZpbGVzZXJ2ZXIuRmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25S",
+            "ZXF1ZXN0SAASZAofbmVpZ2hib3Job29kU2hhcmVkUHJvZmlsZVVwZGF0ZRgS",
+            "IAEoCzI5LmlvcC5wcm9maWxlc2VydmVyLk5laWdoYm9yaG9vZFNoYXJlZFBy",
+            "b2ZpbGVVcGRhdGVSZXF1ZXN0SAASVAoXc3RvcE5laWdoYm9yaG9vZFVwZGF0",
+            "ZXMYEyABKAsyMS5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVpZ2hib3Job29k",
+            "VXBkYXRlc1JlcXVlc3RIABI+CgxjYW5TdG9yZURhdGEYFCABKAsyJi5pb3Au",
+            "cHJvZmlsZXNlcnZlci5DYW5TdG9yZURhdGFSZXF1ZXN0SAASTgoUY2FuUHVi",
+            "bGlzaElwbnNSZWNvcmQYFSABKAsyLi5pb3AucHJvZmlsZXNlcnZlci5DYW5Q",
+            "dWJsaXNoSXBuc1JlY29yZFJlcXVlc3RIAEINCgtSZXF1ZXN0VHlwZSKLDQoU",
+            "Q29udmVyc2F0aW9uUmVzcG9uc2USEQoJc2lnbmF0dXJlGAEgASgMEj0KBXN0",
+            "YXJ0GAIgASgLMiwuaW9wLnByb2ZpbGVzZXJ2ZXIuU3RhcnRDb252ZXJzYXRp",
+            "b25SZXNwb25zZUgAEkUKD3JlZ2lzdGVySG9zdGluZxgDIAEoCzIqLmlvcC5w",
+            "cm9maWxlc2VydmVyLlJlZ2lzdGVySG9zdGluZ1Jlc3BvbnNlSAASNQoHY2hl",
+            "Y2tJbhgEIAEoCzIiLmlvcC5wcm9maWxlc2VydmVyLkNoZWNrSW5SZXNwb25z",
+            "ZUgAEkMKDnZlcmlmeUlkZW50aXR5GAUgASgLMikuaW9wLnByb2ZpbGVzZXJ2",
+            "ZXIuVmVyaWZ5SWRlbnRpdHlSZXNwb25zZUgAEkEKDXVwZGF0ZVByb2ZpbGUY",
+            "BiABKAsyKC5pb3AucHJvZmlsZXNlcnZlci5VcGRhdGVQcm9maWxlUmVzcG9u",
+            "c2VIABJTChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50GAcgASgLMjEuaW9wLnBy",
+            "b2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVlbWVudFJlc3BvbnNlSAAS",
+            "UQoVYXBwbGljYXRpb25TZXJ2aWNlQWRkGAggASgLMjAuaW9wLnByb2ZpbGVz",
+            "ZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlQWRkUmVzcG9uc2VIABJXChhhcHBs",
+            "aWNhdGlvblNlcnZpY2VSZW1vdmUYCSABKAsyMy5pb3AucHJvZmlsZXNlcnZl",
+            "ci5BcHBsaWNhdGlvblNlcnZpY2VSZW1vdmVSZXNwb25zZUgAEmMKHmNhbGxJ",
+            "ZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI5LmlvcC5wcm9maWxl",
+            "c2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZVJlc3BvbnNl",
+            "SAASVwoYaW5jb21pbmdDYWxsTm90aWZpY2F0aW9uGAsgASgLMjMuaW9wLnBy",
+            "b2ZpbGVzZXJ2ZXIuSW5jb21pbmdDYWxsTm90aWZpY2F0aW9uUmVzcG9uc2VI",
+            "ABJBCg1wcm9maWxlU2VhcmNoGAwgASgLMiguaW9wLnByb2ZpbGVzZXJ2ZXIu",
+            "UHJvZmlsZVNlYXJjaFJlc3BvbnNlSAASSQoRcHJvZmlsZVNlYXJjaFBhcnQY",
+            "DSABKAsyLC5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU2VhcmNoUGFydFJl",
+            "c3BvbnNlSAASSwoSYWRkUmVsYXRlZElkZW50aXR5GA4gASgLMi0uaW9wLnBy",
+            "b2ZpbGVzZXJ2ZXIuQWRkUmVsYXRlZElkZW50aXR5UmVzcG9uc2VIABJRChVy",
+            "ZW1vdmVSZWxhdGVkSWRlbnRpdHkYDyABKAsyMC5pb3AucHJvZmlsZXNlcnZl",
+            "ci5SZW1vdmVSZWxhdGVkSWRlbnRpdHlSZXNwb25zZUgAEmUKH3N0YXJ0TmVp",
+            "Z2hib3Job29kSW5pdGlhbGl6YXRpb24YECABKAsyOi5pb3AucHJvZmlsZXNl",
+            "cnZlci5TdGFydE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVzcG9uc2VI",
+            "ABJnCiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgRIAEoCzI7",
+            "LmlvcC5wcm9maWxlc2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
+            "emF0aW9uUmVzcG9uc2VIABJlCh9uZWlnaGJvcmhvb2RTaGFyZWRQcm9maWxl",
+            "VXBkYXRlGBIgASgLMjouaW9wLnByb2ZpbGVzZXJ2ZXIuTmVpZ2hib3Job29k",
+            "U2hhcmVkUHJvZmlsZVVwZGF0ZVJlc3BvbnNlSAASVQoXc3RvcE5laWdoYm9y",
+            "aG9vZFVwZGF0ZXMYEyABKAsyMi5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVp",
+            "Z2hib3Job29kVXBkYXRlc1Jlc3BvbnNlSAASPwoMY2FuU3RvcmVEYXRhGBQg",
+            "ASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuU3RvcmVEYXRhUmVzcG9uc2VI",
+            "ABJPChRjYW5QdWJsaXNoSXBuc1JlY29yZBgVIAEoCzIvLmlvcC5wcm9maWxl",
+            "c2VydmVyLkNhblB1Ymxpc2hJcG5zUmVjb3JkUmVzcG9uc2VIAEIOCgxSZXNw",
+            "b25zZVR5cGUiHgoLUGluZ1JlcXVlc3QSDwoHcGF5bG9hZBgBIAEoDCIuCgxQ",
+            "aW5nUmVzcG9uc2USDwoHcGF5bG9hZBgBIAEoDBINCgVjbG9jaxgCIAEoEiIS",
+            "ChBMaXN0Um9sZXNSZXF1ZXN0IkEKEUxpc3RSb2xlc1Jlc3BvbnNlEiwKBXJv",
+            "bGVzGAEgAygLMh0uaW9wLnByb2ZpbGVzZXJ2ZXIuU2VydmVyUm9sZSJpCgpT",
+            "ZXJ2ZXJSb2xlEi8KBHJvbGUYASABKA4yIS5pb3AucHJvZmlsZXNlcnZlci5T",
+            "ZXJ2ZXJSb2xlVHlwZRIMCgRwb3J0GAIgASgNEg0KBWlzVGNwGAMgASgIEg0K",
+            "BWlzVGxzGAQgASgIIi8KF0xpc3RIb3N0aW5nUGxhbnNSZXF1ZXN0EhQKDGlk",
+            "ZW50aXR5VHlwZRgBIAEoCSJJChhMaXN0SG9zdGluZ1BsYW5zUmVzcG9uc2US",
+            "LQoFcGxhbnMYASADKAsyHi5pb3AucHJvZmlsZXNlcnZlci5Ib3N0aW5nUGxh",
+            "biK3AQoLSG9zdGluZ1BsYW4SDgoGcGxhbklkGAEgASgMEhcKD3NlcnZlck5l",
+            "dHdvcmtJZBgCIAEoDBIUCgxpZGVudGl0eVR5cGUYAyABKAkSCwoDZmVlGAQg",
+            "ASgEEhwKFGJpbGxpbmdQZXJpb2RTZWNvbmRzGAUgASgNEj4KDnBsYW5QYXJh",
+            "bWV0ZXJzGAkgAygLMiYuaW9wLnByb2ZpbGVzZXJ2ZXIuTmFtZVN0cmluZ1Zh",
+            "bHVlUGFpciIyChNOYW1lU3RyaW5nVmFsdWVQYWlyEgwKBG5hbWUYASABKAkS",
+            "DQoFdmFsdWUYAiABKAkiYQoYU3RhcnRDb252ZXJzYXRpb25SZXF1ZXN0EhkK",
+            "EXN1cHBvcnRlZFZlcnNpb25zGAEgAygMEhEKCXB1YmxpY0tleRgCIAEoDBIX",
+            "Cg9jbGllbnRDaGFsbGVuZ2UYAyABKAwiawoZU3RhcnRDb252ZXJzYXRpb25S",
+            "ZXNwb25zZRIPCgd2ZXJzaW9uGAEgASgMEhEKCXB1YmxpY0tleRgCIAEoDBIR",
+            "CgljaGFsbGVuZ2UYAyABKAwSFwoPY2xpZW50Q2hhbGxlbmdlGAQgASgMIlIK",
+            "FlJlZ2lzdGVySG9zdGluZ1JlcXVlc3QSOAoIY29udHJhY3QYASABKAsyJi5p",
+            "b3AucHJvZmlsZXNlcnZlci5Ib3N0aW5nUGxhbkNvbnRyYWN0IlMKF1JlZ2lz",
+            "dGVySG9zdGluZ1Jlc3BvbnNlEjgKCGNvbnRyYWN0GAEgASgLMiYuaW9wLnBy",
+            "b2ZpbGVzZXJ2ZXIuSG9zdGluZ1BsYW5Db250cmFjdCJpChNIb3N0aW5nUGxh",
+            "bkNvbnRyYWN0Eg4KBnBsYW5JZBgBIAEoDBIZChFpZGVudGl0eVB1YmxpY0tl",
+            "eRgCIAEoDBIRCglzdGFydFRpbWUYAyABKBISFAoMaWRlbnRpdHlUeXBlGAQg",
+            "ASgJIiMKDkNoZWNrSW5SZXF1ZXN0EhEKCWNoYWxsZW5nZRgBIAEoDCIRCg9D",
+            "aGVja0luUmVzcG9uc2UiKgoVVmVyaWZ5SWRlbnRpdHlSZXF1ZXN0EhEKCWNo",
+            "YWxsZW5nZRgBIAEoDCIYChZWZXJpZnlJZGVudGl0eVJlc3BvbnNlIpMBChRV",
+            "cGRhdGVQcm9maWxlUmVxdWVzdBI2Cgdwcm9maWxlGAEgASgLMiUuaW9wLnBy",
+            "b2ZpbGVzZXJ2ZXIuUHJvZmlsZUluZm9ybWF0aW9uEhQKDHByb2ZpbGVJbWFn",
+            "ZRgCIAEoDBIWCg50aHVtYm5haWxJbWFnZRgDIAEoDBIVCg1ub1Byb3BhZ2F0",
+            "aW9uGAQgASgIIhcKFVVwZGF0ZVByb2ZpbGVSZXNwb25zZSLCAQoSUHJvZmls",
+            "ZUluZm9ybWF0aW9uEg8KB3ZlcnNpb24YASABKAwSEQoJcHVibGljS2V5GAIg",
+            "ASgMEgwKBHR5cGUYAyABKAkSDAoEbmFtZRgEIAEoCRIQCghsYXRpdHVkZRgF",
+            "IAEoDxIRCglsb25naXR1ZGUYBiABKA8SEQoJZXh0cmFEYXRhGAcgASgJEhgK",
+            "EHByb2ZpbGVJbWFnZUhhc2gYCCABKAwSGgoSdGh1bWJuYWlsSW1hZ2VIYXNo",
+            "GAkgASgMImUKGFNpZ25lZFByb2ZpbGVJbmZvcm1hdGlvbhI2Cgdwcm9maWxl",
+            "GAEgASgLMiUuaW9wLnByb2ZpbGVzZXJ2ZXIuUHJvZmlsZUluZm9ybWF0aW9u",
+            "EhEKCXNpZ25hdHVyZRgCIAEoDCJmCh1DYW5jZWxIb3N0aW5nQWdyZWVtZW50",
+            "UmVxdWVzdBIiChpyZWRpcmVjdFRvTmV3UHJvZmlsZVNlcnZlchgBIAEoCBIh",
+            "ChluZXdQcm9maWxlU2VydmVyTmV0d29ya0lkGAIgASgMIiAKHkNhbmNlbEhv",
+            "c3RpbmdBZ3JlZW1lbnRSZXNwb25zZSI0ChxBcHBsaWNhdGlvblNlcnZpY2VB",
+            "ZGRSZXF1ZXN0EhQKDHNlcnZpY2VOYW1lcxgBIAMoCSIfCh1BcHBsaWNhdGlv",
+            "blNlcnZpY2VBZGRSZXNwb25zZSI2Ch9BcHBsaWNhdGlvblNlcnZpY2VSZW1v",
+            "dmVSZXF1ZXN0EhMKC3NlcnZpY2VOYW1lGAEgASgJIiIKIEFwcGxpY2F0aW9u",
+            "U2VydmljZVJlbW92ZVJlc3BvbnNlIpkBChxHZXRQcm9maWxlSW5mb3JtYXRp",
+            "b25SZXF1ZXN0EhkKEWlkZW50aXR5TmV0d29ya0lkGAEgASgMEhsKE2luY2x1",
+            "ZGVQcm9maWxlSW1hZ2UYAiABKAgSHQoVaW5jbHVkZVRodW1ibmFpbEltYWdl",
+            "GAMgASgIEiIKGmluY2x1ZGVBcHBsaWNhdGlvblNlcnZpY2VzGAQgASgIIpwC",
+            "Ch1HZXRQcm9maWxlSW5mb3JtYXRpb25SZXNwb25zZRIQCghpc0hvc3RlZBgB",
+            "IAEoCBIiChppc1RhcmdldFByb2ZpbGVTZXJ2ZXJLbm93bhgCIAEoCBIkChx0",
+            "YXJnZXRQcm9maWxlU2VydmVyTmV0d29ya0lkGAMgASgMEhAKCGlzT25saW5l",
+            "GAQgASgIEkIKDXNpZ25lZFByb2ZpbGUYBSABKAsyKy5pb3AucHJvZmlsZXNl",
+            "cnZlci5TaWduZWRQcm9maWxlSW5mb3JtYXRpb24SFAoMcHJvZmlsZUltYWdl",
+            "GAYgASgMEhYKDnRodW1ibmFpbEltYWdlGAcgASgMEhsKE2FwcGxpY2F0aW9u",
+            "U2VydmljZXMYCCADKAkiVwolQ2FsbElkZW50aXR5QXBwbGljYXRpb25TZXJ2",
+            "aWNlUmVxdWVzdBIZChFpZGVudGl0eU5ldHdvcmtJZBgBIAEoDBITCgtzZXJ2",
+            "aWNlTmFtZRgCIAEoCSI9CiZDYWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZp",
+            "Y2VSZXNwb25zZRITCgtjYWxsZXJUb2tlbhgBIAEoDCJkCh9JbmNvbWluZ0Nh",
+            "bGxOb3RpZmljYXRpb25SZXF1ZXN0EhcKD2NhbGxlclB1YmxpY0tleRgBIAEo",
+            "DBITCgtzZXJ2aWNlTmFtZRgCIAEoCRITCgtjYWxsZWVUb2tlbhgDIAEoDCIi",
+            "CiBJbmNvbWluZ0NhbGxOb3RpZmljYXRpb25SZXNwb25zZSJGCiRBcHBsaWNh",
+            "dGlvblNlcnZpY2VTZW5kTWVzc2FnZVJlcXVlc3QSDQoFdG9rZW4YASABKAwS",
+            "DwoHbWVzc2FnZRgCIAEoDCInCiVBcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVz",
+            "c2FnZVJlc3BvbnNlIkYKM0FwcGxpY2F0aW9uU2VydmljZVJlY2VpdmVNZXNz",
+            "YWdlTm90aWZpY2F0aW9uUmVxdWVzdBIPCgdtZXNzYWdlGAEgASgMIjYKNEFw",
+            "cGxpY2F0aW9uU2VydmljZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVz",
+            "cG9uc2UiFQoTUHJvZmlsZVN0YXRzUmVxdWVzdCJKChRQcm9maWxlU3RhdHNS",
+            "ZXNwb25zZRIyCgVzdGF0cxgBIAMoCzIjLmlvcC5wcm9maWxlc2VydmVyLlBy",
+            "b2ZpbGVTdGF0c0l0ZW0iNwoQUHJvZmlsZVN0YXRzSXRlbRIUCgxpZGVudGl0",
+            "eVR5cGUYASABKAkSDQoFY291bnQYAiABKA0i8gEKFFByb2ZpbGVTZWFyY2hS",
+            "ZXF1ZXN0EhkKEWluY2x1ZGVIb3N0ZWRPbmx5GAEgASgIEh4KFmluY2x1ZGVU",
+            "aHVtYm5haWxJbWFnZXMYAiABKAgSHgoWbWF4UmVzcG9uc2VSZWNvcmRDb3Vu",
+            "dBgDIAEoDRIbChNtYXhUb3RhbFJlY29yZENvdW50GAQgASgNEgwKBHR5cGUY",
+            "BSABKAkSDAoEbmFtZRgGIAEoCRIQCghsYXRpdHVkZRgHIAEoDxIRCglsb25n",
+            "aXR1ZGUYCCABKA8SDgoGcmFkaXVzGAkgASgNEhEKCWV4dHJhRGF0YRgKIAEo",
+            "CSKnAQoVUHJvZmlsZVNlYXJjaFJlc3BvbnNlEhgKEHRvdGFsUmVjb3JkQ291",
+            "bnQYASABKA0SHgoWbWF4UmVzcG9uc2VSZWNvcmRDb3VudBgCIAEoDRIWCg5j",
+            "b3ZlcmVkU2VydmVycxgDIAMoDBI8Cghwcm9maWxlcxgEIAMoCzIqLmlvcC5w",
+            "cm9maWxlc2VydmVyLlByb2ZpbGVRdWVyeUluZm9ybWF0aW9uIrkBChdQcm9m",
+            "aWxlUXVlcnlJbmZvcm1hdGlvbhIQCghpc0hvc3RlZBgBIAEoCBIeChZob3N0",
+            "aW5nU2VydmVyTmV0d29ya0lkGAIgASgMEhAKCGlzT25saW5lGAMgASgIEkIK",
+            "DXNpZ25lZFByb2ZpbGUYBCABKAsyKy5pb3AucHJvZmlsZXNlcnZlci5TaWdu",
+            "ZWRQcm9maWxlSW5mb3JtYXRpb24SFgoOdGh1bWJuYWlsSW1hZ2UYBSABKAwi",
+            "RAoYUHJvZmlsZVNlYXJjaFBhcnRSZXF1ZXN0EhMKC3JlY29yZEluZGV4GAEg",
+            "ASgNEhMKC3JlY29yZENvdW50GAIgASgNIoMBChlQcm9maWxlU2VhcmNoUGFy",
+            "dFJlc3BvbnNlEhMKC3JlY29yZEluZGV4GAEgASgNEhMKC3JlY29yZENvdW50",
+            "GAIgASgNEjwKCHByb2ZpbGVzGAMgAygLMiouaW9wLnByb2ZpbGVzZXJ2ZXIu",
+            "UHJvZmlsZVF1ZXJ5SW5mb3JtYXRpb24iogEKGUFkZFJlbGF0ZWRJZGVudGl0",
+            "eVJlcXVlc3QSRgoPY2FyZEFwcGxpY2F0aW9uGAEgASgLMi0uaW9wLnByb2Zp",
+            "bGVzZXJ2ZXIuQ2FyZEFwcGxpY2F0aW9uSW5mb3JtYXRpb24SPQoKc2lnbmVk",
+            "Q2FyZBgCIAEoCzIpLmlvcC5wcm9maWxlc2VydmVyLlNpZ25lZFJlbGF0aW9u",
+            "c2hpcENhcmQiHAoaQWRkUmVsYXRlZElkZW50aXR5UmVzcG9uc2UiNQocUmVt",
+            "b3ZlUmVsYXRlZElkZW50aXR5UmVxdWVzdBIVCg1hcHBsaWNhdGlvbklkGAEg",
+            "ASgMIh8KHVJlbW92ZVJlbGF0ZWRJZGVudGl0eVJlc3BvbnNlIkMKGkNhcmRB",
+            "cHBsaWNhdGlvbkluZm9ybWF0aW9uEg4KBmNhcmRJZBgBIAEoDBIVCg1hcHBs",
+            "aWNhdGlvbklkGAIgASgMImQKFlNpZ25lZFJlbGF0aW9uc2hpcENhcmQSMQoE",
+            "Y2FyZBgBIAEoCzIjLmlvcC5wcm9maWxlc2VydmVyLlJlbGF0aW9uc2hpcENh",
+            "cmQSFwoPaXNzdWVyU2lnbmF0dXJlGAIgASgMIpoBChBSZWxhdGlvbnNoaXBD",
+            "YXJkEg4KBmNhcmRJZBgBIAEoDBIPCgd2ZXJzaW9uGAIgASgMEgwKBHR5cGUY",
+            "AyABKAkSEQoJdmFsaWRGcm9tGAQgASgSEg8KB3ZhbGlkVG8YBSABKBISFwoP",
+            "aXNzdWVyUHVibGljS2V5GAYgASgMEhoKEnJlY2lwaWVudFB1YmxpY0tleRgH",
+            "IAEoDCKeAQoqR2V0SWRlbnRpdHlSZWxhdGlvbnNoaXBzSW5mb3JtYXRpb25S",
+            "ZXF1ZXN0EhkKEWlkZW50aXR5TmV0d29ya0lkGAEgASgMEhYKDmluY2x1ZGVJ",
+            "bnZhbGlkGAIgASgIEgwKBHR5cGUYAyABKAkSFgoOc3BlY2lmaWNJc3N1ZXIY",
+            "BCABKAgSFwoPaXNzdWVyTmV0d29ya0lkGAUgASgMIm0KK0dldElkZW50aXR5",
+            "UmVsYXRpb25zaGlwc0luZm9ybWF0aW9uUmVzcG9uc2USPgoNcmVsYXRpb25z",
+            "aGlwcxgBIAMoCzInLmlvcC5wcm9maWxlc2VydmVyLklkZW50aXR5UmVsYXRp",
+            "b25zaGlwIrkBChRJZGVudGl0eVJlbGF0aW9uc2hpcBJGCg9jYXJkQXBwbGlj",
+            "YXRpb24YASABKAsyLS5pb3AucHJvZmlsZXNlcnZlci5DYXJkQXBwbGljYXRp",
+            "b25JbmZvcm1hdGlvbhIgChhjYXJkQXBwbGljYXRpb25TaWduYXR1cmUYAiAB",
+            "KAwSNwoEY2FyZBgDIAEoCzIpLmlvcC5wcm9maWxlc2VydmVyLlNpZ25lZFJl",
+            "bGF0aW9uc2hpcENhcmQiaAomU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXph",
+            "dGlvblJlcXVlc3QSEwoLcHJpbWFyeVBvcnQYASABKA0SFgoOc3JOZWlnaGJv",
+            "clBvcnQYAiABKA0SEQoJaXBBZGRyZXNzGAMgASgMIikKJ1N0YXJ0TmVpZ2hi",
+            "b3Job29kSW5pdGlhbGl6YXRpb25SZXNwb25zZSIpCidGaW5pc2hOZWlnaGJv",
+            "cmhvb2RJbml0aWFsaXphdGlvblJlcXVlc3QiKgooRmluaXNoTmVpZ2hib3Jo",
+            "b29kSW5pdGlhbGl6YXRpb25SZXNwb25zZSJjCiZOZWlnaGJvcmhvb2RTaGFy",
+            "ZWRQcm9maWxlVXBkYXRlUmVxdWVzdBI5CgVpdGVtcxgBIAMoCzIqLmlvcC5w",
+            "cm9maWxlc2VydmVyLlNoYXJlZFByb2ZpbGVVcGRhdGVJdGVtIikKJ05laWdo",
+            "Ym9yaG9vZFNoYXJlZFByb2ZpbGVVcGRhdGVSZXNwb25zZSKeAgoXU2hhcmVk",
+            "UHJvZmlsZVVwZGF0ZUl0ZW0SNgoDYWRkGAEgASgLMicuaW9wLnByb2ZpbGVz",
+            "ZXJ2ZXIuU2hhcmVkUHJvZmlsZUFkZEl0ZW1IABI8CgZjaGFuZ2UYAiABKAsy",
+            "Ki5pb3AucHJvZmlsZXNlcnZlci5TaGFyZWRQcm9maWxlQ2hhbmdlSXRlbUgA",
+            "EjwKBmRlbGV0ZRgDIAEoCzIqLmlvcC5wcm9maWxlc2VydmVyLlNoYXJlZFBy",
+            "b2ZpbGVEZWxldGVJdGVtSAASQQoHcmVmcmVzaBgEIAEoCzIuLmlvcC5wcm9m",
+            "aWxlc2VydmVyLlNoYXJlZFByb2ZpbGVSZWZyZXNoQWxsSXRlbUgAQgwKCkFj",
+            "dGlvblR5cGUicgoUU2hhcmVkUHJvZmlsZUFkZEl0ZW0SQgoNc2lnbmVkUHJv",
+            "ZmlsZRgBIAEoCzIrLmlvcC5wcm9maWxlc2VydmVyLlNpZ25lZFByb2ZpbGVJ",
+            "bmZvcm1hdGlvbhIWCg50aHVtYm5haWxJbWFnZRgCIAEoDCJ1ChdTaGFyZWRQ",
+            "cm9maWxlQ2hhbmdlSXRlbRJCCg1zaWduZWRQcm9maWxlGAEgASgLMisuaW9w",
+            "LnByb2ZpbGVzZXJ2ZXIuU2lnbmVkUHJvZmlsZUluZm9ybWF0aW9uEhYKDnRo",
+            "dW1ibmFpbEltYWdlGAIgASgMIjQKF1NoYXJlZFByb2ZpbGVEZWxldGVJdGVt",
+            "EhkKEWlkZW50aXR5TmV0d29ya0lkGAEgASgMIh0KG1NoYXJlZFByb2ZpbGVS",
+            "ZWZyZXNoQWxsSXRlbSIgCh5TdG9wTmVpZ2hib3Job29kVXBkYXRlc1JlcXVl",
+            "c3QiIQofU3RvcE5laWdoYm9yaG9vZFVwZGF0ZXNSZXNwb25zZSJUChdDYW5Q",
+            "cm9maWxlU2VydmVyQ29udGFjdBIRCglwdWJsaWNLZXkYASABKAwSEQoJaXBB",
+            "ZGRyZXNzGAIgASgMEhMKC3ByaW1hcnlQb3J0GAMgASgNImAKD0NhbklkZW50",
+            "aXR5RGF0YRIXCg9ob3N0aW5nU2VydmVySWQYASABKAwSNAoMa2V5VmFsdWVM",
+            "aXN0GAIgAygLMh4uaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuS2V5VmFsdWUirwEK",
+            "C0NhbktleVZhbHVlEgsKA2tleRgBIAEoCRIVCgtiaW5hcnlWYWx1ZRgCIAEo",
+            "DEgAEhUKC3VpbnQzMlZhbHVlGAMgASgFSAASFQoLdWludDY0VmFsdWUYBCAB",
+            "KANIABIVCgtkb3VibGVWYWx1ZRgFIAEoAUgAEhMKCWJvb2xWYWx1ZRgGIAEo",
+            "CEgAEhUKC3N0cmluZ1ZhbHVlGAcgASgJSABCCwoJVmFsdWVUeXBlIkcKE0Nh",
+            "blN0b3JlRGF0YVJlcXVlc3QSMAoEZGF0YRgBIAEoCzIiLmlvcC5wcm9maWxl",
+            "c2VydmVyLkNhbklkZW50aXR5RGF0YSIkChRDYW5TdG9yZURhdGFSZXNwb25z",
+            "ZRIMCgRoYXNoGAEgASgMIkQKG0NhblB1Ymxpc2hJcG5zUmVjb3JkUmVxdWVz",
+            "dBIlCgZyZWNvcmQYASABKAsyFS5pb3AuY2FuLkNhbklwbnNFbnRyeSIeChxD",
+            "YW5QdWJsaXNoSXBuc1JlY29yZFJlc3BvbnNlKmgKDlNlcnZlclJvbGVUeXBl",
+            "EgsKB1BSSU1BUlkQABIPCgtTUl9ORUlHSEJPUhACEhMKD0NMX05PTl9DVVNU",
+            "T01FUhAGEg8KC0NMX0NVU1RPTUVSEAcSEgoOQ0xfQVBQX1NFUlZJQ0UQCWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Iop.Shared.IopSharedReflection.Descriptor, global::Iop.Can.IopCanReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Iop.Profileserver.ServerRoleType), }, new pbr::GeneratedClrTypeInfo[] {
@@ -305,8 +302,8 @@ namespace Iop.Profileserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Message), global::Iop.Profileserver.Message.Parser, new[]{ "Id", "Request", "Response" }, new[]{ "MessageType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Request), global::Iop.Profileserver.Request.Parser, new[]{ "SingleRequest", "ConversationRequest" }, new[]{ "ConversationType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Response), global::Iop.Profileserver.Response.Parser, new[]{ "Status", "Timestamp", "Details", "SingleResponse", "ConversationResponse" }, new[]{ "ConversationType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleRequest), global::Iop.Profileserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetIdentityInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleResponse), global::Iop.Profileserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetIdentityInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleRequest), global::Iop.Profileserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleResponse), global::Iop.Profileserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "ResponseType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationRequest), global::Iop.Profileserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "ProfileSearch", "ProfileSearchPart", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "RequestType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationResponse), global::Iop.Profileserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "ProfileSearch", "ProfileSearchPart", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "ResponseType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.PingRequest), global::Iop.Profileserver.PingRequest.Parser, new[]{ "Payload" }, null, null, null),
@@ -327,16 +324,18 @@ namespace Iop.Profileserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.CheckInResponse), global::Iop.Profileserver.CheckInResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.VerifyIdentityRequest), global::Iop.Profileserver.VerifyIdentityRequest.Parser, new[]{ "Challenge" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.VerifyIdentityResponse), global::Iop.Profileserver.VerifyIdentityResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.UpdateProfileRequest), global::Iop.Profileserver.UpdateProfileRequest.Parser, new[]{ "SetVersion", "SetName", "SetImage", "SetLocation", "SetExtraData", "Version", "Name", "Image", "Latitude", "Longitude", "ExtraData" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.UpdateProfileRequest), global::Iop.Profileserver.UpdateProfileRequest.Parser, new[]{ "Profile", "ProfileImage", "ThumbnailImage", "NoPropagation" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.UpdateProfileResponse), global::Iop.Profileserver.UpdateProfileResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ProfileInformation), global::Iop.Profileserver.ProfileInformation.Parser, new[]{ "Version", "PublicKey", "Type", "Name", "Latitude", "Longitude", "ExtraData", "ProfileImageHash", "ThumbnailImageHash" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SignedProfileInformation), global::Iop.Profileserver.SignedProfileInformation.Parser, new[]{ "Profile", "Signature" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.CancelHostingAgreementRequest), global::Iop.Profileserver.CancelHostingAgreementRequest.Parser, new[]{ "RedirectToNewProfileServer", "NewProfileServerNetworkId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.CancelHostingAgreementResponse), global::Iop.Profileserver.CancelHostingAgreementResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ApplicationServiceAddRequest), global::Iop.Profileserver.ApplicationServiceAddRequest.Parser, new[]{ "ServiceNames" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ApplicationServiceAddResponse), global::Iop.Profileserver.ApplicationServiceAddResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ApplicationServiceRemoveRequest), global::Iop.Profileserver.ApplicationServiceRemoveRequest.Parser, new[]{ "ServiceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ApplicationServiceRemoveResponse), global::Iop.Profileserver.ApplicationServiceRemoveResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.GetIdentityInformationRequest), global::Iop.Profileserver.GetIdentityInformationRequest.Parser, new[]{ "IdentityNetworkId", "IncludeProfileImage", "IncludeThumbnailImage", "IncludeApplicationServices" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.GetIdentityInformationResponse), global::Iop.Profileserver.GetIdentityInformationResponse.Parser, new[]{ "IsHosted", "IsTargetProfileServerKnown", "TargetProfileServerNetworkId", "IsOnline", "Version", "IdentityPublicKey", "Type", "Name", "Latitude", "Longitude", "ExtraData", "ProfileImage", "ThumbnailImage", "ApplicationServices" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.GetProfileInformationRequest), global::Iop.Profileserver.GetProfileInformationRequest.Parser, new[]{ "IdentityNetworkId", "IncludeProfileImage", "IncludeThumbnailImage", "IncludeApplicationServices" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.GetProfileInformationResponse), global::Iop.Profileserver.GetProfileInformationResponse.Parser, new[]{ "IsHosted", "IsTargetProfileServerKnown", "TargetProfileServerNetworkId", "IsOnline", "SignedProfile", "ProfileImage", "ThumbnailImage", "ApplicationServices" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.CallIdentityApplicationServiceRequest), global::Iop.Profileserver.CallIdentityApplicationServiceRequest.Parser, new[]{ "IdentityNetworkId", "ServiceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.CallIdentityApplicationServiceResponse), global::Iop.Profileserver.CallIdentityApplicationServiceResponse.Parser, new[]{ "CallerToken" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.IncomingCallNotificationRequest), global::Iop.Profileserver.IncomingCallNotificationRequest.Parser, new[]{ "CallerPublicKey", "ServiceName", "CalleeToken" }, null, null, null),
@@ -350,7 +349,7 @@ namespace Iop.Profileserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ProfileStatsItem), global::Iop.Profileserver.ProfileStatsItem.Parser, new[]{ "IdentityType", "Count" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ProfileSearchRequest), global::Iop.Profileserver.ProfileSearchRequest.Parser, new[]{ "IncludeHostedOnly", "IncludeThumbnailImages", "MaxResponseRecordCount", "MaxTotalRecordCount", "Type", "Name", "Latitude", "Longitude", "Radius", "ExtraData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ProfileSearchResponse), global::Iop.Profileserver.ProfileSearchResponse.Parser, new[]{ "TotalRecordCount", "MaxResponseRecordCount", "CoveredServers", "Profiles" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.IdentityNetworkProfileInformation), global::Iop.Profileserver.IdentityNetworkProfileInformation.Parser, new[]{ "IsHosted", "HostingServerNetworkId", "IsOnline", "Version", "IdentityPublicKey", "Type", "Name", "Latitude", "Longitude", "ExtraData", "ThumbnailImage" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ProfileQueryInformation), global::Iop.Profileserver.ProfileQueryInformation.Parser, new[]{ "IsHosted", "HostingServerNetworkId", "IsOnline", "SignedProfile", "ThumbnailImage" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ProfileSearchPartRequest), global::Iop.Profileserver.ProfileSearchPartRequest.Parser, new[]{ "RecordIndex", "RecordCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ProfileSearchPartResponse), global::Iop.Profileserver.ProfileSearchPartResponse.Parser, new[]{ "RecordIndex", "RecordCount", "Profiles" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.AddRelatedIdentityRequest), global::Iop.Profileserver.AddRelatedIdentityRequest.Parser, new[]{ "CardApplication", "SignedCard" }, null, null, null),
@@ -370,8 +369,8 @@ namespace Iop.Profileserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest), global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest.Parser, new[]{ "Items" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse), global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SharedProfileUpdateItem), global::Iop.Profileserver.SharedProfileUpdateItem.Parser, new[]{ "Add", "Change", "Delete", "Refresh" }, new[]{ "ActionType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SharedProfileAddItem), global::Iop.Profileserver.SharedProfileAddItem.Parser, new[]{ "Version", "IdentityPublicKey", "Name", "Type", "SetThumbnailImage", "ThumbnailImage", "Latitude", "Longitude", "ExtraData" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SharedProfileChangeItem), global::Iop.Profileserver.SharedProfileChangeItem.Parser, new[]{ "IdentityNetworkId", "SetVersion", "SetName", "SetThumbnailImage", "SetLocation", "SetExtraData", "Version", "Name", "ThumbnailImage", "Latitude", "Longitude", "ExtraData" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SharedProfileAddItem), global::Iop.Profileserver.SharedProfileAddItem.Parser, new[]{ "SignedProfile", "ThumbnailImage" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SharedProfileChangeItem), global::Iop.Profileserver.SharedProfileChangeItem.Parser, new[]{ "SignedProfile", "ThumbnailImage" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SharedProfileDeleteItem), global::Iop.Profileserver.SharedProfileDeleteItem.Parser, new[]{ "IdentityNetworkId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SharedProfileRefreshAllItem), global::Iop.Profileserver.SharedProfileRefreshAllItem.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.StopNeighborhoodUpdatesRequest), global::Iop.Profileserver.StopNeighborhoodUpdatesRequest.Parser, null, null, null, null),
@@ -1337,8 +1336,8 @@ namespace Iop.Profileserver {
         case RequestTypeOneofCase.ListHostingPlans:
           ListHostingPlans = other.ListHostingPlans.Clone();
           break;
-        case RequestTypeOneofCase.GetIdentityInformation:
-          GetIdentityInformation = other.GetIdentityInformation.Clone();
+        case RequestTypeOneofCase.GetProfileInformation:
+          GetProfileInformation = other.GetProfileInformation.Clone();
           break;
         case RequestTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage.Clone();
@@ -1408,14 +1407,14 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "getIdentityInformation" field.</summary>
-    public const int GetIdentityInformationFieldNumber = 5;
+    /// <summary>Field number for the "getProfileInformation" field.</summary>
+    public const int GetProfileInformationFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.GetIdentityInformationRequest GetIdentityInformation {
-      get { return requestTypeCase_ == RequestTypeOneofCase.GetIdentityInformation ? (global::Iop.Profileserver.GetIdentityInformationRequest) requestType_ : null; }
+    public global::Iop.Profileserver.GetProfileInformationRequest GetProfileInformation {
+      get { return requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation ? (global::Iop.Profileserver.GetProfileInformationRequest) requestType_ : null; }
       set {
         requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.GetIdentityInformation;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.GetProfileInformation;
       }
     }
 
@@ -1470,7 +1469,7 @@ namespace Iop.Profileserver {
       Ping = 2,
       ListRoles = 3,
       ListHostingPlans = 4,
-      GetIdentityInformation = 5,
+      GetProfileInformation = 5,
       ApplicationServiceSendMessage = 6,
       ApplicationServiceReceiveMessageNotification = 7,
       ProfileStats = 8,
@@ -1505,7 +1504,7 @@ namespace Iop.Profileserver {
       if (!object.Equals(Ping, other.Ping)) return false;
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(ListHostingPlans, other.ListHostingPlans)) return false;
-      if (!object.Equals(GetIdentityInformation, other.GetIdentityInformation)) return false;
+      if (!object.Equals(GetProfileInformation, other.GetProfileInformation)) return false;
       if (!object.Equals(ApplicationServiceSendMessage, other.ApplicationServiceSendMessage)) return false;
       if (!object.Equals(ApplicationServiceReceiveMessageNotification, other.ApplicationServiceReceiveMessageNotification)) return false;
       if (!object.Equals(ProfileStats, other.ProfileStats)) return false;
@@ -1521,7 +1520,7 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.Ping) hash ^= Ping.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ListHostingPlans) hash ^= ListHostingPlans.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityInformation) hash ^= GetIdentityInformation.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) hash ^= GetProfileInformation.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) hash ^= ApplicationServiceSendMessage.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification) hash ^= ApplicationServiceReceiveMessageNotification.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ProfileStats) hash ^= ProfileStats.GetHashCode();
@@ -1553,9 +1552,9 @@ namespace Iop.Profileserver {
         output.WriteRawTag(34);
         output.WriteMessage(ListHostingPlans);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityInformation) {
+      if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) {
         output.WriteRawTag(42);
-        output.WriteMessage(GetIdentityInformation);
+        output.WriteMessage(GetProfileInformation);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
         output.WriteRawTag(50);
@@ -1590,8 +1589,8 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.ListHostingPlans) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ListHostingPlans);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityInformation) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetIdentityInformation);
+      if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetProfileInformation);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ApplicationServiceSendMessage);
@@ -1626,8 +1625,8 @@ namespace Iop.Profileserver {
         case RequestTypeOneofCase.ListHostingPlans:
           ListHostingPlans = other.ListHostingPlans;
           break;
-        case RequestTypeOneofCase.GetIdentityInformation:
-          GetIdentityInformation = other.GetIdentityInformation;
+        case RequestTypeOneofCase.GetProfileInformation:
+          GetProfileInformation = other.GetProfileInformation;
           break;
         case RequestTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage;
@@ -1685,12 +1684,12 @@ namespace Iop.Profileserver {
             break;
           }
           case 42: {
-            global::Iop.Profileserver.GetIdentityInformationRequest subBuilder = new global::Iop.Profileserver.GetIdentityInformationRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityInformation) {
-              subBuilder.MergeFrom(GetIdentityInformation);
+            global::Iop.Profileserver.GetProfileInformationRequest subBuilder = new global::Iop.Profileserver.GetProfileInformationRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) {
+              subBuilder.MergeFrom(GetProfileInformation);
             }
             input.ReadMessage(subBuilder);
-            GetIdentityInformation = subBuilder;
+            GetProfileInformation = subBuilder;
             break;
           }
           case 50: {
@@ -1773,8 +1772,8 @@ namespace Iop.Profileserver {
         case ResponseTypeOneofCase.ListHostingPlans:
           ListHostingPlans = other.ListHostingPlans.Clone();
           break;
-        case ResponseTypeOneofCase.GetIdentityInformation:
-          GetIdentityInformation = other.GetIdentityInformation.Clone();
+        case ResponseTypeOneofCase.GetProfileInformation:
+          GetProfileInformation = other.GetProfileInformation.Clone();
           break;
         case ResponseTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage.Clone();
@@ -1844,14 +1843,14 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "getIdentityInformation" field.</summary>
-    public const int GetIdentityInformationFieldNumber = 5;
+    /// <summary>Field number for the "getProfileInformation" field.</summary>
+    public const int GetProfileInformationFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.GetIdentityInformationResponse GetIdentityInformation {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.GetIdentityInformation ? (global::Iop.Profileserver.GetIdentityInformationResponse) responseType_ : null; }
+    public global::Iop.Profileserver.GetProfileInformationResponse GetProfileInformation {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation ? (global::Iop.Profileserver.GetProfileInformationResponse) responseType_ : null; }
       set {
         responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.GetIdentityInformation;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.GetProfileInformation;
       }
     }
 
@@ -1906,7 +1905,7 @@ namespace Iop.Profileserver {
       Ping = 2,
       ListRoles = 3,
       ListHostingPlans = 4,
-      GetIdentityInformation = 5,
+      GetProfileInformation = 5,
       ApplicationServiceSendMessage = 6,
       ApplicationServiceReceiveMessageNotification = 7,
       ProfileStats = 8,
@@ -1941,7 +1940,7 @@ namespace Iop.Profileserver {
       if (!object.Equals(Ping, other.Ping)) return false;
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(ListHostingPlans, other.ListHostingPlans)) return false;
-      if (!object.Equals(GetIdentityInformation, other.GetIdentityInformation)) return false;
+      if (!object.Equals(GetProfileInformation, other.GetProfileInformation)) return false;
       if (!object.Equals(ApplicationServiceSendMessage, other.ApplicationServiceSendMessage)) return false;
       if (!object.Equals(ApplicationServiceReceiveMessageNotification, other.ApplicationServiceReceiveMessageNotification)) return false;
       if (!object.Equals(ProfileStats, other.ProfileStats)) return false;
@@ -1957,7 +1956,7 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.Ping) hash ^= Ping.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ListHostingPlans) hash ^= ListHostingPlans.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityInformation) hash ^= GetIdentityInformation.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) hash ^= GetProfileInformation.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) hash ^= ApplicationServiceSendMessage.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification) hash ^= ApplicationServiceReceiveMessageNotification.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ProfileStats) hash ^= ProfileStats.GetHashCode();
@@ -1989,9 +1988,9 @@ namespace Iop.Profileserver {
         output.WriteRawTag(34);
         output.WriteMessage(ListHostingPlans);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityInformation) {
+      if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) {
         output.WriteRawTag(42);
-        output.WriteMessage(GetIdentityInformation);
+        output.WriteMessage(GetProfileInformation);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
         output.WriteRawTag(50);
@@ -2026,8 +2025,8 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.ListHostingPlans) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ListHostingPlans);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityInformation) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetIdentityInformation);
+      if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetProfileInformation);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ApplicationServiceSendMessage);
@@ -2062,8 +2061,8 @@ namespace Iop.Profileserver {
         case ResponseTypeOneofCase.ListHostingPlans:
           ListHostingPlans = other.ListHostingPlans;
           break;
-        case ResponseTypeOneofCase.GetIdentityInformation:
-          GetIdentityInformation = other.GetIdentityInformation;
+        case ResponseTypeOneofCase.GetProfileInformation:
+          GetProfileInformation = other.GetProfileInformation;
           break;
         case ResponseTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage;
@@ -2121,12 +2120,12 @@ namespace Iop.Profileserver {
             break;
           }
           case 42: {
-            global::Iop.Profileserver.GetIdentityInformationResponse subBuilder = new global::Iop.Profileserver.GetIdentityInformationResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityInformation) {
-              subBuilder.MergeFrom(GetIdentityInformation);
+            global::Iop.Profileserver.GetProfileInformationResponse subBuilder = new global::Iop.Profileserver.GetProfileInformationResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) {
+              subBuilder.MergeFrom(GetProfileInformation);
             }
             input.ReadMessage(subBuilder);
-            GetIdentityInformation = subBuilder;
+            GetProfileInformation = subBuilder;
             break;
           }
           case 50: {
@@ -4629,6 +4628,8 @@ namespace Iop.Profileserver {
   ///
   ///  A client asks server for its hosting plans that match the given criteria.
   ///
+  ///  VERSION NOTE: This message is not implemented by current version of profile server.
+  ///
   ///  Roles: clNonCustomer
   /// </summary>
   public sealed partial class ListHostingPlansRequest : pb::IMessage<ListHostingPlansRequest> {
@@ -4754,6 +4755,8 @@ namespace Iop.Profileserver {
   /// <summary>
   ///
   ///  A response to ListHostingPlansRequest that contains a list of matching plans.
+  ///
+  ///  VERSION NOTE: This message is not implemented by current version of profile server.
   ///
   ///  Specific Error Responses: 
   ///    * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new clients because it has no free slots.
@@ -5711,7 +5714,7 @@ namespace Iop.Profileserver {
   /// <summary>
   ///
   ///  A client asks profile server to host its profile by sending RegisterHostingRequest
-  ///  with a signed contract. The signature is provided in 'ConversationRequest.signature'.
+  ///  with a signed contract. The signature of 'contract' field is provided in 'ConversationRequest.signature'.
   ///
   ///  Roles: clNonCustomer
   ///
@@ -5846,7 +5849,7 @@ namespace Iop.Profileserver {
   /// <summary>
   ///
   ///  A response to RegisterHostingRequest in case the profile server wants to accept the request.
-  ///  The response body is signed with a signature in 'ConversationResponse.signature'.
+  ///  The server signes the contract. The signature of 'contract' field is provided in 'ConversationResponse.signature'.
   ///
   ///  Specific Error Responses:
   ///    * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new clients because it has no free slots.
@@ -5854,9 +5857,9 @@ namespace Iop.Profileserver {
   ///    * ERROR_INVALID_SIGNATURE - The client's signature of the contract is not valid.
   ///    * ERROR_ALREADY_EXISTS - The identity is hosted by the server already.
   ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "contract.startTime" - 'RegisterHostingRequest.contract.startTime' is more than 1 hour in the past. 
+  ///      * Response.details == "contract.startTime" - 'RegisterHostingRequest.contract.startTime' is more than 1 hour in the past or is not a valid timestamp value. 
   ///      * Response.details == "contract.identityPublicKey" - 'RegisterHostingRequest.contract.identityPublicKey' does not match identity's public key.
-  ///      * Response.details == "contract.identityType" - 'RegisterHostingRequest.contract.identityType' does not match the hosting plan.
+  ///      * Response.details == "contract.identityType" - 'RegisterHostingRequest.contract.identityType' does not match the hosting plan or is invalid.
   /// </summary>
   public sealed partial class RegisterHostingResponse : pb::IMessage<RegisterHostingResponse> {
     private static readonly pb::MessageParser<RegisterHostingResponse> _parser = new pb::MessageParser<RegisterHostingResponse>(() => new RegisterHostingResponse());
@@ -6040,7 +6043,7 @@ namespace Iop.Profileserver {
     public const int IdentityPublicKeyFieldNumber = 2;
     private pb::ByteString identityPublicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the client's identity.
+    ///  Note that the current version ignores this value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IdentityPublicKey {
@@ -6054,7 +6057,7 @@ namespace Iop.Profileserver {
     public const int StartTimeFieldNumber = 3;
     private long startTime_;
     /// <summary>
-    ///  TimestampType. Specifies the start time of the contract.
+    ///  TimestampType. Specifies the start time of the contract. This has to be set either to the future, or to a time that is not 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long StartTime {
@@ -6068,7 +6071,7 @@ namespace Iop.Profileserver {
     public const int IdentityTypeFieldNumber = 4;
     private string identityType_ = "";
     /// <summary>
-    ///  Type of the client's identity. It has to match the 'HostingPlan.identityType' filter in the selected plan.
+    ///  more than 1 hour in past from the current profile server's time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string IdentityType {
@@ -6662,16 +6665,13 @@ namespace Iop.Profileserver {
   /// <summary>
   ///
   ///  A customer client updates its profile hosted at the profile server.
-  ///  The client must make sure that its profile is complete after processing the request.
-  ///  After sending RegisterHostingRequest, its profile is almost empty - only identity type 
-  ///  and public key are known. This means that the first call of this request 
-  ///  has to contain all required information to make the profile complete. Namely the first 
-  ///  UpdateProfileRequest has to have setVersion, setName, and setLocation set to true.
   ///
   ///  The customer client is required to initialize its profile just after finishing 
   ///  the RegisterHostingRequest. Until the initialization of the profile is made, the identity 
   ///  is not considered as being fully initialized and can not be queried or called by other 
   ///  identities.
+  ///
+  ///  The 'profile' field value in raw format is signed with a signature in 'ConversationRequest.signature'.
   ///
   ///  Roles: clCustomer
   ///
@@ -6701,17 +6701,10 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateProfileRequest(UpdateProfileRequest other) : this() {
-      setVersion_ = other.setVersion_;
-      setName_ = other.setName_;
-      setImage_ = other.setImage_;
-      setLocation_ = other.setLocation_;
-      setExtraData_ = other.setExtraData_;
-      version_ = other.version_;
-      name_ = other.name_;
-      image_ = other.image_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      extraData_ = other.extraData_;
+      Profile = other.profile_ != null ? other.Profile.Clone() : null;
+      profileImage_ = other.profileImage_;
+      thumbnailImage_ = other.thumbnailImage_;
+      noPropagation_ = other.noPropagation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6719,157 +6712,56 @@ namespace Iop.Profileserver {
       return new UpdateProfileRequest(this);
     }
 
-    /// <summary>Field number for the "setVersion" field.</summary>
-    public const int SetVersionFieldNumber = 1;
-    private bool setVersion_;
-    /// <summary>
-    ///  Profile version should be updated. 'version' must contain valid data.
-    /// </summary>
+    /// <summary>Field number for the "profile" field.</summary>
+    public const int ProfileFieldNumber = 1;
+    private global::Iop.Profileserver.ProfileInformation profile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetVersion {
-      get { return setVersion_; }
+    public global::Iop.Profileserver.ProfileInformation Profile {
+      get { return profile_; }
       set {
-        setVersion_ = value;
+        profile_ = value;
       }
     }
 
-    /// <summary>Field number for the "setName" field.</summary>
-    public const int SetNameFieldNumber = 2;
-    private bool setName_;
+    /// <summary>Field number for the "profileImage" field.</summary>
+    public const int ProfileImageFieldNumber = 2;
+    private pb::ByteString profileImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Profile name should be updated. 'name' must contain valid data.
+    ///  Profile image in PNG or JPEG format, non-empty binary data, max 20,480 bytes long, or zero length binary data if the profile image is about to be erased.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetName {
-      get { return setName_; }
+    public pb::ByteString ProfileImage {
+      get { return profileImage_; }
       set {
-        setName_ = value;
+        profileImage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "setImage" field.</summary>
-    public const int SetImageFieldNumber = 3;
-    private bool setImage_;
+    /// <summary>Field number for the "thumbnailImage" field.</summary>
+    public const int ThumbnailImageFieldNumber = 3;
+    private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Profile image should be updated. 'image' must contain valid data.
+    ///  The SHA256 hash of the binary data has to match 'profile.profileImageHash'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetImage {
-      get { return setImage_; }
+    public pb::ByteString ThumbnailImage {
+      get { return thumbnailImage_; }
       set {
-        setImage_ = value;
+        thumbnailImage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "setLocation" field.</summary>
-    public const int SetLocationFieldNumber = 4;
-    private bool setLocation_;
+    /// <summary>Field number for the "noPropagation" field.</summary>
+    public const int NoPropagationFieldNumber = 4;
+    private bool noPropagation_;
     /// <summary>
-    ///  Profile location should be updated. 'latitude' and 'longitude' must contain valid data.
+    ///  The SHA256 hash of the binary data has to match 'profile.thumbnailImageHash'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetLocation {
-      get { return setLocation_; }
+    public bool NoPropagation {
+      get { return noPropagation_; }
       set {
-        setLocation_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setExtraData" field.</summary>
-    public const int SetExtraDataFieldNumber = 5;
-    private bool setExtraData_;
-    /// <summary>
-    ///  Profile extra data should be updated. 'extraData' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetExtraData {
-      get { return setExtraData_; }
-      set {
-        setExtraData_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 8;
-    private pb::ByteString version_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  VersionType. Version of the profile structure.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Version {
-      get { return version_; }
-      set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 9;
-    private string name_ = "";
-    /// <summary>
-    ///  Name of the profile, non-empty string, max 64 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "image" field.</summary>
-    public const int ImageFieldNumber = 10;
-    private pb::ByteString image_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  Profile image in PNG or JPEG format, non-empty binary data, max 20,480 bytes long, or zero length binary data if the image is about to be erased.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Image {
-      get { return image_; }
-      set {
-        image_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 11;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. GPS location latitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 12;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 13;
-    private string extraData_ = "";
-    /// <summary>
-    ///  Semicolon separated 'key=value' list, max 200 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        noPropagation_ = value;
       }
     }
 
@@ -6886,34 +6778,20 @@ namespace Iop.Profileserver {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (SetVersion != other.SetVersion) return false;
-      if (SetName != other.SetName) return false;
-      if (SetImage != other.SetImage) return false;
-      if (SetLocation != other.SetLocation) return false;
-      if (SetExtraData != other.SetExtraData) return false;
-      if (Version != other.Version) return false;
-      if (Name != other.Name) return false;
-      if (Image != other.Image) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (ExtraData != other.ExtraData) return false;
+      if (!object.Equals(Profile, other.Profile)) return false;
+      if (ProfileImage != other.ProfileImage) return false;
+      if (ThumbnailImage != other.ThumbnailImage) return false;
+      if (NoPropagation != other.NoPropagation) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (SetVersion != false) hash ^= SetVersion.GetHashCode();
-      if (SetName != false) hash ^= SetName.GetHashCode();
-      if (SetImage != false) hash ^= SetImage.GetHashCode();
-      if (SetLocation != false) hash ^= SetLocation.GetHashCode();
-      if (SetExtraData != false) hash ^= SetExtraData.GetHashCode();
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Image.Length != 0) hash ^= Image.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
+      if (profile_ != null) hash ^= Profile.GetHashCode();
+      if (ProfileImage.Length != 0) hash ^= ProfileImage.GetHashCode();
+      if (ThumbnailImage.Length != 0) hash ^= ThumbnailImage.GetHashCode();
+      if (NoPropagation != false) hash ^= NoPropagation.GetHashCode();
       return hash;
     }
 
@@ -6924,87 +6802,38 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (SetVersion != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(SetVersion);
+      if (profile_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Profile);
       }
-      if (SetName != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(SetName);
+      if (ProfileImage.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(ProfileImage);
       }
-      if (SetImage != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(SetImage);
+      if (ThumbnailImage.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(ThumbnailImage);
       }
-      if (SetLocation != false) {
+      if (NoPropagation != false) {
         output.WriteRawTag(32);
-        output.WriteBool(SetLocation);
-      }
-      if (SetExtraData != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(SetExtraData);
-      }
-      if (Version.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteBytes(Version);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(Name);
-      }
-      if (Image.Length != 0) {
-        output.WriteRawTag(82);
-        output.WriteBytes(Image);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(93);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(101);
-        output.WriteSFixed32(Longitude);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(106);
-        output.WriteString(ExtraData);
+        output.WriteBool(NoPropagation);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (SetVersion != false) {
+      if (profile_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Profile);
+      }
+      if (ProfileImage.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ProfileImage);
+      }
+      if (ThumbnailImage.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ThumbnailImage);
+      }
+      if (NoPropagation != false) {
         size += 1 + 1;
-      }
-      if (SetName != false) {
-        size += 1 + 1;
-      }
-      if (SetImage != false) {
-        size += 1 + 1;
-      }
-      if (SetLocation != false) {
-        size += 1 + 1;
-      }
-      if (SetExtraData != false) {
-        size += 1 + 1;
-      }
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Image.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Image);
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
       }
       return size;
     }
@@ -7014,38 +6843,20 @@ namespace Iop.Profileserver {
       if (other == null) {
         return;
       }
-      if (other.SetVersion != false) {
-        SetVersion = other.SetVersion;
+      if (other.profile_ != null) {
+        if (profile_ == null) {
+          profile_ = new global::Iop.Profileserver.ProfileInformation();
+        }
+        Profile.MergeFrom(other.Profile);
       }
-      if (other.SetName != false) {
-        SetName = other.SetName;
+      if (other.ProfileImage.Length != 0) {
+        ProfileImage = other.ProfileImage;
       }
-      if (other.SetImage != false) {
-        SetImage = other.SetImage;
+      if (other.ThumbnailImage.Length != 0) {
+        ThumbnailImage = other.ThumbnailImage;
       }
-      if (other.SetLocation != false) {
-        SetLocation = other.SetLocation;
-      }
-      if (other.SetExtraData != false) {
-        SetExtraData = other.SetExtraData;
-      }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Image.Length != 0) {
-        Image = other.Image;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
+      if (other.NoPropagation != false) {
+        NoPropagation = other.NoPropagation;
       }
     }
 
@@ -7057,48 +6868,23 @@ namespace Iop.Profileserver {
           default:
             input.SkipLastField();
             break;
-          case 8: {
-            SetVersion = input.ReadBool();
+          case 10: {
+            if (profile_ == null) {
+              profile_ = new global::Iop.Profileserver.ProfileInformation();
+            }
+            input.ReadMessage(profile_);
             break;
           }
-          case 16: {
-            SetName = input.ReadBool();
+          case 18: {
+            ProfileImage = input.ReadBytes();
             break;
           }
-          case 24: {
-            SetImage = input.ReadBool();
+          case 26: {
+            ThumbnailImage = input.ReadBytes();
             break;
           }
           case 32: {
-            SetLocation = input.ReadBool();
-            break;
-          }
-          case 40: {
-            SetExtraData = input.ReadBool();
-            break;
-          }
-          case 66: {
-            Version = input.ReadBytes();
-            break;
-          }
-          case 74: {
-            Name = input.ReadString();
-            break;
-          }
-          case 82: {
-            Image = input.ReadBytes();
-            break;
-          }
-          case 93: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 101: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 106: {
-            ExtraData = input.ReadString();
+            NoPropagation = input.ReadBool();
             break;
           }
         }
@@ -7113,17 +6899,20 @@ namespace Iop.Profileserver {
   ///
   ///  Specific Error Responses:
   ///    * ERROR_NOT_FOUND - The identity is not a client of the profile server.
+  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the 'UpdateProfileRequest.profile' in 'ConversationRequest.signature' is not valid.
   ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "setVersion" - 'UpdateProfileRequest.setVersion' is not set during the first request.
-  ///      * Response.details == "setName" - 'UpdateProfileRequest.setName' is not set during the firts request.
-  ///      * Response.details == "setLocation" - 'UpdateProfileRequest.setLocation' is not set during the firts request.
-  ///      * Response.details == "set*" - Nothing was set to be updated.
-  ///      * Response.details == "version" - 'UpdateProfileRequest.version' does not contain a valid version information.
-  ///      * Response.details == "name" - 'UpdateProfileRequest.name' does not contain a valid name.
-  ///      * Response.details == "image" - 'UpdateProfileRequest.image' does not contain a valid PNG or JPEG image.
-  ///      * Response.details == "latitude" - 'UpdateProfileRequest.latitude' does not contain a valid latitude information.
-  ///      * Response.details == "longitude" - 'UpdateProfileRequest.longitude' does not contain a valid longitude information.
-  ///      * Response.details == "extraData" - 'UpdateProfileRequest.extraData' does not contain a valid extra data information.
+  ///      * Response.details == "profile.version" - 'UpdateProfileRequest.profile.version' does not contain a valid version information.
+  ///      * Response.details == "profile.publicKey" - 'UpdateProfileRequest.profile.publicKey' is not the client's public key.
+  ///      * Response.details == "profile.type" - 'UpdateProfileRequest.profile.type' does not match the original identity's profile type.
+  ///      * Response.details == "profile.name" - 'UpdateProfileRequest.profile.name' does not contain a valid name.
+  ///      * Response.details == "profile.latitude" - 'UpdateProfileRequest.profile.latitude' does not contain a valid latitude information.
+  ///      * Response.details == "profile.longitude" - 'UpdateProfileRequest.profile.longitude' does not contain a valid longitude information.
+  ///      * Response.details == "profile.extraData" - 'UpdateProfileRequest.profile.extraData' does not contain a valid extra data information.
+  ///      * Response.details == "profile.profileImageHash" - 'UpdateProfileRequest.profile.profileImageHash' is neither a valid SHA256 hash nor empty array.
+  ///      * Response.details == "profile.thumbnailImageHash" - 'UpdateProfileRequest.profile.thumbnailImageHash' is neither a valid SHA256 hash nor empty array.
+  ///      * Response.details == "profileImage" - 'UpdateProfileRequest.profileImage' is not a valid PNG or JPEG image data or it exceeds the size limit or it does not correspond to the 'UpdateProfileRequest.profile.profileImageHash' value.
+  ///      * Response.details == "thumbnailImage" - 'UpdateProfileRequest.thumbnailImage' is not a valid PNG or JPEG image data or it exceeds the size limit or it does not correspond to the 'UpdateProfileRequest.profile.thumbnailImageHash' value.
+  ///      * Response.details == "noPropagation" - 'UpdateProfileRequest.noPropagation' must be false during the first update of the profile.
   /// </summary>
   public sealed partial class UpdateProfileResponse : pb::IMessage<UpdateProfileResponse> {
     private static readonly pb::MessageParser<UpdateProfileResponse> _parser = new pb::MessageParser<UpdateProfileResponse>(() => new UpdateProfileResponse());
@@ -7215,6 +7004,539 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
+  ///
+  ///  Description of an identity profile.
+  /// </summary>
+  public sealed partial class ProfileInformation : pb::IMessage<ProfileInformation> {
+    private static readonly pb::MessageParser<ProfileInformation> _parser = new pb::MessageParser<ProfileInformation>(() => new ProfileInformation());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ProfileInformation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[28]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProfileInformation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProfileInformation(ProfileInformation other) : this() {
+      version_ = other.version_;
+      publicKey_ = other.publicKey_;
+      type_ = other.type_;
+      name_ = other.name_;
+      latitude_ = other.latitude_;
+      longitude_ = other.longitude_;
+      extraData_ = other.extraData_;
+      profileImageHash_ = other.profileImageHash_;
+      thumbnailImageHash_ = other.thumbnailImageHash_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProfileInformation Clone() {
+      return new ProfileInformation(this);
+    }
+
+    /// <summary>Field number for the "version" field.</summary>
+    public const int VersionFieldNumber = 1;
+    private pb::ByteString version_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  VersionType. Version of the profile structure.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Version {
+      get { return version_; }
+      set {
+        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "publicKey" field.</summary>
+    public const int PublicKeyFieldNumber = 2;
+    private pb::ByteString publicKey_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  Identity public key.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString PublicKey {
+      get { return publicKey_; }
+      set {
+        publicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 3;
+    private string type_ = "";
+    /// <summary>
+    ///  Type of the client's identity. Max 64 bytes long. This information is set up during hosting registration process and can not be changed by update later.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Type {
+      get { return type_; }
+      set {
+        type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 4;
+    private string name_ = "";
+    /// <summary>
+    ///  Name of the profile, non-empty string, max 64 bytes long.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "latitude" field.</summary>
+    public const int LatitudeFieldNumber = 5;
+    private int latitude_;
+    /// <summary>
+    ///  LocationType. GPS location latitude information.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Latitude {
+      get { return latitude_; }
+      set {
+        latitude_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "longitude" field.</summary>
+    public const int LongitudeFieldNumber = 6;
+    private int longitude_;
+    /// <summary>
+    ///  LocationType. GPS location longitude information.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Longitude {
+      get { return longitude_; }
+      set {
+        longitude_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "extraData" field.</summary>
+    public const int ExtraDataFieldNumber = 7;
+    private string extraData_ = "";
+    /// <summary>
+    ///  Semicolon separated 'key=value' list, max 200 bytes long.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ExtraData {
+      get { return extraData_; }
+      set {
+        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "profileImageHash" field.</summary>
+    public const int ProfileImageHashFieldNumber = 8;
+    private pb::ByteString profileImageHash_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  SHA256 hash of profile image data, or empty array if no profile image is set, or it is about to be deleted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString ProfileImageHash {
+      get { return profileImageHash_; }
+      set {
+        profileImageHash_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "thumbnailImageHash" field.</summary>
+    public const int ThumbnailImageHashFieldNumber = 9;
+    private pb::ByteString thumbnailImageHash_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  SHA256 hash of thumbnail image data, or empty array if no thumbnail image is set, or it is about to be deleted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString ThumbnailImageHash {
+      get { return thumbnailImageHash_; }
+      set {
+        thumbnailImageHash_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ProfileInformation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ProfileInformation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Version != other.Version) return false;
+      if (PublicKey != other.PublicKey) return false;
+      if (Type != other.Type) return false;
+      if (Name != other.Name) return false;
+      if (Latitude != other.Latitude) return false;
+      if (Longitude != other.Longitude) return false;
+      if (ExtraData != other.ExtraData) return false;
+      if (ProfileImageHash != other.ProfileImageHash) return false;
+      if (ThumbnailImageHash != other.ThumbnailImageHash) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Version.Length != 0) hash ^= Version.GetHashCode();
+      if (PublicKey.Length != 0) hash ^= PublicKey.GetHashCode();
+      if (Type.Length != 0) hash ^= Type.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Latitude != 0) hash ^= Latitude.GetHashCode();
+      if (Longitude != 0) hash ^= Longitude.GetHashCode();
+      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
+      if (ProfileImageHash.Length != 0) hash ^= ProfileImageHash.GetHashCode();
+      if (ThumbnailImageHash.Length != 0) hash ^= ThumbnailImageHash.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Version.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteBytes(Version);
+      }
+      if (PublicKey.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(PublicKey);
+      }
+      if (Type.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Type);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Name);
+      }
+      if (Latitude != 0) {
+        output.WriteRawTag(45);
+        output.WriteSFixed32(Latitude);
+      }
+      if (Longitude != 0) {
+        output.WriteRawTag(53);
+        output.WriteSFixed32(Longitude);
+      }
+      if (ExtraData.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(ExtraData);
+      }
+      if (ProfileImageHash.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteBytes(ProfileImageHash);
+      }
+      if (ThumbnailImageHash.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteBytes(ThumbnailImageHash);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Version.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
+      }
+      if (PublicKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(PublicKey);
+      }
+      if (Type.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Latitude != 0) {
+        size += 1 + 4;
+      }
+      if (Longitude != 0) {
+        size += 1 + 4;
+      }
+      if (ExtraData.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
+      }
+      if (ProfileImageHash.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ProfileImageHash);
+      }
+      if (ThumbnailImageHash.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ThumbnailImageHash);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ProfileInformation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Version.Length != 0) {
+        Version = other.Version;
+      }
+      if (other.PublicKey.Length != 0) {
+        PublicKey = other.PublicKey;
+      }
+      if (other.Type.Length != 0) {
+        Type = other.Type;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Latitude != 0) {
+        Latitude = other.Latitude;
+      }
+      if (other.Longitude != 0) {
+        Longitude = other.Longitude;
+      }
+      if (other.ExtraData.Length != 0) {
+        ExtraData = other.ExtraData;
+      }
+      if (other.ProfileImageHash.Length != 0) {
+        ProfileImageHash = other.ProfileImageHash;
+      }
+      if (other.ThumbnailImageHash.Length != 0) {
+        ThumbnailImageHash = other.ThumbnailImageHash;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Version = input.ReadBytes();
+            break;
+          }
+          case 18: {
+            PublicKey = input.ReadBytes();
+            break;
+          }
+          case 26: {
+            Type = input.ReadString();
+            break;
+          }
+          case 34: {
+            Name = input.ReadString();
+            break;
+          }
+          case 45: {
+            Latitude = input.ReadSFixed32();
+            break;
+          }
+          case 53: {
+            Longitude = input.ReadSFixed32();
+            break;
+          }
+          case 58: {
+            ExtraData = input.ReadString();
+            break;
+          }
+          case 66: {
+            ProfileImageHash = input.ReadBytes();
+            break;
+          }
+          case 74: {
+            ThumbnailImageHash = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///
+  ///  Signed description of an identity profile.
+  /// </summary>
+  public sealed partial class SignedProfileInformation : pb::IMessage<SignedProfileInformation> {
+    private static readonly pb::MessageParser<SignedProfileInformation> _parser = new pb::MessageParser<SignedProfileInformation>(() => new SignedProfileInformation());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SignedProfileInformation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[29]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SignedProfileInformation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SignedProfileInformation(SignedProfileInformation other) : this() {
+      Profile = other.profile_ != null ? other.Profile.Clone() : null;
+      signature_ = other.signature_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SignedProfileInformation Clone() {
+      return new SignedProfileInformation(this);
+    }
+
+    /// <summary>Field number for the "profile" field.</summary>
+    public const int ProfileFieldNumber = 1;
+    private global::Iop.Profileserver.ProfileInformation profile_;
+    /// <summary>
+    ///  Identity profile information.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileInformation Profile {
+      get { return profile_; }
+      set {
+        profile_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "signature" field.</summary>
+    public const int SignatureFieldNumber = 2;
+    private pb::ByteString signature_ = pb::ByteString.Empty;
+    /// <summary>
+    ///  Signature of 'profile' value in raw format using private key of the identity that owns the profile.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Signature {
+      get { return signature_; }
+      set {
+        signature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SignedProfileInformation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SignedProfileInformation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Profile, other.Profile)) return false;
+      if (Signature != other.Signature) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (profile_ != null) hash ^= Profile.GetHashCode();
+      if (Signature.Length != 0) hash ^= Signature.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (profile_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Profile);
+      }
+      if (Signature.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(Signature);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (profile_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Profile);
+      }
+      if (Signature.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Signature);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SignedProfileInformation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.profile_ != null) {
+        if (profile_ == null) {
+          profile_ = new global::Iop.Profileserver.ProfileInformation();
+        }
+        Profile.MergeFrom(other.Profile);
+      }
+      if (other.Signature.Length != 0) {
+        Signature = other.Signature;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (profile_ == null) {
+              profile_ = new global::Iop.Profileserver.ProfileInformation();
+            }
+            input.ReadMessage(profile_);
+            break;
+          }
+          case 18: {
+            Signature = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   ///  
   ///  A customer client cancels the hosting agreement and optionally informs the profile server 
   ///  about its new profile server location. The profile server will keep the information about 
@@ -7231,7 +7553,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7391,7 +7713,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7489,7 +7811,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7609,7 +7931,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7707,7 +8029,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7834,7 +8156,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[33]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7924,14 +8246,14 @@ namespace Iop.Profileserver {
   ///
   ///  Roles: clNonCustomer, clCustomer
   /// </summary>
-  public sealed partial class GetIdentityInformationRequest : pb::IMessage<GetIdentityInformationRequest> {
-    private static readonly pb::MessageParser<GetIdentityInformationRequest> _parser = new pb::MessageParser<GetIdentityInformationRequest>(() => new GetIdentityInformationRequest());
+  public sealed partial class GetProfileInformationRequest : pb::IMessage<GetProfileInformationRequest> {
+    private static readonly pb::MessageParser<GetProfileInformationRequest> _parser = new pb::MessageParser<GetProfileInformationRequest>(() => new GetProfileInformationRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GetIdentityInformationRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetProfileInformationRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[34]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[36]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7940,14 +8262,14 @@ namespace Iop.Profileserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetIdentityInformationRequest() {
+    public GetProfileInformationRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetIdentityInformationRequest(GetIdentityInformationRequest other) : this() {
+    public GetProfileInformationRequest(GetProfileInformationRequest other) : this() {
       identityNetworkId_ = other.identityNetworkId_;
       includeProfileImage_ = other.includeProfileImage_;
       includeThumbnailImage_ = other.includeThumbnailImage_;
@@ -7955,8 +8277,8 @@ namespace Iop.Profileserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetIdentityInformationRequest Clone() {
-      return new GetIdentityInformationRequest(this);
+    public GetProfileInformationRequest Clone() {
+      return new GetProfileInformationRequest(this);
     }
 
     /// <summary>Field number for the "identityNetworkId" field.</summary>
@@ -8017,11 +8339,11 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as GetIdentityInformationRequest);
+      return Equals(other as GetProfileInformationRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GetIdentityInformationRequest other) {
+    public bool Equals(GetProfileInformationRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -8089,7 +8411,7 @@ namespace Iop.Profileserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetIdentityInformationRequest other) {
+    public void MergeFrom(GetProfileInformationRequest other) {
       if (other == null) {
         return;
       }
@@ -8139,20 +8461,20 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to GetIdentityInformationRequest.
+  ///  A response to GetProfileInformationRequest.
   ///
   ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - 'GetIdentityInformationRequest.identityNetworkId' does not identify an identity hosted by the profile server.
+  ///    * ERROR_NOT_FOUND - 'GetProfileInformationRequest.identityNetworkId' does not identify an identity hosted by the profile server.
   ///    * ERROR_UNINITIALIZED - The target identity's profile has not been initialized yet.
   /// </summary>
-  public sealed partial class GetIdentityInformationResponse : pb::IMessage<GetIdentityInformationResponse> {
-    private static readonly pb::MessageParser<GetIdentityInformationResponse> _parser = new pb::MessageParser<GetIdentityInformationResponse>(() => new GetIdentityInformationResponse());
+  public sealed partial class GetProfileInformationResponse : pb::IMessage<GetProfileInformationResponse> {
+    private static readonly pb::MessageParser<GetProfileInformationResponse> _parser = new pb::MessageParser<GetProfileInformationResponse>(() => new GetProfileInformationResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GetIdentityInformationResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetProfileInformationResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[35]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[37]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8161,33 +8483,27 @@ namespace Iop.Profileserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetIdentityInformationResponse() {
+    public GetProfileInformationResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetIdentityInformationResponse(GetIdentityInformationResponse other) : this() {
+    public GetProfileInformationResponse(GetProfileInformationResponse other) : this() {
       isHosted_ = other.isHosted_;
       isTargetProfileServerKnown_ = other.isTargetProfileServerKnown_;
       targetProfileServerNetworkId_ = other.targetProfileServerNetworkId_;
       isOnline_ = other.isOnline_;
-      version_ = other.version_;
-      identityPublicKey_ = other.identityPublicKey_;
-      type_ = other.type_;
-      name_ = other.name_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      extraData_ = other.extraData_;
+      SignedProfile = other.signedProfile_ != null ? other.SignedProfile.Clone() : null;
       profileImage_ = other.profileImage_;
       thumbnailImage_ = other.thumbnailImage_;
       applicationServices_ = other.applicationServices_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetIdentityInformationResponse Clone() {
-      return new GetIdentityInformationResponse(this);
+    public GetProfileInformationResponse Clone() {
+      return new GetProfileInformationResponse(this);
     }
 
     /// <summary>Field number for the "isHosted" field.</summary>
@@ -8246,109 +8562,25 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 5;
-    private pb::ByteString version_ = pb::ByteString.Empty;
+    /// <summary>Field number for the "signedProfile" field.</summary>
+    public const int SignedProfileFieldNumber = 5;
+    private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  VersionType. Version of the profile.
+    ///  If 'isHosted' is true, this is requested identity signed profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Version {
-      get { return version_; }
+    public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
+      get { return signedProfile_; }
       set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "identityPublicKey" field.</summary>
-    public const int IdentityPublicKeyFieldNumber = 6;
-    private pb::ByteString identityPublicKey_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  The requested identity's public key.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString IdentityPublicKey {
-      get { return identityPublicKey_; }
-      set {
-        identityPublicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 7;
-    private string type_ = "";
-    /// <summary>
-    ///  The requested identity's type.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Type {
-      get { return type_; }
-      set {
-        type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 8;
-    private string name_ = "";
-    /// <summary>
-    ///  The requested identity's name.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 9;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. The requested identity's GPS location latitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 10;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. The requested identity's GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 11;
-    private string extraData_ = "";
-    /// <summary>
-    ///  The requested identity's extra data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        signedProfile_ = value;
       }
     }
 
     /// <summary>Field number for the "profileImage" field.</summary>
-    public const int ProfileImageFieldNumber = 12;
+    public const int ProfileImageFieldNumber = 6;
     private pb::ByteString profileImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'GetIdentityInformationRequest.includeProfileImage' was set, this contains the requested identity's profile image.
+    ///  If 'isHosted' is true and if 'GetProfileInformationRequest.includeProfileImage' was set, this contains the requested identity's profile image or empty array if the profile has no profile image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ProfileImage {
@@ -8359,10 +8591,10 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "thumbnailImage" field.</summary>
-    public const int ThumbnailImageFieldNumber = 13;
+    public const int ThumbnailImageFieldNumber = 7;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'GetIdentityInformationRequest.includeThumbnailImage' was set, this contains the requested identity's thumbnail image.
+    ///  If 'isHosted' is true and if 'GetProfileInformationRequest.includeThumbnailImage' was set, this contains the requested identity's thumbnail image or empty array if the profile has no thumbnail image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
@@ -8373,12 +8605,12 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "applicationServices" field.</summary>
-    public const int ApplicationServicesFieldNumber = 14;
+    public const int ApplicationServicesFieldNumber = 8;
     private static readonly pb::FieldCodec<string> _repeated_applicationServices_codec
-        = pb::FieldCodec.ForString(114);
+        = pb::FieldCodec.ForString(66);
     private readonly pbc::RepeatedField<string> applicationServices_ = new pbc::RepeatedField<string>();
     /// <summary>
-    ///  If 'GetIdentityInformationRequest.includeApplicationServices' was set and if 'isOnline' is true, this contains 
+    ///  If 'isHosted' is true and if 'GetProfileInformationRequest.includeApplicationServices' was set and if 'isOnline' is true, this contains 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> ApplicationServices {
@@ -8387,11 +8619,11 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as GetIdentityInformationResponse);
+      return Equals(other as GetProfileInformationResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GetIdentityInformationResponse other) {
+    public bool Equals(GetProfileInformationResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -8402,13 +8634,7 @@ namespace Iop.Profileserver {
       if (IsTargetProfileServerKnown != other.IsTargetProfileServerKnown) return false;
       if (TargetProfileServerNetworkId != other.TargetProfileServerNetworkId) return false;
       if (IsOnline != other.IsOnline) return false;
-      if (Version != other.Version) return false;
-      if (IdentityPublicKey != other.IdentityPublicKey) return false;
-      if (Type != other.Type) return false;
-      if (Name != other.Name) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (ExtraData != other.ExtraData) return false;
+      if (!object.Equals(SignedProfile, other.SignedProfile)) return false;
       if (ProfileImage != other.ProfileImage) return false;
       if (ThumbnailImage != other.ThumbnailImage) return false;
       if(!applicationServices_.Equals(other.applicationServices_)) return false;
@@ -8422,13 +8648,7 @@ namespace Iop.Profileserver {
       if (IsTargetProfileServerKnown != false) hash ^= IsTargetProfileServerKnown.GetHashCode();
       if (TargetProfileServerNetworkId.Length != 0) hash ^= TargetProfileServerNetworkId.GetHashCode();
       if (IsOnline != false) hash ^= IsOnline.GetHashCode();
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (IdentityPublicKey.Length != 0) hash ^= IdentityPublicKey.GetHashCode();
-      if (Type.Length != 0) hash ^= Type.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
+      if (signedProfile_ != null) hash ^= SignedProfile.GetHashCode();
       if (ProfileImage.Length != 0) hash ^= ProfileImage.GetHashCode();
       if (ThumbnailImage.Length != 0) hash ^= ThumbnailImage.GetHashCode();
       hash ^= applicationServices_.GetHashCode();
@@ -8458,40 +8678,16 @@ namespace Iop.Profileserver {
         output.WriteRawTag(32);
         output.WriteBool(IsOnline);
       }
-      if (Version.Length != 0) {
+      if (signedProfile_ != null) {
         output.WriteRawTag(42);
-        output.WriteBytes(Version);
-      }
-      if (IdentityPublicKey.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteBytes(IdentityPublicKey);
-      }
-      if (Type.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Type);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(Name);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(77);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(85);
-        output.WriteSFixed32(Longitude);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(90);
-        output.WriteString(ExtraData);
+        output.WriteMessage(SignedProfile);
       }
       if (ProfileImage.Length != 0) {
-        output.WriteRawTag(98);
+        output.WriteRawTag(50);
         output.WriteBytes(ProfileImage);
       }
       if (ThumbnailImage.Length != 0) {
-        output.WriteRawTag(106);
+        output.WriteRawTag(58);
         output.WriteBytes(ThumbnailImage);
       }
       applicationServices_.WriteTo(output, _repeated_applicationServices_codec);
@@ -8512,26 +8708,8 @@ namespace Iop.Profileserver {
       if (IsOnline != false) {
         size += 1 + 1;
       }
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
-      }
-      if (IdentityPublicKey.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(IdentityPublicKey);
-      }
-      if (Type.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
+      if (signedProfile_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SignedProfile);
       }
       if (ProfileImage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(ProfileImage);
@@ -8544,7 +8722,7 @@ namespace Iop.Profileserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetIdentityInformationResponse other) {
+    public void MergeFrom(GetProfileInformationResponse other) {
       if (other == null) {
         return;
       }
@@ -8560,26 +8738,11 @@ namespace Iop.Profileserver {
       if (other.IsOnline != false) {
         IsOnline = other.IsOnline;
       }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.IdentityPublicKey.Length != 0) {
-        IdentityPublicKey = other.IdentityPublicKey;
-      }
-      if (other.Type.Length != 0) {
-        Type = other.Type;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
+      if (other.signedProfile_ != null) {
+        if (signedProfile_ == null) {
+          signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+        }
+        SignedProfile.MergeFrom(other.SignedProfile);
       }
       if (other.ProfileImage.Length != 0) {
         ProfileImage = other.ProfileImage;
@@ -8615,42 +8778,21 @@ namespace Iop.Profileserver {
             break;
           }
           case 42: {
-            Version = input.ReadBytes();
+            if (signedProfile_ == null) {
+              signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+            }
+            input.ReadMessage(signedProfile_);
             break;
           }
           case 50: {
-            IdentityPublicKey = input.ReadBytes();
-            break;
-          }
-          case 58: {
-            Type = input.ReadString();
-            break;
-          }
-          case 66: {
-            Name = input.ReadString();
-            break;
-          }
-          case 77: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 85: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 90: {
-            ExtraData = input.ReadString();
-            break;
-          }
-          case 98: {
             ProfileImage = input.ReadBytes();
             break;
           }
-          case 106: {
+          case 58: {
             ThumbnailImage = input.ReadBytes();
             break;
           }
-          case 114: {
+          case 66: {
             applicationServices_.AddEntriesFrom(input, _repeated_applicationServices_codec);
             break;
           }
@@ -8684,7 +8826,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[36]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8847,7 +8989,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[37]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8978,7 +9120,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[38]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9168,7 +9310,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[39]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[41]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9284,7 +9426,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[40]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[42]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9449,7 +9591,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[41]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[43]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9545,7 +9687,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[42]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[44]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9670,7 +9812,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[43]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[45]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9767,7 +9909,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[44]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[46]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9861,7 +10003,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[45]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[47]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9977,7 +10119,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[46]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[48]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10149,7 +10291,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[47]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[49]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10582,7 +10724,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[48]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[50]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10653,14 +10795,14 @@ namespace Iop.Profileserver {
 
     /// <summary>Field number for the "profiles" field.</summary>
     public const int ProfilesFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Iop.Profileserver.IdentityNetworkProfileInformation> _repeated_profiles_codec
-        = pb::FieldCodec.ForMessage(34, global::Iop.Profileserver.IdentityNetworkProfileInformation.Parser);
-    private readonly pbc::RepeatedField<global::Iop.Profileserver.IdentityNetworkProfileInformation> profiles_ = new pbc::RepeatedField<global::Iop.Profileserver.IdentityNetworkProfileInformation>();
+    private static readonly pb::FieldCodec<global::Iop.Profileserver.ProfileQueryInformation> _repeated_profiles_codec
+        = pb::FieldCodec.ForMessage(34, global::Iop.Profileserver.ProfileQueryInformation.Parser);
+    private readonly pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> profiles_ = new pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation>();
     /// <summary>
     ///  Search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Iop.Profileserver.IdentityNetworkProfileInformation> Profiles {
+    public pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> Profiles {
       get { return profiles_; }
     }
 
@@ -10776,14 +10918,14 @@ namespace Iop.Profileserver {
   ///
   ///  Information about a single profile record from a profile search query.
   /// </summary>
-  public sealed partial class IdentityNetworkProfileInformation : pb::IMessage<IdentityNetworkProfileInformation> {
-    private static readonly pb::MessageParser<IdentityNetworkProfileInformation> _parser = new pb::MessageParser<IdentityNetworkProfileInformation>(() => new IdentityNetworkProfileInformation());
+  public sealed partial class ProfileQueryInformation : pb::IMessage<ProfileQueryInformation> {
+    private static readonly pb::MessageParser<ProfileQueryInformation> _parser = new pb::MessageParser<ProfileQueryInformation>(() => new ProfileQueryInformation());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<IdentityNetworkProfileInformation> Parser { get { return _parser; } }
+    public static pb::MessageParser<ProfileQueryInformation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[49]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[51]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10792,30 +10934,24 @@ namespace Iop.Profileserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public IdentityNetworkProfileInformation() {
+    public ProfileQueryInformation() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public IdentityNetworkProfileInformation(IdentityNetworkProfileInformation other) : this() {
+    public ProfileQueryInformation(ProfileQueryInformation other) : this() {
       isHosted_ = other.isHosted_;
       hostingServerNetworkId_ = other.hostingServerNetworkId_;
       isOnline_ = other.isOnline_;
-      version_ = other.version_;
-      identityPublicKey_ = other.identityPublicKey_;
-      type_ = other.type_;
-      name_ = other.name_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      extraData_ = other.extraData_;
+      SignedProfile = other.signedProfile_ != null ? other.SignedProfile.Clone() : null;
       thumbnailImage_ = other.thumbnailImage_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public IdentityNetworkProfileInformation Clone() {
-      return new IdentityNetworkProfileInformation(this);
+    public ProfileQueryInformation Clone() {
+      return new ProfileQueryInformation(this);
     }
 
     /// <summary>Field number for the "isHosted" field.</summary>
@@ -10860,106 +10996,22 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 4;
-    private pb::ByteString version_ = pb::ByteString.Empty;
+    /// <summary>Field number for the "signedProfile" field.</summary>
+    public const int SignedProfileFieldNumber = 4;
+    private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  VersionType. Version of the profile.
+    ///  Requested identity signed profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Version {
-      get { return version_; }
+    public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
+      get { return signedProfile_; }
       set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "identityPublicKey" field.</summary>
-    public const int IdentityPublicKeyFieldNumber = 5;
-    private pb::ByteString identityPublicKey_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  The identity's public key.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString IdentityPublicKey {
-      get { return identityPublicKey_; }
-      set {
-        identityPublicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 6;
-    private string type_ = "";
-    /// <summary>
-    ///  The identity's type.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Type {
-      get { return type_; }
-      set {
-        type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 7;
-    private string name_ = "";
-    /// <summary>
-    ///  The identity's name.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 8;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. The identity's GPS location latitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 9;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. The identity's GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 10;
-    private string extraData_ = "";
-    /// <summary>
-    ///  The identity's extra data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        signedProfile_ = value;
       }
     }
 
     /// <summary>Field number for the "thumbnailImage" field.</summary>
-    public const int ThumbnailImageFieldNumber = 11;
+    public const int ThumbnailImageFieldNumber = 5;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
     ///  If 'ProfileSearchRequest.includeThumbnailImages' was set, this contains the identity's thumbnail image, 
@@ -10974,11 +11026,11 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as IdentityNetworkProfileInformation);
+      return Equals(other as ProfileQueryInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(IdentityNetworkProfileInformation other) {
+    public bool Equals(ProfileQueryInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -10988,13 +11040,7 @@ namespace Iop.Profileserver {
       if (IsHosted != other.IsHosted) return false;
       if (HostingServerNetworkId != other.HostingServerNetworkId) return false;
       if (IsOnline != other.IsOnline) return false;
-      if (Version != other.Version) return false;
-      if (IdentityPublicKey != other.IdentityPublicKey) return false;
-      if (Type != other.Type) return false;
-      if (Name != other.Name) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (ExtraData != other.ExtraData) return false;
+      if (!object.Equals(SignedProfile, other.SignedProfile)) return false;
       if (ThumbnailImage != other.ThumbnailImage) return false;
       return true;
     }
@@ -11005,13 +11051,7 @@ namespace Iop.Profileserver {
       if (IsHosted != false) hash ^= IsHosted.GetHashCode();
       if (HostingServerNetworkId.Length != 0) hash ^= HostingServerNetworkId.GetHashCode();
       if (IsOnline != false) hash ^= IsOnline.GetHashCode();
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (IdentityPublicKey.Length != 0) hash ^= IdentityPublicKey.GetHashCode();
-      if (Type.Length != 0) hash ^= Type.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
+      if (signedProfile_ != null) hash ^= SignedProfile.GetHashCode();
       if (ThumbnailImage.Length != 0) hash ^= ThumbnailImage.GetHashCode();
       return hash;
     }
@@ -11035,36 +11075,12 @@ namespace Iop.Profileserver {
         output.WriteRawTag(24);
         output.WriteBool(IsOnline);
       }
-      if (Version.Length != 0) {
+      if (signedProfile_ != null) {
         output.WriteRawTag(34);
-        output.WriteBytes(Version);
-      }
-      if (IdentityPublicKey.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteBytes(IdentityPublicKey);
-      }
-      if (Type.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Type);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Name);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(69);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(77);
-        output.WriteSFixed32(Longitude);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(82);
-        output.WriteString(ExtraData);
+        output.WriteMessage(SignedProfile);
       }
       if (ThumbnailImage.Length != 0) {
-        output.WriteRawTag(90);
+        output.WriteRawTag(42);
         output.WriteBytes(ThumbnailImage);
       }
     }
@@ -11081,26 +11097,8 @@ namespace Iop.Profileserver {
       if (IsOnline != false) {
         size += 1 + 1;
       }
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
-      }
-      if (IdentityPublicKey.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(IdentityPublicKey);
-      }
-      if (Type.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
+      if (signedProfile_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SignedProfile);
       }
       if (ThumbnailImage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(ThumbnailImage);
@@ -11109,7 +11107,7 @@ namespace Iop.Profileserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(IdentityNetworkProfileInformation other) {
+    public void MergeFrom(ProfileQueryInformation other) {
       if (other == null) {
         return;
       }
@@ -11122,26 +11120,11 @@ namespace Iop.Profileserver {
       if (other.IsOnline != false) {
         IsOnline = other.IsOnline;
       }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.IdentityPublicKey.Length != 0) {
-        IdentityPublicKey = other.IdentityPublicKey;
-      }
-      if (other.Type.Length != 0) {
-        Type = other.Type;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
+      if (other.signedProfile_ != null) {
+        if (signedProfile_ == null) {
+          signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+        }
+        SignedProfile.MergeFrom(other.SignedProfile);
       }
       if (other.ThumbnailImage.Length != 0) {
         ThumbnailImage = other.ThumbnailImage;
@@ -11169,34 +11152,13 @@ namespace Iop.Profileserver {
             break;
           }
           case 34: {
-            Version = input.ReadBytes();
+            if (signedProfile_ == null) {
+              signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+            }
+            input.ReadMessage(signedProfile_);
             break;
           }
           case 42: {
-            IdentityPublicKey = input.ReadBytes();
-            break;
-          }
-          case 50: {
-            Type = input.ReadString();
-            break;
-          }
-          case 58: {
-            Name = input.ReadString();
-            break;
-          }
-          case 69: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 77: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 82: {
-            ExtraData = input.ReadString();
-            break;
-          }
-          case 90: {
             ThumbnailImage = input.ReadBytes();
             break;
           }
@@ -11225,7 +11187,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[50]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[52]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11387,7 +11349,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[51]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[53]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11444,14 +11406,14 @@ namespace Iop.Profileserver {
 
     /// <summary>Field number for the "profiles" field.</summary>
     public const int ProfilesFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Iop.Profileserver.IdentityNetworkProfileInformation> _repeated_profiles_codec
-        = pb::FieldCodec.ForMessage(26, global::Iop.Profileserver.IdentityNetworkProfileInformation.Parser);
-    private readonly pbc::RepeatedField<global::Iop.Profileserver.IdentityNetworkProfileInformation> profiles_ = new pbc::RepeatedField<global::Iop.Profileserver.IdentityNetworkProfileInformation>();
+    private static readonly pb::FieldCodec<global::Iop.Profileserver.ProfileQueryInformation> _repeated_profiles_codec
+        = pb::FieldCodec.ForMessage(26, global::Iop.Profileserver.ProfileQueryInformation.Parser);
+    private readonly pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> profiles_ = new pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation>();
     /// <summary>
     ///  Search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Iop.Profileserver.IdentityNetworkProfileInformation> Profiles {
+    public pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> Profiles {
       get { return profiles_; }
     }
 
@@ -11580,7 +11542,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[52]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[54]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11764,7 +11726,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[53]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[55]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11861,7 +11823,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[54]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[56]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11988,7 +11950,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[55]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[57]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12083,7 +12045,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[56]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[58]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12240,7 +12202,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[57]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[59]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12401,7 +12363,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[58]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[60]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12713,7 +12675,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[59]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[61]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12965,7 +12927,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[60]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[62]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13081,7 +13043,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[61]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13327,7 +13289,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[62]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13523,7 +13485,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[63]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13622,7 +13584,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[64]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13721,7 +13683,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[65]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13824,7 +13786,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[66]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[68]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13944,24 +13906,30 @@ namespace Iop.Profileserver {
   ///                                              index $index. Items with index greater then $index were not processed. The $field specifies which field 
   ///                                              was invalid as follows:
   ///        * $field == "add" - Number of shared profiles from the requesting profile server exceeds the limit.
-  ///        * $field == "add.version" - `items[$index].add.version` is not a valid VersionType value.
-  ///        * $field == "add.identityPublicKey" - `items[$index].add.identityPublicKey` is not a valid public key value or the same identity already exists, 
-  ///                                              or another update item in the same request referred to this identity.
-  ///        * $field == "add.name" - `items[$index].add.name` is not a valid profile name.
-  ///        * $field == "add.type" - `items[$index].add.type` is not a valid identity type.
-  ///        * $field == "add.thumbnailImage" - `items[$index].add.thumbnailImage` is not a valid thumbnail image.
-  ///        * $field == "add.latitude" - `items[$index].add.latitude` is not a valid latitude value.
-  ///        * $field == "add.longitude" - `items[$index].add.longitude` is not a valid longitude value.
-  ///        * $field == "add.extraData" - `items[$index].add.extraData` is not a valid extraData value.
-  ///        * $field == "change.set*" - `items[$index].change.set*` are all false.
-  ///        * $field == "change.identityNetworkId" - `items[$index].change.identityNetworkId` does not represent an existing identity, or another update item 
-  ///                                                 in the same request referred to this identity.
-  ///        * $field == "change.version" - `items[$index].change.version` is not a valid VersionType value.
-  ///        * $field == "change.name" - `items[$index].change.name` is not a valid profile name.
-  ///        * $field == "change.thumbnailImage" - `items[$index].change.thumbnailImage` is not a valid thumbnail image.
-  ///        * $field == "change.latitude" - `items[$index].change.latitude` is not a valid latitude value.
-  ///        * $field == "change.longitude" - `items[$index].change.longitude` is not a valid longitude value.
-  ///        * $field == "change.extraData" - `items[$index].change.extraData` is not a valid extraData value.
+  ///        * $field == "add.signedProfile.profile.version" - `items[$index].add.signedProfile.profile.version` does not contain a valid version information.
+  ///        * $field == "add.signedProfile.profile.publicKey" - `items[$index].add.signedProfile.profile.publicKey` is not a valid public key value or the same identity already exists, 
+  ///                                                            or another update item in the same request referred to this identity.
+  ///        * $field == "add.signedProfile.profile.type" - `items[$index].add.signedProfile.profile.type` is not a valid identity type.
+  ///        * $field == "add.signedProfile.profile.name" - `items[$index].add.signedProfile.profile.name` is not a valid profile name.
+  ///        * $field == "add.signedProfile.profile.latitude" - `items[$index].add.signedProfile.profile.latitude` is not a valid latitude value.
+  ///        * $field == "add.signedProfile.profile.longitude" - `items[$index].add.signedProfile.profile.longitude` is not a valid longitude value.
+  ///        * $field == "add.signedProfile.profile.extraData" - `items[$index].add.signedProfile.profile.extraData` is not a valid extraData value.
+  ///        * $field == "add.signedProfile.profile.profileImageHash" - `items[$index].add.signedProfile.profile.profileImageHash` is neither a valid SHA256 hash nor empty array.
+  ///        * $field == "add.signedProfile.profile.thumbnailImageHash" - `items[$index].add.signedProfile.profile.thumbnailImageHash` is neither a valid SHA256 hash nor empty array.
+  ///        * $field == "add.signedProfile.signature" - `items[$index].add.signedProfile.signature` is not a valid signature or 'items[$index].add.signedProfile.profile'.
+  ///        * $field == "add.thumbnailImage" - `items[$index].add.thumbnailImage` is neither a valid SHA256 hash nor empty array or it does not correspond to the `items[$index].add.signedProfile.profile.thumbnailImageHash` value.
+  ///        * $field == "change.signedProfile.profile.version" - `items[$index].change.signedProfile.profile.version` does not contain a valid version information.
+  ///        * $field == "change.signedProfile.profile.publicKey" - `items[$index].change.signedProfile.profile.publicKey` is not a valid public key value or the identity with this public key does not exist, 
+  ///                                                               or another update item in the same request referred to this identity.
+  ///        * $field == "change.signedProfile.profile.type" - `items[$index].change.signedProfile.profile.type` is not a valid identity type or it does not match the previous value of the type of this profile.
+  ///        * $field == "change.signedProfile.profile.name" - `items[$index].change.signedProfile.profile.name` is not a valid profile name.
+  ///        * $field == "change.signedProfile.profile.latitude" - `items[$index].change.signedProfile.profile.latitude` is not a valid latitude value.
+  ///        * $field == "change.signedProfile.profile.longitude" - `items[$index].change.signedProfile.profile.longitude` is not a valid longitude value.
+  ///        * $field == "change.signedProfile.profile.extraData" - `items[$index].change.signedProfile.profile.extraData` is not a valid extraData value.
+  ///        * $field == "change.signedProfile.profile.profileImageHash" - `items[$index].change.signedProfile.profile.profileImageHash` is neither a valid SHA256 hash nor empty array.
+  ///        * $field == "change.signedProfile.profile.thumbnailImageHash" - `items[$index].change.signedProfile.profile.thumbnailImageHash` is neither a valid SHA256 hash nor empty array.
+  ///        * $field == "change.signedProfile.signature" - `items[$index].change.signedProfile.signature` is not a valid signature or 'items[$index].change.signedProfile.profile'.
+  ///        * $field == "change.thumbnailImage" - `items[$index].change.thumbnailImage` is neither a valid SHA256 hash nor empty array or it does not correspond to the `items[$index].change.signedProfile.profile.thumbnailImageHash` value.
   ///        * $field == "delete.identityNetworkId" - `items[$index].delete.identityNetworkId` does not represent an existing identity, or another update item 
   ///                                                 in the same request referred to this identity.
   ///        * $field == "actionType" - During the neighborhood initialization process, only `add` is a valid update message type.
@@ -13973,7 +13941,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[67]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[69]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14066,7 +14034,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[68]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[70]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14136,7 +14104,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "delete" field.</summary>
     public const int DeleteFieldNumber = 3;
     /// <summary>
-    ///   * deleting an existing profile,
+    ///   * deleting an existing profile, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SharedProfileDeleteItem Delete {
@@ -14340,7 +14308,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[69]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[71]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14357,15 +14325,8 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SharedProfileAddItem(SharedProfileAddItem other) : this() {
-      version_ = other.version_;
-      identityPublicKey_ = other.identityPublicKey_;
-      name_ = other.name_;
-      type_ = other.type_;
-      setThumbnailImage_ = other.setThumbnailImage_;
+      SignedProfile = other.signedProfile_ != null ? other.SignedProfile.Clone() : null;
       thumbnailImage_ = other.thumbnailImage_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      extraData_ = other.extraData_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14373,129 +14334,31 @@ namespace Iop.Profileserver {
       return new SharedProfileAddItem(this);
     }
 
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 1;
-    private pb::ByteString version_ = pb::ByteString.Empty;
+    /// <summary>Field number for the "signedProfile" field.</summary>
+    public const int SignedProfileFieldNumber = 1;
+    private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  VersionType. Version of the profile structure.
+    ///  Signed identity profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Version {
-      get { return version_; }
+    public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
+      get { return signedProfile_; }
       set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "identityPublicKey" field.</summary>
-    public const int IdentityPublicKeyFieldNumber = 2;
-    private pb::ByteString identityPublicKey_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  The identity's public key. Max 128 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString IdentityPublicKey {
-      get { return identityPublicKey_; }
-      set {
-        identityPublicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 3;
-    private string name_ = "";
-    /// <summary>
-    ///  Name of the profile, non-empty string, max 64 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 4;
-    private string type_ = "";
-    /// <summary>
-    ///  The identity's type, non-empty string, max 64 bytes long. 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Type {
-      get { return type_; }
-      set {
-        type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "setThumbnailImage" field.</summary>
-    public const int SetThumbnailImageFieldNumber = 5;
-    private bool setThumbnailImage_;
-    /// <summary>
-    ///  If true, 'thumbnailImage' has to contain valid image date. If false, 'thumbnailImage' is ignored.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetThumbnailImage {
-      get { return setThumbnailImage_; }
-      set {
-        setThumbnailImage_ = value;
+        signedProfile_ = value;
       }
     }
 
     /// <summary>Field number for the "thumbnailImage" field.</summary>
-    public const int ThumbnailImageFieldNumber = 6;
+    public const int ThumbnailImageFieldNumber = 2;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'setThumbnailImage' is true, this contains profile image in PNG or JPEG format, max 5,120 bytes long.
+    ///  Thumbnail image of the profile or empty array if the profile has no thumbnail image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
       get { return thumbnailImage_; }
       set {
         thumbnailImage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 7;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. GPS location latitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 8;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 9;
-    private string extraData_ = "";
-    /// <summary>
-    ///  Semicolon separated 'key=value' list, max 200 bytes long, or empty string.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -14512,30 +14375,16 @@ namespace Iop.Profileserver {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Version != other.Version) return false;
-      if (IdentityPublicKey != other.IdentityPublicKey) return false;
-      if (Name != other.Name) return false;
-      if (Type != other.Type) return false;
-      if (SetThumbnailImage != other.SetThumbnailImage) return false;
+      if (!object.Equals(SignedProfile, other.SignedProfile)) return false;
       if (ThumbnailImage != other.ThumbnailImage) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (ExtraData != other.ExtraData) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (IdentityPublicKey.Length != 0) hash ^= IdentityPublicKey.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Type.Length != 0) hash ^= Type.GetHashCode();
-      if (SetThumbnailImage != false) hash ^= SetThumbnailImage.GetHashCode();
+      if (signedProfile_ != null) hash ^= SignedProfile.GetHashCode();
       if (ThumbnailImage.Length != 0) hash ^= ThumbnailImage.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
       return hash;
     }
 
@@ -14546,73 +14395,24 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Version.Length != 0) {
+      if (signedProfile_ != null) {
         output.WriteRawTag(10);
-        output.WriteBytes(Version);
-      }
-      if (IdentityPublicKey.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteBytes(IdentityPublicKey);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Name);
-      }
-      if (Type.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Type);
-      }
-      if (SetThumbnailImage != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(SetThumbnailImage);
+        output.WriteMessage(SignedProfile);
       }
       if (ThumbnailImage.Length != 0) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(18);
         output.WriteBytes(ThumbnailImage);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(61);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(69);
-        output.WriteSFixed32(Longitude);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(ExtraData);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
-      }
-      if (IdentityPublicKey.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(IdentityPublicKey);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Type.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
-      }
-      if (SetThumbnailImage != false) {
-        size += 1 + 1;
+      if (signedProfile_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SignedProfile);
       }
       if (ThumbnailImage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(ThumbnailImage);
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
       }
       return size;
     }
@@ -14622,32 +14422,14 @@ namespace Iop.Profileserver {
       if (other == null) {
         return;
       }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.IdentityPublicKey.Length != 0) {
-        IdentityPublicKey = other.IdentityPublicKey;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Type.Length != 0) {
-        Type = other.Type;
-      }
-      if (other.SetThumbnailImage != false) {
-        SetThumbnailImage = other.SetThumbnailImage;
+      if (other.signedProfile_ != null) {
+        if (signedProfile_ == null) {
+          signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+        }
+        SignedProfile.MergeFrom(other.SignedProfile);
       }
       if (other.ThumbnailImage.Length != 0) {
         ThumbnailImage = other.ThumbnailImage;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
       }
     }
 
@@ -14660,39 +14442,14 @@ namespace Iop.Profileserver {
             input.SkipLastField();
             break;
           case 10: {
-            Version = input.ReadBytes();
+            if (signedProfile_ == null) {
+              signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+            }
+            input.ReadMessage(signedProfile_);
             break;
           }
           case 18: {
-            IdentityPublicKey = input.ReadBytes();
-            break;
-          }
-          case 26: {
-            Name = input.ReadString();
-            break;
-          }
-          case 34: {
-            Type = input.ReadString();
-            break;
-          }
-          case 40: {
-            SetThumbnailImage = input.ReadBool();
-            break;
-          }
-          case 50: {
             ThumbnailImage = input.ReadBytes();
-            break;
-          }
-          case 61: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 69: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 74: {
-            ExtraData = input.ReadString();
             break;
           }
         }
@@ -14703,7 +14460,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Information about changes in an existing profile data that are to be shared with a neighbor.
+  ///  Information about change in an existing activity that is to be shared with a neighbor.
   /// </summary>
   public sealed partial class SharedProfileChangeItem : pb::IMessage<SharedProfileChangeItem> {
     private static readonly pb::MessageParser<SharedProfileChangeItem> _parser = new pb::MessageParser<SharedProfileChangeItem>(() => new SharedProfileChangeItem());
@@ -14712,7 +14469,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[70]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[72]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14729,18 +14486,8 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SharedProfileChangeItem(SharedProfileChangeItem other) : this() {
-      identityNetworkId_ = other.identityNetworkId_;
-      setVersion_ = other.setVersion_;
-      setName_ = other.setName_;
-      setThumbnailImage_ = other.setThumbnailImage_;
-      setLocation_ = other.setLocation_;
-      setExtraData_ = other.setExtraData_;
-      version_ = other.version_;
-      name_ = other.name_;
+      SignedProfile = other.signedProfile_ != null ? other.SignedProfile.Clone() : null;
       thumbnailImage_ = other.thumbnailImage_;
-      latitude_ = other.latitude_;
-      longitude_ = other.longitude_;
-      extraData_ = other.extraData_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14748,171 +14495,31 @@ namespace Iop.Profileserver {
       return new SharedProfileChangeItem(this);
     }
 
-    /// <summary>Field number for the "identityNetworkId" field.</summary>
-    public const int IdentityNetworkIdFieldNumber = 1;
-    private pb::ByteString identityNetworkId_ = pb::ByteString.Empty;
+    /// <summary>Field number for the "signedProfile" field.</summary>
+    public const int SignedProfileFieldNumber = 1;
+    private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  The identity's network identifier.
+    ///  Signed identity profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString IdentityNetworkId {
-      get { return identityNetworkId_; }
+    public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
+      get { return signedProfile_; }
       set {
-        identityNetworkId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "setVersion" field.</summary>
-    public const int SetVersionFieldNumber = 2;
-    private bool setVersion_;
-    /// <summary>
-    ///  Profile version should be updated. 'version' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetVersion {
-      get { return setVersion_; }
-      set {
-        setVersion_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setName" field.</summary>
-    public const int SetNameFieldNumber = 3;
-    private bool setName_;
-    /// <summary>
-    ///  Profile name should be updated. 'name' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetName {
-      get { return setName_; }
-      set {
-        setName_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setThumbnailImage" field.</summary>
-    public const int SetThumbnailImageFieldNumber = 4;
-    private bool setThumbnailImage_;
-    /// <summary>
-    ///  Profile image should be updated. 'thumbnailImage' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetThumbnailImage {
-      get { return setThumbnailImage_; }
-      set {
-        setThumbnailImage_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setLocation" field.</summary>
-    public const int SetLocationFieldNumber = 5;
-    private bool setLocation_;
-    /// <summary>
-    ///  Profile location should be updated. 'latitude' and 'longitude' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetLocation {
-      get { return setLocation_; }
-      set {
-        setLocation_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "setExtraData" field.</summary>
-    public const int SetExtraDataFieldNumber = 6;
-    private bool setExtraData_;
-    /// <summary>
-    ///  Profile extra data should be updated. 'extraData' must contain valid data.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool SetExtraData {
-      get { return setExtraData_; }
-      set {
-        setExtraData_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 7;
-    private pb::ByteString version_ = pb::ByteString.Empty;
-    /// <summary>
-    ///  VersionType. Version of the profile structure.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Version {
-      get { return version_; }
-      set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 8;
-    private string name_ = "";
-    /// <summary>
-    ///  Name of the profile, non-empty string, max 64 bytes long.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        signedProfile_ = value;
       }
     }
 
     /// <summary>Field number for the "thumbnailImage" field.</summary>
-    public const int ThumbnailImageFieldNumber = 9;
+    public const int ThumbnailImageFieldNumber = 2;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Profile thumbnail image in PNG or JPEG format, non-empty binary data, max 5,120 bytes long, or zero length binary data if the image is about to be deleted.
+    ///  Thumbnail image of the profile or empty array if the profile has no thumbnail image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
       get { return thumbnailImage_; }
       set {
         thumbnailImage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "latitude" field.</summary>
-    public const int LatitudeFieldNumber = 10;
-    private int latitude_;
-    /// <summary>
-    ///  LocationType. GPS location latitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Latitude {
-      get { return latitude_; }
-      set {
-        latitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "longitude" field.</summary>
-    public const int LongitudeFieldNumber = 11;
-    private int longitude_;
-    /// <summary>
-    ///  LocationType. GPS location longitude information.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Longitude {
-      get { return longitude_; }
-      set {
-        longitude_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraData" field.</summary>
-    public const int ExtraDataFieldNumber = 12;
-    private string extraData_ = "";
-    /// <summary>
-    ///  Semicolon separated 'key=value' list, max 200 bytes long, or empty string.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ExtraData {
-      get { return extraData_; }
-      set {
-        extraData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -14929,36 +14536,16 @@ namespace Iop.Profileserver {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (IdentityNetworkId != other.IdentityNetworkId) return false;
-      if (SetVersion != other.SetVersion) return false;
-      if (SetName != other.SetName) return false;
-      if (SetThumbnailImage != other.SetThumbnailImage) return false;
-      if (SetLocation != other.SetLocation) return false;
-      if (SetExtraData != other.SetExtraData) return false;
-      if (Version != other.Version) return false;
-      if (Name != other.Name) return false;
+      if (!object.Equals(SignedProfile, other.SignedProfile)) return false;
       if (ThumbnailImage != other.ThumbnailImage) return false;
-      if (Latitude != other.Latitude) return false;
-      if (Longitude != other.Longitude) return false;
-      if (ExtraData != other.ExtraData) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (IdentityNetworkId.Length != 0) hash ^= IdentityNetworkId.GetHashCode();
-      if (SetVersion != false) hash ^= SetVersion.GetHashCode();
-      if (SetName != false) hash ^= SetName.GetHashCode();
-      if (SetThumbnailImage != false) hash ^= SetThumbnailImage.GetHashCode();
-      if (SetLocation != false) hash ^= SetLocation.GetHashCode();
-      if (SetExtraData != false) hash ^= SetExtraData.GetHashCode();
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (signedProfile_ != null) hash ^= SignedProfile.GetHashCode();
       if (ThumbnailImage.Length != 0) hash ^= ThumbnailImage.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
-      if (ExtraData.Length != 0) hash ^= ExtraData.GetHashCode();
       return hash;
     }
 
@@ -14969,94 +14556,24 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (IdentityNetworkId.Length != 0) {
+      if (signedProfile_ != null) {
         output.WriteRawTag(10);
-        output.WriteBytes(IdentityNetworkId);
-      }
-      if (SetVersion != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(SetVersion);
-      }
-      if (SetName != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(SetName);
-      }
-      if (SetThumbnailImage != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(SetThumbnailImage);
-      }
-      if (SetLocation != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(SetLocation);
-      }
-      if (SetExtraData != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(SetExtraData);
-      }
-      if (Version.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteBytes(Version);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(Name);
+        output.WriteMessage(SignedProfile);
       }
       if (ThumbnailImage.Length != 0) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(18);
         output.WriteBytes(ThumbnailImage);
-      }
-      if (Latitude != 0) {
-        output.WriteRawTag(85);
-        output.WriteSFixed32(Latitude);
-      }
-      if (Longitude != 0) {
-        output.WriteRawTag(93);
-        output.WriteSFixed32(Longitude);
-      }
-      if (ExtraData.Length != 0) {
-        output.WriteRawTag(98);
-        output.WriteString(ExtraData);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (IdentityNetworkId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(IdentityNetworkId);
-      }
-      if (SetVersion != false) {
-        size += 1 + 1;
-      }
-      if (SetName != false) {
-        size += 1 + 1;
-      }
-      if (SetThumbnailImage != false) {
-        size += 1 + 1;
-      }
-      if (SetLocation != false) {
-        size += 1 + 1;
-      }
-      if (SetExtraData != false) {
-        size += 1 + 1;
-      }
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Version);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (signedProfile_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SignedProfile);
       }
       if (ThumbnailImage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(ThumbnailImage);
-      }
-      if (Latitude != 0) {
-        size += 1 + 4;
-      }
-      if (Longitude != 0) {
-        size += 1 + 4;
-      }
-      if (ExtraData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraData);
       }
       return size;
     }
@@ -15066,41 +14583,14 @@ namespace Iop.Profileserver {
       if (other == null) {
         return;
       }
-      if (other.IdentityNetworkId.Length != 0) {
-        IdentityNetworkId = other.IdentityNetworkId;
-      }
-      if (other.SetVersion != false) {
-        SetVersion = other.SetVersion;
-      }
-      if (other.SetName != false) {
-        SetName = other.SetName;
-      }
-      if (other.SetThumbnailImage != false) {
-        SetThumbnailImage = other.SetThumbnailImage;
-      }
-      if (other.SetLocation != false) {
-        SetLocation = other.SetLocation;
-      }
-      if (other.SetExtraData != false) {
-        SetExtraData = other.SetExtraData;
-      }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.signedProfile_ != null) {
+        if (signedProfile_ == null) {
+          signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+        }
+        SignedProfile.MergeFrom(other.SignedProfile);
       }
       if (other.ThumbnailImage.Length != 0) {
         ThumbnailImage = other.ThumbnailImage;
-      }
-      if (other.Latitude != 0) {
-        Latitude = other.Latitude;
-      }
-      if (other.Longitude != 0) {
-        Longitude = other.Longitude;
-      }
-      if (other.ExtraData.Length != 0) {
-        ExtraData = other.ExtraData;
       }
     }
 
@@ -15113,51 +14603,14 @@ namespace Iop.Profileserver {
             input.SkipLastField();
             break;
           case 10: {
-            IdentityNetworkId = input.ReadBytes();
+            if (signedProfile_ == null) {
+              signedProfile_ = new global::Iop.Profileserver.SignedProfileInformation();
+            }
+            input.ReadMessage(signedProfile_);
             break;
           }
-          case 16: {
-            SetVersion = input.ReadBool();
-            break;
-          }
-          case 24: {
-            SetName = input.ReadBool();
-            break;
-          }
-          case 32: {
-            SetThumbnailImage = input.ReadBool();
-            break;
-          }
-          case 40: {
-            SetLocation = input.ReadBool();
-            break;
-          }
-          case 48: {
-            SetExtraData = input.ReadBool();
-            break;
-          }
-          case 58: {
-            Version = input.ReadBytes();
-            break;
-          }
-          case 66: {
-            Name = input.ReadString();
-            break;
-          }
-          case 74: {
+          case 18: {
             ThumbnailImage = input.ReadBytes();
-            break;
-          }
-          case 85: {
-            Latitude = input.ReadSFixed32();
-            break;
-          }
-          case 93: {
-            Longitude = input.ReadSFixed32();
-            break;
-          }
-          case 98: {
-            ExtraData = input.ReadString();
             break;
           }
         }
@@ -15177,7 +14630,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[71]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[73]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15301,7 +14754,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[72]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[74]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15398,7 +14851,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[73]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[75]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15494,7 +14947,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[74]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[76]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15587,7 +15040,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[75]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[77]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15773,7 +15226,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[76]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[78]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15920,7 +15373,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[77]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[79]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16263,7 +15716,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[78]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[80]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16401,7 +15854,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[79]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[81]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16530,7 +15983,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[80]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[82]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16668,7 +16121,7 @@ namespace Iop.Profileserver {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[81]; }
+      get { return global::Iop.Profileserver.IopProfileServerReflection.Descriptor.MessageTypes[83]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

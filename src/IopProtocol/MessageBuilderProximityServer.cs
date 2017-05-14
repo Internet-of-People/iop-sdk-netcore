@@ -897,6 +897,45 @@ namespace IopProtocol
     }
 
 
+
+    /// <summary>
+    /// Creates a new GetActivityInformationRequest message.
+    /// </summary>
+    /// <param name="ActivityId">Identifier of the activity.</param>
+    /// <param name="OwnerNetworkId">Network identifier of the owner of the activity.</param>
+    /// <returns>GetActivityInformationRequest message that is ready to be sent.</returns>
+    public ProxProtocolMessage CreateGetActivityInformationRequest(uint ActivityId, byte[] OwnerNetworkId)
+    {
+      GetActivityInformationRequest getActivityInformationRequest = new GetActivityInformationRequest();
+      getActivityInformationRequest.Id = ActivityId;
+      getActivityInformationRequest.OwnerNetworkId = ProtocolHelper.ByteArrayToByteString(OwnerNetworkId);
+
+      ProxProtocolMessage res = CreateSingleRequest();
+      res.Request.SingleRequest.GetActivityInformation = getActivityInformationRequest;
+
+      return res;
+    }
+
+
+    /// <summary>
+    /// Creates a response message to a GetActivityInformationRequest message.
+    /// </summary>
+    /// <param name="Request">GetActivityInformationRequest message for which the response is created.</param>
+    /// <param name="QueryInformation">Information about the activity.</param>
+    /// <returns>GetActivityInformationResponse message that is ready to be sent.</returns>
+    public ProxProtocolMessage CreateGetActivityInformationResponse(ProxProtocolMessage Request, ActivityQueryInformation QueryInformation)
+    {
+      GetActivityInformationResponse getActivityInformationResponse = new GetActivityInformationResponse();
+      getActivityInformationResponse.Info = QueryInformation;
+
+      ProxProtocolMessage res = CreateSingleResponse(Request);
+      res.Response.SingleResponse.GetActivityInformation = getActivityInformationResponse;
+
+      return res;
+    }
+
+
+
     /// <summary>
     /// Creates a new ActivitySearchRequest message.
     /// </summary>
@@ -905,7 +944,6 @@ namespace IopProtocol
     /// <param name="StartNotAfter">Specification of maximal start time of activity. If filtering by start time is not required this is set to null.</param>
     /// <param name="ExpirationNotBefore">Specification of minimal expiration time of activity. If filtering by expiration time is not required this is set to null.</param>
     /// <param name="OwnerNetworkId">Network identifier of the creator of activity. If filtering by creator is not required this is set to null.</param>
-    /// <param name="ActivityId">Activity identifier or 0 if the identifier is not known to the requestor. If this is non-zero, <paramref name="OwnerNetworkId"/> must not be null.</param>
     /// <param name="Location">GPS location, near which the target activities has to be located. If no location filtering is required this is set to null.</param>
     /// <param name="Radius">If <paramref name="Location"/> is not 0, this is radius in metres that together with <paramref name="Location"/> defines the target area.</param>
     /// <param name="MaxResponseRecordCount">Maximal number of results to be included in the response. This is an integer between 1 and 1,000.</param>
@@ -913,13 +951,12 @@ namespace IopProtocol
     /// <param name="IncludePrimaryOnly">If set to true, the proximity server only returns activities for which it acts as the primary proximity server. 
     /// Otherwise, activities from the proximity server's neighborhood can be included.</param>
     /// <returns>ActivitySearchRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchRequest(string ActivityType, string ExtraData, DateTime? StartNotAfter, DateTime? ExpirationNotBefore, byte[] OwnerNetworkId = null, uint ActivityId = 0, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludePrimaryOnly = false)
+    public ProxProtocolMessage CreateActivitySearchRequest(string ActivityType, string ExtraData, DateTime? StartNotAfter, DateTime? ExpirationNotBefore, byte[] OwnerNetworkId = null, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludePrimaryOnly = false)
     {
       ActivitySearchRequest activitySearchRequest = new ActivitySearchRequest();
       activitySearchRequest.IncludePrimaryOnly = IncludePrimaryOnly;
       activitySearchRequest.MaxResponseRecordCount = MaxResponseRecordCount;
       activitySearchRequest.MaxTotalRecordCount = MaxTotalRecordCount;
-      activitySearchRequest.Id = ActivityId;
       activitySearchRequest.OwnerNetworkId = ProtocolHelper.ByteArrayToByteString(OwnerNetworkId);
       activitySearchRequest.Type = ActivityType != null ? ActivityType : "";
       activitySearchRequest.StartNotAfter = StartNotAfter != null ? ProtocolHelper.DateTimeToUnixTimestampMs(StartNotAfter.Value) : 0;
@@ -945,7 +982,7 @@ namespace IopProtocol
     /// <param name="CoveredServers">List of proximity servers whose activity databases were be used to produce the result.</param>
     /// <param name="Results">List of results that contains up to <paramref name="MaxRecordCount"/> items.</param>
     /// <returns>ActivitySearchResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchResponse(ProxProtocolMessage Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<ActivityNetworkInformation> Results)
+    public ProxProtocolMessage CreateActivitySearchResponse(ProxProtocolMessage Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<ActivityQueryInformation> Results)
     {
       ActivitySearchResponse activitySearchResponse = new ActivitySearchResponse();
       activitySearchResponse.TotalRecordCount = TotalRecordCount;
@@ -991,7 +1028,7 @@ namespace IopProtocol
     /// <param name="RecordCount">Number of results.</param>
     /// <param name="Results">List of results that contains <paramref name="RecordCount"/> items.</param>
     /// <returns>ActivitySearchPartResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchPartResponse(ProxProtocolMessage Request, uint RecordIndex, uint RecordCount, IEnumerable<ActivityNetworkInformation> Results)
+    public ProxProtocolMessage CreateActivitySearchPartResponse(ProxProtocolMessage Request, uint RecordIndex, uint RecordCount, IEnumerable<ActivityQueryInformation> Results)
     {
       ActivitySearchPartResponse activitySearchPartResponse = new ActivitySearchPartResponse();
       activitySearchPartResponse.RecordIndex = RecordIndex;

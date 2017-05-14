@@ -17,14 +17,20 @@ namespace IopProtocol
     /// <summary>Maximal size of the message.</summary>
     public const int MaxMessageSize = 1 * 1024 * 1024;
 
+    /// <summary>Length in bytes of SHA256 hash.</summary>
+    public const int HashLengthBytes = 32;
+
     /// <summary>Length in bytes of network identifiers.</summary>
-    public const int NetworkIdentifierLength = 32;
+    public const int NetworkIdentifierLength = HashLengthBytes;
 
     /// <summary>Length of IPv6 address in binary format.</summary>
     public const int IpAddressMaxLengthBytes = 16;
 
     /// <summary>Maximum number of bytes that public key can occupy.</summary>
     public const int MaxPublicKeyLengthBytes = 128;
+
+    /// <summary>Maximum number of bytes that a signature can occupy.</summary>
+    public const int MaxSignatureLengthBytes = 100;
 
 
     /// <summary>

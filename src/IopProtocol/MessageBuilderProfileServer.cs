@@ -688,7 +688,7 @@ namespace IopProtocol
       PsProtocolMessage res = CreateConversationRequest();
       res.Request.ConversationRequest.RegisterHosting = registerHostingRequest;
 
-      SignConversationRequestBody(res, registerHostingRequest);
+      SignConversationRequestBodyPart(res, Contract.ToByteArray());
       return res;
     }
 
@@ -707,7 +707,7 @@ namespace IopProtocol
       PsProtocolMessage res = CreateConversationResponse(Request);
       res.Response.ConversationResponse.RegisterHosting = registerHostingResponse;
 
-      SignConversationResponseBody(res, registerHostingResponse);
+      SignConversationResponseBodyPart(res, Contract.ToByteArray());
 
       return res;
     }
@@ -783,41 +783,28 @@ namespace IopProtocol
     /// <summary>
     /// Creates a new UpdateProfileRequest message.
     /// </summary>
-    /// <param name="Version">Profile version information or null if profile version is not to be changed.</param>
-    /// <param name="Name">Identity name or null if identity name is not to be changed.</param>
-    /// <param name="Image">Profile image data or null if profile image is not to be changed, to erase image, use empty byte array.</param>
-    /// <param name="Location">Profile location information or null if location is not to be changed.</param>
-    /// <param name="ExtraData">Profile's extra data information or null if profile's extra data is not to be changed.</param>
+    /// <param name="Profile">Description of the profile.</param>
+    /// <param name="ProfileImage">Profile image data or null if profile image is to be erased or not set.</param>
+    /// <param name="ThumbnailImage">Thumbnail image data or null if thumbnail image is to be erased or not set.</param>
+    /// <param name="NoPropagation">If set to true, the profile server will not propagate the update to the neighborhood.</param>
     /// <returns>UpdateProfileRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateUpdateProfileRequest(SemVer? Version, string Name, byte[] Image, GpsLocation Location, string ExtraData)
+    public PsProtocolMessage CreateUpdateProfileRequest(ProfileInformation Profile, byte[] ProfileImage = null, byte[] ThumbnailImage = null, bool NoPropagation = false)
     {
       UpdateProfileRequest updateProfileRequest = new UpdateProfileRequest();
-      updateProfileRequest.SetVersion = Version != null;
-      updateProfileRequest.SetName = Name != null;
-      updateProfileRequest.SetImage = Image != null;
-      updateProfileRequest.SetLocation = Location != null;
-      updateProfileRequest.SetExtraData = ExtraData != null;
+      updateProfileRequest.Profile = Profile;
 
-      if (updateProfileRequest.SetVersion)
-        updateProfileRequest.Version = Version.Value.ToByteString();
+      if (ProfileImage != null)
+        updateProfileRequest.ProfileImage = ProtocolHelper.ByteArrayToByteString(ProfileImage);
 
-      if (updateProfileRequest.SetName)
-        updateProfileRequest.Name = Name;
+      if (ThumbnailImage != null)
+        updateProfileRequest.ThumbnailImage = ProtocolHelper.ByteArrayToByteString(ThumbnailImage);
 
-      if (updateProfileRequest.SetImage)
-        updateProfileRequest.Image = ProtocolHelper.ByteArrayToByteString(Image);
-
-      if (updateProfileRequest.SetLocation)
-      {
-        updateProfileRequest.Latitude = Location.GetLocationTypeLatitude();
-        updateProfileRequest.Longitude = Location.GetLocationTypeLongitude();
-      }
-
-      if (updateProfileRequest.SetExtraData)
-        updateProfileRequest.ExtraData = ExtraData;
+      updateProfileRequest.NoPropagation = NoPropagation;
 
       PsProtocolMessage res = CreateConversationRequest();
       res.Request.ConversationRequest.UpdateProfile = updateProfileRequest;
+
+      SignConversationRequestBodyPart(res, Profile.ToByteArray());
 
       return res;
     }
@@ -942,76 +929,62 @@ namespace IopProtocol
 
 
     /// <summary>
-    /// Creates a new GetIdentityInformationRequest message.
+    /// Creates a new GetProfileInformationRequest message.
     /// </summary>
     /// <param name="IdentityId">Identifier of the identity to get information about.</param>
     /// <param name="IncludeProfileImage">true if the caller wants to get the identity's profile image, false otherwise.</param>
     /// <param name="IncludeThumbnailImage">true if the caller wants to get the identity's thumbnail image, false otherwise.</param>
     /// <param name="IncludeApplicationServices">true if the caller wants to get the identity's list of application services, false otherwise.</param>
-    /// <returns>GetIdentityInformationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateGetIdentityInformationRequest(byte[] IdentityId, bool IncludeProfileImage = false, bool IncludeThumbnailImage = false, bool IncludeApplicationServices = false)
+    /// <returns>GetProfileInformationRequest message that is ready to be sent.</returns>
+    public PsProtocolMessage CreateGetProfileInformationRequest(byte[] IdentityId, bool IncludeProfileImage = false, bool IncludeThumbnailImage = false, bool IncludeApplicationServices = false)
     {
-      GetIdentityInformationRequest getIdentityInformationRequest = new GetIdentityInformationRequest();
-      getIdentityInformationRequest.IdentityNetworkId = ProtocolHelper.ByteArrayToByteString(IdentityId);
-      getIdentityInformationRequest.IncludeProfileImage = IncludeProfileImage;
-      getIdentityInformationRequest.IncludeThumbnailImage = IncludeThumbnailImage;
-      getIdentityInformationRequest.IncludeApplicationServices = IncludeApplicationServices;
+      GetProfileInformationRequest getProfileInformationRequest = new GetProfileInformationRequest();
+      getProfileInformationRequest.IdentityNetworkId = ProtocolHelper.ByteArrayToByteString(IdentityId);
+      getProfileInformationRequest.IncludeProfileImage = IncludeProfileImage;
+      getProfileInformationRequest.IncludeThumbnailImage = IncludeThumbnailImage;
+      getProfileInformationRequest.IncludeApplicationServices = IncludeApplicationServices;
 
       PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.GetIdentityInformation = getIdentityInformationRequest;
+      res.Request.SingleRequest.GetProfileInformation = getProfileInformationRequest;
 
       return res;
     }
 
 
     /// <summary>
-    /// Creates a response message to a GetIdentityInformationRequest message.
+    /// Creates a response message to a GetProfileInformationRequest message.
     /// </summary>
-    /// <param name="Request">GetIdentityInformationRequest message for which the response is created.</param>
+    /// <param name="Request">GetProfileInformationRequest message for which the response is created.</param>
     /// <param name="IsHosted">True if the requested identity is hosted by this profile server.</param>
     /// <param name="TargetProfileServerId">If <paramref name="IsHosted"/> is false, then this is the identifier of the requested identity's new profile server, or null if the profile server does not know network ID of the requested identity's new profile server.</param>
-    /// <param name="Version">If <paramref name="IsHosted"/> is true, this is version of the identity's profile structure.</param>
     /// <param name="IsOnline">If <paramref name="IsHosted"/> is true, this indicates whether the requested identity is currently online.</param>
-    /// <param name="PublicKey">If <paramref name="IsHosted"/> is true, this is the public key of the requested identity.</param>
-    /// <param name="Name">If <paramref name="IsHosted"/> is true, this is the name of the requested identity.</param>
-    /// <param name="Type">If <paramref name="IsHosted"/> is true, this is the type of the requested identity.</param>
-    /// <param name="Location">If <paramref name="IsHosted"/> is true, this is GPS location information of the requested identity.</param>
-    /// <param name="ExtraData">If <paramref name="IsHosted"/> is true, this is the extra data information of the requested identity.</param>
+    /// <param name="SignedProfile">If <paramref name="IsHosted"/> is true, this is signed profile information.</param>
     /// <param name="ProfileImage">If <paramref name="IsHosted"/> is true, this is the identity's profile image, or null if it was not requested.</param>
     /// <param name="ThumbnailImage">If <paramref name="IsHosted"/> is true, this is the identity's thumbnail image, or null if it was not requested.</param>
     /// <param name="ApplicationServices">If <paramref name="IsHosted"/> is true, this is the identity's list of supported application services, or null if it was not requested.</param>
-    /// <returns>GetIdentityInformationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateGetIdentityInformationResponse(PsProtocolMessage Request, bool IsHosted, byte[] TargetProfileServerId, SemVer? Version = null, bool IsOnline = false, byte[] PublicKey = null, string Name = null, string Type = null, GpsLocation Location = null, string ExtraData = null, byte[] ProfileImage = null, byte[] ThumbnailImage = null, HashSet<string> ApplicationServices = null)
+    /// <returns>GetProfileInformationResponse message that is ready to be sent.</returns>
+    public PsProtocolMessage CreateGetProfileInformationResponse(PsProtocolMessage Request, bool IsHosted, byte[] TargetProfileServerId, bool IsOnline = false, SignedProfileInformation SignedProfile = null, byte[] ProfileImage = null, byte[] ThumbnailImage = null, HashSet<string> ApplicationServices = null)
     {
-      GetIdentityInformationResponse getIdentityInformationResponse = new GetIdentityInformationResponse();
-      getIdentityInformationResponse.IsHosted = IsHosted;
-      getIdentityInformationResponse.IsTargetProfileServerKnown = false;
+      GetProfileInformationResponse getProfileInformationResponse = new GetProfileInformationResponse();
+      getProfileInformationResponse.IsHosted = IsHosted;
+      getProfileInformationResponse.IsTargetProfileServerKnown = false;
       if (IsHosted)
       {
-        getIdentityInformationResponse.IsOnline = IsOnline;
-        getIdentityInformationResponse.Version = Version.Value.ToByteString();
-        getIdentityInformationResponse.IdentityPublicKey = ProtocolHelper.ByteArrayToByteString(PublicKey);
-        if (Name != null) getIdentityInformationResponse.Name = Name;
-        if (Type != null) getIdentityInformationResponse.Type = Type;
-        if (Location != null)
-        {
-          getIdentityInformationResponse.Latitude = Location.GetLocationTypeLatitude();
-          getIdentityInformationResponse.Longitude = Location.GetLocationTypeLongitude();
-        }
-        if (ExtraData != null) getIdentityInformationResponse.ExtraData = ExtraData;
-        if (ProfileImage != null) getIdentityInformationResponse.ProfileImage = ProtocolHelper.ByteArrayToByteString(ProfileImage);
-        if (ThumbnailImage != null) getIdentityInformationResponse.ThumbnailImage = ProtocolHelper.ByteArrayToByteString(ThumbnailImage);
-        if (ApplicationServices != null) getIdentityInformationResponse.ApplicationServices.Add(ApplicationServices);
+        getProfileInformationResponse.IsOnline = IsOnline;
+        getProfileInformationResponse.SignedProfile = SignedProfile;
+        if (ProfileImage != null) getProfileInformationResponse.ProfileImage = ProtocolHelper.ByteArrayToByteString(ProfileImage);
+        if (ThumbnailImage != null) getProfileInformationResponse.ThumbnailImage = ProtocolHelper.ByteArrayToByteString(ThumbnailImage);
+        if (ApplicationServices != null) getProfileInformationResponse.ApplicationServices.Add(ApplicationServices);
       }
       else
       {
-        getIdentityInformationResponse.IsTargetProfileServerKnown = TargetProfileServerId != null;
+        getProfileInformationResponse.IsTargetProfileServerKnown = TargetProfileServerId != null;
         if (TargetProfileServerId != null)
-          getIdentityInformationResponse.TargetProfileServerNetworkId = ProtocolHelper.ByteArrayToByteString(TargetProfileServerId);
+          getProfileInformationResponse.TargetProfileServerNetworkId = ProtocolHelper.ByteArrayToByteString(TargetProfileServerId);
       }
 
       PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.GetIdentityInformation = getIdentityInformationResponse;
+      res.Response.SingleResponse.GetProfileInformation = getProfileInformationResponse;
 
       return res;
     }
@@ -1240,7 +1213,7 @@ namespace IopProtocol
     /// <param name="CoveredServers">List of profile servers whose profile databases were be used to produce the result.</param>
     /// <param name="Results">List of results that contains up to <paramref name="MaxRecordCount"/> items.</param>
     /// <returns>ProfileSearchResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileSearchResponse(PsProtocolMessage Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<IdentityNetworkProfileInformation> Results)
+    public PsProtocolMessage CreateProfileSearchResponse(PsProtocolMessage Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<ProfileQueryInformation> Results)
     {
       ProfileSearchResponse profileSearchResponse = new ProfileSearchResponse();
       profileSearchResponse.TotalRecordCount = TotalRecordCount;
@@ -1287,7 +1260,7 @@ namespace IopProtocol
     /// <param name="RecordCount">Number of results.</param>
     /// <param name="Results">List of results that contains <paramref name="RecordCount"/> items.</param>
     /// <returns>ProfileSearchPartResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileSearchPartResponse(PsProtocolMessage Request, uint RecordIndex, uint RecordCount, IEnumerable<IdentityNetworkProfileInformation> Results)
+    public PsProtocolMessage CreateProfileSearchPartResponse(PsProtocolMessage Request, uint RecordIndex, uint RecordCount, IEnumerable<ProfileQueryInformation> Results)
     {
       ProfileSearchPartResponse profileSearchPartResponse = new ProfileSearchPartResponse();
       profileSearchPartResponse.RecordIndex = RecordIndex;

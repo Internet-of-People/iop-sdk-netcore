@@ -178,47 +178,47 @@ namespace Iop.Locnet {
   }
   #region Enums
   /// <summary>
-  ///  Return codes to mark whether the operation completed successfully or which error occurred.
-  ///  TODO should status codes be shared between projects and maybe separated into an IopCommon.proto?
-  ///  NOTE value of common status codes are exactly the same as defined in IopProfileServer to make this easy.
+  /// Return codes to mark whether the operation completed successfully or which error occurred.
+  /// TODO should status codes be shared between projects and maybe separated into an IopCommon.proto?
+  /// NOTE value of common status codes are exactly the same as defined in IopProfileServer to make this easy.
   /// </summary>
   public enum Status {
     /// <summary>
-    ///  General codes that can be returned to any message.
+    /// General codes that can be returned to any message.
     /// </summary>
     [pbr::OriginalName("STATUS_OK")] Ok = 0,
     /// <summary>
-    ///  The incoming request does not follow the protocol.
+    /// The incoming request does not follow the protocol.
     /// </summary>
     [pbr::OriginalName("ERROR_PROTOCOL_VIOLATION")] ErrorProtocolViolation = 1,
     /// <summary>
-    ///  The peer does not support the request. This is returned when a peer sends a message with an unsupported protocol version.
+    /// The peer does not support the request. This is returned when a peer sends a message with an unsupported protocol version.
     /// </summary>
     [pbr::OriginalName("ERROR_UNSUPPORTED")] ErrorUnsupported = 2,
     /// <summary>
-    ///  Internal error occurred while processing the message.
+    /// Internal error occurred while processing the message.
     /// </summary>
     [pbr::OriginalName("ERROR_INTERNAL")] ErrorInternal = 8,
     /// <summary>
-    ///  A field in the request contains an invalid value.
+    /// A field in the request contains an invalid value.
     /// </summary>
     [pbr::OriginalName("ERROR_INVALID_VALUE")] ErrorInvalidValue = 54,
   }
 
   /// <summary>
-  ///  All further network/server types of the Internet of People
-  ///  that can be registered here so as it can be searched geographically on the client interface.
+  /// All further network/server types of the Internet of People
+  /// that can be registered here so as it can be searched geographically on the client interface.
   /// </summary>
   public enum ServiceType {
     /// <summary>
-    ///  Low level networks
+    /// Low level networks
     /// </summary>
     [pbr::OriginalName("Unstructured")] Unstructured = 0,
     [pbr::OriginalName("Content")] Content = 1,
     [pbr::OriginalName("Latency")] Latency = 2,
     [pbr::OriginalName("Location")] Location = 3,
     /// <summary>
-    ///  High level servers
+    /// High level servers
     /// </summary>
     [pbr::OriginalName("Token")] Token = 10,
     [pbr::OriginalName("Profile")] Profile = 11,
@@ -232,8 +232,8 @@ namespace Iop.Locnet {
 
   #region Messages
   /// <summary>
-  ///  Describe a single service running on the same host. Fields and their formats are analogue to NodeInfo.
-  ///  We assume that the service can be accessed on the same IP address as the location based network node.
+  /// Describe a single service running on the same host. Fields and their formats are analogue to NodeInfo.
+  /// We assume that the service can be accessed on the same IP address as the location based network node.
   /// </summary>
   public sealed partial class ServiceInfo : pb::IMessage<ServiceInfo> {
     private static readonly pb::MessageParser<ServiceInfo> _parser = new pb::MessageParser<ServiceInfo>(() => new ServiceInfo());
@@ -284,7 +284,7 @@ namespace Iop.Locnet {
     public const int PortFieldNumber = 2;
     private uint port_;
     /// <summary>
-    ///  Network port where service is reachable on this host.
+    /// Network port where service is reachable on this host.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Port {
@@ -298,7 +298,7 @@ namespace Iop.Locnet {
     public const int ServiceDataFieldNumber = 3;
     private pb::ByteString serviceData_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Optional binary data that the service can share about itself. Has no predefined format, any custom data can be added here. Useful for e.g. sharing the profile server node ID. Must be no more than 1KB.
+    /// Optional binary data that the service can share about itself. Has no predefined format, any custom data can be added here. Useful for e.g. sharing the profile server node ID. Must be no more than 1KB.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ServiceData {
@@ -415,13 +415,13 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  GpsLocation represents a 2D GPS position without height.
-  ///  Latitude and longitude coordinates use a signed integer stored as type decimal(9,6),
-  ///  which means that a floating point value of the latitude or longitude is multiplied by 1,000,000
-  ///  and converted to integer (cutting any digits right of the decimal point without rounding).
-  ///  To get the floating point value back, simply divide the integer value by 1,000,000.
-  ///  For latitudes, valid values are in range [-90,000,000;90,000,000], for longitudes the range is 
-  ///  [-179,999,999;180,000,000].
+  /// GpsLocation represents a 2D GPS position without height.
+  /// Latitude and longitude coordinates use a signed integer stored as type decimal(9,6),
+  /// which means that a floating point value of the latitude or longitude is multiplied by 1,000,000
+  /// and converted to integer (cutting any digits right of the decimal point without rounding).
+  /// To get the floating point value back, simply divide the integer value by 1,000,000.
+  /// For latitudes, valid values are in range [-90,000,000;90,000,000], for longitudes the range is 
+  /// [-179,999,999;180,000,000].
   /// </summary>
   public sealed partial class GpsLocation : pb::IMessage<GpsLocation> {
     private static readonly pb::MessageParser<GpsLocation> _parser = new pb::MessageParser<GpsLocation>(() => new GpsLocation());
@@ -569,11 +569,11 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Node endpoints that can be contacted by a client.
-  ///  IP address is represented as a byte array which must contain 4 bytes for Ipv4 addresses and
-  ///  16 bytes for an Ipv6 address.
-  ///  Port must be a simple TCP port which should be uint16, but there is no appropriate data type
-  ///  in ProtoBuf so it is represented as uint32.
+  /// Node endpoints that can be contacted by a client.
+  /// IP address is represented as a byte array which must contain 4 bytes for Ipv4 addresses and
+  /// 16 bytes for an Ipv6 address.
+  /// Port must be a simple TCP port which should be uint16, but there is no appropriate data type
+  /// in ProtoBuf so it is represented as uint32.
   /// </summary>
   public sealed partial class NodeContact : pb::IMessage<NodeContact> {
     private static readonly pb::MessageParser<NodeContact> _parser = new pb::MessageParser<NodeContact>(() => new NodeContact());
@@ -624,7 +624,7 @@ namespace Iop.Locnet {
     public const int NodePortFieldNumber = 2;
     private uint nodePort_;
     /// <summary>
-    ///  Port where remote node interface (for nodes of the same network) is available
+    /// Port where remote node interface (for nodes of the same network) is available
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint NodePort {
@@ -638,7 +638,7 @@ namespace Iop.Locnet {
     public const int ClientPortFieldNumber = 3;
     private uint clientPort_;
     /// <summary>
-    ///  Port where client interface (for end users) is available
+    /// Port where client interface (for end users) is available
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ClientPort {
@@ -755,8 +755,8 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Publicly known identity of a node, created after the similar "profile" entity of the profile server,
-  ///  extended the GPS location of the node.
+  /// Publicly known identity of a node, created after the similar "profile" entity of the profile server,
+  /// extended the GPS location of the node.
   /// </summary>
   public sealed partial class NodeInfo : pb::IMessage<NodeInfo> {
     private static readonly pb::MessageParser<NodeInfo> _parser = new pb::MessageParser<NodeInfo>(() => new NodeInfo());
@@ -797,7 +797,7 @@ namespace Iop.Locnet {
     public const int NodeIdFieldNumber = 1;
     private pb::ByteString nodeId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  TODO do we also need a public key here?
+    /// TODO do we also need a public key here?
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString NodeId {
@@ -967,16 +967,16 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  This is complete message as it goes over the wire. It includes the 32-bit header with message length.
+  /// This is complete message as it goes over the wire. It includes the 32-bit header with message length.
   ///
-  ///  There is a 1 byte prefix because of Google Protobuf protocol, so the actual binary data for a message
-  ///  with body size 4660 bytes would be:
+  /// There is a 1 byte prefix because of Google Protobuf protocol, so the actual binary data for a message
+  /// with body size 4660 bytes would be:
   ///
-  ///    0D 34 12 00 00
+  ///   0D 34 12 00 00
   ///
-  ///  where 0x0D means type 'fixed32' (which value is 5) + index of 'header', which is 1 &lt;&lt; 3,
-  ///  this is followed be the 4 byte sequence 34 12 00 00, which is little endian of 0x00001234, which is 4660 decimal.
-  ///  Thus the total number of bytes sent over the wire for this message would be 4665 bytes.
+  /// where 0x0D means type 'fixed32' (which value is 5) + index of 'header', which is 1 &lt;&lt; 3,
+  /// this is followed be the 4 byte sequence 34 12 00 00, which is little endian of 0x00001234, which is 4660 decimal.
+  /// Thus the total number of bytes sent over the wire for this message would be 4665 bytes.
   /// </summary>
   public sealed partial class MessageWithHeader : pb::IMessage<MessageWithHeader> {
     private static readonly pb::MessageParser<MessageWithHeader> _parser = new pb::MessageParser<MessageWithHeader>(() => new MessageWithHeader());
@@ -1015,7 +1015,7 @@ namespace Iop.Locnet {
     public const int HeaderFieldNumber = 1;
     private uint header_;
     /// <summary>
-    ///  Message length (without the size of the header) as a little-endian 32-bit unsigned integer.
+    /// Message length (without the size of the header) as a little-endian 32-bit unsigned integer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Header {
@@ -1029,7 +1029,7 @@ namespace Iop.Locnet {
     public const int BodyFieldNumber = 2;
     private global::Iop.Locnet.Message body_;
     /// <summary>
-    ///  Message itself.
+    /// Message itself.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.Message Body {
@@ -1136,7 +1136,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Format of a single message.
+  /// Format of a single message.
   /// </summary>
   public sealed partial class Message : pb::IMessage<Message> {
     private static readonly pb::MessageParser<Message> _parser = new pb::MessageParser<Message>(() => new Message());
@@ -1183,7 +1183,7 @@ namespace Iop.Locnet {
     public const int IdFieldNumber = 1;
     private uint id_;
     /// <summary>
-    ///  Requestor defined message ID that the requestee has to return in the response. 
+    /// Requestor defined message ID that the requestee has to return in the response. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Id {
@@ -1356,17 +1356,17 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Requests use semantic versioning (major,minor,patch) represented as a 3 byte array.
-  ///  For more details see the Profile Server protocol definition.
-  ///  NOTE this type also could be part of an IopCommon.proto file.
+  /// Requests use semantic versioning (major,minor,patch) represented as a 3 byte array.
+  /// For more details see the Profile Server protocol definition.
+  /// NOTE this type also could be part of an IopCommon.proto file.
   ///
-  ///  The Location-based Network provides three interfaces, each used by a specific type of clients.
-  ///  One interface is used by local services (e.g. the Profile Server) running on the same host
-  ///  to expose their availability and check the neighbourhood.
-  ///  Another interface is used for communication between nodes to build the network.
-  ///  The third interface is for "end users" (i.e. client programs) to locate nodes and services
-  ///  based on geographical information.
-  ///  The different operation set for each interface is collected under a specific RequestType here.
+  /// The Location-based Network provides three interfaces, each used by a specific type of clients.
+  /// One interface is used by local services (e.g. the Profile Server) running on the same host
+  /// to expose their availability and check the neighbourhood.
+  /// Another interface is used for communication between nodes to build the network.
+  /// The third interface is for "end users" (i.e. client programs) to locate nodes and services
+  /// based on geographical information.
+  /// The different operation set for each interface is collected under a specific RequestType here.
   /// </summary>
   public sealed partial class Request : pb::IMessage<Request> {
     private static readonly pb::MessageParser<Request> _parser = new pb::MessageParser<Request>(() => new Request());
@@ -1619,7 +1619,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  There must a response for every request. Responses are divided by the interface just like requests.
+  /// There must a response for every request. Responses are divided by the interface just like requests.
   /// </summary>
   public sealed partial class Response : pb::IMessage<Response> {
     private static readonly pb::MessageParser<Response> _parser = new pb::MessageParser<Response>(() => new Response());
@@ -1671,7 +1671,7 @@ namespace Iop.Locnet {
     public const int StatusFieldNumber = 1;
     private global::Iop.Locnet.Status status_ = 0;
     /// <summary>
-    ///  Status code marking whether the request was successfully served or an error occured.
+    /// Status code marking whether the request was successfully served or an error occured.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.Status Status {
@@ -1685,7 +1685,7 @@ namespace Iop.Locnet {
     public const int TimestampFieldNumber = 2;
     private long timestamp_;
     /// <summary>
-    ///  NOTE this field was simply kept from IopProfileServer.proto, currently unused, but might be useful implementing security features later.
+    /// NOTE this field was simply kept from IopProfileServer.proto, currently unused, but might be useful implementing security features later.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Timestamp {
@@ -1699,7 +1699,7 @@ namespace Iop.Locnet {
     public const int DetailsFieldNumber = 3;
     private string details_ = "";
     /// <summary>
-    ///  In case of an error, this field may contain additional details.
+    /// In case of an error, this field may contain additional details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Details {
@@ -1937,7 +1937,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Distinct operations of the local service interface.
+  /// Distinct operations of the local service interface.
   /// </summary>
   public sealed partial class LocalServiceRequest : pb::IMessage<LocalServiceRequest> {
     private static readonly pb::MessageParser<LocalServiceRequest> _parser = new pb::MessageParser<LocalServiceRequest>(() => new LocalServiceRequest());
@@ -1988,7 +1988,7 @@ namespace Iop.Locnet {
     /// <summary>Field number for the "registerService" field.</summary>
     public const int RegisterServiceFieldNumber = 1;
     /// <summary>
-    ///  These requests are sent as usual from the client to the server asking to perform an operation.
+    /// These requests are sent as usual from the client to the server asking to perform an operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.RegisterServiceRequest RegisterService {
@@ -2024,10 +2024,10 @@ namespace Iop.Locnet {
     /// <summary>Field number for the "neighbourhoodChanged" field.</summary>
     public const int NeighbourhoodChangedFieldNumber = 4;
     /// <summary>
-    ///  This is an unique, exceptional request. If the client previously sent
-    ///  a getNeigbhourNodes request to the server and set the keepAlive flag,
-    ///  the server is supposed to keep the connection alive and notify the client
-    ///  about changes in its neigbhourhood by sending the following request to the client.
+    /// This is an unique, exceptional request. If the client previously sent
+    /// a getNeigbhourNodes request to the server and set the keepAlive flag,
+    /// the server is supposed to keep the connection alive and notify the client
+    /// about changes in its neigbhourhood by sending the following request to the client.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.NeighbourhoodChangedNotificationRequest NeighbourhoodChanged {
@@ -2255,7 +2255,7 @@ namespace Iop.Locnet {
     /// <summary>Field number for the "registerService" field.</summary>
     public const int RegisterServiceFieldNumber = 1;
     /// <summary>
-    ///  Responses sent back to the client from the server as usual.
+    /// Responses sent back to the client from the server as usual.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.RegisterServiceResponse RegisterService {
@@ -2291,7 +2291,7 @@ namespace Iop.Locnet {
     /// <summary>Field number for the "neighbourhoodUpdated" field.</summary>
     public const int NeighbourhoodUpdatedFieldNumber = 4;
     /// <summary>
-    ///  For each neigbhourhood change notification, the client must send this response as an acknowledgement.
+    /// For each neigbhourhood change notification, the client must send this response as an acknowledgement.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.NeighbourhoodChangedNotificationResponse NeighbourhoodUpdated {
@@ -2471,8 +2471,8 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Register a local service (e.g. the Profile Server) with the location-based network
-  ///  so as clients can detect its existence and contact it.
+  /// Register a local service (e.g. the Profile Server) with the location-based network
+  /// so as clients can detect its existence and contact it.
   /// </summary>
   public sealed partial class RegisterServiceRequest : pb::IMessage<RegisterServiceRequest> {
     private static readonly pb::MessageParser<RegisterServiceRequest> _parser = new pb::MessageParser<RegisterServiceRequest>(() => new RegisterServiceRequest());
@@ -2633,7 +2633,7 @@ namespace Iop.Locnet {
     public const int LocationFieldNumber = 1;
     private global::Iop.Locnet.GpsLocation location_;
     /// <summary>
-    ///  GPS location of the LOC node.
+    /// GPS location of the LOC node.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.GpsLocation Location {
@@ -2724,7 +2724,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Remove a previously registered entry of a service.
+  /// Remove a previously registered entry of a service.
   /// </summary>
   public sealed partial class DeregisterServiceRequest : pb::IMessage<DeregisterServiceRequest> {
     private static readonly pb::MessageParser<DeregisterServiceRequest> _parser = new pb::MessageParser<DeregisterServiceRequest>(() => new DeregisterServiceRequest());
@@ -2933,9 +2933,9 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Get the list of neighbouring nodes by distance.
-  ///  If the keepAlive flag is set, the server must keep the connection alive and notify the client
-  ///  about changes in its neigbhourhood by sending NeighbourhoodChangeRequests to the client.
+  /// Get the list of neighbouring nodes by distance.
+  /// If the keepAlive flag is set, the server must keep the connection alive and notify the client
+  /// about changes in its neigbhourhood by sending NeighbourhoodChangeRequests to the client.
   /// </summary>
   public sealed partial class GetNeighbourNodesByDistanceLocalRequest : pb::IMessage<GetNeighbourNodesByDistanceLocalRequest> {
     private static readonly pb::MessageParser<GetNeighbourNodesByDistanceLocalRequest> _parser = new pb::MessageParser<GetNeighbourNodesByDistanceLocalRequest>(() => new GetNeighbourNodesByDistanceLocalRequest());
@@ -3055,7 +3055,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Response is a list of node data about all neighbours.
+  /// Response is a list of node data about all neighbours.
   /// </summary>
   public sealed partial class GetNeighbourNodesByDistanceResponse : pb::IMessage<GetNeighbourNodesByDistanceResponse> {
     private static readonly pb::MessageParser<GetNeighbourNodesByDistanceResponse> _parser = new pb::MessageParser<GetNeighbourNodesByDistanceResponse>(() => new GetNeighbourNodesByDistanceResponse());
@@ -3167,7 +3167,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Atomic change notification element: a neigbhour node is either added, updated or deleted.
+  /// Atomic change notification element: a neigbhour node is either added, updated or deleted.
   /// </summary>
   public sealed partial class NeighbourhoodChange : pb::IMessage<NeighbourhoodChange> {
     private static readonly pb::MessageParser<NeighbourhoodChange> _parser = new pb::MessageParser<NeighbourhoodChange>(() => new NeighbourhoodChange());
@@ -3387,7 +3387,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  A list of changes to be sent in a single bulk notification.
+  /// A list of changes to be sent in a single bulk notification.
   /// </summary>
   public sealed partial class NeighbourhoodChangedNotificationRequest : pb::IMessage<NeighbourhoodChangedNotificationRequest> {
     private static readonly pb::MessageParser<NeighbourhoodChangedNotificationRequest> _parser = new pb::MessageParser<NeighbourhoodChangedNotificationRequest>(() => new NeighbourhoodChangedNotificationRequest());
@@ -4392,8 +4392,8 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Initiate/Renew a colleage/neighbour relationship between nodes.
-  ///  The requestor node sends its own node information to the other node in the request.
+  /// Initiate/Renew a colleage/neighbour relationship between nodes.
+  /// The requestor node sends its own node information to the other node in the request.
   /// </summary>
   public sealed partial class BuildNetworkRequest : pb::IMessage<BuildNetworkRequest> {
     private static readonly pb::MessageParser<BuildNetworkRequest> _parser = new pb::MessageParser<BuildNetworkRequest>(() => new BuildNetworkRequest());
@@ -4556,7 +4556,7 @@ namespace Iop.Locnet {
     public const int AcceptedFieldNumber = 1;
     private bool accepted_;
     /// <summary>
-    ///  Whether the remote node agreed to create/renew the requested relation.
+    /// Whether the remote node agreed to create/renew the requested relation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Accepted {
@@ -4570,7 +4570,7 @@ namespace Iop.Locnet {
     public const int AcceptorNodeInfoFieldNumber = 2;
     private global::Iop.Locnet.NodeInfo acceptorNodeInfo_;
     /// <summary>
-    ///  If the remote node accepted the request, it returns its latest node information to make sure that no outdated external Ip address or location is stored.
+    /// If the remote node accepted the request, it returns its latest node information to make sure that no outdated external Ip address or location is stored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Locnet.NodeInfo AcceptorNodeInfo {
@@ -4584,7 +4584,7 @@ namespace Iop.Locnet {
     public const int RemoteIpAddressFieldNumber = 3;
     private pb::ByteString remoteIpAddress_ = pb::ByteString.Empty;
     /// <summary>
-    ///  The remote external IP address of the initiator node as detected by the addressed (i.e. this) node. Useful for autodetection of the external IP address and its changes.
+    /// The remote external IP address of the initiator node as detected by the addressed (i.e. this) node. Useful for autodetection of the external IP address and its changes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString RemoteIpAddress {
@@ -4707,7 +4707,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Get the total count of network nodes known by the remote node.
+  /// Get the total count of network nodes known by the remote node.
   /// </summary>
   public sealed partial class GetNodeCountRequest : pb::IMessage<GetNodeCountRequest> {
     private static readonly pb::MessageParser<GetNodeCountRequest> _parser = new pb::MessageParser<GetNodeCountRequest>(() => new GetNodeCountRequest());
@@ -4916,7 +4916,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Request for a list of random nodes.
+  /// Request for a list of random nodes.
   /// </summary>
   public sealed partial class GetRandomNodesRequest : pb::IMessage<GetRandomNodesRequest> {
     private static readonly pb::MessageParser<GetRandomNodesRequest> _parser = new pb::MessageParser<GetRandomNodesRequest>(() => new GetRandomNodesRequest());
@@ -5173,7 +5173,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  List the nodes that are closest to a specific location, useful for exploring the map.
+  /// List the nodes that are closest to a specific location, useful for exploring the map.
   /// </summary>
   public sealed partial class GetClosestNodesByDistanceRequest : pb::IMessage<GetClosestNodesByDistanceRequest> {
     private static readonly pb::MessageParser<GetClosestNodesByDistanceRequest> _parser = new pb::MessageParser<GetClosestNodesByDistanceRequest>(() => new GetClosestNodesByDistanceRequest());
@@ -5936,7 +5936,7 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  List the list of other Internet of People services that are accessible for clients on the same node.
+  /// List the list of other Internet of People services that are accessible for clients on the same node.
   /// </summary>
   public sealed partial class GetNodeInfoRequest : pb::IMessage<GetNodeInfoRequest> {
     private static readonly pb::MessageParser<GetNodeInfoRequest> _parser = new pb::MessageParser<GetNodeInfoRequest>(() => new GetNodeInfoRequest());
@@ -6151,9 +6151,9 @@ namespace Iop.Locnet {
   }
 
   /// <summary>
-  ///  Requests for the same service as provided on the Local Service interface.
-  ///  It's a different request type only because clients are not allowed
-  ///  to keep the connection alive and wait for neighbourhood notication changes.
+  /// Requests for the same service as provided on the Local Service interface.
+  /// It's a different request type only because clients are not allowed
+  /// to keep the connection alive and wait for neighbourhood notication changes.
   /// </summary>
   public sealed partial class GetNeighbourNodesByDistanceClientRequest : pb::IMessage<GetNeighbourNodesByDistanceClientRequest> {
     private static readonly pb::MessageParser<GetNeighbourNodesByDistanceClientRequest> _parser = new pb::MessageParser<GetNeighbourNodesByDistanceClientRequest>(() => new GetNeighbourNodesByDistanceClientRequest());

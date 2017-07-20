@@ -43,7 +43,7 @@ namespace Iop.Can {
   #region Messages
   /// <summary>
   ///
-  ///  IPNS record as defined in https://github.com/DeCentral-Budapest/go-ipfs/blob/master/namesys/pb/namesys.proto
+  /// IPNS record as defined in https://github.com/DeCentral-Budapest/go-ipfs/blob/master/namesys/pb/namesys.proto
   /// </summary>
   public sealed partial class CanIpnsEntry : pb::IMessage<CanIpnsEntry> {
     private static readonly pb::MessageParser<CanIpnsEntry> _parser = new pb::MessageParser<CanIpnsEntry>(() => new CanIpnsEntry());
@@ -86,7 +86,7 @@ namespace Iop.Can {
     public const int ValueFieldNumber = 1;
     private pb::ByteString value_ = pb::ByteString.Empty;
     /// <summary>
-    ///  IPFS path string converted to byte array. The path string has to be "/ipfs/$objectHashEncoded",
+    /// IPFS path string converted to byte array. The path string has to be "/ipfs/$objectHashEncoded",
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Value {
@@ -100,8 +100,8 @@ namespace Iop.Can {
     public const int SignatureFieldNumber = 2;
     private pb::ByteString signature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  where $objectHashEncoded is base58 encoded hash of the CAN object that the client received as `CanStoreDataResponse.hash`.
-    ///  The base58 encoding must be used without the multibase prefix - for example "/ipfs/QmaRvpLT4RgBDVY6cQKwqQGQNtbM31KSqh8TxvQgFoEUus".
+    /// where $objectHashEncoded is base58 encoded hash of the CAN object that the client received as `CanStoreDataResponse.hash`.
+    /// The base58 encoding must be used without the multibase prefix - for example "/ipfs/QmaRvpLT4RgBDVY6cQKwqQGQNtbM31KSqh8TxvQgFoEUus".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Signature {
@@ -115,7 +115,7 @@ namespace Iop.Can {
     public const int ValidityTypeFieldNumber = 3;
     private global::Iop.Can.CanIpnsEntry.Types.ValidityType validityType_ = 0;
     /// <summary>
-    ///  Type of meaning of 'validity' field.
+    /// Type of meaning of 'validity' field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Can.CanIpnsEntry.Types.ValidityType ValidityType {
@@ -129,7 +129,7 @@ namespace Iop.Can {
     public const int ValidityFieldNumber = 4;
     private pb::ByteString validity_ = pb::ByteString.Empty;
     /// <summary>
-    ///  RFC3339 UTF-8 string converted to byte array.
+    /// RFC3339 UTF-8 string converted to byte array.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Validity {
@@ -143,7 +143,7 @@ namespace Iop.Can {
     public const int SequenceFieldNumber = 5;
     private ulong sequence_;
     /// <summary>
-    ///  Record sequence number that has to be increased on updates.
+    /// Record sequence number that has to be increased on updates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ulong Sequence {
@@ -157,7 +157,7 @@ namespace Iop.Can {
     public const int TtlFieldNumber = 6;
     private ulong ttl_;
     /// <summary>
-    ///  Time to live of the IPNS record in cache in nanoseconds.
+    /// Time to live of the IPNS record in cache in nanoseconds.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ulong Ttl {
@@ -324,11 +324,11 @@ namespace Iop.Can {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      ///  Type of validity value.
+      /// Type of validity value.
       /// </summary>
       public enum ValidityType {
         /// <summary>
-        ///  Validity value is specifies a time until which the IPNS record is valid.
+        /// Validity value is specifies a time until which the IPNS record is valid.
         /// </summary>
         [pbr::OriginalName("EOL")] Eol = 0,
       }
@@ -340,7 +340,7 @@ namespace Iop.Can {
 
   /// <summary>
   ///
-  ///  Representation of a cryptographic key in CAN API.
+  /// Representation of a cryptographic key in CAN API.
   /// </summary>
   public sealed partial class CanCryptoKey : pb::IMessage<CanCryptoKey> {
     private static readonly pb::MessageParser<CanCryptoKey> _parser = new pb::MessageParser<CanCryptoKey>(() => new CanCryptoKey());
@@ -379,7 +379,7 @@ namespace Iop.Can {
     public const int TypeFieldNumber = 1;
     private global::Iop.Can.CanCryptoKey.Types.KeyType type_ = 0;
     /// <summary>
-    ///  Type of the key.
+    /// Type of the key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Can.CanCryptoKey.Types.KeyType Type {
@@ -393,7 +393,7 @@ namespace Iop.Can {
     public const int DataFieldNumber = 2;
     private pb::ByteString data_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Key binary data.
+    /// Key binary data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Data {
@@ -496,7 +496,7 @@ namespace Iop.Can {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      ///  Type of the key algorithm. 
+      /// Type of the key algorithm. 
       /// </summary>
       public enum KeyType {
         [pbr::OriginalName("RSA")] Rsa = 0,

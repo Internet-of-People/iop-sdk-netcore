@@ -41,75 +41,75 @@ namespace Iop.Shared {
   }
   #region Enums
   /// <summary>
-  ///  Return codes to requests that inform requestor about whether the operation completed successfully or which error occurred.
+  /// Return codes to requests that inform requestor about whether the operation completed successfully or which error occurred.
   /// </summary>
   public enum Status {
     /// <summary>
-    ///  General codes that can be returned to any message.
+    /// General codes that can be returned to any message.
     /// </summary>
     [pbr::OriginalName("STATUS_OK")] Ok = 0,
     /// <summary>
-    ///  The incoming request does not follow the protocol.
+    /// The incoming request does not follow the protocol.
     /// </summary>
     [pbr::OriginalName("ERROR_PROTOCOL_VIOLATION")] ErrorProtocolViolation = 1,
     /// <summary>
-    ///  The peer does not support the request. This is returned when a peer sends a message with an unsupported protocol version.
+    /// The peer does not support the request. This is returned when a peer sends a message with an unsupported protocol version.
     /// </summary>
     [pbr::OriginalName("ERROR_UNSUPPORTED")] ErrorUnsupported = 2,
     /// <summary>
-    ///  The peer will not process the request bacause the requestor is on the blacklist. Information about the blacklist entry expiration is provided in 'Response.timestamp'.
+    /// The peer will not process the request bacause the requestor is on the blacklist. Information about the blacklist entry expiration is provided in 'Response.timestamp'.
     /// </summary>
     [pbr::OriginalName("ERROR_BANNED")] ErrorBanned = 3,
     /// <summary>
-    ///  The peer will not process the request because it is too busy. The requestor can try later.
+    /// The peer will not process the request because it is too busy. The requestor can try later.
     /// </summary>
     [pbr::OriginalName("ERROR_BUSY")] ErrorBusy = 4,
     /// <summary>
-    ///  Within conversation, some server roles require authorization of the peer before certain requests are allowed.
+    /// Within conversation, some server roles require authorization of the peer before certain requests are allowed.
     /// </summary>
     [pbr::OriginalName("ERROR_UNAUTHORIZED")] ErrorUnauthorized = 5,
     /// <summary>
-    ///  If a request is sent to a port that does not handle the specific role, this error is returned.
+    /// If a request is sent to a port that does not handle the specific role, this error is returned.
     /// </summary>
     [pbr::OriginalName("ERROR_BAD_ROLE")] ErrorBadRole = 6,
     /// <summary>
-    ///  The conversation status is different from what the message requires.
+    /// The conversation status is different from what the message requires.
     /// </summary>
     [pbr::OriginalName("ERROR_BAD_CONVERSATION_STATUS")] ErrorBadConversationStatus = 7,
     /// <summary>
-    ///  Internal error occurred while processing the message.
+    /// Internal error occurred while processing the message.
     /// </summary>
     [pbr::OriginalName("ERROR_INTERNAL")] ErrorInternal = 8,
     /// <summary>
-    ///  Return codes specific to a request.
+    /// Return codes specific to a request.
     /// </summary>
     [pbr::OriginalName("ERROR_QUOTA_EXCEEDED")] ErrorQuotaExceeded = 51,
     /// <summary>
-    ///  The signature provided be the peer does not correspond to the peer's key or the message being signed.
+    /// The signature provided be the peer does not correspond to the peer's key or the message being signed.
     /// </summary>
     [pbr::OriginalName("ERROR_INVALID_SIGNATURE")] ErrorInvalidSignature = 52,
     /// <summary>
-    ///  A referenced object was not found.
+    /// A referenced object was not found.
     /// </summary>
     [pbr::OriginalName("ERROR_NOT_FOUND")] ErrorNotFound = 53,
     /// <summary>
-    ///  One of the values provided is invalid.
+    /// One of the values provided is invalid.
     /// </summary>
     [pbr::OriginalName("ERROR_INVALID_VALUE")] ErrorInvalidValue = 54,
     /// <summary>
-    ///  An object with the same identifier already exists.
+    /// An object with the same identifier already exists.
     /// </summary>
     [pbr::OriginalName("ERROR_ALREADY_EXISTS")] ErrorAlreadyExists = 55,
     /// <summary>
-    ///  A request object is not available.
+    /// A request object is not available.
     /// </summary>
     [pbr::OriginalName("ERROR_NOT_AVAILABLE")] ErrorNotAvailable = 56,
     /// <summary>
-    ///  A third party rejected the requested action.
+    /// A third party rejected the requested action.
     /// </summary>
     [pbr::OriginalName("ERROR_REJECTED")] ErrorRejected = 57,
     /// <summary>
-    ///  The requested object can not be obtained, queried or used as it is not initialized.
+    /// The requested object can not be obtained, queried or used as it is not initialized.
     /// </summary>
     [pbr::OriginalName("ERROR_UNINITIALIZED")] ErrorUninitialized = 58,
   }

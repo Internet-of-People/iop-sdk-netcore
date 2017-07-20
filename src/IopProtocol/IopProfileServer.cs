@@ -37,111 +37,111 @@ namespace Iop.Profileserver {
             "aW5nbGVSZXNwb25zZRgIIAEoCzIhLmlvcC5wcm9maWxlc2VydmVyLlNpbmds",
             "ZVJlc3BvbnNlSAASRwoUY29udmVyc2F0aW9uUmVzcG9uc2UYCSABKAsyJy5p",
             "b3AucHJvZmlsZXNlcnZlci5Db252ZXJzYXRpb25SZXNwb25zZUgAQhIKEENv",
-            "bnZlcnNhdGlvblR5cGUiwwUKDVNpbmdsZVJlcXVlc3QSDwoHdmVyc2lvbhgB",
+            "bnZlcnNhdGlvblR5cGUizwYKDVNpbmdsZVJlcXVlc3QSDwoHdmVyc2lvbhgB",
             "IAEoDBIuCgRwaW5nGAIgASgLMh4uaW9wLnByb2ZpbGVzZXJ2ZXIuUGluZ1Jl",
             "cXVlc3RIABI4CglsaXN0Um9sZXMYAyABKAsyIy5pb3AucHJvZmlsZXNlcnZl",
             "ci5MaXN0Um9sZXNSZXF1ZXN0SAASRgoQbGlzdEhvc3RpbmdQbGFucxgEIAEo",
             "CzIqLmlvcC5wcm9maWxlc2VydmVyLkxpc3RIb3N0aW5nUGxhbnNSZXF1ZXN0",
             "SAASUAoVZ2V0UHJvZmlsZUluZm9ybWF0aW9uGAUgASgLMi8uaW9wLnByb2Zp",
-            "bGVzZXJ2ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVxdWVzdEgAEmAKHWFw",
-            "cGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdlGAYgASgLMjcuaW9wLnByb2Zp",
-            "bGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlU2VuZE1lc3NhZ2VSZXF1ZXN0",
-            "SAASfgosYXBwbGljYXRpb25TZXJ2aWNlUmVjZWl2ZU1lc3NhZ2VOb3RpZmlj",
-            "YXRpb24YByABKAsyRi5pb3AucHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNl",
-            "cnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlmaWNhdGlvblJlcXVlc3RIABI+Cgxw",
-            "cm9maWxlU3RhdHMYCCABKAsyJi5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxl",
-            "U3RhdHNSZXF1ZXN0SAASbAojZ2V0SWRlbnRpdHlSZWxhdGlvbnNoaXBzSW5m",
-            "b3JtYXRpb24YCSABKAsyPS5pb3AucHJvZmlsZXNlcnZlci5HZXRJZGVudGl0",
-            "eVJlbGF0aW9uc2hpcHNJbmZvcm1hdGlvblJlcXVlc3RIAEINCgtSZXF1ZXN0",
-            "VHlwZSLNBQoOU2luZ2xlUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDBIvCgRw",
-            "aW5nGAIgASgLMh8uaW9wLnByb2ZpbGVzZXJ2ZXIuUGluZ1Jlc3BvbnNlSAAS",
-            "OQoJbGlzdFJvbGVzGAMgASgLMiQuaW9wLnByb2ZpbGVzZXJ2ZXIuTGlzdFJv",
-            "bGVzUmVzcG9uc2VIABJHChBsaXN0SG9zdGluZ1BsYW5zGAQgASgLMisuaW9w",
-            "LnByb2ZpbGVzZXJ2ZXIuTGlzdEhvc3RpbmdQbGFuc1Jlc3BvbnNlSAASUQoV",
-            "Z2V0UHJvZmlsZUluZm9ybWF0aW9uGAUgASgLMjAuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVzcG9uc2VIABJhCh1hcHBsaWNh",
-            "dGlvblNlcnZpY2VTZW5kTWVzc2FnZRgGIAEoCzI4LmlvcC5wcm9maWxlc2Vy",
-            "dmVyLkFwcGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdlUmVzcG9uc2VIABJ/",
-            "CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlmaWNhdGlv",
-            "bhgHIAEoCzJHLmlvcC5wcm9maWxlc2VydmVyLkFwcGxpY2F0aW9uU2Vydmlj",
-            "ZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVzcG9uc2VIABI/Cgxwcm9m",
-            "aWxlU3RhdHMYCCABKAsyJy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU3Rh",
-            "dHNSZXNwb25zZUgAEm0KI2dldElkZW50aXR5UmVsYXRpb25zaGlwc0luZm9y",
-            "bWF0aW9uGAkgASgLMj4uaW9wLnByb2ZpbGVzZXJ2ZXIuR2V0SWRlbnRpdHlS",
-            "ZWxhdGlvbnNoaXBzSW5mb3JtYXRpb25SZXNwb25zZUgAQg4KDFJlc3BvbnNl",
-            "VHlwZSL1DAoTQ29udmVyc2F0aW9uUmVxdWVzdBIRCglzaWduYXR1cmUYASAB",
-            "KAwSPAoFc3RhcnQYAiABKAsyKy5pb3AucHJvZmlsZXNlcnZlci5TdGFydENv",
-            "bnZlcnNhdGlvblJlcXVlc3RIABJECg9yZWdpc3Rlckhvc3RpbmcYAyABKAsy",
-            "KS5pb3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3RpbmdSZXF1ZXN0SAAS",
-            "NAoHY2hlY2tJbhgEIAEoCzIhLmlvcC5wcm9maWxlc2VydmVyLkNoZWNrSW5S",
-            "ZXF1ZXN0SAASQgoOdmVyaWZ5SWRlbnRpdHkYBSABKAsyKC5pb3AucHJvZmls",
-            "ZXNlcnZlci5WZXJpZnlJZGVudGl0eVJlcXVlc3RIABJACg11cGRhdGVQcm9m",
-            "aWxlGAYgASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuVXBkYXRlUHJvZmlsZVJl",
-            "cXVlc3RIABJSChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50GAcgASgLMjAuaW9w",
-            "LnByb2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVlbWVudFJlcXVlc3RI",
-            "ABJQChVhcHBsaWNhdGlvblNlcnZpY2VBZGQYCCABKAsyLy5pb3AucHJvZmls",
-            "ZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VBZGRSZXF1ZXN0SAASVgoYYXBw",
-            "bGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjIuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVxdWVzdEgAEmIKHmNhbGxJ",
-            "ZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI4LmlvcC5wcm9maWxl",
-            "c2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZVJlcXVlc3RI",
-            "ABJWChhpbmNvbWluZ0NhbGxOb3RpZmljYXRpb24YCyABKAsyMi5pb3AucHJv",
-            "ZmlsZXNlcnZlci5JbmNvbWluZ0NhbGxOb3RpZmljYXRpb25SZXF1ZXN0SAAS",
-            "QAoNcHJvZmlsZVNlYXJjaBgMIAEoCzInLmlvcC5wcm9maWxlc2VydmVyLlBy",
-            "b2ZpbGVTZWFyY2hSZXF1ZXN0SAASSAoRcHJvZmlsZVNlYXJjaFBhcnQYDSAB",
-            "KAsyKy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU2VhcmNoUGFydFJlcXVl",
-            "c3RIABJKChJhZGRSZWxhdGVkSWRlbnRpdHkYDiABKAsyLC5pb3AucHJvZmls",
-            "ZXNlcnZlci5BZGRSZWxhdGVkSWRlbnRpdHlSZXF1ZXN0SAASUAoVcmVtb3Zl",
-            "UmVsYXRlZElkZW50aXR5GA8gASgLMi8uaW9wLnByb2ZpbGVzZXJ2ZXIuUmVt",
-            "b3ZlUmVsYXRlZElkZW50aXR5UmVxdWVzdEgAEmQKH3N0YXJ0TmVpZ2hib3Jo",
-            "b29kSW5pdGlhbGl6YXRpb24YECABKAsyOS5pb3AucHJvZmlsZXNlcnZlci5T",
-            "dGFydE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVxdWVzdEgAEmYKIGZp",
-            "bmlzaE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uGBEgASgLMjouaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuRmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25S",
-            "ZXF1ZXN0SAASZAofbmVpZ2hib3Job29kU2hhcmVkUHJvZmlsZVVwZGF0ZRgS",
-            "IAEoCzI5LmlvcC5wcm9maWxlc2VydmVyLk5laWdoYm9yaG9vZFNoYXJlZFBy",
-            "b2ZpbGVVcGRhdGVSZXF1ZXN0SAASVAoXc3RvcE5laWdoYm9yaG9vZFVwZGF0",
-            "ZXMYEyABKAsyMS5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVpZ2hib3Job29k",
-            "VXBkYXRlc1JlcXVlc3RIABI+CgxjYW5TdG9yZURhdGEYFCABKAsyJi5pb3Au",
-            "cHJvZmlsZXNlcnZlci5DYW5TdG9yZURhdGFSZXF1ZXN0SAASTgoUY2FuUHVi",
-            "bGlzaElwbnNSZWNvcmQYFSABKAsyLi5pb3AucHJvZmlsZXNlcnZlci5DYW5Q",
-            "dWJsaXNoSXBuc1JlY29yZFJlcXVlc3RIAEINCgtSZXF1ZXN0VHlwZSKLDQoU",
-            "Q29udmVyc2F0aW9uUmVzcG9uc2USEQoJc2lnbmF0dXJlGAEgASgMEj0KBXN0",
-            "YXJ0GAIgASgLMiwuaW9wLnByb2ZpbGVzZXJ2ZXIuU3RhcnRDb252ZXJzYXRp",
-            "b25SZXNwb25zZUgAEkUKD3JlZ2lzdGVySG9zdGluZxgDIAEoCzIqLmlvcC5w",
-            "cm9maWxlc2VydmVyLlJlZ2lzdGVySG9zdGluZ1Jlc3BvbnNlSAASNQoHY2hl",
-            "Y2tJbhgEIAEoCzIiLmlvcC5wcm9maWxlc2VydmVyLkNoZWNrSW5SZXNwb25z",
-            "ZUgAEkMKDnZlcmlmeUlkZW50aXR5GAUgASgLMikuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuVmVyaWZ5SWRlbnRpdHlSZXNwb25zZUgAEkEKDXVwZGF0ZVByb2ZpbGUY",
-            "BiABKAsyKC5pb3AucHJvZmlsZXNlcnZlci5VcGRhdGVQcm9maWxlUmVzcG9u",
-            "c2VIABJTChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50GAcgASgLMjEuaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVlbWVudFJlc3BvbnNlSAAS",
-            "UQoVYXBwbGljYXRpb25TZXJ2aWNlQWRkGAggASgLMjAuaW9wLnByb2ZpbGVz",
-            "ZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlQWRkUmVzcG9uc2VIABJXChhhcHBs",
-            "aWNhdGlvblNlcnZpY2VSZW1vdmUYCSABKAsyMy5pb3AucHJvZmlsZXNlcnZl",
-            "ci5BcHBsaWNhdGlvblNlcnZpY2VSZW1vdmVSZXNwb25zZUgAEmMKHmNhbGxJ",
-            "ZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI5LmlvcC5wcm9maWxl",
-            "c2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZVJlc3BvbnNl",
-            "SAASVwoYaW5jb21pbmdDYWxsTm90aWZpY2F0aW9uGAsgASgLMjMuaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuSW5jb21pbmdDYWxsTm90aWZpY2F0aW9uUmVzcG9uc2VI",
-            "ABJBCg1wcm9maWxlU2VhcmNoGAwgASgLMiguaW9wLnByb2ZpbGVzZXJ2ZXIu",
-            "UHJvZmlsZVNlYXJjaFJlc3BvbnNlSAASSQoRcHJvZmlsZVNlYXJjaFBhcnQY",
-            "DSABKAsyLC5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU2VhcmNoUGFydFJl",
-            "c3BvbnNlSAASSwoSYWRkUmVsYXRlZElkZW50aXR5GA4gASgLMi0uaW9wLnBy",
+            "bGVzZXJ2ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVxdWVzdEgAEkAKDXBy",
+            "b2ZpbGVTZWFyY2gYBiABKAsyJy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxl",
+            "U2VhcmNoUmVxdWVzdEgAEkgKEXByb2ZpbGVTZWFyY2hQYXJ0GAcgASgLMisu",
+            "aW9wLnByb2ZpbGVzZXJ2ZXIuUHJvZmlsZVNlYXJjaFBhcnRSZXF1ZXN0SAAS",
+            "YAodYXBwbGljYXRpb25TZXJ2aWNlU2VuZE1lc3NhZ2UYCCABKAsyNy5pb3Au",
+            "cHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZVJl",
+            "cXVlc3RIABJ+CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2FnZU5v",
+            "dGlmaWNhdGlvbhgJIAEoCzJGLmlvcC5wcm9maWxlc2VydmVyLkFwcGxpY2F0",
+            "aW9uU2VydmljZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVxdWVzdEgA",
+            "Ej4KDHByb2ZpbGVTdGF0cxgKIAEoCzImLmlvcC5wcm9maWxlc2VydmVyLlBy",
+            "b2ZpbGVTdGF0c1JlcXVlc3RIABJsCiNnZXRJZGVudGl0eVJlbGF0aW9uc2hp",
+            "cHNJbmZvcm1hdGlvbhgLIAEoCzI9LmlvcC5wcm9maWxlc2VydmVyLkdldElk",
+            "ZW50aXR5UmVsYXRpb25zaGlwc0luZm9ybWF0aW9uUmVxdWVzdEgAQg0KC1Jl",
+            "cXVlc3RUeXBlItsGCg5TaW5nbGVSZXNwb25zZRIPCgd2ZXJzaW9uGAEgASgM",
+            "Ei8KBHBpbmcYAiABKAsyHy5pb3AucHJvZmlsZXNlcnZlci5QaW5nUmVzcG9u",
+            "c2VIABI5CglsaXN0Um9sZXMYAyABKAsyJC5pb3AucHJvZmlsZXNlcnZlci5M",
+            "aXN0Um9sZXNSZXNwb25zZUgAEkcKEGxpc3RIb3N0aW5nUGxhbnMYBCABKAsy",
+            "Ky5pb3AucHJvZmlsZXNlcnZlci5MaXN0SG9zdGluZ1BsYW5zUmVzcG9uc2VI",
+            "ABJRChVnZXRQcm9maWxlSW5mb3JtYXRpb24YBSABKAsyMC5pb3AucHJvZmls",
+            "ZXNlcnZlci5HZXRQcm9maWxlSW5mb3JtYXRpb25SZXNwb25zZUgAEkEKDXBy",
+            "b2ZpbGVTZWFyY2gYBiABKAsyKC5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxl",
+            "U2VhcmNoUmVzcG9uc2VIABJJChFwcm9maWxlU2VhcmNoUGFydBgHIAEoCzIs",
+            "LmlvcC5wcm9maWxlc2VydmVyLlByb2ZpbGVTZWFyY2hQYXJ0UmVzcG9uc2VI",
+            "ABJhCh1hcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZRgIIAEoCzI4Lmlv",
+            "cC5wcm9maWxlc2VydmVyLkFwcGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdl",
+            "UmVzcG9uc2VIABJ/CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2Fn",
+            "ZU5vdGlmaWNhdGlvbhgJIAEoCzJHLmlvcC5wcm9maWxlc2VydmVyLkFwcGxp",
+            "Y2F0aW9uU2VydmljZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVzcG9u",
+            "c2VIABI/Cgxwcm9maWxlU3RhdHMYCiABKAsyJy5pb3AucHJvZmlsZXNlcnZl",
+            "ci5Qcm9maWxlU3RhdHNSZXNwb25zZUgAEm0KI2dldElkZW50aXR5UmVsYXRp",
+            "b25zaGlwc0luZm9ybWF0aW9uGAsgASgLMj4uaW9wLnByb2ZpbGVzZXJ2ZXIu",
+            "R2V0SWRlbnRpdHlSZWxhdGlvbnNoaXBzSW5mb3JtYXRpb25SZXNwb25zZUgA",
+            "Qg4KDFJlc3BvbnNlVHlwZSLpCwoTQ29udmVyc2F0aW9uUmVxdWVzdBIRCglz",
+            "aWduYXR1cmUYASABKAwSPAoFc3RhcnQYAiABKAsyKy5pb3AucHJvZmlsZXNl",
+            "cnZlci5TdGFydENvbnZlcnNhdGlvblJlcXVlc3RIABJECg9yZWdpc3Rlckhv",
+            "c3RpbmcYAyABKAsyKS5pb3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3Rp",
+            "bmdSZXF1ZXN0SAASNAoHY2hlY2tJbhgEIAEoCzIhLmlvcC5wcm9maWxlc2Vy",
+            "dmVyLkNoZWNrSW5SZXF1ZXN0SAASQgoOdmVyaWZ5SWRlbnRpdHkYBSABKAsy",
+            "KC5pb3AucHJvZmlsZXNlcnZlci5WZXJpZnlJZGVudGl0eVJlcXVlc3RIABJA",
+            "Cg11cGRhdGVQcm9maWxlGAYgASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuVXBk",
+            "YXRlUHJvZmlsZVJlcXVlc3RIABJSChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50",
+            "GAcgASgLMjAuaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVl",
+            "bWVudFJlcXVlc3RIABJQChVhcHBsaWNhdGlvblNlcnZpY2VBZGQYCCABKAsy",
+            "Ly5pb3AucHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VBZGRSZXF1",
+            "ZXN0SAASVgoYYXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjIuaW9w",
+            "LnByb2ZpbGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVxdWVz",
+            "dEgAEmIKHmNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI4",
+            "LmlvcC5wcm9maWxlc2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2Vy",
+            "dmljZVJlcXVlc3RIABJWChhpbmNvbWluZ0NhbGxOb3RpZmljYXRpb24YCyAB",
+            "KAsyMi5pb3AucHJvZmlsZXNlcnZlci5JbmNvbWluZ0NhbGxOb3RpZmljYXRp",
+            "b25SZXF1ZXN0SAASSgoSYWRkUmVsYXRlZElkZW50aXR5GAwgASgLMiwuaW9w",
+            "LnByb2ZpbGVzZXJ2ZXIuQWRkUmVsYXRlZElkZW50aXR5UmVxdWVzdEgAElAK",
+            "FXJlbW92ZVJlbGF0ZWRJZGVudGl0eRgNIAEoCzIvLmlvcC5wcm9maWxlc2Vy",
+            "dmVyLlJlbW92ZVJlbGF0ZWRJZGVudGl0eVJlcXVlc3RIABJkCh9zdGFydE5l",
+            "aWdoYm9yaG9vZEluaXRpYWxpemF0aW9uGA4gASgLMjkuaW9wLnByb2ZpbGVz",
+            "ZXJ2ZXIuU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlcXVlc3RI",
+            "ABJmCiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgPIAEoCzI6",
+            "LmlvcC5wcm9maWxlc2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
+            "emF0aW9uUmVxdWVzdEgAEmQKH25laWdoYm9yaG9vZFNoYXJlZFByb2ZpbGVV",
+            "cGRhdGUYECABKAsyOS5pb3AucHJvZmlsZXNlcnZlci5OZWlnaGJvcmhvb2RT",
+            "aGFyZWRQcm9maWxlVXBkYXRlUmVxdWVzdEgAElQKF3N0b3BOZWlnaGJvcmhv",
+            "b2RVcGRhdGVzGBEgASgLMjEuaW9wLnByb2ZpbGVzZXJ2ZXIuU3RvcE5laWdo",
+            "Ym9yaG9vZFVwZGF0ZXNSZXF1ZXN0SAASPgoMY2FuU3RvcmVEYXRhGBIgASgL",
+            "MiYuaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuU3RvcmVEYXRhUmVxdWVzdEgAEk4K",
+            "FGNhblB1Ymxpc2hJcG5zUmVjb3JkGBMgASgLMi4uaW9wLnByb2ZpbGVzZXJ2",
+            "ZXIuQ2FuUHVibGlzaElwbnNSZWNvcmRSZXF1ZXN0SABCDQoLUmVxdWVzdFR5",
+            "cGUi/QsKFENvbnZlcnNhdGlvblJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEo",
+            "DBI9CgVzdGFydBgCIAEoCzIsLmlvcC5wcm9maWxlc2VydmVyLlN0YXJ0Q29u",
+            "dmVyc2F0aW9uUmVzcG9uc2VIABJFCg9yZWdpc3Rlckhvc3RpbmcYAyABKAsy",
+            "Ki5pb3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3RpbmdSZXNwb25zZUgA",
+            "EjUKB2NoZWNrSW4YBCABKAsyIi5pb3AucHJvZmlsZXNlcnZlci5DaGVja0lu",
+            "UmVzcG9uc2VIABJDCg52ZXJpZnlJZGVudGl0eRgFIAEoCzIpLmlvcC5wcm9m",
+            "aWxlc2VydmVyLlZlcmlmeUlkZW50aXR5UmVzcG9uc2VIABJBCg11cGRhdGVQ",
+            "cm9maWxlGAYgASgLMiguaW9wLnByb2ZpbGVzZXJ2ZXIuVXBkYXRlUHJvZmls",
+            "ZVJlc3BvbnNlSAASUwoWY2FuY2VsSG9zdGluZ0FncmVlbWVudBgHIAEoCzIx",
+            "LmlvcC5wcm9maWxlc2VydmVyLkNhbmNlbEhvc3RpbmdBZ3JlZW1lbnRSZXNw",
+            "b25zZUgAElEKFWFwcGxpY2F0aW9uU2VydmljZUFkZBgIIAEoCzIwLmlvcC5w",
+            "cm9maWxlc2VydmVyLkFwcGxpY2F0aW9uU2VydmljZUFkZFJlc3BvbnNlSAAS",
+            "VwoYYXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjMuaW9wLnByb2Zp",
+            "bGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVzcG9uc2VIABJj",
+            "Ch5jYWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2UYCiABKAsyOS5pb3Au",
+            "cHJvZmlsZXNlcnZlci5DYWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2VS",
+            "ZXNwb25zZUgAElcKGGluY29taW5nQ2FsbE5vdGlmaWNhdGlvbhgLIAEoCzIz",
+            "LmlvcC5wcm9maWxlc2VydmVyLkluY29taW5nQ2FsbE5vdGlmaWNhdGlvblJl",
+            "c3BvbnNlSAASSwoSYWRkUmVsYXRlZElkZW50aXR5GAwgASgLMi0uaW9wLnBy",
             "b2ZpbGVzZXJ2ZXIuQWRkUmVsYXRlZElkZW50aXR5UmVzcG9uc2VIABJRChVy",
-            "ZW1vdmVSZWxhdGVkSWRlbnRpdHkYDyABKAsyMC5pb3AucHJvZmlsZXNlcnZl",
+            "ZW1vdmVSZWxhdGVkSWRlbnRpdHkYDSABKAsyMC5pb3AucHJvZmlsZXNlcnZl",
             "ci5SZW1vdmVSZWxhdGVkSWRlbnRpdHlSZXNwb25zZUgAEmUKH3N0YXJ0TmVp",
-            "Z2hib3Job29kSW5pdGlhbGl6YXRpb24YECABKAsyOi5pb3AucHJvZmlsZXNl",
+            "Z2hib3Job29kSW5pdGlhbGl6YXRpb24YDiABKAsyOi5pb3AucHJvZmlsZXNl",
             "cnZlci5TdGFydE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVzcG9uc2VI",
-            "ABJnCiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgRIAEoCzI7",
+            "ABJnCiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgPIAEoCzI7",
             "LmlvcC5wcm9maWxlc2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
             "emF0aW9uUmVzcG9uc2VIABJlCh9uZWlnaGJvcmhvb2RTaGFyZWRQcm9maWxl",
-            "VXBkYXRlGBIgASgLMjouaW9wLnByb2ZpbGVzZXJ2ZXIuTmVpZ2hib3Job29k",
+            "VXBkYXRlGBAgASgLMjouaW9wLnByb2ZpbGVzZXJ2ZXIuTmVpZ2hib3Job29k",
             "U2hhcmVkUHJvZmlsZVVwZGF0ZVJlc3BvbnNlSAASVQoXc3RvcE5laWdoYm9y",
-            "aG9vZFVwZGF0ZXMYEyABKAsyMi5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVp",
-            "Z2hib3Job29kVXBkYXRlc1Jlc3BvbnNlSAASPwoMY2FuU3RvcmVEYXRhGBQg",
+            "aG9vZFVwZGF0ZXMYESABKAsyMi5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVp",
+            "Z2hib3Job29kVXBkYXRlc1Jlc3BvbnNlSAASPwoMY2FuU3RvcmVEYXRhGBIg",
             "ASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuU3RvcmVEYXRhUmVzcG9uc2VI",
-            "ABJPChRjYW5QdWJsaXNoSXBuc1JlY29yZBgVIAEoCzIvLmlvcC5wcm9maWxl",
+            "ABJPChRjYW5QdWJsaXNoSXBuc1JlY29yZBgTIAEoCzIvLmlvcC5wcm9maWxl",
             "c2VydmVyLkNhblB1Ymxpc2hJcG5zUmVjb3JkUmVzcG9uc2VIAEIOCgxSZXNw",
             "b25zZVR5cGUiHgoLUGluZ1JlcXVlc3QSDwoHcGF5bG9hZBgBIAEoDCIuCgxQ",
             "aW5nUmVzcG9uc2USDwoHcGF5bG9hZBgBIAEoDBINCgVjbG9jaxgCIAEoEiIS",
@@ -302,10 +302,10 @@ namespace Iop.Profileserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Message), global::Iop.Profileserver.Message.Parser, new[]{ "Id", "Request", "Response" }, new[]{ "MessageType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Request), global::Iop.Profileserver.Request.Parser, new[]{ "SingleRequest", "ConversationRequest" }, new[]{ "ConversationType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Response), global::Iop.Profileserver.Response.Parser, new[]{ "Status", "Timestamp", "Details", "SingleResponse", "ConversationResponse" }, new[]{ "ConversationType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleRequest), global::Iop.Profileserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleResponse), global::Iop.Profileserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "ResponseType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationRequest), global::Iop.Profileserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "ProfileSearch", "ProfileSearchPart", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationResponse), global::Iop.Profileserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "ProfileSearch", "ProfileSearchPart", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleRequest), global::Iop.Profileserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ProfileSearch", "ProfileSearchPart", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleResponse), global::Iop.Profileserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ProfileSearch", "ProfileSearchPart", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationRequest), global::Iop.Profileserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationResponse), global::Iop.Profileserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "ResponseType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.PingRequest), global::Iop.Profileserver.PingRequest.Parser, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.PingResponse), global::Iop.Profileserver.PingResponse.Parser, new[]{ "Payload", "Clock" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ListRolesRequest), global::Iop.Profileserver.ListRolesRequest.Parser, null, null, null, null),
@@ -389,27 +389,27 @@ namespace Iop.Profileserver {
   }
   #region Enums
   /// <summary>
-  ///  Known server roles.
+  /// Known server roles.
   /// </summary>
   public enum ServerRoleType {
     /// <summary>
-    ///  Primary Interface server role.
+    /// Primary Interface server role.
     /// </summary>
     [pbr::OriginalName("PRIMARY")] Primary = 0,
     /// <summary>
-    ///  Neighbors Interface server role.
+    /// Neighbors Interface server role.
     /// </summary>
     [pbr::OriginalName("SR_NEIGHBOR")] SrNeighbor = 2,
     /// <summary>
-    ///  Customer Clients Interface server role.
+    /// Customer Clients Interface server role.
     /// </summary>
     [pbr::OriginalName("CL_NON_CUSTOMER")] ClNonCustomer = 6,
     /// <summary>
-    ///  Non Customer Clients Interface server role.
+    /// Non Customer Clients Interface server role.
     /// </summary>
     [pbr::OriginalName("CL_CUSTOMER")] ClCustomer = 7,
     /// <summary>
-    ///  Application Service Interface server role.
+    /// Application Service Interface server role.
     /// </summary>
     [pbr::OriginalName("CL_APP_SERVICE")] ClAppService = 9,
   }
@@ -418,16 +418,17 @@ namespace Iop.Profileserver {
 
   #region Messages
   /// <summary>
-  ///  This is complete message as it goes over the wire. It includes the 32-bit header with message length.
   ///
-  ///  There is a 1 byte prefix because of Google Protobuf protocol, so the actual binary data for a message
-  ///  with body size 4660 bytes would be:
+  /// This is complete message as it goes over the wire. It includes the 32-bit header with message length.
   ///
-  ///    0D 34 12 00 00
+  /// There is a 1 byte prefix because of Google Protobuf protocol, so the actual binary data for a message
+  /// with body size 4,660 bytes would be:
   ///
-  ///  where 0x0D means type 'fixed32' (which value is 5) + index of 'header', which is 1 &lt;&lt; 3,
-  ///  this is followed be the 4 byte sequence 34 12 00 00, which is little endian of 0x00001234, which is 4,660 decimal.
-  ///  Thus the total number of bytes sent over the wire for this message would be 4,665 bytes.
+  ///   0D 34 12 00 00
+  ///
+  /// where 0x0D means type 'fixed32' (which value is 5) + index of 'header', which is 1 &lt;&lt; 3,
+  /// this is followed be the 4 byte sequence 34 12 00 00, which is little endian of 0x00001234, which is 4,660 decimal.
+  /// Thus the total number of bytes sent over the wire for this message would be 4,665 bytes.
   /// </summary>
   public sealed partial class MessageWithHeader : pb::IMessage<MessageWithHeader> {
     private static readonly pb::MessageParser<MessageWithHeader> _parser = new pb::MessageParser<MessageWithHeader>(() => new MessageWithHeader());
@@ -466,7 +467,7 @@ namespace Iop.Profileserver {
     public const int HeaderFieldNumber = 1;
     private uint header_;
     /// <summary>
-    ///  Message length (without the size of the header) as a little-endian 32-bit unsigned integer.
+    /// Message length (without the size of the header) as a little-endian 32-bit unsigned integer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Header {
@@ -480,7 +481,7 @@ namespace Iop.Profileserver {
     public const int BodyFieldNumber = 2;
     private global::Iop.Profileserver.Message body_;
     /// <summary>
-    ///  Message itself.
+    /// Maximum size of the whole message is 1,048,576 bytes, which means the maximal value in the header is 1,048,571.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.Message Body {
@@ -587,7 +588,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Format of a single message.
+  /// Format of a single message.
   /// </summary>
   public sealed partial class Message : pb::IMessage<Message> {
     private static readonly pb::MessageParser<Message> _parser = new pb::MessageParser<Message>(() => new Message());
@@ -634,7 +635,7 @@ namespace Iop.Profileserver {
     public const int IdFieldNumber = 1;
     private uint id_;
     /// <summary>
-    ///  Requestor defined message ID that the requestee has to return in the response. 
+    /// Requestor defined message ID that the requestee has to return in the response. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Id {
@@ -647,7 +648,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "request" field.</summary>
     public const int RequestFieldNumber = 2;
     /// <summary>
-    ///   * a new request,
+    ///  * a new request,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.Request Request {
@@ -661,7 +662,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "response" field.</summary>
     public const int ResponseFieldNumber = 3;
     /// <summary>
-    ///   * or response to a previous request.
+    ///  * or response to a previous request.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.Response Response {
@@ -813,9 +814,9 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Every conversation starts with a request of a requestor.
-  ///  This can be either a single request, for which it is expected to receive a single response,
-  ///  or this can be part of a longer conversation between the peers.
+  /// Every conversation starts with a request of a requestor.
+  /// This can be either a single request, for which it is expected to receive a single response,
+  /// or this can be part of a longer conversation between the peers.
   /// </summary>
   public sealed partial class Request : pb::IMessage<Request> {
     private static readonly pb::MessageParser<Request> _parser = new pb::MessageParser<Request>(() => new Request());
@@ -860,7 +861,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "singleRequest" field.</summary>
     public const int SingleRequestFieldNumber = 1;
     /// <summary>
-    ///  Single requests are requests that are supposed to be sent without further context.
+    /// Single requests are requests that are supposed to be sent without further context.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SingleRequest SingleRequest {
@@ -874,7 +875,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "conversationRequest" field.</summary>
     public const int ConversationRequestFieldNumber = 2;
     /// <summary>
-    ///  Conversation requests form a session with a context that has to be maintained by peers in order to correctly interpret the messages.
+    /// Conversation requests form a session with a context that has to be maintained by peers in order to correctly interpret the messages.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ConversationRequest ConversationRequest {
@@ -1010,7 +1011,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  To every request there is a response.
+  /// To every request there is a response.
   /// </summary>
   public sealed partial class Response : pb::IMessage<Response> {
     private static readonly pb::MessageParser<Response> _parser = new pb::MessageParser<Response>(() => new Response());
@@ -1059,7 +1060,7 @@ namespace Iop.Profileserver {
     public const int StatusFieldNumber = 1;
     private global::Iop.Shared.Status status_ = 0;
     /// <summary>
-    ///  Return code.
+    /// Return code.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Shared.Status Status {
@@ -1073,7 +1074,7 @@ namespace Iop.Profileserver {
     public const int TimestampFieldNumber = 2;
     private long timestamp_;
     /// <summary>
-    ///  TimestampType. If status is ERROR_BANNED, this field specifies when the blacklist entry expires.
+    /// TimestampType. If status is ERROR_BANNED, this field specifies when the blacklist entry expires.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Timestamp {
@@ -1087,7 +1088,7 @@ namespace Iop.Profileserver {
     public const int DetailsFieldNumber = 3;
     private string details_ = "";
     /// <summary>
-    ///  In case of an error, this field may contain additional details.
+    /// In case of an error, this field may contain additional details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Details {
@@ -1100,7 +1101,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "singleResponse" field.</summary>
     public const int SingleResponseFieldNumber = 8;
     /// <summary>
-    ///  Responses to single requests are sent as single responses,
+    /// Responses to single requests are sent as single responses,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SingleResponse SingleResponse {
@@ -1114,7 +1115,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "conversationResponse" field.</summary>
     public const int ConversationResponseFieldNumber = 9;
     /// <summary>
-    ///  responses to conversation requests are sent as conversation responses.
+    /// responses to conversation requests are sent as conversation responses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ConversationResponse ConversationResponse {
@@ -1298,8 +1299,8 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Single requests live on their own without any session or context. 
-  ///  It is always possible to process a single request without any additional informaiton.
+  /// Single requests live on their own without any session or context. 
+  /// It is always possible to process a single request without any additional informaiton.
   /// </summary>
   public sealed partial class SingleRequest : pb::IMessage<SingleRequest> {
     private static readonly pb::MessageParser<SingleRequest> _parser = new pb::MessageParser<SingleRequest>(() => new SingleRequest());
@@ -1339,6 +1340,12 @@ namespace Iop.Profileserver {
         case RequestTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation.Clone();
           break;
+        case RequestTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch.Clone();
+          break;
+        case RequestTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart.Clone();
+          break;
         case RequestTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage.Clone();
           break;
@@ -1364,7 +1371,7 @@ namespace Iop.Profileserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. Protocol version specification.
+    /// VersionType. Protocol version specification.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -1418,8 +1425,30 @@ namespace Iop.Profileserver {
       }
     }
 
+    /// <summary>Field number for the "profileSearch" field.</summary>
+    public const int ProfileSearchFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchRequest ProfileSearch {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearch;
+      }
+    }
+
+    /// <summary>Field number for the "profileSearchPart" field.</summary>
+    public const int ProfileSearchPartFieldNumber = 7;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchPartRequest ProfileSearchPart {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearchPart;
+      }
+    }
+
     /// <summary>Field number for the "applicationServiceSendMessage" field.</summary>
-    public const int ApplicationServiceSendMessageFieldNumber = 6;
+    public const int ApplicationServiceSendMessageFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceSendMessageRequest ApplicationServiceSendMessage {
       get { return requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage ? (global::Iop.Profileserver.ApplicationServiceSendMessageRequest) requestType_ : null; }
@@ -1430,7 +1459,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "applicationServiceReceiveMessageNotification" field.</summary>
-    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 7;
+    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest ApplicationServiceReceiveMessageNotification {
       get { return requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification ? (global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest) requestType_ : null; }
@@ -1441,7 +1470,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "profileStats" field.</summary>
-    public const int ProfileStatsFieldNumber = 8;
+    public const int ProfileStatsFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ProfileStatsRequest ProfileStats {
       get { return requestTypeCase_ == RequestTypeOneofCase.ProfileStats ? (global::Iop.Profileserver.ProfileStatsRequest) requestType_ : null; }
@@ -1452,7 +1481,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "getIdentityRelationshipsInformation" field.</summary>
-    public const int GetIdentityRelationshipsInformationFieldNumber = 9;
+    public const int GetIdentityRelationshipsInformationFieldNumber = 11;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest GetIdentityRelationshipsInformation {
       get { return requestTypeCase_ == RequestTypeOneofCase.GetIdentityRelationshipsInformation ? (global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest) requestType_ : null; }
@@ -1470,10 +1499,12 @@ namespace Iop.Profileserver {
       ListRoles = 3,
       ListHostingPlans = 4,
       GetProfileInformation = 5,
-      ApplicationServiceSendMessage = 6,
-      ApplicationServiceReceiveMessageNotification = 7,
-      ProfileStats = 8,
-      GetIdentityRelationshipsInformation = 9,
+      ProfileSearch = 6,
+      ProfileSearchPart = 7,
+      ApplicationServiceSendMessage = 8,
+      ApplicationServiceReceiveMessageNotification = 9,
+      ProfileStats = 10,
+      GetIdentityRelationshipsInformation = 11,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1505,6 +1536,8 @@ namespace Iop.Profileserver {
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(ListHostingPlans, other.ListHostingPlans)) return false;
       if (!object.Equals(GetProfileInformation, other.GetProfileInformation)) return false;
+      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
+      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(ApplicationServiceSendMessage, other.ApplicationServiceSendMessage)) return false;
       if (!object.Equals(ApplicationServiceReceiveMessageNotification, other.ApplicationServiceReceiveMessageNotification)) return false;
       if (!object.Equals(ProfileStats, other.ProfileStats)) return false;
@@ -1521,6 +1554,8 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ListHostingPlans) hash ^= ListHostingPlans.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) hash ^= GetProfileInformation.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) hash ^= ApplicationServiceSendMessage.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification) hash ^= ApplicationServiceReceiveMessageNotification.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ProfileStats) hash ^= ProfileStats.GetHashCode();
@@ -1556,20 +1591,28 @@ namespace Iop.Profileserver {
         output.WriteRawTag(42);
         output.WriteMessage(GetProfileInformation);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
         output.WriteRawTag(50);
+        output.WriteMessage(ProfileSearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ProfileSearchPart);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
+        output.WriteRawTag(66);
         output.WriteMessage(ApplicationServiceSendMessage);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(74);
         output.WriteMessage(ApplicationServiceReceiveMessageNotification);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ProfileStats) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(82);
         output.WriteMessage(ProfileStats);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityRelationshipsInformation) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(90);
         output.WriteMessage(GetIdentityRelationshipsInformation);
       }
     }
@@ -1591,6 +1634,12 @@ namespace Iop.Profileserver {
       }
       if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetProfileInformation);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ApplicationServiceSendMessage);
@@ -1627,6 +1676,12 @@ namespace Iop.Profileserver {
           break;
         case RequestTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation;
+          break;
+        case RequestTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch;
+          break;
+        case RequestTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case RequestTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage;
@@ -1693,6 +1748,24 @@ namespace Iop.Profileserver {
             break;
           }
           case 50: {
+            global::Iop.Profileserver.ProfileSearchRequest subBuilder = new global::Iop.Profileserver.ProfileSearchRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
+              subBuilder.MergeFrom(ProfileSearch);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearch = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Iop.Profileserver.ProfileSearchPartRequest subBuilder = new global::Iop.Profileserver.ProfileSearchPartRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
+              subBuilder.MergeFrom(ProfileSearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearchPart = subBuilder;
+            break;
+          }
+          case 66: {
             global::Iop.Profileserver.ApplicationServiceSendMessageRequest subBuilder = new global::Iop.Profileserver.ApplicationServiceSendMessageRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
               subBuilder.MergeFrom(ApplicationServiceSendMessage);
@@ -1701,7 +1774,7 @@ namespace Iop.Profileserver {
             ApplicationServiceSendMessage = subBuilder;
             break;
           }
-          case 58: {
+          case 74: {
             global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest subBuilder = new global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
               subBuilder.MergeFrom(ApplicationServiceReceiveMessageNotification);
@@ -1710,7 +1783,7 @@ namespace Iop.Profileserver {
             ApplicationServiceReceiveMessageNotification = subBuilder;
             break;
           }
-          case 66: {
+          case 82: {
             global::Iop.Profileserver.ProfileStatsRequest subBuilder = new global::Iop.Profileserver.ProfileStatsRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.ProfileStats) {
               subBuilder.MergeFrom(ProfileStats);
@@ -1719,7 +1792,7 @@ namespace Iop.Profileserver {
             ProfileStats = subBuilder;
             break;
           }
-          case 74: {
+          case 90: {
             global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest subBuilder = new global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityRelationshipsInformation) {
               subBuilder.MergeFrom(GetIdentityRelationshipsInformation);
@@ -1735,7 +1808,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Single response is a reaction to single request. 
+  /// Single response is a reaction to single request. 
   /// </summary>
   public sealed partial class SingleResponse : pb::IMessage<SingleResponse> {
     private static readonly pb::MessageParser<SingleResponse> _parser = new pb::MessageParser<SingleResponse>(() => new SingleResponse());
@@ -1775,6 +1848,12 @@ namespace Iop.Profileserver {
         case ResponseTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation.Clone();
           break;
+        case ResponseTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch.Clone();
+          break;
+        case ResponseTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart.Clone();
+          break;
         case ResponseTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage.Clone();
           break;
@@ -1800,7 +1879,7 @@ namespace Iop.Profileserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. See 'SingleRequest.version'. The version of response can be different than the version in request, 
+    /// VersionType. See 'SingleRequest.version'. The version of response can be different than the version in request, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -1854,8 +1933,30 @@ namespace Iop.Profileserver {
       }
     }
 
+    /// <summary>Field number for the "profileSearch" field.</summary>
+    public const int ProfileSearchFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchResponse ProfileSearch {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearch;
+      }
+    }
+
+    /// <summary>Field number for the "profileSearchPart" field.</summary>
+    public const int ProfileSearchPartFieldNumber = 7;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchPartResponse ProfileSearchPart {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearchPart;
+      }
+    }
+
     /// <summary>Field number for the "applicationServiceSendMessage" field.</summary>
-    public const int ApplicationServiceSendMessageFieldNumber = 6;
+    public const int ApplicationServiceSendMessageFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceSendMessageResponse ApplicationServiceSendMessage {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage ? (global::Iop.Profileserver.ApplicationServiceSendMessageResponse) responseType_ : null; }
@@ -1866,7 +1967,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "applicationServiceReceiveMessageNotification" field.</summary>
-    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 7;
+    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse ApplicationServiceReceiveMessageNotification {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification ? (global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse) responseType_ : null; }
@@ -1877,7 +1978,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "profileStats" field.</summary>
-    public const int ProfileStatsFieldNumber = 8;
+    public const int ProfileStatsFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ProfileStatsResponse ProfileStats {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileStats ? (global::Iop.Profileserver.ProfileStatsResponse) responseType_ : null; }
@@ -1888,7 +1989,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "getIdentityRelationshipsInformation" field.</summary>
-    public const int GetIdentityRelationshipsInformationFieldNumber = 9;
+    public const int GetIdentityRelationshipsInformationFieldNumber = 11;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse GetIdentityRelationshipsInformation {
       get { return responseTypeCase_ == ResponseTypeOneofCase.GetIdentityRelationshipsInformation ? (global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse) responseType_ : null; }
@@ -1906,10 +2007,12 @@ namespace Iop.Profileserver {
       ListRoles = 3,
       ListHostingPlans = 4,
       GetProfileInformation = 5,
-      ApplicationServiceSendMessage = 6,
-      ApplicationServiceReceiveMessageNotification = 7,
-      ProfileStats = 8,
-      GetIdentityRelationshipsInformation = 9,
+      ProfileSearch = 6,
+      ProfileSearchPart = 7,
+      ApplicationServiceSendMessage = 8,
+      ApplicationServiceReceiveMessageNotification = 9,
+      ProfileStats = 10,
+      GetIdentityRelationshipsInformation = 11,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1941,6 +2044,8 @@ namespace Iop.Profileserver {
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(ListHostingPlans, other.ListHostingPlans)) return false;
       if (!object.Equals(GetProfileInformation, other.GetProfileInformation)) return false;
+      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
+      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(ApplicationServiceSendMessage, other.ApplicationServiceSendMessage)) return false;
       if (!object.Equals(ApplicationServiceReceiveMessageNotification, other.ApplicationServiceReceiveMessageNotification)) return false;
       if (!object.Equals(ProfileStats, other.ProfileStats)) return false;
@@ -1957,6 +2062,8 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ListHostingPlans) hash ^= ListHostingPlans.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) hash ^= GetProfileInformation.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) hash ^= ApplicationServiceSendMessage.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification) hash ^= ApplicationServiceReceiveMessageNotification.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ProfileStats) hash ^= ProfileStats.GetHashCode();
@@ -1992,20 +2099,28 @@ namespace Iop.Profileserver {
         output.WriteRawTag(42);
         output.WriteMessage(GetProfileInformation);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
         output.WriteRawTag(50);
+        output.WriteMessage(ProfileSearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ProfileSearchPart);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
+        output.WriteRawTag(66);
         output.WriteMessage(ApplicationServiceSendMessage);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(74);
         output.WriteMessage(ApplicationServiceReceiveMessageNotification);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ProfileStats) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(82);
         output.WriteMessage(ProfileStats);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityRelationshipsInformation) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(90);
         output.WriteMessage(GetIdentityRelationshipsInformation);
       }
     }
@@ -2027,6 +2142,12 @@ namespace Iop.Profileserver {
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetProfileInformation);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ApplicationServiceSendMessage);
@@ -2063,6 +2184,12 @@ namespace Iop.Profileserver {
           break;
         case ResponseTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation;
+          break;
+        case ResponseTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch;
+          break;
+        case ResponseTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case ResponseTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage;
@@ -2129,6 +2256,24 @@ namespace Iop.Profileserver {
             break;
           }
           case 50: {
+            global::Iop.Profileserver.ProfileSearchResponse subBuilder = new global::Iop.Profileserver.ProfileSearchResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
+              subBuilder.MergeFrom(ProfileSearch);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearch = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Iop.Profileserver.ProfileSearchPartResponse subBuilder = new global::Iop.Profileserver.ProfileSearchPartResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
+              subBuilder.MergeFrom(ProfileSearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearchPart = subBuilder;
+            break;
+          }
+          case 66: {
             global::Iop.Profileserver.ApplicationServiceSendMessageResponse subBuilder = new global::Iop.Profileserver.ApplicationServiceSendMessageResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
               subBuilder.MergeFrom(ApplicationServiceSendMessage);
@@ -2137,7 +2282,7 @@ namespace Iop.Profileserver {
             ApplicationServiceSendMessage = subBuilder;
             break;
           }
-          case 58: {
+          case 74: {
             global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse subBuilder = new global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
               subBuilder.MergeFrom(ApplicationServiceReceiveMessageNotification);
@@ -2146,7 +2291,7 @@ namespace Iop.Profileserver {
             ApplicationServiceReceiveMessageNotification = subBuilder;
             break;
           }
-          case 66: {
+          case 82: {
             global::Iop.Profileserver.ProfileStatsResponse subBuilder = new global::Iop.Profileserver.ProfileStatsResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.ProfileStats) {
               subBuilder.MergeFrom(ProfileStats);
@@ -2155,7 +2300,7 @@ namespace Iop.Profileserver {
             ProfileStats = subBuilder;
             break;
           }
-          case 74: {
+          case 90: {
             global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse subBuilder = new global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityRelationshipsInformation) {
               subBuilder.MergeFrom(GetIdentityRelationshipsInformation);
@@ -2171,8 +2316,8 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Conversation requests live in a session with a context that is important for the interpretation of the requests.
-  ///  Unlike single requests, the order of messages is very important as each message may change the session context.
+  /// Conversation requests live in a session with a context that is important for the interpretation of the requests.
+  /// Unlike single requests, the order of messages is very important as each message may change the session context.
   /// </summary>
   public sealed partial class ConversationRequest : pb::IMessage<ConversationRequest> {
     private static readonly pb::MessageParser<ConversationRequest> _parser = new pb::MessageParser<ConversationRequest>(() => new ConversationRequest());
@@ -2230,12 +2375,6 @@ namespace Iop.Profileserver {
         case RequestTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification.Clone();
           break;
-        case RequestTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch.Clone();
-          break;
-        case RequestTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart.Clone();
-          break;
         case RequestTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity.Clone();
           break;
@@ -2273,7 +2412,7 @@ namespace Iop.Profileserver {
     public const int SignatureFieldNumber = 1;
     private pb::ByteString signature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Optional (request specific) signature that signs the Protobuf binary form of the included request body or its part.
+    /// Optional (request specific) signature that signs the Protobuf binary form of the included request body or its part.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Signature {
@@ -2286,7 +2425,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "start" field.</summary>
     public const int StartFieldNumber = 2;
     /// <summary>
-    ///  Request body.
+    /// Request body.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StartConversationRequest Start {
@@ -2396,30 +2535,8 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "profileSearch" field.</summary>
-    public const int ProfileSearchFieldNumber = 12;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchRequest ProfileSearch {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearch;
-      }
-    }
-
-    /// <summary>Field number for the "profileSearchPart" field.</summary>
-    public const int ProfileSearchPartFieldNumber = 13;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchPartRequest ProfileSearchPart {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearchPart;
-      }
-    }
-
     /// <summary>Field number for the "addRelatedIdentity" field.</summary>
-    public const int AddRelatedIdentityFieldNumber = 14;
+    public const int AddRelatedIdentityFieldNumber = 12;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.AddRelatedIdentityRequest AddRelatedIdentity {
       get { return requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity ? (global::Iop.Profileserver.AddRelatedIdentityRequest) requestType_ : null; }
@@ -2430,7 +2547,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "removeRelatedIdentity" field.</summary>
-    public const int RemoveRelatedIdentityFieldNumber = 15;
+    public const int RemoveRelatedIdentityFieldNumber = 13;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.RemoveRelatedIdentityRequest RemoveRelatedIdentity {
       get { return requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity ? (global::Iop.Profileserver.RemoveRelatedIdentityRequest) requestType_ : null; }
@@ -2441,7 +2558,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 16;
+    public const int StartNeighborhoodInitializationFieldNumber = 14;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StartNeighborhoodInitializationRequest StartNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Profileserver.StartNeighborhoodInitializationRequest) requestType_ : null; }
@@ -2452,7 +2569,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 17;
+    public const int FinishNeighborhoodInitializationFieldNumber = 15;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.FinishNeighborhoodInitializationRequest FinishNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Profileserver.FinishNeighborhoodInitializationRequest) requestType_ : null; }
@@ -2463,7 +2580,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedProfileUpdate" field.</summary>
-    public const int NeighborhoodSharedProfileUpdateFieldNumber = 18;
+    public const int NeighborhoodSharedProfileUpdateFieldNumber = 16;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest NeighborhoodSharedProfileUpdate {
       get { return requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate ? (global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest) requestType_ : null; }
@@ -2474,7 +2591,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 19;
+    public const int StopNeighborhoodUpdatesFieldNumber = 17;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StopNeighborhoodUpdatesRequest StopNeighborhoodUpdates {
       get { return requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Profileserver.StopNeighborhoodUpdatesRequest) requestType_ : null; }
@@ -2485,7 +2602,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canStoreData" field.</summary>
-    public const int CanStoreDataFieldNumber = 20;
+    public const int CanStoreDataFieldNumber = 18;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanStoreDataRequest CanStoreData {
       get { return requestTypeCase_ == RequestTypeOneofCase.CanStoreData ? (global::Iop.Profileserver.CanStoreDataRequest) requestType_ : null; }
@@ -2496,7 +2613,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canPublishIpnsRecord" field.</summary>
-    public const int CanPublishIpnsRecordFieldNumber = 21;
+    public const int CanPublishIpnsRecordFieldNumber = 19;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanPublishIpnsRecordRequest CanPublishIpnsRecord {
       get { return requestTypeCase_ == RequestTypeOneofCase.CanPublishIpnsRecord ? (global::Iop.Profileserver.CanPublishIpnsRecordRequest) requestType_ : null; }
@@ -2520,16 +2637,14 @@ namespace Iop.Profileserver {
       ApplicationServiceRemove = 9,
       CallIdentityApplicationService = 10,
       IncomingCallNotification = 11,
-      ProfileSearch = 12,
-      ProfileSearchPart = 13,
-      AddRelatedIdentity = 14,
-      RemoveRelatedIdentity = 15,
-      StartNeighborhoodInitialization = 16,
-      FinishNeighborhoodInitialization = 17,
-      NeighborhoodSharedProfileUpdate = 18,
-      StopNeighborhoodUpdates = 19,
-      CanStoreData = 20,
-      CanPublishIpnsRecord = 21,
+      AddRelatedIdentity = 12,
+      RemoveRelatedIdentity = 13,
+      StartNeighborhoodInitialization = 14,
+      FinishNeighborhoodInitialization = 15,
+      NeighborhoodSharedProfileUpdate = 16,
+      StopNeighborhoodUpdates = 17,
+      CanStoreData = 18,
+      CanPublishIpnsRecord = 19,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2567,8 +2682,6 @@ namespace Iop.Profileserver {
       if (!object.Equals(ApplicationServiceRemove, other.ApplicationServiceRemove)) return false;
       if (!object.Equals(CallIdentityApplicationService, other.CallIdentityApplicationService)) return false;
       if (!object.Equals(IncomingCallNotification, other.IncomingCallNotification)) return false;
-      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
-      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(AddRelatedIdentity, other.AddRelatedIdentity)) return false;
       if (!object.Equals(RemoveRelatedIdentity, other.RemoveRelatedIdentity)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
@@ -2595,8 +2708,6 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceRemove) hash ^= ApplicationServiceRemove.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.CallIdentityApplicationService) hash ^= CallIdentityApplicationService.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.IncomingCallNotification) hash ^= IncomingCallNotification.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) hash ^= AddRelatedIdentity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity) hash ^= RemoveRelatedIdentity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
@@ -2660,44 +2771,36 @@ namespace Iop.Profileserver {
         output.WriteRawTag(90);
         output.WriteMessage(IncomingCallNotification);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
-        output.WriteRawTag(98);
-        output.WriteMessage(ProfileSearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
-        output.WriteRawTag(106);
-        output.WriteMessage(ProfileSearchPart);
-      }
       if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) {
-        output.WriteRawTag(114);
+        output.WriteRawTag(98);
         output.WriteMessage(AddRelatedIdentity);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity) {
-        output.WriteRawTag(122);
+        output.WriteRawTag(106);
         output.WriteMessage(RemoveRelatedIdentity);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(130, 1);
+        output.WriteRawTag(114);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(138, 1);
+        output.WriteRawTag(122);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate) {
-        output.WriteRawTag(146, 1);
+        output.WriteRawTag(130, 1);
         output.WriteMessage(NeighborhoodSharedProfileUpdate);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(154, 1);
+        output.WriteRawTag(138, 1);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.CanStoreData) {
-        output.WriteRawTag(162, 1);
+        output.WriteRawTag(146, 1);
         output.WriteMessage(CanStoreData);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.CanPublishIpnsRecord) {
-        output.WriteRawTag(170, 1);
+        output.WriteRawTag(154, 1);
         output.WriteMessage(CanPublishIpnsRecord);
       }
     }
@@ -2738,12 +2841,6 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.IncomingCallNotification) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncomingCallNotification);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
-      }
       if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AddRelatedIdentity);
       }
@@ -2751,10 +2848,10 @@ namespace Iop.Profileserver {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RemoveRelatedIdentity);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(NeighborhoodSharedProfileUpdate);
@@ -2809,12 +2906,6 @@ namespace Iop.Profileserver {
           break;
         case RequestTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification;
-          break;
-        case RequestTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch;
-          break;
-        case RequestTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case RequestTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity;
@@ -2947,24 +3038,6 @@ namespace Iop.Profileserver {
             break;
           }
           case 98: {
-            global::Iop.Profileserver.ProfileSearchRequest subBuilder = new global::Iop.Profileserver.ProfileSearchRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
-              subBuilder.MergeFrom(ProfileSearch);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearch = subBuilder;
-            break;
-          }
-          case 106: {
-            global::Iop.Profileserver.ProfileSearchPartRequest subBuilder = new global::Iop.Profileserver.ProfileSearchPartRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
-              subBuilder.MergeFrom(ProfileSearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearchPart = subBuilder;
-            break;
-          }
-          case 114: {
             global::Iop.Profileserver.AddRelatedIdentityRequest subBuilder = new global::Iop.Profileserver.AddRelatedIdentityRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) {
               subBuilder.MergeFrom(AddRelatedIdentity);
@@ -2973,7 +3046,7 @@ namespace Iop.Profileserver {
             AddRelatedIdentity = subBuilder;
             break;
           }
-          case 122: {
+          case 106: {
             global::Iop.Profileserver.RemoveRelatedIdentityRequest subBuilder = new global::Iop.Profileserver.RemoveRelatedIdentityRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity) {
               subBuilder.MergeFrom(RemoveRelatedIdentity);
@@ -2982,7 +3055,7 @@ namespace Iop.Profileserver {
             RemoveRelatedIdentity = subBuilder;
             break;
           }
-          case 130: {
+          case 114: {
             global::Iop.Profileserver.StartNeighborhoodInitializationRequest subBuilder = new global::Iop.Profileserver.StartNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -2991,7 +3064,7 @@ namespace Iop.Profileserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 138: {
+          case 122: {
             global::Iop.Profileserver.FinishNeighborhoodInitializationRequest subBuilder = new global::Iop.Profileserver.FinishNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -3000,7 +3073,7 @@ namespace Iop.Profileserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 146: {
+          case 130: {
             global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest subBuilder = new global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedProfileUpdate);
@@ -3009,7 +3082,7 @@ namespace Iop.Profileserver {
             NeighborhoodSharedProfileUpdate = subBuilder;
             break;
           }
-          case 154: {
+          case 138: {
             global::Iop.Profileserver.StopNeighborhoodUpdatesRequest subBuilder = new global::Iop.Profileserver.StopNeighborhoodUpdatesRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -3018,7 +3091,7 @@ namespace Iop.Profileserver {
             StopNeighborhoodUpdates = subBuilder;
             break;
           }
-          case 162: {
+          case 146: {
             global::Iop.Profileserver.CanStoreDataRequest subBuilder = new global::Iop.Profileserver.CanStoreDataRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.CanStoreData) {
               subBuilder.MergeFrom(CanStoreData);
@@ -3027,7 +3100,7 @@ namespace Iop.Profileserver {
             CanStoreData = subBuilder;
             break;
           }
-          case 170: {
+          case 154: {
             global::Iop.Profileserver.CanPublishIpnsRecordRequest subBuilder = new global::Iop.Profileserver.CanPublishIpnsRecordRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.CanPublishIpnsRecord) {
               subBuilder.MergeFrom(CanPublishIpnsRecord);
@@ -3043,7 +3116,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Conversation response is a reaction to a conversation request.
+  /// Conversation response is a reaction to a conversation request.
   /// </summary>
   public sealed partial class ConversationResponse : pb::IMessage<ConversationResponse> {
     private static readonly pb::MessageParser<ConversationResponse> _parser = new pb::MessageParser<ConversationResponse>(() => new ConversationResponse());
@@ -3101,12 +3174,6 @@ namespace Iop.Profileserver {
         case ResponseTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification.Clone();
           break;
-        case ResponseTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch.Clone();
-          break;
-        case ResponseTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart.Clone();
-          break;
         case ResponseTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity.Clone();
           break;
@@ -3144,7 +3211,7 @@ namespace Iop.Profileserver {
     public const int SignatureFieldNumber = 1;
     private pb::ByteString signature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Optional (response specific) signature that signs the Protobuf binary form of the included response body or its part.
+    /// Optional (response specific) signature that signs the Protobuf binary form of the included response body or its part.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Signature {
@@ -3157,7 +3224,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "start" field.</summary>
     public const int StartFieldNumber = 2;
     /// <summary>
-    ///  Response body.
+    /// Response body.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StartConversationResponse Start {
@@ -3267,30 +3334,8 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "profileSearch" field.</summary>
-    public const int ProfileSearchFieldNumber = 12;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchResponse ProfileSearch {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearch;
-      }
-    }
-
-    /// <summary>Field number for the "profileSearchPart" field.</summary>
-    public const int ProfileSearchPartFieldNumber = 13;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchPartResponse ProfileSearchPart {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearchPart;
-      }
-    }
-
     /// <summary>Field number for the "addRelatedIdentity" field.</summary>
-    public const int AddRelatedIdentityFieldNumber = 14;
+    public const int AddRelatedIdentityFieldNumber = 12;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.AddRelatedIdentityResponse AddRelatedIdentity {
       get { return responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity ? (global::Iop.Profileserver.AddRelatedIdentityResponse) responseType_ : null; }
@@ -3301,7 +3346,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "removeRelatedIdentity" field.</summary>
-    public const int RemoveRelatedIdentityFieldNumber = 15;
+    public const int RemoveRelatedIdentityFieldNumber = 13;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.RemoveRelatedIdentityResponse RemoveRelatedIdentity {
       get { return responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity ? (global::Iop.Profileserver.RemoveRelatedIdentityResponse) responseType_ : null; }
@@ -3312,7 +3357,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 16;
+    public const int StartNeighborhoodInitializationFieldNumber = 14;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StartNeighborhoodInitializationResponse StartNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Profileserver.StartNeighborhoodInitializationResponse) responseType_ : null; }
@@ -3323,7 +3368,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 17;
+    public const int FinishNeighborhoodInitializationFieldNumber = 15;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.FinishNeighborhoodInitializationResponse FinishNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Profileserver.FinishNeighborhoodInitializationResponse) responseType_ : null; }
@@ -3334,7 +3379,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedProfileUpdate" field.</summary>
-    public const int NeighborhoodSharedProfileUpdateFieldNumber = 18;
+    public const int NeighborhoodSharedProfileUpdateFieldNumber = 16;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse NeighborhoodSharedProfileUpdate {
       get { return responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate ? (global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse) responseType_ : null; }
@@ -3345,7 +3390,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 19;
+    public const int StopNeighborhoodUpdatesFieldNumber = 17;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StopNeighborhoodUpdatesResponse StopNeighborhoodUpdates {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Profileserver.StopNeighborhoodUpdatesResponse) responseType_ : null; }
@@ -3356,7 +3401,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canStoreData" field.</summary>
-    public const int CanStoreDataFieldNumber = 20;
+    public const int CanStoreDataFieldNumber = 18;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanStoreDataResponse CanStoreData {
       get { return responseTypeCase_ == ResponseTypeOneofCase.CanStoreData ? (global::Iop.Profileserver.CanStoreDataResponse) responseType_ : null; }
@@ -3367,7 +3412,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canPublishIpnsRecord" field.</summary>
-    public const int CanPublishIpnsRecordFieldNumber = 21;
+    public const int CanPublishIpnsRecordFieldNumber = 19;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanPublishIpnsRecordResponse CanPublishIpnsRecord {
       get { return responseTypeCase_ == ResponseTypeOneofCase.CanPublishIpnsRecord ? (global::Iop.Profileserver.CanPublishIpnsRecordResponse) responseType_ : null; }
@@ -3391,16 +3436,14 @@ namespace Iop.Profileserver {
       ApplicationServiceRemove = 9,
       CallIdentityApplicationService = 10,
       IncomingCallNotification = 11,
-      ProfileSearch = 12,
-      ProfileSearchPart = 13,
-      AddRelatedIdentity = 14,
-      RemoveRelatedIdentity = 15,
-      StartNeighborhoodInitialization = 16,
-      FinishNeighborhoodInitialization = 17,
-      NeighborhoodSharedProfileUpdate = 18,
-      StopNeighborhoodUpdates = 19,
-      CanStoreData = 20,
-      CanPublishIpnsRecord = 21,
+      AddRelatedIdentity = 12,
+      RemoveRelatedIdentity = 13,
+      StartNeighborhoodInitialization = 14,
+      FinishNeighborhoodInitialization = 15,
+      NeighborhoodSharedProfileUpdate = 16,
+      StopNeighborhoodUpdates = 17,
+      CanStoreData = 18,
+      CanPublishIpnsRecord = 19,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3438,8 +3481,6 @@ namespace Iop.Profileserver {
       if (!object.Equals(ApplicationServiceRemove, other.ApplicationServiceRemove)) return false;
       if (!object.Equals(CallIdentityApplicationService, other.CallIdentityApplicationService)) return false;
       if (!object.Equals(IncomingCallNotification, other.IncomingCallNotification)) return false;
-      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
-      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(AddRelatedIdentity, other.AddRelatedIdentity)) return false;
       if (!object.Equals(RemoveRelatedIdentity, other.RemoveRelatedIdentity)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
@@ -3466,8 +3507,6 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceRemove) hash ^= ApplicationServiceRemove.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.CallIdentityApplicationService) hash ^= CallIdentityApplicationService.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.IncomingCallNotification) hash ^= IncomingCallNotification.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) hash ^= AddRelatedIdentity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity) hash ^= RemoveRelatedIdentity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
@@ -3531,44 +3570,36 @@ namespace Iop.Profileserver {
         output.WriteRawTag(90);
         output.WriteMessage(IncomingCallNotification);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
-        output.WriteRawTag(98);
-        output.WriteMessage(ProfileSearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
-        output.WriteRawTag(106);
-        output.WriteMessage(ProfileSearchPart);
-      }
       if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) {
-        output.WriteRawTag(114);
+        output.WriteRawTag(98);
         output.WriteMessage(AddRelatedIdentity);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity) {
-        output.WriteRawTag(122);
+        output.WriteRawTag(106);
         output.WriteMessage(RemoveRelatedIdentity);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(130, 1);
+        output.WriteRawTag(114);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(138, 1);
+        output.WriteRawTag(122);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate) {
-        output.WriteRawTag(146, 1);
+        output.WriteRawTag(130, 1);
         output.WriteMessage(NeighborhoodSharedProfileUpdate);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(154, 1);
+        output.WriteRawTag(138, 1);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.CanStoreData) {
-        output.WriteRawTag(162, 1);
+        output.WriteRawTag(146, 1);
         output.WriteMessage(CanStoreData);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.CanPublishIpnsRecord) {
-        output.WriteRawTag(170, 1);
+        output.WriteRawTag(154, 1);
         output.WriteMessage(CanPublishIpnsRecord);
       }
     }
@@ -3609,12 +3640,6 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.IncomingCallNotification) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncomingCallNotification);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
-      }
       if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AddRelatedIdentity);
       }
@@ -3622,10 +3647,10 @@ namespace Iop.Profileserver {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RemoveRelatedIdentity);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(NeighborhoodSharedProfileUpdate);
@@ -3680,12 +3705,6 @@ namespace Iop.Profileserver {
           break;
         case ResponseTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification;
-          break;
-        case ResponseTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch;
-          break;
-        case ResponseTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case ResponseTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity;
@@ -3818,24 +3837,6 @@ namespace Iop.Profileserver {
             break;
           }
           case 98: {
-            global::Iop.Profileserver.ProfileSearchResponse subBuilder = new global::Iop.Profileserver.ProfileSearchResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
-              subBuilder.MergeFrom(ProfileSearch);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearch = subBuilder;
-            break;
-          }
-          case 106: {
-            global::Iop.Profileserver.ProfileSearchPartResponse subBuilder = new global::Iop.Profileserver.ProfileSearchPartResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
-              subBuilder.MergeFrom(ProfileSearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearchPart = subBuilder;
-            break;
-          }
-          case 114: {
             global::Iop.Profileserver.AddRelatedIdentityResponse subBuilder = new global::Iop.Profileserver.AddRelatedIdentityResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) {
               subBuilder.MergeFrom(AddRelatedIdentity);
@@ -3844,7 +3845,7 @@ namespace Iop.Profileserver {
             AddRelatedIdentity = subBuilder;
             break;
           }
-          case 122: {
+          case 106: {
             global::Iop.Profileserver.RemoveRelatedIdentityResponse subBuilder = new global::Iop.Profileserver.RemoveRelatedIdentityResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity) {
               subBuilder.MergeFrom(RemoveRelatedIdentity);
@@ -3853,7 +3854,7 @@ namespace Iop.Profileserver {
             RemoveRelatedIdentity = subBuilder;
             break;
           }
-          case 130: {
+          case 114: {
             global::Iop.Profileserver.StartNeighborhoodInitializationResponse subBuilder = new global::Iop.Profileserver.StartNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -3862,7 +3863,7 @@ namespace Iop.Profileserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 138: {
+          case 122: {
             global::Iop.Profileserver.FinishNeighborhoodInitializationResponse subBuilder = new global::Iop.Profileserver.FinishNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -3871,7 +3872,7 @@ namespace Iop.Profileserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 146: {
+          case 130: {
             global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse subBuilder = new global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedProfileUpdate);
@@ -3880,7 +3881,7 @@ namespace Iop.Profileserver {
             NeighborhoodSharedProfileUpdate = subBuilder;
             break;
           }
-          case 154: {
+          case 138: {
             global::Iop.Profileserver.StopNeighborhoodUpdatesResponse subBuilder = new global::Iop.Profileserver.StopNeighborhoodUpdatesResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -3889,7 +3890,7 @@ namespace Iop.Profileserver {
             StopNeighborhoodUpdates = subBuilder;
             break;
           }
-          case 162: {
+          case 146: {
             global::Iop.Profileserver.CanStoreDataResponse subBuilder = new global::Iop.Profileserver.CanStoreDataResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.CanStoreData) {
               subBuilder.MergeFrom(CanStoreData);
@@ -3898,7 +3899,7 @@ namespace Iop.Profileserver {
             CanStoreData = subBuilder;
             break;
           }
-          case 170: {
+          case 154: {
             global::Iop.Profileserver.CanPublishIpnsRecordResponse subBuilder = new global::Iop.Profileserver.CanPublishIpnsRecordResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.CanPublishIpnsRecord) {
               subBuilder.MergeFrom(CanPublishIpnsRecord);
@@ -3915,14 +3916,14 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  An administrative message to test whether the peer is there and responds to requests.
+  /// An administrative message to test whether the peer is there and responds to requests.
   ///
-  ///  Each identity client is required to send a message not more than 60 seconds after the connection 
-  ///  was established, or after the last message has been send over the connection. For server clients,
-  ///  this limit is 300 seconds. Clients should use PingRequest if they have nothing else to send
-  ///  and want to keep the connection open.
+  /// Each identity client is required to send a message not more than 60 seconds after the connection 
+  /// was established, or after the last message has been send over the connection. For server clients,
+  /// this limit is 300 seconds. Clients should use PingRequest if they have nothing else to send
+  /// and want to keep the connection open.
   ///
-  ///  Roles: any
+  /// Roles: any
   /// </summary>
   public sealed partial class PingRequest : pb::IMessage<PingRequest> {
     private static readonly pb::MessageParser<PingRequest> _parser = new pb::MessageParser<PingRequest>(() => new PingRequest());
@@ -3960,7 +3961,7 @@ namespace Iop.Profileserver {
     public const int PayloadFieldNumber = 1;
     private pb::ByteString payload_ = pb::ByteString.Empty;
     /// <summary>
-    ///  At most 64 bytes of arbitrary data that will be sent back by the peer.
+    /// At most 64 bytes of arbitrary data that will be sent back by the peer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Payload {
@@ -4045,7 +4046,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  A response to PingRequest to reassure the connection works fine.
+  /// A response to PingRequest to reassure the connection works fine.
   /// </summary>
   public sealed partial class PingResponse : pb::IMessage<PingResponse> {
     private static readonly pb::MessageParser<PingResponse> _parser = new pb::MessageParser<PingResponse>(() => new PingResponse());
@@ -4084,7 +4085,7 @@ namespace Iop.Profileserver {
     public const int PayloadFieldNumber = 1;
     private pb::ByteString payload_ = pb::ByteString.Empty;
     /// <summary>
-    ///  See 'PingRequest.payload'.
+    /// See 'PingRequest.payload'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Payload {
@@ -4098,7 +4099,7 @@ namespace Iop.Profileserver {
     public const int ClockFieldNumber = 2;
     private long clock_;
     /// <summary>
-    ///  TimestampType. Clock on the requestee's machine.
+    /// TimestampType. Clock on the requestee's machine.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Clock {
@@ -4200,9 +4201,9 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Request server to provide a mapping between ports and roles.
+  /// Request server to provide a mapping between ports and roles.
   ///
-  ///  Roles: primary
+  /// Roles: primary
   /// </summary>
   public sealed partial class ListRolesRequest : pb::IMessage<ListRolesRequest> {
     private static readonly pb::MessageParser<ListRolesRequest> _parser = new pb::MessageParser<ListRolesRequest>(() => new ListRolesRequest());
@@ -4294,7 +4295,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  A response to ListRolesRequest with a list of all open ports and associated roles.
+  /// A response to ListRolesRequest with a list of all open ports and associated roles.
   /// </summary>
   public sealed partial class ListRolesResponse : pb::IMessage<ListRolesResponse> {
     private static readonly pb::MessageParser<ListRolesResponse> _parser = new pb::MessageParser<ListRolesResponse>(() => new ListRolesResponse());
@@ -4334,7 +4335,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(10, global::Iop.Profileserver.ServerRole.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.ServerRole> roles_ = new pbc::RepeatedField<global::Iop.Profileserver.ServerRole>();
     /// <summary>
-    ///  List of server roles.
+    /// List of server roles.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.ServerRole> Roles {
@@ -4409,7 +4410,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Description of a single server role.
+  /// Description of a single server role.
   /// </summary>
   public sealed partial class ServerRole : pb::IMessage<ServerRole> {
     private static readonly pb::MessageParser<ServerRole> _parser = new pb::MessageParser<ServerRole>(() => new ServerRole());
@@ -4450,7 +4451,7 @@ namespace Iop.Profileserver {
     public const int RoleFieldNumber = 1;
     private global::Iop.Profileserver.ServerRoleType role_ = 0;
     /// <summary>
-    ///  Server role type.
+    /// Server role type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ServerRoleType Role {
@@ -4464,7 +4465,7 @@ namespace Iop.Profileserver {
     public const int PortFieldNumber = 2;
     private uint port_;
     /// <summary>
-    ///  On which port is this server role provided.
+    /// On which port is this server role provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Port {
@@ -4478,7 +4479,7 @@ namespace Iop.Profileserver {
     public const int IsTcpFieldNumber = 3;
     private bool isTcp_;
     /// <summary>
-    ///  true if the port is TCP port, false means UDP.
+    /// true if the port is TCP port, false means UDP.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsTcp {
@@ -4492,7 +4493,7 @@ namespace Iop.Profileserver {
     public const int IsTlsFieldNumber = 4;
     private bool isTls_;
     /// <summary>
-    ///  true if the port is TLS encrypted, false otherwise.
+    /// true if the port is TLS encrypted, false otherwise.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsTls {
@@ -4626,11 +4627,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A client asks server for its hosting plans that match the given criteria.
+  /// A client asks server for its hosting plans that match the given criteria.
   ///
-  ///  VERSION NOTE: This message is not implemented by current version of profile server.
+  /// VERSION NOTE: This message is not implemented by current version of profile server.
   ///
-  ///  Roles: clNonCustomer
+  /// Roles: clNonCustomer
   /// </summary>
   public sealed partial class ListHostingPlansRequest : pb::IMessage<ListHostingPlansRequest> {
     private static readonly pb::MessageParser<ListHostingPlansRequest> _parser = new pb::MessageParser<ListHostingPlansRequest>(() => new ListHostingPlansRequest());
@@ -4668,7 +4669,7 @@ namespace Iop.Profileserver {
     public const int IdentityTypeFieldNumber = 1;
     private string identityType_ = "";
     /// <summary>
-    ///  A specific identity type, for which the client searches the plan.
+    /// A specific identity type, for which the client searches the plan.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string IdentityType {
@@ -4754,12 +4755,12 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ListHostingPlansRequest that contains a list of matching plans.
+  /// A response to ListHostingPlansRequest that contains a list of matching plans.
   ///
-  ///  VERSION NOTE: This message is not implemented by current version of profile server.
+  /// VERSION NOTE: This message is not implemented by current version of profile server.
   ///
-  ///  Specific Error Responses: 
-  ///    * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new clients because it has no free slots.
+  /// Specific Error Responses: 
+  ///   * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new clients because it has no free slots.
   /// </summary>
   public sealed partial class ListHostingPlansResponse : pb::IMessage<ListHostingPlansResponse> {
     private static readonly pb::MessageParser<ListHostingPlansResponse> _parser = new pb::MessageParser<ListHostingPlansResponse>(() => new ListHostingPlansResponse());
@@ -4799,7 +4800,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(10, global::Iop.Profileserver.HostingPlan.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.HostingPlan> plans_ = new pbc::RepeatedField<global::Iop.Profileserver.HostingPlan>();
     /// <summary>
-    ///  List of matching plans.
+    /// List of matching plans.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.HostingPlan> Plans {
@@ -4874,7 +4875,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Description of a hosting plan.
+  /// Description of a hosting plan.
   /// </summary>
   public sealed partial class HostingPlan : pb::IMessage<HostingPlan> {
     private static readonly pb::MessageParser<HostingPlan> _parser = new pb::MessageParser<HostingPlan>(() => new HostingPlan());
@@ -4917,7 +4918,7 @@ namespace Iop.Profileserver {
     public const int PlanIdFieldNumber = 1;
     private pb::ByteString planId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identifier of the plan is a SHA256 hash of the HostingPlan structure in Google Protobuf v3 encoding 
+    /// Identifier of the plan is a SHA256 hash of the HostingPlan structure in Google Protobuf v3 encoding 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PlanId {
@@ -4931,7 +4932,7 @@ namespace Iop.Profileserver {
     public const int ServerNetworkIdFieldNumber = 2;
     private pb::ByteString serverNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  with planId initialized to a byte array of 32 zero bytes.
+    /// with planId initialized to a byte array of 32 zero bytes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ServerNetworkId {
@@ -4945,7 +4946,7 @@ namespace Iop.Profileserver {
     public const int IdentityTypeFieldNumber = 3;
     private string identityType_ = "";
     /// <summary>
-    ///  Type of identity this plan is created for. This can include "*" as a wildcard character
+    /// Type of identity this plan is created for. This can include "*" as a wildcard character
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string IdentityType {
@@ -4959,10 +4960,10 @@ namespace Iop.Profileserver {
     public const int FeeFieldNumber = 4;
     private ulong fee_;
     /// <summary>
-    ///  at the end of the type to support multiple types to be served with a single plan. 
-    ///  For example, the value "*" would mean that any identity type is supported,
-    ///  and the value "Taxi *" would mean that any identity type that starts with "Taxi *"
-    ///  would match this plan.
+    /// at the end of the type to support multiple types to be served with a single plan. 
+    /// For example, the value "*" would mean that any identity type is supported,
+    /// and the value "Taxi *" would mean that any identity type that starts with "Taxi *"
+    /// would match this plan.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ulong Fee {
@@ -4976,7 +4977,7 @@ namespace Iop.Profileserver {
     public const int BillingPeriodSecondsFieldNumber = 5;
     private uint billingPeriodSeconds_;
     /// <summary>
-    ///  Length of the billing period in seconds.
+    /// Length of the billing period in seconds.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint BillingPeriodSeconds {
@@ -4992,7 +4993,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(74, global::Iop.Profileserver.NameStringValuePair.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.NameStringValuePair> planParameters_ = new pbc::RepeatedField<global::Iop.Profileserver.NameStringValuePair>();
     /// <summary>
-    ///  List of additional service parameters that define the plan.
+    /// List of additional service parameters that define the plan.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.NameStringValuePair> PlanParameters {
@@ -5147,7 +5148,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  Description of name-value structure with string values.
+  /// Description of name-value structure with string values.
   /// </summary>
   public sealed partial class NameStringValuePair : pb::IMessage<NameStringValuePair> {
     private static readonly pb::MessageParser<NameStringValuePair> _parser = new pb::MessageParser<NameStringValuePair>(() => new NameStringValuePair());
@@ -5186,7 +5187,7 @@ namespace Iop.Profileserver {
     public const int NameFieldNumber = 1;
     private string name_ = "";
     /// <summary>
-    ///  Name of the object.
+    /// Name of the object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -5200,7 +5201,7 @@ namespace Iop.Profileserver {
     public const int ValueFieldNumber = 2;
     private string value_ = "";
     /// <summary>
-    ///  String value.
+    /// String value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Value {
@@ -5302,12 +5303,12 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Every conversation starts with this request, in which the requestor sends a list of protocol versions 
-  ///  it supports and its public key that identifies it.
+  /// Every conversation starts with this request, in which the requestor sends a list of protocol versions 
+  /// it supports and its public key that identifies it.
   ///
-  ///  Roles: any
+  /// Roles: any
   ///
-  ///  Conversation status: NoConversation
+  /// Conversation status: NoConversation
   /// </summary>
   public sealed partial class StartConversationRequest : pb::IMessage<StartConversationRequest> {
     private static readonly pb::MessageParser<StartConversationRequest> _parser = new pb::MessageParser<StartConversationRequest>(() => new StartConversationRequest());
@@ -5349,7 +5350,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForBytes(10);
     private readonly pbc::RepeatedField<pb::ByteString> supportedVersions_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  List of VersionType items. Ordered by requestor's preference. See 'SingleRequest.version'.
+    /// List of VersionType items. Ordered by requestor's preference. See 'SingleRequest.version'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> SupportedVersions {
@@ -5360,7 +5361,7 @@ namespace Iop.Profileserver {
     public const int PublicKeyFieldNumber = 2;
     private pb::ByteString publicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the requestor. Max 128 bytes.
+    /// Public key of the requestor. Max 128 bytes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicKey {
@@ -5374,7 +5375,7 @@ namespace Iop.Profileserver {
     public const int ClientChallengeFieldNumber = 3;
     private pb::ByteString clientChallenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  32 byte challenge data (random bytes generated by the requestor) that is used for authentication purposes.
+    /// 32 byte challenge data (random bytes generated by the requestor) that is used for authentication purposes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ClientChallenge {
@@ -5485,18 +5486,18 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to StartConversationRequest in case the requestee found at least one protocol version that 
-  ///  both peers are willing to use. 
-  ///  
-  ///  The 'clientChallenge' field value in raw format is signed with a signature in 'ConversationResponse.signature'.
-  ///  
+  /// A response to StartConversationRequest in case the requestee found at least one protocol version that 
+  /// both peers are willing to use. 
+  /// 
+  /// The 'clientChallenge' field value in raw format is signed with a signature in 'ConversationResponse.signature'.
+  /// 
   ///
-  ///  After StartConversationResponse is sent, the conversation context includes version and keys of both peers.
+  /// After StartConversationResponse is sent, the conversation context includes version and keys of both peers.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "publicKey" - 'StartConversationRequest.publicKey' is not a valid public key value. 
-  ///      * Response.details == "clientChallenge" - 'StartConversationRequest.clientChallenge' is not 32 byte long. 
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "publicKey" - 'StartConversationRequest.publicKey' is not a valid public key value. 
+  ///     * Response.details == "clientChallenge" - 'StartConversationRequest.clientChallenge' is not 32 byte long. 
   /// </summary>
   public sealed partial class StartConversationResponse : pb::IMessage<StartConversationResponse> {
     private static readonly pb::MessageParser<StartConversationResponse> _parser = new pb::MessageParser<StartConversationResponse>(() => new StartConversationResponse());
@@ -5537,7 +5538,7 @@ namespace Iop.Profileserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. The version that the requestee selected from the offered set.
+    /// VersionType. The version that the requestee selected from the offered set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -5551,7 +5552,7 @@ namespace Iop.Profileserver {
     public const int PublicKeyFieldNumber = 2;
     private pb::ByteString publicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the requestee.
+    /// Public key of the requestee.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicKey {
@@ -5565,7 +5566,7 @@ namespace Iop.Profileserver {
     public const int ChallengeFieldNumber = 3;
     private pb::ByteString challenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  32 byte challenge data (random bytes generated by the requestee) that is used for later authentication purposes.
+    /// 32 byte challenge data (random bytes generated by the requestee) that is used for later authentication purposes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Challenge {
@@ -5579,7 +5580,7 @@ namespace Iop.Profileserver {
     public const int ClientChallengeFieldNumber = 4;
     private pb::ByteString clientChallenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Copy of 'StartConversationRequest.clientChallenge' that is signed by the requestee. 
+    /// Copy of 'StartConversationRequest.clientChallenge' that is signed by the requestee. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ClientChallenge {
@@ -5713,12 +5714,12 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A client asks profile server to host its profile by sending RegisterHostingRequest
-  ///  with a signed contract. The signature of 'contract' field is provided in 'ConversationRequest.signature'.
+  /// A client asks profile server to host its profile by sending RegisterHostingRequest
+  /// with a signed contract. The signature of 'contract' field is provided in 'ConversationRequest.signature'.
   ///
-  ///  Roles: clNonCustomer
+  /// Roles: clNonCustomer
   ///
-  ///  Conversation status: ConversationStarted
+  /// Conversation status: ConversationStarted
   /// </summary>
   public sealed partial class RegisterHostingRequest : pb::IMessage<RegisterHostingRequest> {
     private static readonly pb::MessageParser<RegisterHostingRequest> _parser = new pb::MessageParser<RegisterHostingRequest>(() => new RegisterHostingRequest());
@@ -5756,7 +5757,7 @@ namespace Iop.Profileserver {
     public const int ContractFieldNumber = 1;
     private global::Iop.Profileserver.HostingPlanContract contract_;
     /// <summary>
-    ///  Description of the contract that the client wants to have with the profile server.
+    /// Description of the contract that the client wants to have with the profile server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.HostingPlanContract Contract {
@@ -5848,18 +5849,18 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to RegisterHostingRequest in case the profile server wants to accept the request.
-  ///  The server signes the contract. The signature of 'contract' field is provided in 'ConversationResponse.signature'.
+  /// A response to RegisterHostingRequest in case the profile server wants to accept the request.
+  /// The server signes the contract. The signature of 'contract' field is provided in 'ConversationResponse.signature'.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new clients because it has no free slots.
-  ///    * ERROR_NOT_FOUND - 'HostingPlanContract.contract.planId' does not correspond to any of the server's plans, or the plan values are different from what the server offers.
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the contract is not valid.
-  ///    * ERROR_ALREADY_EXISTS - The identity is hosted by the server already.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "contract.startTime" - 'RegisterHostingRequest.contract.startTime' is more than 1 hour in the past or is not a valid timestamp value. 
-  ///      * Response.details == "contract.identityPublicKey" - 'RegisterHostingRequest.contract.identityPublicKey' does not match identity's public key.
-  ///      * Response.details == "contract.identityType" - 'RegisterHostingRequest.contract.identityType' does not match the hosting plan or is invalid.
+  /// Specific Error Responses:
+  ///   * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new clients because it has no free slots.
+  ///   * ERROR_NOT_FOUND - 'HostingPlanContract.contract.planId' does not correspond to any of the server's plans, or the plan values are different from what the server offers.
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the contract is not valid.
+  ///   * ERROR_ALREADY_EXISTS - The identity is hosted by the server already.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "contract.startTime" - 'RegisterHostingRequest.contract.startTime' is more than 1 hour in the past or is not a valid timestamp value. 
+  ///     * Response.details == "contract.identityPublicKey" - 'RegisterHostingRequest.contract.identityPublicKey' does not match identity's public key.
+  ///     * Response.details == "contract.identityType" - 'RegisterHostingRequest.contract.identityType' does not match the hosting plan or is invalid.
   /// </summary>
   public sealed partial class RegisterHostingResponse : pb::IMessage<RegisterHostingResponse> {
     private static readonly pb::MessageParser<RegisterHostingResponse> _parser = new pb::MessageParser<RegisterHostingResponse>(() => new RegisterHostingResponse());
@@ -5897,7 +5898,7 @@ namespace Iop.Profileserver {
     public const int ContractFieldNumber = 1;
     private global::Iop.Profileserver.HostingPlanContract contract_;
     /// <summary>
-    ///  Description of the contract that the client wants to have with the server and the server accepted it.
+    /// Description of the contract that the client wants to have with the server and the server accepted it.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.HostingPlanContract Contract {
@@ -5988,7 +5989,7 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  A description of the contract between a client and a profile server.
+  /// A description of the contract between a client and a profile server.
   /// </summary>
   public sealed partial class HostingPlanContract : pb::IMessage<HostingPlanContract> {
     private static readonly pb::MessageParser<HostingPlanContract> _parser = new pb::MessageParser<HostingPlanContract>(() => new HostingPlanContract());
@@ -6029,7 +6030,7 @@ namespace Iop.Profileserver {
     public const int PlanIdFieldNumber = 1;
     private pb::ByteString planId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identifier of the profile server's hosting plan.
+    /// Identifier of the profile server's hosting plan.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PlanId {
@@ -6043,7 +6044,7 @@ namespace Iop.Profileserver {
     public const int IdentityPublicKeyFieldNumber = 2;
     private pb::ByteString identityPublicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Note that the current version ignores this value.
+    /// Note that the current version ignores this value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IdentityPublicKey {
@@ -6057,7 +6058,7 @@ namespace Iop.Profileserver {
     public const int StartTimeFieldNumber = 3;
     private long startTime_;
     /// <summary>
-    ///  TimestampType. Specifies the start time of the contract. This has to be set either to the future, or to a time that is not 
+    /// TimestampType. Specifies the start time of the contract. This has to be set either to the future, or to a time that is not 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long StartTime {
@@ -6071,7 +6072,7 @@ namespace Iop.Profileserver {
     public const int IdentityTypeFieldNumber = 4;
     private string identityType_ = "";
     /// <summary>
-    ///  more than 1 hour in past from the current profile server's time.
+    /// more than 1 hour in past from the current profile server's time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string IdentityType {
@@ -6204,17 +6205,17 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  A customer client announces it is online and it "logs in".
-  ///  The client has to provide a signature in 'ConversationRequest.signature'.
+  /// 
+  /// A customer client announces it is online and it "logs in".
+  /// The client has to provide a signature in 'ConversationRequest.signature'.
   ///
-  ///  Note that if a customer client that is authenticated already creates a second connection
-  ///  and performs the check-in process in it, the first connection has to be disconnected
-  ///  as there can not be multiple parallel connections in Authenticated state for a single identity.
+  /// Note that if a customer client that is authenticated already creates a second connection
+  /// and performs the check-in process in it, the first connection has to be disconnected
+  /// as there can not be multiple parallel connections in Authenticated state for a single identity.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: ConversationStarted
+  /// Conversation status: ConversationStarted
   /// </summary>
   public sealed partial class CheckInRequest : pb::IMessage<CheckInRequest> {
     private static readonly pb::MessageParser<CheckInRequest> _parser = new pb::MessageParser<CheckInRequest>(() => new CheckInRequest());
@@ -6252,7 +6253,7 @@ namespace Iop.Profileserver {
     public const int ChallengeFieldNumber = 1;
     private pb::ByteString challenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  The exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
+    /// The exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Challenge {
@@ -6338,13 +6339,13 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to CheckInRequest. If no error occurs, the conversation status is upgraded to Authenticated.
+  /// A response to CheckInRequest. If no error occurs, the conversation status is upgraded to Authenticated.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the challenge is not valid.
-  ///    * ERROR_NOT_FOUND - The identity is not a client of the profile server.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "challenge" - 'CheckInRequest.challenge' is not the exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the challenge is not valid.
+  ///   * ERROR_NOT_FOUND - The identity is not a client of the profile server.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "challenge" - 'CheckInRequest.challenge' is not the exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
   /// </summary>
   public sealed partial class CheckInResponse : pb::IMessage<CheckInResponse> {
     private static readonly pb::MessageParser<CheckInResponse> _parser = new pb::MessageParser<CheckInResponse>(() => new CheckInResponse());
@@ -6436,13 +6437,13 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  A non-customer client verifies its public key by signing the challenge. This request is similar to CheckInRequest, 
-  ///  but it is intended for non-customer clients. The client has to provide a signature in 'ConversationRequest.signature'.
+  /// 
+  /// A non-customer client verifies its public key by signing the challenge. This request is similar to CheckInRequest, 
+  /// but it is intended for non-customer clients. The client has to provide a signature in 'ConversationRequest.signature'.
   ///
-  ///  Roles: clNonCustomer, srNeighbor
+  /// Roles: clNonCustomer, srNeighbor
   ///
-  ///  Conversation status: ConversationStarted
+  /// Conversation status: ConversationStarted
   /// </summary>
   public sealed partial class VerifyIdentityRequest : pb::IMessage<VerifyIdentityRequest> {
     private static readonly pb::MessageParser<VerifyIdentityRequest> _parser = new pb::MessageParser<VerifyIdentityRequest>(() => new VerifyIdentityRequest());
@@ -6480,7 +6481,7 @@ namespace Iop.Profileserver {
     public const int ChallengeFieldNumber = 1;
     private pb::ByteString challenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  The exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
+    /// The exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Challenge {
@@ -6566,12 +6567,12 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to VerifyIdentityRequest. If no error occurs, the conversation status is upgraded to Verified.
+  /// A response to VerifyIdentityRequest. If no error occurs, the conversation status is upgraded to Verified.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the challenge is not valid.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "challenge" - 'VerifyIdentityRequest.challenge' is not the exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the challenge is not valid.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "challenge" - 'VerifyIdentityRequest.challenge' is not the exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
   /// </summary>
   public sealed partial class VerifyIdentityResponse : pb::IMessage<VerifyIdentityResponse> {
     private static readonly pb::MessageParser<VerifyIdentityResponse> _parser = new pb::MessageParser<VerifyIdentityResponse>(() => new VerifyIdentityResponse());
@@ -6664,18 +6665,18 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A customer client updates its profile hosted at the profile server.
+  /// A customer client updates its profile hosted at the profile server.
   ///
-  ///  The customer client is required to initialize its profile just after finishing 
-  ///  the RegisterHostingRequest. Until the initialization of the profile is made, the identity 
-  ///  is not considered as being fully initialized and can not be queried or called by other 
-  ///  identities.
+  /// The customer client is required to initialize its profile just after finishing 
+  /// the RegisterHostingRequest. Until the initialization of the profile is made, the identity 
+  /// is not considered as being fully initialized and can not be queried or called by other 
+  /// identities.
   ///
-  ///  The 'profile' field value in raw format is signed with a signature in 'ConversationRequest.signature'.
+  /// The 'profile' field value in raw format is signed with a signature in 'ConversationRequest.signature'.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class UpdateProfileRequest : pb::IMessage<UpdateProfileRequest> {
     private static readonly pb::MessageParser<UpdateProfileRequest> _parser = new pb::MessageParser<UpdateProfileRequest>(() => new UpdateProfileRequest());
@@ -6727,7 +6728,7 @@ namespace Iop.Profileserver {
     public const int ProfileImageFieldNumber = 2;
     private pb::ByteString profileImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Profile image in PNG or JPEG format, non-empty binary data, max 20,480 bytes long, or zero length binary data if the profile image is about to be erased.
+    /// Profile image in PNG or JPEG format, non-empty binary data, max 20,480 bytes long, or zero length binary data if the profile image is about to be erased.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ProfileImage {
@@ -6741,7 +6742,7 @@ namespace Iop.Profileserver {
     public const int ThumbnailImageFieldNumber = 3;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  The SHA256 hash of the binary data has to match 'profile.profileImageHash'.
+    /// The SHA256 hash of the binary data has to match 'profile.profileImageHash'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
@@ -6755,7 +6756,7 @@ namespace Iop.Profileserver {
     public const int NoPropagationFieldNumber = 4;
     private bool noPropagation_;
     /// <summary>
-    ///  The SHA256 hash of the binary data has to match 'profile.thumbnailImageHash'.
+    /// The SHA256 hash of the binary data has to match 'profile.thumbnailImageHash'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool NoPropagation {
@@ -6895,24 +6896,24 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to UpdateProfileRequest.
+  /// A response to UpdateProfileRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - The identity is not a client of the profile server.
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the 'UpdateProfileRequest.profile' in 'ConversationRequest.signature' is not valid.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "profile.version" - 'UpdateProfileRequest.profile.version' does not contain a valid version information.
-  ///      * Response.details == "profile.publicKey" - 'UpdateProfileRequest.profile.publicKey' is not the client's public key.
-  ///      * Response.details == "profile.type" - 'UpdateProfileRequest.profile.type' does not match the original identity's profile type.
-  ///      * Response.details == "profile.name" - 'UpdateProfileRequest.profile.name' does not contain a valid name.
-  ///      * Response.details == "profile.latitude" - 'UpdateProfileRequest.profile.latitude' does not contain a valid latitude information.
-  ///      * Response.details == "profile.longitude" - 'UpdateProfileRequest.profile.longitude' does not contain a valid longitude information.
-  ///      * Response.details == "profile.extraData" - 'UpdateProfileRequest.profile.extraData' does not contain a valid extra data information.
-  ///      * Response.details == "profile.profileImageHash" - 'UpdateProfileRequest.profile.profileImageHash' is neither a valid SHA256 hash nor empty array.
-  ///      * Response.details == "profile.thumbnailImageHash" - 'UpdateProfileRequest.profile.thumbnailImageHash' is neither a valid SHA256 hash nor empty array.
-  ///      * Response.details == "profileImage" - 'UpdateProfileRequest.profileImage' is not a valid PNG or JPEG image data or it exceeds the size limit or it does not correspond to the 'UpdateProfileRequest.profile.profileImageHash' value.
-  ///      * Response.details == "thumbnailImage" - 'UpdateProfileRequest.thumbnailImage' is not a valid PNG or JPEG image data or it exceeds the size limit or it does not correspond to the 'UpdateProfileRequest.profile.thumbnailImageHash' value.
-  ///      * Response.details == "noPropagation" - 'UpdateProfileRequest.noPropagation' must be false during the first update of the profile.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - The identity is not a client of the profile server.
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the 'UpdateProfileRequest.profile' in 'ConversationRequest.signature' is not valid.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "profile.version" - 'UpdateProfileRequest.profile.version' does not contain a valid version information.
+  ///     * Response.details == "profile.publicKey" - 'UpdateProfileRequest.profile.publicKey' is not the client's public key.
+  ///     * Response.details == "profile.type" - 'UpdateProfileRequest.profile.type' does not match the original identity's profile type.
+  ///     * Response.details == "profile.name" - 'UpdateProfileRequest.profile.name' does not contain a valid name.
+  ///     * Response.details == "profile.latitude" - 'UpdateProfileRequest.profile.latitude' does not contain a valid latitude information.
+  ///     * Response.details == "profile.longitude" - 'UpdateProfileRequest.profile.longitude' does not contain a valid longitude information.
+  ///     * Response.details == "profile.extraData" - 'UpdateProfileRequest.profile.extraData' does not contain a valid extra data information.
+  ///     * Response.details == "profile.profileImageHash" - 'UpdateProfileRequest.profile.profileImageHash' is neither a valid SHA256 hash nor empty array.
+  ///     * Response.details == "profile.thumbnailImageHash" - 'UpdateProfileRequest.profile.thumbnailImageHash' is neither a valid SHA256 hash nor empty array.
+  ///     * Response.details == "profileImage" - 'UpdateProfileRequest.profileImage' is not a valid PNG or JPEG image data or it exceeds the size limit or it does not correspond to the 'UpdateProfileRequest.profile.profileImageHash' value.
+  ///     * Response.details == "thumbnailImage" - 'UpdateProfileRequest.thumbnailImage' is not a valid PNG or JPEG image data or it exceeds the size limit or it does not correspond to the 'UpdateProfileRequest.profile.thumbnailImageHash' value.
+  ///     * Response.details == "noPropagation" - 'UpdateProfileRequest.noPropagation' must be false during the first update of the profile.
   /// </summary>
   public sealed partial class UpdateProfileResponse : pb::IMessage<UpdateProfileResponse> {
     private static readonly pb::MessageParser<UpdateProfileResponse> _parser = new pb::MessageParser<UpdateProfileResponse>(() => new UpdateProfileResponse());
@@ -7005,7 +7006,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Description of an identity profile.
+  /// Description of an identity profile.
   /// </summary>
   public sealed partial class ProfileInformation : pb::IMessage<ProfileInformation> {
     private static readonly pb::MessageParser<ProfileInformation> _parser = new pb::MessageParser<ProfileInformation>(() => new ProfileInformation());
@@ -7051,7 +7052,7 @@ namespace Iop.Profileserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. Version of the profile structure.
+    /// VersionType. Version of the profile structure.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -7065,7 +7066,7 @@ namespace Iop.Profileserver {
     public const int PublicKeyFieldNumber = 2;
     private pb::ByteString publicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identity public key.
+    /// Identity public key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicKey {
@@ -7079,7 +7080,7 @@ namespace Iop.Profileserver {
     public const int TypeFieldNumber = 3;
     private string type_ = "";
     /// <summary>
-    ///  Type of the client's identity. Max 64 bytes long. This information is set up during hosting registration process and can not be changed by update later.
+    /// Type of the client's identity. Max 64 bytes long. This information is set up during hosting registration process and can not be changed by update later.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Type {
@@ -7093,7 +7094,7 @@ namespace Iop.Profileserver {
     public const int NameFieldNumber = 4;
     private string name_ = "";
     /// <summary>
-    ///  Name of the profile, non-empty string, max 64 bytes long.
+    /// Name of the profile, non-empty string, max 64 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -7107,7 +7108,7 @@ namespace Iop.Profileserver {
     public const int LatitudeFieldNumber = 5;
     private int latitude_;
     /// <summary>
-    ///  LocationType. GPS location latitude information.
+    /// LocationType. GPS location latitude information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Latitude {
@@ -7121,7 +7122,7 @@ namespace Iop.Profileserver {
     public const int LongitudeFieldNumber = 6;
     private int longitude_;
     /// <summary>
-    ///  LocationType. GPS location longitude information.
+    /// LocationType. GPS location longitude information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Longitude {
@@ -7135,7 +7136,7 @@ namespace Iop.Profileserver {
     public const int ExtraDataFieldNumber = 7;
     private string extraData_ = "";
     /// <summary>
-    ///  Semicolon separated 'key=value' list, max 200 bytes long.
+    /// Semicolon separated 'key=value' list, max 200 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ExtraData {
@@ -7149,7 +7150,7 @@ namespace Iop.Profileserver {
     public const int ProfileImageHashFieldNumber = 8;
     private pb::ByteString profileImageHash_ = pb::ByteString.Empty;
     /// <summary>
-    ///  SHA256 hash of profile image data, or empty array if no profile image is set, or it is about to be deleted.
+    /// SHA256 hash of profile image data, or empty array if no profile image is set, or it is about to be deleted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ProfileImageHash {
@@ -7163,7 +7164,7 @@ namespace Iop.Profileserver {
     public const int ThumbnailImageHashFieldNumber = 9;
     private pb::ByteString thumbnailImageHash_ = pb::ByteString.Empty;
     /// <summary>
-    ///  SHA256 hash of thumbnail image data, or empty array if no thumbnail image is set, or it is about to be deleted.
+    /// SHA256 hash of thumbnail image data, or empty array if no thumbnail image is set, or it is about to be deleted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImageHash {
@@ -7377,7 +7378,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Signed description of an identity profile.
+  /// Signed description of an identity profile.
   /// </summary>
   public sealed partial class SignedProfileInformation : pb::IMessage<SignedProfileInformation> {
     private static readonly pb::MessageParser<SignedProfileInformation> _parser = new pb::MessageParser<SignedProfileInformation>(() => new SignedProfileInformation());
@@ -7416,7 +7417,7 @@ namespace Iop.Profileserver {
     public const int ProfileFieldNumber = 1;
     private global::Iop.Profileserver.ProfileInformation profile_;
     /// <summary>
-    ///  Identity profile information.
+    /// Identity profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ProfileInformation Profile {
@@ -7430,7 +7431,7 @@ namespace Iop.Profileserver {
     public const int SignatureFieldNumber = 2;
     private pb::ByteString signature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Signature of 'profile' value in raw format using private key of the identity that owns the profile.
+    /// Signature of 'profile' value in raw format using private key of the identity that owns the profile.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Signature {
@@ -7537,14 +7538,14 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  A customer client cancels the hosting agreement and optionally informs the profile server 
-  ///  about its new profile server location. The profile server will keep the information about 
-  ///  identity's new location for some time.
+  /// 
+  /// A customer client cancels the hosting agreement and optionally informs the profile server 
+  /// about its new profile server location. The profile server will keep the information about 
+  /// identity's new location for some time.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class CancelHostingAgreementRequest : pb::IMessage<CancelHostingAgreementRequest> {
     private static readonly pb::MessageParser<CancelHostingAgreementRequest> _parser = new pb::MessageParser<CancelHostingAgreementRequest>(() => new CancelHostingAgreementRequest());
@@ -7583,7 +7584,7 @@ namespace Iop.Profileserver {
     public const int RedirectToNewProfileServerFieldNumber = 1;
     private bool redirectToNewProfileServer_;
     /// <summary>
-    ///  true, if the client wants to inform the profile server about its new profile server location, false otherwise.
+    /// true, if the client wants to inform the profile server about its new profile server location, false otherwise.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool RedirectToNewProfileServer {
@@ -7597,7 +7598,7 @@ namespace Iop.Profileserver {
     public const int NewProfileServerNetworkIdFieldNumber = 2;
     private pb::ByteString newProfileServerNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'redirectToNewProfileServer' is true, an identifier of the new profile server.
+    /// If 'redirectToNewProfileServer' is true, an identifier of the new profile server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString NewProfileServerNetworkId {
@@ -7699,12 +7700,12 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to CancelHostingAgreementRequest.
+  /// A response to CancelHostingAgreementRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - The identity is not a client of the profile server.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "newProfileServerNetworkId" - 'CancelHostingAgreementRequest.newProfileServerNetworkId' is not a valid profile server network identifier.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - The identity is not a client of the profile server.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "newProfileServerNetworkId" - 'CancelHostingAgreementRequest.newProfileServerNetworkId' is not a valid profile server network identifier.
   /// </summary>
   public sealed partial class CancelHostingAgreementResponse : pb::IMessage<CancelHostingAgreementResponse> {
     private static readonly pb::MessageParser<CancelHostingAgreementResponse> _parser = new pb::MessageParser<CancelHostingAgreementResponse>(() => new CancelHostingAgreementResponse());
@@ -7796,13 +7797,13 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  Adds (checks-in) one or more application services to the list of services that the customer 
-  ///  client supports in the current session.
+  /// 
+  /// Adds (checks-in) one or more application services to the list of services that the customer 
+  /// client supports in the current session.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class ApplicationServiceAddRequest : pb::IMessage<ApplicationServiceAddRequest> {
     private static readonly pb::MessageParser<ApplicationServiceAddRequest> _parser = new pb::MessageParser<ApplicationServiceAddRequest>(() => new ApplicationServiceAddRequest());
@@ -7842,7 +7843,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> serviceNames_ = new pbc::RepeatedField<string>();
     /// <summary>
-    ///  List of application service names to add to the list. If a service name is already 
+    /// List of application service names to add to the list. If a service name is already 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> ServiceNames {
@@ -7918,11 +7919,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ApplicationServiceAddRequest.
+  /// A response to ApplicationServiceAddRequest.
   ///
-  ///    * ERROR_QUOTA_EXCEEDED - The given set of application services can not be added because the client would have more than the maximum number of enabled services.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "serviceNames[i]" - 'ApplicationServiceAddRequest.serviceNames[i]' is not a valid service name, where 'i' is a zero-based index.
+  ///   * ERROR_QUOTA_EXCEEDED - The given set of application services can not be added because the client would have more than the maximum number of enabled services.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "serviceNames[i]" - 'ApplicationServiceAddRequest.serviceNames[i]' is not a valid service name, where 'i' is a zero-based index.
   /// </summary>
   public sealed partial class ApplicationServiceAddResponse : pb::IMessage<ApplicationServiceAddResponse> {
     private static readonly pb::MessageParser<ApplicationServiceAddResponse> _parser = new pb::MessageParser<ApplicationServiceAddResponse>(() => new ApplicationServiceAddResponse());
@@ -8014,13 +8015,13 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  Removes (checks-out) a single application service from the list of services that the customer 
-  ///  client supports in the current session.
+  /// 
+  /// Removes (checks-out) a single application service from the list of services that the customer 
+  /// client supports in the current session.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class ApplicationServiceRemoveRequest : pb::IMessage<ApplicationServiceRemoveRequest> {
     private static readonly pb::MessageParser<ApplicationServiceRemoveRequest> _parser = new pb::MessageParser<ApplicationServiceRemoveRequest>(() => new ApplicationServiceRemoveRequest());
@@ -8058,7 +8059,7 @@ namespace Iop.Profileserver {
     public const int ServiceNameFieldNumber = 1;
     private string serviceName_ = "";
     /// <summary>
-    ///  Name of the application service to remove. The service must be in the customer client's list.
+    /// Name of the application service to remove. The service must be in the customer client's list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ServiceName {
@@ -8144,10 +8145,10 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ApplicationServiceRemoveRequest.
+  /// A response to ApplicationServiceRemoveRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - 'ApplicationServiceRemoveRequest.serviceName' does not refer to an application service that was previously added using ApplicationServiceAddRequest.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - 'ApplicationServiceRemoveRequest.serviceName' does not refer to an application service that was previously added using ApplicationServiceAddRequest.
   /// </summary>
   public sealed partial class ApplicationServiceRemoveResponse : pb::IMessage<ApplicationServiceRemoveResponse> {
     private static readonly pb::MessageParser<ApplicationServiceRemoveResponse> _parser = new pb::MessageParser<ApplicationServiceRemoveResponse>(() => new ApplicationServiceRemoveResponse());
@@ -8239,12 +8240,12 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  Obtains a basic information about an identity hosted on the profile server.
-  ///  If the identity is online, the information includes a list of application services 
-  ///  that the identity supports in the currently active session.
+  /// 
+  /// Obtains a basic information about an identity hosted on the profile server.
+  /// If the identity is online, the information includes a list of application services 
+  /// that the identity supports in the currently active session.
   ///
-  ///  Roles: clNonCustomer, clCustomer
+  /// Roles: clNonCustomer, clCustomer
   /// </summary>
   public sealed partial class GetProfileInformationRequest : pb::IMessage<GetProfileInformationRequest> {
     private static readonly pb::MessageParser<GetProfileInformationRequest> _parser = new pb::MessageParser<GetProfileInformationRequest>(() => new GetProfileInformationRequest());
@@ -8285,7 +8286,7 @@ namespace Iop.Profileserver {
     public const int IdentityNetworkIdFieldNumber = 1;
     private pb::ByteString identityNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identity's network identifier.
+    /// Identity's network identifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IdentityNetworkId {
@@ -8299,7 +8300,7 @@ namespace Iop.Profileserver {
     public const int IncludeProfileImageFieldNumber = 2;
     private bool includeProfileImage_;
     /// <summary>
-    ///  If set to true, the response will include a profile image.
+    /// If set to true, the response will include a profile image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeProfileImage {
@@ -8313,7 +8314,7 @@ namespace Iop.Profileserver {
     public const int IncludeThumbnailImageFieldNumber = 3;
     private bool includeThumbnailImage_;
     /// <summary>
-    ///  If set to true, the response will include a thumbnail image.
+    /// If set to true, the response will include a thumbnail image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeThumbnailImage {
@@ -8327,7 +8328,7 @@ namespace Iop.Profileserver {
     public const int IncludeApplicationServicesFieldNumber = 4;
     private bool includeApplicationServices_;
     /// <summary>
-    ///  If set to true and the given identity is online, the response will include 
+    /// If set to true and the given identity is online, the response will include 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeApplicationServices {
@@ -8461,11 +8462,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to GetProfileInformationRequest.
+  /// A response to GetProfileInformationRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - 'GetProfileInformationRequest.identityNetworkId' does not identify an identity hosted by the profile server.
-  ///    * ERROR_UNINITIALIZED - The target identity's profile has not been initialized yet.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - 'GetProfileInformationRequest.identityNetworkId' does not identify an identity hosted by the profile server.
+  ///   * ERROR_UNINITIALIZED - The target identity's profile has not been initialized yet.
   /// </summary>
   public sealed partial class GetProfileInformationResponse : pb::IMessage<GetProfileInformationResponse> {
     private static readonly pb::MessageParser<GetProfileInformationResponse> _parser = new pb::MessageParser<GetProfileInformationResponse>(() => new GetProfileInformationResponse());
@@ -8510,7 +8511,7 @@ namespace Iop.Profileserver {
     public const int IsHostedFieldNumber = 1;
     private bool isHosted_;
     /// <summary>
-    ///  True if the requested identity is a customer of the profile server.
+    /// True if the requested identity is a customer of the profile server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsHosted {
@@ -8524,7 +8525,7 @@ namespace Iop.Profileserver {
     public const int IsTargetProfileServerKnownFieldNumber = 2;
     private bool isTargetProfileServerKnown_;
     /// <summary>
-    ///  If 'isHosted' is false then this is true if the identity's new profile server is known to the profile server. In all other cases, this is false.
+    /// If 'isHosted' is false then this is true if the identity's new profile server is known to the profile server. In all other cases, this is false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsTargetProfileServerKnown {
@@ -8538,7 +8539,7 @@ namespace Iop.Profileserver {
     public const int TargetProfileServerNetworkIdFieldNumber = 3;
     private pb::ByteString targetProfileServerNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'isTargetProfileServerKnown' is true then this field contains the identity's new profile server network ID.
+    /// If 'isTargetProfileServerKnown' is true then this field contains the identity's new profile server network ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString TargetProfileServerNetworkId {
@@ -8552,7 +8553,7 @@ namespace Iop.Profileserver {
     public const int IsOnlineFieldNumber = 4;
     private bool isOnline_;
     /// <summary>
-    ///  Following fields are valid only if 'isHosted' is true.
+    /// Following fields are valid only if 'isHosted' is true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsOnline {
@@ -8566,7 +8567,7 @@ namespace Iop.Profileserver {
     public const int SignedProfileFieldNumber = 5;
     private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  If 'isHosted' is true, this is requested identity signed profile information.
+    /// If 'isHosted' is true, this is requested identity signed profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
@@ -8580,7 +8581,7 @@ namespace Iop.Profileserver {
     public const int ProfileImageFieldNumber = 6;
     private pb::ByteString profileImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'isHosted' is true and if 'GetProfileInformationRequest.includeProfileImage' was set, this contains the requested identity's profile image or empty array if the profile has no profile image.
+    /// If 'isHosted' is true and if 'GetProfileInformationRequest.includeProfileImage' was set, this contains the requested identity's profile image or empty array if the profile has no profile image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ProfileImage {
@@ -8594,7 +8595,7 @@ namespace Iop.Profileserver {
     public const int ThumbnailImageFieldNumber = 7;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'isHosted' is true and if 'GetProfileInformationRequest.includeThumbnailImage' was set, this contains the requested identity's thumbnail image or empty array if the profile has no thumbnail image.
+    /// If 'isHosted' is true and if 'GetProfileInformationRequest.includeThumbnailImage' was set, this contains the requested identity's thumbnail image or empty array if the profile has no thumbnail image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
@@ -8610,7 +8611,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForString(66);
     private readonly pbc::RepeatedField<string> applicationServices_ = new pbc::RepeatedField<string>();
     /// <summary>
-    ///  If 'isHosted' is true and if 'GetProfileInformationRequest.includeApplicationServices' was set and if 'isOnline' is true, this contains 
+    /// If 'isHosted' is true and if 'GetProfileInformationRequest.includeApplicationServices' was set and if 'isOnline' is true, this contains 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> ApplicationServices {
@@ -8803,21 +8804,21 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  Request to establish a bridged connection between a requestor (the caller) and an identity (the callee) 
-  ///  hosted on the profile server via one of its supported application service. The callee has to be online, 
-  ///  otherwise the request will fail.
+  /// 
+  /// Request to establish a bridged connection between a requestor (the caller) and an identity (the callee) 
+  /// hosted on the profile server via one of its supported application service. The callee has to be online, 
+  /// otherwise the request will fail.
   ///
-  ///  The profile server informs the callee about the incoming call and issues a token pair (caller's and 
-  ///  callee's tokens) to identify the caller and the callee on the Application Service Interface. The callee's 
-  ///  token is sent to the callee with the information about the incoming call. If the callee wants to accept 
-  ///  the call, the profile server informs the caller and sends it the caller's token. Both clients are then 
-  ///  expected to establish new connections to the profile server's Application Service Interface and use their 
-  ///  tokens to send a message to the other client.
+  /// The profile server informs the callee about the incoming call and issues a token pair (caller's and 
+  /// callee's tokens) to identify the caller and the callee on the Application Service Interface. The callee's 
+  /// token is sent to the callee with the information about the incoming call. If the callee wants to accept 
+  /// the call, the profile server informs the caller and sends it the caller's token. Both clients are then 
+  /// expected to establish new connections to the profile server's Application Service Interface and use their 
+  /// tokens to send a message to the other client.
   ///
-  ///  Roles: clNonCustomer, clCustomer
+  /// Roles: clNonCustomer, clCustomer
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class CallIdentityApplicationServiceRequest : pb::IMessage<CallIdentityApplicationServiceRequest> {
     private static readonly pb::MessageParser<CallIdentityApplicationServiceRequest> _parser = new pb::MessageParser<CallIdentityApplicationServiceRequest>(() => new CallIdentityApplicationServiceRequest());
@@ -8856,7 +8857,7 @@ namespace Iop.Profileserver {
     public const int IdentityNetworkIdFieldNumber = 1;
     private pb::ByteString identityNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Network identifier of the identity to call.
+    /// Network identifier of the identity to call.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IdentityNetworkId {
@@ -8870,7 +8871,7 @@ namespace Iop.Profileserver {
     public const int ServiceNameFieldNumber = 2;
     private string serviceName_ = "";
     /// <summary>
-    ///  Name of the application service to use.
+    /// Name of the application service to use.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ServiceName {
@@ -8972,15 +8973,15 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to CallIdentityApplicationServiceRequest.
+  /// A response to CallIdentityApplicationServiceRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_AVAILABLE - The callee is not online, or it failed to reply to the notification within the required time frame.
-  ///    * ERROR_REJECTED - The callee rejected the call.
-  ///    * ERROR_UNINITIALIZED - The callee's profile has not been initialized yet.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "identityNetworkId" - 'CallIdentityApplicationServiceRequest.identityNetworkId' does not identify an identity hosted by the profile server.
-  ///      * Response.details == "serviceName" - 'CallIdentityApplicationServiceRequest.serviceName' is not an application service supported by the callee in the current session.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_AVAILABLE - The callee is not online, or it failed to reply to the notification within the required time frame.
+  ///   * ERROR_REJECTED - The callee rejected the call.
+  ///   * ERROR_UNINITIALIZED - The callee's profile has not been initialized yet.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "identityNetworkId" - 'CallIdentityApplicationServiceRequest.identityNetworkId' does not identify an identity hosted by the profile server.
+  ///     * Response.details == "serviceName" - 'CallIdentityApplicationServiceRequest.serviceName' is not an application service supported by the callee in the current session.
   /// </summary>
   public sealed partial class CallIdentityApplicationServiceResponse : pb::IMessage<CallIdentityApplicationServiceResponse> {
     private static readonly pb::MessageParser<CallIdentityApplicationServiceResponse> _parser = new pb::MessageParser<CallIdentityApplicationServiceResponse>(() => new CallIdentityApplicationServiceResponse());
@@ -9018,7 +9019,7 @@ namespace Iop.Profileserver {
     public const int CallerTokenFieldNumber = 1;
     private pb::ByteString callerToken_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Token for the caller to identify the session on the Application Service Interface.
+    /// Token for the caller to identify the session on the Application Service Interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CallerToken {
@@ -9103,15 +9104,15 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  This request is sent by profile server to its customer client (the callee) when another client (the caller) wants 
-  ///  to establish a call over the customer client's application service.
+  /// 
+  /// This request is sent by profile server to its customer client (the callee) when another client (the caller) wants 
+  /// to establish a call over the customer client's application service.
   ///
-  ///  The callee is required to send its response to this request within 10 seconds, otherwise the call channel will not be established.
+  /// The callee is required to send its response to this request within 10 seconds, otherwise the call channel will not be established.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class IncomingCallNotificationRequest : pb::IMessage<IncomingCallNotificationRequest> {
     private static readonly pb::MessageParser<IncomingCallNotificationRequest> _parser = new pb::MessageParser<IncomingCallNotificationRequest>(() => new IncomingCallNotificationRequest());
@@ -9151,7 +9152,7 @@ namespace Iop.Profileserver {
     public const int CallerPublicKeyFieldNumber = 1;
     private pb::ByteString callerPublicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the caller.
+    /// Public key of the caller.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CallerPublicKey {
@@ -9165,7 +9166,7 @@ namespace Iop.Profileserver {
     public const int ServiceNameFieldNumber = 2;
     private string serviceName_ = "";
     /// <summary>
-    ///  Name of the application service the caller wants to use.
+    /// Name of the application service the caller wants to use.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ServiceName {
@@ -9179,7 +9180,7 @@ namespace Iop.Profileserver {
     public const int CalleeTokenFieldNumber = 3;
     private pb::ByteString calleeToken_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Token for the callee to identify the session on the Application Service Interface.
+    /// Token for the callee to identify the session on the Application Service Interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CalleeToken {
@@ -9297,11 +9298,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to CallIdentityApplicationServiceRequest. This is sent by the customer client (the callee) 
-  ///  to its profile server.
+  /// A response to CallIdentityApplicationServiceRequest. This is sent by the customer client (the callee) 
+  /// to its profile server.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_REJECTED - The callee rejects the call.
+  /// Specific Error Responses:
+  ///   * ERROR_REJECTED - The callee rejects the call.
   /// </summary>
   public sealed partial class IncomingCallNotificationResponse : pb::IMessage<IncomingCallNotificationResponse> {
     private static readonly pb::MessageParser<IncomingCallNotificationResponse> _parser = new pb::MessageParser<IncomingCallNotificationResponse>(() => new IncomingCallNotificationResponse());
@@ -9393,31 +9394,31 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  This request is sent by a client to the profile server in order to deliver a message to the other client 
-  ///  over the opened application service call channel.
+  /// 
+  /// This request is sent by a client to the profile server in order to deliver a message to the other client 
+  /// over the opened application service call channel.
   ///
-  ///  After the client connects to clAppService port, it sends an initialization message using this request 
-  ///  to inform the profile server about its identity. This initialization message is not delivered to the other 
-  ///  party and the profile server responds to this initialization message only after the other party is also 
-  ///  connected. In the initialization message, the 'message' field is ignored. If the other party fails to join 
-  ///  the channel within 30 seconds, the profile server closes the existing connection to the connected client.
+  /// After the client connects to clAppService port, it sends an initialization message using this request 
+  /// to inform the profile server about its identity. This initialization message is not delivered to the other 
+  /// party and the profile server responds to this initialization message only after the other party is also 
+  /// connected. In the initialization message, the 'message' field is ignored. If the other party fails to join 
+  /// the channel within 30 seconds, the profile server closes the existing connection to the connected client.
   ///
-  ///  Until the client receives a reply from the profile server to its initialization message, it is not allowed 
-  ///  to send other ApplicationServiceSendMessageRequest. This would be an error and the profile server would
-  ///  destroy the channel.
+  /// Until the client receives a reply from the profile server to its initialization message, it is not allowed 
+  /// to send other ApplicationServiceSendMessageRequest. This would be an error and the profile server would
+  /// destroy the channel.
   ///
-  ///  If neither of clients connects to clAppService port or sends an inititial message within 30 seconds after 
-  ///  the call was initiated, the profile server destroys the channel.
-  ///  
-  ///  Note that the clients are allowed to disconnect from clNonCustomer/clCustomer port once the caller receives 
-  ///  CallIdentityApplicationServiceResponse and the callee sends IncomingCallNotificationResponse.
+  /// If neither of clients connects to clAppService port or sends an inititial message within 30 seconds after 
+  /// the call was initiated, the profile server destroys the channel.
+  /// 
+  /// Note that the clients are allowed to disconnect from clNonCustomer/clCustomer port once the caller receives 
+  /// CallIdentityApplicationServiceResponse and the callee sends IncomingCallNotificationResponse.
   ///
-  ///  Each client is only allowed to have 20 ApplicationServiceSendMessageRequest messages pending, which means
-  ///  that there was no ApplicationServiceSendMessageResponse sent to the client. If a client attempts to send
-  ///  another message while having 20 pending messages, the profile server destroys the call channel.
+  /// Each client is only allowed to have 20 ApplicationServiceSendMessageRequest messages pending, which means
+  /// that there was no ApplicationServiceSendMessageResponse sent to the client. If a client attempts to send
+  /// another message while having 20 pending messages, the profile server destroys the call channel.
   ///
-  ///  Roles: clAppService
+  /// Roles: clAppService
   /// </summary>
   public sealed partial class ApplicationServiceSendMessageRequest : pb::IMessage<ApplicationServiceSendMessageRequest> {
     private static readonly pb::MessageParser<ApplicationServiceSendMessageRequest> _parser = new pb::MessageParser<ApplicationServiceSendMessageRequest>(() => new ApplicationServiceSendMessageRequest());
@@ -9456,7 +9457,7 @@ namespace Iop.Profileserver {
     public const int TokenFieldNumber = 1;
     private pb::ByteString token_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Client's token to identify the session.
+    /// Client's token to identify the session.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Token {
@@ -9470,7 +9471,7 @@ namespace Iop.Profileserver {
     public const int MessageFieldNumber = 2;
     private pb::ByteString message_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Message to send to the other client.
+    /// Message to send to the other client.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Message {
@@ -9572,17 +9573,17 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ApplicationServiceSendMessageRequest. This is sent by the profile server to the client to 
-  ///  confirm that it sent the message to the other client and the other client confirmed its arrival.
-  ///  
-  ///  If the connection to one of the clients is terminated, the profile server closes the connection to the 
-  ///  other client.
+  /// A response to ApplicationServiceSendMessageRequest. This is sent by the profile server to the client to 
+  /// confirm that it sent the message to the other client and the other client confirmed its arrival.
+  /// 
+  /// If the connection to one of the clients is terminated, the profile server closes the connection to the 
+  /// other client.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - 'ApplicationServiceSendMessageRequest.token' is not a valid token. This can have many causes.
-  ///                        The token itself can have invalid format, or no such token was ever issued by the server. 
-  ///                        However, it can also be the case that the token was valid in the past but the call channel 
-  ///                        was closed by the server for any reason and thus the token is no longer valid. 
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - 'ApplicationServiceSendMessageRequest.token' is not a valid token. This can have many causes.
+  ///                       The token itself can have invalid format, or no such token was ever issued by the server. 
+  ///                       However, it can also be the case that the token was valid in the past but the call channel 
+  ///                       was closed by the server for any reason and thus the token is no longer valid. 
   /// </summary>
   public sealed partial class ApplicationServiceSendMessageResponse : pb::IMessage<ApplicationServiceSendMessageResponse> {
     private static readonly pb::MessageParser<ApplicationServiceSendMessageResponse> _parser = new pb::MessageParser<ApplicationServiceSendMessageResponse>(() => new ApplicationServiceSendMessageResponse());
@@ -9674,11 +9675,11 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  This request is sent by a profile server after it received ApplicationServiceSendMessageRequest from 
-  ///  one of the clients. This forwards the message to its intended recipient.
+  /// 
+  /// This request is sent by a profile server after it received ApplicationServiceSendMessageRequest from 
+  /// one of the clients. This forwards the message to its intended recipient.
   ///
-  ///  Roles: clAppService
+  /// Roles: clAppService
   /// </summary>
   public sealed partial class ApplicationServiceReceiveMessageNotificationRequest : pb::IMessage<ApplicationServiceReceiveMessageNotificationRequest> {
     private static readonly pb::MessageParser<ApplicationServiceReceiveMessageNotificationRequest> _parser = new pb::MessageParser<ApplicationServiceReceiveMessageNotificationRequest>(() => new ApplicationServiceReceiveMessageNotificationRequest());
@@ -9716,7 +9717,7 @@ namespace Iop.Profileserver {
     public const int MessageFieldNumber = 1;
     private pb::ByteString message_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Message that was sent to the intended recipient - a copy of 'ApplicationServiceSendMessageRequest.message'.
+    /// Message that was sent to the intended recipient - a copy of 'ApplicationServiceSendMessageRequest.message'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Message {
@@ -9802,8 +9803,8 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ApplicationServiceReceiveMessageNotificationRequest.
-  ///  
+  /// A response to ApplicationServiceReceiveMessageNotificationRequest.
+  /// 
   /// </summary>
   public sealed partial class ApplicationServiceReceiveMessageNotificationResponse : pb::IMessage<ApplicationServiceReceiveMessageNotificationResponse> {
     private static readonly pb::MessageParser<ApplicationServiceReceiveMessageNotificationResponse> _parser = new pb::MessageParser<ApplicationServiceReceiveMessageNotificationResponse>(() => new ApplicationServiceReceiveMessageNotificationResponse());
@@ -9896,11 +9897,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Obtains identity profiles statistics from a profile server.
+  /// Obtains identity profiles statistics from a profile server.
   ///
-  ///  Only actively hosted profiles are counted regardless of whether or not the profiles are initialized.
+  /// Only actively hosted profiles are counted regardless of whether or not the profiles are initialized.
   ///
-  ///  Roles: clNonCustomer, clCustomer
+  /// Roles: clNonCustomer, clCustomer
   /// </summary>
   public sealed partial class ProfileStatsRequest : pb::IMessage<ProfileStatsRequest> {
     private static readonly pb::MessageParser<ProfileStatsRequest> _parser = new pb::MessageParser<ProfileStatsRequest>(() => new ProfileStatsRequest());
@@ -9993,8 +9994,8 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ProfileStatsRequest.
-  ///  
+  /// A response to ProfileStatsRequest.
+  /// 
   /// </summary>
   public sealed partial class ProfileStatsResponse : pb::IMessage<ProfileStatsResponse> {
     private static readonly pb::MessageParser<ProfileStatsResponse> _parser = new pb::MessageParser<ProfileStatsResponse>(() => new ProfileStatsResponse());
@@ -10034,7 +10035,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(10, global::Iop.Profileserver.ProfileStatsItem.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.ProfileStatsItem> stats_ = new pbc::RepeatedField<global::Iop.Profileserver.ProfileStatsItem>();
     /// <summary>
-    ///  List of profile statistics grouped by identity type.
+    /// List of profile statistics grouped by identity type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.ProfileStatsItem> Stats {
@@ -10110,7 +10111,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Statistical information on identities of a specific type.
+  /// Statistical information on identities of a specific type.
   /// </summary>
   public sealed partial class ProfileStatsItem : pb::IMessage<ProfileStatsItem> {
     private static readonly pb::MessageParser<ProfileStatsItem> _parser = new pb::MessageParser<ProfileStatsItem>(() => new ProfileStatsItem());
@@ -10149,7 +10150,7 @@ namespace Iop.Profileserver {
     public const int IdentityTypeFieldNumber = 1;
     private string identityType_ = "";
     /// <summary>
-    ///  Type of identity. 
+    /// Type of identity. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string IdentityType {
@@ -10163,7 +10164,7 @@ namespace Iop.Profileserver {
     public const int CountFieldNumber = 2;
     private uint count_;
     /// <summary>
-    ///  Number of profiles hosted on the profile server of the specific type of identity.
+    /// Number of profiles hosted on the profile server of the specific type of identity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Count {
@@ -10265,24 +10266,22 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Asks a profile server for a list of all identities that match the search criteria. This search never returns 
-  ///  profiles of old customer identities who cancelled their hosting agreements, even if the profile server still 
-  ///  holds some information about those identities.
+  /// Asks a profile server for a list of all identities that match the search criteria. This search never returns 
+  /// profiles of old customer identities who cancelled their hosting agreements, even if the profile server still 
+  /// holds some information about those identities.
   ///
-  ///  Each search request only produces a limited number of results. The maximal size of the first set of results 
-  ///  is provided by 'maxResponseRecordCount' field. The response to this message contains up to 'maxResponseRecordCount' 
-  ///  results. If there are more results available, they are saved to the conversation context, which enables the client 
-  ///  to obtain more results with subsequent ProfileSearchPartRequest messages.
+  /// Each search request only produces a limited number of results. The maximal size of the first set of results 
+  /// is provided by 'maxResponseRecordCount' field. The response to this message contains up to 'maxResponseRecordCount' 
+  /// results. If there are more results available, they are saved to the server's cache, which enables the client 
+  /// to obtain more results with subsequent ProfileSearchPartRequest messages.
   ///
-  ///  The profile server will not save more than 'maxTotalRecordCount' search requests. 
-  ///  The profile server has to allow the client to get additional results at least 1 minute from receiving 
-  ///  ProfileSearchRequest, but it can maintain the results cache for longer than that.
+  /// The profile server will not save more than 'maxTotalRecordCount' search requests. 
+  /// The profile server has to allow the client to get additional results at least 1 minute from receiving 
+  /// ProfileSearchRequest, but it can maintain the results cache for longer than that.
   ///
-  ///  Once the client sends another ProfileSearchRequest, or if it disconnects, the old search results are discarded.
+  /// Once the client sends another ProfileSearchRequest, or if it disconnects, the old search results are discarded.
   ///
-  ///  Roles: clNonCustomer, clCustomer
-  ///
-  ///  Conversation status: ConversationStarted, Verified, Authenticated
+  /// Roles: clNonCustomer, clCustomer
   /// </summary>
   public sealed partial class ProfileSearchRequest : pb::IMessage<ProfileSearchRequest> {
     private static readonly pb::MessageParser<ProfileSearchRequest> _parser = new pb::MessageParser<ProfileSearchRequest>(() => new ProfileSearchRequest());
@@ -10329,7 +10328,7 @@ namespace Iop.Profileserver {
     public const int IncludeHostedOnlyFieldNumber = 1;
     private bool includeHostedOnly_;
     /// <summary>
-    ///  If set to true, the profile server only returns profiles of its own customers.
+    /// If set to true, the profile server only returns profiles of its own customers.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeHostedOnly {
@@ -10343,7 +10342,7 @@ namespace Iop.Profileserver {
     public const int IncludeThumbnailImagesFieldNumber = 2;
     private bool includeThumbnailImages_;
     /// <summary>
-    ///  If set to false, profiles from the server's neighborhood can be included in the result.
+    /// If set to false, profiles from the server's neighborhood can be included in the result.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeThumbnailImages {
@@ -10357,7 +10356,7 @@ namespace Iop.Profileserver {
     public const int MaxResponseRecordCountFieldNumber = 3;
     private uint maxResponseRecordCount_;
     /// <summary>
-    ///  Maximal number of results to be delivered in the response. If 'includeThumbnailImages'
+    /// Maximal number of results to be delivered in the response. If 'includeThumbnailImages'
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxResponseRecordCount {
@@ -10371,8 +10370,8 @@ namespace Iop.Profileserver {
     public const int MaxTotalRecordCountFieldNumber = 4;
     private uint maxTotalRecordCount_;
     /// <summary>
-    ///  is true, this has to be an integer between 1 and 100. If 'includeThumbnailImages' is false,
-    ///  this has to be an integer between 1 and 1,000. The value must not be greater than 'maxTotalRecordCount'.
+    /// is true, this has to be an integer between 1 and 100. If 'includeThumbnailImages' is false,
+    /// this has to be an integer between 1 and 1,000. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxTotalRecordCount {
@@ -10386,7 +10385,7 @@ namespace Iop.Profileserver {
     public const int TypeFieldNumber = 5;
     private string type_ = "";
     /// <summary>
-    ///  Search filters.
+    /// Search filters.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Type {
@@ -10400,8 +10399,8 @@ namespace Iop.Profileserver {
     public const int NameFieldNumber = 6;
     private string name_ = "";
     /// <summary>
-    ///  of identity types that match the wildcard string. If empty, all identity types are allowed.
-    ///  Max 64 bytes long.
+    /// of identity types that match the wildcard string. If empty, all identity types are allowed.
+    /// Max 64 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -10415,8 +10414,8 @@ namespace Iop.Profileserver {
     public const int LatitudeFieldNumber = 7;
     private int latitude_;
     /// <summary>
-    ///  with names that match the wildcard string. If empty, all profile names are allowed.
-    ///  Max 64 bytes long.
+    /// with names that match the wildcard string. If empty, all profile names are allowed.
+    /// Max 64 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Latitude {
@@ -10430,10 +10429,10 @@ namespace Iop.Profileserver {
     public const int LongitudeFieldNumber = 8;
     private int longitude_;
     /// <summary>
-    ///  it is, in combination with 'longitude' and 'radius', a specification of target area, 
-    ///  where the identity has to be located (according to its profile information) in order to be 
-    ///  included in the search results. If NO_LOCATION, 'longitude' and 'radius' are ignored 
-    ///  and all locations are allowed.
+    /// it is, in combination with 'longitude' and 'radius', a specification of target area, 
+    /// where the identity has to be located (according to its profile information) in order to be 
+    /// included in the search results. If NO_LOCATION, 'longitude' and 'radius' are ignored 
+    /// and all locations are allowed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Longitude {
@@ -10447,7 +10446,7 @@ namespace Iop.Profileserver {
     public const int RadiusFieldNumber = 9;
     private uint radius_;
     /// <summary>
-    ///  If 'latitude' is not NO_LOCATION, this is target location radius in metres.
+    /// If 'latitude' is not NO_LOCATION, this is target location radius in metres.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Radius {
@@ -10461,7 +10460,7 @@ namespace Iop.Profileserver {
     public const int ExtraDataFieldNumber = 10;
     private string extraData_ = "";
     /// <summary>
-    ///  RegexType or empty string. If not empty, it specifies the regular expression that identity
+    /// RegexType or empty string. If not empty, it specifies the regular expression that identity
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ExtraData {
@@ -10691,31 +10690,31 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ProfileSearchRequest.
+  /// A response to ProfileSearchRequest.
   ///
-  ///  If 'maxResponseRecordCount' is lower than 'totalRecordCount', the client is allowed to send 
-  ///  ProfileSearchPartRequest messages to obtain more results.
+  /// If 'maxResponseRecordCount' is lower than 'totalRecordCount', the client is allowed to send 
+  /// ProfileSearchPartRequest messages to obtain more results.
   ///
-  ///  If a client is looking for a small set of profiles within a large area, it might need to perform 
-  ///  multiple search queries across several profile servers in the target area in order to "cover" it. 
-  ///  'coveredServers' contains a list of profile servers forming the neighborhood of the profile server 
-  ///  being queried. Neighborhood servers share their profile databases and a query to one server will 
-  ///  thus cover profile servers in its neighborhood. Note that this information is not much relevant 
-  ///  in case the number of result is large and the number of results is limited by the protocol. 
-  ///  In this case, it is possible that the profile server returns results from profile databases only 
-  ///  from a small subset of its neighborhood provided in the 'coveredServers' value, or even only from 
-  ///  its own database.
+  /// If a client is looking for a small set of profiles within a large area, it might need to perform 
+  /// multiple search queries across several profile servers in the target area in order to "cover" it. 
+  /// 'coveredServers' contains a list of profile servers forming the neighborhood of the profile server 
+  /// being queried. Neighborhood servers share their profile databases and a query to one server will 
+  /// thus cover profile servers in its neighborhood. Note that this information is not much relevant 
+  /// in case the number of result is large and the number of results is limited by the protocol. 
+  /// In this case, it is possible that the profile server returns results from profile databases only 
+  /// from a small subset of its neighborhood provided in the 'coveredServers' value, or even only from 
+  /// its own database.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "maxResponseRecordCount" - 'ProfileSearchRequest.maxResponseRecordCount' is not within the required range.
-  ///      * Response.details == "maxTotalRecordCount" - 'ProfileSearchRequest.maxTotalRecordCount' is not within the required range.
-  ///      * Response.details == "type" - 'ProfileSearchRequest.type' is too long.
-  ///      * Response.details == "name" - 'ProfileSearchRequest.name' is too long.
-  ///      * Response.details == "latitude" - 'ProfileSearchRequest.latitude' is not a valid location latitude.
-  ///      * Response.details == "longitude" - 'ProfileSearchRequest.longitude' is not a valid location longitude.
-  ///      * Response.details == "radius" - 'ProfileSearchRequest.radius' is not a valid radius value.
-  ///      * Response.details == "extraData" - 'ProfileSearchRequest.extraData' is too long or it is not a valid value of RegexType.
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "maxResponseRecordCount" - 'ProfileSearchRequest.maxResponseRecordCount' is not within the required range.
+  ///     * Response.details == "maxTotalRecordCount" - 'ProfileSearchRequest.maxTotalRecordCount' is not within the required range or the value is less than 'ProfileSearchRequest.maxResponseRecordCount'.
+  ///     * Response.details == "type" - 'ProfileSearchRequest.type' is too long.
+  ///     * Response.details == "name" - 'ProfileSearchRequest.name' is too long.
+  ///     * Response.details == "latitude" - 'ProfileSearchRequest.latitude' is not a valid location latitude.
+  ///     * Response.details == "longitude" - 'ProfileSearchRequest.longitude' is not a valid location longitude.
+  ///     * Response.details == "radius" - 'ProfileSearchRequest.radius' is not a valid radius value.
+  ///     * Response.details == "extraData" - 'ProfileSearchRequest.extraData' is too long or it is not a valid value of RegexType.
   /// </summary>
   public sealed partial class ProfileSearchResponse : pb::IMessage<ProfileSearchResponse> {
     private static readonly pb::MessageParser<ProfileSearchResponse> _parser = new pb::MessageParser<ProfileSearchResponse>(() => new ProfileSearchResponse());
@@ -10756,7 +10755,7 @@ namespace Iop.Profileserver {
     public const int TotalRecordCountFieldNumber = 1;
     private uint totalRecordCount_;
     /// <summary>
-    ///  Total number of profiles that matched the search criteria. Up to 'maxResponseRecordCount' of them are in 'profiles' list.
+    /// Total number of profiles that matched the search criteria. Up to 'maxResponseRecordCount' of them are in 'profiles' list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint TotalRecordCount {
@@ -10770,7 +10769,7 @@ namespace Iop.Profileserver {
     public const int MaxResponseRecordCountFieldNumber = 2;
     private uint maxResponseRecordCount_;
     /// <summary>
-    ///  Limit of the number of results provided. This is equal to 'ProfileSearchRequest.maxResponseRecordCount'.
+    /// Limit of the number of results provided. This is equal to 'ProfileSearchRequest.maxResponseRecordCount'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxResponseRecordCount {
@@ -10786,7 +10785,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForBytes(26);
     private readonly pbc::RepeatedField<pb::ByteString> coveredServers_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  List of network identifiers of profile servers whose profile databases were used to produce the results, 
+    /// List of network identifiers of profile servers whose profile databases were used to produce the results, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> CoveredServers {
@@ -10799,7 +10798,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(34, global::Iop.Profileserver.ProfileQueryInformation.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> profiles_ = new pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation>();
     /// <summary>
-    ///  Search results.
+    /// Search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> Profiles {
@@ -10916,7 +10915,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Information about a single profile record from a profile search query.
+  /// Information about a single profile record from a profile search query.
   /// </summary>
   public sealed partial class ProfileQueryInformation : pb::IMessage<ProfileQueryInformation> {
     private static readonly pb::MessageParser<ProfileQueryInformation> _parser = new pb::MessageParser<ProfileQueryInformation>(() => new ProfileQueryInformation());
@@ -10958,7 +10957,7 @@ namespace Iop.Profileserver {
     public const int IsHostedFieldNumber = 1;
     private bool isHosted_;
     /// <summary>
-    ///  True if the requested identity is a customer of the profile server.
+    /// True if the requested identity is a customer of the profile server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsHosted {
@@ -10972,7 +10971,7 @@ namespace Iop.Profileserver {
     public const int HostingServerNetworkIdFieldNumber = 2;
     private pb::ByteString hostingServerNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'isHosted' is false, this field contains the network ID of the neighbor profile server that hosts the target profile.
+    /// If 'isHosted' is false, this field contains the network ID of the neighbor profile server that hosts the target profile.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString HostingServerNetworkId {
@@ -10986,7 +10985,7 @@ namespace Iop.Profileserver {
     public const int IsOnlineFieldNumber = 3;
     private bool isOnline_;
     /// <summary>
-    ///  If 'isHosted' is true, this is true if the requested identity is currently online.
+    /// If 'isHosted' is true, this is true if the requested identity is currently online.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsOnline {
@@ -11000,7 +10999,7 @@ namespace Iop.Profileserver {
     public const int SignedProfileFieldNumber = 4;
     private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  Requested identity signed profile information.
+    /// Requested identity signed profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
@@ -11014,7 +11013,7 @@ namespace Iop.Profileserver {
     public const int ThumbnailImageFieldNumber = 5;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'ProfileSearchRequest.includeThumbnailImages' was set, this contains the identity's thumbnail image, 
+    /// If 'ProfileSearchRequest.includeThumbnailImages' was set, this contains the identity's thumbnail image, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
@@ -11170,15 +11169,13 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Request to get another part from the search query.
+  /// Request to get another part from the search query.
   ///
-  ///  This request only makes sense only if the client previously sent ProfileSearchRequest to 
-  ///  the profile server and the search result contained more records than the server provided 
-  ///  in the ProfileSearchResponse, and the search results have not expired yet.
+  /// This request only makes sense only if the client previously sent ProfileSearchRequest to 
+  /// the profile server and the search result contained more records than the server provided 
+  /// in the ProfileSearchResponse, and the search results have not expired yet.
   ///
-  ///  Roles: clNonCustomer, clCustomer
-  ///
-  ///  Conversation status: ConversationStarted, Verified, Authenticated
+  /// Roles: clNonCustomer, clCustomer
   /// </summary>
   public sealed partial class ProfileSearchPartRequest : pb::IMessage<ProfileSearchPartRequest> {
     private static readonly pb::MessageParser<ProfileSearchPartRequest> _parser = new pb::MessageParser<ProfileSearchPartRequest>(() => new ProfileSearchPartRequest());
@@ -11217,7 +11214,7 @@ namespace Iop.Profileserver {
     public const int RecordIndexFieldNumber = 1;
     private uint recordIndex_;
     /// <summary>
-    ///  Zero-based record index of the first result to retrieve. It has to be an integer between 0 and 'ProfileSearchResponse.totalRecordCount' - 1.
+    /// Zero-based record index of the first result to retrieve. It has to be an integer between 0 and 'ProfileSearchResponse.totalRecordCount' - 1.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordIndex {
@@ -11231,7 +11228,7 @@ namespace Iop.Profileserver {
     public const int RecordCountFieldNumber = 2;
     private uint recordCount_;
     /// <summary>
-    ///  Number of results to obtain. 'recordIndex' + 'recordCount' must not be greater than 'ProfileSearchResponse.totalRecordCount'.
+    /// Number of results to obtain. 'recordIndex' + 'recordCount' must not be greater than 'ProfileSearchResponse.totalRecordCount'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordCount {
@@ -11333,14 +11330,14 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to ProfileSearchPartRequest.
+  /// A response to ProfileSearchPartRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_AVAILABLE - No cached search results are available. Either the client did not send ProfileSearchRequest previously
-  ///                            in this session, or its results have expired already.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "recordIndex" - 'ProfileSearchPartRequest.recordIndex' is not a valid index of the result.
-  ///      * Response.details == "recordCount" - 'ProfileSearchPartRequest.recordCount' is not a valid number of results to obtain in combination with 'ProfileSearchPartRequest.recordIndex'.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_AVAILABLE - No cached search results are available. Either the client did not send ProfileSearchRequest previously
+  ///                           in this session, or its results have expired already.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "recordIndex" - 'ProfileSearchPartRequest.recordIndex' is not a valid index of the result.
+  ///     * Response.details == "recordCount" - 'ProfileSearchPartRequest.recordCount' is not a valid number of results to obtain in combination with 'ProfileSearchPartRequest.recordIndex'.
   /// </summary>
   public sealed partial class ProfileSearchPartResponse : pb::IMessage<ProfileSearchPartResponse> {
     private static readonly pb::MessageParser<ProfileSearchPartResponse> _parser = new pb::MessageParser<ProfileSearchPartResponse>(() => new ProfileSearchPartResponse());
@@ -11380,7 +11377,7 @@ namespace Iop.Profileserver {
     public const int RecordIndexFieldNumber = 1;
     private uint recordIndex_;
     /// <summary>
-    ///  Index of the first result. Copy of 'ProfileSearchPartRequest.recordIndex' value.
+    /// Index of the first result. Copy of 'ProfileSearchPartRequest.recordIndex' value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordIndex {
@@ -11394,7 +11391,7 @@ namespace Iop.Profileserver {
     public const int RecordCountFieldNumber = 2;
     private uint recordCount_;
     /// <summary>
-    ///  Number of results. Copy of 'ProfileSearchPartRequest.recordCount' value.
+    /// Number of results. Copy of 'ProfileSearchPartRequest.recordCount' value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordCount {
@@ -11410,7 +11407,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(26, global::Iop.Profileserver.ProfileQueryInformation.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> profiles_ = new pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation>();
     /// <summary>
-    ///  Search results.
+    /// Search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.ProfileQueryInformation> Profiles {
@@ -11518,22 +11515,22 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A customer client announces a relation between its identity and another identity using 
-  ///  a relationship card.
+  /// A customer client announces a relation between its identity and another identity using 
+  /// a relationship card.
   ///
-  ///  The 'cardApplication' field is signed with a signature in 'ConversationRequest.signature'. 
-  ///  This signature can be used to prove that the card recipient wanted to use the card for 
-  ///  the given purpose. The signature on the card of the card's issuer then can be used to prove 
-  ///  that the issuer issued the card for the recipient. The customer's public key has to be equal 
-  ///  to the card's recipient public key.
+  /// The 'cardApplication' field is signed with a signature in 'ConversationRequest.signature'. 
+  /// This signature can be used to prove that the card recipient wanted to use the card for 
+  /// the given purpose. The signature on the card of the card's issuer then can be used to prove 
+  /// that the issuer issued the card for the recipient. The customer's public key has to be equal 
+  /// to the card's recipient public key.
   ///
-  ///  Each profile server is allowed to define its own limit of number of relations that a single 
-  ///  identity can have. However, this limit should not exceed the maximal limit of 2,000 relations, 
-  ///  which is given by the maximal protocol message size.
+  /// Each profile server is allowed to define its own limit of number of relations that a single 
+  /// identity can have. However, this limit should not exceed the maximal limit of 2,000 relations, 
+  /// which is given by the maximal protocol message size.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class AddRelatedIdentityRequest : pb::IMessage<AddRelatedIdentityRequest> {
     private static readonly pb::MessageParser<AddRelatedIdentityRequest> _parser = new pb::MessageParser<AddRelatedIdentityRequest>(() => new AddRelatedIdentityRequest());
@@ -11572,7 +11569,7 @@ namespace Iop.Profileserver {
     public const int CardApplicationFieldNumber = 1;
     private global::Iop.Profileserver.CardApplicationInformation cardApplication_;
     /// <summary>
-    ///  Description of the relationship, which must correspond to the given 'card' - i.e. 'cardApplication.cardId' 
+    /// Description of the relationship, which must correspond to the given 'card' - i.e. 'cardApplication.cardId' 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CardApplicationInformation CardApplication {
@@ -11586,7 +11583,7 @@ namespace Iop.Profileserver {
     public const int SignedCardFieldNumber = 2;
     private global::Iop.Profileserver.SignedRelationshipCard signedCard_;
     /// <summary>
-    ///  has to match 'signedCard.card.cardId'.
+    /// has to match 'signedCard.card.cardId'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SignedRelationshipCard SignedCard {
@@ -11700,24 +11697,24 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to AddRelatedIdentityRequest.
+  /// A response to AddRelatedIdentityRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_QUOTA_EXCEEDED - The caller has reached its limit for a number of related identities on its profile.
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the 'AddRelatedIdentityRequest.cardApplication' in 'ConversationRequest.signature' is not valid.
-  ///    * ERROR_ALREADY_EXISTS - A relationship with application identifier equal to 'AddRelatedIdentityRequest.cardApplication.applicationId' already exists.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "cardApplication.cardId" - 'AddRelatedIdentityRequest.cardApplication.cardId' does not match 'AddRelatedIdentityRequest.signedCard.card.cardId'.
-  ///      * Response.details == "cardApplication.applicationId" - 'AddRelatedIdentityRequest.cardApplication.applicationId' is not a valid application identifier.
-  ///      * Response.details == "signedCard.issuerSignature" - 'AddRelatedIdentityRequest.signedCard.issuerSignature' is not a valid signature of 'AddRelatedIdentityRequest.signedCard.card' structure
-  ///                                                           using private key of the issuer whose public key is 'AddRelatedIdentityRequest.signedCard.card.issuerPublicKey'.
-  ///      * Response.details == "signedCard.card.cardId" - 'AddRelatedIdentityRequest.signedCard.card.cardId' is not a valid SHA256 hash of 'AddRelatedIdentityRequest.signedCard.card' structure.
-  ///      * Response.details == "signedCard.card.version" - 'AddRelatedIdentityRequest.signedCard.card.version' is not a valid card version.
-  ///      * Response.details == "signedCard.card.type" - 'AddRelatedIdentityRequest.signedCard.card.type' is not a valid card type.
-  ///      * Response.details == "signedCard.card.issuerPublicKey" - 'AddRelatedIdentityRequest.signedCard.card.issuerPublicKey' is not a valid public key.
-  ///      * Response.details == "signedCard.card.recipientPublicKey" - 'AddRelatedIdentityRequest.signedCard.card.recipientPublicKey' is not the public key of the caller.
-  ///      * Response.details == "signedCard.card.validFrom" - 'AddRelatedIdentityRequest.signedCard.card.validFrom' is greater than 'AddRelatedIdentityRequest.signedCard.card.validTo' or it does not represent a valid timestamp value.
-  ///      * Response.details == "signedCard.card.validTo" - 'AddRelatedIdentityRequest.signedCard.card.validTo' does not represent a valid timestamp value.
+  /// Specific Error Responses:
+  ///   * ERROR_QUOTA_EXCEEDED - The caller has reached its limit for a number of related identities on its profile.
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the 'AddRelatedIdentityRequest.cardApplication' in 'ConversationRequest.signature' is not valid.
+  ///   * ERROR_ALREADY_EXISTS - A relationship with application identifier equal to 'AddRelatedIdentityRequest.cardApplication.applicationId' already exists.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "cardApplication.cardId" - 'AddRelatedIdentityRequest.cardApplication.cardId' does not match 'AddRelatedIdentityRequest.signedCard.card.cardId'.
+  ///     * Response.details == "cardApplication.applicationId" - 'AddRelatedIdentityRequest.cardApplication.applicationId' is not a valid application identifier.
+  ///     * Response.details == "signedCard.issuerSignature" - 'AddRelatedIdentityRequest.signedCard.issuerSignature' is not a valid signature of 'AddRelatedIdentityRequest.signedCard.card' structure
+  ///                                                          using private key of the issuer whose public key is 'AddRelatedIdentityRequest.signedCard.card.issuerPublicKey'.
+  ///     * Response.details == "signedCard.card.cardId" - 'AddRelatedIdentityRequest.signedCard.card.cardId' is not a valid SHA256 hash of 'AddRelatedIdentityRequest.signedCard.card' structure.
+  ///     * Response.details == "signedCard.card.version" - 'AddRelatedIdentityRequest.signedCard.card.version' is not a valid card version.
+  ///     * Response.details == "signedCard.card.type" - 'AddRelatedIdentityRequest.signedCard.card.type' is not a valid card type.
+  ///     * Response.details == "signedCard.card.issuerPublicKey" - 'AddRelatedIdentityRequest.signedCard.card.issuerPublicKey' is not a valid public key.
+  ///     * Response.details == "signedCard.card.recipientPublicKey" - 'AddRelatedIdentityRequest.signedCard.card.recipientPublicKey' is not the public key of the caller.
+  ///     * Response.details == "signedCard.card.validFrom" - 'AddRelatedIdentityRequest.signedCard.card.validFrom' is greater than 'AddRelatedIdentityRequest.signedCard.card.validTo' or it does not represent a valid timestamp value.
+  ///     * Response.details == "signedCard.card.validTo" - 'AddRelatedIdentityRequest.signedCard.card.validTo' does not represent a valid timestamp value.
   /// </summary>
   public sealed partial class AddRelatedIdentityResponse : pb::IMessage<AddRelatedIdentityResponse> {
     private static readonly pb::MessageParser<AddRelatedIdentityResponse> _parser = new pb::MessageParser<AddRelatedIdentityResponse>(() => new AddRelatedIdentityResponse());
@@ -11810,11 +11807,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A customer client removes the announcement of a relationship between its identity and another identity.
+  /// A customer client removes the announcement of a relationship between its identity and another identity.
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class RemoveRelatedIdentityRequest : pb::IMessage<RemoveRelatedIdentityRequest> {
     private static readonly pb::MessageParser<RemoveRelatedIdentityRequest> _parser = new pb::MessageParser<RemoveRelatedIdentityRequest>(() => new RemoveRelatedIdentityRequest());
@@ -11852,7 +11849,7 @@ namespace Iop.Profileserver {
     public const int ApplicationIdFieldNumber = 1;
     private pb::ByteString applicationId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identifier of the card application to remove. 
+    /// Identifier of the card application to remove. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ApplicationId {
@@ -11938,10 +11935,10 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to RemoveRelatedIdentityRequest.
+  /// A response to RemoveRelatedIdentityRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - A relationship with application identifier equal to 'AddRelatedIdentityRequest.cardApplication.applicationId' was not found.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - A relationship with application identifier equal to 'AddRelatedIdentityRequest.cardApplication.applicationId' was not found.
   /// </summary>
   public sealed partial class RemoveRelatedIdentityResponse : pb::IMessage<RemoveRelatedIdentityResponse> {
     private static readonly pb::MessageParser<RemoveRelatedIdentityResponse> _parser = new pb::MessageParser<RemoveRelatedIdentityResponse>(() => new RemoveRelatedIdentityResponse());
@@ -12034,9 +12031,9 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Description of a relationship card application. It consists of a card identifier, which is a hash 
-  ///  of the card data and the 'applicationId', which binds the use of the card with some other object, 
-  ///  transaction, or action, which is specific for the given use of the card.
+  /// Description of a relationship card application. It consists of a card identifier, which is a hash 
+  /// of the card data and the 'applicationId', which binds the use of the card with some other object, 
+  /// transaction, or action, which is specific for the given use of the card.
   /// </summary>
   public sealed partial class CardApplicationInformation : pb::IMessage<CardApplicationInformation> {
     private static readonly pb::MessageParser<CardApplicationInformation> _parser = new pb::MessageParser<CardApplicationInformation>(() => new CardApplicationInformation());
@@ -12075,7 +12072,7 @@ namespace Iop.Profileserver {
     public const int CardIdFieldNumber = 1;
     private pb::ByteString cardId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identifier of a relationship card. See 'RelationshipCard.cardId'.
+    /// Identifier of a relationship card. See 'RelationshipCard.cardId'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CardId {
@@ -12089,7 +12086,7 @@ namespace Iop.Profileserver {
     public const int ApplicationIdFieldNumber = 2;
     private pb::ByteString applicationId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Unique identifier of the action that represents using the card. This is used to bind the application of the card 
+    /// Unique identifier of the action that represents using the card. This is used to bind the application of the card 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ApplicationId {
@@ -12190,10 +12187,10 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  Description of a relationship card signed by its issuer. Only the identifier of the card is 
-  ///  signed, but since this is a SHA256 hash of all the card's fields (except for the ID itself), 
-  ///  the signature of the identifier effectively signs the whole card information.
+  /// 
+  /// Description of a relationship card signed by its issuer. Only the identifier of the card is 
+  /// signed, but since this is a SHA256 hash of all the card's fields (except for the ID itself), 
+  /// the signature of the identifier effectively signs the whole card information.
   /// </summary>
   public sealed partial class SignedRelationshipCard : pb::IMessage<SignedRelationshipCard> {
     private static readonly pb::MessageParser<SignedRelationshipCard> _parser = new pb::MessageParser<SignedRelationshipCard>(() => new SignedRelationshipCard());
@@ -12232,7 +12229,7 @@ namespace Iop.Profileserver {
     public const int CardFieldNumber = 1;
     private global::Iop.Profileserver.RelationshipCard card_;
     /// <summary>
-    ///  Description of the relationship card.
+    /// Description of the relationship card.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.RelationshipCard Card {
@@ -12246,7 +12243,7 @@ namespace Iop.Profileserver {
     public const int IssuerSignatureFieldNumber = 2;
     private pb::ByteString issuerSignature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Signature of 'card.cardId' value in raw format using private key of the issuer of the card.
+    /// Signature of 'card.cardId' value in raw format using private key of the issuer of the card.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IssuerSignature {
@@ -12354,7 +12351,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Description of a relationship card.
+  /// Description of a relationship card.
   /// </summary>
   public sealed partial class RelationshipCard : pb::IMessage<RelationshipCard> {
     private static readonly pb::MessageParser<RelationshipCard> _parser = new pb::MessageParser<RelationshipCard>(() => new RelationshipCard());
@@ -12398,7 +12395,7 @@ namespace Iop.Profileserver {
     public const int CardIdFieldNumber = 1;
     private pb::ByteString cardId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identifier of a relationship card is a SHA256 hash of the RelationshipCard structure in Google Protobuf v3 encoding 
+    /// Identifier of a relationship card is a SHA256 hash of the RelationshipCard structure in Google Protobuf v3 encoding 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CardId {
@@ -12412,7 +12409,7 @@ namespace Iop.Profileserver {
     public const int VersionFieldNumber = 2;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  with cardId initialized to a byte array of 32 zero bytes.
+    /// with cardId initialized to a byte array of 32 zero bytes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -12426,7 +12423,7 @@ namespace Iop.Profileserver {
     public const int TypeFieldNumber = 3;
     private string type_ = "";
     /// <summary>
-    ///  Type of the relationship card. This is an application defined value. Max 64 bytes long.
+    /// Type of the relationship card. This is an application defined value. Max 64 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Type {
@@ -12440,7 +12437,7 @@ namespace Iop.Profileserver {
     public const int ValidFromFieldNumber = 4;
     private long validFrom_;
     /// <summary>
-    ///  TimestampType. Time from which the card is valid. It must not be greater than 'validTo'.
+    /// TimestampType. Time from which the card is valid. It must not be greater than 'validTo'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long ValidFrom {
@@ -12454,7 +12451,7 @@ namespace Iop.Profileserver {
     public const int ValidToFieldNumber = 5;
     private long validTo_;
     /// <summary>
-    ///  TimestampType. Time after which the card is not valid.
+    /// TimestampType. Time after which the card is not valid.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long ValidTo {
@@ -12468,7 +12465,7 @@ namespace Iop.Profileserver {
     public const int IssuerPublicKeyFieldNumber = 6;
     private pb::ByteString issuerPublicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the issuer of the card. Max 128 bytes long.
+    /// Public key of the issuer of the card. Max 128 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IssuerPublicKey {
@@ -12482,7 +12479,7 @@ namespace Iop.Profileserver {
     public const int RecipientPublicKeyFieldNumber = 7;
     private pb::ByteString recipientPublicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the recipient of the card. Max 128 bytes long.
+    /// Public key of the recipient of the card. Max 128 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString RecipientPublicKey {
@@ -12663,10 +12660,10 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  Obtains list of identity's relationships that match the given criteria.
+  /// 
+  /// Obtains list of identity's relationships that match the given criteria.
   ///
-  ///  Roles: clNonCustomer, clCustomer
+  /// Roles: clNonCustomer, clCustomer
   /// </summary>
   public sealed partial class GetIdentityRelationshipsInformationRequest : pb::IMessage<GetIdentityRelationshipsInformationRequest> {
     private static readonly pb::MessageParser<GetIdentityRelationshipsInformationRequest> _parser = new pb::MessageParser<GetIdentityRelationshipsInformationRequest>(() => new GetIdentityRelationshipsInformationRequest());
@@ -12708,7 +12705,7 @@ namespace Iop.Profileserver {
     public const int IdentityNetworkIdFieldNumber = 1;
     private pb::ByteString identityNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Identity's network identifier.
+    /// Identity's network identifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IdentityNetworkId {
@@ -12722,7 +12719,7 @@ namespace Iop.Profileserver {
     public const int IncludeInvalidFieldNumber = 2;
     private bool includeInvalid_;
     /// <summary>
-    ///  If set to true, the response may include relationships which cards are no longer valid or not yet valid.
+    /// If set to true, the response may include relationships which cards are no longer valid or not yet valid.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeInvalid {
@@ -12736,7 +12733,7 @@ namespace Iop.Profileserver {
     public const int TypeFieldNumber = 3;
     private string type_ = "";
     /// <summary>
-    ///  WildcardType or empty string. If not empty, the server will only return relationships which card types 
+    /// WildcardType or empty string. If not empty, the server will only return relationships which card types 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Type {
@@ -12750,7 +12747,7 @@ namespace Iop.Profileserver {
     public const int SpecificIssuerFieldNumber = 4;
     private bool specificIssuer_;
     /// <summary>
-    ///  If set to true, the response will only include relationships which cards were issued by issuer with network identifier equal to 'issuerNetworkId'.
+    /// If set to true, the response will only include relationships which cards were issued by issuer with network identifier equal to 'issuerNetworkId'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool SpecificIssuer {
@@ -12764,7 +12761,7 @@ namespace Iop.Profileserver {
     public const int IssuerNetworkIdFieldNumber = 5;
     private pb::ByteString issuerNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  If 'specificIssuer' is true, this is the network identifier of the card issuer whose relationships with the target identity are being queried.
+    /// If 'specificIssuer' is true, this is the network identifier of the card issuer whose relationships with the target identity are being queried.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IssuerNetworkId {
@@ -12914,11 +12911,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to GetIdentityRelationshipsInformationRequest.
+  /// A response to GetIdentityRelationshipsInformationRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "type" - 'GetIdentityRelationshipsInformationRequest.type' is too long.
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "type" - 'GetIdentityRelationshipsInformationRequest.type' is too long.
   /// </summary>
   public sealed partial class GetIdentityRelationshipsInformationResponse : pb::IMessage<GetIdentityRelationshipsInformationResponse> {
     private static readonly pb::MessageParser<GetIdentityRelationshipsInformationResponse> _parser = new pb::MessageParser<GetIdentityRelationshipsInformationResponse>(() => new GetIdentityRelationshipsInformationResponse());
@@ -12958,7 +12955,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(10, global::Iop.Profileserver.IdentityRelationship.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.IdentityRelationship> relationships_ = new pbc::RepeatedField<global::Iop.Profileserver.IdentityRelationship>();
     /// <summary>
-    ///  List of all matching identity relationships together with their relationship cards.
+    /// List of all matching identity relationships together with their relationship cards.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.IdentityRelationship> Relationships {
@@ -13034,7 +13031,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Description of a relationship between two identities together with signature proofs.
+  /// Description of a relationship between two identities together with signature proofs.
   /// </summary>
   public sealed partial class IdentityRelationship : pb::IMessage<IdentityRelationship> {
     private static readonly pb::MessageParser<IdentityRelationship> _parser = new pb::MessageParser<IdentityRelationship>(() => new IdentityRelationship());
@@ -13074,7 +13071,7 @@ namespace Iop.Profileserver {
     public const int CardApplicationFieldNumber = 1;
     private global::Iop.Profileserver.CardApplicationInformation cardApplication_;
     /// <summary>
-    ///  Relationship card application.
+    /// Relationship card application.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CardApplicationInformation CardApplication {
@@ -13088,7 +13085,7 @@ namespace Iop.Profileserver {
     public const int CardApplicationSignatureFieldNumber = 2;
     private pb::ByteString cardApplicationSignature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Relationship card recipient's signature of 'cardApplication' structure.
+    /// Relationship card recipient's signature of 'cardApplication' structure.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CardApplicationSignature {
@@ -13102,7 +13099,7 @@ namespace Iop.Profileserver {
     public const int CardFieldNumber = 3;
     private global::Iop.Profileserver.SignedRelationshipCard card_;
     /// <summary>
-    ///  Relationship card signed by its issuer.
+    /// Relationship card signed by its issuer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SignedRelationshipCard Card {
@@ -13232,55 +13229,55 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Initiates sharing of the profile database with a neighbor profile server.
+  /// Initiates sharing of the profile database with a neighbor profile server.
   ///
-  ///  Profile server joining the network needs to contact its neighbors and ask them to share their 
-  ///  profile databases, so that it can include the profiles of their clients into its own searches.
-  ///  Similarly, profile servers that detect a new neighbor in their neighborhood need to contact 
-  ///  it and ask it to share its profile database with them.
+  /// Profile server joining the network needs to contact its neighbors and ask them to share their 
+  /// profile databases, so that it can include the profiles of their clients into its own searches.
+  /// Similarly, profile servers that detect a new neighbor in their neighborhood need to contact 
+  /// it and ask it to share its profile database with them.
   ///
-  ///  Sharing the profile list always goes from one profile server S (who acts as the server in 
-  ///  the session) to the requesting profile server C (who acts as a client in the session). It is C 
-  ///  who connects to S and sends a request asking S to share its database. If the server C wants 
-  ///  to share its profile database with the server S, it has to wait for the request from S, which 
-  ///  will ask it to share its database. This request will come if S considers C its neighbor.
+  /// Sharing the profile list always goes from one profile server S (who acts as the server in 
+  /// the session) to the requesting profile server C (who acts as a client in the session). It is C 
+  /// who connects to S and sends a request asking S to share its database. If the server C wants 
+  /// to share its profile database with the server S, it has to wait for the request from S, which 
+  /// will ask it to share its database. This request will come if S considers C its neighbor.
   ///
-  ///  The process starts with the server C sending StartNeighborhoodInitializationRequest message to S.
-  ///  If S accepts the request, it replies with StartNeighborhoodInitializationResponse and then 
-  ///  it starts sending NeighborhoodSharedProfileUpdateRequest messages until a full database is sent to C. 
-  ///  With each update message, C has to check the validity of the data and if it accepts the batch
-  ///  it replies with NeighborhoodSharedProfileUpdateResponse. Once all of the profiles are sent to C,
-  ///  S sends FinishNeighborhoodInitializationRequest and if C replies with successful message
-  ///  FinishNeighborhoodInitializationResponse, the process is completed. 
+  /// The process starts with the server C sending StartNeighborhoodInitializationRequest message to S.
+  /// If S accepts the request, it replies with StartNeighborhoodInitializationResponse and then 
+  /// it starts sending NeighborhoodSharedProfileUpdateRequest messages until a full database is sent to C. 
+  /// With each update message, C has to check the validity of the data and if it accepts the batch
+  /// it replies with NeighborhoodSharedProfileUpdateResponse. Once all of the profiles are sent to C,
+  /// S sends FinishNeighborhoodInitializationRequest and if C replies with successful message
+  /// FinishNeighborhoodInitializationResponse, the process is completed. 
   ///
-  ///  If S does not host any profiles yet, it may send FinishNeighborhoodInitializationRequest message 
-  ///  without sending any NeighborhoodSharedProfileUpdateRequest messages.
+  /// If S does not host any profiles yet, it may send FinishNeighborhoodInitializationRequest message 
+  /// without sending any NeighborhoodSharedProfileUpdateRequest messages.
   ///
-  ///  Once C replies with FinishNeighborhoodInitializationResponse, the initialization process is 
-  ///  finished and C can consider the profiles hosted on S in its search queries. If a connection 
-  ///  is terminated or the process is disrupted in any other way, C can not consider the process 
-  ///  as finished and must not include the profiles of S in its searches.
+  /// Once C replies with FinishNeighborhoodInitializationResponse, the initialization process is 
+  /// finished and C can consider the profiles hosted on S in its search queries. If a connection 
+  /// is terminated or the process is disrupted in any other way, C can not consider the process 
+  /// as finished and must not include the profiles of S in its searches.
   ///
-  ///  The profile server S has the responsibility of keeping the information on C up to date. With 
-  ///  each change of a profile that S hosts, it has to contact C and inform it about the change. 
-  ///  This is done using NeighborhoodSharedProfileUpdateRequest messages that are sent outside 
-  ///  the initialization process (i.e. without sending StartNeighborhoodInitializationRequest message 
-  ///  first).
+  /// The profile server S has the responsibility of keeping the information on C up to date. With 
+  /// each change of a profile that S hosts, it has to contact C and inform it about the change. 
+  /// This is done using NeighborhoodSharedProfileUpdateRequest messages that are sent outside 
+  /// the initialization process (i.e. without sending StartNeighborhoodInitializationRequest message 
+  /// first).
   ///
-  ///  If StartNeighborhoodInitializationRequest message is processed successfully, the initialization 
-  ///  of the neighbor relationship is started on the opened session and the initialization process has 
-  ///  to be finished with FinishNeighborhoodInitializationRequest or it will fail when the connection 
-  ///  is terminated. 
+  /// If StartNeighborhoodInitializationRequest message is processed successfully, the initialization 
+  /// of the neighbor relationship is started on the opened session and the initialization process has 
+  /// to be finished with FinishNeighborhoodInitializationRequest or it will fail when the connection 
+  /// is terminated. 
   ///
-  ///  All profiles received from a neighbor have expiration time after which the profile server can 
-  ///  delete them from its database. The minimal refresh time is 24 hours, which means that each server 
-  ///  has to keep the profiles from its neighbors for at least 24 hours from the time of the last 
-  ///  refresh. Each server is free to define its own refresh time longer than 24 hours, which means it 
-  ///  will not delete unrefreshed data for more than 24 hours.
+  /// All profiles received from a neighbor have expiration time after which the profile server can 
+  /// delete them from its database. The minimal refresh time is 24 hours, which means that each server 
+  /// has to keep the profiles from its neighbors for at least 24 hours from the time of the last 
+  /// refresh. Each server is free to define its own refresh time longer than 24 hours, which means it 
+  /// will not delete unrefreshed data for more than 24 hours.
   ///
-  ///  Roles: srNeighbor
+  /// Roles: srNeighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class StartNeighborhoodInitializationRequest : pb::IMessage<StartNeighborhoodInitializationRequest> {
     private static readonly pb::MessageParser<StartNeighborhoodInitializationRequest> _parser = new pb::MessageParser<StartNeighborhoodInitializationRequest>(() => new StartNeighborhoodInitializationRequest());
@@ -13320,7 +13317,7 @@ namespace Iop.Profileserver {
     public const int PrimaryPortFieldNumber = 1;
     private uint primaryPort_;
     /// <summary>
-    ///  Port of the profile server's Primary Interface.
+    /// Port of the profile server's Primary Interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint PrimaryPort {
@@ -13334,7 +13331,7 @@ namespace Iop.Profileserver {
     public const int SrNeighborPortFieldNumber = 2;
     private uint srNeighborPort_;
     /// <summary>
-    ///  Port of the profile server's Neighbors Interface.
+    /// Port of the profile server's Neighbors Interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint SrNeighborPort {
@@ -13348,7 +13345,7 @@ namespace Iop.Profileserver {
     public const int IpAddressFieldNumber = 3;
     private pb::ByteString ipAddress_ = pb::ByteString.Empty;
     /// <summary>
-    ///  IPv4 or IPv6 public address of the network interface on which profile server operates.
+    /// IPv4 or IPv6 public address of the network interface on which profile server operates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IpAddress {
@@ -13466,17 +13463,17 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to StartNeighborhoodInitializationRequest.
+  /// A response to StartNeighborhoodInitializationRequest.
   ///
-  ///  General Error Responses:
-  ///    * ERROR_REJECTED - Profile server has already reached its limit of a number of servers that it shares its profile database with and is not willing to have more.
-  ///    * ERROR_ALREADY_EXISTS - Neighborhood initialization process has already been done, or the initialization process with the peer is currently in the progress.
-  ///    * ERROR_BUSY - Profile server can use this error code during the start of the neighborhood initialization process to express that it is currently busy 
-  ///                   with the neighborhood initialization process with one or more other profile servers.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "primaryPort" - 'StartNeighborhoodInitializationRequest.primaryPort' must be an integer between 1 and 65,535.
-  ///      * Response.details == "srNeighborPort" - 'StartNeighborhoodInitializationRequest.srNeighborPort' must be an integer between 1 and 65,535.
-  ///      * Response.details == "ipAddress" - 'StartNeighborhoodInitializationRequest.ipAddress' is not a valid IPv4 or IPv6 address or it is a local network IP address.
+  /// General Error Responses:
+  ///   * ERROR_REJECTED - Profile server has already reached its limit of a number of servers that it shares its profile database with and is not willing to have more.
+  ///   * ERROR_ALREADY_EXISTS - Neighborhood initialization process has already been done, or the initialization process with the peer is currently in the progress.
+  ///   * ERROR_BUSY - Profile server can use this error code during the start of the neighborhood initialization process to express that it is currently busy 
+  ///                  with the neighborhood initialization process with one or more other profile servers.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "primaryPort" - 'StartNeighborhoodInitializationRequest.primaryPort' must be an integer between 1 and 65,535.
+  ///     * Response.details == "srNeighborPort" - 'StartNeighborhoodInitializationRequest.srNeighborPort' must be an integer between 1 and 65,535.
+  ///     * Response.details == "ipAddress" - 'StartNeighborhoodInitializationRequest.ipAddress' is not a valid IPv4 or IPv6 address or it is a local network IP address.
   /// </summary>
   public sealed partial class StartNeighborhoodInitializationResponse : pb::IMessage<StartNeighborhoodInitializationResponse> {
     private static readonly pb::MessageParser<StartNeighborhoodInitializationResponse> _parser = new pb::MessageParser<StartNeighborhoodInitializationResponse>(() => new StartNeighborhoodInitializationResponse());
@@ -13569,13 +13566,13 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Profile server that was requested to share its profile database with its neighbor using 
-  ///  StartNeighborhoodInitializationRequest uses this request to finish the initialization process. 
-  ///  Sending this message means that all profiles were successfully shared.
+  /// Profile server that was requested to share its profile database with its neighbor using 
+  /// StartNeighborhoodInitializationRequest uses this request to finish the initialization process. 
+  /// Sending this message means that all profiles were successfully shared.
   ///
-  ///  Roles: srNeighbor
+  /// Roles: srNeighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class FinishNeighborhoodInitializationRequest : pb::IMessage<FinishNeighborhoodInitializationRequest> {
     private static readonly pb::MessageParser<FinishNeighborhoodInitializationRequest> _parser = new pb::MessageParser<FinishNeighborhoodInitializationRequest>(() => new FinishNeighborhoodInitializationRequest());
@@ -13668,13 +13665,13 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to FinishNeighborhoodInitializationRequest. 
+  /// A response to FinishNeighborhoodInitializationRequest. 
   ///
-  ///  Sending this response means that the sender will now consider the shared profiles from 
-  ///  the other server in its search queries.
+  /// Sending this response means that the sender will now consider the shared profiles from 
+  /// the other server in its search queries.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_REJECTED - No neighborhood initialization process was started on this session using StartNeighborhoodInitializationRequest.
+  /// Specific Error Responses:
+  ///   * ERROR_REJECTED - No neighborhood initialization process was started on this session using StartNeighborhoodInitializationRequest.
   /// </summary>
   public sealed partial class FinishNeighborhoodInitializationResponse : pb::IMessage<FinishNeighborhoodInitializationResponse> {
     private static readonly pb::MessageParser<FinishNeighborhoodInitializationResponse> _parser = new pb::MessageParser<FinishNeighborhoodInitializationResponse>(() => new FinishNeighborhoodInitializationResponse());
@@ -13767,17 +13764,17 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  This request is sent by a profile server to announce a change in one or more of the profiles 
-  ///  of its customers. This request is also used during the neighborhood initialization to send 
-  ///  the profile server's profile database to the requesting server. If the request is sent outside 
-  ///  the neighborhood initialization process, it is considered as a standalone request.
+  /// This request is sent by a profile server to announce a change in one or more of the profiles 
+  /// of its customers. This request is also used during the neighborhood initialization to send 
+  /// the profile server's profile database to the requesting server. If the request is sent outside 
+  /// the neighborhood initialization process, it is considered as a standalone request.
   ///
-  ///  During the neighborhood initialization process, only items with `SharedProfileUpdateItem.ActionType` 
-  ///  of `add` can be sent.
+  /// During the neighborhood initialization process, only items with `SharedProfileUpdateItem.ActionType` 
+  /// of `add` can be sent.
   ///
-  ///  Roles: srNeighbor
+  /// Roles: srNeighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class NeighborhoodSharedProfileUpdateRequest : pb::IMessage<NeighborhoodSharedProfileUpdateRequest> {
     private static readonly pb::MessageParser<NeighborhoodSharedProfileUpdateRequest> _parser = new pb::MessageParser<NeighborhoodSharedProfileUpdateRequest>(() => new NeighborhoodSharedProfileUpdateRequest());
@@ -13817,7 +13814,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(10, global::Iop.Profileserver.SharedProfileUpdateItem.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.SharedProfileUpdateItem> items_ = new pbc::RepeatedField<global::Iop.Profileserver.SharedProfileUpdateItem>();
     /// <summary>
-    ///  List of profile update items. Within the request, the profiles added/changed/deleted must be unique.
+    /// List of profile update items. Within the request, the profiles added/changed/deleted must be unique.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.SharedProfileUpdateItem> Items {
@@ -13893,46 +13890,46 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to NeighborhoodSharedProfileUpdateRequest.
+  /// A response to NeighborhoodSharedProfileUpdateRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_REJECTED - Neighborhood initialization process has not been done or finished yet, or profile server is no longer interested in receiving updates 
-  ///                       from the requesting profile server. This should have the same effect as if the profile server sent StopNeighborhoodUpdatesRequest to 
-  ///                       the requesting profile server. If the requesting profile server wants to share its database, it has to go through neighborhood 
-  ///                       initialization process from start.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "$index.$field" - All items up to 'NeighborhoodSharedProfileUpdateRequest.items[$index]' (exclusive) were processed correctly
-  ///                                              (and the peer must not send them again) and an error occurred while processing the item with zero-based 
-  ///                                              index $index. Items with index greater then $index were not processed. The $field specifies which field 
-  ///                                              was invalid as follows:
-  ///        * $field == "add" - Number of shared profiles from the requesting profile server exceeds the limit.
-  ///        * $field == "add.signedProfile.profile.version" - `items[$index].add.signedProfile.profile.version` does not contain a valid version information.
-  ///        * $field == "add.signedProfile.profile.publicKey" - `items[$index].add.signedProfile.profile.publicKey` is not a valid public key value or the same identity already exists, 
-  ///                                                            or another update item in the same request referred to this identity.
-  ///        * $field == "add.signedProfile.profile.type" - `items[$index].add.signedProfile.profile.type` is not a valid identity type.
-  ///        * $field == "add.signedProfile.profile.name" - `items[$index].add.signedProfile.profile.name` is not a valid profile name.
-  ///        * $field == "add.signedProfile.profile.latitude" - `items[$index].add.signedProfile.profile.latitude` is not a valid latitude value.
-  ///        * $field == "add.signedProfile.profile.longitude" - `items[$index].add.signedProfile.profile.longitude` is not a valid longitude value.
-  ///        * $field == "add.signedProfile.profile.extraData" - `items[$index].add.signedProfile.profile.extraData` is not a valid extraData value.
-  ///        * $field == "add.signedProfile.profile.profileImageHash" - `items[$index].add.signedProfile.profile.profileImageHash` is neither a valid SHA256 hash nor empty array.
-  ///        * $field == "add.signedProfile.profile.thumbnailImageHash" - `items[$index].add.signedProfile.profile.thumbnailImageHash` is neither a valid SHA256 hash nor empty array.
-  ///        * $field == "add.signedProfile.signature" - `items[$index].add.signedProfile.signature` is not a valid signature or 'items[$index].add.signedProfile.profile'.
-  ///        * $field == "add.thumbnailImage" - `items[$index].add.thumbnailImage` is neither a valid SHA256 hash nor empty array or it does not correspond to the `items[$index].add.signedProfile.profile.thumbnailImageHash` value.
-  ///        * $field == "change.signedProfile.profile.version" - `items[$index].change.signedProfile.profile.version` does not contain a valid version information.
-  ///        * $field == "change.signedProfile.profile.publicKey" - `items[$index].change.signedProfile.profile.publicKey` is not a valid public key value or the identity with this public key does not exist, 
-  ///                                                               or another update item in the same request referred to this identity.
-  ///        * $field == "change.signedProfile.profile.type" - `items[$index].change.signedProfile.profile.type` is not a valid identity type or it does not match the previous value of the type of this profile.
-  ///        * $field == "change.signedProfile.profile.name" - `items[$index].change.signedProfile.profile.name` is not a valid profile name.
-  ///        * $field == "change.signedProfile.profile.latitude" - `items[$index].change.signedProfile.profile.latitude` is not a valid latitude value.
-  ///        * $field == "change.signedProfile.profile.longitude" - `items[$index].change.signedProfile.profile.longitude` is not a valid longitude value.
-  ///        * $field == "change.signedProfile.profile.extraData" - `items[$index].change.signedProfile.profile.extraData` is not a valid extraData value.
-  ///        * $field == "change.signedProfile.profile.profileImageHash" - `items[$index].change.signedProfile.profile.profileImageHash` is neither a valid SHA256 hash nor empty array.
-  ///        * $field == "change.signedProfile.profile.thumbnailImageHash" - `items[$index].change.signedProfile.profile.thumbnailImageHash` is neither a valid SHA256 hash nor empty array.
-  ///        * $field == "change.signedProfile.signature" - `items[$index].change.signedProfile.signature` is not a valid signature or 'items[$index].change.signedProfile.profile'.
-  ///        * $field == "change.thumbnailImage" - `items[$index].change.thumbnailImage` is neither a valid SHA256 hash nor empty array or it does not correspond to the `items[$index].change.signedProfile.profile.thumbnailImageHash` value.
-  ///        * $field == "delete.identityNetworkId" - `items[$index].delete.identityNetworkId` does not represent an existing identity, or another update item 
-  ///                                                 in the same request referred to this identity.
-  ///        * $field == "actionType" - During the neighborhood initialization process, only `add` is a valid update message type.
+  /// Specific Error Responses:
+  ///   * ERROR_REJECTED - Neighborhood initialization process has not been done or finished yet, or profile server is no longer interested in receiving updates 
+  ///                      from the requesting profile server. This should have the same effect as if the profile server sent StopNeighborhoodUpdatesRequest to 
+  ///                      the requesting profile server. If the requesting profile server wants to share its database, it has to go through neighborhood 
+  ///                      initialization process from start.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "$index.$field" - All items up to 'NeighborhoodSharedProfileUpdateRequest.items[$index]' (exclusive) were processed correctly
+  ///                                             (and the peer must not send them again) and an error occurred while processing the item with zero-based 
+  ///                                             index $index. Items with index greater then $index were not processed. The $field specifies which field 
+  ///                                             was invalid as follows:
+  ///       * $field == "add" - Number of shared profiles from the requesting profile server exceeds the limit.
+  ///       * $field == "add.signedProfile.profile.version" - `items[$index].add.signedProfile.profile.version` does not contain a valid version information.
+  ///       * $field == "add.signedProfile.profile.publicKey" - `items[$index].add.signedProfile.profile.publicKey` is not a valid public key value or the same identity already exists, 
+  ///                                                           or another update item in the same request referred to this identity.
+  ///       * $field == "add.signedProfile.profile.type" - `items[$index].add.signedProfile.profile.type` is not a valid identity type.
+  ///       * $field == "add.signedProfile.profile.name" - `items[$index].add.signedProfile.profile.name` is not a valid profile name.
+  ///       * $field == "add.signedProfile.profile.latitude" - `items[$index].add.signedProfile.profile.latitude` is not a valid latitude value.
+  ///       * $field == "add.signedProfile.profile.longitude" - `items[$index].add.signedProfile.profile.longitude` is not a valid longitude value.
+  ///       * $field == "add.signedProfile.profile.extraData" - `items[$index].add.signedProfile.profile.extraData` is not a valid extraData value.
+  ///       * $field == "add.signedProfile.profile.profileImageHash" - `items[$index].add.signedProfile.profile.profileImageHash` is neither a valid SHA256 hash nor empty array.
+  ///       * $field == "add.signedProfile.profile.thumbnailImageHash" - `items[$index].add.signedProfile.profile.thumbnailImageHash` is neither a valid SHA256 hash nor empty array.
+  ///       * $field == "add.signedProfile.signature" - `items[$index].add.signedProfile.signature` is not a valid signature or 'items[$index].add.signedProfile.profile'.
+  ///       * $field == "add.thumbnailImage" - `items[$index].add.thumbnailImage` is neither a valid SHA256 hash nor empty array or it does not correspond to the `items[$index].add.signedProfile.profile.thumbnailImageHash` value.
+  ///       * $field == "change.signedProfile.profile.version" - `items[$index].change.signedProfile.profile.version` does not contain a valid version information.
+  ///       * $field == "change.signedProfile.profile.publicKey" - `items[$index].change.signedProfile.profile.publicKey` is not a valid public key value or the identity with this public key does not exist, 
+  ///                                                              or another update item in the same request referred to this identity.
+  ///       * $field == "change.signedProfile.profile.type" - `items[$index].change.signedProfile.profile.type` is not a valid identity type or it does not match the previous value of the type of this profile.
+  ///       * $field == "change.signedProfile.profile.name" - `items[$index].change.signedProfile.profile.name` is not a valid profile name.
+  ///       * $field == "change.signedProfile.profile.latitude" - `items[$index].change.signedProfile.profile.latitude` is not a valid latitude value.
+  ///       * $field == "change.signedProfile.profile.longitude" - `items[$index].change.signedProfile.profile.longitude` is not a valid longitude value.
+  ///       * $field == "change.signedProfile.profile.extraData" - `items[$index].change.signedProfile.profile.extraData` is not a valid extraData value.
+  ///       * $field == "change.signedProfile.profile.profileImageHash" - `items[$index].change.signedProfile.profile.profileImageHash` is neither a valid SHA256 hash nor empty array.
+  ///       * $field == "change.signedProfile.profile.thumbnailImageHash" - `items[$index].change.signedProfile.profile.thumbnailImageHash` is neither a valid SHA256 hash nor empty array.
+  ///       * $field == "change.signedProfile.signature" - `items[$index].change.signedProfile.signature` is not a valid signature or 'items[$index].change.signedProfile.profile'.
+  ///       * $field == "change.thumbnailImage" - `items[$index].change.thumbnailImage` is neither a valid SHA256 hash nor empty array or it does not correspond to the `items[$index].change.signedProfile.profile.thumbnailImageHash` value.
+  ///       * $field == "delete.identityNetworkId" - `items[$index].delete.identityNetworkId` does not represent an existing identity, or another update item 
+  ///                                                in the same request referred to this identity.
+  ///       * $field == "actionType" - During the neighborhood initialization process, only `add` is a valid update message type.
   /// </summary>
   public sealed partial class NeighborhoodSharedProfileUpdateResponse : pb::IMessage<NeighborhoodSharedProfileUpdateResponse> {
     private static readonly pb::MessageParser<NeighborhoodSharedProfileUpdateResponse> _parser = new pb::MessageParser<NeighborhoodSharedProfileUpdateResponse>(() => new NeighborhoodSharedProfileUpdateResponse());
@@ -14025,7 +14022,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Information about update of a neighborhood profile.
+  /// Information about update of a neighborhood profile.
   /// </summary>
   public sealed partial class SharedProfileUpdateItem : pb::IMessage<SharedProfileUpdateItem> {
     private static readonly pb::MessageParser<SharedProfileUpdateItem> _parser = new pb::MessageParser<SharedProfileUpdateItem>(() => new SharedProfileUpdateItem());
@@ -14076,7 +14073,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "add" field.</summary>
     public const int AddFieldNumber = 1;
     /// <summary>
-    ///   * adding a new profile to the database,
+    ///  * adding a new profile to the database,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SharedProfileAddItem Add {
@@ -14090,7 +14087,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "change" field.</summary>
     public const int ChangeFieldNumber = 2;
     /// <summary>
-    ///   * changing an existing profile,
+    ///  * changing an existing profile,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SharedProfileChangeItem Change {
@@ -14104,7 +14101,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "delete" field.</summary>
     public const int DeleteFieldNumber = 3;
     /// <summary>
-    ///   * deleting an existing profile, 
+    ///  * deleting an existing profile, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SharedProfileDeleteItem Delete {
@@ -14118,7 +14115,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "refresh" field.</summary>
     public const int RefreshFieldNumber = 4;
     /// <summary>
-    ///   * refresh expiration date of all existing profiles.
+    ///  * refresh neighbor's expiration time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SharedProfileRefreshAllItem Refresh {
@@ -14299,7 +14296,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Information about newly created profile that is to be shared with a neighbor.
+  /// Information about newly created profile that is to be shared with a neighbor.
   /// </summary>
   public sealed partial class SharedProfileAddItem : pb::IMessage<SharedProfileAddItem> {
     private static readonly pb::MessageParser<SharedProfileAddItem> _parser = new pb::MessageParser<SharedProfileAddItem>(() => new SharedProfileAddItem());
@@ -14338,7 +14335,7 @@ namespace Iop.Profileserver {
     public const int SignedProfileFieldNumber = 1;
     private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  Signed identity profile information.
+    /// Signed identity profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
@@ -14352,7 +14349,7 @@ namespace Iop.Profileserver {
     public const int ThumbnailImageFieldNumber = 2;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Thumbnail image of the profile or empty array if the profile has no thumbnail image.
+    /// Thumbnail image of the profile or empty array if the profile has no thumbnail image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
@@ -14460,7 +14457,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Information about change in an existing activity that is to be shared with a neighbor.
+  /// Information about change in an existing activity that is to be shared with a neighbor.
   /// </summary>
   public sealed partial class SharedProfileChangeItem : pb::IMessage<SharedProfileChangeItem> {
     private static readonly pb::MessageParser<SharedProfileChangeItem> _parser = new pb::MessageParser<SharedProfileChangeItem>(() => new SharedProfileChangeItem());
@@ -14499,7 +14496,7 @@ namespace Iop.Profileserver {
     public const int SignedProfileFieldNumber = 1;
     private global::Iop.Profileserver.SignedProfileInformation signedProfile_;
     /// <summary>
-    ///  Signed identity profile information.
+    /// Signed identity profile information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SignedProfileInformation SignedProfile {
@@ -14513,7 +14510,7 @@ namespace Iop.Profileserver {
     public const int ThumbnailImageFieldNumber = 2;
     private pb::ByteString thumbnailImage_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Thumbnail image of the profile or empty array if the profile has no thumbnail image.
+    /// Thumbnail image of the profile or empty array if the profile has no thumbnail image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ThumbnailImage {
@@ -14621,7 +14618,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Information about the removal of an existing profile that is to be shared with a neighbor.
+  /// Information about the removal of an existing profile that is to be shared with a neighbor.
   /// </summary>
   public sealed partial class SharedProfileDeleteItem : pb::IMessage<SharedProfileDeleteItem> {
     private static readonly pb::MessageParser<SharedProfileDeleteItem> _parser = new pb::MessageParser<SharedProfileDeleteItem>(() => new SharedProfileDeleteItem());
@@ -14659,7 +14656,7 @@ namespace Iop.Profileserver {
     public const int IdentityNetworkIdFieldNumber = 1;
     private pb::ByteString identityNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  The identity's network identifier.
+    /// The identity's network identifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IdentityNetworkId {
@@ -14745,7 +14742,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Request to refresh all existing profiles of the requesting server on the target server.
+  /// Request to refresh the neighbor status of the requesting server on the target server.
   /// </summary>
   public sealed partial class SharedProfileRefreshAllItem : pb::IMessage<SharedProfileRefreshAllItem> {
     private static readonly pb::MessageParser<SharedProfileRefreshAllItem> _parser = new pb::MessageParser<SharedProfileRefreshAllItem>(() => new SharedProfileRefreshAllItem());
@@ -14838,11 +14835,11 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Asks a (former) neighbor to stop sending updates of its database to the profile server.
+  /// Asks a (former) neighbor to stop sending updates of its database to the profile server.
   ///
-  ///  Roles: srNeighbor
+  /// Roles: srNeighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class StopNeighborhoodUpdatesRequest : pb::IMessage<StopNeighborhoodUpdatesRequest> {
     private static readonly pb::MessageParser<StopNeighborhoodUpdatesRequest> _parser = new pb::MessageParser<StopNeighborhoodUpdatesRequest>(() => new StopNeighborhoodUpdatesRequest());
@@ -14935,10 +14932,10 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to StopNeighborhoodUpdatesRequest. 
+  /// A response to StopNeighborhoodUpdatesRequest. 
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - The target server does not recognize the profile server as its neighbor.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - The target server does not recognize the profile server as its neighbor.
   /// </summary>
   public sealed partial class StopNeighborhoodUpdatesResponse : pb::IMessage<StopNeighborhoodUpdatesResponse> {
     private static readonly pb::MessageParser<StopNeighborhoodUpdatesResponse> _parser = new pb::MessageParser<StopNeighborhoodUpdatesResponse>(() => new StopNeighborhoodUpdatesResponse());
@@ -15031,7 +15028,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Profile server contact information.
+  /// Profile server contact information.
   /// </summary>
   public sealed partial class CanProfileServerContact : pb::IMessage<CanProfileServerContact> {
     private static readonly pb::MessageParser<CanProfileServerContact> _parser = new pb::MessageParser<CanProfileServerContact>(() => new CanProfileServerContact());
@@ -15071,7 +15068,7 @@ namespace Iop.Profileserver {
     public const int PublicKeyFieldNumber = 1;
     private pb::ByteString publicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Profile server's public key.
+    /// Profile server's public key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicKey {
@@ -15085,7 +15082,7 @@ namespace Iop.Profileserver {
     public const int IpAddressFieldNumber = 2;
     private pb::ByteString ipAddress_ = pb::ByteString.Empty;
     /// <summary>
-    ///  IPv4 or IPv6 public address of the network interface on which profile server operates.
+    /// IPv4 or IPv6 public address of the network interface on which profile server operates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IpAddress {
@@ -15099,7 +15096,7 @@ namespace Iop.Profileserver {
     public const int PrimaryPortFieldNumber = 3;
     private uint primaryPort_;
     /// <summary>
-    ///  TCP port of profile server's primary interface.
+    /// TCP port of profile server's primary interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint PrimaryPort {
@@ -15217,7 +15214,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Structure of data an identity client can store in CAN storage.
+  /// Structure of data an identity client can store in CAN storage.
   /// </summary>
   public sealed partial class CanIdentityData : pb::IMessage<CanIdentityData> {
     private static readonly pb::MessageParser<CanIdentityData> _parser = new pb::MessageParser<CanIdentityData>(() => new CanIdentityData());
@@ -15256,7 +15253,7 @@ namespace Iop.Profileserver {
     public const int HostingServerIdFieldNumber = 1;
     private pb::ByteString hostingServerId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Network ID of the profile server that hosts the identity.
+    /// Network ID of the profile server that hosts the identity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString HostingServerId {
@@ -15272,7 +15269,7 @@ namespace Iop.Profileserver {
         = pb::FieldCodec.ForMessage(18, global::Iop.Profileserver.CanKeyValue.Parser);
     private readonly pbc::RepeatedField<global::Iop.Profileserver.CanKeyValue> keyValueList_ = new pbc::RepeatedField<global::Iop.Profileserver.CanKeyValue>();
     /// <summary>
-    ///  Key-value dictionary that contain client defined data.
+    /// Key-value dictionary that contain client defined data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Profileserver.CanKeyValue> KeyValueList {
@@ -15364,7 +15361,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Description of a single item in key-value type of structure.
+  /// Description of a single item in key-value type of structure.
   /// </summary>
   public sealed partial class CanKeyValue : pb::IMessage<CanKeyValue> {
     private static readonly pb::MessageParser<CanKeyValue> _parser = new pb::MessageParser<CanKeyValue>(() => new CanKeyValue());
@@ -15423,7 +15420,7 @@ namespace Iop.Profileserver {
     public const int KeyFieldNumber = 1;
     private string key_ = "";
     /// <summary>
-    ///  Name of the item, which should be unique within the client's CAN object.
+    /// Name of the item, which should be unique within the client's CAN object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Key {
@@ -15698,16 +15695,16 @@ namespace Iop.Profileserver {
   }
 
   /// <summary>
-  ///  
-  ///  Uploads client's object to CAN and deletes the old one if there is any.
+  /// 
+  /// Uploads client's object to CAN and deletes the old one if there is any.
   ///
-  ///  Once an identity is hosted on a profile server, it can use CanStoreDataRequest to upload its CAN object 
-  ///  to CAN. The object has to contain a link back to its profile server, but otherwise, it can contain arbitrary 
-  ///  information as per client's needs. 
+  /// Once an identity is hosted on a profile server, it can use CanStoreDataRequest to upload its CAN object 
+  /// to CAN. The object has to contain a link back to its profile server, but otherwise, it can contain arbitrary 
+  /// information as per client's needs. 
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class CanStoreDataRequest : pb::IMessage<CanStoreDataRequest> {
     private static readonly pb::MessageParser<CanStoreDataRequest> _parser = new pb::MessageParser<CanStoreDataRequest>(() => new CanStoreDataRequest());
@@ -15745,7 +15742,7 @@ namespace Iop.Profileserver {
     public const int DataFieldNumber = 1;
     private global::Iop.Profileserver.CanIdentityData data_;
     /// <summary>
-    ///  Data to store in CAN, or null to just delete the old object.
+    /// Data to store in CAN, or null to just delete the old object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanIdentityData Data {
@@ -15837,15 +15834,15 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to CanStoreDataRequest. 
+  /// A response to CanStoreDataRequest. 
   ///
-  ///  When CAN accepts the object, it returns its hash, which has to be returned to the client. The client uses 
-  ///  the hash to create its IPNS record.
+  /// When CAN accepts the object, it returns its hash, which has to be returned to the client. The client uses 
+  /// the hash to create its IPNS record.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_REJECTED - CAN server reported error, see 'Response.details' for the error message it sent.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "data.hostingServerId" - 'CanStoreDataRequest.data.hostingServerId' is not the profile server's network ID.
+  /// Specific Error Responses:
+  ///   * ERROR_REJECTED - CAN server reported error, see 'Response.details' for the error message it sent.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "data.hostingServerId" - 'CanStoreDataRequest.data.hostingServerId' is not the profile server's network ID.
   /// </summary>
   public sealed partial class CanStoreDataResponse : pb::IMessage<CanStoreDataResponse> {
     private static readonly pb::MessageParser<CanStoreDataResponse> _parser = new pb::MessageParser<CanStoreDataResponse>(() => new CanStoreDataResponse());
@@ -15883,7 +15880,7 @@ namespace Iop.Profileserver {
     public const int HashFieldNumber = 1;
     private pb::ByteString hash_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Hash of 'CanStoreDataRequest.data' received from CAN in multihash binary format, or empty array if 'CanStoreDataRequest.data' was null.
+    /// Hash of 'CanStoreDataRequest.data' received from CAN in multihash binary format, or empty array if 'CanStoreDataRequest.data' was null.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Hash {
@@ -15969,12 +15966,12 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Identity client asks its hosting profile server to publish its IPNS record in CAN on its behalf.
-  ///  
+  /// Identity client asks its hosting profile server to publish its IPNS record in CAN on its behalf.
+  /// 
   ///
-  ///  Roles: clCustomer
+  /// Roles: clCustomer
   ///
-  ///  Conversation status: Authenticated
+  /// Conversation status: Authenticated
   /// </summary>
   public sealed partial class CanPublishIpnsRecordRequest : pb::IMessage<CanPublishIpnsRecordRequest> {
     private static readonly pb::MessageParser<CanPublishIpnsRecordRequest> _parser = new pb::MessageParser<CanPublishIpnsRecordRequest>(() => new CanPublishIpnsRecordRequest());
@@ -16012,7 +16009,7 @@ namespace Iop.Profileserver {
     public const int RecordFieldNumber = 1;
     private global::Iop.Can.CanIpnsEntry record_;
     /// <summary>
-    ///  Signed IPNS record. Its expiration date must not exceed the expiration date 
+    /// Signed IPNS record. Its expiration date must not exceed the expiration date 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Can.CanIpnsEntry Record {
@@ -16104,15 +16101,15 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  A response to CanPublishIpnsRecordRequest.
+  /// A response to CanPublishIpnsRecordRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_REJECTED - CAN server reported error, see 'Response.details' for the error message it sent.
-  ///    * ERROR_NOT_FOUND - Client did not upload any CAN object yet.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "record" - 'CanPublishIpnsRecordRequest.record' does not represent a valid IPNS record.
-  ///      * Response.details == "record.value" - 'CanPublishIpnsRecordRequest.value' does not match the path to the last CAN object the client uploaded using CanStoreDataRequest.
-  ///      * Response.details == "record.validity" - 'CanPublishIpnsRecordRequest.record.validity' is invalid expiration date or it is greater than the client's hosting contract validity.
+  /// Specific Error Responses:
+  ///   * ERROR_REJECTED - CAN server reported error, see 'Response.details' for the error message it sent.
+  ///   * ERROR_NOT_FOUND - Client did not upload any CAN object yet.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "record" - 'CanPublishIpnsRecordRequest.record' does not represent a valid IPNS record.
+  ///     * Response.details == "record.value" - 'CanPublishIpnsRecordRequest.value' does not match the path to the last CAN object the client uploaded using CanStoreDataRequest.
+  ///     * Response.details == "record.validity" - 'CanPublishIpnsRecordRequest.record.validity' is invalid expiration date or it is greater than the client's hosting contract validity.
   /// </summary>
   public sealed partial class CanPublishIpnsRecordResponse : pb::IMessage<CanPublishIpnsRecordResponse> {
     private static readonly pb::MessageParser<CanPublishIpnsRecordResponse> _parser = new pb::MessageParser<CanPublishIpnsRecordResponse>(() => new CanPublishIpnsRecordResponse());

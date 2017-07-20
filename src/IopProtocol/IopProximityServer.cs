@@ -37,59 +37,59 @@ namespace Iop.Proximityserver {
             "aW5nbGVSZXNwb25zZRgIIAEoCzIjLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU2lu",
             "Z2xlUmVzcG9uc2VIABJJChRjb252ZXJzYXRpb25SZXNwb25zZRgJIAEoCzIp",
             "LmlvcC5wcm94aW1pdHlzZXJ2ZXIuQ29udmVyc2F0aW9uUmVzcG9uc2VIAEIS",
-            "ChBDb252ZXJzYXRpb25UeXBlIvMBCg1TaW5nbGVSZXF1ZXN0Eg8KB3ZlcnNp",
+            "ChBDb252ZXJzYXRpb25UeXBlIocDCg1TaW5nbGVSZXF1ZXN0Eg8KB3ZlcnNp",
             "b24YASABKAwSMAoEcGluZxgCIAEoCzIgLmlvcC5wcm94aW1pdHlzZXJ2ZXIu",
             "UGluZ1JlcXVlc3RIABI6CglsaXN0Um9sZXMYAyABKAsyJS5pb3AucHJveGlt",
             "aXR5c2VydmVyLkxpc3RSb2xlc1JlcXVlc3RIABJUChZnZXRBY3Rpdml0eUlu",
             "Zm9ybWF0aW9uGAQgASgLMjIuaW9wLnByb3hpbWl0eXNlcnZlci5HZXRBY3Rp",
-            "dml0eUluZm9ybWF0aW9uUmVxdWVzdEgAQg0KC1JlcXVlc3RUeXBlIvgBCg5T",
-            "aW5nbGVSZXNwb25zZRIPCgd2ZXJzaW9uGAEgASgMEjEKBHBpbmcYAiABKAsy",
-            "IS5pb3AucHJveGltaXR5c2VydmVyLlBpbmdSZXNwb25zZUgAEjsKCWxpc3RS",
-            "b2xlcxgDIAEoCzImLmlvcC5wcm94aW1pdHlzZXJ2ZXIuTGlzdFJvbGVzUmVz",
-            "cG9uc2VIABJVChZnZXRBY3Rpdml0eUluZm9ybWF0aW9uGAQgASgLMjMuaW9w",
-            "LnByb3hpbWl0eXNlcnZlci5HZXRBY3Rpdml0eUluZm9ybWF0aW9uUmVzcG9u",
-            "c2VIAEIOCgxSZXNwb25zZVR5cGUitwcKE0NvbnZlcnNhdGlvblJlcXVlc3QS",
-            "EQoJc2lnbmF0dXJlGAEgASgMEj4KBXN0YXJ0GAIgASgLMi0uaW9wLnByb3hp",
-            "bWl0eXNlcnZlci5TdGFydENvbnZlcnNhdGlvblJlcXVlc3RIABJECg52ZXJp",
-            "ZnlJZGVudGl0eRgDIAEoCzIqLmlvcC5wcm94aW1pdHlzZXJ2ZXIuVmVyaWZ5",
-            "SWRlbnRpdHlSZXF1ZXN0SAASRAoOY3JlYXRlQWN0aXZpdHkYBCABKAsyKi5p",
-            "b3AucHJveGltaXR5c2VydmVyLkNyZWF0ZUFjdGl2aXR5UmVxdWVzdEgAEkQK",
-            "DnVwZGF0ZUFjdGl2aXR5GAUgASgLMiouaW9wLnByb3hpbWl0eXNlcnZlci5V",
-            "cGRhdGVBY3Rpdml0eVJlcXVlc3RIABJECg5kZWxldGVBY3Rpdml0eRgGIAEo",
-            "CzIqLmlvcC5wcm94aW1pdHlzZXJ2ZXIuRGVsZXRlQWN0aXZpdHlSZXF1ZXN0",
-            "SAASRAoOYWN0aXZpdHlTZWFyY2gYByABKAsyKi5pb3AucHJveGltaXR5c2Vy",
-            "dmVyLkFjdGl2aXR5U2VhcmNoUmVxdWVzdEgAEkwKEmFjdGl2aXR5U2VhcmNo",
-            "UGFydBgIIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2ZXIuQWN0aXZpdHlTZWFy",
-            "Y2hQYXJ0UmVxdWVzdEgAEmYKH3N0YXJ0TmVpZ2hib3Job29kSW5pdGlhbGl6",
-            "YXRpb24YCSABKAsyOy5pb3AucHJveGltaXR5c2VydmVyLlN0YXJ0TmVpZ2hi",
-            "b3Job29kSW5pdGlhbGl6YXRpb25SZXF1ZXN0SAASaAogZmluaXNoTmVpZ2hi",
-            "b3Job29kSW5pdGlhbGl6YXRpb24YCiABKAsyPC5pb3AucHJveGltaXR5c2Vy",
-            "dmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVxdWVzdEgA",
-            "EmgKIG5laWdoYm9yaG9vZFNoYXJlZEFjdGl2aXR5VXBkYXRlGAsgASgLMjwu",
-            "aW9wLnByb3hpbWl0eXNlcnZlci5OZWlnaGJvcmhvb2RTaGFyZWRBY3Rpdml0",
-            "eVVwZGF0ZVJlcXVlc3RIABJWChdzdG9wTmVpZ2hib3Job29kVXBkYXRlcxgM",
-            "IAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RvcE5laWdoYm9yaG9vZFVw",
-            "ZGF0ZXNSZXF1ZXN0SABCDQoLUmVxdWVzdFR5cGUixAcKFENvbnZlcnNhdGlv",
-            "blJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEoDBI/CgVzdGFydBgCIAEoCzIu",
-            "LmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RhcnRDb252ZXJzYXRpb25SZXNwb25z",
-            "ZUgAEkUKDnZlcmlmeUlkZW50aXR5GAMgASgLMisuaW9wLnByb3hpbWl0eXNl",
-            "cnZlci5WZXJpZnlJZGVudGl0eVJlc3BvbnNlSAASRQoOY3JlYXRlQWN0aXZp",
-            "dHkYBCABKAsyKy5pb3AucHJveGltaXR5c2VydmVyLkNyZWF0ZUFjdGl2aXR5",
-            "UmVzcG9uc2VIABJFCg51cGRhdGVBY3Rpdml0eRgFIAEoCzIrLmlvcC5wcm94",
-            "aW1pdHlzZXJ2ZXIuVXBkYXRlQWN0aXZpdHlSZXNwb25zZUgAEkUKDmRlbGV0",
-            "ZUFjdGl2aXR5GAYgASgLMisuaW9wLnByb3hpbWl0eXNlcnZlci5EZWxldGVB",
-            "Y3Rpdml0eVJlc3BvbnNlSAASRQoOYWN0aXZpdHlTZWFyY2gYByABKAsyKy5p",
+            "dml0eUluZm9ybWF0aW9uUmVxdWVzdEgAEkQKDmFjdGl2aXR5U2VhcmNoGAUg",
+            "ASgLMiouaW9wLnByb3hpbWl0eXNlcnZlci5BY3Rpdml0eVNlYXJjaFJlcXVl",
+            "c3RIABJMChJhY3Rpdml0eVNlYXJjaFBhcnQYBiABKAsyLi5pb3AucHJveGlt",
+            "aXR5c2VydmVyLkFjdGl2aXR5U2VhcmNoUGFydFJlcXVlc3RIAEINCgtSZXF1",
+            "ZXN0VHlwZSKOAwoOU2luZ2xlUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDBIx",
+            "CgRwaW5nGAIgASgLMiEuaW9wLnByb3hpbWl0eXNlcnZlci5QaW5nUmVzcG9u",
+            "c2VIABI7CglsaXN0Um9sZXMYAyABKAsyJi5pb3AucHJveGltaXR5c2VydmVy",
+            "Lkxpc3RSb2xlc1Jlc3BvbnNlSAASVQoWZ2V0QWN0aXZpdHlJbmZvcm1hdGlv",
+            "bhgEIAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuR2V0QWN0aXZpdHlJbmZv",
+            "cm1hdGlvblJlc3BvbnNlSAASRQoOYWN0aXZpdHlTZWFyY2gYBSABKAsyKy5p",
             "b3AucHJveGltaXR5c2VydmVyLkFjdGl2aXR5U2VhcmNoUmVzcG9uc2VIABJN",
-            "ChJhY3Rpdml0eVNlYXJjaFBhcnQYCCABKAsyLy5pb3AucHJveGltaXR5c2Vy",
-            "dmVyLkFjdGl2aXR5U2VhcmNoUGFydFJlc3BvbnNlSAASZwofc3RhcnROZWln",
-            "aGJvcmhvb2RJbml0aWFsaXphdGlvbhgJIAEoCzI8LmlvcC5wcm94aW1pdHlz",
+            "ChJhY3Rpdml0eVNlYXJjaFBhcnQYBiABKAsyLy5pb3AucHJveGltaXR5c2Vy",
+            "dmVyLkFjdGl2aXR5U2VhcmNoUGFydFJlc3BvbnNlSABCDgoMUmVzcG9uc2VU",
+            "eXBlIqMGChNDb252ZXJzYXRpb25SZXF1ZXN0EhEKCXNpZ25hdHVyZRgBIAEo",
+            "DBI+CgVzdGFydBgCIAEoCzItLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RhcnRD",
+            "b252ZXJzYXRpb25SZXF1ZXN0SAASRAoOdmVyaWZ5SWRlbnRpdHkYAyABKAsy",
+            "Ki5pb3AucHJveGltaXR5c2VydmVyLlZlcmlmeUlkZW50aXR5UmVxdWVzdEgA",
+            "EkQKDmNyZWF0ZUFjdGl2aXR5GAQgASgLMiouaW9wLnByb3hpbWl0eXNlcnZl",
+            "ci5DcmVhdGVBY3Rpdml0eVJlcXVlc3RIABJECg51cGRhdGVBY3Rpdml0eRgF",
+            "IAEoCzIqLmlvcC5wcm94aW1pdHlzZXJ2ZXIuVXBkYXRlQWN0aXZpdHlSZXF1",
+            "ZXN0SAASRAoOZGVsZXRlQWN0aXZpdHkYBiABKAsyKi5pb3AucHJveGltaXR5",
+            "c2VydmVyLkRlbGV0ZUFjdGl2aXR5UmVxdWVzdEgAEmYKH3N0YXJ0TmVpZ2hi",
+            "b3Job29kSW5pdGlhbGl6YXRpb24YByABKAsyOy5pb3AucHJveGltaXR5c2Vy",
+            "dmVyLlN0YXJ0TmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25SZXF1ZXN0SAAS",
+            "aAogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCCABKAsyPC5p",
+            "b3AucHJveGltaXR5c2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
+            "emF0aW9uUmVxdWVzdEgAEmgKIG5laWdoYm9yaG9vZFNoYXJlZEFjdGl2aXR5",
+            "VXBkYXRlGAkgASgLMjwuaW9wLnByb3hpbWl0eXNlcnZlci5OZWlnaGJvcmhv",
+            "b2RTaGFyZWRBY3Rpdml0eVVwZGF0ZVJlcXVlc3RIABJWChdzdG9wTmVpZ2hi",
+            "b3Job29kVXBkYXRlcxgKIAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3Rv",
+            "cE5laWdoYm9yaG9vZFVwZGF0ZXNSZXF1ZXN0SABCDQoLUmVxdWVzdFR5cGUi",
+            "rgYKFENvbnZlcnNhdGlvblJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEoDBI/",
+            "CgVzdGFydBgCIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RhcnRDb252",
+            "ZXJzYXRpb25SZXNwb25zZUgAEkUKDnZlcmlmeUlkZW50aXR5GAMgASgLMisu",
+            "aW9wLnByb3hpbWl0eXNlcnZlci5WZXJpZnlJZGVudGl0eVJlc3BvbnNlSAAS",
+            "RQoOY3JlYXRlQWN0aXZpdHkYBCABKAsyKy5pb3AucHJveGltaXR5c2VydmVy",
+            "LkNyZWF0ZUFjdGl2aXR5UmVzcG9uc2VIABJFCg51cGRhdGVBY3Rpdml0eRgF",
+            "IAEoCzIrLmlvcC5wcm94aW1pdHlzZXJ2ZXIuVXBkYXRlQWN0aXZpdHlSZXNw",
+            "b25zZUgAEkUKDmRlbGV0ZUFjdGl2aXR5GAYgASgLMisuaW9wLnByb3hpbWl0",
+            "eXNlcnZlci5EZWxldGVBY3Rpdml0eVJlc3BvbnNlSAASZwofc3RhcnROZWln",
+            "aGJvcmhvb2RJbml0aWFsaXphdGlvbhgHIAEoCzI8LmlvcC5wcm94aW1pdHlz",
             "ZXJ2ZXIuU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlc3BvbnNl",
-            "SAASaQogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCiABKAsy",
+            "SAASaQogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCCABKAsy",
             "PS5pb3AucHJveGltaXR5c2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRp",
             "YWxpemF0aW9uUmVzcG9uc2VIABJpCiBuZWlnaGJvcmhvb2RTaGFyZWRBY3Rp",
-            "dml0eVVwZGF0ZRgLIAEoCzI9LmlvcC5wcm94aW1pdHlzZXJ2ZXIuTmVpZ2hi",
+            "dml0eVVwZGF0ZRgJIAEoCzI9LmlvcC5wcm94aW1pdHlzZXJ2ZXIuTmVpZ2hi",
             "b3Job29kU2hhcmVkQWN0aXZpdHlVcGRhdGVSZXNwb25zZUgAElcKF3N0b3BO",
-            "ZWlnaGJvcmhvb2RVcGRhdGVzGAwgASgLMjQuaW9wLnByb3hpbWl0eXNlcnZl",
+            "ZWlnaGJvcmhvb2RVcGRhdGVzGAogASgLMjQuaW9wLnByb3hpbWl0eXNlcnZl",
             "ci5TdG9wTmVpZ2hib3Job29kVXBkYXRlc1Jlc3BvbnNlSABCDgoMUmVzcG9u",
             "c2VUeXBlIh4KC1BpbmdSZXF1ZXN0Eg8KB3BheWxvYWQYASABKAwiLgoMUGlu",
             "Z1Jlc3BvbnNlEg8KB3BheWxvYWQYASABKAwSDQoFY2xvY2sYAiABKBIiEgoQ",
@@ -135,41 +135,42 @@ namespace Iop.Proximityserver {
             "cmNoUmVzcG9uc2USGAoQdG90YWxSZWNvcmRDb3VudBgBIAEoDRIeChZtYXhS",
             "ZXNwb25zZVJlY29yZENvdW50GAIgASgNEhYKDmNvdmVyZWRTZXJ2ZXJzGAMg",
             "AygMEkEKCmFjdGl2aXRpZXMYBCADKAsyLS5pb3AucHJveGltaXR5c2VydmVy",
-            "LkFjdGl2aXR5UXVlcnlJbmZvcm1hdGlvbiKuAQoYQWN0aXZpdHlRdWVyeUlu",
+            "LkFjdGl2aXR5UXVlcnlJbmZvcm1hdGlvbiK0AQoYQWN0aXZpdHlRdWVyeUlu",
             "Zm9ybWF0aW9uEhEKCWlzUHJpbWFyeRgBIAEoCBI9Cg1wcmltYXJ5U2VydmVy",
             "GAIgASgLMiYuaW9wLnByb3hpbWl0eXNlcnZlci5TZXJ2ZXJDb250YWN0SW5m",
-            "bxJACghhY3Rpdml0eRgDIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU2ln",
-            "bmVkQWN0aXZpdHlJbmZvcm1hdGlvbiJFChlBY3Rpdml0eVNlYXJjaFBhcnRS",
-            "ZXF1ZXN0EhMKC3JlY29yZEluZGV4GAEgASgNEhMKC3JlY29yZENvdW50GAIg",
-            "ASgNIokBChpBY3Rpdml0eVNlYXJjaFBhcnRSZXNwb25zZRITCgtyZWNvcmRJ",
-            "bmRleBgBIAEoDRITCgtyZWNvcmRDb3VudBgCIAEoDRJBCgphY3Rpdml0aWVz",
-            "GAMgAygLMi0uaW9wLnByb3hpbWl0eXNlcnZlci5BY3Rpdml0eVF1ZXJ5SW5m",
-            "b3JtYXRpb24iZgomU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJl",
-            "cXVlc3QSEwoLcHJpbWFyeVBvcnQYASABKA0SFAoMbmVpZ2hib3JQb3J0GAIg",
-            "ASgNEhEKCWlwQWRkcmVzcxgDIAEoDCIpCidTdGFydE5laWdoYm9yaG9vZElu",
-            "aXRpYWxpemF0aW9uUmVzcG9uc2UiKQonRmluaXNoTmVpZ2hib3Job29kSW5p",
-            "dGlhbGl6YXRpb25SZXF1ZXN0IioKKEZpbmlzaE5laWdoYm9yaG9vZEluaXRp",
-            "YWxpemF0aW9uUmVzcG9uc2UiZwonTmVpZ2hib3Job29kU2hhcmVkQWN0aXZp",
-            "dHlVcGRhdGVSZXF1ZXN0EjwKBWl0ZW1zGAEgAygLMi0uaW9wLnByb3hpbWl0",
-            "eXNlcnZlci5TaGFyZWRBY3Rpdml0eVVwZGF0ZUl0ZW0iKgooTmVpZ2hib3Jo",
-            "b29kU2hhcmVkQWN0aXZpdHlVcGRhdGVSZXNwb25zZSLlAQoYU2hhcmVkQWN0",
-            "aXZpdHlVcGRhdGVJdGVtEjkKA2FkZBgBIAEoCzIqLmlvcC5wcm94aW1pdHlz",
-            "ZXJ2ZXIuU2hhcmVkQWN0aXZpdHlBZGRJdGVtSAASPwoGY2hhbmdlGAIgASgL",
-            "Mi0uaW9wLnByb3hpbWl0eXNlcnZlci5TaGFyZWRBY3Rpdml0eUNoYW5nZUl0",
-            "ZW1IABI/CgZkZWxldGUYAyABKAsyLS5pb3AucHJveGltaXR5c2VydmVyLlNo",
-            "YXJlZEFjdGl2aXR5RGVsZXRlSXRlbUgAQgwKCkFjdGlvblR5cGUiXwoVU2hh",
-            "cmVkQWN0aXZpdHlBZGRJdGVtEkYKDnNpZ25lZEFjdGl2aXR5GAEgASgLMi4u",
-            "aW9wLnByb3hpbWl0eXNlcnZlci5TaWduZWRBY3Rpdml0eUluZm9ybWF0aW9u",
-            "ImIKGFNoYXJlZEFjdGl2aXR5Q2hhbmdlSXRlbRJGCg5zaWduZWRBY3Rpdml0",
-            "eRgBIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU2lnbmVkQWN0aXZpdHlJ",
-            "bmZvcm1hdGlvbiI+ChhTaGFyZWRBY3Rpdml0eURlbGV0ZUl0ZW0SCgoCaWQY",
-            "ASABKA0SFgoOb3duZXJOZXR3b3JrSWQYAiABKAwiHQobU2hhcmVkUHJvZmls",
-            "ZVJlZnJlc2hBbGxJdGVtIiAKHlN0b3BOZWlnaGJvcmhvb2RVcGRhdGVzUmVx",
-            "dWVzdCIhCh9TdG9wTmVpZ2hib3Job29kVXBkYXRlc1Jlc3BvbnNlIlYKGUNh",
-            "blByb3hpbWl0eVNlcnZlckNvbnRhY3QSEQoJcHVibGljS2V5GAEgASgMEhEK",
-            "CWlwQWRkcmVzcxgCIAEoDBITCgtwcmltYXJ5UG9ydBgDIAEoDSo3Cg5TZXJ2",
-            "ZXJSb2xlVHlwZRILCgdQUklNQVJZEAASDAoITkVJR0hCT1IQARIKCgZDTElF",
-            "TlQQAmIGcHJvdG8z"));
+            "bxJGCg5zaWduZWRBY3Rpdml0eRgDIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2",
+            "ZXIuU2lnbmVkQWN0aXZpdHlJbmZvcm1hdGlvbiJFChlBY3Rpdml0eVNlYXJj",
+            "aFBhcnRSZXF1ZXN0EhMKC3JlY29yZEluZGV4GAEgASgNEhMKC3JlY29yZENv",
+            "dW50GAIgASgNIokBChpBY3Rpdml0eVNlYXJjaFBhcnRSZXNwb25zZRITCgty",
+            "ZWNvcmRJbmRleBgBIAEoDRITCgtyZWNvcmRDb3VudBgCIAEoDRJBCgphY3Rp",
+            "dml0aWVzGAMgAygLMi0uaW9wLnByb3hpbWl0eXNlcnZlci5BY3Rpdml0eVF1",
+            "ZXJ5SW5mb3JtYXRpb24iZgomU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXph",
+            "dGlvblJlcXVlc3QSEwoLcHJpbWFyeVBvcnQYASABKA0SFAoMbmVpZ2hib3JQ",
+            "b3J0GAIgASgNEhEKCWlwQWRkcmVzcxgDIAEoDCIpCidTdGFydE5laWdoYm9y",
+            "aG9vZEluaXRpYWxpemF0aW9uUmVzcG9uc2UiKQonRmluaXNoTmVpZ2hib3Jo",
+            "b29kSW5pdGlhbGl6YXRpb25SZXF1ZXN0IioKKEZpbmlzaE5laWdoYm9yaG9v",
+            "ZEluaXRpYWxpemF0aW9uUmVzcG9uc2UiZwonTmVpZ2hib3Job29kU2hhcmVk",
+            "QWN0aXZpdHlVcGRhdGVSZXF1ZXN0EjwKBWl0ZW1zGAEgAygLMi0uaW9wLnBy",
+            "b3hpbWl0eXNlcnZlci5TaGFyZWRBY3Rpdml0eVVwZGF0ZUl0ZW0iKgooTmVp",
+            "Z2hib3Job29kU2hhcmVkQWN0aXZpdHlVcGRhdGVSZXNwb25zZSKoAgoYU2hh",
+            "cmVkQWN0aXZpdHlVcGRhdGVJdGVtEjkKA2FkZBgBIAEoCzIqLmlvcC5wcm94",
+            "aW1pdHlzZXJ2ZXIuU2hhcmVkQWN0aXZpdHlBZGRJdGVtSAASPwoGY2hhbmdl",
+            "GAIgASgLMi0uaW9wLnByb3hpbWl0eXNlcnZlci5TaGFyZWRBY3Rpdml0eUNo",
+            "YW5nZUl0ZW1IABI/CgZkZWxldGUYAyABKAsyLS5pb3AucHJveGltaXR5c2Vy",
+            "dmVyLlNoYXJlZEFjdGl2aXR5RGVsZXRlSXRlbUgAEkEKB3JlZnJlc2gYBCAB",
+            "KAsyLi5pb3AucHJveGltaXR5c2VydmVyLlNoYXJlZEFjdGl2aXR5UmVmcmVz",
+            "aEl0ZW1IAEIMCgpBY3Rpb25UeXBlIl8KFVNoYXJlZEFjdGl2aXR5QWRkSXRl",
+            "bRJGCg5zaWduZWRBY3Rpdml0eRgBIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2",
+            "ZXIuU2lnbmVkQWN0aXZpdHlJbmZvcm1hdGlvbiJiChhTaGFyZWRBY3Rpdml0",
+            "eUNoYW5nZUl0ZW0SRgoOc2lnbmVkQWN0aXZpdHkYASABKAsyLi5pb3AucHJv",
+            "eGltaXR5c2VydmVyLlNpZ25lZEFjdGl2aXR5SW5mb3JtYXRpb24iPgoYU2hh",
+            "cmVkQWN0aXZpdHlEZWxldGVJdGVtEgoKAmlkGAEgASgNEhYKDm93bmVyTmV0",
+            "d29ya0lkGAIgASgMIhsKGVNoYXJlZEFjdGl2aXR5UmVmcmVzaEl0ZW0iIAoe",
+            "U3RvcE5laWdoYm9yaG9vZFVwZGF0ZXNSZXF1ZXN0IiEKH1N0b3BOZWlnaGJv",
+            "cmhvb2RVcGRhdGVzUmVzcG9uc2UiVgoZQ2FuUHJveGltaXR5U2VydmVyQ29u",
+            "dGFjdBIRCglwdWJsaWNLZXkYASABKAwSEQoJaXBBZGRyZXNzGAIgASgMEhMK",
+            "C3ByaW1hcnlQb3J0GAMgASgNKjcKDlNlcnZlclJvbGVUeXBlEgsKB1BSSU1B",
+            "UlkQABIMCghORUlHSEJPUhABEgoKBkNMSUVOVBACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Iop.Shared.IopSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Iop.Proximityserver.ServerRoleType), }, new pbr::GeneratedClrTypeInfo[] {
@@ -177,10 +178,10 @@ namespace Iop.Proximityserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.Message), global::Iop.Proximityserver.Message.Parser, new[]{ "Id", "Request", "Response" }, new[]{ "MessageType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.Request), global::Iop.Proximityserver.Request.Parser, new[]{ "SingleRequest", "ConversationRequest" }, new[]{ "ConversationType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.Response), global::Iop.Proximityserver.Response.Parser, new[]{ "Status", "Timestamp", "Details", "SingleResponse", "ConversationResponse" }, new[]{ "ConversationType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleRequest), global::Iop.Proximityserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleResponse), global::Iop.Proximityserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation" }, new[]{ "ResponseType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationRequest), global::Iop.Proximityserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "ActivitySearch", "ActivitySearchPart", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationResponse), global::Iop.Proximityserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "ActivitySearch", "ActivitySearchPart", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleRequest), global::Iop.Proximityserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation", "ActivitySearch", "ActivitySearchPart" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleResponse), global::Iop.Proximityserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation", "ActivitySearch", "ActivitySearchPart" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationRequest), global::Iop.Proximityserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationResponse), global::Iop.Proximityserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "ResponseType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.PingRequest), global::Iop.Proximityserver.PingRequest.Parser, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.PingResponse), global::Iop.Proximityserver.PingResponse.Parser, new[]{ "Payload", "Clock" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ListRolesRequest), global::Iop.Proximityserver.ListRolesRequest.Parser, null, null, null, null),
@@ -203,7 +204,7 @@ namespace Iop.Proximityserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.GetActivityInformationResponse), global::Iop.Proximityserver.GetActivityInformationResponse.Parser, new[]{ "Info" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchRequest), global::Iop.Proximityserver.ActivitySearchRequest.Parser, new[]{ "IncludePrimaryOnly", "MaxResponseRecordCount", "MaxTotalRecordCount", "OwnerNetworkId", "Type", "StartNotAfter", "ExpirationNotBefore", "Latitude", "Longitude", "Radius", "ExtraData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchResponse), global::Iop.Proximityserver.ActivitySearchResponse.Parser, new[]{ "TotalRecordCount", "MaxResponseRecordCount", "CoveredServers", "Activities" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivityQueryInformation), global::Iop.Proximityserver.ActivityQueryInformation.Parser, new[]{ "IsPrimary", "PrimaryServer", "Activity" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivityQueryInformation), global::Iop.Proximityserver.ActivityQueryInformation.Parser, new[]{ "IsPrimary", "PrimaryServer", "SignedActivity" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchPartRequest), global::Iop.Proximityserver.ActivitySearchPartRequest.Parser, new[]{ "RecordIndex", "RecordCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ActivitySearchPartResponse), global::Iop.Proximityserver.ActivitySearchPartResponse.Parser, new[]{ "RecordIndex", "RecordCount", "Activities" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StartNeighborhoodInitializationRequest), global::Iop.Proximityserver.StartNeighborhoodInitializationRequest.Parser, new[]{ "PrimaryPort", "NeighborPort", "IpAddress" }, null, null, null),
@@ -212,11 +213,11 @@ namespace Iop.Proximityserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse), global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest), global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest.Parser, new[]{ "Items" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse), global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityUpdateItem), global::Iop.Proximityserver.SharedActivityUpdateItem.Parser, new[]{ "Add", "Change", "Delete" }, new[]{ "ActionType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityUpdateItem), global::Iop.Proximityserver.SharedActivityUpdateItem.Parser, new[]{ "Add", "Change", "Delete", "Refresh" }, new[]{ "ActionType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityAddItem), global::Iop.Proximityserver.SharedActivityAddItem.Parser, new[]{ "SignedActivity" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityChangeItem), global::Iop.Proximityserver.SharedActivityChangeItem.Parser, new[]{ "SignedActivity" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityDeleteItem), global::Iop.Proximityserver.SharedActivityDeleteItem.Parser, new[]{ "Id", "OwnerNetworkId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedProfileRefreshAllItem), global::Iop.Proximityserver.SharedProfileRefreshAllItem.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SharedActivityRefreshItem), global::Iop.Proximityserver.SharedActivityRefreshItem.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest), global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse), global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.CanProximityServerContact), global::Iop.Proximityserver.CanProximityServerContact.Parser, new[]{ "PublicKey", "IpAddress", "PrimaryPort" }, null, null, null)
@@ -227,19 +228,19 @@ namespace Iop.Proximityserver {
   }
   #region Enums
   /// <summary>
-  ///  Known server roles.
+  /// Known server roles.
   /// </summary>
   public enum ServerRoleType {
     /// <summary>
-    ///  Primary Interface server role.
+    /// Primary Interface server role.
     /// </summary>
     [pbr::OriginalName("PRIMARY")] Primary = 0,
     /// <summary>
-    ///  Neighbors Interface server role.
+    /// Neighbors Interface server role.
     /// </summary>
     [pbr::OriginalName("NEIGHBOR")] Neighbor = 1,
     /// <summary>
-    ///  Clients Interface server role.
+    /// Clients Interface server role.
     /// </summary>
     [pbr::OriginalName("CLIENT")] Client = 2,
   }
@@ -248,16 +249,16 @@ namespace Iop.Proximityserver {
 
   #region Messages
   /// <summary>
-  ///  This is complete message as it goes over the wire. It includes the 32-bit header with message length.
+  /// This is complete message as it goes over the wire. It includes the 32-bit header with message length.
   ///
-  ///  There is a 1 byte prefix because of Google Protobuf protocol, so the actual binary data for a message
-  ///  with body size 4660 bytes would be:
+  /// There is a 1 byte prefix because of Google Protobuf protocol, so the actual binary data for a message
+  /// with body size 4660 bytes would be:
   ///
-  ///    0D 34 12 00 00
+  ///   0D 34 12 00 00
   ///
-  ///  where 0x0D means type 'fixed32' (which value is 5) + index of 'header', which is 1 &lt;&lt; 3,
-  ///  this is followed be the 4 byte sequence 34 12 00 00, which is little endian of 0x00001234, which is 4,660 decimal.
-  ///  Thus the total number of bytes sent over the wire for this message would be 4,665 bytes.
+  /// where 0x0D means type 'fixed32' (which value is 5) + index of 'header', which is 1 &lt;&lt; 3,
+  /// this is followed be the 4 byte sequence 34 12 00 00, which is little endian of 0x00001234, which is 4,660 decimal.
+  /// Thus the total number of bytes sent over the wire for this message would be 4,665 bytes.
   /// </summary>
   public sealed partial class MessageWithHeader : pb::IMessage<MessageWithHeader> {
     private static readonly pb::MessageParser<MessageWithHeader> _parser = new pb::MessageParser<MessageWithHeader>(() => new MessageWithHeader());
@@ -296,7 +297,7 @@ namespace Iop.Proximityserver {
     public const int HeaderFieldNumber = 1;
     private uint header_;
     /// <summary>
-    ///  Message length (without the size of the header) as a little-endian 32-bit unsigned integer.
+    /// Message length (without the size of the header) as a little-endian 32-bit unsigned integer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Header {
@@ -310,7 +311,7 @@ namespace Iop.Proximityserver {
     public const int BodyFieldNumber = 2;
     private global::Iop.Proximityserver.Message body_;
     /// <summary>
-    ///  Message itself.
+    /// Maximum size of the whole message is 1,048,576 bytes, which means the maximal value in the header is 1,048,571.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.Message Body {
@@ -417,7 +418,7 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  Format of a single message.
+  /// Format of a single message.
   /// </summary>
   public sealed partial class Message : pb::IMessage<Message> {
     private static readonly pb::MessageParser<Message> _parser = new pb::MessageParser<Message>(() => new Message());
@@ -464,7 +465,7 @@ namespace Iop.Proximityserver {
     public const int IdFieldNumber = 1;
     private uint id_;
     /// <summary>
-    ///  Requestor defined message ID that the requestee has to return in the response. 
+    /// Requestor defined message ID that the requestee has to return in the response. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Id {
@@ -477,7 +478,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "request" field.</summary>
     public const int RequestFieldNumber = 2;
     /// <summary>
-    ///   * a new request,
+    ///  * a new request,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.Request Request {
@@ -491,7 +492,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "response" field.</summary>
     public const int ResponseFieldNumber = 3;
     /// <summary>
-    ///   * or response to a previous request.
+    ///  * or response to a previous request.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.Response Response {
@@ -643,9 +644,9 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  Every conversation starts with a request of a requestor.
-  ///  This can be either a single request, for which it is expected to receive a single response,
-  ///  or this can be part of a longer conversation between the peers.
+  /// Every conversation starts with a request of a requestor.
+  /// This can be either a single request, for which it is expected to receive a single response,
+  /// or this can be part of a longer conversation between the peers.
   /// </summary>
   public sealed partial class Request : pb::IMessage<Request> {
     private static readonly pb::MessageParser<Request> _parser = new pb::MessageParser<Request>(() => new Request());
@@ -690,7 +691,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "singleRequest" field.</summary>
     public const int SingleRequestFieldNumber = 1;
     /// <summary>
-    ///  Single requests are requests that are supposed to be sent without further context.
+    /// Single requests are requests that are supposed to be sent without further context.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.SingleRequest SingleRequest {
@@ -704,7 +705,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "conversationRequest" field.</summary>
     public const int ConversationRequestFieldNumber = 2;
     /// <summary>
-    ///  Conversation requests form a session with a context that has to be maintained by peers in order to correctly interpret the messages.
+    /// Conversation requests form a session with a context that has to be maintained by peers in order to correctly interpret the messages.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ConversationRequest ConversationRequest {
@@ -840,7 +841,7 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  To every request there is a response.
+  /// To every request there is a response.
   /// </summary>
   public sealed partial class Response : pb::IMessage<Response> {
     private static readonly pb::MessageParser<Response> _parser = new pb::MessageParser<Response>(() => new Response());
@@ -889,7 +890,7 @@ namespace Iop.Proximityserver {
     public const int StatusFieldNumber = 1;
     private global::Iop.Shared.Status status_ = 0;
     /// <summary>
-    ///  Return code.
+    /// Return code.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Shared.Status Status {
@@ -903,7 +904,7 @@ namespace Iop.Proximityserver {
     public const int TimestampFieldNumber = 2;
     private long timestamp_;
     /// <summary>
-    ///  TimestampType. If status is ERROR_BANNED, this field specifies when the blacklist entry expires.
+    /// TimestampType. If status is ERROR_BANNED, this field specifies when the blacklist entry expires.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Timestamp {
@@ -917,7 +918,7 @@ namespace Iop.Proximityserver {
     public const int DetailsFieldNumber = 3;
     private string details_ = "";
     /// <summary>
-    ///  In case of an error, this field may contain additional details.
+    /// In case of an error, this field may contain additional details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Details {
@@ -930,7 +931,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "singleResponse" field.</summary>
     public const int SingleResponseFieldNumber = 8;
     /// <summary>
-    ///  Responses to single requests are sent as single responses,
+    /// Responses to single requests are sent as single responses,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.SingleResponse SingleResponse {
@@ -944,7 +945,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "conversationResponse" field.</summary>
     public const int ConversationResponseFieldNumber = 9;
     /// <summary>
-    ///  responses to conversation requests are sent as conversation responses.
+    /// responses to conversation requests are sent as conversation responses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ConversationResponse ConversationResponse {
@@ -1128,8 +1129,8 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  Single requests live on their own without any session or context. 
-  ///  It is always possible to process a single request without any additional informaiton.
+  /// Single requests live on their own without any session or context. 
+  /// It is always possible to process a single request without any additional informaiton.
   /// </summary>
   public sealed partial class SingleRequest : pb::IMessage<SingleRequest> {
     private static readonly pb::MessageParser<SingleRequest> _parser = new pb::MessageParser<SingleRequest>(() => new SingleRequest());
@@ -1166,6 +1167,12 @@ namespace Iop.Proximityserver {
         case RequestTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation.Clone();
           break;
+        case RequestTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch.Clone();
+          break;
+        case RequestTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart.Clone();
+          break;
       }
 
     }
@@ -1179,7 +1186,7 @@ namespace Iop.Proximityserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. Protocol version specification.
+    /// VersionType. Protocol version specification.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -1222,6 +1229,28 @@ namespace Iop.Proximityserver {
       }
     }
 
+    /// <summary>Field number for the "activitySearch" field.</summary>
+    public const int ActivitySearchFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchRequest ActivitySearch {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearch;
+      }
+    }
+
+    /// <summary>Field number for the "activitySearchPart" field.</summary>
+    public const int ActivitySearchPartFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchPartRequest ActivitySearchPart {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearchPart;
+      }
+    }
+
     private object requestType_;
     /// <summary>Enum of possible cases for the "RequestType" oneof.</summary>
     public enum RequestTypeOneofCase {
@@ -1229,6 +1258,8 @@ namespace Iop.Proximityserver {
       Ping = 2,
       ListRoles = 3,
       GetActivityInformation = 4,
+      ActivitySearch = 5,
+      ActivitySearchPart = 6,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1259,6 +1290,8 @@ namespace Iop.Proximityserver {
       if (!object.Equals(Ping, other.Ping)) return false;
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(GetActivityInformation, other.GetActivityInformation)) return false;
+      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
+      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (RequestTypeCase != other.RequestTypeCase) return false;
       return true;
     }
@@ -1270,6 +1303,8 @@ namespace Iop.Proximityserver {
       if (requestTypeCase_ == RequestTypeOneofCase.Ping) hash ^= Ping.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.GetActivityInformation) hash ^= GetActivityInformation.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       hash ^= (int) requestTypeCase_;
       return hash;
     }
@@ -1297,6 +1332,14 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(34);
         output.WriteMessage(GetActivityInformation);
       }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ActivitySearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ActivitySearchPart);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1313,6 +1356,12 @@ namespace Iop.Proximityserver {
       }
       if (requestTypeCase_ == RequestTypeOneofCase.GetActivityInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetActivityInformation);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
       }
       return size;
     }
@@ -1334,6 +1383,12 @@ namespace Iop.Proximityserver {
           break;
         case RequestTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation;
+          break;
+        case RequestTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch;
+          break;
+        case RequestTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart;
           break;
       }
 
@@ -1378,6 +1433,24 @@ namespace Iop.Proximityserver {
             GetActivityInformation = subBuilder;
             break;
           }
+          case 42: {
+            global::Iop.Proximityserver.ActivitySearchRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
+              subBuilder.MergeFrom(ActivitySearch);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearch = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Iop.Proximityserver.ActivitySearchPartRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchPartRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
+              subBuilder.MergeFrom(ActivitySearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearchPart = subBuilder;
+            break;
+          }
         }
       }
     }
@@ -1385,7 +1458,7 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  Single response is a reaction to single request. 
+  /// Single response is a reaction to single request. 
   /// </summary>
   public sealed partial class SingleResponse : pb::IMessage<SingleResponse> {
     private static readonly pb::MessageParser<SingleResponse> _parser = new pb::MessageParser<SingleResponse>(() => new SingleResponse());
@@ -1422,6 +1495,12 @@ namespace Iop.Proximityserver {
         case ResponseTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation.Clone();
           break;
+        case ResponseTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch.Clone();
+          break;
+        case ResponseTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart.Clone();
+          break;
       }
 
     }
@@ -1435,7 +1514,7 @@ namespace Iop.Proximityserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. See 'SingleRequest.version'. The version of response can be different than the version in request, 
+    /// VersionType. See 'SingleRequest.version'. The version of response can be different than the version in request, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -1478,6 +1557,28 @@ namespace Iop.Proximityserver {
       }
     }
 
+    /// <summary>Field number for the "activitySearch" field.</summary>
+    public const int ActivitySearchFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchResponse ActivitySearch {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearch;
+      }
+    }
+
+    /// <summary>Field number for the "activitySearchPart" field.</summary>
+    public const int ActivitySearchPartFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchPartResponse ActivitySearchPart {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearchPart;
+      }
+    }
+
     private object responseType_;
     /// <summary>Enum of possible cases for the "ResponseType" oneof.</summary>
     public enum ResponseTypeOneofCase {
@@ -1485,6 +1586,8 @@ namespace Iop.Proximityserver {
       Ping = 2,
       ListRoles = 3,
       GetActivityInformation = 4,
+      ActivitySearch = 5,
+      ActivitySearchPart = 6,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1515,6 +1618,8 @@ namespace Iop.Proximityserver {
       if (!object.Equals(Ping, other.Ping)) return false;
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(GetActivityInformation, other.GetActivityInformation)) return false;
+      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
+      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (ResponseTypeCase != other.ResponseTypeCase) return false;
       return true;
     }
@@ -1526,6 +1631,8 @@ namespace Iop.Proximityserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.Ping) hash ^= Ping.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.GetActivityInformation) hash ^= GetActivityInformation.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       hash ^= (int) responseTypeCase_;
       return hash;
     }
@@ -1553,6 +1660,14 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(34);
         output.WriteMessage(GetActivityInformation);
       }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ActivitySearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ActivitySearchPart);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1569,6 +1684,12 @@ namespace Iop.Proximityserver {
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.GetActivityInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetActivityInformation);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
       }
       return size;
     }
@@ -1590,6 +1711,12 @@ namespace Iop.Proximityserver {
           break;
         case ResponseTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation;
+          break;
+        case ResponseTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch;
+          break;
+        case ResponseTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart;
           break;
       }
 
@@ -1634,6 +1761,24 @@ namespace Iop.Proximityserver {
             GetActivityInformation = subBuilder;
             break;
           }
+          case 42: {
+            global::Iop.Proximityserver.ActivitySearchResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
+              subBuilder.MergeFrom(ActivitySearch);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearch = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Iop.Proximityserver.ActivitySearchPartResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchPartResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
+              subBuilder.MergeFrom(ActivitySearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearchPart = subBuilder;
+            break;
+          }
         }
       }
     }
@@ -1641,8 +1786,8 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  Conversation requests live in a session with a context that is important for the interpretation of the requests.
-  ///  Unlike single requests, the order of messages is very important as each message may change the session context.
+  /// Conversation requests live in a session with a context that is important for the interpretation of the requests.
+  /// Unlike single requests, the order of messages is very important as each message may change the session context.
   /// </summary>
   public sealed partial class ConversationRequest : pb::IMessage<ConversationRequest> {
     private static readonly pb::MessageParser<ConversationRequest> _parser = new pb::MessageParser<ConversationRequest>(() => new ConversationRequest());
@@ -1685,12 +1830,6 @@ namespace Iop.Proximityserver {
         case RequestTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity.Clone();
           break;
-        case RequestTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch.Clone();
-          break;
-        case RequestTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart.Clone();
-          break;
         case RequestTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization.Clone();
           break;
@@ -1716,7 +1855,7 @@ namespace Iop.Proximityserver {
     public const int SignatureFieldNumber = 1;
     private pb::ByteString signature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Optional (request specific) signature that signs the Protobuf binary form of the included request body or its part.
+    /// Optional (request specific) signature that signs the Protobuf binary form of the included request body or its part.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Signature {
@@ -1729,7 +1868,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "start" field.</summary>
     public const int StartFieldNumber = 2;
     /// <summary>
-    ///  Request body.
+    /// Request body.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StartConversationRequest Start {
@@ -1784,30 +1923,8 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "activitySearch" field.</summary>
-    public const int ActivitySearchFieldNumber = 7;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchRequest ActivitySearch {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearch;
-      }
-    }
-
-    /// <summary>Field number for the "activitySearchPart" field.</summary>
-    public const int ActivitySearchPartFieldNumber = 8;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchPartRequest ActivitySearchPart {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearchPart;
-      }
-    }
-
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 9;
+    public const int StartNeighborhoodInitializationFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StartNeighborhoodInitializationRequest StartNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Proximityserver.StartNeighborhoodInitializationRequest) requestType_ : null; }
@@ -1818,7 +1935,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 10;
+    public const int FinishNeighborhoodInitializationFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest FinishNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest) requestType_ : null; }
@@ -1829,7 +1946,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedActivityUpdate" field.</summary>
-    public const int NeighborhoodSharedActivityUpdateFieldNumber = 11;
+    public const int NeighborhoodSharedActivityUpdateFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest NeighborhoodSharedActivityUpdate {
       get { return requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate ? (global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest) requestType_ : null; }
@@ -1840,7 +1957,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 12;
+    public const int StopNeighborhoodUpdatesFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest StopNeighborhoodUpdates {
       get { return requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest) requestType_ : null; }
@@ -1859,12 +1976,10 @@ namespace Iop.Proximityserver {
       CreateActivity = 4,
       UpdateActivity = 5,
       DeleteActivity = 6,
-      ActivitySearch = 7,
-      ActivitySearchPart = 8,
-      StartNeighborhoodInitialization = 9,
-      FinishNeighborhoodInitialization = 10,
-      NeighborhoodSharedActivityUpdate = 11,
-      StopNeighborhoodUpdates = 12,
+      StartNeighborhoodInitialization = 7,
+      FinishNeighborhoodInitialization = 8,
+      NeighborhoodSharedActivityUpdate = 9,
+      StopNeighborhoodUpdates = 10,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1897,8 +2012,6 @@ namespace Iop.Proximityserver {
       if (!object.Equals(CreateActivity, other.CreateActivity)) return false;
       if (!object.Equals(UpdateActivity, other.UpdateActivity)) return false;
       if (!object.Equals(DeleteActivity, other.DeleteActivity)) return false;
-      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
-      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
       if (!object.Equals(FinishNeighborhoodInitialization, other.FinishNeighborhoodInitialization)) return false;
       if (!object.Equals(NeighborhoodSharedActivityUpdate, other.NeighborhoodSharedActivityUpdate)) return false;
@@ -1916,8 +2029,6 @@ namespace Iop.Proximityserver {
       if (requestTypeCase_ == RequestTypeOneofCase.CreateActivity) hash ^= CreateActivity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.UpdateActivity) hash ^= UpdateActivity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.DeleteActivity) hash ^= DeleteActivity.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) hash ^= FinishNeighborhoodInitialization.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate) hash ^= NeighborhoodSharedActivityUpdate.GetHashCode();
@@ -1957,28 +2068,20 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(50);
         output.WriteMessage(DeleteActivity);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
-        output.WriteRawTag(58);
-        output.WriteMessage(ActivitySearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
-        output.WriteRawTag(66);
-        output.WriteMessage(ActivitySearchPart);
-      }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(58);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(82);
+        output.WriteRawTag(66);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate) {
-        output.WriteRawTag(90);
+        output.WriteRawTag(74);
         output.WriteMessage(NeighborhoodSharedActivityUpdate);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(98);
+        output.WriteRawTag(82);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
     }
@@ -2003,12 +2106,6 @@ namespace Iop.Proximityserver {
       }
       if (requestTypeCase_ == RequestTypeOneofCase.DeleteActivity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeleteActivity);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
@@ -2048,12 +2145,6 @@ namespace Iop.Proximityserver {
           break;
         case RequestTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity;
-          break;
-        case RequestTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch;
-          break;
-        case RequestTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart;
           break;
         case RequestTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization;
@@ -2129,24 +2220,6 @@ namespace Iop.Proximityserver {
             break;
           }
           case 58: {
-            global::Iop.Proximityserver.ActivitySearchRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
-              subBuilder.MergeFrom(ActivitySearch);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearch = subBuilder;
-            break;
-          }
-          case 66: {
-            global::Iop.Proximityserver.ActivitySearchPartRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchPartRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
-              subBuilder.MergeFrom(ActivitySearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearchPart = subBuilder;
-            break;
-          }
-          case 74: {
             global::Iop.Proximityserver.StartNeighborhoodInitializationRequest subBuilder = new global::Iop.Proximityserver.StartNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -2155,7 +2228,7 @@ namespace Iop.Proximityserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 82: {
+          case 66: {
             global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest subBuilder = new global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -2164,7 +2237,7 @@ namespace Iop.Proximityserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 90: {
+          case 74: {
             global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest subBuilder = new global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedActivityUpdate);
@@ -2173,7 +2246,7 @@ namespace Iop.Proximityserver {
             NeighborhoodSharedActivityUpdate = subBuilder;
             break;
           }
-          case 98: {
+          case 82: {
             global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest subBuilder = new global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -2189,7 +2262,7 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  Conversation response is a reaction to a conversation request.
+  /// Conversation response is a reaction to a conversation request.
   /// </summary>
   public sealed partial class ConversationResponse : pb::IMessage<ConversationResponse> {
     private static readonly pb::MessageParser<ConversationResponse> _parser = new pb::MessageParser<ConversationResponse>(() => new ConversationResponse());
@@ -2232,12 +2305,6 @@ namespace Iop.Proximityserver {
         case ResponseTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity.Clone();
           break;
-        case ResponseTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch.Clone();
-          break;
-        case ResponseTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart.Clone();
-          break;
         case ResponseTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization.Clone();
           break;
@@ -2263,7 +2330,7 @@ namespace Iop.Proximityserver {
     public const int SignatureFieldNumber = 1;
     private pb::ByteString signature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Optional (response specific) signature that signs the Protobuf binary form of the included response body or its part.
+    /// Optional (response specific) signature that signs the Protobuf binary form of the included response body or its part.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Signature {
@@ -2276,7 +2343,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "start" field.</summary>
     public const int StartFieldNumber = 2;
     /// <summary>
-    ///  Response body.
+    /// Response body.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StartConversationResponse Start {
@@ -2331,30 +2398,8 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "activitySearch" field.</summary>
-    public const int ActivitySearchFieldNumber = 7;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchResponse ActivitySearch {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearch;
-      }
-    }
-
-    /// <summary>Field number for the "activitySearchPart" field.</summary>
-    public const int ActivitySearchPartFieldNumber = 8;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchPartResponse ActivitySearchPart {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearchPart;
-      }
-    }
-
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 9;
+    public const int StartNeighborhoodInitializationFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StartNeighborhoodInitializationResponse StartNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Proximityserver.StartNeighborhoodInitializationResponse) responseType_ : null; }
@@ -2365,7 +2410,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 10;
+    public const int FinishNeighborhoodInitializationFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse FinishNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse) responseType_ : null; }
@@ -2376,7 +2421,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedActivityUpdate" field.</summary>
-    public const int NeighborhoodSharedActivityUpdateFieldNumber = 11;
+    public const int NeighborhoodSharedActivityUpdateFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse NeighborhoodSharedActivityUpdate {
       get { return responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate ? (global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse) responseType_ : null; }
@@ -2387,7 +2432,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 12;
+    public const int StopNeighborhoodUpdatesFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse StopNeighborhoodUpdates {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse) responseType_ : null; }
@@ -2406,12 +2451,10 @@ namespace Iop.Proximityserver {
       CreateActivity = 4,
       UpdateActivity = 5,
       DeleteActivity = 6,
-      ActivitySearch = 7,
-      ActivitySearchPart = 8,
-      StartNeighborhoodInitialization = 9,
-      FinishNeighborhoodInitialization = 10,
-      NeighborhoodSharedActivityUpdate = 11,
-      StopNeighborhoodUpdates = 12,
+      StartNeighborhoodInitialization = 7,
+      FinishNeighborhoodInitialization = 8,
+      NeighborhoodSharedActivityUpdate = 9,
+      StopNeighborhoodUpdates = 10,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2444,8 +2487,6 @@ namespace Iop.Proximityserver {
       if (!object.Equals(CreateActivity, other.CreateActivity)) return false;
       if (!object.Equals(UpdateActivity, other.UpdateActivity)) return false;
       if (!object.Equals(DeleteActivity, other.DeleteActivity)) return false;
-      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
-      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
       if (!object.Equals(FinishNeighborhoodInitialization, other.FinishNeighborhoodInitialization)) return false;
       if (!object.Equals(NeighborhoodSharedActivityUpdate, other.NeighborhoodSharedActivityUpdate)) return false;
@@ -2463,8 +2504,6 @@ namespace Iop.Proximityserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.CreateActivity) hash ^= CreateActivity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.UpdateActivity) hash ^= UpdateActivity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.DeleteActivity) hash ^= DeleteActivity.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) hash ^= FinishNeighborhoodInitialization.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate) hash ^= NeighborhoodSharedActivityUpdate.GetHashCode();
@@ -2504,28 +2543,20 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(50);
         output.WriteMessage(DeleteActivity);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
-        output.WriteRawTag(58);
-        output.WriteMessage(ActivitySearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
-        output.WriteRawTag(66);
-        output.WriteMessage(ActivitySearchPart);
-      }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(58);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(82);
+        output.WriteRawTag(66);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate) {
-        output.WriteRawTag(90);
+        output.WriteRawTag(74);
         output.WriteMessage(NeighborhoodSharedActivityUpdate);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(98);
+        output.WriteRawTag(82);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
     }
@@ -2550,12 +2581,6 @@ namespace Iop.Proximityserver {
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.DeleteActivity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeleteActivity);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
@@ -2595,12 +2620,6 @@ namespace Iop.Proximityserver {
           break;
         case ResponseTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity;
-          break;
-        case ResponseTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch;
-          break;
-        case ResponseTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart;
           break;
         case ResponseTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization;
@@ -2676,24 +2695,6 @@ namespace Iop.Proximityserver {
             break;
           }
           case 58: {
-            global::Iop.Proximityserver.ActivitySearchResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
-              subBuilder.MergeFrom(ActivitySearch);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearch = subBuilder;
-            break;
-          }
-          case 66: {
-            global::Iop.Proximityserver.ActivitySearchPartResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchPartResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
-              subBuilder.MergeFrom(ActivitySearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearchPart = subBuilder;
-            break;
-          }
-          case 74: {
             global::Iop.Proximityserver.StartNeighborhoodInitializationResponse subBuilder = new global::Iop.Proximityserver.StartNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -2702,7 +2703,7 @@ namespace Iop.Proximityserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 82: {
+          case 66: {
             global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse subBuilder = new global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -2711,7 +2712,7 @@ namespace Iop.Proximityserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 90: {
+          case 74: {
             global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse subBuilder = new global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedActivityUpdate);
@@ -2720,7 +2721,7 @@ namespace Iop.Proximityserver {
             NeighborhoodSharedActivityUpdate = subBuilder;
             break;
           }
-          case 98: {
+          case 82: {
             global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse subBuilder = new global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -2737,14 +2738,14 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  An administrative message to test whether the peer is there and responds to requests.
+  /// An administrative message to test whether the peer is there and responds to requests.
   ///
-  ///  Each identity client is required to send a message not more than 60 seconds after the connection 
-  ///  was established, or after the last message has been send over the connection. For server clients,
-  ///  this limit is 300 seconds. Clients should use PingRequest if they have nothing else to send
-  ///  and want to keep the connection open.
+  /// Each identity client is required to send a message not more than 60 seconds after the connection 
+  /// was established, or after the last message has been send over the connection. For server clients,
+  /// this limit is 300 seconds. Clients should use PingRequest if they have nothing else to send
+  /// and want to keep the connection open.
   ///
-  ///  Roles: any
+  /// Roles: any
   /// </summary>
   public sealed partial class PingRequest : pb::IMessage<PingRequest> {
     private static readonly pb::MessageParser<PingRequest> _parser = new pb::MessageParser<PingRequest>(() => new PingRequest());
@@ -2782,7 +2783,7 @@ namespace Iop.Proximityserver {
     public const int PayloadFieldNumber = 1;
     private pb::ByteString payload_ = pb::ByteString.Empty;
     /// <summary>
-    ///  At most 64 bytes of arbitrary data that will be sent back by the peer.
+    /// At most 64 bytes of arbitrary data that will be sent back by the peer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Payload {
@@ -2867,7 +2868,7 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  A response to PingRequest to reassure the connection works fine.
+  /// A response to PingRequest to reassure the connection works fine.
   /// </summary>
   public sealed partial class PingResponse : pb::IMessage<PingResponse> {
     private static readonly pb::MessageParser<PingResponse> _parser = new pb::MessageParser<PingResponse>(() => new PingResponse());
@@ -2906,7 +2907,7 @@ namespace Iop.Proximityserver {
     public const int PayloadFieldNumber = 1;
     private pb::ByteString payload_ = pb::ByteString.Empty;
     /// <summary>
-    ///  See 'PingRequest.payload'.
+    /// See 'PingRequest.payload'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Payload {
@@ -2920,7 +2921,7 @@ namespace Iop.Proximityserver {
     public const int ClockFieldNumber = 2;
     private long clock_;
     /// <summary>
-    ///  TimestampType. Clock on the requestee's machine.
+    /// TimestampType. Clock on the requestee's machine.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Clock {
@@ -3022,9 +3023,9 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Request server to provide a mapping between ports and roles.
+  /// Request server to provide a mapping between ports and roles.
   ///
-  ///  Roles: primary
+  /// Roles: primary
   /// </summary>
   public sealed partial class ListRolesRequest : pb::IMessage<ListRolesRequest> {
     private static readonly pb::MessageParser<ListRolesRequest> _parser = new pb::MessageParser<ListRolesRequest>(() => new ListRolesRequest());
@@ -3116,7 +3117,7 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  A response to ListRolesRequest with a list of all open ports and associated roles.
+  /// A response to ListRolesRequest with a list of all open ports and associated roles.
   /// </summary>
   public sealed partial class ListRolesResponse : pb::IMessage<ListRolesResponse> {
     private static readonly pb::MessageParser<ListRolesResponse> _parser = new pb::MessageParser<ListRolesResponse>(() => new ListRolesResponse());
@@ -3156,7 +3157,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForMessage(10, global::Iop.Proximityserver.ServerRole.Parser);
     private readonly pbc::RepeatedField<global::Iop.Proximityserver.ServerRole> roles_ = new pbc::RepeatedField<global::Iop.Proximityserver.ServerRole>();
     /// <summary>
-    ///  List of server roles.
+    /// List of server roles.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Proximityserver.ServerRole> Roles {
@@ -3231,7 +3232,7 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  Description of a single server role.
+  /// Description of a single server role.
   /// </summary>
   public sealed partial class ServerRole : pb::IMessage<ServerRole> {
     private static readonly pb::MessageParser<ServerRole> _parser = new pb::MessageParser<ServerRole>(() => new ServerRole());
@@ -3272,7 +3273,7 @@ namespace Iop.Proximityserver {
     public const int RoleFieldNumber = 1;
     private global::Iop.Proximityserver.ServerRoleType role_ = 0;
     /// <summary>
-    ///  Server role type.
+    /// Server role type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ServerRoleType Role {
@@ -3286,7 +3287,7 @@ namespace Iop.Proximityserver {
     public const int PortFieldNumber = 2;
     private uint port_;
     /// <summary>
-    ///  On which port is this server role provided.
+    /// On which port is this server role provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Port {
@@ -3300,7 +3301,7 @@ namespace Iop.Proximityserver {
     public const int IsTcpFieldNumber = 3;
     private bool isTcp_;
     /// <summary>
-    ///  true if the port is TCP port, false means UDP.
+    /// true if the port is TCP port, false means UDP.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsTcp {
@@ -3314,7 +3315,7 @@ namespace Iop.Proximityserver {
     public const int IsTlsFieldNumber = 4;
     private bool isTls_;
     /// <summary>
-    ///  true if the port is TLS encrypted, false otherwise.
+    /// true if the port is TLS encrypted, false otherwise.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsTls {
@@ -3448,12 +3449,12 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Every conversation starts with this request, in which the requestor sends a list of protocol versions 
-  ///  it supports and its public key that identifies it.
+  /// Every conversation starts with this request, in which the requestor sends a list of protocol versions 
+  /// it supports and its public key that identifies it.
   ///
-  ///  Roles: any
+  /// Roles: any
   ///
-  ///  Conversation status: NoConversation
+  /// Conversation status: NoConversation
   /// </summary>
   public sealed partial class StartConversationRequest : pb::IMessage<StartConversationRequest> {
     private static readonly pb::MessageParser<StartConversationRequest> _parser = new pb::MessageParser<StartConversationRequest>(() => new StartConversationRequest());
@@ -3495,7 +3496,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForBytes(10);
     private readonly pbc::RepeatedField<pb::ByteString> supportedVersions_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  List of VersionType items. Ordered by requestor's preference. See 'SingleRequest.version'.
+    /// List of VersionType items. Ordered by requestor's preference. See 'SingleRequest.version'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> SupportedVersions {
@@ -3506,7 +3507,7 @@ namespace Iop.Proximityserver {
     public const int PublicKeyFieldNumber = 2;
     private pb::ByteString publicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the requestor. Max 128 bytes.
+    /// Public key of the requestor. Max 128 bytes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicKey {
@@ -3520,7 +3521,7 @@ namespace Iop.Proximityserver {
     public const int ClientChallengeFieldNumber = 3;
     private pb::ByteString clientChallenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  32 byte challenge data (random bytes generated by the requestor) that is used for authentication purposes.
+    /// 32 byte challenge data (random bytes generated by the requestor) that is used for authentication purposes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ClientChallenge {
@@ -3631,18 +3632,18 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to StartConversationRequest in case the requestee found at least one protocol version that 
-  ///  both peers are willing to use. 
-  ///  
-  ///  The 'clientChallenge' field value in raw format is signed with a signature in 'ConversationResponse.signature'.
-  ///  
+  /// A response to StartConversationRequest in case the requestee found at least one protocol version that 
+  /// both peers are willing to use. 
+  /// 
+  /// The 'clientChallenge' field value in raw format is signed with a signature in 'ConversationResponse.signature'.
+  /// 
   ///
-  ///  After StartConversationResponse is sent, the conversation context includes version and keys of both peers.
+  /// After StartConversationResponse is sent, the conversation context includes version and keys of both peers.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "publicKey" - 'StartConversationRequest.publicKey' is not a valid public key value. 
-  ///      * Response.details == "clientChallenge" - 'StartConversationRequest.clientChallenge' is not 32 byte long. 
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "publicKey" - 'StartConversationRequest.publicKey' is not a valid public key value. 
+  ///     * Response.details == "clientChallenge" - 'StartConversationRequest.clientChallenge' is not 32 byte long. 
   /// </summary>
   public sealed partial class StartConversationResponse : pb::IMessage<StartConversationResponse> {
     private static readonly pb::MessageParser<StartConversationResponse> _parser = new pb::MessageParser<StartConversationResponse>(() => new StartConversationResponse());
@@ -3683,7 +3684,7 @@ namespace Iop.Proximityserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. The version that the requestee selected from the offered set.
+    /// VersionType. The version that the requestee selected from the offered set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -3697,7 +3698,7 @@ namespace Iop.Proximityserver {
     public const int PublicKeyFieldNumber = 2;
     private pb::ByteString publicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Public key of the requestee.
+    /// Public key of the requestee.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicKey {
@@ -3711,7 +3712,7 @@ namespace Iop.Proximityserver {
     public const int ChallengeFieldNumber = 3;
     private pb::ByteString challenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  32 byte challenge data (random bytes generated by the requestee) that is used for later authentication purposes.
+    /// 32 byte challenge data (random bytes generated by the requestee) that is used for later authentication purposes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Challenge {
@@ -3725,7 +3726,7 @@ namespace Iop.Proximityserver {
     public const int ClientChallengeFieldNumber = 4;
     private pb::ByteString clientChallenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Copy of 'StartConversationRequest.clientChallenge' that is signed by the requestee. 
+    /// Copy of 'StartConversationRequest.clientChallenge' that is signed by the requestee. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ClientChallenge {
@@ -3858,12 +3859,12 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  
-  ///  A client verifies its public key by signing the challenge. The client has to provide a signature in 'ConversationRequest.signature'.
+  /// 
+  /// A client verifies its public key by signing the challenge. The client has to provide a signature in 'ConversationRequest.signature'.
   ///
-  ///  Roles: neighbor, client
+  /// Roles: neighbor, client
   ///
-  ///  Conversation status: ConversationStarted
+  /// Conversation status: ConversationStarted
   /// </summary>
   public sealed partial class VerifyIdentityRequest : pb::IMessage<VerifyIdentityRequest> {
     private static readonly pb::MessageParser<VerifyIdentityRequest> _parser = new pb::MessageParser<VerifyIdentityRequest>(() => new VerifyIdentityRequest());
@@ -3901,7 +3902,7 @@ namespace Iop.Proximityserver {
     public const int ChallengeFieldNumber = 1;
     private pb::ByteString challenge_ = pb::ByteString.Empty;
     /// <summary>
-    ///  The exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
+    /// The exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Challenge {
@@ -3987,12 +3988,12 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to VerifyIdentityRequest. If no error occurs, the conversation status is upgraded to Verified.
+  /// A response to VerifyIdentityRequest. If no error occurs, the conversation status is upgraded to Verified.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the challenge is not valid.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "challenge" - 'VerifyIdentityRequest.challenge' is not the exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the challenge is not valid.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "challenge" - 'VerifyIdentityRequest.challenge' is not the exact copy of 'StartConversationResponse.challenge' from the start of the conversation.
   /// </summary>
   public sealed partial class VerifyIdentityResponse : pb::IMessage<VerifyIdentityResponse> {
     private static readonly pb::MessageParser<VerifyIdentityResponse> _parser = new pb::MessageParser<VerifyIdentityResponse>(() => new VerifyIdentityResponse());
@@ -4085,20 +4086,20 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A client creates a new activity with the target proximity server as the primary proximity 
-  ///  server of the activity. The server checks whether it really is the closest proximity server 
-  ///  for the new activity’s location and if so, it becomes the activity’s primary proximity server. 
-  ///  The server propagates the activity to its neighbors.
+  /// A client creates a new activity with the target proximity server as the primary proximity 
+  /// server of the activity. The server checks whether it really is the closest proximity server 
+  /// for the new activity’s location and if so, it becomes the activity’s primary proximity server. 
+  /// The server propagates the activity to its neighbors.
   ///
-  ///  The proximity server will not refuse the update if it is not the closest proximity server to 
-  ///  the activity’s location but at the same time all closer servers are on the list of proximity 
-  ///  servers to ignore.
+  /// The proximity server will not refuse the update if it is not the closest proximity server to 
+  /// the activity’s location but at the same time all closer servers are on the list of proximity 
+  /// servers to ignore.
   ///
-  ///  The 'activity' field value in raw format is signed with a signature in 'ConversationRequest.signature'.
+  /// The 'activity' field value in raw format is signed with a signature in 'ConversationRequest.signature'.
   ///
-  ///  Roles: client
+  /// Roles: client
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class CreateActivityRequest : pb::IMessage<CreateActivityRequest> {
     private static readonly pb::MessageParser<CreateActivityRequest> _parser = new pb::MessageParser<CreateActivityRequest>(() => new CreateActivityRequest());
@@ -4137,7 +4138,7 @@ namespace Iop.Proximityserver {
     public const int ActivityFieldNumber = 1;
     private global::Iop.Proximityserver.ActivityInformation activity_;
     /// <summary>
-    ///  Description of the activity.
+    /// Description of the activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ActivityInformation Activity {
@@ -4153,7 +4154,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForBytes(18);
     private readonly pbc::RepeatedField<pb::ByteString> ignoreServerIds_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  List of network identifiers of proximity servers to ignore. The list can be empty.
+    /// List of network identifiers of proximity servers to ignore. The list can be empty.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> IgnoreServerIds {
@@ -4251,28 +4252,30 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to CreateActivityRequest.
+  /// A response to CreateActivityRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_ALREADY_EXISTS - The server already has an activity from the client with 'CreateActivityRequest.id' as its identifier.
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the 'CreateActivityRequest.activity' in 'ConversationRequest.signature' is not valid.
-  ///    * ERROR_REJECTED - The server knows a proximity server that is closer to the location of the activity and its ID is not on the list of ignored servers.
-  ///      * Response.details - Set to hexadecimally encoded network identifier of the proximity server that is closer to the activity location than the target server.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "activity.version" - 'CreateActivityRequest.activity.version' does not contain a valid version information.
-  ///      * Response.details == "activity.id" - 'CreateActivityRequest.activity.id' is not a valid activity identifier.
-  ///      * Response.details == "activity.ownerPublicKey" - 'CreateActivityRequest.ownerPublicKey.id' is not the public key of the client who sent the request.
-  ///      * Response.details == "activity.profileServerContact.networkId" - 'CreateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
-  ///      * Response.details == "activity.profileServerContact.ipAddress" - 'CreateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
-  ///      * Response.details == "activity.profileServerContact.primaryPort" - 'CreateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65,535.
-  ///      * Response.details == "activity.type" - 'CreateActivityRequest.activity.type' is not a valid activity type.
-  ///      * Response.details == "activity.latitude" - 'CreateActivityRequest.activity.latitude' is not a valid latitude information.
-  ///      * Response.details == "activity.longitude" - 'CreateActivityRequest.activity.longitude' is not a valid longitude information.
-  ///      * Response.details == "activity.precision" - 'CreateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
-  ///      * Response.details == "activity.startTime" - 'CreateActivityRequest.activity.startTime' does not contain a valid start time information.
-  ///      * Response.details == "activity.expirationTime" - 'CreateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'.
-  ///      * Response.details == "activity.extraData" - 'CreateActivityRequest.activity.extraData' does not contain a valid extra data information.
-  ///      * Response.details == "ignoreServerIds" - 'CreateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
+  /// Specific Error Responses:
+  ///   * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new activities because it has no free slots.
+  ///   * ERROR_ALREADY_EXISTS - The server already has an activity from the client with 'CreateActivityRequest.id' as its identifier.
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the 'CreateActivityRequest.activity' in 'ConversationRequest.signature' is not valid.
+  ///   * ERROR_REJECTED - The server knows a proximity server that is closer to the location of the activity and its ID is not on the list of ignored servers.
+  ///     * Response.details - Set to hexadecimally encoded network identifier of the proximity server that is closer to the activity location than the target server.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "activity.version" - 'CreateActivityRequest.activity.version' does not contain a valid version information.
+  ///     * Response.details == "activity.id" - 'CreateActivityRequest.activity.id' is not a valid activity identifier.
+  ///     * Response.details == "activity.ownerPublicKey" - 'CreateActivityRequest.ownerPublicKey.id' is not the public key of the client who sent the request.
+  ///     * Response.details == "activity.profileServerContact.networkId" - 'CreateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
+  ///     * Response.details == "activity.profileServerContact.ipAddress" - 'CreateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
+  ///     * Response.details == "activity.profileServerContact.primaryPort" - 'CreateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65,535.
+  ///     * Response.details == "activity.type" - 'CreateActivityRequest.activity.type' is not a valid activity type.
+  ///     * Response.details == "activity.latitude" - 'CreateActivityRequest.activity.latitude' is not a valid latitude information.
+  ///     * Response.details == "activity.longitude" - 'CreateActivityRequest.activity.longitude' is not a valid longitude information.
+  ///     * Response.details == "activity.precision" - 'CreateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
+  ///     * Response.details == "activity.startTime" - 'CreateActivityRequest.activity.startTime' does not contain a valid start time information.
+  ///     * Response.details == "activity.expirationTime" - 'CreateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'
+  ///                                                       or it is more than 24 hours in the future.
+  ///     * Response.details == "activity.extraData" - 'CreateActivityRequest.activity.extraData' does not contain a valid extra data information.
+  ///     * Response.details == "ignoreServerIds" - 'CreateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
   /// </summary>
   public sealed partial class CreateActivityResponse : pb::IMessage<CreateActivityResponse> {
     private static readonly pb::MessageParser<CreateActivityResponse> _parser = new pb::MessageParser<CreateActivityResponse>(() => new CreateActivityResponse());
@@ -4365,7 +4368,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Decription of an activity.
+  /// Decription of an activity.
   /// </summary>
   public sealed partial class ActivityInformation : pb::IMessage<ActivityInformation> {
     private static readonly pb::MessageParser<ActivityInformation> _parser = new pb::MessageParser<ActivityInformation>(() => new ActivityInformation());
@@ -4413,7 +4416,7 @@ namespace Iop.Proximityserver {
     public const int VersionFieldNumber = 1;
     private pb::ByteString version_ = pb::ByteString.Empty;
     /// <summary>
-    ///  VersionType. Version of the activity structure.
+    /// VersionType. Version of the activity structure.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Version {
@@ -4427,7 +4430,7 @@ namespace Iop.Proximityserver {
     public const int IdFieldNumber = 2;
     private uint id_;
     /// <summary>
-    ///  Unique identifier of the client’s activity. The globally unique identification of an activity 
+    /// Unique identifier of the client’s activity. The globally unique identification of an activity 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Id {
@@ -4441,9 +4444,9 @@ namespace Iop.Proximityserver {
     public const int OwnerPublicKeyFieldNumber = 3;
     private pb::ByteString ownerPublicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  is this activity ID combined with the user’s network identifier. It is client’s responsibility 
-    ///  not to present two activities with the same activity ID to the proximity network.
-    ///  0 is not a valid activity identifier.
+    /// is this activity ID combined with the user’s network identifier. It is client’s responsibility 
+    /// not to present two activities with the same activity ID to the proximity network.
+    /// 0 is not a valid activity identifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString OwnerPublicKey {
@@ -4457,7 +4460,7 @@ namespace Iop.Proximityserver {
     public const int ProfileServerContactFieldNumber = 4;
     private global::Iop.Proximityserver.ServerContactInfo profileServerContact_;
     /// <summary>
-    ///  Contact information to the owner's profile server.
+    /// Contact information to the owner's profile server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ServerContactInfo ProfileServerContact {
@@ -4471,7 +4474,7 @@ namespace Iop.Proximityserver {
     public const int TypeFieldNumber = 5;
     private string type_ = "";
     /// <summary>
-    ///  Type of activity in human readable form, non-empty string, max 64 bytes long.
+    /// Type of activity in human readable form, non-empty string, max 64 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Type {
@@ -4485,7 +4488,7 @@ namespace Iop.Proximityserver {
     public const int LatitudeFieldNumber = 6;
     private int latitude_;
     /// <summary>
-    ///  LocationType. GPS location latitude information. Together with 'longitude' and 'precision' this provides information 
+    /// Once set, the type of activity can not be changed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Latitude {
@@ -4499,9 +4502,9 @@ namespace Iop.Proximityserver {
     public const int LongitudeFieldNumber = 7;
     private int longitude_;
     /// <summary>
-    ///  the activity location. On non-primary proximity servers, this is not the latest reported location of the activity, 
-    ///  but rather the last known location to the server being queried, which will often be the original location of the activity.
-    ///  On primary proximity servers, the location information is current.
+    /// the activity location. On non-primary proximity servers, this might not be the latest reported location of the activity, 
+    /// but rather the last known location to the server being queried, which will often be the original location of the activity.
+    /// On primary proximity servers, the location information is current.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Longitude {
@@ -4515,7 +4518,7 @@ namespace Iop.Proximityserver {
     public const int PrecisionFieldNumber = 8;
     private uint precision_;
     /// <summary>
-    ///  Precision information in metres is an integer between 0 and 1,000.
+    /// Precision information in metres is an integer between 0 and 1,000.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Precision {
@@ -4529,7 +4532,8 @@ namespace Iop.Proximityserver {
     public const int StartTimeFieldNumber = 9;
     private long startTime_;
     /// <summary>
-    ///  TimestampType. Time when the activity starts. This can be in the past for already running 
+    /// On non-primary proximity servers, this might not be the latest reported precision information
+    /// but rather the last known to the server being queried. On primary proximity servers, the precision information is current. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long StartTime {
@@ -4543,7 +4547,7 @@ namespace Iop.Proximityserver {
     public const int ExpirationTimeFieldNumber = 10;
     private long expirationTime_;
     /// <summary>
-    ///  or past activities as well as in the future for future activities.
+    /// or past activities as well as in the future for future activities.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long ExpirationTime {
@@ -4557,7 +4561,7 @@ namespace Iop.Proximityserver {
     public const int ExtraDataFieldNumber = 11;
     private string extraData_ = "";
     /// <summary>
-    ///  Semicolon separated 'key=value' list or empty string, max 2048 bytes long.
+    /// Semicolon separated 'key=value' list or empty string, max 2048 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ExtraData {
@@ -4809,7 +4813,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Signed description of an activity.
+  /// Signed description of an activity.
   /// </summary>
   public sealed partial class SignedActivityInformation : pb::IMessage<SignedActivityInformation> {
     private static readonly pb::MessageParser<SignedActivityInformation> _parser = new pb::MessageParser<SignedActivityInformation>(() => new SignedActivityInformation());
@@ -4848,7 +4852,7 @@ namespace Iop.Proximityserver {
     public const int ActivityFieldNumber = 1;
     private global::Iop.Proximityserver.ActivityInformation activity_;
     /// <summary>
-    ///  Description of an activity.
+    /// Description of an activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ActivityInformation Activity {
@@ -4862,7 +4866,7 @@ namespace Iop.Proximityserver {
     public const int SignatureFieldNumber = 2;
     private pb::ByteString signature_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Signature of 'activity' value in raw format using private key of the identity that owns the profile.
+    /// Signature of 'activity' value in raw format using private key of the identity that owns the profile.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Signature {
@@ -4970,7 +4974,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Network server contact information.
+  /// Network server contact information.
   /// </summary>
   public sealed partial class ServerContactInfo : pb::IMessage<ServerContactInfo> {
     private static readonly pb::MessageParser<ServerContactInfo> _parser = new pb::MessageParser<ServerContactInfo>(() => new ServerContactInfo());
@@ -5010,7 +5014,7 @@ namespace Iop.Proximityserver {
     public const int NetworkIdFieldNumber = 1;
     private pb::ByteString networkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Network identifier is a SHA256 hash of the server's public key.
+    /// Network identifier is a SHA256 hash of the server's public key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString NetworkId {
@@ -5024,7 +5028,7 @@ namespace Iop.Proximityserver {
     public const int IpAddressFieldNumber = 2;
     private pb::ByteString ipAddress_ = pb::ByteString.Empty;
     /// <summary>
-    ///  IPv4 or IPv6 public address of the network interface on which the server operates.
+    /// IPv4 or IPv6 public address of the network interface on which the server operates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IpAddress {
@@ -5038,7 +5042,7 @@ namespace Iop.Proximityserver {
     public const int PrimaryPortFieldNumber = 3;
     private uint primaryPort_;
     /// <summary>
-    ///  Server's primary port.
+    /// Server's primary port.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint PrimaryPort {
@@ -5156,21 +5160,21 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A client updates information about existing activity on its primary proximity server. Based on which 
-  ///  parts of the activity are modified and client signalling, the server may or may not propagate the changes 
-  ///  to its neighbors.
+  /// A client updates information about existing activity on its primary proximity server. Based on which 
+  /// parts of the activity are modified and client signalling, the server may or may not propagate the changes 
+  /// to its neighbors.
   ///
-  ///  The proximity server may refuse the update if the new location of the activity suggests that it should 
-  ///  be submitted to a new primary proximity server. In such a case, the server provides the contact information 
-  ///  of the other proximity server (that is closer to the new activity location) and removes the activity from 
-  ///  its database and propagates this information to its neighborhood. The proximity server will not refuse 
-  ///  the update if the suggested new primary proximity server is on the list of proximity servers to ignore.
+  /// The proximity server may refuse the update if the new location of the activity suggests that it should 
+  /// be submitted to a new primary proximity server. In such a case, the server provides the contact information 
+  /// of the other proximity server (that is closer to the new activity location) and removes the activity from 
+  /// its database and propagates this information to its neighborhood. The proximity server will not refuse 
+  /// the update if the suggested new primary proximity server is on the list of proximity servers to ignore.
   ///
-  ///  The 'activity' field value in raw format is signed with a signature in 'ConversationRequest.signature'.
+  /// The 'activity' field value in raw format is signed with a signature in 'ConversationRequest.signature'.
   ///
-  ///  Roles: client
+  /// Roles: client
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class UpdateActivityRequest : pb::IMessage<UpdateActivityRequest> {
     private static readonly pb::MessageParser<UpdateActivityRequest> _parser = new pb::MessageParser<UpdateActivityRequest>(() => new UpdateActivityRequest());
@@ -5210,7 +5214,7 @@ namespace Iop.Proximityserver {
     public const int ActivityFieldNumber = 1;
     private global::Iop.Proximityserver.ActivityInformation activity_;
     /// <summary>
-    ///  Description of the activity.
+    /// Description of the activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ActivityInformation Activity {
@@ -5224,7 +5228,7 @@ namespace Iop.Proximityserver {
     public const int NoPropagationFieldNumber = 2;
     private bool noPropagation_;
     /// <summary>
-    ///  If set to true, the proximity server will not propagate the update to the neighborhood.
+    /// If set to true, the proximity server will not propagate the update to the neighborhood.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool NoPropagation {
@@ -5240,7 +5244,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForBytes(26);
     private readonly pbc::RepeatedField<pb::ByteString> ignoreServerIds_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  List of network identifiers of proximity servers to ignore. The list can be empty.
+    /// List of network identifiers of proximity servers to ignore. The list can be empty.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> IgnoreServerIds {
@@ -5354,28 +5358,29 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to UpdateActivityRequest.
+  /// A response to UpdateActivityRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - Activity of the given ID created by the client was not found.
-  ///    * ERROR_INVALID_SIGNATURE - The client's signature of the 'UpdateActivityRequest.activity' in 'ConversationRequest.signature' is not valid.
-  ///    * ERROR_REJECTED - The server knows a proximity server that is closer to the location of the activity and its ID is not on the list of ignored servers.
-  ///      * Response.details - Set to hexadecimally encoded network identifier of the proximity server that is closer to the activity location than the target server.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "activity.version" - 'UpdateActivityRequest.activity.version' does not contain a valid version information.
-  ///      * Response.details == "activity.id" - 'UpdateActivityRequest.activity.id' is not a valid activity identifier.
-  ///      * Response.details == "activity.ownerPublicKey" - 'UpdateActivityRequest.ownerPublicKey.id' is not the public key of the client who sent the request.
-  ///      * Response.details == "activity.profileServerContact.networkId" - 'UpdateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
-  ///      * Response.details == "activity.profileServerContact.ipAddress" - 'UpdateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
-  ///      * Response.details == "activity.profileServerContact.primaryPort" - 'UpdateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65,535.
-  ///      * Response.details == "activity.type" - 'UpdateActivityRequest.activity.type' is not a valid activity type.
-  ///      * Response.details == "activity.latitude" - 'UpdateActivityRequest.activity.latitude' is not a valid latitude information.
-  ///      * Response.details == "activity.longitude" - 'UpdateActivityRequest.activity.longitude' is not a valid longitude information.
-  ///      * Response.details == "activity.precision" - 'UpdateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
-  ///      * Response.details == "activity.startTime" - 'UpdateActivityRequest.activity.startTime' does not contain a valid start time information.
-  ///      * Response.details == "activity.expirationTime" - 'UpdateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'.
-  ///      * Response.details == "activity.extraData" - 'UpdateActivityRequest.activity.extraData' does not contain a valid extra data information.
-  ///      * Response.details == "ignoreServerIds" - 'UpdateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - Activity of the given ID created by the client was not found.
+  ///   * ERROR_INVALID_SIGNATURE - The client's signature of the 'UpdateActivityRequest.activity' in 'ConversationRequest.signature' is not valid.
+  ///   * ERROR_REJECTED - The server knows a proximity server that is closer to the location of the activity and its ID is not on the list of ignored servers.
+  ///     * Response.details - Set to hexadecimally encoded network identifier of the proximity server that is closer to the activity location than the target server.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "activity.version" - 'UpdateActivityRequest.activity.version' does not contain a valid version information.
+  ///     * Response.details == "activity.id" - 'UpdateActivityRequest.activity.id' is not a valid activity identifier.
+  ///     * Response.details == "activity.ownerPublicKey" - 'UpdateActivityRequest.ownerPublicKey.id' is not the public key of the client who sent the request.
+  ///     * Response.details == "activity.profileServerContact.networkId" - 'UpdateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
+  ///     * Response.details == "activity.profileServerContact.ipAddress" - 'UpdateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
+  ///     * Response.details == "activity.profileServerContact.primaryPort" - 'UpdateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65,535.
+  ///     * Response.details == "activity.type" - 'UpdateActivityRequest.activity.type' is not a valid activity type, or it does not match the original value.
+  ///     * Response.details == "activity.latitude" - 'UpdateActivityRequest.activity.latitude' is not a valid latitude information.
+  ///     * Response.details == "activity.longitude" - 'UpdateActivityRequest.activity.longitude' is not a valid longitude information.
+  ///     * Response.details == "activity.precision" - 'UpdateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
+  ///     * Response.details == "activity.startTime" - 'UpdateActivityRequest.activity.startTime' does not contain a valid start time information.
+  ///     * Response.details == "activity.expirationTime" - 'UpdateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'.
+  ///                                                       or it is more than 24 hours in the future.
+  ///     * Response.details == "activity.extraData" - 'UpdateActivityRequest.activity.extraData' does not contain a valid extra data information.
+  ///     * Response.details == "ignoreServerIds" - 'UpdateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
   /// </summary>
   public sealed partial class UpdateActivityResponse : pb::IMessage<UpdateActivityResponse> {
     private static readonly pb::MessageParser<UpdateActivityResponse> _parser = new pb::MessageParser<UpdateActivityResponse>(() => new UpdateActivityResponse());
@@ -5468,13 +5473,13 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A client deletes activity from its primary proximity server.
+  /// A client deletes activity from its primary proximity server.
   ///
-  ///  Information about activity removal is propagated to the server's neighborhood.
+  /// Information about activity removal is propagated to the server's neighborhood.
   ///
-  ///  Roles: client
+  /// Roles: client
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class DeleteActivityRequest : pb::IMessage<DeleteActivityRequest> {
     private static readonly pb::MessageParser<DeleteActivityRequest> _parser = new pb::MessageParser<DeleteActivityRequest>(() => new DeleteActivityRequest());
@@ -5512,7 +5517,7 @@ namespace Iop.Proximityserver {
     public const int IdFieldNumber = 1;
     private uint id_;
     /// <summary>
-    ///  Unique identifier of the client’s activity. 
+    /// Unique identifier of the client’s activity. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Id {
@@ -5598,10 +5603,10 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to DeleteActivityRequest.
+  /// A response to DeleteActivityRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - Activity of the given ID created by the client was not found.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - Activity of the given ID created by the client was not found.
   /// </summary>
   public sealed partial class DeleteActivityResponse : pb::IMessage<DeleteActivityResponse> {
     private static readonly pb::MessageParser<DeleteActivityResponse> _parser = new pb::MessageParser<DeleteActivityResponse>(() => new DeleteActivityResponse());
@@ -5693,10 +5698,10 @@ namespace Iop.Proximityserver {
   }
 
   /// <summary>
-  ///  
-  ///  Obtains information about a single activity that is managed by the proximity server or one of its neighbors.
+  /// 
+  /// Obtains information about a single activity that is managed by the proximity server or one of its neighbors.
   ///
-  ///  Roles: client
+  /// Roles: client
   /// </summary>
   public sealed partial class GetActivityInformationRequest : pb::IMessage<GetActivityInformationRequest> {
     private static readonly pb::MessageParser<GetActivityInformationRequest> _parser = new pb::MessageParser<GetActivityInformationRequest>(() => new GetActivityInformationRequest());
@@ -5735,7 +5740,7 @@ namespace Iop.Proximityserver {
     public const int IdFieldNumber = 1;
     private uint id_;
     /// <summary>
-    ///  User defined activity identifier.
+    /// User defined activity identifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Id {
@@ -5749,7 +5754,7 @@ namespace Iop.Proximityserver {
     public const int OwnerNetworkIdFieldNumber = 2;
     private pb::ByteString ownerNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Network identifier of the activity owner.
+    /// Network identifier of the activity owner.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString OwnerNetworkId {
@@ -5851,10 +5856,10 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to GetActivityInformationRequest.
+  /// A response to GetActivityInformationRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - 'GetActivityInformationRequest.id' together with 'GetActivityInformationRequest.ownerNetworkId' do not specify a known activity.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - 'GetActivityInformationRequest.id' together with 'GetActivityInformationRequest.ownerNetworkId' do not specify a known activity.
   /// </summary>
   public sealed partial class GetActivityInformationResponse : pb::IMessage<GetActivityInformationResponse> {
     private static readonly pb::MessageParser<GetActivityInformationResponse> _parser = new pb::MessageParser<GetActivityInformationResponse>(() => new GetActivityInformationResponse());
@@ -5892,7 +5897,7 @@ namespace Iop.Proximityserver {
     public const int InfoFieldNumber = 1;
     private global::Iop.Proximityserver.ActivityQueryInformation info_;
     /// <summary>
-    ///  Information about the requested activity.
+    /// Information about the requested activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ActivityQueryInformation Info {
@@ -5984,22 +5989,20 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Asks a proximity server for a list of all activities that match the search criteria.
+  /// Asks a proximity server for a list of all activities that match the search criteria.
   ///
-  ///  Each search request only produces a limited number of results. The maximal size of the first set of results 
-  ///  is provided by 'maxResponseRecordCount' field. The response to this message contains up to 'maxResponseRecordCount' 
-  ///  results. If there are more results available, they are saved to the conversation context, which enables the client 
-  ///  to obtain more results with subsequent ActivitySearchPartRequest messages.
+  /// Each search request only produces a limited number of results. The maximal size of the first set of results 
+  /// is provided by 'maxResponseRecordCount' field. The response to this message contains up to 'maxResponseRecordCount' 
+  /// results. If there are more results available, they are saved to the server's cache, which enables the client 
+  /// to obtain more results with subsequent ActivitySearchPartRequest messages.
   ///
-  ///  The proximity server will not save more than 'maxTotalRecordCount' search requests. 
-  ///  The proximity server has to allow the client to get additional results at least 1 minute from receiving 
-  ///  ActivitySearchRequest, but it can maintain the results cache for longer than that.
+  /// The proximity server will not save more than 'maxTotalRecordCount' search requests. 
+  /// The proximity server has to allow the client to get additional results at least 1 minute from receiving 
+  /// ActivitySearchRequest, but it can maintain the results cache for longer than that.
   ///
-  ///  Once the client sends another ActivitySearchRequest, or if it disconnects, the old search results are discarded.
+  /// Once the client sends another ActivitySearchRequest, or if it disconnects, the old search results are discarded.
   ///
-  ///  Roles: client
-  ///
-  ///  Conversation status: ConversationStarted, Verified
+  /// Roles: client
   /// </summary>
   public sealed partial class ActivitySearchRequest : pb::IMessage<ActivitySearchRequest> {
     private static readonly pb::MessageParser<ActivitySearchRequest> _parser = new pb::MessageParser<ActivitySearchRequest>(() => new ActivitySearchRequest());
@@ -6047,7 +6050,7 @@ namespace Iop.Proximityserver {
     public const int IncludePrimaryOnlyFieldNumber = 1;
     private bool includePrimaryOnly_;
     /// <summary>
-    ///  If set to true, the proximity server only returns activities for which the server is the primary proximity server.
+    /// If set to true, the proximity server only returns activities for which the server is the primary proximity server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludePrimaryOnly {
@@ -6061,7 +6064,7 @@ namespace Iop.Proximityserver {
     public const int MaxResponseRecordCountFieldNumber = 2;
     private uint maxResponseRecordCount_;
     /// <summary>
-    ///  If set to false, activities from the server's neighborhood can be included in the result.
+    /// If set to false, activities from the server's neighborhood can be included in the result.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxResponseRecordCount {
@@ -6075,7 +6078,7 @@ namespace Iop.Proximityserver {
     public const int MaxTotalRecordCountFieldNumber = 3;
     private uint maxTotalRecordCount_;
     /// <summary>
-    ///  The value must not be greater than 'maxTotalRecordCount'.
+    /// Maximal number of total results that the activity server will look for and save. It has to be an integer between 1 and 10,000.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxTotalRecordCount {
@@ -6089,7 +6092,7 @@ namespace Iop.Proximityserver {
     public const int OwnerNetworkIdFieldNumber = 5;
     private pb::ByteString ownerNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Search filters.
+    /// Search filters.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString OwnerNetworkId {
@@ -6103,7 +6106,7 @@ namespace Iop.Proximityserver {
     public const int TypeFieldNumber = 6;
     private string type_ = "";
     /// <summary>
-    ///  WildcardType or empty string. If not empty, the proximity server will only return activities
+    /// WildcardType or empty string. If not empty, the proximity server will only return activities
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Type {
@@ -6117,8 +6120,8 @@ namespace Iop.Proximityserver {
     public const int StartNotAfterFieldNumber = 7;
     private long startNotAfter_;
     /// <summary>
-    ///  of activity types that match the wildcard string. If empty, all activity types are allowed.
-    ///  Max 64 bytes long.
+    /// of activity types that match the wildcard string. If empty, all activity types are allowed.
+    /// Max 64 bytes long.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long StartNotAfter {
@@ -6132,7 +6135,7 @@ namespace Iop.Proximityserver {
     public const int ExpirationNotBeforeFieldNumber = 8;
     private long expirationNotBefore_;
     /// <summary>
-    ///  TimestampType or 0. If non-zero, only activities with expiration time greater than or equal to this value are allowed.
+    /// TimestampType or 0. If non-zero, only activities with expiration time greater than or equal to this value are allowed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long ExpirationNotBefore {
@@ -6146,7 +6149,7 @@ namespace Iop.Proximityserver {
     public const int LatitudeFieldNumber = 9;
     private int latitude_;
     /// <summary>
-    ///  LocationType. Target GPS location latitude or NO_LOCATION. If not NO_LOCATION, 
+    /// LocationType. Target GPS location latitude or NO_LOCATION. If not NO_LOCATION, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Latitude {
@@ -6160,12 +6163,12 @@ namespace Iop.Proximityserver {
     public const int LongitudeFieldNumber = 10;
     private int longitude_;
     /// <summary>
-    ///  it is, in combination with 'longitude' and 'radius', a specification of target area, 
-    ///  where the activity has to be located (according to its information) in order to be 
-    ///  included in the search results. If NO_LOCATION, 'longitude' and 'radius' are ignored 
-    ///  and all locations are allowed. 
-    ///  Note that the current activity location information outside its primary proximity server may be inaccurate 
-    ///  as its current location is only updated on its primary proximity server.
+    /// it is, in combination with 'longitude' and 'radius', a specification of target area, 
+    /// where the activity has to be located (according to its information) in order to be 
+    /// included in the search results. If NO_LOCATION, 'longitude' and 'radius' are ignored 
+    /// and all locations are allowed. 
+    /// Note that the current activity location information outside its primary proximity server may be inaccurate 
+    /// as its current location is only updated on its primary proximity server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Longitude {
@@ -6179,7 +6182,7 @@ namespace Iop.Proximityserver {
     public const int RadiusFieldNumber = 11;
     private uint radius_;
     /// <summary>
-    ///  If 'latitude' is not NO_LOCATION, this is target location radius in metres. 
+    /// If 'latitude' is not NO_LOCATION, this is target location radius in metres. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Radius {
@@ -6193,11 +6196,11 @@ namespace Iop.Proximityserver {
     public const int ExtraDataFieldNumber = 12;
     private string extraData_ = "";
     /// <summary>
-    ///  Note that due to use of precision information, the exact location of the activity is not precisely known 
-    ///  and therefore the activity is assumed to be anywhere within its precision radius. The activity does match 
-    ///  the search query if the query’s location and radius has non-empty intersection, which is when the distance 
-    ///  between the query’s location and the activity location is less than or equal to the sum of query radius 
-    ///  and location precision.
+    /// Note that due to use of precision information, the exact location of the activity is not precisely known 
+    /// and therefore the activity is assumed to be anywhere within its precision radius. The activity does match 
+    /// the search query if the query’s location and radius has non-empty intersection, which is when the distance 
+    /// between the query’s location and the activity location is less than or equal to the sum of query radius 
+    /// and location precision.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ExtraData {
@@ -6443,33 +6446,33 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to ActivitySearchRequest.
+  /// A response to ActivitySearchRequest.
   ///
-  ///  If 'maxResponseRecordCount' is lower than 'totalRecordCount', the client is allowed to send 
-  ///  ActivitySearchPartRequest messages to obtain more results.
+  /// If 'maxResponseRecordCount' is lower than 'totalRecordCount', the client is allowed to send 
+  /// ActivitySearchPartRequest messages to obtain more results.
   ///
-  ///  If a client is looking for a small set of activities within a large area, it might need to perform 
-  ///  multiple search queries across several proximity servers in the target area in order to "cover" it. 
-  ///  'coveredServers' contains a list of proximity servers forming the neighborhood of the proximity server 
-  ///  being queried. Neighborhood servers share their activity databases and a query to one server will 
-  ///  thus cover proximity servers in its neighborhood. Note that this information is not much relevant 
-  ///  in case the number of result is large and the number of results is limited by the protocol. 
-  ///  In this case, it is possible that the proximity server returns results from activity databases only 
-  ///  from a small subset of its neighborhood provided in the 'coveredServers' value, or even only from 
-  ///  its own database.
+  /// If a client is looking for a small set of activities within a large area, it might need to perform 
+  /// multiple search queries across several proximity servers in the target area in order to "cover" it. 
+  /// 'coveredServers' contains a list of proximity servers forming the neighborhood of the proximity server 
+  /// being queried. Neighborhood servers share their activity databases and a query to one server will 
+  /// thus cover proximity servers in its neighborhood. Note that this information is not much relevant 
+  /// in case the number of result is large and the number of results is limited by the protocol. 
+  /// In this case, it is possible that the proximity server returns results from activity databases only 
+  /// from a small subset of its neighborhood provided in the 'coveredServers' value, or even only from 
+  /// its own database.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "maxResponseRecordCount" - 'ActivitySearchRequest.maxResponseRecordCount' is not within the required range.
-  ///      * Response.details == "maxTotalRecordCount" - 'ActivitySearchRequest.maxTotalRecordCount' is not within the required range.
-  ///      * Response.details == "ownerNetworkId" - 'ActivitySearchRequest.ownerNetworkId' is not a valid identity network identifier.
-  ///      * Response.details == "type" - 'ActivitySearchRequest.type' is too long.
-  ///      * Response.details == "startNotAfter" - 'ActivitySearchRequest.startNotAfter' does not represent a valid timestamp value.
-  ///      * Response.details == "expirationNotBefore" - 'ActivitySearchRequest.expirationNotBefore' is non-zero and smaller than 'ActivitySearchRequest.startNotAfter' or it does not represent a valid timestamp value.
-  ///      * Response.details == "latitude" - 'ActivitySearchRequest.latitude' is not a valid location latitude.
-  ///      * Response.details == "longitude" - 'ActivitySearchRequest.longitude' is not a valid location longitude.
-  ///      * Response.details == "radius" - 'ActivitySearchRequest.radius' is not a valid radius value.
-  ///      * Response.details == "extraData" - 'ActivitySearchRequest.extraData' is too long or it is not a valid value of RegexType.
+  /// Specific Error Responses:
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "maxResponseRecordCount" - 'ActivitySearchRequest.maxResponseRecordCount' is not within the required range.
+  ///     * Response.details == "maxTotalRecordCount" - 'ActivitySearchRequest.maxTotalRecordCount' is not within the required range or the value is less than 'ActivitySearchRequest.maxResponseRecordCount'.
+  ///     * Response.details == "ownerNetworkId" - 'ActivitySearchRequest.ownerNetworkId' is not a valid identity network identifier.
+  ///     * Response.details == "type" - 'ActivitySearchRequest.type' is too long.
+  ///     * Response.details == "startNotAfter" - 'ActivitySearchRequest.startNotAfter' does not represent a valid timestamp value.
+  ///     * Response.details == "expirationNotBefore" - 'ActivitySearchRequest.expirationNotBefore' is non-zero and smaller than 'ActivitySearchRequest.startNotAfter' or it does not represent a valid timestamp value.
+  ///     * Response.details == "latitude" - 'ActivitySearchRequest.latitude' is not a valid location latitude.
+  ///     * Response.details == "longitude" - 'ActivitySearchRequest.longitude' is not a valid location longitude.
+  ///     * Response.details == "radius" - 'ActivitySearchRequest.radius' is not a valid radius value.
+  ///     * Response.details == "extraData" - 'ActivitySearchRequest.extraData' is too long or it is not a valid value of RegexType.
   /// </summary>
   public sealed partial class ActivitySearchResponse : pb::IMessage<ActivitySearchResponse> {
     private static readonly pb::MessageParser<ActivitySearchResponse> _parser = new pb::MessageParser<ActivitySearchResponse>(() => new ActivitySearchResponse());
@@ -6510,7 +6513,7 @@ namespace Iop.Proximityserver {
     public const int TotalRecordCountFieldNumber = 1;
     private uint totalRecordCount_;
     /// <summary>
-    ///  Total number of activities that matched the search criteria. Up to 'maxResponseRecordCount' of them are in 'activities' list.
+    /// Total number of activities that matched the search criteria. Up to 'maxResponseRecordCount' of them are in 'activities' list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint TotalRecordCount {
@@ -6524,7 +6527,7 @@ namespace Iop.Proximityserver {
     public const int MaxResponseRecordCountFieldNumber = 2;
     private uint maxResponseRecordCount_;
     /// <summary>
-    ///  Limit of the number of results provided. This is equal to 'ActivitySearchRequest.maxResponseRecordCount'.
+    /// Limit of the number of results provided. This is equal to 'ActivitySearchRequest.maxResponseRecordCount'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxResponseRecordCount {
@@ -6540,7 +6543,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForBytes(26);
     private readonly pbc::RepeatedField<pb::ByteString> coveredServers_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  List of network identifiers of proximity servers whose activity databases were used to produce the results, 
+    /// List of network identifiers of proximity servers whose activity databases were used to produce the results, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> CoveredServers {
@@ -6553,7 +6556,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForMessage(34, global::Iop.Proximityserver.ActivityQueryInformation.Parser);
     private readonly pbc::RepeatedField<global::Iop.Proximityserver.ActivityQueryInformation> activities_ = new pbc::RepeatedField<global::Iop.Proximityserver.ActivityQueryInformation>();
     /// <summary>
-    ///  Search results.
+    /// Search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Proximityserver.ActivityQueryInformation> Activities {
@@ -6670,7 +6673,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Information about a single activity record from an activity search query.
+  /// Information about a single activity record from an activity search query.
   /// </summary>
   public sealed partial class ActivityQueryInformation : pb::IMessage<ActivityQueryInformation> {
     private static readonly pb::MessageParser<ActivityQueryInformation> _parser = new pb::MessageParser<ActivityQueryInformation>(() => new ActivityQueryInformation());
@@ -6698,7 +6701,7 @@ namespace Iop.Proximityserver {
     public ActivityQueryInformation(ActivityQueryInformation other) : this() {
       isPrimary_ = other.isPrimary_;
       PrimaryServer = other.primaryServer_ != null ? other.PrimaryServer.Clone() : null;
-      Activity = other.activity_ != null ? other.Activity.Clone() : null;
+      SignedActivity = other.signedActivity_ != null ? other.SignedActivity.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6710,7 +6713,7 @@ namespace Iop.Proximityserver {
     public const int IsPrimaryFieldNumber = 1;
     private bool isPrimary_;
     /// <summary>
-    ///  True if the activity's primary proximity server is the server being queried.
+    /// True if the activity's primary proximity server is the server being queried.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsPrimary {
@@ -6724,7 +6727,7 @@ namespace Iop.Proximityserver {
     public const int PrimaryServerFieldNumber = 2;
     private global::Iop.Proximityserver.ServerContactInfo primaryServer_;
     /// <summary>
-    ///  If 'isPrimary' is false, this contains the contact information to the primary proximity server of the activity.
+    /// If 'isPrimary' is false, this contains the contact information to the primary proximity server of the activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.ServerContactInfo PrimaryServer {
@@ -6734,17 +6737,17 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "activity" field.</summary>
-    public const int ActivityFieldNumber = 3;
-    private global::Iop.Proximityserver.SignedActivityInformation activity_;
+    /// <summary>Field number for the "signedActivity" field.</summary>
+    public const int SignedActivityFieldNumber = 3;
+    private global::Iop.Proximityserver.SignedActivityInformation signedActivity_;
     /// <summary>
-    ///  Signed description of the activity.
+    /// Signed description of the activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.SignedActivityInformation Activity {
-      get { return activity_; }
+    public global::Iop.Proximityserver.SignedActivityInformation SignedActivity {
+      get { return signedActivity_; }
       set {
-        activity_ = value;
+        signedActivity_ = value;
       }
     }
 
@@ -6763,7 +6766,7 @@ namespace Iop.Proximityserver {
       }
       if (IsPrimary != other.IsPrimary) return false;
       if (!object.Equals(PrimaryServer, other.PrimaryServer)) return false;
-      if (!object.Equals(Activity, other.Activity)) return false;
+      if (!object.Equals(SignedActivity, other.SignedActivity)) return false;
       return true;
     }
 
@@ -6772,7 +6775,7 @@ namespace Iop.Proximityserver {
       int hash = 1;
       if (IsPrimary != false) hash ^= IsPrimary.GetHashCode();
       if (primaryServer_ != null) hash ^= PrimaryServer.GetHashCode();
-      if (activity_ != null) hash ^= Activity.GetHashCode();
+      if (signedActivity_ != null) hash ^= SignedActivity.GetHashCode();
       return hash;
     }
 
@@ -6791,9 +6794,9 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(18);
         output.WriteMessage(PrimaryServer);
       }
-      if (activity_ != null) {
+      if (signedActivity_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(Activity);
+        output.WriteMessage(SignedActivity);
       }
     }
 
@@ -6806,8 +6809,8 @@ namespace Iop.Proximityserver {
       if (primaryServer_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PrimaryServer);
       }
-      if (activity_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Activity);
+      if (signedActivity_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SignedActivity);
       }
       return size;
     }
@@ -6826,11 +6829,11 @@ namespace Iop.Proximityserver {
         }
         PrimaryServer.MergeFrom(other.PrimaryServer);
       }
-      if (other.activity_ != null) {
-        if (activity_ == null) {
-          activity_ = new global::Iop.Proximityserver.SignedActivityInformation();
+      if (other.signedActivity_ != null) {
+        if (signedActivity_ == null) {
+          signedActivity_ = new global::Iop.Proximityserver.SignedActivityInformation();
         }
-        Activity.MergeFrom(other.Activity);
+        SignedActivity.MergeFrom(other.SignedActivity);
       }
     }
 
@@ -6854,10 +6857,10 @@ namespace Iop.Proximityserver {
             break;
           }
           case 26: {
-            if (activity_ == null) {
-              activity_ = new global::Iop.Proximityserver.SignedActivityInformation();
+            if (signedActivity_ == null) {
+              signedActivity_ = new global::Iop.Proximityserver.SignedActivityInformation();
             }
-            input.ReadMessage(activity_);
+            input.ReadMessage(signedActivity_);
             break;
           }
         }
@@ -6868,15 +6871,13 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Request to get another part from the search query.
+  /// Request to get another part from the search query.
   ///
-  ///  This request only makes sense only if the client previously sent ActivitySearchRequest to 
-  ///  the proximity server and the search result contained more records than the server provided 
-  ///  in the ActivitySearchResponse, and the search results have not expired yet.
+  /// This request only makes sense only if the client previously sent ActivitySearchRequest to 
+  /// the proximity server and the search result contained more records than the server provided 
+  /// in the ActivitySearchResponse, and the search results have not expired yet.
   ///
-  ///  Roles: client
-  ///
-  ///  Conversation status: ConversationStarted, Verified
+  /// Roles: client
   /// </summary>
   public sealed partial class ActivitySearchPartRequest : pb::IMessage<ActivitySearchPartRequest> {
     private static readonly pb::MessageParser<ActivitySearchPartRequest> _parser = new pb::MessageParser<ActivitySearchPartRequest>(() => new ActivitySearchPartRequest());
@@ -6915,7 +6916,7 @@ namespace Iop.Proximityserver {
     public const int RecordIndexFieldNumber = 1;
     private uint recordIndex_;
     /// <summary>
-    ///  Zero-based record index of the first result to retrieve. It has to be an integer between 0 and 'ActivitySearchResponse.totalRecordCount' - 1.
+    /// Zero-based record index of the first result to retrieve. It has to be an integer between 0 and 'ActivitySearchResponse.totalRecordCount' - 1.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordIndex {
@@ -6929,7 +6930,7 @@ namespace Iop.Proximityserver {
     public const int RecordCountFieldNumber = 2;
     private uint recordCount_;
     /// <summary>
-    ///  Number of results to obtain. 'recordIndex' + 'recordCount' must not be greater than 'ActivitySearchResponse.totalRecordCount'.
+    /// Number of results to obtain. 'recordIndex' + 'recordCount' must not be greater than 'ActivitySearchResponse.totalRecordCount'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordCount {
@@ -7031,14 +7032,14 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to ActivitySearchPartRequest.
+  /// A response to ActivitySearchPartRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_AVAILABLE - No cached search results are available. Either the client did not send ActivitySearchRequest previously
-  ///                            in this session, or its results have expired already.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "recordIndex" - 'ActivitySearchPartRequest.recordIndex' is not a valid index of the result.
-  ///      * Response.details == "recordCount" - 'ActivitySearchPartRequest.recordCount' is not a valid number of results to obtain in combination with 'ActivitySearchPartRequest.recordIndex'.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_AVAILABLE - No cached search results are available. Either the client did not send ActivitySearchRequest previously
+  ///                           in this session, or its results have expired already.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "recordIndex" - 'ActivitySearchPartRequest.recordIndex' is not a valid index of the result.
+  ///     * Response.details == "recordCount" - 'ActivitySearchPartRequest.recordCount' is not a valid number of results to obtain in combination with 'ActivitySearchPartRequest.recordIndex'.
   /// </summary>
   public sealed partial class ActivitySearchPartResponse : pb::IMessage<ActivitySearchPartResponse> {
     private static readonly pb::MessageParser<ActivitySearchPartResponse> _parser = new pb::MessageParser<ActivitySearchPartResponse>(() => new ActivitySearchPartResponse());
@@ -7078,7 +7079,7 @@ namespace Iop.Proximityserver {
     public const int RecordIndexFieldNumber = 1;
     private uint recordIndex_;
     /// <summary>
-    ///  Index of the first result. Copy of 'ActivitySearchPartRequest.recordIndex' value.
+    /// Index of the first result. Copy of 'ActivitySearchPartRequest.recordIndex' value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordIndex {
@@ -7092,7 +7093,7 @@ namespace Iop.Proximityserver {
     public const int RecordCountFieldNumber = 2;
     private uint recordCount_;
     /// <summary>
-    ///  Number of results. Copy of 'ActivitySearchPartRequest.recordCount' value.
+    /// Number of results. Copy of 'ActivitySearchPartRequest.recordCount' value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RecordCount {
@@ -7108,7 +7109,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForMessage(26, global::Iop.Proximityserver.ActivityQueryInformation.Parser);
     private readonly pbc::RepeatedField<global::Iop.Proximityserver.ActivityQueryInformation> activities_ = new pbc::RepeatedField<global::Iop.Proximityserver.ActivityQueryInformation>();
     /// <summary>
-    ///  Search results.
+    /// Search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Proximityserver.ActivityQueryInformation> Activities {
@@ -7216,55 +7217,55 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Initiates sharing of the activity database with a neighbor proximity server.
+  /// Initiates sharing of the activity database with a neighbor proximity server.
   ///
-  ///  Proximity server joining the network needs to contact its neighbors and ask them to share their 
-  ///  activity databases, so that it can include their activities into its own search queries.
-  ///  Similarly, proximity servers that detect a new neighbor in their neighborhood need to contact 
-  ///  it and ask it to share its activity database with them.
+  /// Proximity server joining the network needs to contact its neighbors and ask them to share their 
+  /// activity databases, so that it can include their activities into its own search queries.
+  /// Similarly, proximity servers that detect a new neighbor in their neighborhood need to contact 
+  /// it and ask it to share its activity database with them.
   ///
-  ///  Sharing the activity list always goes from one proximity server S (who acts as the server in 
-  ///  the session) to the requesting proximity server C (who acts as a client in the session). It is C 
-  ///  who connects to S and sends a request asking S to share its database. If the server C wants 
-  ///  to share its activity database with the server S, it has to wait for the request from S, which 
-  ///  will ask it to share its database. This request will come if S considers C its neighbor.
+  /// Sharing the activity list always goes from one proximity server S (who acts as the server in 
+  /// the session) to the requesting proximity server C (who acts as a client in the session). It is C 
+  /// who connects to S and sends a request asking S to share its database. If the server C wants 
+  /// to share its activity database with the server S, it has to wait for the request from S, which 
+  /// will ask it to share its database. This request will come if S considers C its neighbor.
   ///
-  ///  The process starts with the server C sending StartNeighborhoodInitializationRequest message to S.
-  ///  If S accepts the request, it replies with StartNeighborhoodInitializationResponse and then 
-  ///  it starts sending NeighborhoodSharedActivityUpdateRequest messages until a full database is sent 
-  ///  to C. With each update message, C has to check the validity of the data and if it accepts 
-  ///  the batch it replies with NeighborhoodSharedActivityUpdateResponse. Once all of the activties are 
-  ///  sent to C, S sends FinishNeighborhoodInitializationRequest and if C replies with successful 
-  ///  message FinishNeighborhoodInitializationResponse, the process is completed. 
+  /// The process starts with the server C sending StartNeighborhoodInitializationRequest message to S.
+  /// If S accepts the request, it replies with StartNeighborhoodInitializationResponse and then 
+  /// it starts sending NeighborhoodSharedActivityUpdateRequest messages until a full database is sent 
+  /// to C. With each update message, C has to check the validity of the data and if it accepts 
+  /// the batch it replies with NeighborhoodSharedActivityUpdateResponse. Once all of the activties are 
+  /// sent to C, S sends FinishNeighborhoodInitializationRequest and if C replies with successful 
+  /// message FinishNeighborhoodInitializationResponse, the process is completed. 
   ///
-  ///  If S is not the primary proximity server for any activities yet, it may send 
-  ///  FinishNeighborhoodInitializationRequest message without sending any 
-  ///  NeighborhoodSharedActivityUpdateRequest messages.
+  /// If S is not the primary proximity server for any activities yet, it may send 
+  /// FinishNeighborhoodInitializationRequest message without sending any 
+  /// NeighborhoodSharedActivityUpdateRequest messages.
   ///
-  ///  Once C replies with FinishNeighborhoodInitializationResponse, the initialization process is 
-  ///  finished and C can consider the activities hosted on S in its search queries. If a connection 
-  ///  is terminated or the process is disrupted in any other way, C can not consider the process 
-  ///  as finished and must not include the activities of S in its searches.
+  /// Once C replies with FinishNeighborhoodInitializationResponse, the initialization process is 
+  /// finished and C can consider the activities hosted on S in its search queries. If a connection 
+  /// is terminated or the process is disrupted in any other way, C can not consider the process 
+  /// as finished and must not include the activities of S in its searches.
   ///
-  ///  The proximity server S has the responsibility of keeping the information on C up to date. With 
-  ///  each change of an activity, for which S is the primary proximity server, except for changes that 
-  ///  do not require neighborhood updates, it has to contact C and inform it about the change. 
-  ///  This is done using NeighborhoodSharedActivityUpdateRequest messages that are sent outside 
-  ///  the initialization process (i.e. without sending StartNeighborhoodInitializationRequest message 
-  ///  first).
+  /// The proximity server S has the responsibility of keeping the information on C up to date. With 
+  /// each change of an activity, for which S is the primary proximity server, except for changes that 
+  /// do not require neighborhood updates, it has to contact C and inform it about the change. 
+  /// This is done using NeighborhoodSharedActivityUpdateRequest messages that are sent outside 
+  /// the initialization process (i.e. without sending StartNeighborhoodInitializationRequest message 
+  /// first).
   ///
-  ///  If StartNeighborhoodInitializationRequest message is processed successfully, the initialization 
-  ///  of the neighbor relationship is started on the opened session and the initialization process has 
-  ///  to be finished with FinishNeighborhoodInitializationRequest or it will fail when the connection 
-  ///  is terminated. 
+  /// If StartNeighborhoodInitializationRequest message is processed successfully, the initialization 
+  /// of the neighbor relationship is started on the opened session and the initialization process has 
+  /// to be finished with FinishNeighborhoodInitializationRequest or it will fail when the connection 
+  /// is terminated. 
   ///
-  ///  All activities received from a neighbor have expiration time after which the proximity server can 
-  ///  delete them from its database. Activities of a neighbor proximity server can also be deleted if 
-  ///  the proximity server no longer considers the neighbor as its neighbor.
+  /// All activities received from a neighbor have expiration time after which the proximity server can 
+  /// delete them from its database. Activities of a neighbor proximity server can also be deleted if 
+  /// the proximity server no longer considers the neighbor as its neighbor.
   ///
-  ///  Roles: neighbor
+  /// Roles: neighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class StartNeighborhoodInitializationRequest : pb::IMessage<StartNeighborhoodInitializationRequest> {
     private static readonly pb::MessageParser<StartNeighborhoodInitializationRequest> _parser = new pb::MessageParser<StartNeighborhoodInitializationRequest>(() => new StartNeighborhoodInitializationRequest());
@@ -7304,7 +7305,7 @@ namespace Iop.Proximityserver {
     public const int PrimaryPortFieldNumber = 1;
     private uint primaryPort_;
     /// <summary>
-    ///  Port of the proximity server's Primary Interface.
+    /// Port of the proximity server's Primary Interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint PrimaryPort {
@@ -7318,7 +7319,7 @@ namespace Iop.Proximityserver {
     public const int NeighborPortFieldNumber = 2;
     private uint neighborPort_;
     /// <summary>
-    ///  Port of the proximity  server's Neighbors Interface.
+    /// Port of the proximity  server's Neighbors Interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint NeighborPort {
@@ -7332,7 +7333,7 @@ namespace Iop.Proximityserver {
     public const int IpAddressFieldNumber = 3;
     private pb::ByteString ipAddress_ = pb::ByteString.Empty;
     /// <summary>
-    ///  IPv4 or IPv6 public address of the network interface on which proximity server operates.
+    /// IPv4 or IPv6 public address of the network interface on which proximity server operates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IpAddress {
@@ -7450,17 +7451,17 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to StartNeighborhoodInitializationRequest.
+  /// A response to StartNeighborhoodInitializationRequest.
   ///
-  ///  General Error Responses:
-  ///    * ERROR_REJECTED - Proximity server has already reached its limit of a number of servers that it shares its activity database with and is not willing to have more.
-  ///    * ERROR_ALREADY_EXISTS - Neighborhood initialization process has already been done, or the initialization process with the peer is currently in the progress.
-  ///    * ERROR_BUSY - Proximity server can use this error code during the start of the neighborhood initialization process to express that it is currently busy 
-  ///                   with the neighborhood initialization process with one or more other proximity servers.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "primaryPort" - 'StartNeighborhoodInitializationRequest.primaryPort' must be an integer between 1 and 65,535.
-  ///      * Response.details == "neighborPort" - 'StartNeighborhoodInitializationRequest.neighborPort' must be an integer between 1 and 65,535.
-  ///      * Response.details == "ipAddress" - 'StartNeighborhoodInitializationRequest.ipAddress' is not a valid IPv4 or IPv6 address or it is a local network IP address.
+  /// General Error Responses:
+  ///   * ERROR_REJECTED - Proximity server has already reached its limit of a number of servers that it shares its activity database with and is not willing to have more.
+  ///   * ERROR_ALREADY_EXISTS - Neighborhood initialization process has already been done, or the initialization process with the peer is currently in the progress.
+  ///   * ERROR_BUSY - Proximity server can use this error code during the start of the neighborhood initialization process to express that it is currently busy 
+  ///                  with the neighborhood initialization process with one or more other proximity servers.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "primaryPort" - 'StartNeighborhoodInitializationRequest.primaryPort' must be an integer between 1 and 65,535.
+  ///     * Response.details == "neighborPort" - 'StartNeighborhoodInitializationRequest.neighborPort' must be an integer between 1 and 65,535.
+  ///     * Response.details == "ipAddress" - 'StartNeighborhoodInitializationRequest.ipAddress' is not a valid IPv4 or IPv6 address or it is a local network IP address.
   /// </summary>
   public sealed partial class StartNeighborhoodInitializationResponse : pb::IMessage<StartNeighborhoodInitializationResponse> {
     private static readonly pb::MessageParser<StartNeighborhoodInitializationResponse> _parser = new pb::MessageParser<StartNeighborhoodInitializationResponse>(() => new StartNeighborhoodInitializationResponse());
@@ -7553,13 +7554,13 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Proximity server that was requested to share its activity database with its neighbor using 
-  ///  StartNeighborhoodInitializationRequest uses this request to finish the initialization process. 
-  ///  Sending this message means that all activities were successfully shared.
+  /// Proximity server that was requested to share its activity database with its neighbor using 
+  /// StartNeighborhoodInitializationRequest uses this request to finish the initialization process. 
+  /// Sending this message means that all activities were successfully shared.
   ///
-  ///  Roles: neighbor
+  /// Roles: neighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class FinishNeighborhoodInitializationRequest : pb::IMessage<FinishNeighborhoodInitializationRequest> {
     private static readonly pb::MessageParser<FinishNeighborhoodInitializationRequest> _parser = new pb::MessageParser<FinishNeighborhoodInitializationRequest>(() => new FinishNeighborhoodInitializationRequest());
@@ -7652,13 +7653,13 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to FinishNeighborhoodInitializationRequest. 
+  /// A response to FinishNeighborhoodInitializationRequest. 
   ///
-  ///  Sending this response means that the sender will now consider the shared activities from 
-  ///  the other server in its search queries.
+  /// Sending this response means that the sender will now consider the shared activities from 
+  /// the other server in its search queries.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_REJECTED - No neighborhood initialization process was started on this session using StartNeighborhoodInitializationRequest.
+  /// Specific Error Responses:
+  ///   * ERROR_REJECTED - No neighborhood initialization process was started on this session using StartNeighborhoodInitializationRequest.
   /// </summary>
   public sealed partial class FinishNeighborhoodInitializationResponse : pb::IMessage<FinishNeighborhoodInitializationResponse> {
     private static readonly pb::MessageParser<FinishNeighborhoodInitializationResponse> _parser = new pb::MessageParser<FinishNeighborhoodInitializationResponse>(() => new FinishNeighborhoodInitializationResponse());
@@ -7751,17 +7752,17 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  This request is sent by a proximity server to announce a change in one or more of the activities 
-  ///  for which it acts as the primary proximity server. This request is also used during the neighborhood 
-  ///  initialization to send the proximity server's activity database to the requesting server. If the request 
-  ///  is sent outside the neighborhood initialization process, it is considered as a standalone request.
+  /// This request is sent by a proximity server to announce a change in one or more of the activities 
+  /// for which it acts as the primary proximity server. This request is also used during the neighborhood 
+  /// initialization to send the proximity server's activity database to the requesting server. If the request 
+  /// is sent outside the neighborhood initialization process, it is considered as a standalone request.
   ///
-  ///  During the neighborhood initialization process, only items with `SharedActivityUpdateItem.ActionType` 
-  ///  of `add` can be sent.
+  /// During the neighborhood initialization process, only items with `SharedActivityUpdateItem.ActionType` 
+  /// of `add` can be sent.
   ///
-  ///  Roles: neighbor
+  /// Roles: neighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class NeighborhoodSharedActivityUpdateRequest : pb::IMessage<NeighborhoodSharedActivityUpdateRequest> {
     private static readonly pb::MessageParser<NeighborhoodSharedActivityUpdateRequest> _parser = new pb::MessageParser<NeighborhoodSharedActivityUpdateRequest>(() => new NeighborhoodSharedActivityUpdateRequest());
@@ -7801,7 +7802,7 @@ namespace Iop.Proximityserver {
         = pb::FieldCodec.ForMessage(10, global::Iop.Proximityserver.SharedActivityUpdateItem.Parser);
     private readonly pbc::RepeatedField<global::Iop.Proximityserver.SharedActivityUpdateItem> items_ = new pbc::RepeatedField<global::Iop.Proximityserver.SharedActivityUpdateItem>();
     /// <summary>
-    ///  List of activity update items. Within the request, the activities added/changed/deleted must be unique.
+    /// List of activity update items. Within the request, the activities added/changed/deleted must be unique.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Iop.Proximityserver.SharedActivityUpdateItem> Items {
@@ -7877,52 +7878,54 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to NeighborhoodSharedActivityUpdateRequest.
+  /// A response to NeighborhoodSharedActivityUpdateRequest.
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_REJECTED - Neighborhood initialization process has not been done or finished yet, or proximity server is no longer interested in receiving updates 
-  ///                       from the requesting proximity server. This should have the same effect as if the proximity server sent StopNeighborhoodUpdatesRequest to 
-  ///                       the requesting proximity server. If the requesting proximity server wants to share its database, it has to go through neighborhood 
-  ///                       initialization process from start.
-  ///    * ERROR_INVALID_VALUE
-  ///      * Response.details == "$index.$field" - All items up to 'NeighborhoodSharedActivityUpdateRequest.items[$index]' (exclusive) were processed correctly
-  ///                                              (and the peer must not send them again) and an error occurred while processing the item with zero-based 
-  ///                                              index $index. Items with index greater then $index were not processed. The $field specifies which field 
-  ///                                              was invalid as follows:
-  ///        * $field == "add" - Number of shared activities from the requesting proximity server exceeds the limit.
-  ///        * $field == "add.signedActivity.activity.version" - `items[$index].add.signedActivity.activity.version` is not a valid activity version.
-  ///        * $field == "add.signedActivity.activity.id" - `items[$index].add.signedActivity.activity.id` is not a valid activity identifier or the same activity already exists or another update item in the same 
-  ///                                                       request referred to this activity.
-  ///        * $field == "add.signedActivity.activity.ownerPublicKey" - `items[$index].add.signedActivity.activity.ownerPublicKey` is not a valid public key value.
-  ///        * $field == "add.signedActivity.activity.profileServerContact.networkId" - `items[$index].add.signedActivity.activity.profileServerContact.networkId` is not a valid network identifier.
-  ///        * $field == "add.signedActivity.activity.profileServerContact.ipAddress" - `items[$index].add.signedActivity.activity.profileServerContact.ipAddress` is not a valid IP address or it is a local network address.
-  ///        * $field == "add.signedActivity.activity.profileServerContact.primaryPort" - `items[$index].add.signedActivity.activity.profileServerContact.primaryPort` must be an integer between 1 and 65,535.
-  ///        * $field == "add.signedActivity.activity.type" - `items[$index].add.signedActivity.activity.type` is not a valid activity type.
-  ///        * $field == "add.signedActivity.activity.latitude" - `items[$index].add.signedActivity.activity.latitude` is not a valid latitude value.
-  ///        * $field == "add.signedActivity.activity.longitude" - `items[$index].add.signedActivity.activity.longitude` is not a valid longitude value.
-  ///        * $field == "add.signedActivity.activity.precision" - `items[$index].add.signedActivity.activity.precision` must be an integer between 0 and 1,000.
-  ///        * $field == "add.signedActivity.activity.startTime" - `items[$index].add.signedActivity.activity.startTime` does not contain a valid start time information.
-  ///        * $field == "add.signedActivity.activity.expirationTime" - `items[$index].add.signedActivity.activity.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].add.signedActivity.activity.startTime'.
-  ///        * $field == "add.signedActivity.activity.extraData" - `items[$index].add.signedActivity.activity.extraData` is not a valid extra data value.
-  ///        * $field == "add.signedActivity.signature" - `items[$index].add.signedActivity.signature` is not a valid signature or 'items[$index].add.signedActivity.activity'.
-  ///        * $field == "change.signedActivity.activity.version" - `items[$index].change.signedActivity.activity.version` is not a valid activity version.
-  ///        * $field == "change.signedActivity.activity.id" - `items[$index].change.signedActivity.activity.id` is not a valid activity identifier or the same activity already exists or another update item in the same 
-  ///                                                          request referred to this activity.
-  ///        * $field == "change.signedActivity.activity.ownerPublicKey" - `items[$index].change.signedActivity.activity.ownerPublicKey` is not a valid public key value.
-  ///        * $field == "change.signedActivity.activity.profileServerContact.networkId" - `items[$index].change.signedActivity.activity.profileServerContact.networkId` is not a valid network identifier.
-  ///        * $field == "change.signedActivity.activity.profileServerContact.ipAddress" - `items[$index].change.signedActivity.activity.profileServerContact.ipAddress` is not a valid IP address or it is a local network address.
-  ///        * $field == "change.signedActivity.activity.profileServerContact.primaryPort" - `items[$index].change.signedActivity.activity.profileServerContact.primaryPort` must be an integer between 1 and 65,535.
-  ///        * $field == "change.signedActivity.activity.type" - `items[$index].change.signedActivity.activity.type` is not a valid activity type.
-  ///        * $field == "change.signedActivity.activity.latitude" - `items[$index].change.signedActivity.activity.latitude` is not a valid latitude value.
-  ///        * $field == "change.signedActivity.activity.longitude" - `items[$index].change.signedActivity.activity.longitude` is not a valid longitude value.
-  ///        * $field == "change.signedActivity.activity.precision" - `items[$index].change.signedActivity.activity.precision` must be an integer between 0 and 1,000.
-  ///        * $field == "change.signedActivity.activity.startTime" - `items[$index].change.signedActivity.activity.startTime` does not contain a valid start time information.
-  ///        * $field == "change.signedActivity.activity.expirationTime" - `items[$index].change.signedActivity.activity.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].change.signedActivity.activity.startTime'.
-  ///        * $field == "change.signedActivity.activity.extraData" - `items[$index].change.signedActivity.activity.extraData` is not a valid extra data value.
-  ///        * $field == "change.signedActivity.signature" - `items[$index].change.signedActivity.signature` is not a valid signature or 'items[$index].change.signedActivity.activity'.
-  ///        * $field == "delete.id" - `items[$index].delete.id` does not represent an existing activity, or another update item in the same request referred to this activity.
-  ///        * $field == "delete.ownerNetworkId" - `items[$index].delete.identityNetworkId` is not a valid network identifier.
-  ///        * $field == "actionType" - During the neighborhood initialization process, only `add` is a valid update message type.
+  /// Specific Error Responses:
+  ///   * ERROR_REJECTED - Neighborhood initialization process has not been done or finished yet, or proximity server is no longer interested in receiving updates 
+  ///                      from the requesting proximity server. This should have the same effect as if the proximity server sent StopNeighborhoodUpdatesRequest to 
+  ///                      the requesting proximity server. If the requesting proximity server wants to share its database, it has to go through neighborhood 
+  ///                      initialization process from start.
+  ///   * ERROR_INVALID_VALUE
+  ///     * Response.details == "$index.$field" - All items up to 'NeighborhoodSharedActivityUpdateRequest.items[$index]' (exclusive) were processed correctly
+  ///                                             (and the peer must not send them again) and an error occurred while processing the item with zero-based 
+  ///                                             index $index. Items with index greater then $index were not processed. The $field specifies which field 
+  ///                                             was invalid as follows:
+  ///       * $field == "add" - Number of shared activities from the requesting proximity server exceeds the limit.
+  ///       * $field == "add.signedActivity.activity.version" - `items[$index].add.signedActivity.activity.version` is not a valid activity version.
+  ///       * $field == "add.signedActivity.activity.id" - `items[$index].add.signedActivity.activity.id` is not a valid activity identifier or the same activity already exists or another update item in the same 
+  ///                                                      request referred to this activity.
+  ///       * $field == "add.signedActivity.activity.ownerPublicKey" - `items[$index].add.signedActivity.activity.ownerPublicKey` is not a valid public key value.
+  ///       * $field == "add.signedActivity.activity.profileServerContact.networkId" - `items[$index].add.signedActivity.activity.profileServerContact.networkId` is not a valid network identifier.
+  ///       * $field == "add.signedActivity.activity.profileServerContact.ipAddress" - `items[$index].add.signedActivity.activity.profileServerContact.ipAddress` is not a valid IP address or it is a local network address.
+  ///       * $field == "add.signedActivity.activity.profileServerContact.primaryPort" - `items[$index].add.signedActivity.activity.profileServerContact.primaryPort` must be an integer between 1 and 65,535.
+  ///       * $field == "add.signedActivity.activity.type" - `items[$index].add.signedActivity.activity.type` is not a valid activity type.
+  ///       * $field == "add.signedActivity.activity.latitude" - `items[$index].add.signedActivity.activity.latitude` is not a valid latitude value.
+  ///       * $field == "add.signedActivity.activity.longitude" - `items[$index].add.signedActivity.activity.longitude` is not a valid longitude value.
+  ///       * $field == "add.signedActivity.activity.precision" - `items[$index].add.signedActivity.activity.precision` must be an integer between 0 and 1,000.
+  ///       * $field == "add.signedActivity.activity.startTime" - `items[$index].add.signedActivity.activity.startTime` does not contain a valid start time information.
+  ///       * $field == "add.signedActivity.activity.expirationTime" - `items[$index].add.signedActivity.activity.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].add.signedActivity.activity.startTime',
+  ///                                                                   or it is more than 24 hours in the future.
+  ///       * $field == "add.signedActivity.activity.extraData" - `items[$index].add.signedActivity.activity.extraData` is not a valid extra data value.
+  ///       * $field == "add.signedActivity.signature" - `items[$index].add.signedActivity.signature` is not a valid signature or 'items[$index].add.signedActivity.activity'.
+  ///       * $field == "change.signedActivity.activity.version" - `items[$index].change.signedActivity.activity.version` is not a valid activity version.
+  ///       * $field == "change.signedActivity.activity.id" - `items[$index].change.signedActivity.activity.id` is not a valid activity identifier or the same activity already exists or another update item in the same 
+  ///                                                         request referred to this activity.
+  ///       * $field == "change.signedActivity.activity.ownerPublicKey" - `items[$index].change.signedActivity.activity.ownerPublicKey` is not a valid public key value.
+  ///       * $field == "change.signedActivity.activity.profileServerContact.networkId" - `items[$index].change.signedActivity.activity.profileServerContact.networkId` is not a valid network identifier.
+  ///       * $field == "change.signedActivity.activity.profileServerContact.ipAddress" - `items[$index].change.signedActivity.activity.profileServerContact.ipAddress` is not a valid IP address or it is a local network address.
+  ///       * $field == "change.signedActivity.activity.profileServerContact.primaryPort" - `items[$index].change.signedActivity.activity.profileServerContact.primaryPort` must be an integer between 1 and 65,535.
+  ///       * $field == "change.signedActivity.activity.type" - `items[$index].change.signedActivity.activity.type` is not a valid activity type, or it does not match the original value.
+  ///       * $field == "change.signedActivity.activity.latitude" - `items[$index].change.signedActivity.activity.latitude` is not a valid latitude value.
+  ///       * $field == "change.signedActivity.activity.longitude" - `items[$index].change.signedActivity.activity.longitude` is not a valid longitude value.
+  ///       * $field == "change.signedActivity.activity.precision" - `items[$index].change.signedActivity.activity.precision` must be an integer between 0 and 1,000.
+  ///       * $field == "change.signedActivity.activity.startTime" - `items[$index].change.signedActivity.activity.startTime` does not contain a valid start time information.
+  ///       * $field == "change.signedActivity.activity.expirationTime" - `items[$index].change.signedActivity.activity.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].change.signedActivity.activity.startTime'.
+  ///                                                                     or it is more than 24 hours in the future.
+  ///       * $field == "change.signedActivity.activity.extraData" - `items[$index].change.signedActivity.activity.extraData` is not a valid extra data value.
+  ///       * $field == "change.signedActivity.signature" - `items[$index].change.signedActivity.signature` is not a valid signature or 'items[$index].change.signedActivity.activity'.
+  ///       * $field == "delete.id" - `items[$index].delete.id` does not represent an existing activity, or another update item in the same request referred to this activity.
+  ///       * $field == "delete.ownerNetworkId" - `items[$index].delete.identityNetworkId` is not a valid network identifier.
+  ///       * $field == "actionType" - During the neighborhood initialization process, only `add` is a valid update message type.
   /// </summary>
   public sealed partial class NeighborhoodSharedActivityUpdateResponse : pb::IMessage<NeighborhoodSharedActivityUpdateResponse> {
     private static readonly pb::MessageParser<NeighborhoodSharedActivityUpdateResponse> _parser = new pb::MessageParser<NeighborhoodSharedActivityUpdateResponse>(() => new NeighborhoodSharedActivityUpdateResponse());
@@ -8015,7 +8018,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Information about update of a neighborhood activity.
+  /// Information about update of a neighborhood activity.
   /// </summary>
   public sealed partial class SharedActivityUpdateItem : pb::IMessage<SharedActivityUpdateItem> {
     private static readonly pb::MessageParser<SharedActivityUpdateItem> _parser = new pb::MessageParser<SharedActivityUpdateItem>(() => new SharedActivityUpdateItem());
@@ -8051,6 +8054,9 @@ namespace Iop.Proximityserver {
         case ActionTypeOneofCase.Delete:
           Delete = other.Delete.Clone();
           break;
+        case ActionTypeOneofCase.Refresh:
+          Refresh = other.Refresh.Clone();
+          break;
       }
 
     }
@@ -8063,7 +8069,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "add" field.</summary>
     public const int AddFieldNumber = 1;
     /// <summary>
-    ///   * adding a new activity to the database,
+    ///  * adding a new activity to the database,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.SharedActivityAddItem Add {
@@ -8077,7 +8083,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "change" field.</summary>
     public const int ChangeFieldNumber = 2;
     /// <summary>
-    ///   * changing an existing activity,
+    ///  * changing an existing activity,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.SharedActivityChangeItem Change {
@@ -8091,7 +8097,7 @@ namespace Iop.Proximityserver {
     /// <summary>Field number for the "delete" field.</summary>
     public const int DeleteFieldNumber = 3;
     /// <summary>
-    ///   * deleting an existing activity.
+    ///  * deleting an existing activity,
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.SharedActivityDeleteItem Delete {
@@ -8102,6 +8108,20 @@ namespace Iop.Proximityserver {
       }
     }
 
+    /// <summary>Field number for the "refresh" field.</summary>
+    public const int RefreshFieldNumber = 4;
+    /// <summary>
+    ///  * refresh neighbor's expiration time.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.SharedActivityRefreshItem Refresh {
+      get { return actionTypeCase_ == ActionTypeOneofCase.Refresh ? (global::Iop.Proximityserver.SharedActivityRefreshItem) actionType_ : null; }
+      set {
+        actionType_ = value;
+        actionTypeCase_ = value == null ? ActionTypeOneofCase.None : ActionTypeOneofCase.Refresh;
+      }
+    }
+
     private object actionType_;
     /// <summary>Enum of possible cases for the "ActionType" oneof.</summary>
     public enum ActionTypeOneofCase {
@@ -8109,6 +8129,7 @@ namespace Iop.Proximityserver {
       Add = 1,
       Change = 2,
       Delete = 3,
+      Refresh = 4,
     }
     private ActionTypeOneofCase actionTypeCase_ = ActionTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8138,6 +8159,7 @@ namespace Iop.Proximityserver {
       if (!object.Equals(Add, other.Add)) return false;
       if (!object.Equals(Change, other.Change)) return false;
       if (!object.Equals(Delete, other.Delete)) return false;
+      if (!object.Equals(Refresh, other.Refresh)) return false;
       if (ActionTypeCase != other.ActionTypeCase) return false;
       return true;
     }
@@ -8148,6 +8170,7 @@ namespace Iop.Proximityserver {
       if (actionTypeCase_ == ActionTypeOneofCase.Add) hash ^= Add.GetHashCode();
       if (actionTypeCase_ == ActionTypeOneofCase.Change) hash ^= Change.GetHashCode();
       if (actionTypeCase_ == ActionTypeOneofCase.Delete) hash ^= Delete.GetHashCode();
+      if (actionTypeCase_ == ActionTypeOneofCase.Refresh) hash ^= Refresh.GetHashCode();
       hash ^= (int) actionTypeCase_;
       return hash;
     }
@@ -8171,6 +8194,10 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(26);
         output.WriteMessage(Delete);
       }
+      if (actionTypeCase_ == ActionTypeOneofCase.Refresh) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Refresh);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8184,6 +8211,9 @@ namespace Iop.Proximityserver {
       }
       if (actionTypeCase_ == ActionTypeOneofCase.Delete) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Delete);
+      }
+      if (actionTypeCase_ == ActionTypeOneofCase.Refresh) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Refresh);
       }
       return size;
     }
@@ -8202,6 +8232,9 @@ namespace Iop.Proximityserver {
           break;
         case ActionTypeOneofCase.Delete:
           Delete = other.Delete;
+          break;
+        case ActionTypeOneofCase.Refresh:
+          Refresh = other.Refresh;
           break;
       }
 
@@ -8242,6 +8275,15 @@ namespace Iop.Proximityserver {
             Delete = subBuilder;
             break;
           }
+          case 34: {
+            global::Iop.Proximityserver.SharedActivityRefreshItem subBuilder = new global::Iop.Proximityserver.SharedActivityRefreshItem();
+            if (actionTypeCase_ == ActionTypeOneofCase.Refresh) {
+              subBuilder.MergeFrom(Refresh);
+            }
+            input.ReadMessage(subBuilder);
+            Refresh = subBuilder;
+            break;
+          }
         }
       }
     }
@@ -8250,7 +8292,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Information about newly created activity that is to be shared with a neighbor.
+  /// Information about newly created activity that is to be shared with a neighbor.
   /// </summary>
   public sealed partial class SharedActivityAddItem : pb::IMessage<SharedActivityAddItem> {
     private static readonly pb::MessageParser<SharedActivityAddItem> _parser = new pb::MessageParser<SharedActivityAddItem>(() => new SharedActivityAddItem());
@@ -8288,7 +8330,7 @@ namespace Iop.Proximityserver {
     public const int SignedActivityFieldNumber = 1;
     private global::Iop.Proximityserver.SignedActivityInformation signedActivity_;
     /// <summary>
-    ///  Signed description of an activity.
+    /// Signed description of an activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.SignedActivityInformation SignedActivity {
@@ -8380,7 +8422,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Information about change of an existing activity that is to be shared with a neighbor.
+  /// Information about change of an existing activity that is to be shared with a neighbor.
   /// </summary>
   public sealed partial class SharedActivityChangeItem : pb::IMessage<SharedActivityChangeItem> {
     private static readonly pb::MessageParser<SharedActivityChangeItem> _parser = new pb::MessageParser<SharedActivityChangeItem>(() => new SharedActivityChangeItem());
@@ -8418,7 +8460,7 @@ namespace Iop.Proximityserver {
     public const int SignedActivityFieldNumber = 1;
     private global::Iop.Proximityserver.SignedActivityInformation signedActivity_;
     /// <summary>
-    ///  Signed description of an activity.
+    /// Signed description of an activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.SignedActivityInformation SignedActivity {
@@ -8510,7 +8552,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Information about the removal of an existing activity that is to be shared with a neighbor.
+  /// Information about the removal of an existing activity that is to be shared with a neighbor.
   /// </summary>
   public sealed partial class SharedActivityDeleteItem : pb::IMessage<SharedActivityDeleteItem> {
     private static readonly pb::MessageParser<SharedActivityDeleteItem> _parser = new pb::MessageParser<SharedActivityDeleteItem>(() => new SharedActivityDeleteItem());
@@ -8549,7 +8591,7 @@ namespace Iop.Proximityserver {
     public const int IdFieldNumber = 1;
     private uint id_;
     /// <summary>
-    ///  Unique identifier of the activity among all activities of the same owner.
+    /// Unique identifier of the activity among all activities of the same owner.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Id {
@@ -8563,7 +8605,7 @@ namespace Iop.Proximityserver {
     public const int OwnerNetworkIdFieldNumber = 2;
     private pb::ByteString ownerNetworkId_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Network identifier of the identity that created the activity. 
+    /// Network identifier of the identity that created the activity. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString OwnerNetworkId {
@@ -8665,12 +8707,12 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Request to refresh all existing profiles of the requesting server on the target server.
+  /// Request to refresh the neighbor status of the requesting server on the target server.
   /// </summary>
-  public sealed partial class SharedProfileRefreshAllItem : pb::IMessage<SharedProfileRefreshAllItem> {
-    private static readonly pb::MessageParser<SharedProfileRefreshAllItem> _parser = new pb::MessageParser<SharedProfileRefreshAllItem>(() => new SharedProfileRefreshAllItem());
+  public sealed partial class SharedActivityRefreshItem : pb::IMessage<SharedActivityRefreshItem> {
+    private static readonly pb::MessageParser<SharedActivityRefreshItem> _parser = new pb::MessageParser<SharedActivityRefreshItem>(() => new SharedActivityRefreshItem());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SharedProfileRefreshAllItem> Parser { get { return _parser; } }
+    public static pb::MessageParser<SharedActivityRefreshItem> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -8683,28 +8725,28 @@ namespace Iop.Proximityserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedProfileRefreshAllItem() {
+    public SharedActivityRefreshItem() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedProfileRefreshAllItem(SharedProfileRefreshAllItem other) : this() {
+    public SharedActivityRefreshItem(SharedActivityRefreshItem other) : this() {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SharedProfileRefreshAllItem Clone() {
-      return new SharedProfileRefreshAllItem(this);
+    public SharedActivityRefreshItem Clone() {
+      return new SharedActivityRefreshItem(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as SharedProfileRefreshAllItem);
+      return Equals(other as SharedActivityRefreshItem);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SharedProfileRefreshAllItem other) {
+    public bool Equals(SharedActivityRefreshItem other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -8736,7 +8778,7 @@ namespace Iop.Proximityserver {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SharedProfileRefreshAllItem other) {
+    public void MergeFrom(SharedActivityRefreshItem other) {
       if (other == null) {
         return;
       }
@@ -8758,11 +8800,11 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Asks a (former) neighbor to stop sending updates of its database to the proximity server.
+  /// Asks a (former) neighbor to stop sending updates of its database to the proximity server.
   ///
-  ///  Roles: neighbor
+  /// Roles: neighbor
   ///
-  ///  Conversation status: Verified
+  /// Conversation status: Verified
   /// </summary>
   public sealed partial class StopNeighborhoodUpdatesRequest : pb::IMessage<StopNeighborhoodUpdatesRequest> {
     private static readonly pb::MessageParser<StopNeighborhoodUpdatesRequest> _parser = new pb::MessageParser<StopNeighborhoodUpdatesRequest>(() => new StopNeighborhoodUpdatesRequest());
@@ -8855,10 +8897,10 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  A response to StopNeighborhoodUpdatesRequest. 
+  /// A response to StopNeighborhoodUpdatesRequest. 
   ///
-  ///  Specific Error Responses:
-  ///    * ERROR_NOT_FOUND - The target server does not recognize the proximity server as its neighbor.
+  /// Specific Error Responses:
+  ///   * ERROR_NOT_FOUND - The target server does not recognize the proximity server as its neighbor.
   /// </summary>
   public sealed partial class StopNeighborhoodUpdatesResponse : pb::IMessage<StopNeighborhoodUpdatesResponse> {
     private static readonly pb::MessageParser<StopNeighborhoodUpdatesResponse> _parser = new pb::MessageParser<StopNeighborhoodUpdatesResponse>(() => new StopNeighborhoodUpdatesResponse());
@@ -8951,7 +8993,7 @@ namespace Iop.Proximityserver {
 
   /// <summary>
   ///
-  ///  Proximity server contact information.
+  /// Proximity server contact information.
   /// </summary>
   public sealed partial class CanProximityServerContact : pb::IMessage<CanProximityServerContact> {
     private static readonly pb::MessageParser<CanProximityServerContact> _parser = new pb::MessageParser<CanProximityServerContact>(() => new CanProximityServerContact());
@@ -8991,7 +9033,7 @@ namespace Iop.Proximityserver {
     public const int PublicKeyFieldNumber = 1;
     private pb::ByteString publicKey_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Proximity server's public key.
+    /// Proximity server's public key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicKey {
@@ -9005,7 +9047,7 @@ namespace Iop.Proximityserver {
     public const int IpAddressFieldNumber = 2;
     private pb::ByteString ipAddress_ = pb::ByteString.Empty;
     /// <summary>
-    ///  IPv4 or IPv6 public address of the network interface on which proximity server operates.
+    /// IPv4 or IPv6 public address of the network interface on which proximity server operates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString IpAddress {
@@ -9019,7 +9061,7 @@ namespace Iop.Proximityserver {
     public const int PrimaryPortFieldNumber = 3;
     private uint primaryPort_;
     /// <summary>
-    ///  TCP port of proximity server's primary interface.
+    /// TCP port of proximity server's primary interface.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint PrimaryPort {

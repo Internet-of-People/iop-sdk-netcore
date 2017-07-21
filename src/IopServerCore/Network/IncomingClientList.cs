@@ -11,16 +11,16 @@ namespace IopServerCore.Network
   /// <summary>
   /// Represents a single item in IncomingClientList collections.
   /// </summary>
-  public class PeerListItem
+  public class PeerListItem<TMessage>
   {
     /// <summary>Network client object.</summary>
-    public IncomingClientBase Client;  
+    public IncomingClientBase<TMessage> Client;  
   }
 
   /// <summary>
   /// Implements structures for managment of a server's network peers and authenticated clients.
   /// </summary>
-  public class IncomingClientList
+  public class IncomingClientList<TMessage>
   {
     private static Logger log = new Logger("IopServerCore.Network.IncomingClientList");
 
@@ -34,34 +34,34 @@ namespace IopServerCore.Network
     /// List of network peers mapped by their internal ID. All network peers are in this list.
     /// A network peer is any connected entity to the server's role server.
     /// </summary>
-    private Dictionary<ulong, PeerListItem> peersByInternalId = new Dictionary<ulong, PeerListItem>();
+    private Dictionary<ulong, PeerListItem<TMessage>> peersByInternalId = new Dictionary<ulong, PeerListItem<TMessage>>();
 
     /// <summary>
     /// List of network peers mapped by their Identity ID. Only peers with known Identity ID are in this list.
     /// </summary>
-    private Dictionary<byte[], List<PeerListItem>> peersByIdentityId = new Dictionary<byte[], List<PeerListItem>>(StructuralEqualityComparer<byte[]>.Default);
+    private Dictionary<byte[], List<PeerListItem<TMessage>>> peersByIdentityId = new Dictionary<byte[], List<PeerListItem<TMessage>>>(StructuralEqualityComparer<byte[]>.Default);
 
     /// <summary>
     /// List of clients mapped by their Identity ID. The clients in this list are authenticated and their connections to the server are exclusive, 
     /// which means that if another connection is established and the same client is authenticated over the second connection, the first connection must be closed.
     /// </summary>
-    private Dictionary<byte[], PeerListItem> authenticatedClientsByIdentityId = new Dictionary<byte[], PeerListItem>(StructuralEqualityComparer<byte[]>.Default);
+    private Dictionary<byte[], PeerListItem<TMessage>> authenticatedClientsByIdentityId = new Dictionary<byte[], PeerListItem<TMessage>>(StructuralEqualityComparer<byte[]>.Default);
 
-
+    public int Count => peersByIdentityId.Count;
 
     /// <summary>
     /// Creates a copy of list of all network clients (peers) that are connected to the server.
     /// </summary>
     /// <returns>List of network clients.</returns>
-    public List<IncomingClientBase> GetNetworkClientList()
+    public List<IncomingClientBase<TMessage>> GetNetworkClientList()
     {
       log.Trace("()");
 
-      List<IncomingClientBase> res = new List<IncomingClientBase>();
+      var res = new List<IncomingClientBase<TMessage>>();
 
       lock (lockObject)
       {
-        foreach (PeerListItem peer in peersByInternalId.Values)
+        foreach (var peer in peersByInternalId.Values)
           res.Add(peer.Client);
       }
 
@@ -91,11 +91,11 @@ namespace IopServerCore.Network
     /// Assigns ID to a new network client and safely adds it to the peersByInternalId list.
     /// </summary>
     /// <param name="Client">Network client to add.</param>
-    public void AddNetworkPeer(IncomingClientBase Client)
+    public void AddNetworkPeer(IncomingClientBase<TMessage> Client)
     {
       log.Trace("()");
 
-      PeerListItem peer = new PeerListItem();
+      var peer = new PeerListItem<TMessage>();
       peer.Client = Client;
 
       lock (lockObject)
@@ -114,13 +114,13 @@ namespace IopServerCore.Network
     /// <param name="Client">Network client to add.</param>
     /// <returns>true if the function succeeds, false otherwise. The function may fail only 
     /// if there is an asynchrony in internal peer lists, which should never happen.</returns>
-    public bool AddNetworkPeerWithIdentity(IncomingClientBase Client)
+    public bool AddNetworkPeerWithIdentity(IncomingClientBase<TMessage> Client)
     {
       log.Trace("(Client.Id:{0})", Client.Id.ToHex());
 
       bool res = false;
 
-      PeerListItem peer = null;
+      PeerListItem<TMessage> peer = null;
       byte[] identityId = Client.IdentityId;
 
       lock (lockObject)
@@ -131,10 +131,10 @@ namespace IopServerCore.Network
           // Then we either have this identity in peersByIdentityId list, 
           // in which case we add another "instance" to the list,
           // or we create a new list for this peer.
-          List<PeerListItem> list = null;
+          List<PeerListItem<TMessage>> list = null;
           bool listExists = peersByIdentityId.TryGetValue(identityId, out list);
 
-          if (!listExists) list = new List<PeerListItem>();
+          if (!listExists) list = new List<PeerListItem<TMessage>>();
 
           list.Add(peer);
 
@@ -157,14 +157,14 @@ namespace IopServerCore.Network
     /// <param name="Client">Online authenticated server's client to add.</param>
     /// <returns>true if the function succeeds, false otherwise. The function may fail only 
     /// if there is an asynchrony in internal peer lists, which should never happen.</returns>
-    public async Task<bool> AddAuthenticatedOnlineClient(IncomingClientBase Client)
+    public async Task<bool> AddAuthenticatedOnlineClient(IncomingClientBase<TMessage> Client)
     {
       log.Trace("(Client.Id:{0})", Client.Id.ToHex());
 
       bool res = false;
 
-      PeerListItem peer = null;
-      PeerListItem clientToCheckOut = null;
+      PeerListItem<TMessage> peer = null;
+      PeerListItem<TMessage> clientToCheckOut = null;
       byte[] identityId = Client.IdentityId;
 
       lock (lockObject)
@@ -206,7 +206,7 @@ namespace IopServerCore.Network
     /// Safely removes network client (peer) from all lists.
     /// </summary>
     /// <param name="Client">Network client to remove.</param>
-    public void RemoveNetworkPeer(IncomingClientBase Client)
+    public void RemoveNetworkPeer(IncomingClientBase<TMessage> Client)
     {
       log.Trace("(Client.Id:{0})", Client.Id.ToHex());
 
@@ -226,12 +226,12 @@ namespace IopServerCore.Network
         {
           // All peers with known Identity ID should be in peersByIdentityId list.
           peerByIdentityIdRemoveError = true;
-          List<PeerListItem> list;
+          List<PeerListItem<TMessage>> list;
           if (peersByIdentityId.TryGetValue(identityId, out list))
           {
             for (int i = 0; i < list.Count; i++)
             {
-              PeerListItem peerListItem = list[i];
+              PeerListItem<TMessage> peerListItem = list[i];
               if (peerListItem.Client.Id == internalId)
               {
                 list.RemoveAt(i);
@@ -273,12 +273,12 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="IdentityId">Identifier of the identity to search for.</param>
     /// <returns>Client object of the requested online identity, or null if the identity is not online.</returns>
-    public IncomingClientBase GetAuthenticatedOnlineClient(byte[] IdentityId)
+    public IncomingClientBase<TMessage> GetAuthenticatedOnlineClient(byte[] IdentityId)
     {
       log.Trace("(IdentityId:'{0}')", IdentityId.ToHex());
 
-      IncomingClientBase res = null;
-      PeerListItem peer;
+      IncomingClientBase<TMessage> res = null;
+      PeerListItem<TMessage> peer;
       lock (lockObject)
       {
         if (authenticatedClientsByIdentityId.TryGetValue(IdentityId, out peer))

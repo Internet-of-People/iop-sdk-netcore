@@ -18,24 +18,13 @@ namespace IopProtocol
   /// <summary>
   /// Representation of the protocol message in IoP Profile Server Network.
   /// </summary>
-  public class PsProtocolMessage : IProtocolMessage
+  class PsProtocolMessage : IProtocolMessage<Message>
   {
     /// <summary>Protocol specific message.</summary>
-    private Message message;
-    /// <summary>Protocol specific message.</summary>
-    public IMessage Message { get { return message; } }
-
-    /// <summary>Request part of the message if the message is a request message.</summary>
-    public Request Request { get { return message.Request; } }
-
-    /// <summary>Response part of the message if the message is a response message.</summary>
-    public Response Response { get { return message.Response; } }
-
-    /// <summary>Request/response type distinguisher.</summary>
-    public Message.MessageTypeOneofCase MessageTypeCase { get { return message.MessageTypeCase; } }
+    public Message Message { get; }
 
     /// <summary>Unique message identifier within a session.</summary>
-    public uint Id { get { return message.Id; } }
+    public uint Id { get { return Message.Id; } }
 
 
     /// <summary>
@@ -44,13 +33,13 @@ namespace IopProtocol
     /// <param name="Message">Protobuf Profile Server Network message.</param>
     public PsProtocolMessage(Message Message)
     {
-      this.message = Message;
+      this.Message = Message;
     }
 
 
     public override string ToString()
     {
-      return message.ToString();
+      return Message.ToString();
     }
   }
 
@@ -122,7 +111,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Data">Raw data to be decoded to the message.</param>
     /// <returns>ProtoBuf message or null if the data do not represent a valid message.</returns>
-    public static IProtocolMessage CreateMessageFromRawData(byte[] Data)
+    public static IProtocolMessage<Message> CreateMessageFromRawData(byte[] Data)
     {
       log.Trace("()");
 
@@ -149,10 +138,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Data">IoP Profile Server Network protocol message.</param>
     /// <returns>Binary representation of the message to be sent over the network.</returns>
-    public static byte[] MessageToByteArray(IProtocolMessage Data)
+    public static byte[] MessageToByteArray(IProtocolMessage<Message> Data)
     {
       MessageWithHeader mwh = new MessageWithHeader();
-      mwh.Body = (Message)Data.Message;
+      mwh.Body = Data.Message;
       // We have to initialize the header before calling CalculateSize.
       mwh.Header = 1;
       mwh.Header = (uint)mwh.CalculateSize() - ProtocolHelper.HeaderSize;
@@ -181,7 +170,7 @@ namespace IopProtocol
     /// Creates a new request template and sets its ID to ID of the last message + 1.
     /// </summary>
     /// <returns>New request message template.</returns>
-    public PsProtocolMessage CreateRequest()
+    public IProtocolMessage<Message> CreateRequest()
     {
       int newId = Interlocked.Increment(ref id);
 
@@ -189,7 +178,7 @@ namespace IopProtocol
       message.Id = (uint)newId;
       message.Request = new Request();
 
-      PsProtocolMessage res = new PsProtocolMessage(message);
+      var res = new PsProtocolMessage(message);
 
       return res;
     }
@@ -201,14 +190,14 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="ResponseStatus">Status code of the response.</param>
     /// <returns>Response message template for the request.</returns>
-    public PsProtocolMessage CreateResponse(PsProtocolMessage Request, Status ResponseStatus)
+    public IProtocolMessage<Message> CreateResponse(IProtocolMessage<Message> Request, Status ResponseStatus)
     {
       Message message = new Message();
-      message.Id = Request.Id;
+      message.Id = Request.Message.Id;
       message.Response = new Response();
       message.Response.Status = ResponseStatus;
 
-      PsProtocolMessage res = new PsProtocolMessage(message);
+      var res = new PsProtocolMessage(message);
 
       return res;
     }
@@ -218,7 +207,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Response message template for the request.</returns>
-    public PsProtocolMessage CreateOkResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateOkResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.Ok);
     }
@@ -229,8 +218,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorProtocolViolationResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorProtocolViolationResponse(IProtocolMessage<Message> Request = null)
     {
+      if (Request == null)
+        Request = new PsProtocolMessage(new Message { Id = 0x0BADC0DE });
       return CreateResponse(Request, Status.ErrorProtocolViolation);
     }
 
@@ -239,7 +230,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorUnsupportedResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorUnsupportedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorUnsupported);
     }
@@ -249,7 +240,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorBannedResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBannedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBanned);
     }
@@ -259,7 +250,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorBusyResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBusyResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBusy);
     }
@@ -269,7 +260,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorUnauthorizedResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorUnauthorizedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorUnauthorized);
     }
@@ -279,7 +270,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorBadRoleResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBadRoleResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBadRole);
     }
@@ -289,7 +280,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorBadConversationStatusResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBadConversationStatusResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBadConversationStatus);
     }
@@ -299,7 +290,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorInternalResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorInternalResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorInternal);
     }
@@ -310,7 +301,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorQuotaExceededResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorQuotaExceededResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorQuotaExceeded);
     }
@@ -320,7 +311,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorInvalidSignatureResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorInvalidSignatureResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorInvalidSignature);
     }
@@ -330,7 +321,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorNotFoundResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorNotFoundResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorNotFound);
     }
@@ -341,11 +332,11 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="Details">Optionally, details about the error to be sent in 'Response.details'.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorInvalidValueResponse(PsProtocolMessage Request, string Details = null)
+    public IProtocolMessage<Message> CreateErrorInvalidValueResponse(IProtocolMessage<Message> Request, string Details = null)
     {
-      PsProtocolMessage res = CreateResponse(Request, Status.ErrorInvalidValue);
+      var res = CreateResponse(Request, Status.ErrorInvalidValue);
       if (Details != null)
-        res.Response.Details = Details;
+        res.Message.Response.Details = Details;
 
       return res;
     }
@@ -355,7 +346,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorAlreadyExistsResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorAlreadyExistsResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorAlreadyExists);
     }
@@ -365,7 +356,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorNotAvailableResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorNotAvailableResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorNotAvailable);
     }
@@ -376,11 +367,11 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="Details">Optionally, details about the error to be sent in 'Response.details'.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorRejectedResponse(PsProtocolMessage Request, string Details = null)
+    public IProtocolMessage<Message> CreateErrorRejectedResponse(IProtocolMessage<Message> Request, string Details = null)
     {
-      PsProtocolMessage res = CreateResponse(Request, Status.ErrorRejected);
+      var res = CreateResponse(Request, Status.ErrorRejected);
       if (Details != null)
-        res.Response.Details = Details;
+        res.Message.Response.Details = Details;
 
       return res;
     }
@@ -390,7 +381,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateErrorUninitializedResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorUninitializedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorUninitialized);
     }
@@ -404,11 +395,11 @@ namespace IopProtocol
     /// Creates a new single request.
     /// </summary>
     /// <returns>New single request message template.</returns>
-    public PsProtocolMessage CreateSingleRequest()
+    public IProtocolMessage<Message> CreateSingleRequest()
     {
-      PsProtocolMessage res = CreateRequest();
-      res.Request.SingleRequest = new SingleRequest();
-      res.Request.SingleRequest.Version = Version;
+      var res = CreateRequest();
+      res.Message.Request.SingleRequest = new SingleRequest();
+      res.Message.Request.SingleRequest.Version = Version;
 
       return res;
     }
@@ -417,10 +408,10 @@ namespace IopProtocol
     /// Creates a new conversation request.
     /// </summary>
     /// <returns>New conversation request message template.</returns>
-    public PsProtocolMessage CreateConversationRequest()
+    public IProtocolMessage<Message> CreateConversationRequest()
     {
-      PsProtocolMessage res = CreateRequest();
-      res.Request.ConversationRequest = new ConversationRequest();
+      var res = CreateRequest();
+      res.Message.Request.ConversationRequest = new ConversationRequest();
 
       return res;
     }
@@ -431,7 +422,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationRequest.</param>
     /// <param name="RequestBody">Part of the request to sign.</param>
-    public void SignConversationRequestBody(PsProtocolMessage Message, IMessage RequestBody)
+    public void SignConversationRequestBody(IProtocolMessage<Message> Message, IMessage RequestBody)
     {
       byte[] msg = RequestBody.ToByteArray();
       SignConversationRequestBodyPart(Message, msg);
@@ -443,10 +434,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationRequest.</param>
     /// <param name="BodyPart">Part of the request to sign.</param>
-    public void SignConversationRequestBodyPart(PsProtocolMessage Message, byte[] BodyPart)
+    public void SignConversationRequestBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart)
     {
       byte[] signature = Ed25519.Sign(BodyPart, keys.ExpandedPrivateKey);
-      Message.Request.ConversationRequest.Signature = ProtocolHelper.ByteArrayToByteString(signature);
+      Message.Message.Request.ConversationRequest.Signature = ProtocolHelper.ByteArrayToByteString(signature);
     }
 
 
@@ -457,7 +448,7 @@ namespace IopProtocol
     /// <param name="RequestBody">Part of the request that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationRequestBody(PsProtocolMessage Message, IMessage RequestBody, byte[] PublicKey)
+    public bool VerifySignedConversationRequestBody(IProtocolMessage<Message> Message, IMessage RequestBody, byte[] PublicKey)
     {
       byte[] msg = RequestBody.ToByteArray();
       return VerifySignedConversationRequestBodyPart(Message, msg, PublicKey);
@@ -471,9 +462,9 @@ namespace IopProtocol
     /// <param name="BodyPart">Part of the request body that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationRequestBodyPart(PsProtocolMessage Message, byte[] BodyPart, byte[] PublicKey)
+    public bool VerifySignedConversationRequestBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart, byte[] PublicKey)
     {
-      byte[] signature = Message.Request.ConversationRequest.Signature.ToByteArray();
+      byte[] signature = Message.Message.Request.ConversationRequest.Signature.ToByteArray();
 
       bool res = Ed25519.Verify(signature, BodyPart, PublicKey);
       return res;
@@ -485,7 +476,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationResponse.</param>
     /// <param name="ResponseBody">Part of the response to sign.</param>
-    public void SignConversationResponseBody(PsProtocolMessage Message, IMessage ResponseBody)
+    public void SignConversationResponseBody(IProtocolMessage<Message> Message, IMessage ResponseBody)
     {
       byte[] msg = ResponseBody.ToByteArray();
       SignConversationResponseBodyPart(Message, msg);
@@ -497,10 +488,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationResponse.</param>
     /// <param name="BodyPart">Part of the response to sign.</param>
-    public void SignConversationResponseBodyPart(PsProtocolMessage Message, byte[] BodyPart)
+    public void SignConversationResponseBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart)
     {
       byte[] signature = Ed25519.Sign(BodyPart, keys.ExpandedPrivateKey);
-      Message.Response.ConversationResponse.Signature = ProtocolHelper.ByteArrayToByteString(signature);
+      Message.Message.Response.ConversationResponse.Signature = ProtocolHelper.ByteArrayToByteString(signature);
     }
 
 
@@ -511,7 +502,7 @@ namespace IopProtocol
     /// <param name="ResponseBody">Part of the request that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationResponseBody(PsProtocolMessage Message, IMessage ResponseBody, byte[] PublicKey)
+    public bool VerifySignedConversationResponseBody(IProtocolMessage<Message> Message, IMessage ResponseBody, byte[] PublicKey)
     {
       byte[] msg = ResponseBody.ToByteArray();
       return VerifySignedConversationResponseBodyPart(Message, msg, PublicKey);
@@ -525,9 +516,9 @@ namespace IopProtocol
     /// <param name="BodyPart">Part of the response body that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationResponseBodyPart(PsProtocolMessage Message, byte[] BodyPart, byte[] PublicKey)
+    public bool VerifySignedConversationResponseBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart, byte[] PublicKey)
     {
-      byte[] signature = Message.Response.ConversationResponse.Signature.ToByteArray();
+      byte[] signature = Message.Message.Response.ConversationResponse.Signature.ToByteArray();
 
       bool res = Ed25519.Verify(signature, BodyPart, PublicKey);
       return res;
@@ -538,11 +529,11 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Single response message template for the request.</returns>
-    public PsProtocolMessage CreateSingleResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateSingleResponse(IProtocolMessage<Message> Request)
     {
-      PsProtocolMessage res = CreateOkResponse(Request);
-      res.Response.SingleResponse = new SingleResponse();
-      res.Response.SingleResponse.Version = Request.Request.SingleRequest.Version;
+      var res = CreateOkResponse(Request);
+      res.Message.Response.SingleResponse = new SingleResponse();
+      res.Message.Response.SingleResponse.Version = Request.Message.Request.SingleRequest.Version;
 
       return res;
     }
@@ -552,10 +543,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Conversation response message template for the request.</returns>
-    public PsProtocolMessage CreateConversationResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateConversationResponse(IProtocolMessage<Message> Request)
     {
-      PsProtocolMessage res = CreateOkResponse(Request);
-      res.Response.ConversationResponse = new ConversationResponse();
+      var res = CreateOkResponse(Request);
+      res.Message.Response.ConversationResponse = new ConversationResponse();
 
       return res;
     }
@@ -566,13 +557,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Payload">Caller defined payload to be sent to the other peer.</param>
     /// <returns>PingRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreatePingRequest(byte[] Payload)
+    public IProtocolMessage<Message> CreatePingRequest(byte[] Payload)
     {
       PingRequest pingRequest = new PingRequest();
       pingRequest.Payload = ProtocolHelper.ByteArrayToByteString(Payload);
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.Ping = pingRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.Ping = pingRequest;
 
       return res;
     }
@@ -584,14 +575,14 @@ namespace IopProtocol
     /// <param name="Payload">Payload to include in the response.</param>
     /// <param name="Clock">Timestamp to include in the response.</param>
     /// <returns>PingResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreatePingResponse(PsProtocolMessage Request, byte[] Payload, DateTime Clock)
+    public IProtocolMessage<Message> CreatePingResponse(IProtocolMessage<Message> Request, byte[] Payload, DateTime Clock)
     {
       PingResponse pingResponse = new PingResponse();
       pingResponse.Clock = ProtocolHelper.DateTimeToUnixTimestampMs(Clock);
       pingResponse.Payload = ProtocolHelper.ByteArrayToByteString(Payload);
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.Ping = pingResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.Ping = pingResponse;
 
       return res;
     }
@@ -600,12 +591,12 @@ namespace IopProtocol
     /// Creates a new ListRolesRequest message.
     /// </summary>
     /// <returns>ListRolesRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateListRolesRequest()
+    public IProtocolMessage<Message> CreateListRolesRequest()
     {
       ListRolesRequest listRolesRequest = new ListRolesRequest();
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ListRoles = listRolesRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ListRoles = listRolesRequest;
 
       return res;
     }
@@ -616,13 +607,13 @@ namespace IopProtocol
     /// <param name="Request">ListRolesRequest message for which the response is created.</param>
     /// <param name="Roles">List of role server descriptions to be included in the response.</param>
     /// <returns>ListRolesResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateListRolesResponse(PsProtocolMessage Request, List<ServerRole> Roles)
+    public IProtocolMessage<Message> CreateListRolesResponse(IProtocolMessage<Message> Request, List<ServerRole> Roles)
     {
       ListRolesResponse listRolesResponse = new ListRolesResponse();
       listRolesResponse.Roles.AddRange(Roles);
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ListRoles = listRolesResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ListRoles = listRolesResponse;
 
       return res;
     }
@@ -633,7 +624,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Challenge">Client's generated challenge data for server's authentication.</param>
     /// <returns>StartConversationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateStartConversationRequest(byte[] Challenge)
+    public IProtocolMessage<Message> CreateStartConversationRequest(byte[] Challenge)
     {
       StartConversationRequest startConversationRequest = new StartConversationRequest();
       startConversationRequest.SupportedVersions.Add(supportedVersions);
@@ -641,8 +632,8 @@ namespace IopProtocol
       startConversationRequest.PublicKey = ProtocolHelper.ByteArrayToByteString(keys.PublicKey);
       startConversationRequest.ClientChallenge = ProtocolHelper.ByteArrayToByteString(Challenge);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.Start = startConversationRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.Start = startConversationRequest;
 
       return res;
     }
@@ -657,7 +648,7 @@ namespace IopProtocol
     /// <param name="Challenge">Server's generated challenge data for client's authentication.</param>
     /// <param name="Challenge">ClientChallenge from StartConversationRequest that the server received from the client.</param>
     /// <returns>StartConversationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateStartConversationResponse(PsProtocolMessage Request, SemVer Version, byte[] PublicKey, byte[] Challenge, byte[] ClientChallenge)
+    public IProtocolMessage<Message> CreateStartConversationResponse(IProtocolMessage<Message> Request, SemVer Version, byte[] PublicKey, byte[] Challenge, byte[] ClientChallenge)
     {
       StartConversationResponse startConversationResponse = new StartConversationResponse();
       startConversationResponse.Version = Version.ToByteString();
@@ -665,8 +656,8 @@ namespace IopProtocol
       startConversationResponse.Challenge = ProtocolHelper.ByteArrayToByteString(Challenge);
       startConversationResponse.ClientChallenge = ProtocolHelper.ByteArrayToByteString(ClientChallenge);
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.Start = startConversationResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.Start = startConversationResponse;
 
       SignConversationResponseBodyPart(res, ClientChallenge);
 
@@ -680,13 +671,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Contract">Hosting contract for one of the profile server's plan to base the hosting agreement on.</param>
     /// <returns>RegisterHostingRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateRegisterHostingRequest(HostingPlanContract Contract)
+    public IProtocolMessage<Message> CreateRegisterHostingRequest(HostingPlanContract Contract)
     {
       RegisterHostingRequest registerHostingRequest = new RegisterHostingRequest();
       registerHostingRequest.Contract = Contract;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.RegisterHosting = registerHostingRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.RegisterHosting = registerHostingRequest;
 
       SignConversationRequestBodyPart(res, Contract.ToByteArray());
       return res;
@@ -699,13 +690,13 @@ namespace IopProtocol
     /// <param name="Request">RegisterHostingRequest message for which the response is created.</param>
     /// <param name="Contract">Contract copy from RegisterHostingRequest.Contract.</param>
     /// <returns>RegisterHostingResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateRegisterHostingResponse(PsProtocolMessage Request, HostingPlanContract Contract)
+    public IProtocolMessage<Message> CreateRegisterHostingResponse(IProtocolMessage<Message> Request, HostingPlanContract Contract)
     {
       RegisterHostingResponse registerHostingResponse = new RegisterHostingResponse();
       registerHostingResponse.Contract = Contract;
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.RegisterHosting = registerHostingResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.RegisterHosting = registerHostingResponse;
 
       SignConversationResponseBodyPart(res, Contract.ToByteArray());
 
@@ -719,13 +710,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Challenge">Challenge received in StartConversationRequest.Challenge.</param>
     /// <returns>CheckInRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCheckInRequest(byte[] Challenge)
+    public IProtocolMessage<Message> CreateCheckInRequest(byte[] Challenge)
     {
       CheckInRequest checkInRequest = new CheckInRequest();
       checkInRequest.Challenge = ProtocolHelper.ByteArrayToByteString(Challenge);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.CheckIn = checkInRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.CheckIn = checkInRequest;
 
       SignConversationRequestBody(res, checkInRequest);
       return res;
@@ -736,12 +727,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">CheckInRequest message for which the response is created.</param>
     /// <returns>CheckInResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCheckInResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateCheckInResponse(IProtocolMessage<Message> Request)
     {
       CheckInResponse checkInResponse = new CheckInResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.CheckIn = checkInResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.CheckIn = checkInResponse;
 
       return res;
     }
@@ -752,13 +743,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Challenge">Challenge received in StartConversationRequest.Challenge.</param>
     /// <returns>VerifyIdentityRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateVerifyIdentityRequest(byte[] Challenge)
+    public IProtocolMessage<Message> CreateVerifyIdentityRequest(byte[] Challenge)
     {
       VerifyIdentityRequest verifyIdentityRequest = new VerifyIdentityRequest();
       verifyIdentityRequest.Challenge = ProtocolHelper.ByteArrayToByteString(Challenge);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.VerifyIdentity = verifyIdentityRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.VerifyIdentity = verifyIdentityRequest;
 
       SignConversationRequestBody(res, verifyIdentityRequest);
       return res;
@@ -769,12 +760,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">VerifyIdentityRequest message for which the response is created.</param>
     /// <returns>VerifyIdentityResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateVerifyIdentityResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateVerifyIdentityResponse(IProtocolMessage<Message> Request)
     {
       VerifyIdentityResponse verifyIdentityResponse = new VerifyIdentityResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.VerifyIdentity = verifyIdentityResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.VerifyIdentity = verifyIdentityResponse;
 
       return res;
     }
@@ -788,7 +779,7 @@ namespace IopProtocol
     /// <param name="ThumbnailImage">Thumbnail image data or null if thumbnail image is to be erased or not set.</param>
     /// <param name="NoPropagation">If set to true, the profile server will not propagate the update to the neighborhood.</param>
     /// <returns>UpdateProfileRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateUpdateProfileRequest(ProfileInformation Profile, byte[] ProfileImage = null, byte[] ThumbnailImage = null, bool NoPropagation = false)
+    public IProtocolMessage<Message> CreateUpdateProfileRequest(ProfileInformation Profile, byte[] ProfileImage = null, byte[] ThumbnailImage = null, bool NoPropagation = false)
     {
       UpdateProfileRequest updateProfileRequest = new UpdateProfileRequest();
       updateProfileRequest.Profile = Profile;
@@ -801,8 +792,8 @@ namespace IopProtocol
 
       updateProfileRequest.NoPropagation = NoPropagation;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.UpdateProfile = updateProfileRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.UpdateProfile = updateProfileRequest;
 
       SignConversationRequestBodyPart(res, Profile.ToByteArray());
 
@@ -815,12 +806,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">UpdateProfileRequest message for which the response is created.</param>
     /// <returns>UpdateProfileResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateUpdateProfileResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateUpdateProfileResponse(IProtocolMessage<Message> Request)
     {
       UpdateProfileResponse updateProfileResponse = new UpdateProfileResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.UpdateProfile = updateProfileResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.UpdateProfile = updateProfileResponse;
 
       return res;
     }
@@ -831,15 +822,15 @@ namespace IopProtocol
     /// </summary>
     /// <param name="NewProfileServerId">Network identifier of the identity's new profile server, or null if this information is not to be sent to the previous profile server.</param>
     /// <returns>CancelHostingAgreementRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCancelHostingAgreementRequest(byte[] NewProfileServerId)
+    public IProtocolMessage<Message> CreateCancelHostingAgreementRequest(byte[] NewProfileServerId)
     {
       CancelHostingAgreementRequest cancelHostingAgreementRequest = new CancelHostingAgreementRequest();
       cancelHostingAgreementRequest.RedirectToNewProfileServer = NewProfileServerId != null;
       if (cancelHostingAgreementRequest.RedirectToNewProfileServer)
         cancelHostingAgreementRequest.NewProfileServerNetworkId = ProtocolHelper.ByteArrayToByteString(NewProfileServerId);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.CancelHostingAgreement = cancelHostingAgreementRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.CancelHostingAgreement = cancelHostingAgreementRequest;
 
       return res;
     }
@@ -850,12 +841,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">CancelHostingAgreementRequest message for which the response is created.</param>
     /// <returns>CancelHostingAgreementResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCancelHostingAgreementResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateCancelHostingAgreementResponse(IProtocolMessage<Message> Request)
     {
       CancelHostingAgreementResponse cancelHostingAgreementResponse = new CancelHostingAgreementResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.CancelHostingAgreement = cancelHostingAgreementResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.CancelHostingAgreement = cancelHostingAgreementResponse;
 
       return res;
     }
@@ -866,13 +857,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="ServiceNames">List of service names to add to the list of services supported in the currently opened session.</param>
     /// <returns>ApplicationServiceAddRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceAddRequest(List<string> ServiceNames)
+    public IProtocolMessage<Message> CreateApplicationServiceAddRequest(List<string> ServiceNames)
     {
       ApplicationServiceAddRequest applicationServiceAddRequest = new ApplicationServiceAddRequest();
       applicationServiceAddRequest.ServiceNames.Add(ServiceNames);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.ApplicationServiceAdd = applicationServiceAddRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.ApplicationServiceAdd = applicationServiceAddRequest;
 
       return res;
     }
@@ -883,12 +874,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">ApplicationServiceAddRequest message for which the response is created.</param>
     /// <returns>ApplicationServiceAddResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceAddResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateApplicationServiceAddResponse(IProtocolMessage<Message> Request)
     {
       ApplicationServiceAddResponse applicationServiceAddResponse = new ApplicationServiceAddResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.ApplicationServiceAdd = applicationServiceAddResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.ApplicationServiceAdd = applicationServiceAddResponse;
 
       return res;
     }
@@ -899,13 +890,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="ServiceName">Name of the application service to remove from the list of services supported in the currently opened session.</param>
     /// <returns>ApplicationServiceRemoveRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceRemoveRequest(string ServiceName)
+    public IProtocolMessage<Message> CreateApplicationServiceRemoveRequest(string ServiceName)
     {
       ApplicationServiceRemoveRequest applicationServiceRemoveRequest = new ApplicationServiceRemoveRequest();
       applicationServiceRemoveRequest.ServiceName = ServiceName;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.ApplicationServiceRemove = applicationServiceRemoveRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.ApplicationServiceRemove = applicationServiceRemoveRequest;
 
       return res;
     }
@@ -916,12 +907,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">ApplicationServiceRemoveRequest message for which the response is created.</param>
     /// <returns>ApplicationServiceRemoveResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceRemoveResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateApplicationServiceRemoveResponse(IProtocolMessage<Message> Request)
     {
       ApplicationServiceRemoveResponse applicationServiceRemoveResponse = new ApplicationServiceRemoveResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.ApplicationServiceRemove = applicationServiceRemoveResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.ApplicationServiceRemove = applicationServiceRemoveResponse;
 
       return res;
     }
@@ -936,7 +927,7 @@ namespace IopProtocol
     /// <param name="IncludeThumbnailImage">true if the caller wants to get the identity's thumbnail image, false otherwise.</param>
     /// <param name="IncludeApplicationServices">true if the caller wants to get the identity's list of application services, false otherwise.</param>
     /// <returns>GetProfileInformationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateGetProfileInformationRequest(byte[] IdentityId, bool IncludeProfileImage = false, bool IncludeThumbnailImage = false, bool IncludeApplicationServices = false)
+    public IProtocolMessage<Message> CreateGetProfileInformationRequest(byte[] IdentityId, bool IncludeProfileImage = false, bool IncludeThumbnailImage = false, bool IncludeApplicationServices = false)
     {
       GetProfileInformationRequest getProfileInformationRequest = new GetProfileInformationRequest();
       getProfileInformationRequest.IdentityNetworkId = ProtocolHelper.ByteArrayToByteString(IdentityId);
@@ -944,8 +935,8 @@ namespace IopProtocol
       getProfileInformationRequest.IncludeThumbnailImage = IncludeThumbnailImage;
       getProfileInformationRequest.IncludeApplicationServices = IncludeApplicationServices;
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.GetProfileInformation = getProfileInformationRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.GetProfileInformation = getProfileInformationRequest;
 
       return res;
     }
@@ -963,7 +954,7 @@ namespace IopProtocol
     /// <param name="ThumbnailImage">If <paramref name="IsHosted"/> is true, this is the identity's thumbnail image, or null if it was not requested.</param>
     /// <param name="ApplicationServices">If <paramref name="IsHosted"/> is true, this is the identity's list of supported application services, or null if it was not requested.</param>
     /// <returns>GetProfileInformationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateGetProfileInformationResponse(PsProtocolMessage Request, bool IsHosted, byte[] TargetProfileServerId, bool IsOnline = false, SignedProfileInformation SignedProfile = null, byte[] ProfileImage = null, byte[] ThumbnailImage = null, HashSet<string> ApplicationServices = null)
+    public IProtocolMessage<Message> CreateGetProfileInformationResponse(IProtocolMessage<Message> Request, bool IsHosted, byte[] TargetProfileServerId, bool IsOnline = false, SignedProfileInformation SignedProfile = null, byte[] ProfileImage = null, byte[] ThumbnailImage = null, HashSet<string> ApplicationServices = null)
     {
       GetProfileInformationResponse getProfileInformationResponse = new GetProfileInformationResponse();
       getProfileInformationResponse.IsHosted = IsHosted;
@@ -983,8 +974,8 @@ namespace IopProtocol
           getProfileInformationResponse.TargetProfileServerNetworkId = ProtocolHelper.ByteArrayToByteString(TargetProfileServerId);
       }
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.GetProfileInformation = getProfileInformationResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.GetProfileInformation = getProfileInformationResponse;
 
       return res;
     }
@@ -996,14 +987,14 @@ namespace IopProtocol
     /// <param name="IdentityId">Network identifier of the callee's identity.</param>
     /// <param name="ServiceName">Name of the application service to use for the call.</param>
     /// <returns>CallIdentityApplicationServiceRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCallIdentityApplicationServiceRequest(byte[] IdentityId, string ServiceName)
+    public IProtocolMessage<Message> CreateCallIdentityApplicationServiceRequest(byte[] IdentityId, string ServiceName)
     {
       CallIdentityApplicationServiceRequest callIdentityApplicationServiceRequest = new CallIdentityApplicationServiceRequest();
       callIdentityApplicationServiceRequest.IdentityNetworkId = ProtocolHelper.ByteArrayToByteString(IdentityId);
       callIdentityApplicationServiceRequest.ServiceName = ServiceName;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.CallIdentityApplicationService = callIdentityApplicationServiceRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.CallIdentityApplicationService = callIdentityApplicationServiceRequest;
 
       return res;
     }
@@ -1015,13 +1006,13 @@ namespace IopProtocol
     /// <param name="Request">CallIdentityApplicationServiceRequest message for which the response is created.</param>
     /// <param name="CallerToken">Token issued for the caller for clAppService connection.</param>
     /// <returns>CallIdentityApplicationServiceResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCallIdentityApplicationServiceResponse(PsProtocolMessage Request, byte[] CallerToken)
+    public IProtocolMessage<Message> CreateCallIdentityApplicationServiceResponse(IProtocolMessage<Message> Request, byte[] CallerToken)
     {
       CallIdentityApplicationServiceResponse callIdentityApplicationServiceResponse = new CallIdentityApplicationServiceResponse();
       callIdentityApplicationServiceResponse.CallerToken = ProtocolHelper.ByteArrayToByteString(CallerToken);
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.CallIdentityApplicationService = callIdentityApplicationServiceResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.CallIdentityApplicationService = callIdentityApplicationServiceResponse;
 
       return res;
     }
@@ -1034,15 +1025,15 @@ namespace IopProtocol
     /// <param name="ServiceName">Name of the application service the caller wants to use.</param>
     /// <param name="CalleeToken">Token issued for the callee for clAppService connection.</param>
     /// <returns>IncomingCallNotificationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateIncomingCallNotificationRequest(byte[] CallerPublicKey, string ServiceName, byte[] CalleeToken)
+    public IProtocolMessage<Message> CreateIncomingCallNotificationRequest(byte[] CallerPublicKey, string ServiceName, byte[] CalleeToken)
     {
       IncomingCallNotificationRequest incomingCallNotificationRequest = new IncomingCallNotificationRequest();
       incomingCallNotificationRequest.CallerPublicKey = ProtocolHelper.ByteArrayToByteString(CallerPublicKey);
       incomingCallNotificationRequest.ServiceName = ServiceName;
       incomingCallNotificationRequest.CalleeToken = ProtocolHelper.ByteArrayToByteString(CalleeToken);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.IncomingCallNotification = incomingCallNotificationRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.IncomingCallNotification = incomingCallNotificationRequest;
 
       return res;
     }
@@ -1053,12 +1044,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">IncomingCallNotificationRequest message for which the response is created.</param>
     /// <returns>IncomingCallNotificationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateIncomingCallNotificationResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateIncomingCallNotificationResponse(IProtocolMessage<Message> Request)
     {
       IncomingCallNotificationResponse incomingCallNotificationResponse = new IncomingCallNotificationResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.IncomingCallNotification = incomingCallNotificationResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.IncomingCallNotification = incomingCallNotificationResponse;
 
       return res;
     }
@@ -1070,15 +1061,15 @@ namespace IopProtocol
     /// <param name="Token">Client's token for clAppService connection.</param>
     /// <param name="Message">Message to be sent to the other peer, or null for channel initialization message.</param>
     /// <returns>ApplicationServiceSendMessageRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceSendMessageRequest(byte[] Token, byte[] Message)
+    public IProtocolMessage<Message> CreateApplicationServiceSendMessageRequest(byte[] Token, byte[] Message)
     {
       ApplicationServiceSendMessageRequest applicationServiceSendMessageRequest = new ApplicationServiceSendMessageRequest();
       applicationServiceSendMessageRequest.Token = ProtocolHelper.ByteArrayToByteString(Token);
       if (Message != null)
         applicationServiceSendMessageRequest.Message = ProtocolHelper.ByteArrayToByteString(Message);
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ApplicationServiceSendMessage = applicationServiceSendMessageRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ApplicationServiceSendMessage = applicationServiceSendMessageRequest;
 
       return res;
     }
@@ -1089,12 +1080,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">ApplicationServiceSendMessageRequest message for which the response is created.</param>
     /// <returns>ApplicationServiceSendMessageResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceSendMessageResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateApplicationServiceSendMessageResponse(IProtocolMessage<Message> Request)
     {
       ApplicationServiceSendMessageResponse applicationServiceSendMessageResponse = new ApplicationServiceSendMessageResponse();
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ApplicationServiceSendMessage = applicationServiceSendMessageResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ApplicationServiceSendMessage = applicationServiceSendMessageResponse;
 
       return res;
     }
@@ -1106,13 +1097,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Message sent by the other peer.</param>
     /// <returns>ApplicationServiceReceiveMessageNotificationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceReceiveMessageNotificationRequest(byte[] Message)
+    public IProtocolMessage<Message> CreateApplicationServiceReceiveMessageNotificationRequest(byte[] Message)
     {
       ApplicationServiceReceiveMessageNotificationRequest applicationServiceReceiveMessageNotificationRequest = new ApplicationServiceReceiveMessageNotificationRequest();
       applicationServiceReceiveMessageNotificationRequest.Message = ProtocolHelper.ByteArrayToByteString(Message);
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ApplicationServiceReceiveMessageNotification = applicationServiceReceiveMessageNotificationRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ApplicationServiceReceiveMessageNotification = applicationServiceReceiveMessageNotificationRequest;
 
       return res;
     }
@@ -1123,12 +1114,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">ApplicationServiceReceiveMessageNotificationRequest message for which the response is created.</param>
     /// <returns>ApplicationServiceReceiveMessageNotificationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateApplicationServiceReceiveMessageNotificationResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateApplicationServiceReceiveMessageNotificationResponse(IProtocolMessage<Message> Request)
     {
       ApplicationServiceReceiveMessageNotificationResponse applicationServiceReceiveMessageNotificationResponse = new ApplicationServiceReceiveMessageNotificationResponse();
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ApplicationServiceReceiveMessageNotification = applicationServiceReceiveMessageNotificationResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ApplicationServiceReceiveMessageNotification = applicationServiceReceiveMessageNotificationResponse;
 
       return res;
     }
@@ -1138,12 +1129,12 @@ namespace IopProtocol
     /// Creates a new ProfileStatsRequest message.
     /// </summary>
     /// <returns>ProfileStatsRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileStatsRequest()
+    public IProtocolMessage<Message> CreateProfileStatsRequest()
     {
       ProfileStatsRequest profileStatsRequest = new ProfileStatsRequest();
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ProfileStats = profileStatsRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ProfileStats = profileStatsRequest;
 
       return res;
     }
@@ -1155,14 +1146,14 @@ namespace IopProtocol
     /// <param name="Request">ProfileStatsRequest message for which the response is created.</param>
     /// <param name="Stats">List of profile statistics.</param>
     /// <returns>ProfileStatsResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileStatsResponse(PsProtocolMessage Request, IEnumerable<ProfileStatsItem> Stats)
+    public IProtocolMessage<Message> CreateProfileStatsResponse(IProtocolMessage<Message> Request, IEnumerable<ProfileStatsItem> Stats)
     {
       ProfileStatsResponse profileStatsResponse = new ProfileStatsResponse();
       if ((Stats != null) && (Stats.Count() > 0))
         profileStatsResponse.Stats.AddRange(Stats);
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ProfileStats = profileStatsResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ProfileStats = profileStatsResponse;
 
       return res;
     }
@@ -1183,7 +1174,7 @@ namespace IopProtocol
     /// <param name="IncludeHostedOnly">If set to true, the profile server only returns profiles of its own hosted identities. Otherwise, identities from the profile server's neighborhood can be included.</param>
     /// <param name="IncludeThumbnailImages">If set to true, the response will include a thumbnail image of each profile.</param>
     /// <returns>ProfileSearchRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileSearchRequest(string IdentityType, string Name, string ExtraData, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludeHostedOnly = false, bool IncludeThumbnailImages = true)
+    public IProtocolMessage<Message> CreateProfileSearchRequest(string IdentityType, string Name, string ExtraData, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludeHostedOnly = false, bool IncludeThumbnailImages = true)
     {
       ProfileSearchRequest profileSearchRequest = new ProfileSearchRequest();
       profileSearchRequest.IncludeHostedOnly = IncludeHostedOnly;
@@ -1197,8 +1188,8 @@ namespace IopProtocol
       profileSearchRequest.Radius = Location != null ? Radius : 0;
       profileSearchRequest.ExtraData = ExtraData != null ? ExtraData : "";
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ProfileSearch = profileSearchRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ProfileSearch = profileSearchRequest;
 
       return res;
     }
@@ -1213,7 +1204,7 @@ namespace IopProtocol
     /// <param name="CoveredServers">List of profile servers whose profile databases were be used to produce the result.</param>
     /// <param name="Results">List of results that contains up to <paramref name="MaxRecordCount"/> items.</param>
     /// <returns>ProfileSearchResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileSearchResponse(PsProtocolMessage Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<ProfileQueryInformation> Results)
+    public IProtocolMessage<Message> CreateProfileSearchResponse(IProtocolMessage<Message> Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<ProfileQueryInformation> Results)
     {
       ProfileSearchResponse profileSearchResponse = new ProfileSearchResponse();
       profileSearchResponse.TotalRecordCount = TotalRecordCount;
@@ -1225,8 +1216,8 @@ namespace IopProtocol
       if ((Results != null) && (Results.Count() > 0))
         profileSearchResponse.Profiles.AddRange(Results);
       
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ProfileSearch = profileSearchResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ProfileSearch = profileSearchResponse;
 
       return res;
     }
@@ -1239,14 +1230,14 @@ namespace IopProtocol
     /// <param name="RecordIndex">Zero-based index of the first result to retrieve.</param>
     /// <param name="RecordCount">Number of results to retrieve. If 'ProfileSearchResponse.IncludeThumbnailImages' was set, this has to be an integer between 1 and 100, otherwise it has to be an integer between 1 and 1,000.</param>
     /// <returns>ProfileSearchRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileSearchPartRequest(uint RecordIndex, uint RecordCount)
+    public IProtocolMessage<Message> CreateProfileSearchPartRequest(uint RecordIndex, uint RecordCount)
     {
       ProfileSearchPartRequest profileSearchPartRequest = new ProfileSearchPartRequest();
       profileSearchPartRequest.RecordIndex = RecordIndex;
       profileSearchPartRequest.RecordCount= RecordCount;
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ProfileSearchPart = profileSearchPartRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ProfileSearchPart = profileSearchPartRequest;
 
       return res;
     }
@@ -1260,15 +1251,15 @@ namespace IopProtocol
     /// <param name="RecordCount">Number of results.</param>
     /// <param name="Results">List of results that contains <paramref name="RecordCount"/> items.</param>
     /// <returns>ProfileSearchPartResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateProfileSearchPartResponse(PsProtocolMessage Request, uint RecordIndex, uint RecordCount, IEnumerable<ProfileQueryInformation> Results)
+    public IProtocolMessage<Message> CreateProfileSearchPartResponse(IProtocolMessage<Message> Request, uint RecordIndex, uint RecordCount, IEnumerable<ProfileQueryInformation> Results)
     {
       ProfileSearchPartResponse profileSearchPartResponse = new ProfileSearchPartResponse();
       profileSearchPartResponse.RecordIndex = RecordIndex;
       profileSearchPartResponse.RecordCount = RecordCount;
       profileSearchPartResponse.Profiles.AddRange(Results);
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ProfileSearchPart = profileSearchPartResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ProfileSearchPart = profileSearchPartResponse;
 
       return res;
     }
@@ -1280,14 +1271,14 @@ namespace IopProtocol
     /// <param name="CardApplication">Description of the relationship proven by the signed relationship card.</param>
     /// <param name="SignedCard">Signed relationship card.</param>
     /// <returns>AddRelatedIdentityRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateAddRelatedIdentityRequest(CardApplicationInformation CardApplication, SignedRelationshipCard SignedCard)
+    public IProtocolMessage<Message> CreateAddRelatedIdentityRequest(CardApplicationInformation CardApplication, SignedRelationshipCard SignedCard)
     {
       AddRelatedIdentityRequest addRelatedIdentityRequest = new AddRelatedIdentityRequest();
       addRelatedIdentityRequest.CardApplication = CardApplication;
       addRelatedIdentityRequest.SignedCard = SignedCard;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.AddRelatedIdentity = addRelatedIdentityRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.AddRelatedIdentity = addRelatedIdentityRequest;
 
       SignConversationRequestBodyPart(res, CardApplication.ToByteArray());
       return res;
@@ -1300,12 +1291,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">AddRelatedIdentityRequest message for which the response is created.</param>
     /// <returns>AddRelatedIdentityResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateAddRelatedIdentityResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateAddRelatedIdentityResponse(IProtocolMessage<Message> Request)
     {
       AddRelatedIdentityResponse addRelatedIdentityResponse = new AddRelatedIdentityResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.AddRelatedIdentity = addRelatedIdentityResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.AddRelatedIdentity = addRelatedIdentityResponse;
 
       return res;
     }
@@ -1316,13 +1307,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="CardApplicationIdentifier">Identifier of the card application to remove.</param>
     /// <returns>RemoveRelatedIdentityRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateRemoveRelatedIdentityRequest(byte[] CardApplicationIdentifier)
+    public IProtocolMessage<Message> CreateRemoveRelatedIdentityRequest(byte[] CardApplicationIdentifier)
     {
       RemoveRelatedIdentityRequest removeRelatedIdentityRequest = new RemoveRelatedIdentityRequest();
       removeRelatedIdentityRequest.ApplicationId = ProtocolHelper.ByteArrayToByteString(CardApplicationIdentifier);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.RemoveRelatedIdentity = removeRelatedIdentityRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.RemoveRelatedIdentity = removeRelatedIdentityRequest;
 
       return res;
     }
@@ -1334,12 +1325,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">RemoveRelatedIdentityRequest message for which the response is created.</param>
     /// <returns>RemoveRelatedIdentityResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateRemoveRelatedIdentityResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateRemoveRelatedIdentityResponse(IProtocolMessage<Message> Request)
     {
       RemoveRelatedIdentityResponse removeRelatedIdentityResponse = new RemoveRelatedIdentityResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.RemoveRelatedIdentity = removeRelatedIdentityResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.RemoveRelatedIdentity = removeRelatedIdentityResponse;
 
       return res;
     }
@@ -1354,7 +1345,7 @@ namespace IopProtocol
     /// <param name="CardType">Wildcard string filter for card type. If filtering by card type name is not required this is set to null.</param>
     /// <param name="IssuerPublicKey">Network identifier of the card issuer whose relationships with the target identity are being queried.</param>
     /// <returns>GetIdentityRelationshipsInformationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateGetIdentityRelationshipsInformationRequest(byte[] IdentityNetworkId, bool IncludeInvalid, string CardType, byte[] IssuerNetworkId)
+    public IProtocolMessage<Message> CreateGetIdentityRelationshipsInformationRequest(byte[] IdentityNetworkId, bool IncludeInvalid, string CardType, byte[] IssuerNetworkId)
     {
       GetIdentityRelationshipsInformationRequest getIdentityRelationshipsInformationRequest = new GetIdentityRelationshipsInformationRequest();
       getIdentityRelationshipsInformationRequest.IdentityNetworkId = ProtocolHelper.ByteArrayToByteString(IdentityNetworkId);
@@ -1364,8 +1355,8 @@ namespace IopProtocol
       if (IssuerNetworkId != null)
         getIdentityRelationshipsInformationRequest.IssuerNetworkId = ProtocolHelper.ByteArrayToByteString(IssuerNetworkId);
 
-      PsProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.GetIdentityRelationshipsInformation = getIdentityRelationshipsInformationRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.GetIdentityRelationshipsInformation = getIdentityRelationshipsInformationRequest;
 
       return res;
     }
@@ -1377,13 +1368,13 @@ namespace IopProtocol
     /// <param name="Request">GetIdentityRelationshipsInformationRequest message for which the response is created.</param>
     /// <param name="Stats">List of profile statistics.</param>
     /// <returns>GetIdentityRelationshipsInformationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateGetIdentityRelationshipsInformationResponse(PsProtocolMessage Request, IEnumerable<IdentityRelationship> Relationships)
+    public IProtocolMessage<Message> CreateGetIdentityRelationshipsInformationResponse(IProtocolMessage<Message> Request, IEnumerable<IdentityRelationship> Relationships)
     {
       GetIdentityRelationshipsInformationResponse getIdentityRelationshipsInformationResponse = new GetIdentityRelationshipsInformationResponse();
       getIdentityRelationshipsInformationResponse.Relationships.AddRange(Relationships);
 
-      PsProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.GetIdentityRelationshipsInformation = getIdentityRelationshipsInformationResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.GetIdentityRelationshipsInformation = getIdentityRelationshipsInformationResponse;
 
       return res;
     }
@@ -1397,15 +1388,15 @@ namespace IopProtocol
     /// <param name="SrNeighborPort">Neighbors interface port of the requesting profile server.</param>
     /// <param name="IpAddress">External IP address of the requesting profile server.</param>
     /// <returns>StartNeighborhoodInitializationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateStartNeighborhoodInitializationRequest(uint PrimaryPort, uint SrNeighborPort, IPAddress IpAddress)
+    public IProtocolMessage<Message> CreateStartNeighborhoodInitializationRequest(uint PrimaryPort, uint SrNeighborPort, IPAddress IpAddress)
     {
       StartNeighborhoodInitializationRequest startNeighborhoodInitializationRequest = new StartNeighborhoodInitializationRequest();
       startNeighborhoodInitializationRequest.PrimaryPort = PrimaryPort;
       startNeighborhoodInitializationRequest.SrNeighborPort = SrNeighborPort;
       startNeighborhoodInitializationRequest.IpAddress = ProtocolHelper.ByteArrayToByteString(IpAddress.GetAddressBytes());
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.StartNeighborhoodInitialization = startNeighborhoodInitializationRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.StartNeighborhoodInitialization = startNeighborhoodInitializationRequest;
 
       return res;
     }
@@ -1416,12 +1407,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">StartNeighborhoodInitializationRequest message for which the response is created.</param>
     /// <returns>StartNeighborhoodInitializationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateStartNeighborhoodInitializationResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateStartNeighborhoodInitializationResponse(IProtocolMessage<Message> Request)
     {
       StartNeighborhoodInitializationResponse startNeighborhoodInitializationResponse = new StartNeighborhoodInitializationResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.StartNeighborhoodInitialization = startNeighborhoodInitializationResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.StartNeighborhoodInitialization = startNeighborhoodInitializationResponse;
 
       return res;
     }
@@ -1431,12 +1422,12 @@ namespace IopProtocol
     /// Creates a new FinishNeighborhoodInitializationRequest message.
     /// </summary>
     /// <returns>FinishNeighborhoodInitializationRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateFinishNeighborhoodInitializationRequest()
+    public IProtocolMessage<Message> CreateFinishNeighborhoodInitializationRequest()
     {
       FinishNeighborhoodInitializationRequest finishNeighborhoodInitializationRequest = new FinishNeighborhoodInitializationRequest();
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.FinishNeighborhoodInitialization = finishNeighborhoodInitializationRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.FinishNeighborhoodInitialization = finishNeighborhoodInitializationRequest;
 
       return res;
     }
@@ -1447,12 +1438,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">FinishNeighborhoodInitializationRequest message for which the response is created.</param>
     /// <returns>FinishNeighborhoodInitializationResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateFinishNeighborhoodInitializationResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateFinishNeighborhoodInitializationResponse(IProtocolMessage<Message> Request)
     {
       FinishNeighborhoodInitializationResponse finishNeighborhoodInitializationResponse = new FinishNeighborhoodInitializationResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.FinishNeighborhoodInitialization = finishNeighborhoodInitializationResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.FinishNeighborhoodInitialization = finishNeighborhoodInitializationResponse;
 
       return res;
     }
@@ -1463,13 +1454,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Items">List of profile changes to share.</param>
     /// <returns>NeighborhoodSharedProfileUpdateRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateNeighborhoodSharedProfileUpdateRequest(IEnumerable<SharedProfileUpdateItem> Items = null)
+    public IProtocolMessage<Message> CreateNeighborhoodSharedProfileUpdateRequest(IEnumerable<SharedProfileUpdateItem> Items = null)
     {
       NeighborhoodSharedProfileUpdateRequest neighborhoodSharedProfileUpdateRequest = new NeighborhoodSharedProfileUpdateRequest();
       if (Items != null) neighborhoodSharedProfileUpdateRequest.Items.AddRange(Items);
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.NeighborhoodSharedProfileUpdate = neighborhoodSharedProfileUpdateRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.NeighborhoodSharedProfileUpdate = neighborhoodSharedProfileUpdateRequest;
       
       return res;
     }
@@ -1480,12 +1471,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">NeighborhoodSharedProfileUpdateRequest message for which the response is created.</param>
     /// <returns>NeighborhoodSharedProfileUpdateResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateNeighborhoodSharedProfileUpdateResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateNeighborhoodSharedProfileUpdateResponse(IProtocolMessage<Message> Request)
     {
       NeighborhoodSharedProfileUpdateResponse neighborhoodSharedProfileUpdateResponse = new NeighborhoodSharedProfileUpdateResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.NeighborhoodSharedProfileUpdate = neighborhoodSharedProfileUpdateResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.NeighborhoodSharedProfileUpdate = neighborhoodSharedProfileUpdateResponse;
 
       return res;
     }
@@ -1495,12 +1486,12 @@ namespace IopProtocol
     /// Creates a new StopNeighborhoodUpdatesRequest message.
     /// </summary>
     /// <returns>StopNeighborhoodUpdatesRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateStopNeighborhoodUpdatesRequest()
+    public IProtocolMessage<Message> CreateStopNeighborhoodUpdatesRequest()
     {
       StopNeighborhoodUpdatesRequest stopNeighborhoodUpdatesRequest = new StopNeighborhoodUpdatesRequest();
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.StopNeighborhoodUpdates = stopNeighborhoodUpdatesRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.StopNeighborhoodUpdates = stopNeighborhoodUpdatesRequest;
 
       return res;
     }
@@ -1511,12 +1502,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">StopNeighborhoodUpdatesRequest message for which the response is created.</param>
     /// <returns>StopNeighborhoodUpdatesResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateStopNeighborhoodUpdatesResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateStopNeighborhoodUpdatesResponse(IProtocolMessage<Message> Request)
     {
       StopNeighborhoodUpdatesResponse stopNeighborhoodUpdatesResponse = new StopNeighborhoodUpdatesResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.StopNeighborhoodUpdates = stopNeighborhoodUpdatesResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.StopNeighborhoodUpdates = stopNeighborhoodUpdatesResponse;
 
       return res;
     }
@@ -1528,13 +1519,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Data">Data to store in CAN, or null to just delete the old object.</param>
     /// <returns>CanStoreDataRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCanStoreDataRequest(CanIdentityData Data)
+    public IProtocolMessage<Message> CreateCanStoreDataRequest(CanIdentityData Data)
     {
       CanStoreDataRequest canStoreDataRequest = new CanStoreDataRequest();
       canStoreDataRequest.Data = Data;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.CanStoreData = canStoreDataRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.CanStoreData = canStoreDataRequest;
 
       return res;
     }
@@ -1546,13 +1537,13 @@ namespace IopProtocol
     /// <param name="Request">CanStoreDataRequest message for which the response is created.</param>
     /// <param name="Hash">Hash of 'CanStoreDataRequest.data' received from CAN, or null if 'CanStoreDataRequest.data' was null.</param>
     /// <returns>CanStoreDataResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCanStoreDataResponse(PsProtocolMessage Request, byte[] Hash)
+    public IProtocolMessage<Message> CreateCanStoreDataResponse(IProtocolMessage<Message> Request, byte[] Hash)
     {
       CanStoreDataResponse canStoreDataResponse = new CanStoreDataResponse();
       if (Hash != null) canStoreDataResponse.Hash = ProtocolHelper.ByteArrayToByteString(Hash);
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.CanStoreData = canStoreDataResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.CanStoreData = canStoreDataResponse;
 
       return res;
     }
@@ -1563,13 +1554,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Record">Signed IPNS record.</param>
     /// <returns>CanPublishIpnsRecordRequest message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCanPublishIpnsRecordRequest(CanIpnsEntry Record)
+    public IProtocolMessage<Message> CreateCanPublishIpnsRecordRequest(CanIpnsEntry Record)
     {
       CanPublishIpnsRecordRequest canPublishIpnsRecordRequest = new CanPublishIpnsRecordRequest();
       canPublishIpnsRecordRequest.Record = Record;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.CanPublishIpnsRecord = canPublishIpnsRecordRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.CanPublishIpnsRecord = canPublishIpnsRecordRequest;
 
       return res;
     }
@@ -1580,12 +1571,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">CanPublishIpnsRecordRequest message for which the response is created.</param>
     /// <returns>CanPublishIpnsRecordResponse message that is ready to be sent.</returns>
-    public PsProtocolMessage CreateCanPublishIpnsRecordResponse(PsProtocolMessage Request)
+    public IProtocolMessage<Message> CreateCanPublishIpnsRecordResponse(IProtocolMessage<Message> Request)
     {
       CanPublishIpnsRecordResponse canPublishIpnsRecordResponse = new CanPublishIpnsRecordResponse();
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.CanPublishIpnsRecord = canPublishIpnsRecordResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.CanPublishIpnsRecord = canPublishIpnsRecordResponse;
 
       return res;
     }

@@ -17,24 +17,13 @@ namespace IopProtocol
   /// <summary>
   /// Representation of the protocol message in IoP Proximity Server Network.
   /// </summary>
-  public class ProxProtocolMessage : IProtocolMessage
+  class ProxProtocolMessage : IProtocolMessage<Message>
   {
     /// <summary>Protocol specific message.</summary>
-    private Message message;
-    /// <summary>Protocol specific message.</summary>
-    public IMessage Message { get { return message; } }
-
-    /// <summary>Request part of the message if the message is a request message.</summary>
-    public Request Request { get { return message.Request; } }
-
-    /// <summary>Response part of the message if the message is a response message.</summary>
-    public Response Response { get { return message.Response; } }
-
-    /// <summary>Request/response type distinguisher.</summary>
-    public Message.MessageTypeOneofCase MessageTypeCase { get { return message.MessageTypeCase; } }
+    public Message Message { get; }
 
     /// <summary>Unique message identifier within a session.</summary>
-    public uint Id { get { return message.Id; } }
+    public uint Id { get { return Message.Id; } }
 
 
     /// <summary>
@@ -43,13 +32,13 @@ namespace IopProtocol
     /// <param name="Message">Protobuf Proximity Server Network message.</param>
     public ProxProtocolMessage(Message Message)
     {
-      this.message = Message;
+      this.Message = Message;
     }
 
 
     public override string ToString()
     {
-      return message.ToString();
+      return Message.ToString();
     }
   }
 
@@ -87,7 +76,7 @@ namespace IopProtocol
     private List<ByteString> supportedVersions;
 
     /// <summary>Selected protocol version.</summary>
-    public ByteString Version;
+    private ByteString version;
 
     /// <summary>Cryptographic key set representing the identity.</summary>
     private KeysEd25519 keys;
@@ -102,11 +91,10 @@ namespace IopProtocol
     {
       idBase = (int)IdBase;
       id = idBase;
-      supportedVersions = new List<ByteString>();
-      foreach (SemVer version in SupportedVersions)
-        supportedVersions.Add(version.ToByteString());
-
-      Version = supportedVersions[0];
+      supportedVersions = SupportedVersions
+        .Select(v => v.ToByteString())
+        .ToList();
+      version = supportedVersions[0];
       keys = Keys;
     }
 
@@ -116,7 +104,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Data">Raw data to be decoded to the message.</param>
     /// <returns>ProtoBuf message or null if the data do not represent a valid message.</returns>
-    public static IProtocolMessage CreateMessageFromRawData(byte[] Data)
+    public static IProtocolMessage<Message> CreateMessageFromRawData(byte[] Data)
     {
       log.Trace("()");
 
@@ -143,10 +131,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Data">IoP Proximity Server Network protocol message.</param>
     /// <returns>Binary representation of the message to be sent over the network.</returns>
-    public static byte[] MessageToByteArray(IProtocolMessage Data)
+    public static byte[] MessageToByteArray(IProtocolMessage<Message> Data)
     {
       MessageWithHeader mwh = new MessageWithHeader();
-      mwh.Body = (Message)Data.Message;
+      mwh.Body = Data.Message;
       // We have to initialize the header before calling CalculateSize.
       mwh.Header = 1;
       mwh.Header = (uint)mwh.CalculateSize() - ProtocolHelper.HeaderSize;
@@ -160,7 +148,7 @@ namespace IopProtocol
     /// <param name="SelectedVersion">Selected version information.</param>
     public void SetProtocolVersion(SemVer SelectedVersion)
     {
-      Version =  SelectedVersion.ToByteString();
+      version =  SelectedVersion.ToByteString();
     }
 
     /// <summary>
@@ -175,7 +163,7 @@ namespace IopProtocol
     /// Creates a new request template and sets its ID to ID of the last message + 1.
     /// </summary>
     /// <returns>New request message template.</returns>
-    public ProxProtocolMessage CreateRequest()
+    public IProtocolMessage<Message> CreateRequest()
     {
       int newId = Interlocked.Increment(ref id);
 
@@ -183,7 +171,7 @@ namespace IopProtocol
       message.Id = (uint)newId;
       message.Request = new Request();
 
-      ProxProtocolMessage res = new ProxProtocolMessage(message);
+      var res = new ProxProtocolMessage(message);
 
       return res;
     }
@@ -195,14 +183,14 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="ResponseStatus">Status code of the response.</param>
     /// <returns>Response message template for the request.</returns>
-    public ProxProtocolMessage CreateResponse(ProxProtocolMessage Request, Status ResponseStatus)
+    public IProtocolMessage<Message> CreateResponse(IProtocolMessage<Message> Request, Status ResponseStatus)
     {
       Message message = new Message();
       message.Id = Request.Id;
       message.Response = new Response();
       message.Response.Status = ResponseStatus;
 
-      ProxProtocolMessage res = new ProxProtocolMessage(message);
+      var res = new ProxProtocolMessage(message);
 
       return res;
     }
@@ -212,7 +200,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Response message template for the request.</returns>
-    public ProxProtocolMessage CreateOkResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateOkResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.Ok);
     }
@@ -223,7 +211,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorProtocolViolationResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorProtocolViolationResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorProtocolViolation);
     }
@@ -233,7 +221,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorUnsupportedResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorUnsupportedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorUnsupported);
     }
@@ -243,7 +231,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorBannedResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBannedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBanned);
     }
@@ -253,7 +241,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorBusyResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBusyResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBusy);
     }
@@ -263,7 +251,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorUnauthorizedResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorUnauthorizedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorUnauthorized);
     }
@@ -273,7 +261,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorBadRoleResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBadRoleResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBadRole);
     }
@@ -283,7 +271,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorBadConversationStatusResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorBadConversationStatusResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorBadConversationStatus);
     }
@@ -293,7 +281,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorInternalResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorInternalResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorInternal);
     }
@@ -304,7 +292,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorQuotaExceededResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorQuotaExceededResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorQuotaExceeded);
     }
@@ -314,7 +302,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorInvalidSignatureResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorInvalidSignatureResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorInvalidSignature);
     }
@@ -324,7 +312,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorNotFoundResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorNotFoundResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorNotFound);
     }
@@ -335,11 +323,11 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="Details">Optionally, details about the error to be sent in 'Response.details'.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorInvalidValueResponse(ProxProtocolMessage Request, string Details = null)
+    public IProtocolMessage<Message> CreateErrorInvalidValueResponse(IProtocolMessage<Message> Request, string Details = null)
     {
-      ProxProtocolMessage res = CreateResponse(Request, Status.ErrorInvalidValue);
+      var res = CreateResponse(Request, Status.ErrorInvalidValue);
       if (Details != null)
-        res.Response.Details = Details;
+        res.Message.Response.Details = Details;
 
       return res;
     }
@@ -349,7 +337,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorAlreadyExistsResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorAlreadyExistsResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorAlreadyExists);
     }
@@ -359,7 +347,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorNotAvailableResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorNotAvailableResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorNotAvailable);
     }
@@ -370,11 +358,11 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="Details">Optionally, details about the error to be sent in 'Response.details'.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorRejectedResponse(ProxProtocolMessage Request, string Details = null)
+    public IProtocolMessage<Message> CreateErrorRejectedResponse(IProtocolMessage<Message> Request, string Details = null)
     {
-      ProxProtocolMessage res = CreateResponse(Request, Status.ErrorRejected);
+      var res = CreateResponse(Request, Status.ErrorRejected);
       if (Details != null)
-        res.Response.Details = Details;
+        res.Message.Response.Details = Details;
 
       return res;
     }
@@ -384,7 +372,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateErrorUninitializedResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorUninitializedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorUninitialized);
     }
@@ -398,11 +386,11 @@ namespace IopProtocol
     /// Creates a new single request.
     /// </summary>
     /// <returns>New single request message template.</returns>
-    public ProxProtocolMessage CreateSingleRequest()
+    public IProtocolMessage<Message> CreateSingleRequest()
     {
-      ProxProtocolMessage res = CreateRequest();
-      res.Request.SingleRequest = new SingleRequest();
-      res.Request.SingleRequest.Version = Version;
+      var res = CreateRequest();
+      res.Message.Request.SingleRequest = new SingleRequest();
+      res.Message.Request.SingleRequest.Version = version;
 
       return res;
     }
@@ -411,10 +399,10 @@ namespace IopProtocol
     /// Creates a new conversation request.
     /// </summary>
     /// <returns>New conversation request message template.</returns>
-    public ProxProtocolMessage CreateConversationRequest()
+    public IProtocolMessage<Message> CreateConversationRequest()
     {
-      ProxProtocolMessage res = CreateRequest();
-      res.Request.ConversationRequest = new ConversationRequest();
+      var res = CreateRequest();
+      res.Message.Request.ConversationRequest = new ConversationRequest();
 
       return res;
     }
@@ -425,7 +413,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationRequest.</param>
     /// <param name="RequestBody">Part of the request to sign.</param>
-    public void SignConversationRequestBody(ProxProtocolMessage Message, IMessage RequestBody)
+    public void SignConversationRequestBody(IProtocolMessage<Message> Message, IMessage RequestBody)
     {
       byte[] msg = RequestBody.ToByteArray();
       SignConversationRequestBodyPart(Message, msg);
@@ -437,10 +425,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationRequest.</param>
     /// <param name="BodyPart">Part of the request to sign.</param>
-    public void SignConversationRequestBodyPart(ProxProtocolMessage Message, byte[] BodyPart)
+    public void SignConversationRequestBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart)
     {
       byte[] signature = Ed25519.Sign(BodyPart, keys.ExpandedPrivateKey);
-      Message.Request.ConversationRequest.Signature = ProtocolHelper.ByteArrayToByteString(signature);
+      Message.Message.Request.ConversationRequest.Signature = ProtocolHelper.ByteArrayToByteString(signature);
     }
 
 
@@ -451,7 +439,7 @@ namespace IopProtocol
     /// <param name="RequestBody">Part of the request that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationRequestBody(ProxProtocolMessage Message, IMessage RequestBody, byte[] PublicKey)
+    public bool VerifySignedConversationRequestBody(IProtocolMessage<Message> Message, IMessage RequestBody, byte[] PublicKey)
     {
       byte[] msg = RequestBody.ToByteArray();
       return VerifySignedConversationRequestBodyPart(Message, msg, PublicKey);
@@ -465,9 +453,9 @@ namespace IopProtocol
     /// <param name="BodyPart">Part of the request body that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationRequestBodyPart(ProxProtocolMessage Message, byte[] BodyPart, byte[] PublicKey)
+    public bool VerifySignedConversationRequestBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart, byte[] PublicKey)
     {
-      byte[] signature = Message.Request.ConversationRequest.Signature.ToByteArray();
+      byte[] signature = Message.Message.Request.ConversationRequest.Signature.ToByteArray();
 
       bool res = Ed25519.Verify(signature, BodyPart, PublicKey);
       return res;
@@ -479,7 +467,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationResponse.</param>
     /// <param name="ResponseBody">Part of the response to sign.</param>
-    public void SignConversationResponseBody(ProxProtocolMessage Message, IMessage ResponseBody)
+    public void SignConversationResponseBody(IProtocolMessage<Message> Message, IMessage ResponseBody)
     {
       byte[] msg = ResponseBody.ToByteArray();
       SignConversationResponseBodyPart(Message, msg);
@@ -491,10 +479,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Message">Whole message which contains an initialized ConversationResponse.</param>
     /// <param name="BodyPart">Part of the response to sign.</param>
-    public void SignConversationResponseBodyPart(ProxProtocolMessage Message, byte[] BodyPart)
+    public void SignConversationResponseBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart)
     {
       byte[] signature = Ed25519.Sign(BodyPart, keys.ExpandedPrivateKey);
-      Message.Response.ConversationResponse.Signature = ProtocolHelper.ByteArrayToByteString(signature);
+      Message.Message.Response.ConversationResponse.Signature = ProtocolHelper.ByteArrayToByteString(signature);
     }
 
 
@@ -505,7 +493,7 @@ namespace IopProtocol
     /// <param name="ResponseBody">Part of the request that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationResponseBody(ProxProtocolMessage Message, IMessage ResponseBody, byte[] PublicKey)
+    public bool VerifySignedConversationResponseBody(IProtocolMessage<Message> Message, IMessage ResponseBody, byte[] PublicKey)
     {
       byte[] msg = ResponseBody.ToByteArray();
       return VerifySignedConversationResponseBodyPart(Message, msg, PublicKey);
@@ -519,9 +507,9 @@ namespace IopProtocol
     /// <param name="BodyPart">Part of the response body that was signed.</param>
     /// <param name="PublicKey">Public key of the identity that created the signature.</param>
     /// <returns>true if the signature is valid, false otherwise including missing signature.</returns>
-    public bool VerifySignedConversationResponseBodyPart(ProxProtocolMessage Message, byte[] BodyPart, byte[] PublicKey)
+    public bool VerifySignedConversationResponseBodyPart(IProtocolMessage<Message> Message, byte[] BodyPart, byte[] PublicKey)
     {
-      byte[] signature = Message.Response.ConversationResponse.Signature.ToByteArray();
+      byte[] signature = Message.Message.Response.ConversationResponse.Signature.ToByteArray();
 
       bool res = Ed25519.Verify(signature, BodyPart, PublicKey);
       return res;
@@ -532,11 +520,11 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Single response message template for the request.</returns>
-    public ProxProtocolMessage CreateSingleResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateSingleResponse(IProtocolMessage<Message> Request)
     {
-      ProxProtocolMessage res = CreateOkResponse(Request);
-      res.Response.SingleResponse = new SingleResponse();
-      res.Response.SingleResponse.Version = Request.Request.SingleRequest.Version;
+      var res = CreateOkResponse(Request);
+      res.Message.Response.SingleResponse = new SingleResponse();
+      res.Message.Response.SingleResponse.Version = Request.Message.Request.SingleRequest.Version;
 
       return res;
     }
@@ -546,10 +534,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Conversation response message template for the request.</returns>
-    public ProxProtocolMessage CreateConversationResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateConversationResponse(IProtocolMessage<Message> Request)
     {
-      ProxProtocolMessage res = CreateOkResponse(Request);
-      res.Response.ConversationResponse = new ConversationResponse();
+      var res = CreateOkResponse(Request);
+      res.Message.Response.ConversationResponse = new ConversationResponse();
 
       return res;
     }
@@ -560,13 +548,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Payload">Caller defined payload to be sent to the other peer.</param>
     /// <returns>PingRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreatePingRequest(byte[] Payload)
+    public IProtocolMessage<Message> CreatePingRequest(byte[] Payload)
     {
       PingRequest pingRequest = new PingRequest();
       pingRequest.Payload = ProtocolHelper.ByteArrayToByteString(Payload);
 
-      ProxProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.Ping = pingRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.Ping = pingRequest;
 
       return res;
     }
@@ -578,14 +566,14 @@ namespace IopProtocol
     /// <param name="Payload">Payload to include in the response.</param>
     /// <param name="Clock">Timestamp to include in the response.</param>
     /// <returns>PingResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreatePingResponse(ProxProtocolMessage Request, byte[] Payload, long Clock)
+    public IProtocolMessage<Message> CreatePingResponse(IProtocolMessage<Message> Request, byte[] Payload, long Clock)
     {
       PingResponse pingResponse = new PingResponse();
       pingResponse.Clock = Clock;
       pingResponse.Payload = ProtocolHelper.ByteArrayToByteString(Payload);
 
-      ProxProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.Ping = pingResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.Ping = pingResponse;
 
       return res;
     }
@@ -594,12 +582,12 @@ namespace IopProtocol
     /// Creates a new ListRolesRequest message.
     /// </summary>
     /// <returns>ListRolesRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateListRolesRequest()
+    public IProtocolMessage<Message> CreateListRolesRequest()
     {
       ListRolesRequest listRolesRequest = new ListRolesRequest();
 
-      ProxProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ListRoles = listRolesRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ListRoles = listRolesRequest;
 
       return res;
     }
@@ -610,13 +598,13 @@ namespace IopProtocol
     /// <param name="Request">ListRolesRequest message for which the response is created.</param>
     /// <param name="Roles">List of role server descriptions to be included in the response.</param>
     /// <returns>ListRolesResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateListRolesResponse(ProxProtocolMessage Request, List<ServerRole> Roles)
+    public IProtocolMessage<Message> CreateListRolesResponse(IProtocolMessage<Message> Request, List<ServerRole> Roles)
     {
       ListRolesResponse listRolesResponse = new ListRolesResponse();
       listRolesResponse.Roles.AddRange(Roles);
 
-      ProxProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ListRoles = listRolesResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ListRoles = listRolesResponse;
 
       return res;
     }
@@ -627,7 +615,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Challenge">Client's generated challenge data for server's authentication.</param>
     /// <returns>StartConversationRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateStartConversationRequest(byte[] Challenge)
+    public IProtocolMessage<Message> CreateStartConversationRequest(byte[] Challenge)
     {
       StartConversationRequest startConversationRequest = new StartConversationRequest();
       startConversationRequest.SupportedVersions.Add(supportedVersions);
@@ -635,8 +623,8 @@ namespace IopProtocol
       startConversationRequest.PublicKey = ProtocolHelper.ByteArrayToByteString(keys.PublicKey);
       startConversationRequest.ClientChallenge = ProtocolHelper.ByteArrayToByteString(Challenge);
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.Start = startConversationRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.Start = startConversationRequest;
 
       return res;
     }
@@ -651,7 +639,7 @@ namespace IopProtocol
     /// <param name="Challenge">Server's generated challenge data for client's authentication.</param>
     /// <param name="Challenge">ClientChallenge from StartConversationRequest that the server received from the client.</param>
     /// <returns>StartConversationResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateStartConversationResponse(ProxProtocolMessage Request, SemVer Version, byte[] PublicKey, byte[] Challenge, byte[] ClientChallenge)
+    public IProtocolMessage<Message> CreateStartConversationResponse(IProtocolMessage<Message> Request, SemVer Version, byte[] PublicKey, byte[] Challenge, byte[] ClientChallenge)
     {
       StartConversationResponse startConversationResponse = new StartConversationResponse();
       startConversationResponse.Version = Version.ToByteString();
@@ -659,8 +647,8 @@ namespace IopProtocol
       startConversationResponse.Challenge = ProtocolHelper.ByteArrayToByteString(Challenge);
       startConversationResponse.ClientChallenge = ProtocolHelper.ByteArrayToByteString(ClientChallenge);
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.Start = startConversationResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.Start = startConversationResponse;
 
       SignConversationResponseBodyPart(res, ClientChallenge);
 
@@ -674,13 +662,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Challenge">Challenge received in StartConversationRequest.Challenge.</param>
     /// <returns>VerifyIdentityRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateVerifyIdentityRequest(byte[] Challenge)
+    public IProtocolMessage<Message> CreateVerifyIdentityRequest(byte[] Challenge)
     {
       VerifyIdentityRequest verifyIdentityRequest = new VerifyIdentityRequest();
       verifyIdentityRequest.Challenge = ProtocolHelper.ByteArrayToByteString(Challenge);
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.VerifyIdentity = verifyIdentityRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.VerifyIdentity = verifyIdentityRequest;
 
       SignConversationRequestBody(res, verifyIdentityRequest);
       return res;
@@ -691,12 +679,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">VerifyIdentityRequest message for which the response is created.</param>
     /// <returns>VerifyIdentityResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateVerifyIdentityResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateVerifyIdentityResponse(IProtocolMessage<Message> Request)
     {
       VerifyIdentityResponse verifyIdentityResponse = new VerifyIdentityResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.VerifyIdentity = verifyIdentityResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.VerifyIdentity = verifyIdentityResponse;
 
       return res;
     }
@@ -719,7 +707,7 @@ namespace IopProtocol
     /// <param name="ExtraData">Extra data about the activity.</param>
     /// <param name="IgnoreServerIds">List of network identifiers of proximity servers to ignore.</param>
     /// <returns>CreateActivityRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateCreateActivityRequest(SemVer Version, uint ActivityId, byte[] PsNetworkId, IPAddress PsIpAddress, uint PsPrimaryPort, string ActivityType, GpsLocation Location, uint Precision, DateTime StartTime, DateTime ExpirationTime, string ExtraData, List<byte[]> IgnoreServerIds)
+    public IProtocolMessage<Message> CreateCreateActivityRequest(SemVer Version, uint ActivityId, byte[] PsNetworkId, IPAddress PsIpAddress, uint PsPrimaryPort, string ActivityType, GpsLocation Location, uint Precision, DateTime StartTime, DateTime ExpirationTime, string ExtraData, List<byte[]> IgnoreServerIds)
     {
       ActivityInformation activity = new ActivityInformation()
       {
@@ -751,7 +739,7 @@ namespace IopProtocol
     /// <param name="NoPropagation">If set to true, the proximity server will not propagate the update to the neighborhood.</param>
     /// <param name="IgnoreServerIds">List of network identifiers of proximity servers to ignore.</param>
     /// <returns>CreateActivityRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateCreateActivityRequest(ActivityInformation Activity, List<byte[]> IgnoreServerIds = null)
+    public IProtocolMessage<Message> CreateCreateActivityRequest(ActivityInformation Activity, List<byte[]> IgnoreServerIds = null)
     {
       CreateActivityRequest createActivityRequest = new CreateActivityRequest();
       createActivityRequest.Activity = Activity;
@@ -759,8 +747,8 @@ namespace IopProtocol
       foreach (byte[] ignoredServerId in IgnoreServerIds)
         createActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.CreateActivity = createActivityRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.CreateActivity = createActivityRequest;
 
       return res;
     }
@@ -771,12 +759,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">CreateActivityRequest message for which the response is created.</param>
     /// <returns>CreateActivityResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateCreateActivityResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateCreateActivityResponse(IProtocolMessage<Message> Request)
     {
       CreateActivityResponse createActivityResponse = new CreateActivityResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.CreateActivity = createActivityResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.CreateActivity = createActivityResponse;
 
       return res;
     }
@@ -799,7 +787,7 @@ namespace IopProtocol
     /// <param name="NoPropagation">If set to true, the proximity server will not propagate the update to the neighborhood.</param>
     /// <param name="IgnoreServerIds">List of network identifiers of proximity servers to ignore.</param>
     /// <returns>UpdateActivityRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateUpdateActivityRequest(SemVer Version, uint ActivityId, byte[] PsNetworkId, IPAddress PsIpAddress, uint PsPrimaryPort, string ActivityType, GpsLocation Location, uint Precision, DateTime StartTime, DateTime ExpirationTime, string ExtraData, bool NoPropagation = false, List<byte[]> IgnoreServerIds = null)
+    public IProtocolMessage<Message> CreateUpdateActivityRequest(SemVer Version, uint ActivityId, byte[] PsNetworkId, IPAddress PsIpAddress, uint PsPrimaryPort, string ActivityType, GpsLocation Location, uint Precision, DateTime StartTime, DateTime ExpirationTime, string ExtraData, bool NoPropagation = false, List<byte[]> IgnoreServerIds = null)
     {
       ActivityInformation activity = new ActivityInformation()
       {
@@ -832,7 +820,7 @@ namespace IopProtocol
     /// <param name="NoPropagation">If set to true, the proximity server will not propagate the update to the neighborhood.</param>
     /// <param name="IgnoreServerIds">List of network identifiers of proximity servers to ignore.</param>
     /// <returns>UpdateActivityRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateUpdateActivityRequest(ActivityInformation Activity, bool NoPropagation = false, List<byte[]> IgnoreServerIds = null)
+    public IProtocolMessage<Message> CreateUpdateActivityRequest(ActivityInformation Activity, bool NoPropagation = false, List<byte[]> IgnoreServerIds = null)
     {
       UpdateActivityRequest updateActivityRequest = new UpdateActivityRequest();
       updateActivityRequest.Activity = Activity;
@@ -841,8 +829,8 @@ namespace IopProtocol
       foreach (byte[] ignoredServerId in IgnoreServerIds)
         updateActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.UpdateActivity = updateActivityRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.UpdateActivity = updateActivityRequest;
 
       return res;
     }
@@ -853,12 +841,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">UpdateActivityRequest message for which the response is created.</param>
     /// <returns>UpdateActivityResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateUpdateActivityResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateUpdateActivityResponse(IProtocolMessage<Message> Request)
     {
       UpdateActivityResponse updateActivityResponse = new UpdateActivityResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.UpdateActivity = updateActivityResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.UpdateActivity = updateActivityResponse;
 
       return res;
     }
@@ -869,13 +857,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="ActivityId">Unique identifier of the client’s activity to delete.</param>
     /// <returns>DeleteActivityRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateDeleteActivityRequest(uint ActivityId)
+    public IProtocolMessage<Message> CreateDeleteActivityRequest(uint ActivityId)
     {
       DeleteActivityRequest deleteActivityRequest = new DeleteActivityRequest();
       deleteActivityRequest.Id = ActivityId;
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.DeleteActivity = deleteActivityRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.DeleteActivity = deleteActivityRequest;
 
       return res;
     }
@@ -886,12 +874,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">DeleteActivityRequest message for which the response is created.</param>
     /// <returns>DeleteActivityResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateDeleteActivityResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateDeleteActivityResponse(IProtocolMessage<Message> Request)
     {
       DeleteActivityResponse deleteActivityResponse = new DeleteActivityResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.DeleteActivity = deleteActivityResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.DeleteActivity = deleteActivityResponse;
 
       return res;
     }
@@ -904,14 +892,14 @@ namespace IopProtocol
     /// <param name="ActivityId">Identifier of the activity.</param>
     /// <param name="OwnerNetworkId">Network identifier of the owner of the activity.</param>
     /// <returns>GetActivityInformationRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateGetActivityInformationRequest(uint ActivityId, byte[] OwnerNetworkId)
+    public IProtocolMessage<Message> CreateGetActivityInformationRequest(uint ActivityId, byte[] OwnerNetworkId)
     {
       GetActivityInformationRequest getActivityInformationRequest = new GetActivityInformationRequest();
       getActivityInformationRequest.Id = ActivityId;
       getActivityInformationRequest.OwnerNetworkId = ProtocolHelper.ByteArrayToByteString(OwnerNetworkId);
 
-      ProxProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.GetActivityInformation = getActivityInformationRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.GetActivityInformation = getActivityInformationRequest;
 
       return res;
     }
@@ -923,13 +911,13 @@ namespace IopProtocol
     /// <param name="Request">GetActivityInformationRequest message for which the response is created.</param>
     /// <param name="QueryInformation">Information about the activity.</param>
     /// <returns>GetActivityInformationResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateGetActivityInformationResponse(ProxProtocolMessage Request, ActivityQueryInformation QueryInformation)
+    public IProtocolMessage<Message> CreateGetActivityInformationResponse(IProtocolMessage<Message> Request, ActivityQueryInformation QueryInformation)
     {
       GetActivityInformationResponse getActivityInformationResponse = new GetActivityInformationResponse();
       getActivityInformationResponse.Info = QueryInformation;
 
-      ProxProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.GetActivityInformation = getActivityInformationResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.GetActivityInformation = getActivityInformationResponse;
 
       return res;
     }
@@ -951,7 +939,7 @@ namespace IopProtocol
     /// <param name="IncludePrimaryOnly">If set to true, the proximity server only returns activities for which it acts as the primary proximity server. 
     /// Otherwise, activities from the proximity server's neighborhood can be included.</param>
     /// <returns>ActivitySearchRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchRequest(string ActivityType, string ExtraData, DateTime? StartNotAfter, DateTime? ExpirationNotBefore, byte[] OwnerNetworkId = null, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludePrimaryOnly = false)
+    public IProtocolMessage<Message> CreateActivitySearchRequest(string ActivityType, string ExtraData, DateTime? StartNotAfter, DateTime? ExpirationNotBefore, byte[] OwnerNetworkId = null, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludePrimaryOnly = false)
     {
       ActivitySearchRequest activitySearchRequest = new ActivitySearchRequest();
       activitySearchRequest.IncludePrimaryOnly = IncludePrimaryOnly;
@@ -966,8 +954,8 @@ namespace IopProtocol
       activitySearchRequest.Radius = Location != null ? Radius : 0;
       activitySearchRequest.ExtraData = ExtraData != null ? ExtraData : "";
 
-      ProxProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ActivitySearch = activitySearchRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ActivitySearch = activitySearchRequest;
 
       return res;
     }
@@ -982,7 +970,7 @@ namespace IopProtocol
     /// <param name="CoveredServers">List of proximity servers whose activity databases were be used to produce the result.</param>
     /// <param name="Results">List of results that contains up to <paramref name="MaxRecordCount"/> items.</param>
     /// <returns>ActivitySearchResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchResponse(ProxProtocolMessage Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<ActivityQueryInformation> Results)
+    public IProtocolMessage<Message> CreateActivitySearchResponse(IProtocolMessage<Message> Request, uint TotalRecordCount, uint MaxResponseRecordCount, IEnumerable<byte[]> CoveredServers, IEnumerable<ActivityQueryInformation> Results)
     {
       ActivitySearchResponse activitySearchResponse = new ActivitySearchResponse();
       activitySearchResponse.TotalRecordCount = TotalRecordCount;
@@ -994,8 +982,8 @@ namespace IopProtocol
       if ((Results != null) && (Results.Count() > 0))
         activitySearchResponse.Activities.AddRange(Results);
 
-      ProxProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ActivitySearch = activitySearchResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ActivitySearch = activitySearchResponse;
 
       return res;
     }
@@ -1007,14 +995,14 @@ namespace IopProtocol
     /// <param name="RecordIndex">Zero-based index of the first result to retrieve.</param>
     /// <param name="RecordCount">Number of results to retrieve. This has to be an integer between 1 and 1,000.</param>
     /// <returns>ActivitySearchPartRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchPartRequest(uint RecordIndex, uint RecordCount)
+    public IProtocolMessage<Message> CreateActivitySearchPartRequest(uint RecordIndex, uint RecordCount)
     {
       ActivitySearchPartRequest activitySearchPartRequest = new ActivitySearchPartRequest();
       activitySearchPartRequest.RecordIndex = RecordIndex;
       activitySearchPartRequest.RecordCount = RecordCount;
 
-      ProxProtocolMessage res = CreateSingleRequest();
-      res.Request.SingleRequest.ActivitySearchPart = activitySearchPartRequest;
+      var res = CreateSingleRequest();
+      res.Message.Request.SingleRequest.ActivitySearchPart = activitySearchPartRequest;
 
       return res;
     }
@@ -1028,15 +1016,15 @@ namespace IopProtocol
     /// <param name="RecordCount">Number of results.</param>
     /// <param name="Results">List of results that contains <paramref name="RecordCount"/> items.</param>
     /// <returns>ActivitySearchPartResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchPartResponse(ProxProtocolMessage Request, uint RecordIndex, uint RecordCount, IEnumerable<ActivityQueryInformation> Results)
+    public IProtocolMessage<Message> CreateActivitySearchPartResponse(IProtocolMessage<Message> Request, uint RecordIndex, uint RecordCount, IEnumerable<ActivityQueryInformation> Results)
     {
       ActivitySearchPartResponse activitySearchPartResponse = new ActivitySearchPartResponse();
       activitySearchPartResponse.RecordIndex = RecordIndex;
       activitySearchPartResponse.RecordCount = RecordCount;
       activitySearchPartResponse.Activities.AddRange(Results);
 
-      ProxProtocolMessage res = CreateSingleResponse(Request);
-      res.Response.SingleResponse.ActivitySearchPart = activitySearchPartResponse;
+      var res = CreateSingleResponse(Request);
+      res.Message.Response.SingleResponse.ActivitySearchPart = activitySearchPartResponse;
 
       return res;
     }
@@ -1049,15 +1037,15 @@ namespace IopProtocol
     /// <param name="NeighborPort">Neighbors interface port of the requesting proximity server.</param>
     /// <param name="IpAddress">External IP address of the requesting proximity server.</param>
     /// <returns>StartNeighborhoodInitializationRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateStartNeighborhoodInitializationRequest(uint PrimaryPort, uint NeighborPort, IPAddress IpAddress)
+    public IProtocolMessage<Message> CreateStartNeighborhoodInitializationRequest(uint PrimaryPort, uint NeighborPort, IPAddress IpAddress)
     {
       StartNeighborhoodInitializationRequest startNeighborhoodInitializationRequest = new StartNeighborhoodInitializationRequest();
       startNeighborhoodInitializationRequest.PrimaryPort = PrimaryPort;
       startNeighborhoodInitializationRequest.NeighborPort = NeighborPort;
       startNeighborhoodInitializationRequest.IpAddress = ProtocolHelper.ByteArrayToByteString(IpAddress.GetAddressBytes());
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.StartNeighborhoodInitialization = startNeighborhoodInitializationRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.StartNeighborhoodInitialization = startNeighborhoodInitializationRequest;
 
       return res;
     }
@@ -1068,12 +1056,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">StartNeighborhoodInitializationRequest message for which the response is created.</param>
     /// <returns>StartNeighborhoodInitializationResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateStartNeighborhoodInitializationResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateStartNeighborhoodInitializationResponse(IProtocolMessage<Message> Request)
     {
       StartNeighborhoodInitializationResponse startNeighborhoodInitializationResponse = new StartNeighborhoodInitializationResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.StartNeighborhoodInitialization = startNeighborhoodInitializationResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.StartNeighborhoodInitialization = startNeighborhoodInitializationResponse;
 
       return res;
     }
@@ -1083,12 +1071,12 @@ namespace IopProtocol
     /// Creates a new FinishNeighborhoodInitializationRequest message.
     /// </summary>
     /// <returns>FinishNeighborhoodInitializationRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateFinishNeighborhoodInitializationRequest()
+    public IProtocolMessage<Message> CreateFinishNeighborhoodInitializationRequest()
     {
       FinishNeighborhoodInitializationRequest finishNeighborhoodInitializationRequest = new FinishNeighborhoodInitializationRequest();
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.FinishNeighborhoodInitialization = finishNeighborhoodInitializationRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.FinishNeighborhoodInitialization = finishNeighborhoodInitializationRequest;
 
       return res;
     }
@@ -1099,12 +1087,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">FinishNeighborhoodInitializationRequest message for which the response is created.</param>
     /// <returns>FinishNeighborhoodInitializationResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateFinishNeighborhoodInitializationResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateFinishNeighborhoodInitializationResponse(IProtocolMessage<Message> Request)
     {
       FinishNeighborhoodInitializationResponse finishNeighborhoodInitializationResponse = new FinishNeighborhoodInitializationResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.FinishNeighborhoodInitialization = finishNeighborhoodInitializationResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.FinishNeighborhoodInitialization = finishNeighborhoodInitializationResponse;
 
       return res;
     }
@@ -1115,13 +1103,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Items">List of activities changes to share.</param>
     /// <returns>NeighborhoodSharedActivityUpdateRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateNeighborhoodSharedActivityUpdateRequest(IEnumerable<SharedActivityUpdateItem> Items = null)
+    public IProtocolMessage<Message> CreateNeighborhoodSharedActivityUpdateRequest(IEnumerable<SharedActivityUpdateItem> Items = null)
     {
       NeighborhoodSharedActivityUpdateRequest neighborhoodSharedActivityUpdateRequest = new NeighborhoodSharedActivityUpdateRequest();
       if (Items != null) neighborhoodSharedActivityUpdateRequest.Items.AddRange(Items);
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.NeighborhoodSharedActivityUpdate = neighborhoodSharedActivityUpdateRequest;;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.NeighborhoodSharedActivityUpdate = neighborhoodSharedActivityUpdateRequest;;
 
       return res;
     }
@@ -1132,12 +1120,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">NeighborhoodSharedActivityUpdateRequest message for which the response is created.</param>
     /// <returns>NeighborhoodSharedActivityUpdateResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateNeighborhoodSharedActivityUpdateResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateNeighborhoodSharedActivityUpdateResponse(IProtocolMessage<Message> Request)
     {
       NeighborhoodSharedActivityUpdateResponse neighborhoodSharedActivityUpdateResponse = new NeighborhoodSharedActivityUpdateResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.NeighborhoodSharedActivityUpdate = neighborhoodSharedActivityUpdateResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.NeighborhoodSharedActivityUpdate = neighborhoodSharedActivityUpdateResponse;
 
       return res;
     }
@@ -1147,12 +1135,12 @@ namespace IopProtocol
     /// Creates a new StopNeighborhoodUpdatesRequest message.
     /// </summary>
     /// <returns>StopNeighborhoodUpdatesRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateStopNeighborhoodUpdatesRequest()
+    public IProtocolMessage<Message> CreateStopNeighborhoodUpdatesRequest()
     {
       StopNeighborhoodUpdatesRequest stopNeighborhoodUpdatesRequest = new StopNeighborhoodUpdatesRequest();
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.StopNeighborhoodUpdates = stopNeighborhoodUpdatesRequest;
+      var res = CreateConversationRequest();
+      res.Message.Request.ConversationRequest.StopNeighborhoodUpdates = stopNeighborhoodUpdatesRequest;
 
       return res;
     }
@@ -1163,12 +1151,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">StopNeighborhoodUpdatesRequest message for which the response is created.</param>
     /// <returns>StopNeighborhoodUpdatesResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateStopNeighborhoodUpdatesResponse(ProxProtocolMessage Request)
+    public IProtocolMessage<Message> CreateStopNeighborhoodUpdatesResponse(IProtocolMessage<Message> Request)
     {
       StopNeighborhoodUpdatesResponse stopNeighborhoodUpdatesResponse = new StopNeighborhoodUpdatesResponse();
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.StopNeighborhoodUpdates = stopNeighborhoodUpdatesResponse;
+      var res = CreateConversationResponse(Request);
+      res.Message.Response.ConversationResponse.StopNeighborhoodUpdates = stopNeighborhoodUpdatesResponse;
 
       return res;
     }

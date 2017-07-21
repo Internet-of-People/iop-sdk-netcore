@@ -18,7 +18,7 @@ namespace IopServerCore.Network
   /// <summary>
   /// Base class for TCP clients following IoP message protocol.
   /// </summary>
-  public abstract class ClientBase : IDisposable
+  public abstract class ClientBase<TMessage> : IDisposable
   {
     /// <summary>Instance logger.</summary>
     protected Logger log;
@@ -57,14 +57,14 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="Data">Raw data to be decoded to the message.</param>
     /// <returns>ProtoBuf message or null if the data do not represent a valid message.</returns>
-    public abstract IProtocolMessage CreateMessageFromRawData(byte[] Data);
+    public abstract IProtocolMessage<TMessage> CreateMessageFromRawData(byte[] Data);
 
     /// <summary>
     /// Converts an IoP Network protocol message to a binary format.
     /// </summary>
     /// <param name="Message">IoP Network protocol message.</param>
     /// <returns>Binary representation of the message to be sent over the network.</returns>
-    public abstract byte[] MessageToByteArray(IProtocolMessage Message);
+    public abstract byte[] MessageToByteArray(IProtocolMessage<TMessage> Message);
 
 
 
@@ -143,7 +143,7 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="Message">Message to send.</param>
     /// <returns>true if the connection to the client should remain open, false otherwise.</returns>
-    public virtual async Task<bool> SendMessageAsync(IProtocolMessage Message)
+    public virtual async Task<bool> SendMessageAsync(IProtocolMessage<TMessage> Message)
     {
       log.Trace("()");
 
@@ -158,7 +158,7 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="Message">Message to send.</param>
     /// <returns>true if the message was sent successfully to the target recipient.</returns>
-    protected async Task<bool> SendMessageInternalAsync(IProtocolMessage Message)
+    protected async Task<bool> SendMessageInternalAsync(IProtocolMessage<TMessage> Message)
     {
       log.Trace("()");
 

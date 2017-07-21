@@ -15,25 +15,13 @@ namespace IopProtocol
   /// <summary>
   /// Representation of the protocol message in IoP Profile Server Network.
   /// </summary>
-  public class LocProtocolMessage : IProtocolMessage
+  class LocProtocolMessage : IProtocolMessage<Message>
   {
     /// <summary>Protocol specific message.</summary>
-    private Message message;
-    /// <summary>Protocol specific message.</summary>
-    public IMessage Message { get { return message; } }
-
-    /// <summary>Request part of the message if the message is a request message.</summary>
-    public Request Request { get { return message.Request; } }
-
-    /// <summary>Response part of the message if the message is a response message.</summary>
-    public Response Response { get { return message.Response; } }
-
-    /// <summary>Request/response type distinguisher.</summary>
-    public Message.MessageTypeOneofCase MessageTypeCase { get { return message.MessageTypeCase; } }
+    public Message Message { get; }
 
     /// <summary>Unique message identifier within a session.</summary>
-    public uint Id { get { return message.Id; } }
-
+    public uint Id { get { return Message.Id; } }
 
     /// <summary>
     /// Initializes instance of the object using an existing Protobuf message.
@@ -41,13 +29,13 @@ namespace IopProtocol
     /// <param name="Message">Protobuf Profile Server Network message.</param>
     public LocProtocolMessage(Message Message)
     {
-      this.message = Message;
+      this.Message = Message;
     }
 
 
     public override string ToString()
     {
-      return message.ToString();
+      return Message.ToString();
     }
   }
 
@@ -94,7 +82,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Data">Raw data to be decoded to the message.</param>
     /// <returns>ProtoBuf message or null if the data do not represent a valid message.</returns>
-    public static IProtocolMessage CreateMessageFromRawData(byte[] Data)
+    public static IProtocolMessage<Message> CreateMessageFromRawData(byte[] Data)
     {
       log.Trace("()");
 
@@ -121,10 +109,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Data">IoP Profile Server Network protocol message.</param>
     /// <returns>Binary representation of the message to be sent over the network.</returns>
-    public static byte[] MessageToByteArray(IProtocolMessage Data)
+    public static byte[] MessageToByteArray(IProtocolMessage<Message> Data)
     {
       MessageWithHeader mwh = new MessageWithHeader();
-      mwh.Body = (Message)Data.Message;
+      mwh.Body = Data.Message;
       // We have to initialize the header before calling CalculateSize.
       mwh.Header = 1;
       mwh.Header = (uint)mwh.CalculateSize() - ProtocolHelper.HeaderSize;
@@ -155,7 +143,7 @@ namespace IopProtocol
     /// Creates a new request template and sets its ID to ID of the last message + 1.
     /// </summary>
     /// <returns>New request message template.</returns>
-    public LocProtocolMessage CreateRequest()
+    public IProtocolMessage<Message> CreateRequest()
     {
       int newId = Interlocked.Increment(ref id);
 
@@ -164,7 +152,7 @@ namespace IopProtocol
       message.Request = new Request();
       message.Request.Version = version;
 
-      LocProtocolMessage res = new LocProtocolMessage(message);
+      var res = new LocProtocolMessage(message);
 
       return res;
     }
@@ -176,14 +164,14 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="ResponseStatus">Status code of the response.</param>
     /// <returns>Response message template for the request.</returns>
-    public LocProtocolMessage CreateResponse(LocProtocolMessage Request, Status ResponseStatus)
+    public IProtocolMessage<Message> CreateResponse(IProtocolMessage<Message> Request, Status ResponseStatus)
     {
       Message message = new Message();
       message.Id = Request.Id;
       message.Response = new Response();
       message.Response.Status = ResponseStatus;
 
-      LocProtocolMessage res = new LocProtocolMessage(message);
+      var res = new LocProtocolMessage(message);
 
       return res;
     }
@@ -193,7 +181,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Response message template for the request.</returns>
-    public LocProtocolMessage CreateOkResponse(LocProtocolMessage Request)
+    public IProtocolMessage<Message> CreateOkResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.Ok);
     }
@@ -204,8 +192,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateErrorProtocolViolationResponse(LocProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorProtocolViolationResponse(IProtocolMessage<Message> Request = null)
     {
+      if (Request == null)
+        Request = new LocProtocolMessage(new Message { Id = 0x0BADC0DE });
       return CreateResponse(Request, Status.ErrorProtocolViolation);
     }
 
@@ -214,7 +204,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateErrorUnsupportedResponse(LocProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorUnsupportedResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorUnsupported);
     }
@@ -224,7 +214,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateErrorInternalResponse(LocProtocolMessage Request)
+    public IProtocolMessage<Message> CreateErrorInternalResponse(IProtocolMessage<Message> Request)
     {
       return CreateResponse(Request, Status.ErrorInternal);
     }
@@ -236,11 +226,11 @@ namespace IopProtocol
     /// <param name="Request">Request message for which the response is created.</param>
     /// <param name="Details">Optionally, details about the error to be sent in 'Response.details'.</param>
     /// <returns>Error response message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateErrorInvalidValueResponse(LocProtocolMessage Request, string Details = null)
+    public IProtocolMessage<Message> CreateErrorInvalidValueResponse(IProtocolMessage<Message> Request, string Details = null)
     {
-      LocProtocolMessage res = CreateResponse(Request, Status.ErrorInvalidValue);
+      var res = CreateResponse(Request, Status.ErrorInvalidValue);
       if (Details != null)
-        res.Response.Details = Details;
+        res.Message.Response.Details = Details;
       return res;
     }
 
@@ -249,10 +239,10 @@ namespace IopProtocol
     /// Creates and initializes the LocalService part of the request.
     /// </summary>
     /// <returns>Request with initialized LocalService part.</returns>
-    public LocProtocolMessage CreateLocalServiceRequest()
+    public IProtocolMessage<Message> CreateLocalServiceRequest()
     {
-      LocProtocolMessage res = CreateRequest();
-      res.Request.LocalService = new LocalServiceRequest();
+      var res = CreateRequest();
+      res.Message.Request.LocalService = new LocalServiceRequest();
       return res;
     }
 
@@ -261,10 +251,10 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">Request message for which the response is created.</param>
     /// <returns>Response with initialized LocalService part.</returns>
-    public LocProtocolMessage CreateLocalServiceOkResponse(LocProtocolMessage Request)
+    public IProtocolMessage<Message> CreateLocalServiceOkResponse(IProtocolMessage<Message> Request)
     {
-      LocProtocolMessage res = CreateOkResponse(Request);
-      res.Response.LocalService = new LocalServiceResponse();
+      var res = CreateOkResponse(Request);
+      res.Message.Response.LocalService = new LocalServiceResponse();
       return res;
     }
 
@@ -274,13 +264,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="ServiceInfo">Description of the service to register.</param>
     /// <returns>RegisterServiceRequest message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateRegisterServiceRequest(ServiceInfo ServiceInfo)
+    public IProtocolMessage<Message> CreateRegisterServiceRequest(ServiceInfo ServiceInfo)
     {
       RegisterServiceRequest registerServiceRequest = new RegisterServiceRequest();
       registerServiceRequest.Service = ServiceInfo;
 
-      LocProtocolMessage res = CreateLocalServiceRequest();
-      res.Request.LocalService.RegisterService = registerServiceRequest;
+      var res = CreateLocalServiceRequest();
+      res.Message.Request.LocalService.RegisterService = registerServiceRequest;
 
       return res;
     }
@@ -291,7 +281,7 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">RegisterServiceRequest message for which the response is created.</param>
     /// <returns>RegisterServiceResponse message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateRegisterServiceResponse(LocProtocolMessage Request, GpsLocation Location)
+    public IProtocolMessage<Message> CreateRegisterServiceResponse(IProtocolMessage<Message> Request, GpsLocation Location)
     {
       RegisterServiceResponse registerServiceResponse = new RegisterServiceResponse();
       registerServiceResponse.Location = new Iop.Locnet.GpsLocation()
@@ -300,8 +290,8 @@ namespace IopProtocol
         Longitude = Location.GetLocationTypeLongitude()
       };
 
-      LocProtocolMessage res = CreateLocalServiceOkResponse(Request);
-      res.Response.LocalService.RegisterService = registerServiceResponse;
+      var res = CreateLocalServiceOkResponse(Request);
+      res.Message.Response.LocalService.RegisterService = registerServiceResponse;
 
       return res;
     }
@@ -312,13 +302,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="ServiceType">Type of service to unregister.</param>
     /// <returns>DeregisterServiceRequest message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateDeregisterServiceRequest(ServiceType ServiceType)
+    public IProtocolMessage<Message> CreateDeregisterServiceRequest(ServiceType ServiceType)
     {
       DeregisterServiceRequest deregisterServiceRequest = new DeregisterServiceRequest();
       deregisterServiceRequest.ServiceType = ServiceType;
 
-      LocProtocolMessage res = CreateLocalServiceRequest();
-      res.Request.LocalService.DeregisterService = deregisterServiceRequest;
+      var res = CreateLocalServiceRequest();
+      res.Message.Request.LocalService.DeregisterService = deregisterServiceRequest;
 
       return res;
     }
@@ -329,12 +319,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">DeregisterServiceRequest message for which the response is created.</param>
     /// <returns>DeregisterServiceResponse message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateDeregisterServiceResponse(LocProtocolMessage Request)
+    public IProtocolMessage<Message> CreateDeregisterServiceResponse(IProtocolMessage<Message> Request)
     {
       DeregisterServiceResponse deregisterServiceResponse = new DeregisterServiceResponse();
 
-      LocProtocolMessage res = CreateLocalServiceOkResponse(Request);
-      res.Response.LocalService.DeregisterService = deregisterServiceResponse;
+      var res = CreateLocalServiceOkResponse(Request);
+      res.Message.Response.LocalService.DeregisterService = deregisterServiceResponse;
 
       return res;
     }
@@ -345,13 +335,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="KeepAlive">If set to true, the LOC server will send neighborhood updates over the open connection.</param>
     /// <returns>GetNeighbourNodesByDistanceLocalRequest message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateGetNeighbourNodesByDistanceLocalRequest(bool KeepAlive = true)
+    public IProtocolMessage<Message> CreateGetNeighbourNodesByDistanceLocalRequest(bool KeepAlive = true)
     {
       GetNeighbourNodesByDistanceLocalRequest getNeighbourNodesByDistanceLocalRequest = new GetNeighbourNodesByDistanceLocalRequest();
       getNeighbourNodesByDistanceLocalRequest.KeepAliveAndSendUpdates = KeepAlive;
 
-      LocProtocolMessage res = CreateLocalServiceRequest();
-      res.Request.LocalService.GetNeighbourNodes = getNeighbourNodesByDistanceLocalRequest;
+      var res = CreateLocalServiceRequest();
+      res.Message.Request.LocalService.GetNeighbourNodes = getNeighbourNodesByDistanceLocalRequest;
 
       return res;
     }
@@ -363,13 +353,13 @@ namespace IopProtocol
     /// <param name="Request">GetNeighbourNodesByDistanceLocalRequest message for which the response is created.</param>
     /// <param name="Nodes">List of nodes in the neighborhood.</param>
     /// <returns>GetNeighbourNodesByDistanceLocalResponse message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateGetNeighbourNodesByDistanceLocalResponse(LocProtocolMessage Request, IEnumerable<NodeInfo> Nodes)
+    public IProtocolMessage<Message> CreateGetNeighbourNodesByDistanceLocalResponse(IProtocolMessage<Message> Request, IEnumerable<NodeInfo> Nodes)
     {
       GetNeighbourNodesByDistanceResponse getNeighbourNodesByDistanceResponse = new GetNeighbourNodesByDistanceResponse();
       getNeighbourNodesByDistanceResponse.Nodes.AddRange(Nodes);
 
-      LocProtocolMessage res = CreateLocalServiceOkResponse(Request);
-      res.Response.LocalService.GetNeighbourNodes = getNeighbourNodesByDistanceResponse;
+      var res = CreateLocalServiceOkResponse(Request);
+      res.Message.Response.LocalService.GetNeighbourNodes = getNeighbourNodesByDistanceResponse;
 
       return res;
     }
@@ -380,13 +370,13 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Changes">List of changes in the neighborhood.</param>
     /// <returns>NeighbourhoodChangedNotificationRequest message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateNeighbourhoodChangedNotificationRequest(IEnumerable<NeighbourhoodChange> Changes)
+    public IProtocolMessage<Message> CreateNeighbourhoodChangedNotificationRequest(IEnumerable<NeighbourhoodChange> Changes)
     {
       NeighbourhoodChangedNotificationRequest neighbourhoodChangedNotificationRequest = new NeighbourhoodChangedNotificationRequest();
       neighbourhoodChangedNotificationRequest.Changes.AddRange(Changes);
 
-      LocProtocolMessage res = CreateLocalServiceRequest();
-      res.Request.LocalService.NeighbourhoodChanged = neighbourhoodChangedNotificationRequest;
+      var res = CreateLocalServiceRequest();
+      res.Message.Request.LocalService.NeighbourhoodChanged = neighbourhoodChangedNotificationRequest;
 
       return res;
     }
@@ -397,12 +387,12 @@ namespace IopProtocol
     /// </summary>
     /// <param name="Request">NeighbourhoodChangedNotificationRequest message for which the response is created.</param>
     /// <returns>NeighbourhoodChangedNotificationResponse message that is ready to be sent.</returns>
-    public LocProtocolMessage CreateNeighbourhoodChangedNotificationResponse(LocProtocolMessage Request)
+    public IProtocolMessage<Message> CreateNeighbourhoodChangedNotificationResponse(IProtocolMessage<Message> Request)
     {
       NeighbourhoodChangedNotificationResponse neighbourhoodChangedNotificationResponse = new NeighbourhoodChangedNotificationResponse();
 
-      LocProtocolMessage res = CreateLocalServiceOkResponse(Request);
-      res.Response.LocalService.NeighbourhoodUpdated = neighbourhoodChangedNotificationResponse;
+      var res = CreateLocalServiceOkResponse(Request);
+      res.Message.Response.LocalService.NeighbourhoodUpdated = neighbourhoodChangedNotificationResponse;
 
       return res;
     }

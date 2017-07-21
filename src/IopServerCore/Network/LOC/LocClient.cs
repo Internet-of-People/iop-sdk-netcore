@@ -13,12 +13,10 @@ using System.Threading.Tasks;
 
 namespace IopServerCore.Network.LOC
 {
-  public class LocClient : ClientBase
+  public class LocClient : ClientBase<Message>
   {
     /// <summary>LOC message builder for the TCP client.</summary>
-    private LocMessageBuilder messageBuilder;
-    /// <summary>LOC message builder for the TCP client.</summary>
-    public LocMessageBuilder MessageBuilder { get { return messageBuilder; } }
+    public LocMessageBuilder MessageBuilder { get; }
 
     /// <summary>Message reader connected to an open network stream.</summary>
     RawMessageReader messageReader;
@@ -30,16 +28,14 @@ namespace IopServerCore.Network.LOC
     private ConfigBase config;
 
     /// <summary>Module responsible for processing logic behind incoming messages.</summary>
-    private IMessageProcessor messageProcessor;
-    /// <summary>Module responsible for processing logic behind incoming messages.</summary>
-    public IMessageProcessor MessageProcessor { get { return messageProcessor; } }
+    public IMessageProcessor<Message> MessageProcessor { get; }
 
 
     /// <summary>
     /// Initialize the object.
     /// </summary>
     /// <param name="ServerEndPoint">LOC server address and port.</param>
-    public LocClient(IPEndPoint ServerEndPoint, IMessageProcessor MessageProcessor, ComponentShutdown ShutdownSignaling) :
+    public LocClient(IPEndPoint ServerEndPoint, IMessageProcessor<Message> MessageProcessor, ComponentShutdown ShutdownSignaling) :
       base(ServerEndPoint, false)
     {
       log = new Logger("IopServerCore.Network.LOC.LocClient");
@@ -47,8 +43,8 @@ namespace IopServerCore.Network.LOC
 
       config = (ConfigBase)Base.ComponentDictionary[ConfigBase.ComponentName];
 
-      messageBuilder = new LocMessageBuilder(0, new List<SemVer> { SemVer.V100 });
-      messageProcessor = MessageProcessor;
+      this.MessageBuilder = new LocMessageBuilder(0, new List<SemVer> { SemVer.V100 });
+      this.MessageProcessor = MessageProcessor;
       shutdownSignaling = ShutdownSignaling;
 
       log.Trace("(-)");
@@ -60,9 +56,9 @@ namespace IopServerCore.Network.LOC
     /// </summary>
     /// <param name="Data">Raw data to be decoded to the message.</param>
     /// <returns>ProtoBuf message or null if the data do not represent a valid message.</returns>
-    public override IProtocolMessage CreateMessageFromRawData(byte[] Data)
+    public override IProtocolMessage<Message> CreateMessageFromRawData(byte[] Data)
     {
-      return (IProtocolMessage)LocMessageBuilder.CreateMessageFromRawData(Data);
+      return LocMessageBuilder.CreateMessageFromRawData(Data);
     }
 
     /// <summary>
@@ -70,7 +66,7 @@ namespace IopServerCore.Network.LOC
     /// </summary>
     /// <param name="Message">IoP Network protocol message.</param>
     /// <returns>Binary representation of the message to be sent over the network.</returns>
-    public override byte[] MessageToByteArray(IProtocolMessage Message)
+    public override byte[] MessageToByteArray(IProtocolMessage<Message> Message)
     {
       return LocMessageBuilder.MessageToByteArray(Message);
     }
@@ -82,23 +78,23 @@ namespace IopServerCore.Network.LOC
     /// <param name="CancellationToken">Cancallation token for async calls.</param>
     /// <param name="CheckProtocolViolation">If set to true, the function checks whether a protocol violation occurred and if so, it sends protocol violation error to the peer.</param>
     /// <returns>Received message of null if the function fails.</returns>
-    public async Task<LocProtocolMessage> ReceiveMessageAsync(CancellationToken CancellationToken, bool CheckProtocolViolation = false)
+    public async Task<IProtocolMessage<Message>> ReceiveMessageAsync(CancellationToken CancellationToken, bool CheckProtocolViolation = false)
     {
       log.Trace("()");
 
-      LocProtocolMessage res = null;
+      IProtocolMessage<Message> res = null;
 
       RawMessageResult rawMessage = await messageReader.ReceiveMessageAsync(CancellationToken);
       if (rawMessage.Data != null)
       {
-        res = (LocProtocolMessage)LocMessageBuilder.CreateMessageFromRawData(rawMessage.Data);
+        res = LocMessageBuilder.CreateMessageFromRawData(rawMessage.Data);
       }
       else log.Debug("Connection to LOC server has been terminated.");
 
       if (CheckProtocolViolation)
       {
         if ((res == null) || rawMessage.ProtocolViolation)
-          await messageProcessor.SendProtocolViolation(this);
+          await MessageProcessor.SendProtocolViolation(this);
       }
 
       log.Trace("(-):{0}", res != null ? "LocProtocolMessage" : "null");
@@ -111,7 +107,7 @@ namespace IopServerCore.Network.LOC
     /// </summary>
     /// <param name="Message">Message to send.</param>
     /// <returns>true if the connection to the client should remain open, false otherwise.</returns>
-    public override async Task<bool> SendMessageAsync(IProtocolMessage Message)
+    public override async Task<bool> SendMessageAsync(IProtocolMessage<Message> Message)
     {
       log.Trace("()");
 
@@ -204,23 +200,23 @@ namespace IopServerCore.Network.LOC
         ServiceData = ProtocolHelper.ByteArrayToByteString(Crypto.Sha256(((KeysEd25519)config.Settings["Keys"]).PublicKey))
       };
 
-      LocProtocolMessage request = MessageBuilder.CreateRegisterServiceRequest(serviceInfo);
+      var request = MessageBuilder.CreateRegisterServiceRequest(serviceInfo);
       if (await SendMessageAsync(request))
       {
-        LocProtocolMessage response = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token);
+        var response = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token);
         if (response != null)
         {
           res = (response.Id == request.Id)
-            && (response.MessageTypeCase == Message.MessageTypeOneofCase.Response)
-            && (response.Response.Status == Status.Ok)
-            && (response.Response.ResponseTypeCase == Response.ResponseTypeOneofCase.LocalService)
-            && (response.Response.LocalService.LocalServiceResponseTypeCase == LocalServiceResponse.LocalServiceResponseTypeOneofCase.RegisterService);
+            && (response.Message.MessageTypeCase == Message.MessageTypeOneofCase.Response)
+            && (response.Message.Response.Status == Status.Ok)
+            && (response.Message.Response.ResponseTypeCase == Response.ResponseTypeOneofCase.LocalService)
+            && (response.Message.Response.LocalService.LocalServiceResponseTypeCase == LocalServiceResponse.LocalServiceResponseTypeOneofCase.RegisterService);
 
           if (res)
           {
             if (Location != null)
             {
-              IopProtocol.GpsLocation location = new IopProtocol.GpsLocation(response.Response.LocalService.RegisterService.Location.Latitude, response.Response.LocalService.RegisterService.Location.Longitude);
+              IopProtocol.GpsLocation location = new IopProtocol.GpsLocation(response.Message.Response.LocalService.RegisterService.Location.Latitude, response.Message.Response.LocalService.RegisterService.Location.Longitude);
               Location.Latitude = location.Latitude;
               Location.Longitude = location.Longitude;
               if (Location.IsValid())
@@ -233,7 +229,7 @@ namespace IopServerCore.Network.LOC
 
             if (res) log.Debug("Primary interface has been registered successfully on LOC server{0}.", Location != null ? string.Format(", server location set is [{0}]", Location) : "");
           }
-          else log.Error("Registration failed, response status is {0}.", response.Response != null ? response.Response.Status.ToString() : "n/a");
+          else log.Error("Registration failed, response status is {0}.", response.Message.Response != null ? response.Message.Response.Status.ToString() : "n/a");
         }
         else log.Error("Invalid message received from LOC server.");
       }
@@ -254,20 +250,20 @@ namespace IopServerCore.Network.LOC
 
       bool res = false;
 
-      LocProtocolMessage request = MessageBuilder.CreateDeregisterServiceRequest(ServiceType.Profile);
+      var request = MessageBuilder.CreateDeregisterServiceRequest(ServiceType.Profile);
       if (await SendMessageAsync(request))
       {
-        LocProtocolMessage response = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token);
+        var response = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token);
         if (response != null)
         {
           res = (response.Id == request.Id)
-            && (response.MessageTypeCase == Message.MessageTypeOneofCase.Response)
-            && (response.Response.Status == Status.Ok)
-            && (response.Response.ResponseTypeCase == Response.ResponseTypeOneofCase.LocalService)
-            && (response.Response.LocalService.LocalServiceResponseTypeCase == LocalServiceResponse.LocalServiceResponseTypeOneofCase.DeregisterService);
+            && (response.Message.MessageTypeCase == Message.MessageTypeOneofCase.Response)
+            && (response.Message.Response.Status == Status.Ok)
+            && (response.Message.Response.ResponseTypeCase == Response.ResponseTypeOneofCase.LocalService)
+            && (response.Message.Response.LocalService.LocalServiceResponseTypeCase == LocalServiceResponse.LocalServiceResponseTypeOneofCase.DeregisterService);
 
           if (res) log.Debug("Primary interface has been unregistered successfully on LOC server.");
-          else log.Error("Deregistration failed, response status is {0}.", response.Response != null ? response.Response.Status.ToString() : "n/a");
+          else log.Error("Deregistration failed, response status is {0}.", response.Message.Response != null ? response.Message.Response.Status.ToString() : "n/a");
         }
         else log.Error("Invalid message received from LOC server.");
       }
@@ -282,27 +278,27 @@ namespace IopServerCore.Network.LOC
     /// Sends a request to the LOC server to obtain an initial neighborhood information and then reads the response.
     /// </summary>
     /// <returns>true if the function succeeds, false otherwise.</returns>
-    public async Task<LocProtocolMessage> GetNeighborhoodInformationAsync()
+    public async Task<IProtocolMessage<Message>> GetNeighborhoodInformationAsync()
     {
       log.Info("()");
 
-      LocProtocolMessage res = null;
-      LocProtocolMessage request = MessageBuilder.CreateGetNeighbourNodesByDistanceLocalRequest();
+      IProtocolMessage<Message> res = null;
+      var request = MessageBuilder.CreateGetNeighbourNodesByDistanceLocalRequest();
       if (await SendMessageAsync(request))
       {
         // Read response.
         bool responseOk = false;
-        LocProtocolMessage response = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token);
+        var response = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token);
         if (response != null)
         {
           responseOk = (response.Id == request.Id)
-            && (response.MessageTypeCase == Message.MessageTypeOneofCase.Response)
-            && (response.Response.Status == Status.Ok)
-            && (response.Response.ResponseTypeCase == Response.ResponseTypeOneofCase.LocalService)
-            && (response.Response.LocalService.LocalServiceResponseTypeCase == LocalServiceResponse.LocalServiceResponseTypeOneofCase.GetNeighbourNodes);
+            && (response.Message.MessageTypeCase == Message.MessageTypeOneofCase.Response)
+            && (response.Message.Response.Status == Status.Ok)
+            && (response.Message.Response.ResponseTypeCase == Response.ResponseTypeOneofCase.LocalService)
+            && (response.Message.Response.LocalService.LocalServiceResponseTypeCase == LocalServiceResponse.LocalServiceResponseTypeOneofCase.GetNeighbourNodes);
 
           if (responseOk) res = response;
-          else log.Error("Obtaining neighborhood information failed, response status is {0}.", response.Response != null ? response.Response.Status.ToString() : "n/a");
+          else log.Error("Obtaining neighborhood information failed, response status is {0}.", response.Message.Response != null ? response.Message.Response.Status.ToString() : "n/a");
         }
         else log.Error("Invalid message received from LOC server.");
       }
@@ -324,9 +320,9 @@ namespace IopServerCore.Network.LOC
       {
         while (!shutdownSignaling.IsShutdown)
         {
-          LocProtocolMessage message = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token, true);
+          var message = await ReceiveMessageAsync(shutdownSignaling.ShutdownCancellationTokenSource.Token, true);
           if (message == null) break;
-          bool disconnect = !await messageProcessor.ProcessMessageAsync(this, message);
+          bool disconnect = !await MessageProcessor.ProcessMessageAsync(this, message);
 
           if (disconnect)
             break;

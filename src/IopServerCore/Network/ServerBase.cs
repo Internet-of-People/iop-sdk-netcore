@@ -12,7 +12,8 @@ namespace IopServerCore.Network
   /// <summary>
   /// Network server component is responsible managing the role TCP servers.
   /// </summary>
-  public abstract class ServerBase<TIncomingClient> : Component where TIncomingClient : IncomingClientBase
+  public abstract class ServerBase<TIncomingClient, TMessage> : Component
+    where TIncomingClient : IncomingClientBase<TMessage>
   {
     /// <summary>Name of the component. This must match the name of the derived component.</summary>
     public const string ComponentName = "Network.Server";
@@ -21,11 +22,11 @@ namespace IopServerCore.Network
     private static Logger log = new Logger("IopServerCore." + ComponentName);
 
     /// <summary>Collection of running TCP role servers sorted by their port.</summary>
-    private Dictionary<int, TcpRoleServer<TIncomingClient>> tcpServers = new Dictionary<int, TcpRoleServer<TIncomingClient>>();
+    private Dictionary<int, TcpRoleServer<TIncomingClient, TMessage>> tcpServers = new Dictionary<int, TcpRoleServer<TIncomingClient, TMessage>>();
 
 
     /// <summary>List of network peers and clients across all role servers.</summary>
-    private IncomingClientList clientList;
+    private IncomingClientList<TMessage> clientList;
 
 
     /// <summary>Server's network identifier.</summary>
@@ -55,14 +56,14 @@ namespace IopServerCore.Network
       {
         ConfigBase config = (ConfigBase)Base.ComponentDictionary[ConfigBase.ComponentName];
         serverId = Crypto.Sha256(((KeysEd25519)config.Settings["Keys"]).PublicKey);
-        clientList = new IncomingClientList();
+        clientList = new IncomingClientList<TMessage>();
 
         foreach (RoleServerConfiguration roleServer in ((ConfigServerRoles)config.Settings["ServerRoles"]).RoleServers.Values)
         {
           if (roleServer.IsTcpServer)
           {
             IPEndPoint endPoint = new IPEndPoint((IPAddress)config.Settings["BindToInterface"], roleServer.Port);
-            TcpRoleServer<TIncomingClient> server = new TcpRoleServer<TIncomingClient>(endPoint, roleServer.Encrypted, roleServer.Roles, roleServer.ClientKeepAliveTimeoutMs);
+            var server = new TcpRoleServer<TIncomingClient, TMessage>(endPoint, roleServer.Encrypted, roleServer.Roles, roleServer.ClientKeepAliveTimeoutMs);
             tcpServers.Add(server.EndPoint.Port, server);
           }
           else
@@ -74,7 +75,7 @@ namespace IopServerCore.Network
         }
 
 
-        foreach (TcpRoleServer<TIncomingClient> server in tcpServers.Values)
+        foreach (var server in tcpServers.Values)
         {
           if (!server.Start())
           {
@@ -99,7 +100,7 @@ namespace IopServerCore.Network
       {
         ShutdownSignaling.SignalShutdown();
 
-        foreach (TcpRoleServer<TIncomingClient> server in tcpServers.Values)
+        foreach (var server in tcpServers.Values)
         {
           if (server.IsRunning)
             server.Stop();
@@ -118,18 +119,18 @@ namespace IopServerCore.Network
 
       ShutdownSignaling.SignalShutdown();
 
-      List<IncomingClientBase> clients = clientList.GetNetworkClientList();
+      var clients = clientList.GetNetworkClientList();
       try
       {
         log.Info("Closing {0} existing client connections of role servers.", clients.Count);
-        foreach (IncomingClientBase client in clients)
+        foreach (var client in clients)
           client.CloseConnection();
       }
       catch
       {
       }
 
-      foreach (TcpRoleServer<TIncomingClient> server in tcpServers.Values)
+      foreach (var server in tcpServers.Values)
       {
         if (server.IsRunning)
           server.Stop();
@@ -154,8 +155,8 @@ namespace IopServerCore.Network
 
       try
       {
-        List<IncomingClientBase> clients = clientList.GetNetworkClientList();
-        foreach (IncomingClientBase client in clients)
+        var clients = clientList.GetNetworkClientList();
+        foreach (var client in clients)
         {
           ulong id = 0;
           try
@@ -190,11 +191,11 @@ namespace IopServerCore.Network
     /// Obtains list of running role servers.
     /// </summary>
     /// <returns>List of running role servers.</returns>
-    public List<TcpRoleServer<TIncomingClient>> GetRoleServers()
+    public List<TcpRoleServer<TIncomingClient, TMessage>> GetRoleServers()
     {
       log.Trace("()");
 
-      List<TcpRoleServer<TIncomingClient>> res = new List<TcpRoleServer<TIncomingClient>>(tcpServers.Values);
+      var res = new List<TcpRoleServer<TIncomingClient, TMessage>>(tcpServers.Values);
 
       log.Trace("(-):*.Count={0}", res.Count);
       return res;
@@ -204,13 +205,13 @@ namespace IopServerCore.Network
     /// Obtains the client list.
     /// </summary>
     /// <returns>List of all server's clients.</returns>
-    public IncomingClientList GetClientList()
+    public IncomingClientList<TMessage> GetClientList()
     {
       log.Trace("()");
 
-      IncomingClientList res = clientList;
+      var res = clientList;
 
-      log.Trace("(-)");
+      log.Trace("(-):*.Count={0}", res.Count);
       return res;
     }
   }

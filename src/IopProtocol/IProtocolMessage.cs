@@ -10,10 +10,10 @@ namespace IopProtocol
   /// <summary>
   /// Interface that every IoP protocol message must implement.
   /// </summary>
-  public interface IProtocolMessage 
+  public interface IProtocolMessage<out T>
   {
     /// <summary>Protocol specific message.</summary>
-    IMessage Message { get; }
+    T Message { get; }
 
     /// <summary>Unique message identifier within a session.</summary>
     uint Id { get; }

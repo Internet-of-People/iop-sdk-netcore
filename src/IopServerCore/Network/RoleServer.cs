@@ -14,7 +14,7 @@ namespace IopServerCore.Network
   /// Implementation of an asynchronous TCP server with optional TLS encryption
   /// that provides services for one or more server roles.
   /// </summary>
-  public class TcpRoleServer<TIncomingClient> where TIncomingClient : IncomingClientBase
+  public class TcpRoleServer<TIncomingClient, TMessage> where TIncomingClient : IncomingClientBase<TMessage>
   {
     /// <summary>Instance logger.</summary>
     private Logger log;
@@ -65,10 +65,10 @@ namespace IopServerCore.Network
     private Thread clientQueueHandlerThread;
 
     /// <summary>List of server's network peers and clients.</summary>
-    private IncomingClientList clientList;
+    private IncomingClientList<TMessage> clientList;
 
     /// <summary>Pointer to the Network.Server component.</summary>
-    private ServerBase<TIncomingClient> serverComponent;
+    private ServerBase<TIncomingClient, TMessage> serverComponent;
 
 
     /// <summary>Number of milliseconds after which the server's client is considered inactive and its connection can be terminated.</summary>
@@ -108,7 +108,7 @@ namespace IopServerCore.Network
 
       ShutdownSignaling = new ComponentShutdown(Base.ComponentManager.GlobalShutdown);
 
-      serverComponent = (ServerBase<TIncomingClient>)Base.ComponentDictionary[ServerBase<TIncomingClient>.ComponentName];
+      serverComponent = (ServerBase<TIncomingClient, TMessage>)Base.ComponentDictionary[ServerBase<TIncomingClient, TMessage>.ComponentName];
       clientList = serverComponent.GetClientList();
 
       IsRunning = false;
@@ -323,7 +323,7 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="Client">Client that is connected to TCP server.</param>
     /// <remarks>The client is being handled in the processing loop until the connection to it is terminated by either side.</remarks>
-    private async void ClientHandlerAsync(IncomingClientBase Client)
+    private async void ClientHandlerAsync(IncomingClientBase<TMessage> Client)
     {
       LogDiagnosticContext.Start();
 

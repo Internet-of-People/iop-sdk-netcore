@@ -19,7 +19,7 @@ namespace IopServerCore.Network
   /// <summary>
   /// Incoming client class represents any kind of TCP client that connects to one of the server's TCP servers.
   /// </summary>
-  public abstract class IncomingClientBase : ClientBase, IDisposable
+  public abstract class IncomingClientBase<TMessage> : ClientBase<TMessage>, IDisposable
   {
     /// <summary>Maximal number of unconfirmed messages that the server is willing to maintain before it refuses to send any more messages to a client without it responding back.</summary>
     public const int MaxUnfinishedRequests = 20;
@@ -51,7 +51,7 @@ namespace IopServerCore.Network
     public bool IsAuthenticatedOnlineClient;
 
     /// <summary>List of unprocessed requests that we expect to receive responses to mapped by Message.id.</summary>
-    private Dictionary<uint, UnfinishedRequest> unfinishedRequests = new Dictionary<uint, UnfinishedRequest>();
+    private Dictionary<uint, UnfinishedRequest<TMessage>> unfinishedRequests = new Dictionary<uint, UnfinishedRequest<TMessage>>();
 
     /// <summary>Lock for access to unfinishedRequests list.</summary>
     private object unfinishedRequestsLock = new object();
@@ -63,7 +63,7 @@ namespace IopServerCore.Network
     private ComponentShutdown shutdownSignaling;
 
     /// <summary>Module responsible for processing logic behind incoming messages.</summary>
-    private IMessageProcessor messageProcessor;
+    private IMessageProcessor<TMessage> messageProcessor;
 
 
 
@@ -78,7 +78,7 @@ namespace IopServerCore.Network
     /// <param name="IdBase">Number to start message identifier series with.</param>
     /// <param name="ShutdownSignaling">Shutdown signaling from the component that created the client.</param>
     /// <param name="LogPrefix">Prefix for log entries created by the client.</param>
-    public IncomingClientBase(TcpClient TcpClient, IMessageProcessor MessageProcessor, ulong Id, bool UseTls, int KeepAliveIntervalMs, uint IdBase, ComponentShutdown ShutdownSignaling, string LogPrefix) :
+    public IncomingClientBase(TcpClient TcpClient, IMessageProcessor<TMessage> MessageProcessor, ulong Id, bool UseTls, int KeepAliveIntervalMs, uint IdBase, ComponentShutdown ShutdownSignaling, string LogPrefix) :
       base(TcpClient, UseTls, IdBase)
     {
       this.Id = Id;
@@ -123,7 +123,7 @@ namespace IopServerCore.Network
           bool protocolViolation = rawMessage.ProtocolViolation;
           if (rawMessage.Data != null)
           {
-            IProtocolMessage message = CreateMessageFromRawData(rawMessage.Data);
+            IProtocolMessage<TMessage> message = CreateMessageFromRawData(rawMessage.Data);
             if (message != null) disconnect = !await messageProcessor.ProcessMessageAsync(this, message);
             else protocolViolation = true;
           }
@@ -155,12 +155,12 @@ namespace IopServerCore.Network
     /// <param name="Message">Message to send.</param>
     /// <param name="Context">Caller's defined context to store information required for later response processing.</param>
     /// <returns>true if the connection to the client should remain open, false otherwise.</returns>
-    public async Task<bool> SendMessageAndSaveUnfinishedRequestAsync(IProtocolMessage Message, object Context)
+    public async Task<bool> SendMessageAndSaveUnfinishedRequestAsync(IProtocolMessage<TMessage> Message, object Context)
     {
       log.Trace("()");
       bool res = false;
 
-      UnfinishedRequest unfinishedRequest = new UnfinishedRequest(Message, Context);
+      var unfinishedRequest = new UnfinishedRequest<TMessage>(Message, Context);
       if (AddUnfinishedRequest(unfinishedRequest))
       {
         res = await SendMessageInternalAsync(Message);
@@ -191,7 +191,7 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="Request">Request to add to the list.</param>
     /// <returns>true if the function succeeds, false if the number of unfinished requests is over the limit.</returns>
-    public bool AddUnfinishedRequest(UnfinishedRequest Request)
+    public bool AddUnfinishedRequest(UnfinishedRequest<TMessage> Request)
     {
       log.Trace("(Request.RequestMessage.Id:{0})", Request.RequestMessage.Id);
 
@@ -233,11 +233,11 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="Id">Identifier of the message to find.</param>
     /// <returns>Unfinished request with the given ID, or null if no such request is in the list.</returns>
-    public UnfinishedRequest GetAndRemoveUnfinishedRequest(uint Id)
+    public UnfinishedRequest<TMessage> GetAndRemoveUnfinishedRequest(uint Id)
     {
       log.Trace("(Id:{0})", Id);
 
-      UnfinishedRequest res = null;
+      UnfinishedRequest<TMessage> res = null;
       lock (unfinishedRequestsLock)
       {
         if (unfinishedRequests.TryGetValue(Id, out res))
@@ -253,11 +253,11 @@ namespace IopServerCore.Network
     /// Finds all unfinished request message and removes them from the list.
     /// </summary>
     /// <returns>Unfinished request messages of the client.</returns>
-    public List<UnfinishedRequest> GetAndRemoveUnfinishedRequests()
+    public List<UnfinishedRequest<TMessage>> GetAndRemoveUnfinishedRequests()
     {
       log.Trace("()");
 
-      List<UnfinishedRequest> res = new List<UnfinishedRequest>();
+      var res = new List<UnfinishedRequest<TMessage>>();
       lock (unfinishedRequestsLock)
       {
         res = unfinishedRequests.Values.ToList();

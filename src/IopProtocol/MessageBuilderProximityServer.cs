@@ -966,8 +966,8 @@ namespace IopProtocol
       activitySearchRequest.Radius = Location != null ? Radius : 0;
       activitySearchRequest.ExtraData = ExtraData != null ? ExtraData : "";
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.ActivitySearch = activitySearchRequest;
+      ProxProtocolMessage res = CreateSingleRequest();
+      res.Request.SingleRequest.ActivitySearch = activitySearchRequest;
 
       return res;
     }
@@ -994,8 +994,8 @@ namespace IopProtocol
       if ((Results != null) && (Results.Count() > 0))
         activitySearchResponse.Activities.AddRange(Results);
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.ActivitySearch = activitySearchResponse;
+      ProxProtocolMessage res = CreateSingleResponse(Request);
+      res.Response.SingleResponse.ActivitySearch = activitySearchResponse;
 
       return res;
     }
@@ -1013,8 +1013,8 @@ namespace IopProtocol
       activitySearchPartRequest.RecordIndex = RecordIndex;
       activitySearchPartRequest.RecordCount = RecordCount;
 
-      ProxProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.ActivitySearchPart = activitySearchPartRequest;
+      ProxProtocolMessage res = CreateSingleRequest();
+      res.Request.SingleRequest.ActivitySearchPart = activitySearchPartRequest;
 
       return res;
     }
@@ -1035,8 +1035,8 @@ namespace IopProtocol
       activitySearchPartResponse.RecordCount = RecordCount;
       activitySearchPartResponse.Activities.AddRange(Results);
 
-      ProxProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.ActivitySearchPart = activitySearchPartResponse;
+      ProxProtocolMessage res = CreateSingleResponse(Request);
+      res.Response.SingleResponse.ActivitySearchPart = activitySearchPartResponse;
 
       return res;
     }

@@ -1197,8 +1197,8 @@ namespace IopProtocol
       profileSearchRequest.Radius = Location != null ? Radius : 0;
       profileSearchRequest.ExtraData = ExtraData != null ? ExtraData : "";
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.ProfileSearch = profileSearchRequest;
+      PsProtocolMessage res = CreateSingleRequest();
+      res.Request.SingleRequest.ProfileSearch = profileSearchRequest;
 
       return res;
     }
@@ -1225,8 +1225,8 @@ namespace IopProtocol
       if ((Results != null) && (Results.Count() > 0))
         profileSearchResponse.Profiles.AddRange(Results);
       
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.ProfileSearch = profileSearchResponse;
+      PsProtocolMessage res = CreateSingleResponse(Request);
+      res.Response.SingleResponse.ProfileSearch = profileSearchResponse;
 
       return res;
     }
@@ -1245,8 +1245,8 @@ namespace IopProtocol
       profileSearchPartRequest.RecordIndex = RecordIndex;
       profileSearchPartRequest.RecordCount= RecordCount;
 
-      PsProtocolMessage res = CreateConversationRequest();
-      res.Request.ConversationRequest.ProfileSearchPart = profileSearchPartRequest;
+      PsProtocolMessage res = CreateSingleRequest();
+      res.Request.SingleRequest.ProfileSearchPart = profileSearchPartRequest;
 
       return res;
     }
@@ -1267,8 +1267,8 @@ namespace IopProtocol
       profileSearchPartResponse.RecordCount = RecordCount;
       profileSearchPartResponse.Profiles.AddRange(Results);
 
-      PsProtocolMessage res = CreateConversationResponse(Request);
-      res.Response.ConversationResponse.ProfileSearchPart = profileSearchPartResponse;
+      PsProtocolMessage res = CreateSingleResponse(Request);
+      res.Response.SingleResponse.ProfileSearchPart = profileSearchPartResponse;
 
       return res;
     }

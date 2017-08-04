@@ -13,7 +13,9 @@ namespace IopServerCore.Data
   /// It implements basic and ordinary methods to prevent repeating same code over and over again.
   /// </summary>
   /// <typeparam name="TEntity">Entity type.</typeparam>
-  public class GenericRepositoryBase<TDbContext, TEntity> where TDbContext : DbContext, new() where TEntity : class
+  public class GenericRepositoryBase<TDbContext, TEntity>
+    where TDbContext : DbContext, new()
+    where TEntity : class
   {
     /// <summary>Class logger.</summary>
     private static Logger log = new Logger("IopServerCore.Data.GenericRepositoryBase");
@@ -57,7 +59,10 @@ namespace IopServerCore.Data
       if (Filter != null)
         query = query.Where(Filter);
 
-      List<TEntity> result = OrderBy != null ? OrderBy(query).ToList() : query.ToList();
+      if (OrderBy != null)
+        query = OrderBy(query);
+
+      List<TEntity> result = query.ToList();
       log.Trace("(-):{0}", result != null ? "*Count=" + result.Count.ToString() : "null");
       return result;
     }
@@ -80,7 +85,10 @@ namespace IopServerCore.Data
       if (Filter != null)
         query = query.Where(Filter);
 
-      List<TEntity> result = await (OrderBy != null ? OrderBy(query).ToListAsync() : query.ToListAsync());
+      if (OrderBy != null)
+        query = OrderBy(query);
+
+      List<TEntity> result = await query.ToListAsync();
       log.Trace("(-):{0}", result != null ? "*Count=" + result.Count.ToString() : "null");
       return result;
     }
@@ -122,14 +130,10 @@ namespace IopServerCore.Data
       IQueryable<TEntity> query = dbSet;
 
       if (filter != null)
-      {
         query = query.Where(filter);
-      }
 
       if (takeLimit != 0)
-      {
         query = query.Take(takeLimit);
-      }
 
       List<TEntity> result = orderBy != null ? orderBy(query).ToList() : query.ToList();
       log.Trace("(-):{0}", result != null ? "*Count=" + result.Count.ToString() : "null");
@@ -149,14 +153,10 @@ namespace IopServerCore.Data
       IQueryable<TEntity> query = dbSet;
 
       if (filter != null)
-      {
         query = query.Where(filter);
-      }
 
       if (takeLimit != 0)
-      {
         query = query.Take(takeLimit);
-      }
 
       List<TEntity> result = await (orderBy != null ? orderBy(query).ToListAsync() : query.ToListAsync());
       log.Trace("(-):{0}", result != null ? "*Count=" + result.Count.ToString() : "null");

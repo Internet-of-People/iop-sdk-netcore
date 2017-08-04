@@ -30,9 +30,8 @@ namespace IopServerCore.Kernel
       Shutdown
     };
 
-    private SystemStateType systemState = SystemStateType.Startup;
     /// <summary>Current system state.</summary>
-    public SystemStateType SystemState { get { return systemState; } }
+    public SystemStateType SystemState { get; private set; }
 
 
     /// <summary>Global shutdown signaling object.</summary>
@@ -51,7 +50,7 @@ namespace IopServerCore.Kernel
       log.Info("()");
 
       bool res = false;
-      systemState = SystemStateType.Initiating;
+      SystemState = SystemStateType.Initiating;
 
       componentList = ComponentList;
 
@@ -72,7 +71,7 @@ namespace IopServerCore.Kernel
 
         if (!error)
         {
-          systemState = SystemStateType.Running;
+          SystemState = SystemStateType.Running;
           res = true;
         }
       }
@@ -95,7 +94,7 @@ namespace IopServerCore.Kernel
     {
       log.Info("()");
 
-      systemState = SystemStateType.Shutdown;
+      SystemState = SystemStateType.Shutdown;
       GlobalShutdown.SignalShutdown();
 
       log.Info("(-)");

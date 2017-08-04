@@ -144,7 +144,7 @@ namespace IopServerCore.Kernel
         ShutdownSignaling.SignalShutdown();
 
         if ((executiveThread != null) && !executiveThreadFinished.WaitOne(10000))
-          log.Error("Executive thread did not terminated in 10 seconds.");
+          log.Error("Executive thread have not terminated in 10 seconds.");
       }
 
       log.Info("(-):{0}", res);
@@ -228,6 +228,7 @@ namespace IopServerCore.Kernel
         }
 
         log.Trace("Job '{0}' activated.", job.Name);
+        #warning TODO: Async void is bad. Use Task.Wait() here at least
         job.HandlerAsync();
       }
 

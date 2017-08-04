@@ -14,8 +14,11 @@ namespace IopServerCore.Network
   /// Implementation of an asynchronous TCP server with optional TLS encryption
   /// that provides services for one or more server roles.
   /// </summary>
-  public class TcpRoleServer<TIncomingClient, TMessage> where TIncomingClient : IncomingClientBase<TMessage>
+  public class TcpRoleServer<TIncomingClient, TMessage>
+    where TIncomingClient : IncomingClientBase<TMessage>
   {
+    public delegate TIncomingClient ClientFactory(TcpRoleServer<TIncomingClient, TMessage> that, TcpClient tcpClient, ulong clientId, string logPrefix);
+
     /// <summary>Instance logger.</summary>
     private Logger log;
 
@@ -70,46 +73,34 @@ namespace IopServerCore.Network
     /// <summary>Pointer to the Network.Server component.</summary>
     private ServerBase<TIncomingClient, TMessage> serverComponent;
 
+    private ClientFactory _clientFactory;
+
 
     /// <summary>Number of milliseconds after which the server's client is considered inactive and its connection can be terminated.</summary>
-    private int clientKeepAliveTimeoutMs;
+    public int ClientKeepAliveTimeoutMs;
 
 
     /// <summary>
     /// Creates a new TCP server to listen on specific IP address and port.
     /// </summary>
-    /// <param name="Interface">IP address of the interface on which the TCP server should listen. IPAddress.Any is a valid value.</param>
-    /// <param name="Port">TCP port on which the TCP server should listen.</param>
-    /// <param name="UseTls">Indication of whether to use TLS for this TCP server.</param>
-    /// <param name="Roles">One or more roles of this server.</param>
-    /// <param name="ClientKeepAliveTimeoutMs">Number of milliseconds after which the server's client is considered inactive and its connection can be terminated.</param>
-    public TcpRoleServer(IPAddress Interface, int Port, bool UseTls, uint Roles, int ClientKeepAliveTimeoutMs) :
-      this(new IPEndPoint(Interface, Port), UseTls, Roles, ClientKeepAliveTimeoutMs)
-    {      
-    }
-
-    /// <summary>
-    /// Creates a new TCP server to listen on specific IP endpoint.
-    /// </summary>
-    /// <param name="EndPoint">Specification of the interface and TCP port on which the TCP server should listen. IPAddress.Any is a valid value for the interface.</param>
-    /// <param name="UseTls">Indication of whether to use TLS for this TCP server.</param>
-    /// <param name="Roles">One or more roles of this server.</param>
-    /// <param name="ClientKeepAliveTimeoutMs">Number of milliseconds after which the server's client is considered inactive and its connection can be terminated.</param>
-    public TcpRoleServer(IPEndPoint EndPoint, bool UseTls, uint Roles, int ClientKeepAliveTimeoutMs)
+    /// <param name="bindTo">IP address of the interface on which the TCP server should listen. IPAddress.Any is a valid value.</param>
+    /// <param name="config">Configured parameters for the role server (port, TLS, roles, timeout, etc.)</param>
+    public TcpRoleServer(ClientFactory clientFactory, IPAddress bindTo, RoleServerConfiguration config)
     {
+      this.UseTls = config.Encrypted;
+      this.Roles = config.Roles;
+      this.EndPoint = new IPEndPoint(bindTo, config.Port);
+      this.ClientKeepAliveTimeoutMs = config.ClientKeepAliveTimeoutMs;
+      this._clientFactory = clientFactory;
+
       string logPrefix = string.Format("[{0}/tcp{1}] ", EndPoint.Port, UseTls ? "_tls" : "");
       log = new Logger("IopServerCore.Network.TcpRoleServer", logPrefix);
-
       log.Trace("(EndPoint:'{0}',UseTls:{1},Roles:{2},ClientKeepAliveTimeoutMs:{3})", EndPoint, UseTls, Roles, ClientKeepAliveTimeoutMs);
-      this.UseTls = UseTls;
-      this.Roles = Roles;
-      this.EndPoint = EndPoint;
-      this.clientKeepAliveTimeoutMs = ClientKeepAliveTimeoutMs;
 
       ShutdownSignaling = new ComponentShutdown(Base.ComponentManager.GlobalShutdown);
 
       serverComponent = (ServerBase<TIncomingClient, TMessage>)Base.ComponentDictionary[ServerBase<TIncomingClient, TMessage>.ComponentName];
-      clientList = serverComponent.GetClientList();
+      clientList = serverComponent.ClientList;
 
       IsRunning = false;
       Listener = new TcpListener(this.EndPoint);
@@ -299,7 +290,8 @@ namespace IopServerCore.Network
           {
             ulong clientId = clientList.GetNewClientId();
             string logPrefix = string.Format("[{0}<=>{1}|{2}] ", EndPoint, tcpClient.Client.RemoteEndPoint, clientId.ToHex());
-            TIncomingClient client = Activator.CreateInstance(typeof(TIncomingClient), new object[] { this, tcpClient, clientId, UseTls, clientKeepAliveTimeoutMs, logPrefix }) as TIncomingClient;
+
+            TIncomingClient client = _clientFactory(this, tcpClient, clientId, logPrefix);
             ClientHandlerAsync(client);
 
             lock (clientQueueLock)

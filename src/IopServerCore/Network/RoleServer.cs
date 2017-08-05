@@ -17,10 +17,10 @@ namespace IopServerCore.Network
   public class TcpRoleServer<TIncomingClient, TMessage>
     where TIncomingClient : IncomingClientBase<TMessage>
   {
-    public delegate TIncomingClient ClientFactory(TcpRoleServer<TIncomingClient, TMessage> that, TcpClient tcpClient, ulong clientId, string logPrefix);
+    public delegate TIncomingClient ClientFactoryDelegate(TcpRoleServer<TIncomingClient, TMessage> that, TcpClient tcpClient, ulong clientId, string logPrefix);
 
     /// <summary>Instance logger.</summary>
-    private Logger log;
+    private Logger _log;
 
     /// <summary>Shutdown signaling object.</summary>
     public ComponentShutdown ShutdownSignaling;
@@ -45,35 +45,35 @@ namespace IopServerCore.Network
     public uint IdBase;
 
     /// <summary>Event that is set when acceptThread is not running.</summary>
-    private ManualResetEvent acceptThreadFinished = new ManualResetEvent(true);
+    private ManualResetEvent _acceptThreadFinished = new ManualResetEvent(true);
 
     /// <summary>Thread that is waiting for the new clients to connect to the TCP server port.</summary>
-    private Thread acceptThread;
+    private Thread _acceptThread;
 
 
     /// <summary>Queue of clients, which is produced by acceptThread and consumed by clientQueueHandlerThread.</summary>
-    private Queue<TcpClient> clientQueue = new Queue<TcpClient>();
+    private Queue<TcpClient> _clientQueue = new Queue<TcpClient>();
     
     /// <summary>Synchronization object for exclusive access to clientQueue.</summary>
-    private object clientQueueLock = new object();
+    private object _clientQueueLock = new object();
 
     /// <summary>Event that is set when a new client has been added to clientQueue.</summary>
-    private AutoResetEvent clientQueueEvent = new AutoResetEvent(false);
+    private AutoResetEvent _clientQueueEvent = new AutoResetEvent(false);
 
 
     /// <summary>Event that is set when clientQueueHandlerThread is not running.</summary>
-    private ManualResetEvent clientQueueHandlerThreadFinished = new ManualResetEvent(true);
+    private ManualResetEvent _clientQueueHandlerThreadFinished = new ManualResetEvent(true);
 
     /// <summary>Thread that is responsible for handling new clients that were accepted by acceptThread.</summary>
-    private Thread clientQueueHandlerThread;
+    private Thread _clientQueueHandlerThread;
 
     /// <summary>List of server's network peers and clients.</summary>
-    private IncomingClientList<TMessage> clientList;
+    private IncomingClientList<TMessage> _clients;
 
     /// <summary>Pointer to the Network.Server component.</summary>
-    private ServerBase<TIncomingClient, TMessage> serverComponent;
+    private ServerBase<TIncomingClient, TMessage> _server;
 
-    private ClientFactory _clientFactory;
+    private ClientFactoryDelegate _clientFactory;
 
 
     /// <summary>Number of milliseconds after which the server's client is considered inactive and its connection can be terminated.</summary>
@@ -85,7 +85,7 @@ namespace IopServerCore.Network
     /// </summary>
     /// <param name="bindTo">IP address of the interface on which the TCP server should listen. IPAddress.Any is a valid value.</param>
     /// <param name="config">Configured parameters for the role server (port, TLS, roles, timeout, etc.)</param>
-    public TcpRoleServer(ClientFactory clientFactory, IPAddress bindTo, RoleServerConfiguration config)
+    public TcpRoleServer(ClientFactoryDelegate clientFactory, IPAddress bindTo, RoleServerConfiguration config)
     {
       this.UseTls = config.Encrypted;
       this.Roles = config.Roles;
@@ -94,13 +94,13 @@ namespace IopServerCore.Network
       this._clientFactory = clientFactory;
 
       string logPrefix = string.Format("[{0}/tcp{1}] ", EndPoint.Port, UseTls ? "_tls" : "");
-      log = new Logger("IopServerCore.Network.TcpRoleServer", logPrefix);
-      log.Trace("(EndPoint:'{0}',UseTls:{1},Roles:{2},ClientKeepAliveTimeoutMs:{3})", EndPoint, UseTls, Roles, ClientKeepAliveTimeoutMs);
+      _log = new Logger("IopServerCore.Network.TcpRoleServer", logPrefix);
+      _log.Trace("(EndPoint:'{0}',UseTls:{1},Roles:{2},ClientKeepAliveTimeoutMs:{3})", EndPoint, UseTls, Roles, ClientKeepAliveTimeoutMs);
 
       ShutdownSignaling = new ComponentShutdown(Base.ComponentManager.GlobalShutdown);
 
-      serverComponent = (ServerBase<TIncomingClient, TMessage>)Base.ComponentDictionary[ServerBase<TIncomingClient, TMessage>.ComponentName];
-      clientList = serverComponent.ClientList;
+      _server = (ServerBase<TIncomingClient, TMessage>)Base.ComponentDictionary[ServerBase<TIncomingClient, TMessage>.ComponentName];
+      _clients = _server.Clients;
 
       IsRunning = false;
       Listener = new TcpListener(this.EndPoint);
@@ -108,7 +108,7 @@ namespace IopServerCore.Network
       Listener.Server.NoDelay = true;
 
       IdBase = ((uint)Roles << 24);
-      log.Trace("(-)");
+      _log.Trace("(-)");
     }
 
     /// <summary>
@@ -120,7 +120,7 @@ namespace IopServerCore.Network
     /// <returns>true if the function succeeds, false otherwise</returns>
     public bool Start()
     {
-      log.Info("(Roles:[{0}])", this.Roles);
+      _log.Info("(Roles:[{0}])", this.Roles);
 
       int tryCounter = 0;
       bool res = false;
@@ -135,27 +135,27 @@ namespace IopServerCore.Network
         }
         catch (SocketException se)
         {
-          log.Info("Socket error code {0} occurred while trying to reuse socket: {1}.", se.SocketErrorCode, se.ToString());
+          _log.Info("Socket error code {0} occurred while trying to reuse socket: {1}.", se.SocketErrorCode, se.ToString());
         }
 
         int waitTime = tryCounter * 3;
-        log.Info("Will wait {0} seconds and then try again.", waitTime);
+        _log.Info("Will wait {0} seconds and then try again.", waitTime);
         Thread.Sleep(waitTime * 1000);
         tryCounter++;
       }
 
       if (res)
       {
-        clientQueueHandlerThread = new Thread(new ThreadStart(ClientQueueHandlerThread));
-        clientQueueHandlerThread.Start();
+        _clientQueueHandlerThread = new Thread(new ThreadStart(ClientQueueHandlerThread));
+        _clientQueueHandlerThread.Start();
 
-        acceptThread = new Thread(new ThreadStart(AcceptThread));
-        acceptThread.Start();
+        _acceptThread = new Thread(new ThreadStart(AcceptThread));
+        _acceptThread.Start();
 
         IsRunning = true;
       }
 
-      log.Info("(-):{0}", res);
+      _log.Info("(-):{0}", res);
       return res;
     }
 
@@ -165,7 +165,7 @@ namespace IopServerCore.Network
     /// </summary>
     public void Stop()
     {
-      log.Info("()");
+      _log.Info("()");
 
       ShutdownSignaling.SignalShutdown();
 
@@ -173,18 +173,18 @@ namespace IopServerCore.Network
       {
         Listener.Stop();
 
-        if ((clientQueueHandlerThread != null) && !clientQueueHandlerThreadFinished.WaitOne(10000))
-          log.Error("Client queue handler thread did not terminated in 10 seconds.");
+        if ((_clientQueueHandlerThread != null) && !_clientQueueHandlerThreadFinished.WaitOne(10000))
+          _log.Error("Client queue handler thread did not terminated in 10 seconds.");
 
-        if ((acceptThread != null) && !acceptThreadFinished.WaitOne(10000))
-          log.Error("Accept thread did not terminated in 10 seconds.");
+        if ((_acceptThread != null) && !_acceptThreadFinished.WaitOne(10000))
+          _log.Error("Accept thread did not terminated in 10 seconds.");
 
-        lock (clientQueueLock)
+        lock (_clientQueueLock)
         {
-          log.Info("Closing {0} clients from new clients queue.", clientQueue.Count);
-          while (clientQueue.Count > 0)
+          _log.Info("Closing {0} clients from new clients queue.", _clientQueue.Count);
+          while (_clientQueue.Count > 0)
           {
-            TcpClient client = clientQueue.Dequeue();
+            TcpClient client = _clientQueue.Dequeue();
             NetworkStream stream = client.GetStream();
             if (stream != null) stream.Dispose();
             client.Dispose();
@@ -193,10 +193,10 @@ namespace IopServerCore.Network
       }
       catch (Exception e)
       {
-        log.Error("Exception occurred: {0}", e.ToString());
+        _log.Error("Exception occurred: {0}", e.ToString());
       }
 
-      log.Info("(-)");
+      _log.Info("(-)");
     }
 
 
@@ -208,15 +208,15 @@ namespace IopServerCore.Network
     {
       LogDiagnosticContext.Start();
 
-      log.Trace("()");
+      _log.Trace("()");
 
-      acceptThreadFinished.Reset();
+      _acceptThreadFinished.Reset();
 
       AutoResetEvent acceptTaskEvent = new AutoResetEvent(false);
 
       while (!ShutdownSignaling.IsShutdown)
       {
-        log.Debug("Waiting for new client.");
+        _log.Debug("Waiting for new client.");
         Task<TcpClient> acceptTask = Listener.AcceptTcpClientAsync();
         acceptTask.ContinueWith(t => acceptTaskEvent.Set());
 
@@ -224,7 +224,7 @@ namespace IopServerCore.Network
         int index = WaitHandle.WaitAny(handles);
         if (handles[index] == ShutdownSignaling.ShutdownEvent)
         {
-          log.Info("Shutdown detected.");
+          _log.Info("Shutdown detected.");
           break;
         }
 
@@ -233,22 +233,22 @@ namespace IopServerCore.Network
           // acceptTask is finished here, asking for Result won't block.
           TcpClient client = acceptTask.Result;
           EndPoint ep = client.Client.RemoteEndPoint;
-          lock (clientQueueLock)
+          lock (_clientQueueLock)
           {
-            clientQueue.Enqueue(client);
+            _clientQueue.Enqueue(client);
           }
-          log.Debug("New client '{0}' accepted.", ep);
-          clientQueueEvent.Set();
+          _log.Debug("New client '{0}' accepted.", ep);
+          _clientQueueEvent.Set();
         }
         catch (Exception e)
         {
-          log.Error("Exception occurred: {0}", e.ToString());
+          _log.Error("Exception occurred: {0}", e.ToString());
         }
       }
 
-      acceptThreadFinished.Set();
+      _acceptThreadFinished.Set();
 
-      log.Trace("(-)");
+      _log.Trace("(-)");
 
       LogDiagnosticContext.Stop();
     }
@@ -261,77 +261,77 @@ namespace IopServerCore.Network
     /// </summary>
     private void ClientQueueHandlerThread()
     {
-      log.Info("()");
+      _log.Info("()");
 
-      clientQueueHandlerThreadFinished.Reset();
+      _clientQueueHandlerThreadFinished.Reset();
 
       while (!ShutdownSignaling.IsShutdown)
       {
-        WaitHandle[] handles = new WaitHandle[] { clientQueueEvent, ShutdownSignaling.ShutdownEvent };
+        WaitHandle[] handles = new WaitHandle[] { _clientQueueEvent, ShutdownSignaling.ShutdownEvent };
         int index = WaitHandle.WaitAny(handles);
         if (handles[index] == ShutdownSignaling.ShutdownEvent)
         {
-          log.Info("Shutdown detected.");
+          _log.Info("Shutdown detected.");
           break;
         }
 
-        log.Debug("New client in the queue detected, queue count is {0}.", clientQueue.Count);
+        _log.Debug("New client in the queue detected, queue count is {0}.", _clientQueue.Count);
         bool queueEmpty = false;
         while (!queueEmpty && !ShutdownSignaling.IsShutdown)
         {
           TcpClient tcpClient = null;
-          lock (clientQueueLock)
+          lock (_clientQueueLock)
           {
-            if (clientQueue.Count > 0)
-              tcpClient = clientQueue.Peek();
+            if (_clientQueue.Count > 0)
+              tcpClient = _clientQueue.Peek();
           }
 
           if (tcpClient != null)
           {
-            ulong clientId = clientList.GetNewClientId();
+            ulong clientId = _clients.GetNewClientId();
             string logPrefix = string.Format("[{0}<=>{1}|{2}] ", EndPoint, tcpClient.Client.RemoteEndPoint, clientId.ToHex());
 
             TIncomingClient client = _clientFactory(this, tcpClient, clientId, logPrefix);
             ClientHandlerAsync(client);
 
-            lock (clientQueueLock)
+            lock (_clientQueueLock)
             {
-              clientQueue.Dequeue();
-              queueEmpty = clientQueue.Count == 0;
+              _clientQueue.Dequeue();
+              queueEmpty = _clientQueue.Count == 0;
             }
           }
           else queueEmpty = true;
         }
       }
 
-      clientQueueHandlerThreadFinished.Set();
+      _clientQueueHandlerThreadFinished.Set();
 
-      log.Info("(-)");
+      _log.Info("(-)");
     }
 
 
     /// <summary>
     /// Handler for each client that connects to the TCP server.
     /// </summary>
-    /// <param name="Client">Client that is connected to TCP server.</param>
+    /// <param name="client">Client that is connected to TCP server.</param>
     /// <remarks>The client is being handled in the processing loop until the connection to it is terminated by either side.</remarks>
-    private async void ClientHandlerAsync(IncomingClientBase<TMessage> Client)
+    private async void ClientHandlerAsync(IncomingClientBase<TMessage> client)
     {
       LogDiagnosticContext.Start();
 
-      log.Info("(Client.RemoteEndPoint:{0})", Client.RemoteEndPoint);
+      _log.Info("(Client.RemoteEndPoint:{0})", client.RemoteEndPoint);
 
-      clientList.AddNetworkPeer(Client);
-      log.Debug("Client ID set to {0}.", Client.Id.ToHex());
+      _clients.AddNetworkPeer(client);
+      _log.Debug("Client ID set to {0}.", client.Id.ToHex());
 
-      await Client.ReceiveMessageLoop();
+      await client.ReceiveMessageLoop();
 
       // Free resources used by the client.
-      clientList.RemoveNetworkPeer(Client);
-      await Client.HandleDisconnect();
-      Client.Dispose();
+      _clients.RemoveNetworkPeer(client);
+      await client.HandleDisconnect();
+      client.Dispose();
 
-      log.Info("(-)");
+      _log.Info("(-)");
 
       LogDiagnosticContext.Stop();
     }

@@ -15,7 +15,7 @@ namespace IopServerCore.Network
   public abstract class ServerBase<TIncomingClient, TMessage> : Component
     where TIncomingClient : IncomingClientBase<TMessage>
   {
-    public delegate TcpRoleServer<TIncomingClient, TMessage> RoleServerFactory(IPAddress ipAddress, RoleServerConfiguration config);
+    public delegate TcpRoleServer<TIncomingClient, TMessage> RoleServerFactoryDelegate(IPAddress ipAddress, RoleServerConfiguration config);
 
     /// <summary>Name of the component. This must match the name of the derived component.</summary>
     public const string ComponentName = "Network.Server";
@@ -23,9 +23,10 @@ namespace IopServerCore.Network
     /// <summary>Class logger.</summary>
     private static Logger _log = new Logger("IopServerCore." + ComponentName);
 
-    /// <summary>Collection of running TCP role servers sorted by their port.</summary>
-    private Dictionary<int, TcpRoleServer<TIncomingClient, TMessage>> _tcpServers = new Dictionary<int, TcpRoleServer<TIncomingClient, TMessage>>();
+    private RoleServerFactoryDelegate _roleServerFactory;
 
+    /// <summary>Collection of running TCP role servers sorted by their port.</summary>
+    private Dictionary<int, TcpRoleServer<TIncomingClient, TMessage>> _servers = new Dictionary<int, TcpRoleServer<TIncomingClient, TMessage>>();
 
     /// <summary>List of network peers and clients across all role servers.</summary>
     private IncomingClientList<TMessage> _clients;
@@ -37,7 +38,7 @@ namespace IopServerCore.Network
     /// Obtains the client list.
     /// </summary>
     /// <returns>List of all server's clients.</returns>
-    public IncomingClientList<TMessage> ClientList
+    public IncomingClientList<TMessage> Clients
     {
       get
       {
@@ -50,18 +51,31 @@ namespace IopServerCore.Network
       }
     }
 
-    private RoleServerFactory factory;
+    /// <summary>
+    /// Obtains list of running role servers.
+    /// </summary>
+    /// <returns>List of running role servers.</returns>
+    public List<TcpRoleServer<TIncomingClient, TMessage>> Servers
+    {
+      get
+      {
+        _log.Trace("()");
 
+        var res = new List<TcpRoleServer<TIncomingClient, TMessage>>(_servers.Values);
+
+        _log.Trace("(-):*.Count={0}", res.Count);
+        return res;
+      }
+    }
 
     /// <summary>
     /// Initializes the component.
     /// </summary>
-    public ServerBase(RoleServerFactory factory):
+    public ServerBase(RoleServerFactoryDelegate factory):
       base(ComponentName)
     {
-      this.factory = factory;
+      this._roleServerFactory = factory;
     }
-
 
     public override bool Init()
     {
@@ -81,8 +95,8 @@ namespace IopServerCore.Network
         {
           if (roleServer.IsTcpServer)
           {
-            TcpRoleServer<TIncomingClient, TMessage> server = factory(ipAddress, roleServer);
-            _tcpServers.Add(server.EndPoint.Port, server);
+            TcpRoleServer<TIncomingClient, TMessage> server = _roleServerFactory(ipAddress, roleServer);
+            _servers.Add(server.EndPoint.Port, server);
           }
           else
           {
@@ -93,7 +107,7 @@ namespace IopServerCore.Network
         }
 
 
-        foreach (var server in _tcpServers.Values)
+        foreach (var server in _servers.Values)
         {
           if (!server.Start())
           {
@@ -118,12 +132,12 @@ namespace IopServerCore.Network
       {
         ShutdownSignaling.SignalShutdown();
 
-        foreach (var server in _tcpServers.Values)
+        foreach (var server in _servers.Values)
         {
           if (server.IsRunning)
             server.Stop();
         }
-        _tcpServers.Clear();
+        _servers.Clear();
       }
 
       _log.Info("(-):{0}", res);
@@ -147,18 +161,15 @@ namespace IopServerCore.Network
       {
       }
 
-      foreach (var server in _tcpServers.Values)
+      foreach (var server in _servers.Values)
       {
         if (server.IsRunning)
           server.Stop();
       }
-      _tcpServers.Clear();
+      _servers.Clear();
 
       _log.Info("(-)");
     }
-
-
-
 
     /// <summary>
     /// This method is responsible for going through all existing client connections 
@@ -202,20 +213,6 @@ namespace IopServerCore.Network
       }
 
       _log.Trace("(-)");
-    }
-
-    /// <summary>
-    /// Obtains list of running role servers.
-    /// </summary>
-    /// <returns>List of running role servers.</returns>
-    public List<TcpRoleServer<TIncomingClient, TMessage>> GetRoleServers()
-    {
-      _log.Trace("()");
-
-      var res = new List<TcpRoleServer<TIncomingClient, TMessage>>(_tcpServers.Values);
-
-      _log.Trace("(-):*.Count={0}", res.Count);
-      return res;
     }
   }
 }

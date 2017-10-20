@@ -46,7 +46,8 @@ namespace IopCommon
     /// <param name="Args">Additional arguments to format a message.</param>
     private void logInternal(NLog.LogLevel Level, string Message, params object[] Args)
     {
-      string msg = string.Format(prefix + Message, Args);
+      string msg = prefix + Message;
+      if(Args?.Length > 0) msg = string.Format(msg, Args);
       log.Log(wrapperType, new LogEventInfo(Level, name, msg));
     }
 

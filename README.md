@@ -1,3 +1,10 @@
+```diff
++This repo has been integrated into iop-profile-server.
++It has been a toolkit to write federated network nodes for IoP in .NET.
+-It has never been intended as an SDK for client applications.
+-It is only kept here for historical reference.
+```
+
 # IoP SDK for .NET Core
 
 SDK is a set of libraries for easy development of IoP servers and clients that connect to them.
